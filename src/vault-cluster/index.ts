@@ -51,7 +51,7 @@ export interface VaultClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly publicEndpoint?: boolean | cdktf.IResolvable;
   /**
-  * Tier of the HCP Vault cluster. Valid options for tiers - `dev`, `starter_small`, `standard_small`, `standard_medium`, `standard_large`, `plus_small`, `plus_medium`, `plus_large`. See [pricing information](https://cloud.hashicorp.com/pricing/vault).
+  * Tier of the HCP Vault cluster. Valid options for tiers - `dev`, `starter_small`, `standard_small`, `standard_medium`, `standard_large`, `plus_small`, `plus_medium`, `plus_large`. See [pricing information](https://cloud.hashicorp.com/pricing/vault). Changing a cluster's size or tier is only available to admins. See [Scale a cluster](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/guides/vault-scaling).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/vault_cluster#tier VaultCluster#tier}
   */
@@ -868,7 +868,7 @@ export class VaultCluster extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.45.0',
+        providerVersion: '0.46.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
