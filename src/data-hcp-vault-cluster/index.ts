@@ -395,7 +395,7 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_vault_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.45.0',
+        providerVersion: '0.47.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
