@@ -285,6 +285,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -317,6 +319,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformElement"></a>
+
+```typescript
+import { awsNetworkPeering } from '@cdktf/provider-hcp'
+
+awsNetworkPeering.AwsNetworkPeering.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformResource"></a>
+
+```typescript
+import { awsNetworkPeering } from '@cdktf/provider-hcp'
+
+awsNetworkPeering.AwsNetworkPeering.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1015,6 +1045,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -1047,6 +1079,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isTerraformElement"></a>
+
+```typescript
+import { awsTransitGatewayAttachment } from '@cdktf/provider-hcp'
+
+awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isTerraformResource"></a>
+
+```typescript
+import { awsTransitGatewayAttachment } from '@cdktf/provider-hcp'
+
+awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1723,6 +1783,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -1755,6 +1817,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isTerraformElement"></a>
+
+```typescript
+import { azurePeeringConnection } from '@cdktf/provider-hcp'
+
+azurePeeringConnection.AzurePeeringConnection.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isTerraformResource"></a>
+
+```typescript
+import { azurePeeringConnection } from '@cdktf/provider-hcp'
+
+azurePeeringConnection.AzurePeeringConnection.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2508,6 +2598,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -2540,6 +2632,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.isTerraformElement"></a>
+
+```typescript
+import { boundaryCluster } from '@cdktf/provider-hcp'
+
+boundaryCluster.BoundaryCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.isTerraformResource"></a>
+
+```typescript
+import { boundaryCluster } from '@cdktf/provider-hcp'
+
+boundaryCluster.BoundaryCluster.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3199,6 +3319,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -3231,6 +3353,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.isTerraformElement"></a>
+
+```typescript
+import { consulCluster } from '@cdktf/provider-hcp'
+
+consulCluster.ConsulCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.isTerraformResource"></a>
+
+```typescript
+import { consulCluster } from '@cdktf/provider-hcp'
+
+consulCluster.ConsulCluster.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4149,6 +4299,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -4181,6 +4333,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isTerraformElement"></a>
+
+```typescript
+import { consulClusterRootToken } from '@cdktf/provider-hcp'
+
+consulClusterRootToken.ConsulClusterRootToken.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isTerraformResource"></a>
+
+```typescript
+import { consulClusterRootToken } from '@cdktf/provider-hcp'
+
+consulClusterRootToken.ConsulClusterRootToken.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4747,6 +4927,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -4779,6 +4961,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.isTerraformElement"></a>
+
+```typescript
+import { consulSnapshot } from '@cdktf/provider-hcp'
+
+consulSnapshot.ConsulSnapshot.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.isTerraformResource"></a>
+
+```typescript
+import { consulSnapshot } from '@cdktf/provider-hcp'
+
+consulSnapshot.ConsulSnapshot.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -5418,6 +5628,8 @@ public resetWaitForActiveState(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -5450,6 +5662,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isTerraformElement"></a>
+
+```typescript
+import { dataHcpAwsNetworkPeering } from '@cdktf/provider-hcp'
+
+dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpAwsNetworkPeering } from '@cdktf/provider-hcp'
+
+dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpAwsNetworkPeering.DataHcpAwsNetworkPeering.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6122,6 +6362,8 @@ public resetWaitForActiveState(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -6154,6 +6396,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isTerraformElement"></a>
+
+```typescript
+import { dataHcpAwsTransitGatewayAttachment } from '@cdktf/provider-hcp'
+
+dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpAwsTransitGatewayAttachment } from '@cdktf/provider-hcp'
+
+dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpAwsTransitGatewayAttachment.DataHcpAwsTransitGatewayAttachment.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6804,6 +7074,8 @@ public resetWaitForActiveState(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -6836,6 +7108,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isTerraformElement"></a>
+
+```typescript
+import { dataHcpAzurePeeringConnection } from '@cdktf/provider-hcp'
+
+dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpAzurePeeringConnection } from '@cdktf/provider-hcp'
+
+dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -7534,6 +7834,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpBoundaryCluster.DataHcpBoundaryCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpBoundaryCluster.DataHcpBoundaryCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpBoundaryCluster.DataHcpBoundaryCluster.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -7566,6 +7868,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpBoundaryCluster.DataHcpBoundaryCluster.isTerraformElement"></a>
+
+```typescript
+import { dataHcpBoundaryCluster } from '@cdktf/provider-hcp'
+
+dataHcpBoundaryCluster.DataHcpBoundaryCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpBoundaryCluster.DataHcpBoundaryCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpBoundaryCluster.DataHcpBoundaryCluster.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpBoundaryCluster } from '@cdktf/provider-hcp'
+
+dataHcpBoundaryCluster.DataHcpBoundaryCluster.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpBoundaryCluster.DataHcpBoundaryCluster.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8117,6 +8447,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -8149,6 +8481,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformElement"></a>
+
+```typescript
+import { dataHcpConsulAgentHelmConfig } from '@cdktf/provider-hcp'
+
+dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpConsulAgentHelmConfig } from '@cdktf/provider-hcp'
+
+dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8715,6 +9075,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -8747,6 +9109,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isTerraformElement"></a>
+
+```typescript
+import { dataHcpConsulAgentKubernetesSecret } from '@cdktf/provider-hcp'
+
+dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpConsulAgentKubernetesSecret } from '@cdktf/provider-hcp'
+
+dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpConsulAgentKubernetesSecret.DataHcpConsulAgentKubernetesSecret.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -9269,6 +9659,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -9301,6 +9693,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isTerraformElement"></a>
+
+```typescript
+import { dataHcpConsulCluster } from '@cdktf/provider-hcp'
+
+dataHcpConsulCluster.DataHcpConsulCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpConsulCluster } from '@cdktf/provider-hcp'
+
+dataHcpConsulCluster.DataHcpConsulCluster.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10065,6 +10485,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -10097,6 +10519,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.isTerraformElement"></a>
+
+```typescript
+import { dataHcpConsulVersions } from '@cdktf/provider-hcp'
+
+dataHcpConsulVersions.DataHcpConsulVersions.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpConsulVersions } from '@cdktf/provider-hcp'
+
+dataHcpConsulVersions.DataHcpConsulVersions.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10619,6 +11069,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -10651,6 +11103,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.isTerraformElement"></a>
+
+```typescript
+import { dataHcpHvn } from '@cdktf/provider-hcp'
+
+dataHcpHvn.DataHcpHvn.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpHvn } from '@cdktf/provider-hcp'
+
+dataHcpHvn.DataHcpHvn.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -11261,6 +11741,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -11293,6 +11775,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isTerraformElement"></a>
+
+```typescript
+import { dataHcpHvnPeeringConnection } from '@cdktf/provider-hcp'
+
+dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpHvnPeeringConnection } from '@cdktf/provider-hcp'
+
+dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpHvnPeeringConnection.DataHcpHvnPeeringConnection.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -11914,6 +12424,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -11946,6 +12458,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.isTerraformElement"></a>
+
+```typescript
+import { dataHcpHvnRoute } from '@cdktf/provider-hcp'
+
+dataHcpHvnRoute.DataHcpHvnRoute.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpHvnRoute } from '@cdktf/provider-hcp'
+
+dataHcpHvnRoute.DataHcpHvnRoute.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpHvnRoute.DataHcpHvnRoute.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -12555,6 +13095,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -12587,6 +13129,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.isTerraformElement"></a>
+
+```typescript
+import { dataHcpPackerImage } from '@cdktf/provider-hcp'
+
+dataHcpPackerImage.DataHcpPackerImage.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpPackerImage } from '@cdktf/provider-hcp'
+
+dataHcpPackerImage.DataHcpPackerImage.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -13296,6 +13866,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -13328,6 +13900,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.isTerraformElement"></a>
+
+```typescript
+import { dataHcpPackerImageIteration } from '@cdktf/provider-hcp'
+
+dataHcpPackerImageIteration.DataHcpPackerImageIteration.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpPackerImageIteration } from '@cdktf/provider-hcp'
+
+dataHcpPackerImageIteration.DataHcpPackerImageIteration.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -13927,6 +14527,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerIteration.DataHcpPackerIteration.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerIteration.DataHcpPackerIteration.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerIteration.DataHcpPackerIteration.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -13959,6 +14561,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpPackerIteration.DataHcpPackerIteration.isTerraformElement"></a>
+
+```typescript
+import { dataHcpPackerIteration } from '@cdktf/provider-hcp'
+
+dataHcpPackerIteration.DataHcpPackerIteration.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpPackerIteration.DataHcpPackerIteration.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpPackerIteration.DataHcpPackerIteration.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpPackerIteration } from '@cdktf/provider-hcp'
+
+dataHcpPackerIteration.DataHcpPackerIteration.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpPackerIteration.DataHcpPackerIteration.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -14631,6 +15261,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -14663,6 +15295,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.isTerraformElement"></a>
+
+```typescript
+import { dataHcpVaultCluster } from '@cdktf/provider-hcp'
+
+dataHcpVaultCluster.DataHcpVaultCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.isTerraformDataSource"></a>
+
+```typescript
+import { dataHcpVaultCluster } from '@cdktf/provider-hcp'
+
+dataHcpVaultCluster.DataHcpVaultCluster.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15280,6 +15940,8 @@ public resetClientSecret(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
 
 ---
 
@@ -15312,6 +15974,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformElement"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-hcp'
+
+provider.HcpProvider.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformProvider"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-hcp'
+
+provider.HcpProvider.isTerraformProvider(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15786,6 +16476,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -15818,6 +16510,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.hvn.Hvn.isTerraformElement"></a>
+
+```typescript
+import { hvn } from '@cdktf/provider-hcp'
+
+hvn.Hvn.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.hvn.Hvn.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.hvn.Hvn.isTerraformResource"></a>
+
+```typescript
+import { hvn } from '@cdktf/provider-hcp'
+
+hvn.Hvn.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.hvn.Hvn.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -16483,6 +17203,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -16515,6 +17237,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.isTerraformElement"></a>
+
+```typescript
+import { hvnPeeringConnection } from '@cdktf/provider-hcp'
+
+hvnPeeringConnection.HvnPeeringConnection.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.isTerraformResource"></a>
+
+```typescript
+import { hvnPeeringConnection } from '@cdktf/provider-hcp'
+
+hvnPeeringConnection.HvnPeeringConnection.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -17147,6 +17897,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -17179,6 +17931,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.isTerraformElement"></a>
+
+```typescript
+import { hvnRoute } from '@cdktf/provider-hcp'
+
+hvnRoute.HvnRoute.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.isTerraformResource"></a>
+
+```typescript
+import { hvnRoute } from '@cdktf/provider-hcp'
+
+hvnRoute.HvnRoute.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -17906,6 +18686,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -17938,6 +18720,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.isTerraformElement"></a>
+
+```typescript
+import { vaultCluster } from '@cdktf/provider-hcp'
+
+vaultCluster.VaultCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.isTerraformResource"></a>
+
+```typescript
+import { vaultCluster } from '@cdktf/provider-hcp'
+
+vaultCluster.VaultCluster.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -18790,6 +19600,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -18822,6 +19634,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.isTerraformElement"></a>
+
+```typescript
+import { vaultClusterAdminToken } from '@cdktf/provider-hcp'
+
+vaultClusterAdminToken.VaultClusterAdminToken.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.isTerraformResource"></a>
+
+```typescript
+import { vaultClusterAdminToken } from '@cdktf/provider-hcp'
+
+vaultClusterAdminToken.VaultClusterAdminToken.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
