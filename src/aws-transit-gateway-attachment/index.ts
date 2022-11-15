@@ -201,7 +201,7 @@ export class AwsTransitGatewayAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_aws_transit_gateway_attachment',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.45.0',
+        providerVersion: '0.48.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
