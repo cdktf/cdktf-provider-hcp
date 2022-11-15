@@ -45,7 +45,7 @@ export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * The minimum Consul version of the cluster. If not specified, it is defaulted to the version that is currently recommended by HCP.
+  * The minimum Consul patch version of the cluster. Allows only the rightmost version component to increment (E.g: `1.13.0` will allow installation of `1.13.2` and `1.13.3` etc., but not `1.14.0`). If not specified, it is defaulted to the version that is currently recommended by HCP.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#min_consul_version ConsulCluster#min_consul_version}
   */
@@ -264,7 +264,7 @@ export class ConsulCluster extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_consul_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.45.0',
+        providerVersion: '0.48.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
