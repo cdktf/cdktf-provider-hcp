@@ -33,7 +33,7 @@ export interface VaultClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly minVaultVersion?: string;
   /**
-  * The performance replication [paths filter](https://learn.hashicorp.com/tutorials/vault/paths-filter). Applies to performance replication secondaries only and operates in "deny" mode only.
+  * The performance replication [paths filter](https://developer.hashicorp.com/vault/tutorials/cloud-ops/vault-replication-terraform). Applies to performance replication secondaries only and operates in "deny" mode only.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/vault_cluster#paths_filter VaultCluster#paths_filter}
   */
@@ -868,7 +868,7 @@ export class VaultCluster extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.48.0',
+        providerVersion: '0.49.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
