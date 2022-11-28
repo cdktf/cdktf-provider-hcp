@@ -25694,7 +25694,7 @@ const vaultClusterConfig: vaultCluster.VaultClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.majorVersionUpgradeConfig">majorVersionUpgradeConfig</a></code> | <code>@cdktf/provider-hcp.vaultCluster.VaultClusterMajorVersionUpgradeConfig</code> | major_version_upgrade_config block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.metricsConfig">metricsConfig</a></code> | <code>@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig</code> | metrics_config block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.minVaultVersion">minVaultVersion</a></code> | <code>string</code> | The minimum Vault version to use when creating the cluster. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.pathsFilter">pathsFilter</a></code> | <code>string[]</code> | The performance replication [paths filter](https://learn.hashicorp.com/tutorials/vault/paths-filter). Applies to performance replication secondaries only and operates in "deny" mode only. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.pathsFilter">pathsFilter</a></code> | <code>string[]</code> | The performance replication [paths filter](https://developer.hashicorp.com/vault/tutorials/cloud-ops/vault-replication-terraform). Applies to performance replication secondaries only and operates in "deny" mode only. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.primaryLink">primaryLink</a></code> | <code>string</code> | The `self_link` of the HCP Vault Plus tier cluster which is the primary in the performance replication setup with this HCP Vault Plus tier cluster. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.publicEndpoint">publicEndpoint</a></code> | <code>boolean \| cdktf.IResolvable</code> | Denotes that the cluster has a public endpoint. Defaults to false. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.tier">tier</a></code> | <code>string</code> | Tier of the HCP Vault cluster. |
@@ -25881,7 +25881,7 @@ public readonly pathsFilter: string[];
 
 - *Type:* string[]
 
-The performance replication [paths filter](https://learn.hashicorp.com/tutorials/vault/paths-filter). Applies to performance replication secondaries only and operates in "deny" mode only.
+The performance replication [paths filter](https://developer.hashicorp.com/vault/tutorials/cloud-ops/vault-replication-terraform). Applies to performance replication secondaries only and operates in "deny" mode only.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/vault_cluster#paths_filter VaultCluster#paths_filter}
 
