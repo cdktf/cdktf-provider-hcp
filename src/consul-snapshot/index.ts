@@ -216,7 +216,7 @@ export class ConsulSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_consul_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.48.0',
+        providerVersion: '0.49.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
