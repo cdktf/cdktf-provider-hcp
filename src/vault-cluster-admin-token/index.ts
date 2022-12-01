@@ -183,7 +183,7 @@ export class VaultClusterAdminToken extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_cluster_admin_token',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.49.0',
+        providerVersion: '0.50.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
