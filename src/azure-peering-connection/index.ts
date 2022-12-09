@@ -219,7 +219,7 @@ export class AzurePeeringConnection extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_azure_peering_connection',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.50.0',
+        providerVersion: '0.51.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
