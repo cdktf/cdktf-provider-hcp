@@ -159,7 +159,7 @@ export class DataHcpPackerImage extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_packer_image',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.51.0',
+        providerVersion: '0.52.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

@@ -129,7 +129,7 @@ export class DataHcpConsulAgentKubernetesSecret extends cdktf.TerraformDataSourc
       terraformResourceType: 'hcp_consul_agent_kubernetes_secret',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.51.0',
+        providerVersion: '0.52.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
