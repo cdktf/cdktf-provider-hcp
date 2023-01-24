@@ -53,7 +53,7 @@ export class HcpProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'hcp',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.52.0',
+        providerVersion: '0.53.0',
         providerVersionConstraint: '~> 0.45'
       },
       terraformProviderSource: 'hcp'
