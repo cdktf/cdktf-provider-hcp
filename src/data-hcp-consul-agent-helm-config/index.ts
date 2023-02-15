@@ -141,7 +141,7 @@ export class DataHcpConsulAgentHelmConfig extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_consul_agent_helm_config',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.53.0',
+        providerVersion: '0.54.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
