@@ -201,7 +201,7 @@ export class Hvn extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_hvn',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.53.0',
+        providerVersion: '0.54.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

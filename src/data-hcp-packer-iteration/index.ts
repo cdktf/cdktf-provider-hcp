@@ -135,7 +135,7 @@ export class DataHcpPackerIteration extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_packer_iteration',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.53.0',
+        providerVersion: '0.54.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
