@@ -752,7 +752,7 @@ new PackerChannelConfig {
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.bucketName">BucketName</a></code> | <code>string</code> | The slug of the HCP Packer Registry image bucket where the channel should be managed in. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.bucketName">BucketName</a></code> | <code>string</code> | The slug of the HCP Packer Registry image bucket where the channel should be created in. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.name">Name</a></code> | <code>string</code> | The name of the channel being managed. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#id PackerChannel#id}. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.iteration">Iteration</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a></code> | iteration block. |
@@ -838,7 +838,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-The slug of the HCP Packer Registry image bucket where the channel should be managed in.
+The slug of the HCP Packer Registry image bucket where the channel should be created in.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#bucket_name PackerChannel#bucket_name}
 
