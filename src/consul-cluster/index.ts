@@ -69,17 +69,148 @@ export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly size?: string;
   /**
-  * The tier that the HCP Consul cluster will be provisioned as.  Only `development`, `standard` and `plus` are available at this time. See [pricing information](https://cloud.hashicorp.com/pricing/consul).
+  * The tier that the HCP Consul cluster will be provisioned as.  Only `development`, `standard` and `plus` are available at this time. See [pricing information](https://www.hashicorp.com/products/consul/pricing).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#tier ConsulCluster#tier}
   */
   readonly tier: string;
+  /**
+  * ip_allowlist block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#ip_allowlist ConsulCluster#ip_allowlist}
+  */
+  readonly ipAllowlist?: ConsulClusterIpAllowlist[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#timeouts ConsulCluster#timeouts}
   */
   readonly timeouts?: ConsulClusterTimeouts;
+}
+export interface ConsulClusterIpAllowlist {
+  /**
+  * IP address range in CIDR notation.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#address ConsulCluster#address}
+  */
+  readonly address: string;
+  /**
+  * Description to help identify source (maximum 255 chars).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#description ConsulCluster#description}
+  */
+  readonly description?: string;
+}
+
+export function consulClusterIpAllowlistToTerraform(struct?: ConsulClusterIpAllowlist | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    address: cdktf.stringToTerraform(struct!.address),
+    description: cdktf.stringToTerraform(struct!.description),
+  }
+}
+
+export class ConsulClusterIpAllowlistOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ConsulClusterIpAllowlist | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.address = this._address;
+    }
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConsulClusterIpAllowlist | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._address = undefined;
+      this._description = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._address = value.address;
+      this._description = value.description;
+    }
+  }
+
+  // address - computed: false, optional: false, required: true
+  private _address?: string; 
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string) {
+    this._address = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+}
+
+export class ConsulClusterIpAllowlistList extends cdktf.ComplexList {
+  public internalValue? : ConsulClusterIpAllowlist[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ConsulClusterIpAllowlistOutputReference {
+    return new ConsulClusterIpAllowlistOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface ConsulClusterTimeouts {
   /**
@@ -264,7 +395,7 @@ export class ConsulCluster extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_consul_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.54.0',
+        providerVersion: '0.56.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -286,6 +417,7 @@ export class ConsulCluster extends cdktf.TerraformResource {
     this._publicEndpoint = config.publicEndpoint;
     this._size = config.size;
     this._tier = config.tier;
+    this._ipAllowlist.internalValue = config.ipAllowlist;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -545,6 +677,22 @@ export class ConsulCluster extends cdktf.TerraformResource {
     return this._tier;
   }
 
+  // ip_allowlist - computed: false, optional: true, required: false
+  private _ipAllowlist = new ConsulClusterIpAllowlistList(this, "ip_allowlist", false);
+  public get ipAllowlist() {
+    return this._ipAllowlist;
+  }
+  public putIpAllowlist(value: ConsulClusterIpAllowlist[] | cdktf.IResolvable) {
+    this._ipAllowlist.internalValue = value;
+  }
+  public resetIpAllowlist() {
+    this._ipAllowlist.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAllowlistInput() {
+    return this._ipAllowlist.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new ConsulClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -578,6 +726,7 @@ export class ConsulCluster extends cdktf.TerraformResource {
       public_endpoint: cdktf.booleanToTerraform(this._publicEndpoint),
       size: cdktf.stringToTerraform(this._size),
       tier: cdktf.stringToTerraform(this._tier),
+      ip_allowlist: cdktf.listMapper(consulClusterIpAllowlistToTerraform, true)(this._ipAllowlist.internalValue),
       timeouts: consulClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

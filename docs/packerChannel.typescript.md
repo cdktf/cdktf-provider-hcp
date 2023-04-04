@@ -739,7 +739,7 @@ const packerChannelConfig: packerChannel.PackerChannelConfig = { ... }
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.bucketName">bucketName</a></code> | <code>string</code> | The slug of the HCP Packer Registry image bucket where the channel should be managed in. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.bucketName">bucketName</a></code> | <code>string</code> | The slug of the HCP Packer Registry image bucket where the channel should be created in. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.name">name</a></code> | <code>string</code> | The name of the channel being managed. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#id PackerChannel#id}. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.iteration">iteration</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a></code> | iteration block. |
@@ -825,7 +825,7 @@ public readonly bucketName: string;
 
 - *Type:* string
 
-The slug of the HCP Packer Registry image bucket where the channel should be managed in.
+The slug of the HCP Packer Registry image bucket where the channel should be created in.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#bucket_name PackerChannel#bucket_name}
 

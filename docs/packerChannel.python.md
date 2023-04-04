@@ -40,7 +40,7 @@ packerChannel.PackerChannel(
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.bucketName">bucket_name</a></code> | <code>str</code> | The slug of the HCP Packer Registry image bucket where the channel should be managed in. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.bucketName">bucket_name</a></code> | <code>str</code> | The slug of the HCP Packer Registry image bucket where the channel should be created in. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the channel being managed. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#id PackerChannel#id}. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.iteration">iteration</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a></code> | iteration block. |
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-The slug of the HCP Packer Registry image bucket where the channel should be managed in.
+The slug of the HCP Packer Registry image bucket where the channel should be created in.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#bucket_name PackerChannel#bucket_name}
 
@@ -958,7 +958,7 @@ packerChannel.PackerChannelConfig(
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | The slug of the HCP Packer Registry image bucket where the channel should be managed in. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | The slug of the HCP Packer Registry image bucket where the channel should be created in. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.name">name</a></code> | <code>str</code> | The name of the channel being managed. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#id PackerChannel#id}. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.iteration">iteration</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a></code> | iteration block. |
@@ -1044,7 +1044,7 @@ bucket_name: str
 
 - *Type:* str
 
-The slug of the HCP Packer Registry image bucket where the channel should be managed in.
+The slug of the HCP Packer Registry image bucket where the channel should be created in.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#bucket_name PackerChannel#bucket_name}
 

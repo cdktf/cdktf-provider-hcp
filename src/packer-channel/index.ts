@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface PackerChannelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The slug of the HCP Packer Registry image bucket where the channel should be managed in.
+  * The slug of the HCP Packer Registry image bucket where the channel should be created in.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#bucket_name PackerChannel#bucket_name}
   */
@@ -350,7 +350,7 @@ export class PackerChannel extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_packer_channel',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.54.0',
+        providerVersion: '0.56.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
