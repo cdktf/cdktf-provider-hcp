@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulclusterroottoken"
 
 consulclusterroottoken.NewConsulClusterRootToken(scope Construct, id *string, config ConsulClusterRootTokenConfig) ConsulClusterRootToken
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulclusterroottoken"
 
 consulclusterroottoken.ConsulClusterRootToken_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulclusterroottoken"
 
 consulclusterroottoken.ConsulClusterRootToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ consulclusterroottoken.ConsulClusterRootToken_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulclusterroottoken"
 
 consulclusterroottoken.ConsulClusterRootToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulclusterroottoken"
 
 &consulclusterroottoken.ConsulClusterRootTokenConfig {
 	Connection: interface{},
@@ -649,7 +649,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
 	Provisioners: *[]interface{},
 	ClusterId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.consulClusterRootToken.ConsulClusterRootTokenTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v4.consulClusterRootToken.ConsulClusterRootTokenTimeouts,
 }
 ```
 
@@ -788,7 +788,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulclusterroottoken"
 
 &consulclusterroottoken.ConsulClusterRootTokenTimeouts {
 	Default: *string,
@@ -822,7 +822,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulclusterroottoken"
 
 consulclusterroottoken.NewConsulClusterRootTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConsulClusterRootTokenTimeoutsOutputReference
 ```
