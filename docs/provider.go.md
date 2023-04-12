@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/hcp hcp}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 provider.NewHcpProvider(scope Construct, id *string, config HcpProviderConfig) HcpProvider
 ```
@@ -157,7 +157,7 @@ func ResetClientSecret()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.provider.HcpProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 provider.HcpProvider_IsConstruct(x interface{}) *bool
 ```
@@ -189,7 +189,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 provider.HcpProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -203,7 +203,7 @@ provider.HcpProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 provider.HcpProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.provider.HcpProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 &provider.HcpProviderConfig {
 	Alias: *string,
