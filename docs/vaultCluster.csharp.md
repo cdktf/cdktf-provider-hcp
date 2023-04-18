@@ -1,3 +1,7 @@
+# `hcp_vault_cluster`
+
+Refer to the Terraform Registory for docs: [`hcp_vault_cluster`](https://www.terraform.io/docs/providers/hcp/r/vault_cluster).
+
 # `vaultCluster` Submodule <a name="`vaultCluster` Submodule" id="@cdktf/provider-hcp.vaultCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

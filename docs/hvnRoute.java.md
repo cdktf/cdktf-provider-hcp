@@ -1,3 +1,7 @@
+# `hcp_hvn_route`
+
+Refer to the Terraform Registory for docs: [`hcp_hvn_route`](https://www.terraform.io/docs/providers/hcp/r/hvn_route).
+
 # `hvnRoute` Submodule <a name="`hvnRoute` Submodule" id="@cdktf/provider-hcp.hvnRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

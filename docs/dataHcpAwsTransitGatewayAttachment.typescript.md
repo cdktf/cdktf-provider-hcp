@@ -1,3 +1,7 @@
+# `data_hcp_aws_transit_gateway_attachment`
+
+Refer to the Terraform Registory for docs: [`data_hcp_aws_transit_gateway_attachment`](https://www.terraform.io/docs/providers/hcp/d/aws_transit_gateway_attachment).
+
 # `dataHcpAwsTransitGatewayAttachment` Submodule <a name="`dataHcpAwsTransitGatewayAttachment` Submodule" id="@cdktf/provider-hcp.dataHcpAwsTransitGatewayAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
