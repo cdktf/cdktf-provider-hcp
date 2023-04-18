@@ -1,3 +1,7 @@
+# `data_hcp_consul_versions`
+
+Refer to the Terraform Registory for docs: [`data_hcp_consul_versions`](https://www.terraform.io/docs/providers/hcp/d/consul_versions).
+
 # `dataHcpConsulVersions` Submodule <a name="`dataHcpConsulVersions` Submodule" id="@cdktf/provider-hcp.dataHcpConsulVersions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

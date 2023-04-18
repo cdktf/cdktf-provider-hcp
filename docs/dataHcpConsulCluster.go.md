@@ -1,3 +1,7 @@
+# `data_hcp_consul_cluster`
+
+Refer to the Terraform Registory for docs: [`data_hcp_consul_cluster`](https://www.terraform.io/docs/providers/hcp/d/consul_cluster).
+
 # `dataHcpConsulCluster` Submodule <a name="`dataHcpConsulCluster` Submodule" id="@cdktf/provider-hcp.dataHcpConsulCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`hcp`](https://www.terraform.io/docs/providers/hcp).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-hcp.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
