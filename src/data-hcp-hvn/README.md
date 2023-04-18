@@ -1,3 +1,3 @@
 # `data_hcp_hvn`
 
-Refer to the Terraform Registory for docs: [`data_hcp_hvn`](https://www.terraform.io/docs/providers/hcp/d/hvn).
+Refer to the Terraform Registory for docs: [`data_hcp_hvn`](https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn).
