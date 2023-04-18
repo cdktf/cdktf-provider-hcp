@@ -1,6 +1,6 @@
 # `data_hcp_packer_image`
 
-Refer to the Terraform Registory for docs: [`data_hcp_packer_image`](https://www.terraform.io/docs/providers/hcp/d/packer_image).
+Refer to the Terraform Registory for docs: [`data_hcp_packer_image`](https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image).
 
 # `dataHcpPackerImage` Submodule <a name="`dataHcpPackerImage` Submodule" id="@cdktf/provider-hcp.dataHcpPackerImage"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_hcp_packer_image`](https://www
 
 ### DataHcpPackerImage <a name="DataHcpPackerImage" id="@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/hcp/d/packer_image hcp_packer_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image hcp_packer_image}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.Initializer"></a>
 
@@ -386,7 +386,7 @@ DataHcpPackerImage.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -493,10 +493,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -809,7 +809,7 @@ using HashiCorp.Cdktf.Providers.Hcp;
 
 new DataHcpPackerImageConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -831,7 +831,7 @@ new DataHcpPackerImageConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -842,7 +842,7 @@ new DataHcpPackerImageConfig {
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.region">Region</a></code> | <code>string</code> | Region this image is stored in, if any. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.channel">Channel</a></code> | <code>string</code> | The channel that points to the version of the image being retrieved. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.componentType">ComponentType</a></code> | <code>string</code> | Name of the builder that built this image. Ex: `amazon-ebs.example`. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#id DataHcpPackerImage#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#id DataHcpPackerImage#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.iterationId">IterationId</a></code> | <code>string</code> | The iteration from which to get the image. Either this or `channel` must be specified. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageTimeouts">DataHcpPackerImageTimeouts</a></code> | timeouts block. |
 
@@ -861,10 +861,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -928,7 +928,7 @@ public string BucketName { get; set; }
 
 The slug of the HCP Packer Registry image bucket to pull from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#bucket_name DataHcpPackerImage#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#bucket_name DataHcpPackerImage#bucket_name}
 
 ---
 
@@ -942,7 +942,7 @@ public string CloudProvider { get; set; }
 
 Name of the cloud provider this image is stored-in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#cloud_provider DataHcpPackerImage#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#cloud_provider DataHcpPackerImage#cloud_provider}
 
 ---
 
@@ -956,7 +956,7 @@ public string Region { get; set; }
 
 Region this image is stored in, if any.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#region DataHcpPackerImage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#region DataHcpPackerImage#region}
 
 ---
 
@@ -972,7 +972,7 @@ The channel that points to the version of the image being retrieved.
 
 Either this or `iteration_id` must be specified. Note: will incur a billable request
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#channel DataHcpPackerImage#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#channel DataHcpPackerImage#channel}
 
 ---
 
@@ -986,7 +986,7 @@ public string ComponentType { get; set; }
 
 Name of the builder that built this image. Ex: `amazon-ebs.example`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#component_type DataHcpPackerImage#component_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#component_type DataHcpPackerImage#component_type}
 
 ---
 
@@ -998,7 +998,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#id DataHcpPackerImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#id DataHcpPackerImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1015,7 +1015,7 @@ public string IterationId { get; set; }
 
 The iteration from which to get the image. Either this or `channel` must be specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#iteration_id DataHcpPackerImage#iteration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#iteration_id DataHcpPackerImage#iteration_id}
 
 ---
 
@@ -1029,7 +1029,7 @@ public DataHcpPackerImageTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#timeouts DataHcpPackerImage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#timeouts DataHcpPackerImage#timeouts}
 
 ---
 
@@ -1049,7 +1049,7 @@ new DataHcpPackerImageTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#default DataHcpPackerImage#default}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#default DataHcpPackerImage#default}. |
 
 ---
 
@@ -1061,7 +1061,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/packer_image#default DataHcpPackerImage#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image#default DataHcpPackerImage#default}.
 
 ---
 

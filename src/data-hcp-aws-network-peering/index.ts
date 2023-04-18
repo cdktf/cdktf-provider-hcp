@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcp/d/aws_network_peering
+// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataHcpAwsNetworkPeeringConfig extends cdktf.TerraformMetaArgum
   /**
   * The ID of the HashiCorp Virtual Network (HVN).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering#hvn_id DataHcpAwsNetworkPeering#hvn_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering#hvn_id DataHcpAwsNetworkPeering#hvn_id}
   */
   readonly hvnId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering#id DataHcpAwsNetworkPeering#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering#id DataHcpAwsNetworkPeering#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,30 +23,30 @@ export interface DataHcpAwsNetworkPeeringConfig extends cdktf.TerraformMetaArgum
   /**
   * The ID of the network peering.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering#peering_id DataHcpAwsNetworkPeering#peering_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering#peering_id DataHcpAwsNetworkPeering#peering_id}
   */
   readonly peeringId: string;
   /**
   * If `true`, Terraform will wait for the network peering to reach an `ACTIVE` state before continuing. Default `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering#wait_for_active_state DataHcpAwsNetworkPeering#wait_for_active_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering#wait_for_active_state DataHcpAwsNetworkPeering#wait_for_active_state}
   */
   readonly waitForActiveState?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering#timeouts DataHcpAwsNetworkPeering#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering#timeouts DataHcpAwsNetworkPeering#timeouts}
   */
   readonly timeouts?: DataHcpAwsNetworkPeeringTimeouts;
 }
 export interface DataHcpAwsNetworkPeeringTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering#read DataHcpAwsNetworkPeering#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering#read DataHcpAwsNetworkPeering#read}
   */
   readonly read?: string;
 }
 
-export function dataHcpAwsNetworkPeeringTimeoutsToTerraform(struct?: DataHcpAwsNetworkPeeringTimeoutsOutputReference | DataHcpAwsNetworkPeeringTimeouts | cdktf.IResolvable): any {
+export function dataHcpAwsNetworkPeeringTimeoutsToTerraform(struct?: DataHcpAwsNetworkPeeringTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -65,7 +65,7 @@ export class DataHcpAwsNetworkPeeringTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataHcpAwsNetworkPeeringTimeouts | cdktf.IResolvable | undefined {
@@ -116,7 +116,7 @@ export class DataHcpAwsNetworkPeeringTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering hcp_aws_network_peering}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering hcp_aws_network_peering}
 */
 export class DataHcpAwsNetworkPeering extends cdktf.TerraformDataSource {
 
@@ -130,7 +130,7 @@ export class DataHcpAwsNetworkPeering extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering hcp_aws_network_peering} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering hcp_aws_network_peering} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

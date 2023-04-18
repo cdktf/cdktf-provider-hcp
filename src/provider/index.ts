@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcp
+// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface HcpProviderConfig {
   /**
   * The OAuth2 Client ID for API operations.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp#client_id HcpProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#client_id HcpProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * The OAuth2 Client Secret for API operations.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp#client_secret HcpProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#client_secret HcpProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp#alias HcpProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#alias HcpProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcp hcp}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp}
 */
 export class HcpProvider extends cdktf.TerraformProvider {
 
@@ -42,7 +42,7 @@ export class HcpProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcp hcp} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

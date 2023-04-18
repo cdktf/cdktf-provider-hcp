@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection
+// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface DataHcpHvnPeeringConnectionConfig extends cdktf.TerraformMetaAr
   /**
   * The unique URL of one of the HVNs being peered.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection#hvn_1 DataHcpHvnPeeringConnection#hvn_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#hvn_1 DataHcpHvnPeeringConnection#hvn_1}
   */
   readonly hvn1: string;
   /**
   * The unique URL of one of the HVNs being peered.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection#hvn_2 DataHcpHvnPeeringConnection#hvn_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#hvn_2 DataHcpHvnPeeringConnection#hvn_2}
   */
   readonly hvn2: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection#id DataHcpHvnPeeringConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#id DataHcpHvnPeeringConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,24 +29,24 @@ export interface DataHcpHvnPeeringConnectionConfig extends cdktf.TerraformMetaAr
   /**
   * The ID of the peering connection.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection#peering_id DataHcpHvnPeeringConnection#peering_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#peering_id DataHcpHvnPeeringConnection#peering_id}
   */
   readonly peeringId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection#timeouts DataHcpHvnPeeringConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#timeouts DataHcpHvnPeeringConnection#timeouts}
   */
   readonly timeouts?: DataHcpHvnPeeringConnectionTimeouts;
 }
 export interface DataHcpHvnPeeringConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection#default DataHcpHvnPeeringConnection#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#default DataHcpHvnPeeringConnection#default}
   */
   readonly default?: string;
 }
 
-export function dataHcpHvnPeeringConnectionTimeoutsToTerraform(struct?: DataHcpHvnPeeringConnectionTimeoutsOutputReference | DataHcpHvnPeeringConnectionTimeouts | cdktf.IResolvable): any {
+export function dataHcpHvnPeeringConnectionTimeoutsToTerraform(struct?: DataHcpHvnPeeringConnectionTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -65,7 +65,7 @@ export class DataHcpHvnPeeringConnectionTimeoutsOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataHcpHvnPeeringConnectionTimeouts | cdktf.IResolvable | undefined {
@@ -116,7 +116,7 @@ export class DataHcpHvnPeeringConnectionTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection hcp_hvn_peering_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection}
 */
 export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
 
@@ -130,7 +130,7 @@ export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection hcp_hvn_peering_connection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

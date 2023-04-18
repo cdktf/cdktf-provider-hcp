@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcp/r/hvn
+// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface HvnConfig extends cdktf.TerraformMetaArguments {
   /**
   * The CIDR range of the HVN. If this is not provided, the service will provide a default value.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/hvn#cidr_block Hvn#cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#cidr_block Hvn#cidr_block}
   */
   readonly cidrBlock?: string;
   /**
   * The provider where the HVN is located. The provider 'aws' is generally available and 'azure' is in public beta.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/hvn#cloud_provider Hvn#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#cloud_provider Hvn#cloud_provider}
   */
   readonly cloudProvider: string;
   /**
   * The ID of the HashiCorp Virtual Network (HVN).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/hvn#hvn_id Hvn#hvn_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#hvn_id Hvn#hvn_id}
   */
   readonly hvnId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/hvn#id Hvn#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#id Hvn#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,32 +35,32 @@ export interface HvnConfig extends cdktf.TerraformMetaArguments {
   /**
   * The region where the HVN is located.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/hvn#region Hvn#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#region Hvn#region}
   */
   readonly region: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/hvn#timeouts Hvn#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#timeouts Hvn#timeouts}
   */
   readonly timeouts?: HvnTimeouts;
 }
 export interface HvnTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/hvn#create Hvn#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#create Hvn#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/hvn#default Hvn#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#default Hvn#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/hvn#delete Hvn#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#delete Hvn#delete}
   */
   readonly delete?: string;
 }
 
-export function hvnTimeoutsToTerraform(struct?: HvnTimeoutsOutputReference | HvnTimeouts | cdktf.IResolvable): any {
+export function hvnTimeoutsToTerraform(struct?: HvnTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -81,7 +81,7 @@ export class HvnTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): HvnTimeouts | cdktf.IResolvable | undefined {
@@ -176,7 +176,7 @@ export class HvnTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcp/r/hvn hcp_hvn}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn hcp_hvn}
 */
 export class Hvn extends cdktf.TerraformResource {
 
@@ -190,7 +190,7 @@ export class Hvn extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcp/r/hvn hcp_hvn} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn hcp_hvn} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

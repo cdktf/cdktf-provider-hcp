@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcp/d/consul_agent_kubernetes_secret
+// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_kubernetes_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataHcpConsulAgentKubernetesSecretConfig extends cdktf.Terrafor
   /**
   * The ID of the HCP Consul cluster.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/consul_agent_kubernetes_secret#cluster_id DataHcpConsulAgentKubernetesSecret#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_kubernetes_secret#cluster_id DataHcpConsulAgentKubernetesSecret#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/consul_agent_kubernetes_secret#id DataHcpConsulAgentKubernetesSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_kubernetes_secret#id DataHcpConsulAgentKubernetesSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,18 +23,18 @@ export interface DataHcpConsulAgentKubernetesSecretConfig extends cdktf.Terrafor
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/consul_agent_kubernetes_secret#timeouts DataHcpConsulAgentKubernetesSecret#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_kubernetes_secret#timeouts DataHcpConsulAgentKubernetesSecret#timeouts}
   */
   readonly timeouts?: DataHcpConsulAgentKubernetesSecretTimeouts;
 }
 export interface DataHcpConsulAgentKubernetesSecretTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/d/consul_agent_kubernetes_secret#default DataHcpConsulAgentKubernetesSecret#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_kubernetes_secret#default DataHcpConsulAgentKubernetesSecret#default}
   */
   readonly default?: string;
 }
 
-export function dataHcpConsulAgentKubernetesSecretTimeoutsToTerraform(struct?: DataHcpConsulAgentKubernetesSecretTimeoutsOutputReference | DataHcpConsulAgentKubernetesSecretTimeouts | cdktf.IResolvable): any {
+export function dataHcpConsulAgentKubernetesSecretTimeoutsToTerraform(struct?: DataHcpConsulAgentKubernetesSecretTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -53,7 +53,7 @@ export class DataHcpConsulAgentKubernetesSecretTimeoutsOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataHcpConsulAgentKubernetesSecretTimeouts | cdktf.IResolvable | undefined {
@@ -104,7 +104,7 @@ export class DataHcpConsulAgentKubernetesSecretTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcp/d/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret}
 */
 export class DataHcpConsulAgentKubernetesSecret extends cdktf.TerraformDataSource {
 
@@ -118,7 +118,7 @@ export class DataHcpConsulAgentKubernetesSecret extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcp/d/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

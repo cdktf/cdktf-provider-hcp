@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/hcp/r/packer_channel
+// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface PackerChannelConfig extends cdktf.TerraformMetaArguments {
   /**
   * The slug of the HCP Packer Registry image bucket where the channel should be created in.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#bucket_name PackerChannel#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#bucket_name PackerChannel#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#id PackerChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#id PackerChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,19 +23,19 @@ export interface PackerChannelConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the channel being managed.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#name PackerChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#name PackerChannel#name}
   */
   readonly name: string;
   /**
   * iteration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#iteration PackerChannel#iteration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#iteration PackerChannel#iteration}
   */
   readonly iteration?: PackerChannelIteration;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#timeouts PackerChannel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#timeouts PackerChannel#timeouts}
   */
   readonly timeouts?: PackerChannelTimeouts;
 }
@@ -43,13 +43,13 @@ export interface PackerChannelIteration {
   /**
   * The fingerprint of the iteration assigned to the channel.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#fingerprint PackerChannel#fingerprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#fingerprint PackerChannel#fingerprint}
   */
   readonly fingerprint?: string;
   /**
   * The ID of the iteration assigned to the channel.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#id PackerChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#id PackerChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,7 +58,7 @@ export interface PackerChannelIteration {
   /**
   * The incremental_version of the iteration assigned to the channel.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#incremental_version PackerChannel#incremental_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#incremental_version PackerChannel#incremental_version}
   */
   readonly incrementalVersion?: number;
 }
@@ -169,24 +169,24 @@ export class PackerChannelIterationOutputReference extends cdktf.ComplexObject {
 }
 export interface PackerChannelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#create PackerChannel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#create PackerChannel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#default PackerChannel#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#default PackerChannel#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#delete PackerChannel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#delete PackerChannel#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#update PackerChannel#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel#update PackerChannel#update}
   */
   readonly update?: string;
 }
 
-export function packerChannelTimeoutsToTerraform(struct?: PackerChannelTimeoutsOutputReference | PackerChannelTimeouts | cdktf.IResolvable): any {
+export function packerChannelTimeoutsToTerraform(struct?: PackerChannelTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -208,7 +208,7 @@ export class PackerChannelTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): PackerChannelTimeouts | cdktf.IResolvable | undefined {
@@ -325,7 +325,7 @@ export class PackerChannelTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel hcp_packer_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel hcp_packer_channel}
 */
 export class PackerChannel extends cdktf.TerraformResource {
 
@@ -339,7 +339,7 @@ export class PackerChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel hcp_packer_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel hcp_packer_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
