@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 datahcppackerimageiteration.NewDataHcpPackerImageIteration(scope Construct, id *string, config DataHcpPackerImageIterationConfig) DataHcpPackerImageIteration
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 datahcppackerimageiteration.DataHcpPackerImageIteration_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 datahcppackerimageiteration.DataHcpPackerImageIteration_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datahcppackerimageiteration.DataHcpPackerImageIteration_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 datahcppackerimageiteration.DataHcpPackerImageIteration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIterationBuilds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 &datahcppackerimageiteration.DataHcpPackerImageIterationBuilds {
 
@@ -687,7 +687,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteratio
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIterationBuildsImages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 &datahcppackerimageiteration.DataHcpPackerImageIterationBuildsImages {
 
@@ -700,7 +700,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteratio
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIterationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 &datahcppackerimageiteration.DataHcpPackerImageIterationConfig {
 	Connection: interface{},
@@ -713,7 +713,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteratio
 	BucketName: *string,
 	Channel: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v4.dataHcpPackerImageIteration.DataHcpPackerImageIterationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.dataHcpPackerImageIteration.DataHcpPackerImageIterationTimeouts,
 }
 ```
 
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIterationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 &datahcppackerimageiteration.DataHcpPackerImageIterationTimeouts {
 	Default: *string,
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIterationBuildsImagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 datahcppackerimageiteration.NewDataHcpPackerImageIterationBuildsImagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpPackerImageIterationBuildsImagesList
 ```
@@ -1033,7 +1033,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIterationBuildsImagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 datahcppackerimageiteration.NewDataHcpPackerImageIterationBuildsImagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpPackerImageIterationBuildsImagesOutputReference
 ```
@@ -1344,7 +1344,7 @@ func InternalValue() DataHcpPackerImageIterationBuildsImages
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIterationBuildsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 datahcppackerimageiteration.NewDataHcpPackerImageIterationBuildsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpPackerImageIterationBuildsList
 ```
@@ -1476,7 +1476,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIterationBuildsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 datahcppackerimageiteration.NewDataHcpPackerImageIterationBuildsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpPackerImageIterationBuildsOutputReference
 ```
@@ -1842,7 +1842,7 @@ func InternalValue() DataHcpPackerImageIterationBuilds
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIterationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcppackerimageiteration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration"
 
 datahcppackerimageiteration.NewDataHcpPackerImageIterationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpPackerImageIterationTimeoutsOutputReference
 ```
