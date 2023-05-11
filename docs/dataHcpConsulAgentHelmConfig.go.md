@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpconsulagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.NewDataHcpConsulAgentHelmConfig(scope Construct, id *string, config DataHcpConsulAgentHelmConfigConfig) DataHcpConsulAgentHelmConfig
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpconsulagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfig_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpconsulagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfig_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpconsulagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -648,7 +648,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpconsulagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulagenthelmconfig"
 
 &datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfigConfig {
 	Connection: interface{},
@@ -662,7 +662,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpconsulagenthelmconf
 	KubernetesEndpoint: *string,
 	ExposeGossipPorts: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v4.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfigTimeouts,
 }
 ```
 
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpconsulagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulagenthelmconfig"
 
 &datahcpconsulagenthelmconfig.DataHcpConsulAgentHelmConfigTimeouts {
 	Default: *string,
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpconsulagenthelmconfig"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulagenthelmconfig"
 
 datahcpconsulagenthelmconfig.NewDataHcpConsulAgentHelmConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpConsulAgentHelmConfigTimeoutsOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.NewAwsNetworkPeering(scope Construct, id *string, config AwsNetworkPeeringConfig) AwsNetworkPeering
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ awsnetworkpeering.AwsNetworkPeering_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_IsTerraformResource(x interface{}) *bool
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 &awsnetworkpeering.AwsNetworkPeeringConfig {
 	Connection: interface{},
@@ -789,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/awsnetworkpeering"
 	PeerVpcId: *string,
 	PeerVpcRegion: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v4.awsNetworkPeering.AwsNetworkPeeringTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts,
 }
 ```
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 &awsnetworkpeering.AwsNetworkPeeringTimeouts {
 	Create: *string,
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.NewAwsNetworkPeeringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AwsNetworkPeeringTimeoutsOutputReference
 ```
