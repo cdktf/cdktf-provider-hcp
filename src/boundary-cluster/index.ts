@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster
+// https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface BoundaryClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the Boundary cluster
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#cluster_id BoundaryCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster#cluster_id BoundaryCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#id BoundaryCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster#id BoundaryCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,33 +23,39 @@ export interface BoundaryClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The password of the initial admin user. This must be at least 8 characters in length. Note that this may show up in logs, and it will be stored in the state file.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#password BoundaryCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster#password BoundaryCluster#password}
   */
   readonly password: string;
   /**
+  * The ID of the HCP project where the Boundary cluster is located.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster#project_id BoundaryCluster#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * The username of the initial admin user. This must be at least 3 characters in length, alphanumeric, hyphen, or period.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#username BoundaryCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster#username BoundaryCluster#username}
   */
   readonly username: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#timeouts BoundaryCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster#timeouts BoundaryCluster#timeouts}
   */
   readonly timeouts?: BoundaryClusterTimeouts;
 }
 export interface BoundaryClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#create BoundaryCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster#create BoundaryCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#default BoundaryCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster#default BoundaryCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#delete BoundaryCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster#delete BoundaryCluster#delete}
   */
   readonly delete?: string;
 }
@@ -170,7 +176,7 @@ export class BoundaryClusterTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster hcp_boundary_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster hcp_boundary_cluster}
 */
 export class BoundaryCluster extends cdktf.TerraformResource {
 
@@ -184,7 +190,7 @@ export class BoundaryCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -195,7 +201,7 @@ export class BoundaryCluster extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_boundary_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.57.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -209,6 +215,7 @@ export class BoundaryCluster extends cdktf.TerraformResource {
     this._clusterId = config.clusterId;
     this._id = config.id;
     this._password = config.password;
+    this._projectId = config.projectId;
     this._username = config.username;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -269,6 +276,22 @@ export class BoundaryCluster extends cdktf.TerraformResource {
     return this._password;
   }
 
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
@@ -312,6 +335,7 @@ export class BoundaryCluster extends cdktf.TerraformResource {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       id: cdktf.stringToTerraform(this._id),
       password: cdktf.stringToTerraform(this._password),
+      project_id: cdktf.stringToTerraform(this._projectId),
       username: cdktf.stringToTerraform(this._username),
       timeouts: boundaryClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -1,6 +1,6 @@
 # `hcp_hvn`
 
-Refer to the Terraform Registory for docs: [`hcp_hvn`](https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn).
+Refer to the Terraform Registory for docs: [`hcp_hvn`](https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn).
 
 # `hvn` Submodule <a name="`hvn` Submodule" id="@cdktf/provider-hcp.hvn"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp_hvn`](https://registry.terrafor
 
 ### Hvn <a name="Hvn" id="@cdktf/provider-hcp.hvn.Hvn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn hcp_hvn}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn hcp_hvn}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.hvn.Hvn.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.resetCidrBlock">ResetCidrBlock</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.resetProjectId">ResetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -285,6 +286,12 @@ private void ResetCidrBlock()
 private void ResetId()
 ```
 
+##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-hcp.hvn.Hvn.resetProjectId"></a>
+
+```csharp
+private void ResetProjectId()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-hcp.hvn.Hvn.resetTimeouts"></a>
 
 ```csharp
@@ -381,7 +388,6 @@ Hvn.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.organizationId">OrganizationId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.providerAccountId">ProviderAccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.selfLink">SelfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.state">State</a></code> | <code>string</code> | *No description.* |
@@ -390,12 +396,14 @@ Hvn.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.cloudProviderInput">CloudProviderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.hvnIdInput">HvnIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.cloudProvider">CloudProvider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.hvnId">HvnId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -562,16 +570,6 @@ public string OrganizationId { get; }
 
 ---
 
-##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-hcp.hvn.Hvn.property.projectId"></a>
-
-```csharp
-public string ProjectId { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `ProviderAccountId`<sup>Required</sup> <a name="ProviderAccountId" id="@cdktf/provider-hcp.hvn.Hvn.property.providerAccountId"></a>
 
 ```csharp
@@ -652,6 +650,16 @@ public string IdInput { get; }
 
 ---
 
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-hcp.hvn.Hvn.property.projectIdInput"></a>
+
+```csharp
+public string ProjectIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-hcp.hvn.Hvn.property.regionInput"></a>
 
 ```csharp
@@ -712,6 +720,16 @@ public string Id { get; }
 
 ---
 
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-hcp.hvn.Hvn.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-hcp.hvn.Hvn.property.region"></a>
 
 ```csharp
@@ -762,6 +780,7 @@ new HvnConfig {
     string Region,
     string CidrBlock = null,
     string Id = null,
+    string ProjectId = null,
     HvnTimeouts Timeouts = null
 };
 ```
@@ -781,7 +800,8 @@ new HvnConfig {
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.hvnId">HvnId</a></code> | <code>string</code> | The ID of the HashiCorp Virtual Network (HVN). |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.region">Region</a></code> | <code>string</code> | The region where the HVN is located. |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | The CIDR range of the HVN. If this is not provided, the service will provide a default value. |
-| <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#id Hvn#id}. |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#id Hvn#id}. |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The ID of the HCP project where the HVN is located. |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a></code> | timeouts block. |
 
 ---
@@ -866,7 +886,7 @@ public string CloudProvider { get; set; }
 
 The provider where the HVN is located. The provider 'aws' is generally available and 'azure' is in public beta.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#cloud_provider Hvn#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#cloud_provider Hvn#cloud_provider}
 
 ---
 
@@ -880,7 +900,7 @@ public string HvnId { get; set; }
 
 The ID of the HashiCorp Virtual Network (HVN).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#hvn_id Hvn#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#hvn_id Hvn#hvn_id}
 
 ---
 
@@ -894,7 +914,7 @@ public string Region { get; set; }
 
 The region where the HVN is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#region Hvn#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#region Hvn#region}
 
 ---
 
@@ -908,7 +928,7 @@ public string CidrBlock { get; set; }
 
 The CIDR range of the HVN. If this is not provided, the service will provide a default value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#cidr_block Hvn#cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#cidr_block Hvn#cidr_block}
 
 ---
 
@@ -920,10 +940,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#id Hvn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#id Hvn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-hcp.hvn.HvnConfig.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; set; }
+```
+
+- *Type:* string
+
+The ID of the HCP project where the HVN is located.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#project_id Hvn#project_id}
 
 ---
 
@@ -937,7 +971,7 @@ public HvnTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#timeouts Hvn#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#timeouts Hvn#timeouts}
 
 ---
 
@@ -959,9 +993,9 @@ new HvnTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#create Hvn#create}. |
-| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#default Hvn#default}. |
-| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#delete Hvn#delete}. |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#create Hvn#create}. |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#default Hvn#default}. |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#delete Hvn#delete}. |
 
 ---
 
@@ -973,7 +1007,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#create Hvn#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#create Hvn#create}.
 
 ---
 
@@ -985,7 +1019,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#default Hvn#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#default Hvn#default}.
 
 ---
 
@@ -997,7 +1031,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn#delete Hvn#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/hvn#delete Hvn#delete}.
 
 ---
 

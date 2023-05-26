@@ -1,6 +1,6 @@
 # `hcp_consul_cluster`
 
-Refer to the Terraform Registory for docs: [`hcp_consul_cluster`](https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster).
+Refer to the Terraform Registory for docs: [`hcp_consul_cluster`](https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster).
 
 # `consulCluster` Submodule <a name="`consulCluster` Submodule" id="@cdktf/provider-hcp.consulCluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp_consul_cluster`](https://regist
 
 ### ConsulCluster <a name="ConsulCluster" id="@cdktf/provider-hcp.consulCluster.ConsulCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster hcp_consul_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster hcp_consul_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.resetIpAllowlist">ResetIpAllowlist</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.resetMinConsulVersion">ResetMinConsulVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.resetPrimaryLink">ResetPrimaryLink</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.resetProjectId">ResetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.resetPublicEndpoint">ResetPublicEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.resetSize">ResetSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -335,6 +336,12 @@ private void ResetMinConsulVersion()
 private void ResetPrimaryLink()
 ```
 
+##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.resetProjectId"></a>
+
+```csharp
+private void ResetProjectId()
+```
+
 ##### `ResetPublicEndpoint` <a name="ResetPublicEndpoint" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.resetPublicEndpoint"></a>
 
 ```csharp
@@ -454,7 +461,6 @@ ConsulCluster.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.consulVersion">ConsulVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.ipAllowlist">IpAllowlist</a></code> | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList">ConsulClusterIpAllowlistList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.organizationId">OrganizationId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.scale">Scale</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.selfLink">SelfLink</a></code> | <code>string</code> | *No description.* |
@@ -469,6 +475,7 @@ ConsulCluster.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.ipAllowlistInput">IpAllowlistInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.minConsulVersionInput">MinConsulVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.primaryLinkInput">PrimaryLinkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.publicEndpointInput">PublicEndpointInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.sizeInput">SizeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.tierInput">TierInput</a></code> | <code>string</code> | *No description.* |
@@ -481,6 +488,7 @@ ConsulCluster.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.minConsulVersion">MinConsulVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.primaryLink">PrimaryLink</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.publicEndpoint">PublicEndpoint</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.size">Size</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.tier">Tier</a></code> | <code>string</code> | *No description.* |
@@ -759,16 +767,6 @@ public string OrganizationId { get; }
 
 ---
 
-##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.property.projectId"></a>
-
-```csharp
-public string ProjectId { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.property.region"></a>
 
 ```csharp
@@ -909,6 +907,16 @@ public string PrimaryLinkInput { get; }
 
 ---
 
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.property.projectIdInput"></a>
+
+```csharp
+public string ProjectIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `PublicEndpointInput`<sup>Optional</sup> <a name="PublicEndpointInput" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.property.publicEndpointInput"></a>
 
 ```csharp
@@ -1029,6 +1037,16 @@ public string PrimaryLink { get; }
 
 ---
 
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `PublicEndpoint`<sup>Required</sup> <a name="PublicEndpoint" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.property.publicEndpoint"></a>
 
 ```csharp
@@ -1104,6 +1122,7 @@ new ConsulClusterConfig {
     object IpAllowlist = null,
     string MinConsulVersion = null,
     string PrimaryLink = null,
+    string ProjectId = null,
     object PublicEndpoint = null,
     string Size = null,
     ConsulClusterTimeouts Timeouts = null
@@ -1127,10 +1146,11 @@ new ConsulClusterConfig {
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.autoHvnToHvnPeering">AutoHvnToHvnPeering</a></code> | <code>object</code> | Enables automatic HVN to HVN peering when creating a secondary cluster in a federation. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.connectEnabled">ConnectEnabled</a></code> | <code>object</code> | Denotes the Consul connect feature should be enabled for this cluster.  Default to true. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | The Consul data center name of the cluster. If not specified, it is defaulted to the value of `cluster_id`. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#id ConsulCluster#id}. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#id ConsulCluster#id}. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.ipAllowlist">IpAllowlist</a></code> | <code>object</code> | ip_allowlist block. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.minConsulVersion">MinConsulVersion</a></code> | <code>string</code> | The minimum Consul patch version of the cluster. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.primaryLink">PrimaryLink</a></code> | <code>string</code> | The `self_link` of the HCP Consul cluster which is the primary in the federation setup with this HCP Consul cluster. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The ID of the HCP project where the HCP Consul cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.publicEndpoint">PublicEndpoint</a></code> | <code>object</code> | Denotes that the cluster has a public endpoint for the Consul UI. Defaults to false. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.size">Size</a></code> | <code>string</code> | The t-shirt size representation of each server VM that this Consul cluster is provisioned with. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts">ConsulClusterTimeouts</a></code> | timeouts block. |
@@ -1217,7 +1237,7 @@ public string ClusterId { get; set; }
 
 The ID of the HCP Consul cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#cluster_id ConsulCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#cluster_id ConsulCluster#cluster_id}
 
 ---
 
@@ -1231,7 +1251,7 @@ public string HvnId { get; set; }
 
 The ID of the HVN this HCP Consul cluster is associated to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#hvn_id ConsulCluster#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#hvn_id ConsulCluster#hvn_id}
 
 ---
 
@@ -1247,7 +1267,7 @@ The tier that the HCP Consul cluster will be provisioned as.
 
 Only `development`, `standard` and `plus` are available at this time. See [pricing information](https://www.hashicorp.com/products/consul/pricing).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#tier ConsulCluster#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#tier ConsulCluster#tier}
 
 ---
 
@@ -1263,7 +1283,7 @@ Enables automatic HVN to HVN peering when creating a secondary cluster in a fede
 
 The alternative to using the auto-accept feature is to create an [`hcp_hvn_peering_connection`](hvn_peering_connection.md) resource that explicitly defines the HVN resources that are allowed to communicate with each other.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#auto_hvn_to_hvn_peering ConsulCluster#auto_hvn_to_hvn_peering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#auto_hvn_to_hvn_peering ConsulCluster#auto_hvn_to_hvn_peering}
 
 ---
 
@@ -1277,7 +1297,7 @@ public object ConnectEnabled { get; set; }
 
 Denotes the Consul connect feature should be enabled for this cluster.  Default to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#connect_enabled ConsulCluster#connect_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#connect_enabled ConsulCluster#connect_enabled}
 
 ---
 
@@ -1291,7 +1311,7 @@ public string Datacenter { get; set; }
 
 The Consul data center name of the cluster. If not specified, it is defaulted to the value of `cluster_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#datacenter ConsulCluster#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#datacenter ConsulCluster#datacenter}
 
 ---
 
@@ -1303,7 +1323,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#id ConsulCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#id ConsulCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1320,7 +1340,7 @@ public object IpAllowlist { get; set; }
 
 ip_allowlist block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#ip_allowlist ConsulCluster#ip_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#ip_allowlist ConsulCluster#ip_allowlist}
 
 ---
 
@@ -1336,7 +1356,7 @@ The minimum Consul patch version of the cluster.
 
 Allows only the rightmost version component to increment (E.g: `1.13.0` will allow installation of `1.13.2` and `1.13.3` etc., but not `1.14.0`). If not specified, it is defaulted to the version that is currently recommended by HCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#min_consul_version ConsulCluster#min_consul_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#min_consul_version ConsulCluster#min_consul_version}
 
 ---
 
@@ -1352,7 +1372,21 @@ The `self_link` of the HCP Consul cluster which is the primary in the federation
 
 If not specified, it is a standalone cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#primary_link ConsulCluster#primary_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#primary_link ConsulCluster#primary_link}
+
+---
+
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; set; }
+```
+
+- *Type:* string
+
+The ID of the HCP project where the HCP Consul cluster is located.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#project_id ConsulCluster#project_id}
 
 ---
 
@@ -1366,7 +1400,7 @@ public object PublicEndpoint { get; set; }
 
 Denotes that the cluster has a public endpoint for the Consul UI. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#public_endpoint ConsulCluster#public_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#public_endpoint ConsulCluster#public_endpoint}
 
 ---
 
@@ -1382,7 +1416,7 @@ The t-shirt size representation of each server VM that this Consul cluster is pr
 
 Valid option for development tier - `x_small`. Valid options for other tiers - `small`, `medium`, `large`. For more details - https://cloud.hashicorp.com/pricing/consul. Upgrading the size of a cluster after creation is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#size ConsulCluster#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#size ConsulCluster#size}
 
 ---
 
@@ -1396,7 +1430,7 @@ public ConsulClusterTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#timeouts ConsulCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#timeouts ConsulCluster#timeouts}
 
 ---
 
@@ -1432,7 +1466,7 @@ public string Address { get; set; }
 
 IP address range in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#address ConsulCluster#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#address ConsulCluster#address}
 
 ---
 
@@ -1446,7 +1480,7 @@ public string Description { get; set; }
 
 Description to help identify source (maximum 255 chars).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#description ConsulCluster#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#description ConsulCluster#description}
 
 ---
 
@@ -1469,10 +1503,10 @@ new ConsulClusterTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#create ConsulCluster#create}. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#default ConsulCluster#default}. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#delete ConsulCluster#delete}. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#update ConsulCluster#update}. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#create ConsulCluster#create}. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#default ConsulCluster#default}. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#delete ConsulCluster#delete}. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#update ConsulCluster#update}. |
 
 ---
 
@@ -1484,7 +1518,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#create ConsulCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#create ConsulCluster#create}.
 
 ---
 
@@ -1496,7 +1530,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#default ConsulCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#default ConsulCluster#default}.
 
 ---
 
@@ -1508,7 +1542,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#delete ConsulCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#delete ConsulCluster#delete}.
 
 ---
 
@@ -1520,7 +1554,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster#update ConsulCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/consul_cluster#update ConsulCluster#update}.
 
 ---
 

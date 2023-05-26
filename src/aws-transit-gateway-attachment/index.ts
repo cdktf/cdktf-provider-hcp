@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment
+// https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,52 +10,58 @@ export interface AwsTransitGatewayAttachmentConfig extends cdktf.TerraformMetaAr
   /**
   * The ID of the HashiCorp Virtual Network (HVN).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment#hvn_id AwsTransitGatewayAttachment#hvn_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment#hvn_id AwsTransitGatewayAttachment#hvn_id}
   */
   readonly hvnId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment#id AwsTransitGatewayAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment#id AwsTransitGatewayAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The ID of the HCP project where the transit gateway attachment is located.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment#project_id AwsTransitGatewayAttachment#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * The Amazon Resource Name (ARN) of the Resource Share that is needed to grant HCP access to the transit gateway in AWS. The Resource Share should be associated with the HCP AWS account principal (see [aws_ram_principal_association](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ram_principal_association)) and the transit gateway resource (see [aws_ram_resource_association](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ram_resource_association))
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment#resource_share_arn AwsTransitGatewayAttachment#resource_share_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment#resource_share_arn AwsTransitGatewayAttachment#resource_share_arn}
   */
   readonly resourceShareArn: string;
   /**
   * The user-settable name of the transit gateway attachment in HCP.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment#transit_gateway_attachment_id AwsTransitGatewayAttachment#transit_gateway_attachment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment#transit_gateway_attachment_id AwsTransitGatewayAttachment#transit_gateway_attachment_id}
   */
   readonly transitGatewayAttachmentId: string;
   /**
   * The ID of the user-owned transit gateway in AWS. The AWS region of the transit gateway must match the HVN.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment#transit_gateway_id AwsTransitGatewayAttachment#transit_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment#transit_gateway_id AwsTransitGatewayAttachment#transit_gateway_id}
   */
   readonly transitGatewayId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment#timeouts AwsTransitGatewayAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment#timeouts AwsTransitGatewayAttachment#timeouts}
   */
   readonly timeouts?: AwsTransitGatewayAttachmentTimeouts;
 }
 export interface AwsTransitGatewayAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment#create AwsTransitGatewayAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment#create AwsTransitGatewayAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment#default AwsTransitGatewayAttachment#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment#default AwsTransitGatewayAttachment#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment#delete AwsTransitGatewayAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment#delete AwsTransitGatewayAttachment#delete}
   */
   readonly delete?: string;
 }
@@ -176,7 +182,7 @@ export class AwsTransitGatewayAttachmentTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment}
 */
 export class AwsTransitGatewayAttachment extends cdktf.TerraformResource {
 
@@ -190,7 +196,7 @@ export class AwsTransitGatewayAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -201,7 +207,7 @@ export class AwsTransitGatewayAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_aws_transit_gateway_attachment',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.57.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -214,6 +220,7 @@ export class AwsTransitGatewayAttachment extends cdktf.TerraformResource {
     });
     this._hvnId = config.hvnId;
     this._id = config.id;
+    this._projectId = config.projectId;
     this._resourceShareArn = config.resourceShareArn;
     this._transitGatewayAttachmentId = config.transitGatewayAttachmentId;
     this._transitGatewayId = config.transitGatewayId;
@@ -268,9 +275,20 @@ export class AwsTransitGatewayAttachment extends cdktf.TerraformResource {
     return this.getStringAttribute('organization_id');
   }
 
-  // project_id - computed: true, optional: false, required: false
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
   }
 
   // provider_transit_gateway_attachment_id - computed: true, optional: false, required: false
@@ -351,6 +369,7 @@ export class AwsTransitGatewayAttachment extends cdktf.TerraformResource {
     return {
       hvn_id: cdktf.stringToTerraform(this._hvnId),
       id: cdktf.stringToTerraform(this._id),
+      project_id: cdktf.stringToTerraform(this._projectId),
       resource_share_arn: cdktf.stringToTerraform(this._resourceShareArn),
       transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),

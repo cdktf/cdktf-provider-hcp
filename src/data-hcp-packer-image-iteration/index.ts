@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image_iteration
+// https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/packer_image_iteration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,26 +10,32 @@ export interface DataHcpPackerImageIterationConfig extends cdktf.TerraformMetaAr
   /**
   * The slug of the HCP Packer Registry image bucket to pull from.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image_iteration#bucket_name DataHcpPackerImageIteration#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/packer_image_iteration#bucket_name DataHcpPackerImageIteration#bucket_name}
   */
   readonly bucketName: string;
   /**
   * The channel that points to the version of the image you want.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image_iteration#channel DataHcpPackerImageIteration#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/packer_image_iteration#channel DataHcpPackerImageIteration#channel}
   */
   readonly channel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image_iteration#id DataHcpPackerImageIteration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/packer_image_iteration#id DataHcpPackerImageIteration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The ID of the HCP project where the HCP Packer registry is located.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/packer_image_iteration#project_id DataHcpPackerImageIteration#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image_iteration#timeouts DataHcpPackerImageIteration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/packer_image_iteration#timeouts DataHcpPackerImageIteration#timeouts}
   */
   readonly timeouts?: DataHcpPackerImageIterationTimeouts;
 }
@@ -220,7 +226,7 @@ export class DataHcpPackerImageIterationBuildsList extends cdktf.ComplexList {
 }
 export interface DataHcpPackerImageIterationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image_iteration#default DataHcpPackerImageIteration#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/packer_image_iteration#default DataHcpPackerImageIteration#default}
   */
   readonly default?: string;
 }
@@ -295,7 +301,7 @@ export class DataHcpPackerImageIterationTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image_iteration hcp_packer_image_iteration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/packer_image_iteration hcp_packer_image_iteration}
 */
 export class DataHcpPackerImageIteration extends cdktf.TerraformDataSource {
 
@@ -309,7 +315,7 @@ export class DataHcpPackerImageIteration extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image_iteration hcp_packer_image_iteration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/packer_image_iteration hcp_packer_image_iteration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -320,7 +326,7 @@ export class DataHcpPackerImageIteration extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_packer_image_iteration',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.57.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -334,6 +340,7 @@ export class DataHcpPackerImageIteration extends cdktf.TerraformDataSource {
     this._bucketName = config.bucketName;
     this._channel = config.channel;
     this._id = config.id;
+    this._projectId = config.projectId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -404,9 +411,20 @@ export class DataHcpPackerImageIteration extends cdktf.TerraformDataSource {
     return this.getStringAttribute('organization_id');
   }
 
-  // project_id - computed: true, optional: false, required: false
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
   }
 
   // revoke_at - computed: true, optional: false, required: false
@@ -439,6 +457,7 @@ export class DataHcpPackerImageIteration extends cdktf.TerraformDataSource {
       bucket_name: cdktf.stringToTerraform(this._bucketName),
       channel: cdktf.stringToTerraform(this._channel),
       id: cdktf.stringToTerraform(this._id),
+      project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: dataHcpPackerImageIterationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

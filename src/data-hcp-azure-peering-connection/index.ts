@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/azure_peering_connection
+// https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/azure_peering_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataHcpAzurePeeringConnectionConfig extends cdktf.TerraformMeta
   /**
   * The `self_link` of the HashiCorp Virtual Network (HVN).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/azure_peering_connection#hvn_link DataHcpAzurePeeringConnection#hvn_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/azure_peering_connection#hvn_link DataHcpAzurePeeringConnection#hvn_link}
   */
   readonly hvnLink: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/azure_peering_connection#id DataHcpAzurePeeringConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/azure_peering_connection#id DataHcpAzurePeeringConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,25 +23,25 @@ export interface DataHcpAzurePeeringConnectionConfig extends cdktf.TerraformMeta
   /**
   * The ID of the peering connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/azure_peering_connection#peering_id DataHcpAzurePeeringConnection#peering_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/azure_peering_connection#peering_id DataHcpAzurePeeringConnection#peering_id}
   */
   readonly peeringId: string;
   /**
   * If `true`, Terraform will wait for the peering connection to reach an `ACTIVE` state before continuing. Default `false`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/azure_peering_connection#wait_for_active_state DataHcpAzurePeeringConnection#wait_for_active_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/azure_peering_connection#wait_for_active_state DataHcpAzurePeeringConnection#wait_for_active_state}
   */
   readonly waitForActiveState?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/azure_peering_connection#timeouts DataHcpAzurePeeringConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/azure_peering_connection#timeouts DataHcpAzurePeeringConnection#timeouts}
   */
   readonly timeouts?: DataHcpAzurePeeringConnectionTimeouts;
 }
 export interface DataHcpAzurePeeringConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/azure_peering_connection#read DataHcpAzurePeeringConnection#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/azure_peering_connection#read DataHcpAzurePeeringConnection#read}
   */
   readonly read?: string;
 }
@@ -116,7 +116,7 @@ export class DataHcpAzurePeeringConnectionTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/azure_peering_connection hcp_azure_peering_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/azure_peering_connection hcp_azure_peering_connection}
 */
 export class DataHcpAzurePeeringConnection extends cdktf.TerraformDataSource {
 
@@ -130,7 +130,7 @@ export class DataHcpAzurePeeringConnection extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/azure_peering_connection hcp_azure_peering_connection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.57.0/docs/data-sources/azure_peering_connection hcp_azure_peering_connection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -141,7 +141,7 @@ export class DataHcpAzurePeeringConnection extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_azure_peering_connection',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.57.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
