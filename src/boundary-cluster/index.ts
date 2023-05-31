@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster
+// https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface BoundaryClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the Boundary cluster
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#cluster_id BoundaryCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#cluster_id BoundaryCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#id BoundaryCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#id BoundaryCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,33 +23,199 @@ export interface BoundaryClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The password of the initial admin user. This must be at least 8 characters in length. Note that this may show up in logs, and it will be stored in the state file.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#password BoundaryCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#password BoundaryCluster#password}
   */
   readonly password: string;
   /**
+  * The ID of the HCP project where the Boundary cluster is located.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#project_id BoundaryCluster#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * The username of the initial admin user. This must be at least 3 characters in length, alphanumeric, hyphen, or period.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#username BoundaryCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#username BoundaryCluster#username}
   */
   readonly username: string;
   /**
+  * maintenance_window_config block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#maintenance_window_config BoundaryCluster#maintenance_window_config}
+  */
+  readonly maintenanceWindowConfig?: BoundaryClusterMaintenanceWindowConfig;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#timeouts BoundaryCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#timeouts BoundaryCluster#timeouts}
   */
   readonly timeouts?: BoundaryClusterTimeouts;
 }
+export interface BoundaryClusterMaintenanceWindowConfig {
+  /**
+  * The maintenance day of the week for scheduled upgrades. Valid options for maintenance window day - `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#day BoundaryCluster#day}
+  */
+  readonly day?: string;
+  /**
+  * The end time which upgrades can be performed. Uses 24H clock. Valid options include - 1 to 24 (inclusive)
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#end BoundaryCluster#end}
+  */
+  readonly end?: number;
+  /**
+  * The start time which upgrades can be performed. Uses 24H clock. Valid options include - 0 to 23 (inclusive)
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#start BoundaryCluster#start}
+  */
+  readonly start?: number;
+  /**
+  * The upgrade type for the cluster. Valid options for upgrade type - `AUTOMATIC`, `SCHEDULED`
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#upgrade_type BoundaryCluster#upgrade_type}
+  */
+  readonly upgradeType?: string;
+}
+
+export function boundaryClusterMaintenanceWindowConfigToTerraform(struct?: BoundaryClusterMaintenanceWindowConfigOutputReference | BoundaryClusterMaintenanceWindowConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day: cdktf.stringToTerraform(struct!.day),
+    end: cdktf.numberToTerraform(struct!.end),
+    start: cdktf.numberToTerraform(struct!.start),
+    upgrade_type: cdktf.stringToTerraform(struct!.upgradeType),
+  }
+}
+
+export class BoundaryClusterMaintenanceWindowConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BoundaryClusterMaintenanceWindowConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._end !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.end = this._end;
+    }
+    if (this._start !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.start = this._start;
+    }
+    if (this._upgradeType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upgradeType = this._upgradeType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BoundaryClusterMaintenanceWindowConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._day = undefined;
+      this._end = undefined;
+      this._start = undefined;
+      this._upgradeType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._day = value.day;
+      this._end = value.end;
+      this._start = value.start;
+      this._upgradeType = value.upgradeType;
+    }
+  }
+
+  // day - computed: false, optional: true, required: false
+  private _day?: string; 
+  public get day() {
+    return this.getStringAttribute('day');
+  }
+  public set day(value: string) {
+    this._day = value;
+  }
+  public resetDay() {
+    this._day = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // end - computed: false, optional: true, required: false
+  private _end?: number; 
+  public get end() {
+    return this.getNumberAttribute('end');
+  }
+  public set end(value: number) {
+    this._end = value;
+  }
+  public resetEnd() {
+    this._end = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endInput() {
+    return this._end;
+  }
+
+  // start - computed: false, optional: true, required: false
+  private _start?: number; 
+  public get start() {
+    return this.getNumberAttribute('start');
+  }
+  public set start(value: number) {
+    this._start = value;
+  }
+  public resetStart() {
+    this._start = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startInput() {
+    return this._start;
+  }
+
+  // upgrade_type - computed: false, optional: true, required: false
+  private _upgradeType?: string; 
+  public get upgradeType() {
+    return this.getStringAttribute('upgrade_type');
+  }
+  public set upgradeType(value: string) {
+    this._upgradeType = value;
+  }
+  public resetUpgradeType() {
+    this._upgradeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get upgradeTypeInput() {
+    return this._upgradeType;
+  }
+}
 export interface BoundaryClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#create BoundaryCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#create BoundaryCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#default BoundaryCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#default BoundaryCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster#delete BoundaryCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster#delete BoundaryCluster#delete}
   */
   readonly delete?: string;
 }
@@ -170,7 +336,7 @@ export class BoundaryClusterTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster hcp_boundary_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster hcp_boundary_cluster}
 */
 export class BoundaryCluster extends cdktf.TerraformResource {
 
@@ -184,7 +350,7 @@ export class BoundaryCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -195,7 +361,7 @@ export class BoundaryCluster extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_boundary_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -209,7 +375,9 @@ export class BoundaryCluster extends cdktf.TerraformResource {
     this._clusterId = config.clusterId;
     this._id = config.id;
     this._password = config.password;
+    this._projectId = config.projectId;
     this._username = config.username;
+    this._maintenanceWindowConfig.internalValue = config.maintenanceWindowConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -269,6 +437,22 @@ export class BoundaryCluster extends cdktf.TerraformResource {
     return this._password;
   }
 
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
@@ -285,6 +469,22 @@ export class BoundaryCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {
     return this._username;
+  }
+
+  // maintenance_window_config - computed: false, optional: true, required: false
+  private _maintenanceWindowConfig = new BoundaryClusterMaintenanceWindowConfigOutputReference(this, "maintenance_window_config");
+  public get maintenanceWindowConfig() {
+    return this._maintenanceWindowConfig;
+  }
+  public putMaintenanceWindowConfig(value: BoundaryClusterMaintenanceWindowConfig) {
+    this._maintenanceWindowConfig.internalValue = value;
+  }
+  public resetMaintenanceWindowConfig() {
+    this._maintenanceWindowConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceWindowConfigInput() {
+    return this._maintenanceWindowConfig.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -312,7 +512,9 @@ export class BoundaryCluster extends cdktf.TerraformResource {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       id: cdktf.stringToTerraform(this._id),
       password: cdktf.stringToTerraform(this._password),
+      project_id: cdktf.stringToTerraform(this._projectId),
       username: cdktf.stringToTerraform(this._username),
+      maintenance_window_config: boundaryClusterMaintenanceWindowConfigToTerraform(this._maintenanceWindowConfig.internalValue),
       timeouts: boundaryClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

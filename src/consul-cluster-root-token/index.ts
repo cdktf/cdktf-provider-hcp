@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token
+// https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,26 +10,32 @@ export interface ConsulClusterRootTokenConfig extends cdktf.TerraformMetaArgumen
   /**
   * The ID of the HCP Consul cluster.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token#cluster_id ConsulClusterRootToken#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token#cluster_id ConsulClusterRootToken#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token#id ConsulClusterRootToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token#id ConsulClusterRootToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The ID of the HCP project where the HCP Consul cluster is located.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token#project_id ConsulClusterRootToken#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token#timeouts ConsulClusterRootToken#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token#timeouts ConsulClusterRootToken#timeouts}
   */
   readonly timeouts?: ConsulClusterRootTokenTimeouts;
 }
 export interface ConsulClusterRootTokenTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}
   */
   readonly default?: string;
 }
@@ -104,7 +110,7 @@ export class ConsulClusterRootTokenTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token}
 */
 export class ConsulClusterRootToken extends cdktf.TerraformResource {
 
@@ -118,7 +124,7 @@ export class ConsulClusterRootToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -129,7 +135,7 @@ export class ConsulClusterRootToken extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_consul_cluster_root_token',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -142,6 +148,7 @@ export class ConsulClusterRootToken extends cdktf.TerraformResource {
     });
     this._clusterId = config.clusterId;
     this._id = config.id;
+    this._projectId = config.projectId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -188,6 +195,22 @@ export class ConsulClusterRootToken extends cdktf.TerraformResource {
     return this.getStringAttribute('kubernetes_secret');
   }
 
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
   // secret_id - computed: true, optional: false, required: false
   public get secretId() {
     return this.getStringAttribute('secret_id');
@@ -217,6 +240,7 @@ export class ConsulClusterRootToken extends cdktf.TerraformResource {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       id: cdktf.stringToTerraform(this._id),
+      project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: consulClusterRootTokenTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
