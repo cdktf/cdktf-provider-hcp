@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`hcp`](https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs).
+Refer to the Terraform Registory for docs: [`hcp`](https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-hcp.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp`](https://registry.terraform.io
 
 ### HcpProvider <a name="HcpProvider" id="@cdktf/provider-hcp.provider.HcpProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs hcp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer"></a>
 
@@ -20,7 +20,8 @@ provider.HcpProvider(
   id: str,
   alias: str = None,
   client_id: str = None,
-  client_secret: str = None
+  client_secret: str = None,
+  project_id: str = None
 )
 ```
 
@@ -31,6 +32,7 @@ provider.HcpProvider(
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | The OAuth2 Client ID for API operations. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | The OAuth2 Client Secret for API operations. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The default project in which resources should be created. |
 
 ---
 
@@ -58,7 +60,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#alias HcpProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#alias HcpProvider#alias}
 
 ---
 
@@ -68,7 +70,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The OAuth2 Client ID for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#client_id HcpProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#client_id HcpProvider#client_id}
 
 ---
 
@@ -78,7 +80,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The OAuth2 Client Secret for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#client_secret HcpProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#client_secret HcpProvider#client_secret}
+
+---
+
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.projectId"></a>
+
+- *Type:* str
+
+The default project in which resources should be created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#project_id HcpProvider#project_id}
 
 ---
 
@@ -95,6 +107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetAlias">reset_alias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientId">reset_client_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientSecret">reset_client_secret</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetProjectId">reset_project_id</a></code> | *No description.* |
 
 ---
 
@@ -183,6 +196,12 @@ def reset_client_id() -> None
 
 ```python
 def reset_client_secret() -> None
+```
+
+##### `reset_project_id` <a name="reset_project_id" id="@cdktf/provider-hcp.provider.HcpProvider.resetProjectId"></a>
+
+```python
+def reset_project_id() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -277,8 +296,10 @@ provider.HcpProvider.is_terraform_provider(
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -404,6 +425,16 @@ client_secret_input: str
 
 ---
 
+##### `project_id_input`<sup>Optional</sup> <a name="project_id_input" id="@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput"></a>
+
+```python
+project_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `client_id`<sup>Optional</sup> <a name="client_id" id="@cdktf/provider-hcp.provider.HcpProvider.property.clientId"></a>
 
 ```python
@@ -418,6 +449,16 @@ client_id: str
 
 ```python
 client_secret: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-hcp.provider.HcpProvider.property.projectId"></a>
+
+```python
+project_id: str
 ```
 
 - *Type:* str
@@ -454,7 +495,8 @@ from cdktf_cdktf_provider_hcp import provider
 provider.HcpProviderConfig(
   alias: str = None,
   client_id: str = None,
-  client_secret: str = None
+  client_secret: str = None,
+  project_id: str = None
 )
 ```
 
@@ -465,6 +507,7 @@ provider.HcpProviderConfig(
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientId">client_id</a></code> | <code>str</code> | The OAuth2 Client ID for API operations. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | The OAuth2 Client Secret for API operations. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId">project_id</a></code> | <code>str</code> | The default project in which resources should be created. |
 
 ---
 
@@ -478,7 +521,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#alias HcpProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#alias HcpProvider#alias}
 
 ---
 
@@ -492,7 +535,7 @@ client_id: str
 
 The OAuth2 Client ID for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#client_id HcpProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#client_id HcpProvider#client_id}
 
 ---
 
@@ -506,7 +549,21 @@ client_secret: str
 
 The OAuth2 Client Secret for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#client_secret HcpProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#client_secret HcpProvider#client_secret}
+
+---
+
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId"></a>
+
+```python
+project_id: str
+```
+
+- *Type:* str
+
+The default project in which resources should be created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#project_id HcpProvider#project_id}
 
 ---
 

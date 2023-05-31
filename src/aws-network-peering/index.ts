@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering
+// https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface AwsNetworkPeeringConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the HashiCorp Virtual Network (HVN).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering#hvn_id AwsNetworkPeering#hvn_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#hvn_id AwsNetworkPeering#hvn_id}
   */
   readonly hvnId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering#id AwsNetworkPeering#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#id AwsNetworkPeering#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,45 +23,51 @@ export interface AwsNetworkPeeringConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account ID of the peer VPC in AWS.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering#peer_account_id AwsNetworkPeering#peer_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#peer_account_id AwsNetworkPeering#peer_account_id}
   */
   readonly peerAccountId: string;
   /**
   * The ID of the peer VPC in AWS.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering#peer_vpc_id AwsNetworkPeering#peer_vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#peer_vpc_id AwsNetworkPeering#peer_vpc_id}
   */
   readonly peerVpcId: string;
   /**
   * The region of the peer VPC in AWS.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering#peer_vpc_region AwsNetworkPeering#peer_vpc_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#peer_vpc_region AwsNetworkPeering#peer_vpc_region}
   */
   readonly peerVpcRegion: string;
   /**
   * The ID of the network peering.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering#peering_id AwsNetworkPeering#peering_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#peering_id AwsNetworkPeering#peering_id}
   */
   readonly peeringId: string;
   /**
+  * The ID of the HCP project where the network peering is located. Always matches the HVN's project.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#project_id AwsNetworkPeering#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering#timeouts AwsNetworkPeering#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#timeouts AwsNetworkPeering#timeouts}
   */
   readonly timeouts?: AwsNetworkPeeringTimeouts;
 }
 export interface AwsNetworkPeeringTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering#create AwsNetworkPeering#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#create AwsNetworkPeering#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering#default AwsNetworkPeering#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#default AwsNetworkPeering#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering#delete AwsNetworkPeering#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering#delete AwsNetworkPeering#delete}
   */
   readonly delete?: string;
 }
@@ -182,7 +188,7 @@ export class AwsNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering hcp_aws_network_peering}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering hcp_aws_network_peering}
 */
 export class AwsNetworkPeering extends cdktf.TerraformResource {
 
@@ -196,7 +202,7 @@ export class AwsNetworkPeering extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +213,7 @@ export class AwsNetworkPeering extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_aws_network_peering',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -224,6 +230,7 @@ export class AwsNetworkPeering extends cdktf.TerraformResource {
     this._peerVpcId = config.peerVpcId;
     this._peerVpcRegion = config.peerVpcRegion;
     this._peeringId = config.peeringId;
+    this._projectId = config.projectId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -327,9 +334,20 @@ export class AwsNetworkPeering extends cdktf.TerraformResource {
     return this._peeringId;
   }
 
-  // project_id - computed: true, optional: false, required: false
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
   }
 
   // provider_peering_id - computed: true, optional: false, required: false
@@ -375,6 +393,7 @@ export class AwsNetworkPeering extends cdktf.TerraformResource {
       peer_vpc_id: cdktf.stringToTerraform(this._peerVpcId),
       peer_vpc_region: cdktf.stringToTerraform(this._peerVpcRegion),
       peering_id: cdktf.stringToTerraform(this._peeringId),
+      project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: awsNetworkPeeringTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
