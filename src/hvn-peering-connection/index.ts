@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection
+// https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,40 +10,46 @@ export interface HvnPeeringConnectionConfig extends cdktf.TerraformMetaArguments
   /**
   * The unique URL of one of the HVNs being peered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#hvn_1 HvnPeeringConnection#hvn_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#hvn_1 HvnPeeringConnection#hvn_1}
   */
   readonly hvn1: string;
   /**
   * The unique URL of one of the HVNs being peered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#hvn_2 HvnPeeringConnection#hvn_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#hvn_2 HvnPeeringConnection#hvn_2}
   */
   readonly hvn2: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#id HvnPeeringConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#id HvnPeeringConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The ID of the HCP project where the HVN peering connection is located.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#project_id HvnPeeringConnection#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#timeouts HvnPeeringConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#timeouts HvnPeeringConnection#timeouts}
   */
   readonly timeouts?: HvnPeeringConnectionTimeouts;
 }
 export interface HvnPeeringConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#create HvnPeeringConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#create HvnPeeringConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#default HvnPeeringConnection#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#default HvnPeeringConnection#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#delete HvnPeeringConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#delete HvnPeeringConnection#delete}
   */
   readonly delete?: string;
 }
@@ -164,7 +170,7 @@ export class HvnPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection}
 */
 export class HvnPeeringConnection extends cdktf.TerraformResource {
 
@@ -178,7 +184,7 @@ export class HvnPeeringConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -189,7 +195,7 @@ export class HvnPeeringConnection extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_hvn_peering_connection',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -203,6 +209,7 @@ export class HvnPeeringConnection extends cdktf.TerraformResource {
     this._hvn1 = config.hvn1;
     this._hvn2 = config.hvn2;
     this._id = config.id;
+    this._projectId = config.projectId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -272,9 +279,20 @@ export class HvnPeeringConnection extends cdktf.TerraformResource {
     return this.getStringAttribute('peering_id');
   }
 
-  // project_id - computed: true, optional: false, required: false
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
   }
 
   // self_link - computed: true, optional: false, required: false
@@ -312,6 +330,7 @@ export class HvnPeeringConnection extends cdktf.TerraformResource {
       hvn_1: cdktf.stringToTerraform(this._hvn1),
       hvn_2: cdktf.stringToTerraform(this._hvn2),
       id: cdktf.stringToTerraform(this._id),
+      project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: hvnPeeringConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
