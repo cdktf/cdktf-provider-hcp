@@ -1,6 +1,6 @@
 # `hcp_consul_snapshot`
 
-Refer to the Terraform Registory for docs: [`hcp_consul_snapshot`](https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot).
+Refer to the Terraform Registory for docs: [`hcp_consul_snapshot`](https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot).
 
 # `consulSnapshot` Submodule <a name="`consulSnapshot` Submodule" id="@cdktf/provider-hcp.consulSnapshot"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp_consul_snapshot`](https://regis
 
 ### ConsulSnapshot <a name="ConsulSnapshot" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot hcp_consul_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot hcp_consul_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.Initializer"></a>
 
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.resetProjectId">ResetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -278,6 +279,12 @@ func PutTimeouts(value ConsulSnapshotTimeouts)
 func ResetId()
 ```
 
+##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.resetProjectId"></a>
+
+```go
+func ResetProjectId()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.resetTimeouts"></a>
 
 ```go
@@ -374,7 +381,6 @@ consulsnapshot.ConsulSnapshot_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.consulVersion">ConsulVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.organizationId">OrganizationId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.restoredAt">RestoredAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.size">Size</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.snapshotId">SnapshotId</a></code> | <code>*string</code> | *No description.* |
@@ -382,10 +388,12 @@ consulsnapshot.ConsulSnapshot_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotTimeoutsOutputReference">ConsulSnapshotTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.clusterIdInput">ClusterIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.snapshotNameInput">SnapshotNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.clusterId">ClusterId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.snapshotName">SnapshotName</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -552,16 +560,6 @@ func OrganizationId() *string
 
 ---
 
-##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.projectId"></a>
-
-```go
-func ProjectId() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `RestoredAt`<sup>Required</sup> <a name="RestoredAt" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.restoredAt"></a>
 
 ```go
@@ -632,6 +630,16 @@ func IdInput() *string
 
 ---
 
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.projectIdInput"></a>
+
+```go
+func ProjectIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SnapshotNameInput`<sup>Optional</sup> <a name="SnapshotNameInput" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.snapshotNameInput"></a>
 
 ```go
@@ -666,6 +674,16 @@ func ClusterId() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshot.property.projectId"></a>
+
+```go
+func ProjectId() *string
 ```
 
 - *Type:* *string
@@ -720,6 +738,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulsnapshot"
 	ClusterId: *string,
 	SnapshotName: *string,
 	Id: *string,
+	ProjectId: *string,
 	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v4.consulSnapshot.ConsulSnapshotTimeouts,
 }
 ```
@@ -737,7 +756,8 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulsnapshot"
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | The ID of the HCP Consul cluster. |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotConfig.property.snapshotName">SnapshotName</a></code> | <code>*string</code> | The name of the snapshot. |
-| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#id ConsulSnapshot#id}. |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#id ConsulSnapshot#id}. |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the HCP Consul cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotTimeouts">ConsulSnapshotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -822,7 +842,7 @@ ClusterId *string
 
 The ID of the HCP Consul cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#cluster_id ConsulSnapshot#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#cluster_id ConsulSnapshot#cluster_id}
 
 ---
 
@@ -836,7 +856,7 @@ SnapshotName *string
 
 The name of the snapshot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#snapshot_name ConsulSnapshot#snapshot_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#snapshot_name ConsulSnapshot#snapshot_name}
 
 ---
 
@@ -848,10 +868,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#id ConsulSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#id ConsulSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotConfig.property.projectId"></a>
+
+```go
+ProjectId *string
+```
+
+- *Type:* *string
+
+The ID of the HCP project where the HCP Consul cluster is located.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#project_id ConsulSnapshot#project_id}
 
 ---
 
@@ -865,7 +899,7 @@ Timeouts ConsulSnapshotTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#timeouts ConsulSnapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#timeouts ConsulSnapshot#timeouts}
 
 ---
 
@@ -888,10 +922,10 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulsnapshot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#create ConsulSnapshot#create}. |
-| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#default ConsulSnapshot#default}. |
-| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#delete ConsulSnapshot#delete}. |
-| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#update ConsulSnapshot#update}. |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#create ConsulSnapshot#create}. |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#default ConsulSnapshot#default}. |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#delete ConsulSnapshot#delete}. |
+| <code><a href="#@cdktf/provider-hcp.consulSnapshot.ConsulSnapshotTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#update ConsulSnapshot#update}. |
 
 ---
 
@@ -903,7 +937,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#create ConsulSnapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#create ConsulSnapshot#create}.
 
 ---
 
@@ -915,7 +949,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#default ConsulSnapshot#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#default ConsulSnapshot#default}.
 
 ---
 
@@ -927,7 +961,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#delete ConsulSnapshot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#delete ConsulSnapshot#delete}.
 
 ---
 
@@ -939,7 +973,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#update ConsulSnapshot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#update ConsulSnapshot#update}.
 
 ---
 

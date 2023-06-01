@@ -1,4 +1,9 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,26 +15,111 @@ export interface DataHcpBoundaryClusterConfig extends cdktf.TerraformMetaArgumen
   /**
   * The ID of the Boundary cluster
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster#cluster_id DataHcpBoundaryCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster#cluster_id DataHcpBoundaryCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster#id DataHcpBoundaryCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster#id DataHcpBoundaryCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The ID of the HCP project where the Boundary cluster is located.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster#project_id DataHcpBoundaryCluster#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster#timeouts DataHcpBoundaryCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster#timeouts DataHcpBoundaryCluster#timeouts}
   */
   readonly timeouts?: DataHcpBoundaryClusterTimeouts;
 }
+export interface DataHcpBoundaryClusterMaintenanceWindowConfig {
+}
+
+export function dataHcpBoundaryClusterMaintenanceWindowConfigToTerraform(struct?: DataHcpBoundaryClusterMaintenanceWindowConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataHcpBoundaryClusterMaintenanceWindowConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataHcpBoundaryClusterMaintenanceWindowConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataHcpBoundaryClusterMaintenanceWindowConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // day - computed: true, optional: false, required: false
+  public get day() {
+    return this.getStringAttribute('day');
+  }
+
+  // end - computed: true, optional: false, required: false
+  public get end() {
+    return this.getNumberAttribute('end');
+  }
+
+  // start - computed: true, optional: false, required: false
+  public get start() {
+    return this.getNumberAttribute('start');
+  }
+
+  // upgrade_type - computed: true, optional: false, required: false
+  public get upgradeType() {
+    return this.getStringAttribute('upgrade_type');
+  }
+}
+
+export class DataHcpBoundaryClusterMaintenanceWindowConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataHcpBoundaryClusterMaintenanceWindowConfigOutputReference {
+    return new DataHcpBoundaryClusterMaintenanceWindowConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataHcpBoundaryClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster#default DataHcpBoundaryCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster#default DataHcpBoundaryCluster#default}
   */
   readonly default?: string;
 }
@@ -104,7 +194,7 @@ export class DataHcpBoundaryClusterTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster hcp_boundary_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster hcp_boundary_cluster}
 */
 export class DataHcpBoundaryCluster extends cdktf.TerraformDataSource {
 
@@ -118,7 +208,7 @@ export class DataHcpBoundaryCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -129,7 +219,7 @@ export class DataHcpBoundaryCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_boundary_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -142,6 +232,7 @@ export class DataHcpBoundaryCluster extends cdktf.TerraformDataSource {
     });
     this._clusterId = config.clusterId;
     this._id = config.id;
+    this._projectId = config.projectId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -188,6 +279,28 @@ export class DataHcpBoundaryCluster extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // maintenance_window_config - computed: true, optional: false, required: false
+  private _maintenanceWindowConfig = new DataHcpBoundaryClusterMaintenanceWindowConfigList(this, "maintenance_window_config", false);
+  public get maintenanceWindowConfig() {
+    return this._maintenanceWindowConfig;
+  }
+
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
@@ -217,6 +330,7 @@ export class DataHcpBoundaryCluster extends cdktf.TerraformDataSource {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       id: cdktf.stringToTerraform(this._id),
+      project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: dataHcpBoundaryClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

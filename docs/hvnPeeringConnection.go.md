@@ -1,6 +1,6 @@
 # `hcp_hvn_peering_connection`
 
-Refer to the Terraform Registory for docs: [`hcp_hvn_peering_connection`](https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection).
+Refer to the Terraform Registory for docs: [`hcp_hvn_peering_connection`](https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection).
 
 # `hvnPeeringConnection` Submodule <a name="`hvnPeeringConnection` Submodule" id="@cdktf/provider-hcp.hvnPeeringConnection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp_hvn_peering_connection`](https:
 
 ### HvnPeeringConnection <a name="HvnPeeringConnection" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.Initializer"></a>
 
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.resetProjectId">ResetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -278,6 +279,12 @@ func PutTimeouts(value HvnPeeringConnectionTimeouts)
 func ResetId()
 ```
 
+##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.resetProjectId"></a>
+
+```go
+func ResetProjectId()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.resetTimeouts"></a>
 
 ```go
@@ -376,17 +383,18 @@ hvnpeeringconnection.HvnPeeringConnection_IsTerraformResource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.expiresAt">ExpiresAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.organizationId">OrganizationId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.peeringId">PeeringId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeoutsOutputReference">HvnPeeringConnectionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.hvn1Input">Hvn1Input</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.hvn2Input">Hvn2Input</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.hvn1">Hvn1</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.hvn2">Hvn2</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -572,16 +580,6 @@ func PeeringId() *string
 
 ---
 
-##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.projectId"></a>
-
-```go
-func ProjectId() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `SelfLink`<sup>Required</sup> <a name="SelfLink" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.selfLink"></a>
 
 ```go
@@ -642,6 +640,16 @@ func IdInput() *string
 
 ---
 
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.projectIdInput"></a>
+
+```go
+func ProjectIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.timeoutsInput"></a>
 
 ```go
@@ -676,6 +684,16 @@ func Hvn2() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.property.projectId"></a>
+
+```go
+func ProjectId() *string
 ```
 
 - *Type:* *string
@@ -720,6 +738,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/hvnpeeringconnection"
 	Hvn1: *string,
 	Hvn2: *string,
 	Id: *string,
+	ProjectId: *string,
 	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v4.hvnPeeringConnection.HvnPeeringConnectionTimeouts,
 }
 ```
@@ -737,7 +756,8 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/hvnpeeringconnection"
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.hvn1">Hvn1</a></code> | <code>*string</code> | The unique URL of one of the HVNs being peered. |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.hvn2">Hvn2</a></code> | <code>*string</code> | The unique URL of one of the HVNs being peered. |
-| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#id HvnPeeringConnection#id}. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#id HvnPeeringConnection#id}. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the HVN peering connection is located. |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts">HvnPeeringConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -822,7 +842,7 @@ Hvn1 *string
 
 The unique URL of one of the HVNs being peered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#hvn_1 HvnPeeringConnection#hvn_1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#hvn_1 HvnPeeringConnection#hvn_1}
 
 ---
 
@@ -836,7 +856,7 @@ Hvn2 *string
 
 The unique URL of one of the HVNs being peered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#hvn_2 HvnPeeringConnection#hvn_2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#hvn_2 HvnPeeringConnection#hvn_2}
 
 ---
 
@@ -848,10 +868,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#id HvnPeeringConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#id HvnPeeringConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.projectId"></a>
+
+```go
+ProjectId *string
+```
+
+- *Type:* *string
+
+The ID of the HCP project where the HVN peering connection is located.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#project_id HvnPeeringConnection#project_id}
 
 ---
 
@@ -865,7 +899,7 @@ Timeouts HvnPeeringConnectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#timeouts HvnPeeringConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#timeouts HvnPeeringConnection#timeouts}
 
 ---
 
@@ -887,9 +921,9 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/hvnpeeringconnection"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#create HvnPeeringConnection#create}. |
-| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#default HvnPeeringConnection#default}. |
-| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#delete HvnPeeringConnection#delete}. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#create HvnPeeringConnection#create}. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#default HvnPeeringConnection#default}. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#delete HvnPeeringConnection#delete}. |
 
 ---
 
@@ -901,7 +935,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#create HvnPeeringConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#create HvnPeeringConnection#create}.
 
 ---
 
@@ -913,7 +947,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#default HvnPeeringConnection#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#default HvnPeeringConnection#default}.
 
 ---
 
@@ -925,7 +959,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection#delete HvnPeeringConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection#delete HvnPeeringConnection#delete}.
 
 ---
 

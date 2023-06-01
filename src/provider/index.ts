@@ -1,4 +1,9 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +15,31 @@ export interface HcpProviderConfig {
   /**
   * The OAuth2 Client ID for API operations.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#client_id HcpProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#client_id HcpProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * The OAuth2 Client Secret for API operations.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#client_secret HcpProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#client_secret HcpProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
+  * The default project in which resources should be created.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#project_id HcpProvider#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#alias HcpProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#alias HcpProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs hcp}
 */
 export class HcpProvider extends cdktf.TerraformProvider {
 
@@ -42,7 +53,7 @@ export class HcpProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs hcp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,13 +64,14 @@ export class HcpProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'hcp',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: '~> 0.45'
       },
       terraformProviderSource: 'hcp'
     });
     this._clientId = config.clientId;
     this._clientSecret = config.clientSecret;
+    this._projectId = config.projectId;
     this._alias = config.alias;
   }
 
@@ -99,6 +111,22 @@ export class HcpProvider extends cdktf.TerraformProvider {
     return this._clientSecret;
   }
 
+  // project_id - computed: false, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this._projectId;
+  }
+  public set projectId(value: string | undefined) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
   // alias - computed: false, optional: true, required: false
   private _alias?: string; 
   public get alias() {
@@ -123,6 +151,7 @@ export class HcpProvider extends cdktf.TerraformProvider {
     return {
       client_id: cdktf.stringToTerraform(this._clientId),
       client_secret: cdktf.stringToTerraform(this._clientSecret),
+      project_id: cdktf.stringToTerraform(this._projectId),
       alias: cdktf.stringToTerraform(this._alias),
     };
   }

@@ -1,4 +1,9 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/hvn_peering_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +15,17 @@ export interface DataHcpHvnPeeringConnectionConfig extends cdktf.TerraformMetaAr
   /**
   * The unique URL of one of the HVNs being peered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#hvn_1 DataHcpHvnPeeringConnection#hvn_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/hvn_peering_connection#hvn_1 DataHcpHvnPeeringConnection#hvn_1}
   */
   readonly hvn1: string;
   /**
   * The unique URL of one of the HVNs being peered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#hvn_2 DataHcpHvnPeeringConnection#hvn_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/hvn_peering_connection#hvn_2 DataHcpHvnPeeringConnection#hvn_2}
   */
   readonly hvn2: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#id DataHcpHvnPeeringConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/hvn_peering_connection#id DataHcpHvnPeeringConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,19 +34,25 @@ export interface DataHcpHvnPeeringConnectionConfig extends cdktf.TerraformMetaAr
   /**
   * The ID of the peering connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#peering_id DataHcpHvnPeeringConnection#peering_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/hvn_peering_connection#peering_id DataHcpHvnPeeringConnection#peering_id}
   */
   readonly peeringId: string;
   /**
+  * The ID of the HCP project where the HVN peering connection is located.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/hvn_peering_connection#project_id DataHcpHvnPeeringConnection#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#timeouts DataHcpHvnPeeringConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/hvn_peering_connection#timeouts DataHcpHvnPeeringConnection#timeouts}
   */
   readonly timeouts?: DataHcpHvnPeeringConnectionTimeouts;
 }
 export interface DataHcpHvnPeeringConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection#default DataHcpHvnPeeringConnection#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/hvn_peering_connection#default DataHcpHvnPeeringConnection#default}
   */
   readonly default?: string;
 }
@@ -116,7 +127,7 @@ export class DataHcpHvnPeeringConnectionTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection}
 */
 export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
 
@@ -130,7 +141,7 @@ export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -141,7 +152,7 @@ export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_hvn_peering_connection',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -156,6 +167,7 @@ export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
     this._hvn2 = config.hvn2;
     this._id = config.id;
     this._peeringId = config.peeringId;
+    this._projectId = config.projectId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -233,9 +245,20 @@ export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
     return this._peeringId;
   }
 
-  // project_id - computed: true, optional: false, required: false
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
   }
 
   // self_link - computed: true, optional: false, required: false
@@ -274,6 +297,7 @@ export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
       hvn_2: cdktf.stringToTerraform(this._hvn2),
       id: cdktf.stringToTerraform(this._id),
       peering_id: cdktf.stringToTerraform(this._peeringId),
+      project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: dataHcpHvnPeeringConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

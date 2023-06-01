@@ -1,4 +1,9 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_cluster
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,20 +15,26 @@ export interface DataHcpConsulClusterConfig extends cdktf.TerraformMetaArguments
   /**
   * The ID of the HCP Consul cluster.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_cluster#cluster_id DataHcpConsulCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_cluster#cluster_id DataHcpConsulCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_cluster#id DataHcpConsulCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_cluster#id DataHcpConsulCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The ID of the HCP project where the HCP Consul cluster is located.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_cluster#project_id DataHcpConsulCluster#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_cluster#timeouts DataHcpConsulCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_cluster#timeouts DataHcpConsulCluster#timeouts}
   */
   readonly timeouts?: DataHcpConsulClusterTimeouts;
 }
@@ -98,7 +109,7 @@ export class DataHcpConsulClusterIpAllowlistList extends cdktf.ComplexList {
 }
 export interface DataHcpConsulClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_cluster#default DataHcpConsulCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_cluster#default DataHcpConsulCluster#default}
   */
   readonly default?: string;
 }
@@ -173,7 +184,7 @@ export class DataHcpConsulClusterTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_cluster hcp_consul_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_cluster hcp_consul_cluster}
 */
 export class DataHcpConsulCluster extends cdktf.TerraformDataSource {
 
@@ -187,7 +198,7 @@ export class DataHcpConsulCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_cluster hcp_consul_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_cluster hcp_consul_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -198,7 +209,7 @@ export class DataHcpConsulCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_consul_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -211,6 +222,7 @@ export class DataHcpConsulCluster extends cdktf.TerraformDataSource {
     });
     this._clusterId = config.clusterId;
     this._id = config.id;
+    this._projectId = config.projectId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -328,9 +340,20 @@ export class DataHcpConsulCluster extends cdktf.TerraformDataSource {
     return this.getStringAttribute('primary_link');
   }
 
-  // project_id - computed: true, optional: false, required: false
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
   }
 
   // public_endpoint - computed: true, optional: false, required: false
@@ -392,6 +415,7 @@ export class DataHcpConsulCluster extends cdktf.TerraformDataSource {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       id: cdktf.stringToTerraform(this._id),
+      project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: dataHcpConsulClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
