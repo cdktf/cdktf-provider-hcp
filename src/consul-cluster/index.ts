@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster
 // generated from terraform resource schema
 
@@ -90,7 +85,7 @@ export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster#ip_allowlist ConsulCluster#ip_allowlist}
   */
-  readonly ipAllowlist?: ConsulClusterIpAllowlist[] | cdktf.IResolvable;
+  readonly ipAllowlist?: ConsulClusterIpAllowlistStruct[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -98,7 +93,7 @@ export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: ConsulClusterTimeouts;
 }
-export interface ConsulClusterIpAllowlist {
+export interface ConsulClusterIpAllowlistStruct {
   /**
   * IP address range in CIDR notation.
   * 
@@ -113,7 +108,7 @@ export interface ConsulClusterIpAllowlist {
   readonly description?: string;
 }
 
-export function consulClusterIpAllowlistToTerraform(struct?: ConsulClusterIpAllowlist | cdktf.IResolvable): any {
+export function consulClusterIpAllowlistStructToTerraform(struct?: ConsulClusterIpAllowlistStruct | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -124,7 +119,7 @@ export function consulClusterIpAllowlistToTerraform(struct?: ConsulClusterIpAllo
   }
 }
 
-export class ConsulClusterIpAllowlistOutputReference extends cdktf.ComplexObject {
+export class ConsulClusterIpAllowlistStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -138,7 +133,7 @@ export class ConsulClusterIpAllowlistOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConsulClusterIpAllowlist | cdktf.IResolvable | undefined {
+  public get internalValue(): ConsulClusterIpAllowlistStruct | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -155,7 +150,7 @@ export class ConsulClusterIpAllowlistOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConsulClusterIpAllowlist | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConsulClusterIpAllowlistStruct | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -204,8 +199,8 @@ export class ConsulClusterIpAllowlistOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class ConsulClusterIpAllowlistList extends cdktf.ComplexList {
-  public internalValue? : ConsulClusterIpAllowlist[] | cdktf.IResolvable
+export class ConsulClusterIpAllowlistStructList extends cdktf.ComplexList {
+  public internalValue? : ConsulClusterIpAllowlistStruct[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -219,8 +214,8 @@ export class ConsulClusterIpAllowlistList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): ConsulClusterIpAllowlistOutputReference {
-    return new ConsulClusterIpAllowlistOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): ConsulClusterIpAllowlistStructOutputReference {
+    return new ConsulClusterIpAllowlistStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ConsulClusterTimeouts {
@@ -701,11 +696,11 @@ export class ConsulCluster extends cdktf.TerraformResource {
   }
 
   // ip_allowlist - computed: false, optional: true, required: false
-  private _ipAllowlist = new ConsulClusterIpAllowlistList(this, "ip_allowlist", false);
+  private _ipAllowlist = new ConsulClusterIpAllowlistStructList(this, "ip_allowlist", false);
   public get ipAllowlist() {
     return this._ipAllowlist;
   }
-  public putIpAllowlist(value: ConsulClusterIpAllowlist[] | cdktf.IResolvable) {
+  public putIpAllowlist(value: ConsulClusterIpAllowlistStruct[] | cdktf.IResolvable) {
     this._ipAllowlist.internalValue = value;
   }
   public resetIpAllowlist() {
@@ -750,7 +745,7 @@ export class ConsulCluster extends cdktf.TerraformResource {
       public_endpoint: cdktf.booleanToTerraform(this._publicEndpoint),
       size: cdktf.stringToTerraform(this._size),
       tier: cdktf.stringToTerraform(this._tier),
-      ip_allowlist: cdktf.listMapper(consulClusterIpAllowlistToTerraform, true)(this._ipAllowlist.internalValue),
+      ip_allowlist: cdktf.listMapper(consulClusterIpAllowlistStructToTerraform, true)(this._ipAllowlist.internalValue),
       timeouts: consulClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
