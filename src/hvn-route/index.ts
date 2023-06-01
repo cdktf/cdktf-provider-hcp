@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route
+// https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,52 +10,58 @@ export interface HvnRouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * The destination CIDR of the HVN route.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#destination_cidr HvnRoute#destination_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#destination_cidr HvnRoute#destination_cidr}
   */
   readonly destinationCidr: string;
   /**
   * The `self_link` of the HashiCorp Virtual Network (HVN).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#hvn_link HvnRoute#hvn_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#hvn_link HvnRoute#hvn_link}
   */
   readonly hvnLink: string;
   /**
   * The ID of the HVN route.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#hvn_route_id HvnRoute#hvn_route_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#hvn_route_id HvnRoute#hvn_route_id}
   */
   readonly hvnRouteId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#id HvnRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#id HvnRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The ID of the HCP project where the HVN route is located.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#project_id HvnRoute#project_id}
+  */
+  readonly projectId?: string;
+  /**
   * A unique URL identifying the target of the HVN route. Examples of the target: [`aws_network_peering`](aws_network_peering.md), [`aws_transit_gateway_attachment`](aws_transit_gateway_attachment.md)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#target_link HvnRoute#target_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#target_link HvnRoute#target_link}
   */
   readonly targetLink: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#timeouts HvnRoute#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#timeouts HvnRoute#timeouts}
   */
   readonly timeouts?: HvnRouteTimeouts;
 }
 export interface HvnRouteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#create HvnRoute#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#create HvnRoute#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#default HvnRoute#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#default HvnRoute#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#delete HvnRoute#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#delete HvnRoute#delete}
   */
   readonly delete?: string;
 }
@@ -176,7 +182,7 @@ export class HvnRouteTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route hcp_hvn_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route hcp_hvn_route}
 */
 export class HvnRoute extends cdktf.TerraformResource {
 
@@ -190,7 +196,7 @@ export class HvnRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route hcp_hvn_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route hcp_hvn_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -201,7 +207,7 @@ export class HvnRoute extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_hvn_route',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.56.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -216,6 +222,7 @@ export class HvnRoute extends cdktf.TerraformResource {
     this._hvnLink = config.hvnLink;
     this._hvnRouteId = config.hvnRouteId;
     this._id = config.id;
+    this._projectId = config.projectId;
     this._targetLink = config.targetLink;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -284,6 +291,22 @@ export class HvnRoute extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
   // self_link - computed: true, optional: false, required: false
   public get selfLink() {
     return this.getStringAttribute('self_link');
@@ -333,6 +356,7 @@ export class HvnRoute extends cdktf.TerraformResource {
       hvn_link: cdktf.stringToTerraform(this._hvnLink),
       hvn_route_id: cdktf.stringToTerraform(this._hvnRouteId),
       id: cdktf.stringToTerraform(this._id),
+      project_id: cdktf.stringToTerraform(this._projectId),
       target_link: cdktf.stringToTerraform(this._targetLink),
       timeouts: hvnRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };

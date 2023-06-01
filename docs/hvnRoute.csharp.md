@@ -1,6 +1,6 @@
 # `hcp_hvn_route`
 
-Refer to the Terraform Registory for docs: [`hcp_hvn_route`](https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route).
+Refer to the Terraform Registory for docs: [`hcp_hvn_route`](https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route).
 
 # `hvnRoute` Submodule <a name="`hvnRoute` Submodule" id="@cdktf/provider-hcp.hvnRoute"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp_hvn_route`](https://registry.te
 
 ### HvnRoute <a name="HvnRoute" id="@cdktf/provider-hcp.hvnRoute.HvnRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route hcp_hvn_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route hcp_hvn_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.Initializer"></a>
 
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.resetProjectId">ResetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -278,6 +279,12 @@ private void PutTimeouts(HvnRouteTimeouts Value)
 private void ResetId()
 ```
 
+##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.resetProjectId"></a>
+
+```csharp
+private void ResetProjectId()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.resetTimeouts"></a>
 
 ```csharp
@@ -380,12 +387,14 @@ HvnRoute.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.hvnLinkInput">HvnLinkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.hvnRouteIdInput">HvnRouteIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.targetLinkInput">TargetLinkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.destinationCidr">DestinationCidr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.hvnLink">HvnLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.hvnRouteId">HvnRouteId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.property.targetLink">TargetLink</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -612,6 +621,16 @@ public string IdInput { get; }
 
 ---
 
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.property.projectIdInput"></a>
+
+```csharp
+public string ProjectIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TargetLinkInput`<sup>Optional</sup> <a name="TargetLinkInput" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.property.targetLinkInput"></a>
 
 ```csharp
@@ -672,6 +691,16 @@ public string Id { get; }
 
 ---
 
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TargetLink`<sup>Required</sup> <a name="TargetLink" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.property.targetLink"></a>
 
 ```csharp
@@ -722,6 +751,7 @@ new HvnRouteConfig {
     string HvnRouteId,
     string TargetLink,
     string Id = null,
+    string ProjectId = null,
     HvnRouteTimeouts Timeouts = null
 };
 ```
@@ -741,7 +771,8 @@ new HvnRouteConfig {
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteConfig.property.hvnLink">HvnLink</a></code> | <code>string</code> | The `self_link` of the HashiCorp Virtual Network (HVN). |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteConfig.property.hvnRouteId">HvnRouteId</a></code> | <code>string</code> | The ID of the HVN route. |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteConfig.property.targetLink">TargetLink</a></code> | <code>string</code> | A unique URL identifying the target of the HVN route. Examples of the target: [`aws_network_peering`](aws_network_peering.md), [`aws_transit_gateway_attachment`](aws_transit_gateway_attachment.md). |
-| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#id HvnRoute#id}. |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#id HvnRoute#id}. |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The ID of the HCP project where the HVN route is located. |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteTimeouts">HvnRouteTimeouts</a></code> | timeouts block. |
 
 ---
@@ -826,7 +857,7 @@ public string DestinationCidr { get; set; }
 
 The destination CIDR of the HVN route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#destination_cidr HvnRoute#destination_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#destination_cidr HvnRoute#destination_cidr}
 
 ---
 
@@ -840,7 +871,7 @@ public string HvnLink { get; set; }
 
 The `self_link` of the HashiCorp Virtual Network (HVN).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#hvn_link HvnRoute#hvn_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#hvn_link HvnRoute#hvn_link}
 
 ---
 
@@ -854,7 +885,7 @@ public string HvnRouteId { get; set; }
 
 The ID of the HVN route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#hvn_route_id HvnRoute#hvn_route_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#hvn_route_id HvnRoute#hvn_route_id}
 
 ---
 
@@ -868,7 +899,7 @@ public string TargetLink { get; set; }
 
 A unique URL identifying the target of the HVN route. Examples of the target: [`aws_network_peering`](aws_network_peering.md), [`aws_transit_gateway_attachment`](aws_transit_gateway_attachment.md).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#target_link HvnRoute#target_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#target_link HvnRoute#target_link}
 
 ---
 
@@ -880,10 +911,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#id HvnRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#id HvnRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-hcp.hvnRoute.HvnRouteConfig.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; set; }
+```
+
+- *Type:* string
+
+The ID of the HCP project where the HVN route is located.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#project_id HvnRoute#project_id}
 
 ---
 
@@ -897,7 +942,7 @@ public HvnRouteTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#timeouts HvnRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#timeouts HvnRoute#timeouts}
 
 ---
 
@@ -919,9 +964,9 @@ new HvnRouteTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#create HvnRoute#create}. |
-| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#default HvnRoute#default}. |
-| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#delete HvnRoute#delete}. |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#create HvnRoute#create}. |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#default HvnRoute#default}. |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRouteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#delete HvnRoute#delete}. |
 
 ---
 
@@ -933,7 +978,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#create HvnRoute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#create HvnRoute#create}.
 
 ---
 
@@ -945,7 +990,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#default HvnRoute#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#default HvnRoute#default}.
 
 ---
 
@@ -957,7 +1002,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route#delete HvnRoute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route#delete HvnRoute#delete}.
 
 ---
 

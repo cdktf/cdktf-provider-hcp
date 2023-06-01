@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`hcp`](https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs).
+Refer to the Terraform Registory for docs: [`hcp`](https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-hcp.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp`](https://registry.terraform.io
 
 ### HcpProvider <a name="HcpProvider" id="@cdktf/provider-hcp.provider.HcpProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs hcp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer"></a>
 
@@ -63,6 +63,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetAlias">ResetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientId">ResetClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetProjectId">ResetProjectId</a></code> | *No description.* |
 
 ---
 
@@ -146,6 +147,12 @@ private void ResetClientId()
 
 ```csharp
 private void ResetClientSecret()
+```
+
+##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-hcp.provider.HcpProvider.resetProjectId"></a>
+
+```csharp
+private void ResetProjectId()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -234,8 +241,10 @@ HcpProvider.IsTerraformProvider(object X);
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientIdInput">ClientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientId">ClientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecret">ClientSecret</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -361,6 +370,16 @@ public string ClientSecretInput { get; }
 
 ---
 
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput"></a>
+
+```csharp
+public string ProjectIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktf/provider-hcp.provider.HcpProvider.property.clientId"></a>
 
 ```csharp
@@ -375,6 +394,16 @@ public string ClientId { get; }
 
 ```csharp
 public string ClientSecret { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-hcp.provider.HcpProvider.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; }
 ```
 
 - *Type:* string
@@ -411,7 +440,8 @@ using HashiCorp.Cdktf.Providers.Hcp;
 new HcpProviderConfig {
     string Alias = null,
     string ClientId = null,
-    string ClientSecret = null
+    string ClientSecret = null,
+    string ProjectId = null
 };
 ```
 
@@ -422,6 +452,7 @@ new HcpProviderConfig {
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientId">ClientId</a></code> | <code>string</code> | The OAuth2 Client ID for API operations. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The OAuth2 Client Secret for API operations. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The default project in which resources should be created. |
 
 ---
 
@@ -435,7 +466,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#alias HcpProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#alias HcpProvider#alias}
 
 ---
 
@@ -449,7 +480,7 @@ public string ClientId { get; set; }
 
 The OAuth2 Client ID for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#client_id HcpProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#client_id HcpProvider#client_id}
 
 ---
 
@@ -463,7 +494,21 @@ public string ClientSecret { get; set; }
 
 The OAuth2 Client Secret for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs#client_secret HcpProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#client_secret HcpProvider#client_secret}
+
+---
+
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId"></a>
+
+```csharp
+public string ProjectId { get; set; }
+```
+
+- *Type:* string
+
+The default project in which resources should be created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs#project_id HcpProvider#project_id}
 
 ---
 
