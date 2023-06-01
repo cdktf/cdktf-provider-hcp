@@ -390,7 +390,7 @@ DataHcpConsulCluster.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.property.consulVersion">ConsulVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.property.datacenter">Datacenter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.property.hvnId">HvnId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.property.ipAllowlist">IpAllowlist</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList">DataHcpConsulClusterIpAllowlistList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.property.ipAllowlist">IpAllowlist</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList">DataHcpConsulClusterIpAllowlistStructList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.property.organizationId">OrganizationId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.property.primaryLink">PrimaryLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.property.publicEndpoint">PublicEndpoint</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
@@ -666,10 +666,10 @@ public string HvnId { get; }
 ##### `IpAllowlist`<sup>Required</sup> <a name="IpAllowlist" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.property.ipAllowlist"></a>
 
 ```csharp
-public DataHcpConsulClusterIpAllowlistList IpAllowlist { get; }
+public DataHcpConsulClusterIpAllowlistStructList IpAllowlist { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList">DataHcpConsulClusterIpAllowlistList</a>
+- *Type:* <a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList">DataHcpConsulClusterIpAllowlistStructList</a>
 
 ---
 
@@ -1030,14 +1030,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### DataHcpConsulClusterIpAllowlist <a name="DataHcpConsulClusterIpAllowlist" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlist"></a>
+### DataHcpConsulClusterIpAllowlistStruct <a name="DataHcpConsulClusterIpAllowlistStruct" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStruct"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlist.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStruct.Initializer"></a>
 
 ```csharp
 using HashiCorp.Cdktf.Providers.Hcp;
 
-new DataHcpConsulClusterIpAllowlist {
+new DataHcpConsulClusterIpAllowlistStruct {
 
 };
 ```
@@ -1077,25 +1077,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataHcpConsulClusterIpAllowlistList <a name="DataHcpConsulClusterIpAllowlistList" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList"></a>
+### DataHcpConsulClusterIpAllowlistStructList <a name="DataHcpConsulClusterIpAllowlistStructList" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.Initializer"></a>
 
 ```csharp
 using HashiCorp.Cdktf.Providers.Hcp;
 
-new DataHcpConsulClusterIpAllowlistList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+new DataHcpConsulClusterIpAllowlistStructList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.Initializer.parameter.terraformResource"></a>
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* HashiCorp.Cdktf.IInterpolatingParent
 
@@ -1103,7 +1103,7 @@ The parent resource.
 
 ---
 
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.Initializer.parameter.terraformAttribute"></a>
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1111,7 +1111,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.Initializer.parameter.wrapsSet"></a>
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1123,20 +1123,20 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.computeFqn"></a>
 
 ```csharp
 private string ComputeFqn()
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.resolve"></a>
 
 ```csharp
 private object Resolve(IResolveContext Context)
@@ -1144,13 +1144,13 @@ private object Resolve(IResolveContext Context)
 
 Produce the Token's value at resolution time.
 
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.resolve.parameter._context"></a>
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.resolve.parameter._context"></a>
 
 - *Type:* HashiCorp.Cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.toString"></a>
 
 ```csharp
 private string ToString()
@@ -1160,13 +1160,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.get"></a>
+##### `Get` <a name="Get" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.get"></a>
 
 ```csharp
-private DataHcpConsulClusterIpAllowlistOutputReference Get(double Index)
+private DataHcpConsulClusterIpAllowlistStructOutputReference Get(double Index)
 ```
 
-###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.get.parameter.index"></a>
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.get.parameter.index"></a>
 
 - *Type:* double
 
@@ -1179,12 +1179,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.property.creationStack"></a>
 
 ```csharp
 public string[] CreationStack { get; }
@@ -1198,7 +1198,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.property.fqn"></a>
 
 ```csharp
 public string Fqn { get; }
@@ -1209,26 +1209,26 @@ public string Fqn { get; }
 ---
 
 
-### DataHcpConsulClusterIpAllowlistOutputReference <a name="DataHcpConsulClusterIpAllowlistOutputReference" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference"></a>
+### DataHcpConsulClusterIpAllowlistStructOutputReference <a name="DataHcpConsulClusterIpAllowlistStructOutputReference" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer"></a>
 
 ```csharp
 using HashiCorp.Cdktf.Providers.Hcp;
 
-new DataHcpConsulClusterIpAllowlistOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+new DataHcpConsulClusterIpAllowlistStructOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.Initializer.parameter.terraformResource"></a>
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* HashiCorp.Cdktf.IInterpolatingParent
 
@@ -1236,7 +1236,7 @@ The parent resource.
 
 ---
 
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1244,7 +1244,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* double
 
@@ -1252,7 +1252,7 @@ the index of this item in the list.
 
 ---
 
-##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -1264,149 +1264,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.computeFqn"></a>
 
 ```csharp
 private string ComputeFqn()
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getAnyMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getBooleanAttribute"></a>
 
 ```csharp
 private IResolvable GetBooleanAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getBooleanMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getListAttribute"></a>
 
 ```csharp
 private string[] GetListAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getNumberAttribute"></a>
 
 ```csharp
 private double GetNumberAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getNumberListAttribute"></a>
 
 ```csharp
 private double[] GetNumberListAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getNumberMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getStringAttribute"></a>
 
 ```csharp
 private string GetStringAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getStringMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.interpolationForAttribute"></a>
 
 ```csharp
 private IResolvable InterpolationForAttribute(string Property)
 ```
 
-###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.resolve"></a>
 
 ```csharp
 private object Resolve(IResolveContext Context)
@@ -1414,13 +1414,13 @@ private object Resolve(IResolveContext Context)
 
 Produce the Token's value at resolution time.
 
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.resolve.parameter._context"></a>
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.resolve.parameter._context"></a>
 
 - *Type:* HashiCorp.Cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.toString"></a>
 
 ```csharp
 private string ToString()
@@ -1435,15 +1435,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.property.address">Address</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlist">DataHcpConsulClusterIpAllowlist</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.property.address">Address</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStruct">DataHcpConsulClusterIpAllowlistStruct</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.property.creationStack"></a>
 
 ```csharp
 public string[] CreationStack { get; }
@@ -1457,7 +1457,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.property.fqn"></a>
 
 ```csharp
 public string Fqn { get; }
@@ -1467,7 +1467,7 @@ public string Fqn { get; }
 
 ---
 
-##### `Address`<sup>Required</sup> <a name="Address" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.property.address"></a>
+##### `Address`<sup>Required</sup> <a name="Address" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.property.address"></a>
 
 ```csharp
 public string Address { get; }
@@ -1477,7 +1477,7 @@ public string Address { get; }
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.property.description"></a>
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.property.description"></a>
 
 ```csharp
 public string Description { get; }
@@ -1487,13 +1487,13 @@ public string Description { get; }
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.property.internalValue"></a>
 
 ```csharp
-public DataHcpConsulClusterIpAllowlist InternalValue { get; }
+public DataHcpConsulClusterIpAllowlistStruct InternalValue { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlist">DataHcpConsulClusterIpAllowlist</a>
+- *Type:* <a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStruct">DataHcpConsulClusterIpAllowlistStruct</a>
 
 ---
 

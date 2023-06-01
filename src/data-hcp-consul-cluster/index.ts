@@ -38,10 +38,10 @@ export interface DataHcpConsulClusterConfig extends cdktf.TerraformMetaArguments
   */
   readonly timeouts?: DataHcpConsulClusterTimeouts;
 }
-export interface DataHcpConsulClusterIpAllowlist {
+export interface DataHcpConsulClusterIpAllowlistStruct {
 }
 
-export function dataHcpConsulClusterIpAllowlistToTerraform(struct?: DataHcpConsulClusterIpAllowlist): any {
+export function dataHcpConsulClusterIpAllowlistStructToTerraform(struct?: DataHcpConsulClusterIpAllowlistStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -50,7 +50,7 @@ export function dataHcpConsulClusterIpAllowlistToTerraform(struct?: DataHcpConsu
   }
 }
 
-export class DataHcpConsulClusterIpAllowlistOutputReference extends cdktf.ComplexObject {
+export class DataHcpConsulClusterIpAllowlistStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -63,13 +63,13 @@ export class DataHcpConsulClusterIpAllowlistOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataHcpConsulClusterIpAllowlist | undefined {
+  public get internalValue(): DataHcpConsulClusterIpAllowlistStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpConsulClusterIpAllowlist | undefined) {
+  public set internalValue(value: DataHcpConsulClusterIpAllowlistStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -89,7 +89,7 @@ export class DataHcpConsulClusterIpAllowlistOutputReference extends cdktf.Comple
   }
 }
 
-export class DataHcpConsulClusterIpAllowlistList extends cdktf.ComplexList {
+export class DataHcpConsulClusterIpAllowlistStructList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -103,8 +103,8 @@ export class DataHcpConsulClusterIpAllowlistList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataHcpConsulClusterIpAllowlistOutputReference {
-    return new DataHcpConsulClusterIpAllowlistOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataHcpConsulClusterIpAllowlistStructOutputReference {
+    return new DataHcpConsulClusterIpAllowlistStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataHcpConsulClusterTimeouts {
@@ -325,7 +325,7 @@ export class DataHcpConsulCluster extends cdktf.TerraformDataSource {
   }
 
   // ip_allowlist - computed: true, optional: false, required: false
-  private _ipAllowlist = new DataHcpConsulClusterIpAllowlistList(this, "ip_allowlist", false);
+  private _ipAllowlist = new DataHcpConsulClusterIpAllowlistStructList(this, "ip_allowlist", false);
   public get ipAllowlist() {
     return this._ipAllowlist;
   }

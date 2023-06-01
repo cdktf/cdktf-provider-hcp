@@ -32,7 +32,7 @@ consulCluster.ConsulCluster(
   connect_enabled: typing.Union[bool, IResolvable] = None,
   datacenter: str = None,
   id: str = None,
-  ip_allowlist: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlist]] = None,
+  ip_allowlist: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlistStruct]] = None,
   min_consul_version: str = None,
   primary_link: str = None,
   project_id: str = None,
@@ -60,7 +60,7 @@ consulCluster.ConsulCluster(
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer.parameter.connectEnabled">connect_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes the Consul connect feature should be enabled for this cluster.  Default to true. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer.parameter.datacenter">datacenter</a></code> | <code>str</code> | The Consul data center name of the cluster. If not specified, it is defaulted to the value of `cluster_id`. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster#id ConsulCluster#id}. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer.parameter.ipAllowlist">ip_allowlist</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>]]</code> | ip_allowlist block. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer.parameter.ipAllowlist">ip_allowlist</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]]</code> | ip_allowlist block. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer.parameter.minConsulVersion">min_consul_version</a></code> | <code>str</code> | The minimum Consul patch version of the cluster. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer.parameter.primaryLink">primary_link</a></code> | <code>str</code> | The `self_link` of the HCP Consul cluster which is the primary in the federation setup with this HCP Consul cluster. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the HCP Consul cluster is located. |
@@ -207,7 +207,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ip_allowlist`<sup>Optional</sup> <a name="ip_allowlist" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer.parameter.ipAllowlist"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>]]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]]
 
 ip_allowlist block.
 
@@ -530,13 +530,13 @@ def interpolation_for_attribute(
 
 ```python
 def put_ip_allowlist(
-  value: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlist]]
+  value: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlistStruct]]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.putIpAllowlist.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>]]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]]
 
 ---
 
@@ -754,7 +754,7 @@ consulCluster.ConsulCluster.is_terraform_resource(
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.consulSnapshotInterval">consul_snapshot_interval</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.consulSnapshotRetention">consul_snapshot_retention</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.consulVersion">consul_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.ipAllowlist">ip_allowlist</a></code> | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList">ConsulClusterIpAllowlistList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.ipAllowlist">ip_allowlist</a></code> | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList">ConsulClusterIpAllowlistStructList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.organizationId">organization_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.scale">scale</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -767,7 +767,7 @@ consulCluster.ConsulCluster.is_terraform_resource(
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.datacenterInput">datacenter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.hvnIdInput">hvn_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.ipAllowlistInput">ip_allowlist_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.ipAllowlistInput">ip_allowlist_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.minConsulVersionInput">min_consul_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.primaryLinkInput">primary_link_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
@@ -1045,10 +1045,10 @@ consul_version: str
 ##### `ip_allowlist`<sup>Required</sup> <a name="ip_allowlist" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.property.ipAllowlist"></a>
 
 ```python
-ip_allowlist: ConsulClusterIpAllowlistList
+ip_allowlist: ConsulClusterIpAllowlistStructList
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList">ConsulClusterIpAllowlistList</a>
+- *Type:* <a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList">ConsulClusterIpAllowlistStructList</a>
 
 ---
 
@@ -1175,10 +1175,10 @@ id_input: str
 ##### `ip_allowlist_input`<sup>Optional</sup> <a name="ip_allowlist_input" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.property.ipAllowlistInput"></a>
 
 ```python
-ip_allowlist_input: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlist]]
+ip_allowlist_input: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlistStruct]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>]]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]]
 
 ---
 
@@ -1414,7 +1414,7 @@ consulCluster.ConsulClusterConfig(
   connect_enabled: typing.Union[bool, IResolvable] = None,
   datacenter: str = None,
   id: str = None,
-  ip_allowlist: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlist]] = None,
+  ip_allowlist: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlistStruct]] = None,
   min_consul_version: str = None,
   primary_link: str = None,
   project_id: str = None,
@@ -1442,7 +1442,7 @@ consulCluster.ConsulClusterConfig(
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.connectEnabled">connect_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes the Consul connect feature should be enabled for this cluster.  Default to true. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.datacenter">datacenter</a></code> | <code>str</code> | The Consul data center name of the cluster. If not specified, it is defaulted to the value of `cluster_id`. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster#id ConsulCluster#id}. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.ipAllowlist">ip_allowlist</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>]]</code> | ip_allowlist block. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.ipAllowlist">ip_allowlist</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]]</code> | ip_allowlist block. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.minConsulVersion">min_consul_version</a></code> | <code>str</code> | The minimum Consul patch version of the cluster. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.primaryLink">primary_link</a></code> | <code>str</code> | The `self_link` of the HCP Consul cluster which is the primary in the federation setup with this HCP Consul cluster. |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the HCP Consul cluster is located. |
@@ -1628,10 +1628,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `ip_allowlist`<sup>Optional</sup> <a name="ip_allowlist" id="@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.property.ipAllowlist"></a>
 
 ```python
-ip_allowlist: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlist]]
+ip_allowlist: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlistStruct]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>]]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]]
 
 ip_allowlist block.
 
@@ -1729,14 +1729,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ConsulClusterIpAllowlist <a name="ConsulClusterIpAllowlist" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist"></a>
+### ConsulClusterIpAllowlistStruct <a name="ConsulClusterIpAllowlistStruct" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct.Initializer"></a>
 
 ```python
 from cdktf_cdktf_provider_hcp import consul_cluster
 
-consulCluster.ConsulClusterIpAllowlist(
+consulCluster.ConsulClusterIpAllowlistStruct(
   address: str,
   description: str = None
 )
@@ -1746,12 +1746,12 @@ consulCluster.ConsulClusterIpAllowlist(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist.property.address">address</a></code> | <code>str</code> | IP address range in CIDR notation. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist.property.description">description</a></code> | <code>str</code> | Description to help identify source (maximum 255 chars). |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct.property.address">address</a></code> | <code>str</code> | IP address range in CIDR notation. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct.property.description">description</a></code> | <code>str</code> | Description to help identify source (maximum 255 chars). |
 
 ---
 
-##### `address`<sup>Required</sup> <a name="address" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist.property.address"></a>
+##### `address`<sup>Required</sup> <a name="address" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct.property.address"></a>
 
 ```python
 address: str
@@ -1765,7 +1765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct.property.description"></a>
 
 ```python
 description: str
@@ -1855,14 +1855,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ConsulClusterIpAllowlistList <a name="ConsulClusterIpAllowlistList" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList"></a>
+### ConsulClusterIpAllowlistStructList <a name="ConsulClusterIpAllowlistStructList" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.Initializer"></a>
 
 ```python
 from cdktf_cdktf_provider_hcp import consul_cluster
 
-consulCluster.ConsulClusterIpAllowlistList(
+consulCluster.ConsulClusterIpAllowlistStructList(
   terraform_resource: IInterpolatingParent,
   terraform_attribute: str,
   wraps_set: bool
@@ -1871,13 +1871,13 @@ consulCluster.ConsulClusterIpAllowlistList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1885,7 +1885,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1893,7 +1893,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1905,20 +1905,20 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.resolve"></a>
 
 ```python
 def resolve(
@@ -1928,13 +1928,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1944,15 +1944,15 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.get"></a>
+##### `get` <a name="get" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.get"></a>
 
 ```python
 def get(
   index: typing.Union[int, float]
-) -> ConsulClusterIpAllowlistOutputReference
+) -> ConsulClusterIpAllowlistStructOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1965,13 +1965,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1985,7 +1985,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1995,25 +1995,25 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlist]]
+internal_value: typing.Union[IResolvable, typing.List[ConsulClusterIpAllowlistStruct]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>]]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]]
 
 ---
 
 
-### ConsulClusterIpAllowlistOutputReference <a name="ConsulClusterIpAllowlistOutputReference" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference"></a>
+### ConsulClusterIpAllowlistStructOutputReference <a name="ConsulClusterIpAllowlistStructOutputReference" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.Initializer"></a>
 
 ```python
 from cdktf_cdktf_provider_hcp import consul_cluster
 
-consulCluster.ConsulClusterIpAllowlistOutputReference(
+consulCluster.ConsulClusterIpAllowlistStructOutputReference(
   terraform_resource: IInterpolatingParent,
   terraform_attribute: str,
   complex_object_index: typing.Union[int, float],
@@ -2023,14 +2023,14 @@ consulCluster.ConsulClusterIpAllowlistOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2038,7 +2038,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2046,7 +2046,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2054,7 +2054,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -2066,30 +2066,30 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.resetDescription">reset_description</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2097,13 +2097,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2111,13 +2111,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2125,13 +2125,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2139,13 +2139,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2153,13 +2153,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2167,13 +2167,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2181,13 +2181,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2195,13 +2195,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2209,13 +2209,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2223,13 +2223,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2239,13 +2239,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2255,7 +2255,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.resetDescription"></a>
 
 ```python
 def reset_description() -> None
@@ -2266,17 +2266,17 @@ def reset_description() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.addressInput">address_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.address">address</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.addressInput">address_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.address">address</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>, cdktf.IResolvable]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2290,7 +2290,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2300,7 +2300,7 @@ fqn: str
 
 ---
 
-##### `address_input`<sup>Optional</sup> <a name="address_input" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.addressInput"></a>
+##### `address_input`<sup>Optional</sup> <a name="address_input" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.addressInput"></a>
 
 ```python
 address_input: str
@@ -2310,7 +2310,7 @@ address_input: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -2320,7 +2320,7 @@ description_input: str
 
 ---
 
-##### `address`<sup>Required</sup> <a name="address" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.address"></a>
+##### `address`<sup>Required</sup> <a name="address" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.address"></a>
 
 ```python
 address: str
@@ -2330,7 +2330,7 @@ address: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.description"></a>
 
 ```python
 description: str
@@ -2340,13 +2340,13 @@ description: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ConsulClusterIpAllowlist, IResolvable]
+internal_value: typing.Union[ConsulClusterIpAllowlistStruct, IResolvable]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist">ConsulClusterIpAllowlist</a>, cdktf.IResolvable]
+- *Type:* typing.Union[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>, cdktf.IResolvable]
 
 ---
 
