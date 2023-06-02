@@ -1,6 +1,6 @@
 # `hcp_hvn`
 
-Refer to the Terraform Registory for docs: [`hcp_hvn`](https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn).
+Refer to the Terraform Registory for docs: [`hcp_hvn`](https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn).
 
 # `hvn` Submodule <a name="`hvn` Submodule" id="@cdktf/provider-hcp.hvn"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp_hvn`](https://registry.terrafor
 
 ### Hvn <a name="Hvn" id="@cdktf/provider-hcp.hvn.Hvn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn hcp_hvn}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn hcp_hvn}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.hvn.Hvn.Initializer"></a>
 
@@ -52,7 +52,7 @@ Hvn.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.Initializer.parameter.hvnId">hvnId</a></code> | <code>java.lang.String</code> | The ID of the HashiCorp Virtual Network (HVN). |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The region where the HVN is located. |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.Initializer.parameter.cidrBlock">cidrBlock</a></code> | <code>java.lang.String</code> | The CIDR range of the HVN. If this is not provided, the service will provide a default value. |
-| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#id Hvn#id}. |
+| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#id Hvn#id}. |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of the HCP project where the HVN is located. |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a></code> | timeouts block. |
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The provider where the HVN is located. The provider 'aws' is generally available and 'azure' is in public beta.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#cloud_provider Hvn#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#cloud_provider Hvn#cloud_provider}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the HashiCorp Virtual Network (HVN).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#hvn_id Hvn#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#hvn_id Hvn#hvn_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region where the HVN is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#region Hvn#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#region Hvn#region}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The CIDR range of the HVN. If this is not provided, the service will provide a default value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#cidr_block Hvn#cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#cidr_block Hvn#cidr_block}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#id Hvn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#id Hvn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The ID of the HCP project where the HVN is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#project_id Hvn#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#project_id Hvn#project_id}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#timeouts Hvn#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#timeouts Hvn#timeouts}
 
 ---
 
@@ -943,7 +943,7 @@ HvnConfig.builder()
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.hvnId">hvnId</a></code> | <code>java.lang.String</code> | The ID of the HashiCorp Virtual Network (HVN). |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.region">region</a></code> | <code>java.lang.String</code> | The region where the HVN is located. |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.cidrBlock">cidrBlock</a></code> | <code>java.lang.String</code> | The CIDR range of the HVN. If this is not provided, the service will provide a default value. |
-| <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#id Hvn#id}. |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#id Hvn#id}. |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of the HCP project where the HVN is located. |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a></code> | timeouts block. |
 
@@ -1029,7 +1029,7 @@ public java.lang.String getCloudProvider();
 
 The provider where the HVN is located. The provider 'aws' is generally available and 'azure' is in public beta.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#cloud_provider Hvn#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#cloud_provider Hvn#cloud_provider}
 
 ---
 
@@ -1043,7 +1043,7 @@ public java.lang.String getHvnId();
 
 The ID of the HashiCorp Virtual Network (HVN).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#hvn_id Hvn#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#hvn_id Hvn#hvn_id}
 
 ---
 
@@ -1057,7 +1057,7 @@ public java.lang.String getRegion();
 
 The region where the HVN is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#region Hvn#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#region Hvn#region}
 
 ---
 
@@ -1071,7 +1071,7 @@ public java.lang.String getCidrBlock();
 
 The CIDR range of the HVN. If this is not provided, the service will provide a default value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#cidr_block Hvn#cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#cidr_block Hvn#cidr_block}
 
 ---
 
@@ -1083,7 +1083,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#id Hvn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#id Hvn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1100,7 +1100,7 @@ public java.lang.String getProjectId();
 
 The ID of the HCP project where the HVN is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#project_id Hvn#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#project_id Hvn#project_id}
 
 ---
 
@@ -1114,7 +1114,7 @@ public HvnTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#timeouts Hvn#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#timeouts Hvn#timeouts}
 
 ---
 
@@ -1136,9 +1136,9 @@ HvnTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#create Hvn#create}. |
-| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#default Hvn#default}. |
-| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#delete Hvn#delete}. |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#create Hvn#create}. |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#default Hvn#default}. |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#delete Hvn#delete}. |
 
 ---
 
@@ -1150,7 +1150,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#create Hvn#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#create Hvn#create}.
 
 ---
 
@@ -1162,7 +1162,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#default Hvn#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#default Hvn#default}.
 
 ---
 
@@ -1174,7 +1174,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn#delete Hvn#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn#delete Hvn#delete}.
 
 ---
 
