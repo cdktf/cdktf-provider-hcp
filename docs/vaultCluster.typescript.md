@@ -500,7 +500,7 @@ vaultCluster.VaultCluster.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.publicEndpointInput">publicEndpointInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.tierInput">tierInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.clusterId">clusterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.hvnId">hvnId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -918,10 +918,10 @@ public readonly tierInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: VaultClusterTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | VaultClusterTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a>
 
 ---
 
@@ -3189,7 +3189,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3300,10 +3300,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: VaultClusterTimeouts | IResolvable;
+public readonly internalValue: IResolvable | VaultClusterTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a>
 
 ---
 

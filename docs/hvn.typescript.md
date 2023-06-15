@@ -398,7 +398,7 @@ hvn.Hvn.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.cidrBlock">cidrBlock</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.cloudProvider">cloudProvider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.hvnId">hvnId</a></code> | <code>string</code> | *No description.* |
@@ -673,10 +673,10 @@ public readonly regionInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-hcp.hvn.Hvn.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: HvnTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | HvnTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a>
 
 ---
 
@@ -1255,7 +1255,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1346,10 +1346,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: HvnTimeouts | IResolvable;
+public readonly internalValue: IResolvable | HvnTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a>
 
 ---
 

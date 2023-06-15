@@ -389,7 +389,7 @@ dataHcpHvn.DataHcpHvn.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.property.hvnIdInput">hvnIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts">DataHcpHvnTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts">DataHcpHvnTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.property.hvnId">hvnId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
@@ -641,10 +641,10 @@ public readonly projectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataHcpHvnTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataHcpHvnTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts">DataHcpHvnTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts">DataHcpHvnTimeouts</a>
 
 ---
 
@@ -1104,7 +1104,7 @@ public resetDefault(): void
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeoutsOutputReference.property.defaultInput">defaultInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts">DataHcpHvnTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts">DataHcpHvnTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1155,10 +1155,10 @@ public readonly default: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataHcpHvnTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataHcpHvnTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts">DataHcpHvnTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts">DataHcpHvnTimeouts</a>
 
 ---
 

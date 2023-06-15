@@ -588,7 +588,7 @@ hvn.Hvn.is_terraform_resource(
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.cidrBlock">cidr_block</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.cloudProvider">cloud_provider</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.Hvn.property.hvnId">hvn_id</a></code> | <code>str</code> | *No description.* |
@@ -863,10 +863,10 @@ region_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-hcp.hvn.Hvn.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[HvnTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, HvnTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a>]
 
 ---
 
@@ -1489,7 +1489,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1580,10 +1580,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.hvn.HvnTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[HvnTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, HvnTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.hvn.HvnTimeouts">HvnTimeouts</a>]
 
 ---
 

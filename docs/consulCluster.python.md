@@ -774,7 +774,7 @@ consulCluster.ConsulCluster.is_terraform_resource(
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.publicEndpointInput">public_endpoint_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.sizeInput">size_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.tierInput">tier_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts">ConsulClusterTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts">ConsulClusterTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.autoHvnToHvnPeering">auto_hvn_to_hvn_peering</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.clusterId">cluster_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulCluster.property.connectEnabled">connect_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1245,10 +1245,10 @@ tier_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[ConsulClusterTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, ConsulClusterTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts">ConsulClusterTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts">ConsulClusterTimeouts</a>]
 
 ---
 
@@ -2272,7 +2272,7 @@ def reset_description() -> None
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.address">address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]</code> | *No description.* |
 
 ---
 
@@ -2343,10 +2343,10 @@ description: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ConsulClusterIpAllowlistStruct, IResolvable]
+internal_value: typing.Union[IResolvable, ConsulClusterIpAllowlistStruct]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct">ConsulClusterIpAllowlistStruct</a>]
 
 ---
 
@@ -2622,7 +2622,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts">ConsulClusterTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts">ConsulClusterTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2733,10 +2733,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.consulCluster.ConsulClusterTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ConsulClusterTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, ConsulClusterTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts">ConsulClusterTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts">ConsulClusterTimeouts</a>]
 
 ---
 

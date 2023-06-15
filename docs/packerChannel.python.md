@@ -628,7 +628,7 @@ packerChannel.PackerChannel.is_terraform_resource(
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.iterationInput">iteration_input</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -891,10 +891,10 @@ project_id_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-hcp.packerChannel.PackerChannel.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[PackerChannelTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, PackerChannelTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a>]
 
 ---
 
@@ -1934,7 +1934,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2045,10 +2045,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.packerChannel.PackerChannelTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[PackerChannelTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, PackerChannelTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a>]
 
 ---
 

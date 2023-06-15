@@ -375,7 +375,7 @@ dataHcpConsulVersions.DataHcpConsulVersions.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.property.recommended">recommended</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeoutsOutputReference">DataHcpConsulVersionsTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts">DataHcpConsulVersionsTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts">DataHcpConsulVersionsTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.property.id">id</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -555,10 +555,10 @@ public readonly idInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataHcpConsulVersionsTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataHcpConsulVersionsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts">DataHcpConsulVersionsTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts">DataHcpConsulVersionsTimeouts</a>
 
 ---
 
@@ -968,7 +968,7 @@ public resetDefault(): void
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeoutsOutputReference.property.defaultInput">defaultInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts">DataHcpConsulVersionsTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts">DataHcpConsulVersionsTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1019,10 +1019,10 @@ public readonly default: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataHcpConsulVersionsTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataHcpConsulVersionsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts">DataHcpConsulVersionsTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts">DataHcpConsulVersionsTimeouts</a>
 
 ---
 
