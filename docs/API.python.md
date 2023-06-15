@@ -23,6 +23,7 @@ The following submodules are available:
 - [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.python.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.python.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.python.md)
+- [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.python.md)
 - [hvn](./hvn.python.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.python.md)
 - [hvnRoute](./hvnRoute.python.md)

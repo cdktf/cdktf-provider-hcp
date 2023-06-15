@@ -1,6 +1,6 @@
 # `hcp_hvn_peering_connection`
 
-Refer to the Terraform Registory for docs: [`hcp_hvn_peering_connection`](https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection).
+Refer to the Terraform Registory for docs: [`hcp_hvn_peering_connection`](https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection).
 
 # `hvnPeeringConnection` Submodule <a name="`hvnPeeringConnection` Submodule" id="@cdktf/provider-hcp.hvnPeeringConnection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp_hvn_peering_connection`](https:
 
 ### HvnPeeringConnection <a name="HvnPeeringConnection" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection.Initializer"></a>
 
@@ -756,8 +756,8 @@ new HvnPeeringConnectionConfig {
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.hvn1">Hvn1</a></code> | <code>string</code> | The unique URL of one of the HVNs being peered. |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.hvn2">Hvn2</a></code> | <code>string</code> | The unique URL of one of the HVNs being peered. |
-| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#id HvnPeeringConnection#id}. |
-| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The ID of the HCP project where the HVN peering connection is located. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#id HvnPeeringConnection#id}. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The ID of the HCP project where HVN peering connection is located. |
 | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts">HvnPeeringConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -842,7 +842,7 @@ public string Hvn1 { get; set; }
 
 The unique URL of one of the HVNs being peered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#hvn_1 HvnPeeringConnection#hvn_1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#hvn_1 HvnPeeringConnection#hvn_1}
 
 ---
 
@@ -856,7 +856,7 @@ public string Hvn2 { get; set; }
 
 The unique URL of one of the HVNs being peered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#hvn_2 HvnPeeringConnection#hvn_2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#hvn_2 HvnPeeringConnection#hvn_2}
 
 ---
 
@@ -868,7 +868,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#id HvnPeeringConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#id HvnPeeringConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -883,9 +883,11 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-The ID of the HCP project where the HVN peering connection is located.
+The ID of the HCP project where HVN peering connection is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#project_id HvnPeeringConnection#project_id}
+Always matches hvn_1's project ID. Setting this attribute is deprecated, but it will remain usable in read-only form.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#project_id HvnPeeringConnection#project_id}
 
 ---
 
@@ -899,7 +901,7 @@ public HvnPeeringConnectionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#timeouts HvnPeeringConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#timeouts HvnPeeringConnection#timeouts}
 
 ---
 
@@ -921,9 +923,9 @@ new HvnPeeringConnectionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#create HvnPeeringConnection#create}. |
-| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#default HvnPeeringConnection#default}. |
-| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#delete HvnPeeringConnection#delete}. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#create HvnPeeringConnection#create}. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#default HvnPeeringConnection#default}. |
+| <code><a href="#@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnectionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#delete HvnPeeringConnection#delete}. |
 
 ---
 
@@ -935,7 +937,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#create HvnPeeringConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#create HvnPeeringConnection#create}.
 
 ---
 
@@ -947,7 +949,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#default HvnPeeringConnection#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#default HvnPeeringConnection#default}.
 
 ---
 
@@ -959,7 +961,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn_peering_connection#delete HvnPeeringConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn_peering_connection#delete HvnPeeringConnection#delete}.
 
 ---
 

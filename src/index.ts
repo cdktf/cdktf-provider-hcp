@@ -32,5 +32,6 @@ export * as dataHcpPackerImage from './data-hcp-packer-image';
 export * as dataHcpPackerImageIteration from './data-hcp-packer-image-iteration';
 export * as dataHcpPackerIteration from './data-hcp-packer-iteration';
 export * as dataHcpVaultCluster from './data-hcp-vault-cluster';
+export * as dataHcpVaultSecretsApp from './data-hcp-vault-secrets-app';
 export * as provider from './provider';
 

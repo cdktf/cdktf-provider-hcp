@@ -23,6 +23,7 @@ The following submodules are available:
 - [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.java.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.java.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.java.md)
+- [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.java.md)
 - [hvn](./hvn.java.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.java.md)
 - [hvnRoute](./hvnRoute.java.md)
