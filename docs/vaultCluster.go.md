@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 vaultcluster.NewVaultCluster(scope Construct, id *string, config VaultClusterConfig) VaultCluster
 ```
@@ -399,7 +399,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 vaultcluster.VaultCluster_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 vaultcluster.VaultCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ vaultcluster.VaultCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 vaultcluster.VaultCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -1040,7 +1040,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 &vaultcluster.VaultClusterAuditLogConfig {
 	DatadogApiKey: *string,
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 &vaultcluster.VaultClusterConfig {
 	Connection: interface{},
@@ -1182,17 +1182,17 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
 	Provisioners: *[]interface{},
 	ClusterId: *string,
 	HvnId: *string,
-	AuditLogConfig: github.com/cdktf/cdktf-provider-hcp-go/hcp/v5.vaultCluster.VaultClusterAuditLogConfig,
+	AuditLogConfig: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultCluster.VaultClusterAuditLogConfig,
 	Id: *string,
-	MajorVersionUpgradeConfig: github.com/cdktf/cdktf-provider-hcp-go/hcp/v5.vaultCluster.VaultClusterMajorVersionUpgradeConfig,
-	MetricsConfig: github.com/cdktf/cdktf-provider-hcp-go/hcp/v5.vaultCluster.VaultClusterMetricsConfig,
+	MajorVersionUpgradeConfig: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultCluster.VaultClusterMajorVersionUpgradeConfig,
+	MetricsConfig: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultCluster.VaultClusterMetricsConfig,
 	MinVaultVersion: *string,
 	PathsFilter: *[]*string,
 	PrimaryLink: *string,
 	ProjectId: *string,
 	PublicEndpoint: interface{},
 	Tier: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v5.vaultCluster.VaultClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultCluster.VaultClusterTimeouts,
 }
 ```
 
@@ -1487,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMajorVersionUpgradeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 &vaultcluster.VaultClusterMajorVersionUpgradeConfig {
 	UpgradeType: *string,
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 &vaultcluster.VaultClusterMetricsConfig {
 	DatadogApiKey: *string,
@@ -1685,7 +1685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 &vaultcluster.VaultClusterTimeouts {
 	Create: *string,
@@ -1761,7 +1761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 vaultcluster.NewVaultClusterAuditLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultClusterAuditLogConfigOutputReference
 ```
@@ -2213,7 +2213,7 @@ func InternalValue() VaultClusterAuditLogConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMajorVersionUpgradeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 vaultcluster.NewVaultClusterMajorVersionUpgradeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultClusterMajorVersionUpgradeConfigOutputReference
 ```
@@ -2542,7 +2542,7 @@ func InternalValue() VaultClusterMajorVersionUpgradeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 vaultcluster.NewVaultClusterMetricsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultClusterMetricsConfigOutputReference
 ```
@@ -2994,7 +2994,7 @@ func InternalValue() VaultClusterMetricsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultcluster"
 
 vaultcluster.NewVaultClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultClusterTimeoutsOutputReference
 ```
