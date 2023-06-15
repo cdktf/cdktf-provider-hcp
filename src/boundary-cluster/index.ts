@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster
+// https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface BoundaryClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the Boundary cluster
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#cluster_id BoundaryCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#cluster_id BoundaryCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#id BoundaryCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#id BoundaryCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface BoundaryClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The password of the initial admin user. This must be at least 8 characters in length. Note that this may show up in logs, and it will be stored in the state file.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#password BoundaryCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#password BoundaryCluster#password}
   */
   readonly password: string;
   /**
   * The ID of the HCP project where the Boundary cluster is located.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#project_id BoundaryCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#project_id BoundaryCluster#project_id}
   */
   readonly projectId?: string;
   /**
   * The username of the initial admin user. This must be at least 3 characters in length, alphanumeric, hyphen, or period.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#username BoundaryCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#username BoundaryCluster#username}
   */
   readonly username: string;
   /**
   * maintenance_window_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#maintenance_window_config BoundaryCluster#maintenance_window_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#maintenance_window_config BoundaryCluster#maintenance_window_config}
   */
   readonly maintenanceWindowConfig?: BoundaryClusterMaintenanceWindowConfig;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#timeouts BoundaryCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#timeouts BoundaryCluster#timeouts}
   */
   readonly timeouts?: BoundaryClusterTimeouts;
 }
@@ -60,25 +55,25 @@ export interface BoundaryClusterMaintenanceWindowConfig {
   /**
   * The maintenance day of the week for scheduled upgrades. Valid options for maintenance window day - `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#day BoundaryCluster#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#day BoundaryCluster#day}
   */
   readonly day?: string;
   /**
   * The end time which upgrades can be performed. Uses 24H clock and must be in UTC time zone. Valid options include - 1 to 24 (inclusive)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#end BoundaryCluster#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#end BoundaryCluster#end}
   */
   readonly end?: number;
   /**
   * The start time which upgrades can be performed. Uses 24H clock and must be in UTC time zone. Valid options include - 0 to 23 (inclusive)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#start BoundaryCluster#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#start BoundaryCluster#start}
   */
   readonly start?: number;
   /**
   * The upgrade type for the cluster. Valid options for upgrade type - `AUTOMATIC`, `SCHEDULED`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#upgrade_type BoundaryCluster#upgrade_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#upgrade_type BoundaryCluster#upgrade_type}
   */
   readonly upgradeType?: string;
 }
@@ -212,15 +207,15 @@ export class BoundaryClusterMaintenanceWindowConfigOutputReference extends cdktf
 }
 export interface BoundaryClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#create BoundaryCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#create BoundaryCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#default BoundaryCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#default BoundaryCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster#delete BoundaryCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster#delete BoundaryCluster#delete}
   */
   readonly delete?: string;
 }
@@ -341,7 +336,7 @@ export class BoundaryClusterTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster hcp_boundary_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster hcp_boundary_cluster}
 */
 export class BoundaryCluster extends cdktf.TerraformResource {
 
@@ -355,7 +350,7 @@ export class BoundaryCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -366,7 +361,7 @@ export class BoundaryCluster extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_boundary_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.59.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

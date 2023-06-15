@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/boundary_cluster
+// https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/boundary_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataHcpBoundaryClusterConfig extends cdktf.TerraformMetaArgumen
   /**
   * The ID of the Boundary cluster
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/boundary_cluster#cluster_id DataHcpBoundaryCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/boundary_cluster#cluster_id DataHcpBoundaryCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/boundary_cluster#id DataHcpBoundaryCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/boundary_cluster#id DataHcpBoundaryCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface DataHcpBoundaryClusterConfig extends cdktf.TerraformMetaArgumen
   /**
   * The ID of the HCP project where the Boundary cluster is located.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/boundary_cluster#project_id DataHcpBoundaryCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/boundary_cluster#project_id DataHcpBoundaryCluster#project_id}
   */
   readonly projectId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/boundary_cluster#timeouts DataHcpBoundaryCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/boundary_cluster#timeouts DataHcpBoundaryCluster#timeouts}
   */
   readonly timeouts?: DataHcpBoundaryClusterTimeouts;
 }
@@ -119,7 +114,7 @@ export class DataHcpBoundaryClusterMaintenanceWindowConfigList extends cdktf.Com
 }
 export interface DataHcpBoundaryClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/boundary_cluster#default DataHcpBoundaryCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/boundary_cluster#default DataHcpBoundaryCluster#default}
   */
   readonly default?: string;
 }
@@ -194,7 +189,7 @@ export class DataHcpBoundaryClusterTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/boundary_cluster hcp_boundary_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/boundary_cluster hcp_boundary_cluster}
 */
 export class DataHcpBoundaryCluster extends cdktf.TerraformDataSource {
 
@@ -208,7 +203,7 @@ export class DataHcpBoundaryCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -219,7 +214,7 @@ export class DataHcpBoundaryCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_boundary_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.59.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

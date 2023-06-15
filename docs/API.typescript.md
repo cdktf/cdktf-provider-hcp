@@ -23,6 +23,7 @@ The following submodules are available:
 - [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.typescript.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.typescript.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.typescript.md)
+- [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.typescript.md)
 - [hvn](./hvn.typescript.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.typescript.md)
 - [hvnRoute](./hvnRoute.typescript.md)

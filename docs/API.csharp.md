@@ -23,6 +23,7 @@ The following submodules are available:
 - [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.csharp.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.csharp.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.csharp.md)
+- [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.csharp.md)
 - [hvn](./hvn.csharp.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.csharp.md)
 - [hvnRoute](./hvnRoute.csharp.md)
