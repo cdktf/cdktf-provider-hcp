@@ -28,6 +28,7 @@ The following submodules are available:
 - [hvnPeeringConnection](./hvnPeeringConnection.java.md)
 - [hvnRoute](./hvnRoute.java.md)
 - [packerChannel](./packerChannel.java.md)
+- [packerChannelAssignment](./packerChannelAssignment.java.md)
 - [provider](./provider.java.md)
 - [vaultCluster](./vaultCluster.java.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.java.md)

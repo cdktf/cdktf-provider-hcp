@@ -28,6 +28,7 @@ The following submodules are available:
 - [hvnPeeringConnection](./hvnPeeringConnection.python.md)
 - [hvnRoute](./hvnRoute.python.md)
 - [packerChannel](./packerChannel.python.md)
+- [packerChannelAssignment](./packerChannelAssignment.python.md)
 - [provider](./provider.python.md)
 - [vaultCluster](./vaultCluster.python.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.python.md)
