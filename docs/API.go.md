@@ -28,6 +28,7 @@ The following submodules are available:
 - [hvnPeeringConnection](./hvnPeeringConnection.go.md)
 - [hvnRoute](./hvnRoute.go.md)
 - [packerChannel](./packerChannel.go.md)
+- [packerChannelAssignment](./packerChannelAssignment.go.md)
 - [provider](./provider.go.md)
 - [vaultCluster](./vaultCluster.go.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.go.md)

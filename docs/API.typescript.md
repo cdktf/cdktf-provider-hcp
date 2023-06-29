@@ -28,6 +28,7 @@ The following submodules are available:
 - [hvnPeeringConnection](./hvnPeeringConnection.typescript.md)
 - [hvnRoute](./hvnRoute.typescript.md)
 - [packerChannel](./packerChannel.typescript.md)
+- [packerChannelAssignment](./packerChannelAssignment.typescript.md)
 - [provider](./provider.typescript.md)
 - [vaultCluster](./vaultCluster.typescript.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.typescript.md)

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering
+// https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface AwsNetworkPeeringConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the HashiCorp Virtual Network (HVN).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#hvn_id AwsNetworkPeering#hvn_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#hvn_id AwsNetworkPeering#hvn_id}
   */
   readonly hvnId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#id AwsNetworkPeering#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#id AwsNetworkPeering#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface AwsNetworkPeeringConfig extends cdktf.TerraformMetaArguments {
   /**
   * The account ID of the peer VPC in AWS.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#peer_account_id AwsNetworkPeering#peer_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#peer_account_id AwsNetworkPeering#peer_account_id}
   */
   readonly peerAccountId: string;
   /**
   * The ID of the peer VPC in AWS.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#peer_vpc_id AwsNetworkPeering#peer_vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#peer_vpc_id AwsNetworkPeering#peer_vpc_id}
   */
   readonly peerVpcId: string;
   /**
   * The region of the peer VPC in AWS.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#peer_vpc_region AwsNetworkPeering#peer_vpc_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#peer_vpc_region AwsNetworkPeering#peer_vpc_region}
   */
   readonly peerVpcRegion: string;
   /**
   * The ID of the network peering.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#peering_id AwsNetworkPeering#peering_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#peering_id AwsNetworkPeering#peering_id}
   */
   readonly peeringId: string;
   /**
@@ -55,27 +55,27 @@ The ID of the HCP project where the network peering is located. Always matches t
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#project_id AwsNetworkPeering#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#project_id AwsNetworkPeering#project_id}
   */
   readonly projectId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#timeouts AwsNetworkPeering#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#timeouts AwsNetworkPeering#timeouts}
   */
   readonly timeouts?: AwsNetworkPeeringTimeouts;
 }
 export interface AwsNetworkPeeringTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#create AwsNetworkPeering#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#create AwsNetworkPeering#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#default AwsNetworkPeering#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#default AwsNetworkPeering#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering#delete AwsNetworkPeering#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering#delete AwsNetworkPeering#delete}
   */
   readonly delete?: string;
 }
@@ -196,7 +196,7 @@ export class AwsNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering hcp_aws_network_peering}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering hcp_aws_network_peering}
 */
 export class AwsNetworkPeering extends cdktf.TerraformResource {
 
@@ -210,7 +210,7 @@ export class AwsNetworkPeering extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -221,7 +221,7 @@ export class AwsNetworkPeering extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_aws_network_peering',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.62.0',
+        providerVersion: '0.63.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

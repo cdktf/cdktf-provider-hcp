@@ -15,6 +15,7 @@ export * as hvn from './hvn';
 export * as hvnPeeringConnection from './hvn-peering-connection';
 export * as hvnRoute from './hvn-route';
 export * as packerChannel from './packer-channel';
+export * as packerChannelAssignment from './packer-channel-assignment';
 export * as vaultCluster from './vault-cluster';
 export * as vaultClusterAdminToken from './vault-cluster-admin-token';
 export * as dataHcpAwsNetworkPeering from './data-hcp-aws-network-peering';

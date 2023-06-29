@@ -28,6 +28,7 @@ The following submodules are available:
 - [hvnPeeringConnection](./hvnPeeringConnection.csharp.md)
 - [hvnRoute](./hvnRoute.csharp.md)
 - [packerChannel](./packerChannel.csharp.md)
+- [packerChannelAssignment](./packerChannelAssignment.csharp.md)
 - [provider](./provider.csharp.md)
 - [vaultCluster](./vaultCluster.csharp.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.csharp.md)
