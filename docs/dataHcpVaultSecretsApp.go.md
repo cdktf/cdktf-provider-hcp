@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.65.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultSecretsApp.DataHcpVaultSecretsApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretsapp"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/datahcpvaultsecretsapp"
 
 datahcpvaultsecretsapp.NewDataHcpVaultSecretsApp(scope Construct, id *string, config DataHcpVaultSecretsAppConfig) DataHcpVaultSecretsApp
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpVaultSecretsApp.DataHcpVaultSecretsApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretsapp"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/datahcpvaultsecretsapp"
 
 datahcpvaultsecretsapp.DataHcpVaultSecretsApp_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpVaultSecretsApp.DataHcpVaultSecretsApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretsapp"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/datahcpvaultsecretsapp"
 
 datahcpvaultsecretsapp.DataHcpVaultSecretsApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datahcpvaultsecretsapp.DataHcpVaultSecretsApp_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpVaultSecretsApp.DataHcpVaultSecretsApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretsapp"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/datahcpvaultsecretsapp"
 
 datahcpvaultsecretsapp.DataHcpVaultSecretsApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpVaultSecretsApp.DataHcpVaultSecretsAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretsapp"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/datahcpvaultsecretsapp"
 
 &datahcpvaultsecretsapp.DataHcpVaultSecretsAppConfig {
 	Connection: interface{},
