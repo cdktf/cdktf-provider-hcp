@@ -19,6 +19,7 @@ The following submodules are available:
 - [dataHcpHvn](./dataHcpHvn.csharp.md)
 - [dataHcpHvnPeeringConnection](./dataHcpHvnPeeringConnection.csharp.md)
 - [dataHcpHvnRoute](./dataHcpHvnRoute.csharp.md)
+- [dataHcpPackerBucketNames](./dataHcpPackerBucketNames.csharp.md)
 - [dataHcpPackerImage](./dataHcpPackerImage.csharp.md)
 - [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.csharp.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.csharp.md)

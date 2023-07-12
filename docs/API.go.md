@@ -19,6 +19,7 @@ The following submodules are available:
 - [dataHcpHvn](./dataHcpHvn.go.md)
 - [dataHcpHvnPeeringConnection](./dataHcpHvnPeeringConnection.go.md)
 - [dataHcpHvnRoute](./dataHcpHvnRoute.go.md)
+- [dataHcpPackerBucketNames](./dataHcpPackerBucketNames.go.md)
 - [dataHcpPackerImage](./dataHcpPackerImage.go.md)
 - [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.go.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.go.md)

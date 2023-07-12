@@ -19,6 +19,7 @@ The following submodules are available:
 - [dataHcpHvn](./dataHcpHvn.python.md)
 - [dataHcpHvnPeeringConnection](./dataHcpHvnPeeringConnection.python.md)
 - [dataHcpHvnRoute](./dataHcpHvnRoute.python.md)
+- [dataHcpPackerBucketNames](./dataHcpPackerBucketNames.python.md)
 - [dataHcpPackerImage](./dataHcpPackerImage.python.md)
 - [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.python.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.python.md)

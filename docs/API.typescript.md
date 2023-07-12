@@ -19,6 +19,7 @@ The following submodules are available:
 - [dataHcpHvn](./dataHcpHvn.typescript.md)
 - [dataHcpHvnPeeringConnection](./dataHcpHvnPeeringConnection.typescript.md)
 - [dataHcpHvnRoute](./dataHcpHvnRoute.typescript.md)
+- [dataHcpPackerBucketNames](./dataHcpPackerBucketNames.typescript.md)
 - [dataHcpPackerImage](./dataHcpPackerImage.typescript.md)
 - [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.typescript.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.typescript.md)
