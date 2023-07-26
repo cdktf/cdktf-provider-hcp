@@ -1,6 +1,6 @@
 # `data_hcp_consul_versions`
 
-Refer to the Terraform Registory for docs: [`data_hcp_consul_versions`](https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/consul_versions).
+Refer to the Terraform Registory for docs: [`data_hcp_consul_versions`](https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/consul_versions).
 
 # `dataHcpConsulVersions` Submodule <a name="`dataHcpConsulVersions` Submodule" id="@cdktf/provider-hcp.dataHcpConsulVersions"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_hcp_consul_versions`](https://
 
 ### DataHcpConsulVersions <a name="DataHcpConsulVersions" id="@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/consul_versions hcp_consul_versions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/consul_versions hcp_consul_versions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersions.Initializer"></a>
 
@@ -613,7 +613,7 @@ const dataHcpConsulVersionsConfig: dataHcpConsulVersions.DataHcpConsulVersionsCo
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/consul_versions#id DataHcpConsulVersions#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/consul_versions#id DataHcpConsulVersions#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts">DataHcpConsulVersionsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -696,7 +696,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/consul_versions#id DataHcpConsulVersions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/consul_versions#id DataHcpConsulVersions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -713,7 +713,7 @@ public readonly timeouts: DataHcpConsulVersionsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/consul_versions#timeouts DataHcpConsulVersions#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/consul_versions#timeouts DataHcpConsulVersions#timeouts}
 
 ---
 
@@ -731,7 +731,7 @@ const dataHcpConsulVersionsTimeouts: dataHcpConsulVersions.DataHcpConsulVersions
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/consul_versions#default DataHcpConsulVersions#default}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulVersions.DataHcpConsulVersionsTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/consul_versions#default DataHcpConsulVersions#default}. |
 
 ---
 
@@ -743,7 +743,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/consul_versions#default DataHcpConsulVersions#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/consul_versions#default DataHcpConsulVersions#default}.
 
 ---
 
