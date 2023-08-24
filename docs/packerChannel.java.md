@@ -1,6 +1,6 @@
 # `hcp_packer_channel`
 
-Refer to the Terraform Registory for docs: [`hcp_packer_channel`](https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel).
+Refer to the Terraform Registory for docs: [`hcp_packer_channel`](https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel).
 
 # `packerChannel` Submodule <a name="`packerChannel` Submodule" id="@cdktf/provider-hcp.packerChannel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp_packer_channel`](https://regist
 
 ### PackerChannel <a name="PackerChannel" id="@cdktf/provider-hcp.packerChannel.PackerChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel hcp_packer_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel hcp_packer_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer"></a>
 
@@ -30,8 +30,9 @@ PackerChannel.Builder.create(Construct scope, java.lang.String id)
     .bucketName(java.lang.String)
     .name(java.lang.String)
 //  .id(java.lang.String)
-//  .iteration(PackerChannelIteration)
 //  .projectId(java.lang.String)
+//  .restricted(java.lang.Boolean)
+//  .restricted(IResolvable)
 //  .timeouts(PackerChannelTimeouts)
     .build();
 ```
@@ -49,9 +50,9 @@ PackerChannel.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.bucketName">bucketName</a></code> | <code>java.lang.String</code> | The slug of the HCP Packer Registry bucket where the channel should be created. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the channel being managed. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#id PackerChannel#id}. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.iteration">iteration</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a></code> | iteration block. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#id PackerChannel#id}. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of the HCP project where this channel is located. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.restricted">restricted</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the channel is only visible to users with permission to create and manage it. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +123,7 @@ Must be unique amongst siblings in the same scope
 
 The slug of the HCP Packer Registry bucket where the channel should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#bucket_name PackerChannel#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#bucket_name PackerChannel#bucket_name}
 
 ---
 
@@ -132,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the channel being managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#name PackerChannel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#name PackerChannel#name}
 
 ---
 
@@ -140,20 +141,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#id PackerChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#id PackerChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `iteration`<sup>Optional</sup> <a name="iteration" id="@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.iteration"></a>
-
-- *Type:* <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a>
-
-iteration block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#iteration PackerChannel#iteration}
 
 ---
 
@@ -166,7 +157,19 @@ The ID of the HCP project where this channel is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#project_id PackerChannel#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#project_id PackerChannel#project_id}
+
+---
+
+##### `restricted`<sup>Optional</sup> <a name="restricted" id="@cdktf/provider-hcp.packerChannel.PackerChannel.Initializer.parameter.restricted"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+If true, the channel is only visible to users with permission to create and manage it.
+
+If false, the channel is visible to every member of the organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#restricted PackerChannel#restricted}
 
 ---
 
@@ -176,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#timeouts PackerChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#timeouts PackerChannel#timeouts}
 
 ---
 
@@ -200,11 +203,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.putIteration">putIteration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.resetIteration">resetIteration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.resetProjectId">resetProjectId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.resetRestricted">resetRestricted</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -393,18 +395,6 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `putIteration` <a name="putIteration" id="@cdktf/provider-hcp.packerChannel.PackerChannel.putIteration"></a>
-
-```java
-public void putIteration(PackerChannelIteration value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-hcp.packerChannel.PackerChannel.putIteration.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a>
-
----
-
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-hcp.packerChannel.PackerChannel.putTimeouts"></a>
 
 ```java
@@ -423,16 +413,16 @@ public void putTimeouts(PackerChannelTimeouts value)
 public void resetId()
 ```
 
-##### `resetIteration` <a name="resetIteration" id="@cdktf/provider-hcp.packerChannel.PackerChannel.resetIteration"></a>
-
-```java
-public void resetIteration()
-```
-
 ##### `resetProjectId` <a name="resetProjectId" id="@cdktf/provider-hcp.packerChannel.PackerChannel.resetProjectId"></a>
 
 ```java
 public void resetProjectId()
+```
+
+##### `resetRestricted` <a name="resetRestricted" id="@cdktf/provider-hcp.packerChannel.PackerChannel.resetRestricted"></a>
+
+```java
+public void resetRestricted()
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-hcp.packerChannel.PackerChannel.resetTimeouts"></a>
@@ -531,21 +521,21 @@ PackerChannel.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.authorId">authorId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.iteration">iteration</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference">PackerChannelIterationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.managed">managed</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.organizationId">organizationId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.restricted">restricted</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeoutsOutputReference">PackerChannelTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.bucketNameInput">bucketNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.iterationInput">iterationInput</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.restrictedInput">restrictedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannel.property.restricted">restricted</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -711,13 +701,13 @@ public java.lang.String getCreatedAt();
 
 ---
 
-##### `iteration`<sup>Required</sup> <a name="iteration" id="@cdktf/provider-hcp.packerChannel.PackerChannel.property.iteration"></a>
+##### `managed`<sup>Required</sup> <a name="managed" id="@cdktf/provider-hcp.packerChannel.PackerChannel.property.managed"></a>
 
 ```java
-public PackerChannelIterationOutputReference getIteration();
+public IResolvable getManaged();
 ```
 
-- *Type:* <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference">PackerChannelIterationOutputReference</a>
+- *Type:* com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -728,16 +718,6 @@ public java.lang.String getOrganizationId();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `restricted`<sup>Required</sup> <a name="restricted" id="@cdktf/provider-hcp.packerChannel.PackerChannel.property.restricted"></a>
-
-```java
-public IResolvable getRestricted();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -781,16 +761,6 @@ public java.lang.String getIdInput();
 
 ---
 
-##### `iterationInput`<sup>Optional</sup> <a name="iterationInput" id="@cdktf/provider-hcp.packerChannel.PackerChannel.property.iterationInput"></a>
-
-```java
-public PackerChannelIteration getIterationInput();
-```
-
-- *Type:* <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a>
-
----
-
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-hcp.packerChannel.PackerChannel.property.nameInput"></a>
 
 ```java
@@ -808,6 +778,16 @@ public java.lang.String getProjectIdInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `restrictedInput`<sup>Optional</sup> <a name="restrictedInput" id="@cdktf/provider-hcp.packerChannel.PackerChannel.property.restrictedInput"></a>
+
+```java
+public java.lang.Object getRestrictedInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -861,6 +841,16 @@ public java.lang.String getProjectId();
 
 ---
 
+##### `restricted`<sup>Required</sup> <a name="restricted" id="@cdktf/provider-hcp.packerChannel.PackerChannel.property.restricted"></a>
+
+```java
+public java.lang.Object getRestricted();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -903,8 +893,9 @@ PackerChannelConfig.builder()
     .bucketName(java.lang.String)
     .name(java.lang.String)
 //  .id(java.lang.String)
-//  .iteration(PackerChannelIteration)
 //  .projectId(java.lang.String)
+//  .restricted(java.lang.Boolean)
+//  .restricted(IResolvable)
 //  .timeouts(PackerChannelTimeouts)
     .build();
 ```
@@ -922,9 +913,9 @@ PackerChannelConfig.builder()
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | The slug of the HCP Packer Registry bucket where the channel should be created. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the channel being managed. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#id PackerChannel#id}. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.iteration">iteration</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a></code> | iteration block. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#id PackerChannel#id}. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of the HCP project where this channel is located. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.restricted">restricted</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the channel is only visible to users with permission to create and manage it. |
 | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts">PackerChannelTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1009,7 +1000,7 @@ public java.lang.String getBucketName();
 
 The slug of the HCP Packer Registry bucket where the channel should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#bucket_name PackerChannel#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#bucket_name PackerChannel#bucket_name}
 
 ---
 
@@ -1023,7 +1014,7 @@ public java.lang.String getName();
 
 The name of the channel being managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#name PackerChannel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#name PackerChannel#name}
 
 ---
 
@@ -1035,24 +1026,10 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#id PackerChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#id PackerChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `iteration`<sup>Optional</sup> <a name="iteration" id="@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.iteration"></a>
-
-```java
-public PackerChannelIteration getIteration();
-```
-
-- *Type:* <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a>
-
-iteration block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#iteration PackerChannel#iteration}
 
 ---
 
@@ -1069,7 +1046,23 @@ The ID of the HCP project where this channel is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#project_id PackerChannel#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#project_id PackerChannel#project_id}
+
+---
+
+##### `restricted`<sup>Optional</sup> <a name="restricted" id="@cdktf/provider-hcp.packerChannel.PackerChannelConfig.property.restricted"></a>
+
+```java
+public java.lang.Object getRestricted();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+If true, the channel is only visible to users with permission to create and manage it.
+
+If false, the channel is visible to every member of the organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#restricted PackerChannel#restricted}
 
 ---
 
@@ -1083,76 +1076,7 @@ public PackerChannelTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#timeouts PackerChannel#timeouts}
-
----
-
-### PackerChannelIteration <a name="PackerChannelIteration" id="@cdktf/provider-hcp.packerChannel.PackerChannelIteration"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.packerChannel.PackerChannelIteration.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.hcp.packer_channel.PackerChannelIteration;
-
-PackerChannelIteration.builder()
-//  .fingerprint(java.lang.String)
-//  .id(java.lang.String)
-//  .incrementalVersion(java.lang.Number)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration.property.fingerprint">fingerprint</a></code> | <code>java.lang.String</code> | The fingerprint of the iteration assigned to the channel. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration.property.id">id</a></code> | <code>java.lang.String</code> | The ID of the iteration assigned to the channel. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration.property.incrementalVersion">incrementalVersion</a></code> | <code>java.lang.Number</code> | The incremental_version of the iteration assigned to the channel. |
-
----
-
-##### `fingerprint`<sup>Optional</sup> <a name="fingerprint" id="@cdktf/provider-hcp.packerChannel.PackerChannelIteration.property.fingerprint"></a>
-
-```java
-public java.lang.String getFingerprint();
-```
-
-- *Type:* java.lang.String
-
-The fingerprint of the iteration assigned to the channel.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#fingerprint PackerChannel#fingerprint}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-hcp.packerChannel.PackerChannelIteration.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-The ID of the iteration assigned to the channel.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#id PackerChannel#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `incrementalVersion`<sup>Optional</sup> <a name="incrementalVersion" id="@cdktf/provider-hcp.packerChannel.PackerChannelIteration.property.incrementalVersion"></a>
-
-```java
-public java.lang.Number getIncrementalVersion();
-```
-
-- *Type:* java.lang.Number
-
-The incremental_version of the iteration assigned to the channel.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#incremental_version PackerChannel#incremental_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#timeouts PackerChannel#timeouts}
 
 ---
 
@@ -1175,10 +1099,10 @@ PackerChannelTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#create PackerChannel#create}. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#default PackerChannel#default}. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#delete PackerChannel#delete}. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#update PackerChannel#update}. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#create PackerChannel#create}. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#default PackerChannel#default}. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#delete PackerChannel#delete}. |
+| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#update PackerChannel#update}. |
 
 ---
 
@@ -1190,7 +1114,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#create PackerChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#create PackerChannel#create}.
 
 ---
 
@@ -1202,7 +1126,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#default PackerChannel#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#default PackerChannel#default}.
 
 ---
 
@@ -1214,7 +1138,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#delete PackerChannel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#delete PackerChannel#delete}.
 
 ---
 
@@ -1226,347 +1150,11 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel#update PackerChannel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel#update PackerChannel#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
-
-### PackerChannelIterationOutputReference <a name="PackerChannelIterationOutputReference" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.hcp.packer_channel.PackerChannelIterationOutputReference;
-
-new PackerChannelIterationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.resetFingerprint">resetFingerprint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.resetIncrementalVersion">resetIncrementalVersion</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetFingerprint` <a name="resetFingerprint" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.resetFingerprint"></a>
-
-```java
-public void resetFingerprint()
-```
-
-##### `resetId` <a name="resetId" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.resetId"></a>
-
-```java
-public void resetId()
-```
-
-##### `resetIncrementalVersion` <a name="resetIncrementalVersion" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.resetIncrementalVersion"></a>
-
-```java
-public void resetIncrementalVersion()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.fingerprintInput">fingerprintInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.incrementalVersionInput">incrementalVersionInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.fingerprint">fingerprint</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.incrementalVersion">incrementalVersion</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `fingerprintInput`<sup>Optional</sup> <a name="fingerprintInput" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.fingerprintInput"></a>
-
-```java
-public java.lang.String getFingerprintInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `incrementalVersionInput`<sup>Optional</sup> <a name="incrementalVersionInput" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.incrementalVersionInput"></a>
-
-```java
-public java.lang.Number getIncrementalVersionInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `fingerprint`<sup>Required</sup> <a name="fingerprint" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.fingerprint"></a>
-
-```java
-public java.lang.String getFingerprint();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `incrementalVersion`<sup>Required</sup> <a name="incrementalVersion" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.incrementalVersion"></a>
-
-```java
-public java.lang.Number getIncrementalVersion();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-hcp.packerChannel.PackerChannelIterationOutputReference.property.internalValue"></a>
-
-```java
-public PackerChannelIteration getInternalValue();
-```
-
-- *Type:* <a href="#@cdktf/provider-hcp.packerChannel.PackerChannelIteration">PackerChannelIteration</a>
-
----
-
 
 ### PackerChannelTimeoutsOutputReference <a name="PackerChannelTimeoutsOutputReference" id="@cdktf/provider-hcp.packerChannel.PackerChannelTimeoutsOutputReference"></a>
 
