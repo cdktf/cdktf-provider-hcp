@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster
+// https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataHcpVaultClusterConfig extends cdktf.TerraformMetaArguments 
   /**
   * The ID of the HCP Vault cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster#cluster_id DataHcpVaultCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster#cluster_id DataHcpVaultCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,25 +31,25 @@ The ID of the HCP project where the Vault cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster#project_id DataHcpVaultCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster#project_id DataHcpVaultCluster#project_id}
   */
   readonly projectId?: string;
   /**
   * audit_log_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster#audit_log_config DataHcpVaultCluster#audit_log_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster#audit_log_config DataHcpVaultCluster#audit_log_config}
   */
   readonly auditLogConfig?: DataHcpVaultClusterAuditLogConfig[] | cdktf.IResolvable;
   /**
   * metrics_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster#metrics_config DataHcpVaultCluster#metrics_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster#metrics_config DataHcpVaultCluster#metrics_config}
   */
   readonly metricsConfig?: DataHcpVaultClusterMetricsConfig[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster#timeouts DataHcpVaultCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster#timeouts DataHcpVaultCluster#timeouts}
   */
   readonly timeouts?: DataHcpVaultClusterTimeouts;
 }
@@ -309,7 +309,7 @@ export class DataHcpVaultClusterMetricsConfigList extends cdktf.ComplexList {
 }
 export interface DataHcpVaultClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}
   */
   readonly default?: string;
 }
@@ -384,7 +384,7 @@ export class DataHcpVaultClusterTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster hcp_vault_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster hcp_vault_cluster}
 */
 export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
 
@@ -398,7 +398,7 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -409,7 +409,7 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_vault_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.67.0',
+        providerVersion: '0.69.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -523,6 +523,11 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
     return this._projectId;
   }
 
+  // proxy_endpoint - computed: true, optional: false, required: false
+  public get proxyEndpoint() {
+    return this.getStringAttribute('proxy_endpoint');
+  }
+
   // public_endpoint - computed: true, optional: false, required: false
   public get publicEndpoint() {
     return this.getBooleanAttribute('public_endpoint');
@@ -551,6 +556,11 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
   // vault_private_endpoint_url - computed: true, optional: false, required: false
   public get vaultPrivateEndpointUrl() {
     return this.getStringAttribute('vault_private_endpoint_url');
+  }
+
+  // vault_proxy_endpoint_url - computed: true, optional: false, required: false
+  public get vaultProxyEndpointUrl() {
+    return this.getStringAttribute('vault_proxy_endpoint_url');
   }
 
   // vault_public_endpoint_url - computed: true, optional: false, required: false
