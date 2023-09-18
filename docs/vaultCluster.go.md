@@ -1,6 +1,6 @@
 # `hcp_vault_cluster`
 
-Refer to the Terraform Registory for docs: [`hcp_vault_cluster`](https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster).
+Refer to the Terraform Registory for docs: [`hcp_vault_cluster`](https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster).
 
 # `vaultCluster` Submodule <a name="`vaultCluster` Submodule" id="@cdktf/provider-hcp.vaultCluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp_vault_cluster`](https://registr
 
 ### VaultCluster <a name="VaultCluster" id="@cdktf/provider-hcp.vaultCluster.VaultCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster hcp_vault_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster hcp_vault_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer"></a>
 
@@ -1083,6 +1083,9 @@ func TfResourceType() *string
 import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultcluster"
 
 &vaultcluster.VaultClusterAuditLogConfig {
+	CloudwatchAccessKeyId: *string,
+	CloudwatchRegion: *string,
+	CloudwatchSecretAccessKey: *string,
 	DatadogApiKey: *string,
 	DatadogRegion: *string,
 	GrafanaEndpoint: *string,
@@ -1097,6 +1100,9 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.cloudwatchAccessKeyId">CloudwatchAccessKeyId</a></code> | <code>*string</code> | CloudWatch access key ID for streaming audit logs. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.cloudwatchRegion">CloudwatchRegion</a></code> | <code>*string</code> | CloudWatch region for streaming audit logs. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.cloudwatchSecretAccessKey">CloudwatchSecretAccessKey</a></code> | <code>*string</code> | CloudWatch secret access key for streaming audit logs. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.datadogApiKey">DatadogApiKey</a></code> | <code>*string</code> | Datadog api key for streaming audit logs. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.datadogRegion">DatadogRegion</a></code> | <code>*string</code> | Datadog region for streaming audit logs. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.grafanaEndpoint">GrafanaEndpoint</a></code> | <code>*string</code> | Grafana endpoint for streaming audit logs. |
@@ -1104,6 +1110,48 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultcluster"
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.grafanaUser">GrafanaUser</a></code> | <code>*string</code> | Grafana user for streaming audit logs. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.splunkHecendpoint">SplunkHecendpoint</a></code> | <code>*string</code> | Splunk endpoint for streaming audit logs. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.splunkToken">SplunkToken</a></code> | <code>*string</code> | Splunk token for streaming audit logs. |
+
+---
+
+##### `CloudwatchAccessKeyId`<sup>Optional</sup> <a name="CloudwatchAccessKeyId" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.cloudwatchAccessKeyId"></a>
+
+```go
+CloudwatchAccessKeyId *string
+```
+
+- *Type:* *string
+
+CloudWatch access key ID for streaming audit logs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
+
+---
+
+##### `CloudwatchRegion`<sup>Optional</sup> <a name="CloudwatchRegion" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.cloudwatchRegion"></a>
+
+```go
+CloudwatchRegion *string
+```
+
+- *Type:* *string
+
+CloudWatch region for streaming audit logs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
+
+---
+
+##### `CloudwatchSecretAccessKey`<sup>Optional</sup> <a name="CloudwatchSecretAccessKey" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.cloudwatchSecretAccessKey"></a>
+
+```go
+CloudwatchSecretAccessKey *string
+```
+
+- *Type:* *string
+
+CloudWatch secret access key for streaming audit logs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
 
 ---
 
@@ -1117,7 +1165,7 @@ DatadogApiKey *string
 
 Datadog api key for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
 
 ---
 
@@ -1131,7 +1179,7 @@ DatadogRegion *string
 
 Datadog region for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
 
 ---
 
@@ -1145,7 +1193,7 @@ GrafanaEndpoint *string
 
 Grafana endpoint for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
 
 ---
 
@@ -1159,7 +1207,7 @@ GrafanaPassword *string
 
 Grafana password for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
 
 ---
 
@@ -1173,7 +1221,7 @@ GrafanaUser *string
 
 Grafana user for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
 
 ---
 
@@ -1187,7 +1235,7 @@ SplunkHecendpoint *string
 
 Splunk endpoint for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
 
 ---
 
@@ -1201,7 +1249,7 @@ SplunkToken *string
 
 Splunk token for streaming audit logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
 
 ---
 
@@ -1251,7 +1299,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultcluster"
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | The ID of the HCP Vault cluster. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.hvnId">HvnId</a></code> | <code>*string</code> | The ID of the HVN this HCP Vault cluster is associated to. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.auditLogConfig">AuditLogConfig</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig">VaultClusterAuditLogConfig</a></code> | audit_log_config block. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#id VaultCluster#id}. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#id VaultCluster#id}. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.majorVersionUpgradeConfig">MajorVersionUpgradeConfig</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMajorVersionUpgradeConfig">VaultClusterMajorVersionUpgradeConfig</a></code> | major_version_upgrade_config block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.metricsConfig">MetricsConfig</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig">VaultClusterMetricsConfig</a></code> | metrics_config block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.minVaultVersion">MinVaultVersion</a></code> | <code>*string</code> | The minimum Vault version to use when creating the cluster. |
@@ -1345,7 +1393,7 @@ ClusterId *string
 
 The ID of the HCP Vault cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#cluster_id VaultCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cluster_id VaultCluster#cluster_id}
 
 ---
 
@@ -1359,7 +1407,7 @@ HvnId *string
 
 The ID of the HVN this HCP Vault cluster is associated to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#hvn_id VaultCluster#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#hvn_id VaultCluster#hvn_id}
 
 ---
 
@@ -1373,7 +1421,7 @@ AuditLogConfig VaultClusterAuditLogConfig
 
 audit_log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#audit_log_config VaultCluster#audit_log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#audit_log_config VaultCluster#audit_log_config}
 
 ---
 
@@ -1385,7 +1433,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#id VaultCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#id VaultCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1402,7 +1450,7 @@ MajorVersionUpgradeConfig VaultClusterMajorVersionUpgradeConfig
 
 major_version_upgrade_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#major_version_upgrade_config VaultCluster#major_version_upgrade_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#major_version_upgrade_config VaultCluster#major_version_upgrade_config}
 
 ---
 
@@ -1416,7 +1464,7 @@ MetricsConfig VaultClusterMetricsConfig
 
 metrics_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#metrics_config VaultCluster#metrics_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#metrics_config VaultCluster#metrics_config}
 
 ---
 
@@ -1432,7 +1480,7 @@ The minimum Vault version to use when creating the cluster.
 
 If not specified, it is defaulted to the version that is currently recommended by HCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#min_vault_version VaultCluster#min_vault_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#min_vault_version VaultCluster#min_vault_version}
 
 ---
 
@@ -1446,7 +1494,7 @@ PathsFilter *[]*string
 
 The performance replication [paths filter](https://developer.hashicorp.com/vault/tutorials/cloud-ops/vault-replication-terraform). Applies to performance replication secondaries only and operates in "deny" mode only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#paths_filter VaultCluster#paths_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#paths_filter VaultCluster#paths_filter}
 
 ---
 
@@ -1462,7 +1510,7 @@ The `self_link` of the HCP Vault Plus tier cluster which is the primary in the p
 
 If not specified, it is a standalone Plus tier HCP Vault cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#primary_link VaultCluster#primary_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#primary_link VaultCluster#primary_link}
 
 ---
 
@@ -1479,7 +1527,7 @@ The ID of the HCP project where the Vault cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#project_id VaultCluster#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#project_id VaultCluster#project_id}
 
 ---
 
@@ -1493,7 +1541,7 @@ ProxyEndpoint *string
 
 Denotes that the cluster has a proxy endpoint. Valid options are `ENABLED`, `DISABLED`. Defaults to `DISABLED`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#proxy_endpoint VaultCluster#proxy_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#proxy_endpoint VaultCluster#proxy_endpoint}
 
 ---
 
@@ -1507,7 +1555,7 @@ PublicEndpoint interface{}
 
 Denotes that the cluster has a public endpoint. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#public_endpoint VaultCluster#public_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#public_endpoint VaultCluster#public_endpoint}
 
 ---
 
@@ -1523,7 +1571,7 @@ Tier of the HCP Vault cluster.
 
 Valid options for tiers - `dev`, `starter_small`, `standard_small`, `standard_medium`, `standard_large`, `plus_small`, `plus_medium`, `plus_large`. See [pricing information](https://www.hashicorp.com/products/vault/pricing). Changing a cluster's size or tier is only available to admins. See [Scale a cluster](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/guides/vault-scaling).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#tier VaultCluster#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#tier VaultCluster#tier}
 
 ---
 
@@ -1537,7 +1585,7 @@ Timeouts VaultClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#timeouts VaultCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#timeouts VaultCluster#timeouts}
 
 ---
 
@@ -1575,7 +1623,7 @@ UpgradeType *string
 
 The major upgrade type for the cluster. Valid options for upgrade type - `AUTOMATIC`, `SCHEDULED`, `MANUAL`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#upgrade_type VaultCluster#upgrade_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#upgrade_type VaultCluster#upgrade_type}
 
 ---
 
@@ -1591,7 +1639,7 @@ The maintenance day of the week for scheduled upgrades.
 
 Valid options for maintenance window day - `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#maintenance_window_day VaultCluster#maintenance_window_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#maintenance_window_day VaultCluster#maintenance_window_day}
 
 ---
 
@@ -1605,7 +1653,7 @@ MaintenanceWindowTime *string
 
 The maintenance time frame for scheduled upgrades. Valid options for maintenance window time - `WINDOW_12AM_4AM`, `WINDOW_6AM_10AM`, `WINDOW_12PM_4PM`, `WINDOW_6PM_10PM`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#maintenance_window_time VaultCluster#maintenance_window_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#maintenance_window_time VaultCluster#maintenance_window_time}
 
 ---
 
@@ -1617,6 +1665,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultcluster"
 
 &vaultcluster.VaultClusterMetricsConfig {
+	CloudwatchAccessKeyId: *string,
+	CloudwatchRegion: *string,
+	CloudwatchSecretAccessKey: *string,
 	DatadogApiKey: *string,
 	DatadogRegion: *string,
 	GrafanaEndpoint: *string,
@@ -1631,6 +1682,9 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.cloudwatchAccessKeyId">CloudwatchAccessKeyId</a></code> | <code>*string</code> | CloudWatch access key ID for streaming metrics. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.cloudwatchRegion">CloudwatchRegion</a></code> | <code>*string</code> | CloudWatch region for streaming metrics. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.cloudwatchSecretAccessKey">CloudwatchSecretAccessKey</a></code> | <code>*string</code> | CloudWatch secret access key for streaming metrics. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.datadogApiKey">DatadogApiKey</a></code> | <code>*string</code> | Datadog api key for streaming metrics. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.datadogRegion">DatadogRegion</a></code> | <code>*string</code> | Datadog region for streaming metrics. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.grafanaEndpoint">GrafanaEndpoint</a></code> | <code>*string</code> | Grafana endpoint for streaming metrics. |
@@ -1638,6 +1692,48 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultcluster"
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.grafanaUser">GrafanaUser</a></code> | <code>*string</code> | Grafana user for streaming metrics. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.splunkHecendpoint">SplunkHecendpoint</a></code> | <code>*string</code> | Splunk endpoint for streaming metrics. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.splunkToken">SplunkToken</a></code> | <code>*string</code> | Splunk token for streaming metrics. |
+
+---
+
+##### `CloudwatchAccessKeyId`<sup>Optional</sup> <a name="CloudwatchAccessKeyId" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.cloudwatchAccessKeyId"></a>
+
+```go
+CloudwatchAccessKeyId *string
+```
+
+- *Type:* *string
+
+CloudWatch access key ID for streaming metrics.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
+
+---
+
+##### `CloudwatchRegion`<sup>Optional</sup> <a name="CloudwatchRegion" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.cloudwatchRegion"></a>
+
+```go
+CloudwatchRegion *string
+```
+
+- *Type:* *string
+
+CloudWatch region for streaming metrics.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
+
+---
+
+##### `CloudwatchSecretAccessKey`<sup>Optional</sup> <a name="CloudwatchSecretAccessKey" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.cloudwatchSecretAccessKey"></a>
+
+```go
+CloudwatchSecretAccessKey *string
+```
+
+- *Type:* *string
+
+CloudWatch secret access key for streaming metrics.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
 
 ---
 
@@ -1651,7 +1747,7 @@ DatadogApiKey *string
 
 Datadog api key for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
 
 ---
 
@@ -1665,7 +1761,7 @@ DatadogRegion *string
 
 Datadog region for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
 
 ---
 
@@ -1679,7 +1775,7 @@ GrafanaEndpoint *string
 
 Grafana endpoint for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
 
 ---
 
@@ -1693,7 +1789,7 @@ GrafanaPassword *string
 
 Grafana password for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
 
 ---
 
@@ -1707,7 +1803,7 @@ GrafanaUser *string
 
 Grafana user for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
 
 ---
 
@@ -1721,7 +1817,7 @@ SplunkHecendpoint *string
 
 Splunk endpoint for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
 
 ---
 
@@ -1735,7 +1831,7 @@ SplunkToken *string
 
 Splunk token for streaming metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
 
 ---
 
@@ -1758,10 +1854,10 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#create VaultCluster#create}. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#default VaultCluster#default}. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#delete VaultCluster#delete}. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#update VaultCluster#update}. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#create VaultCluster#create}. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#default VaultCluster#default}. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#delete VaultCluster#delete}. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#update VaultCluster#update}. |
 
 ---
 
@@ -1773,7 +1869,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#create VaultCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#create VaultCluster#create}.
 
 ---
 
@@ -1785,7 +1881,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#default VaultCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#default VaultCluster#default}.
 
 ---
 
@@ -1797,7 +1893,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#delete VaultCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#delete VaultCluster#delete}.
 
 ---
 
@@ -1809,7 +1905,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#update VaultCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#update VaultCluster#update}.
 
 ---
 
@@ -1865,6 +1961,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resetCloudwatchAccessKeyId">ResetCloudwatchAccessKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resetCloudwatchRegion">ResetCloudwatchRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resetCloudwatchSecretAccessKey">ResetCloudwatchSecretAccessKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resetDatadogApiKey">ResetDatadogApiKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resetDatadogRegion">ResetDatadogRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resetGrafanaEndpoint">ResetGrafanaEndpoint</a></code> | *No description.* |
@@ -2025,6 +2124,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetCloudwatchAccessKeyId` <a name="ResetCloudwatchAccessKeyId" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resetCloudwatchAccessKeyId"></a>
+
+```go
+func ResetCloudwatchAccessKeyId()
+```
+
+##### `ResetCloudwatchRegion` <a name="ResetCloudwatchRegion" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resetCloudwatchRegion"></a>
+
+```go
+func ResetCloudwatchRegion()
+```
+
+##### `ResetCloudwatchSecretAccessKey` <a name="ResetCloudwatchSecretAccessKey" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resetCloudwatchSecretAccessKey"></a>
+
+```go
+func ResetCloudwatchSecretAccessKey()
+```
+
 ##### `ResetDatadogApiKey` <a name="ResetDatadogApiKey" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.resetDatadogApiKey"></a>
 
 ```go
@@ -2074,6 +2191,11 @@ func ResetSplunkToken()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchGroupName">CloudwatchGroupName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchStreamName">CloudwatchStreamName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchAccessKeyIdInput">CloudwatchAccessKeyIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchRegionInput">CloudwatchRegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchSecretAccessKeyInput">CloudwatchSecretAccessKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.datadogApiKeyInput">DatadogApiKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.datadogRegionInput">DatadogRegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.grafanaEndpointInput">GrafanaEndpointInput</a></code> | <code>*string</code> | *No description.* |
@@ -2081,6 +2203,9 @@ func ResetSplunkToken()
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.grafanaUserInput">GrafanaUserInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.splunkHecendpointInput">SplunkHecendpointInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.splunkTokenInput">SplunkTokenInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchAccessKeyId">CloudwatchAccessKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchRegion">CloudwatchRegion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchSecretAccessKey">CloudwatchSecretAccessKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.datadogApiKey">DatadogApiKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.datadogRegion">DatadogRegion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.grafanaEndpoint">GrafanaEndpoint</a></code> | <code>*string</code> | *No description.* |
@@ -2110,6 +2235,56 @@ If this returns an empty array the stack will not be attached.
 
 ```go
 func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchGroupName`<sup>Required</sup> <a name="CloudwatchGroupName" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchGroupName"></a>
+
+```go
+func CloudwatchGroupName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchStreamName`<sup>Required</sup> <a name="CloudwatchStreamName" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchStreamName"></a>
+
+```go
+func CloudwatchStreamName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchAccessKeyIdInput`<sup>Optional</sup> <a name="CloudwatchAccessKeyIdInput" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchAccessKeyIdInput"></a>
+
+```go
+func CloudwatchAccessKeyIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchRegionInput`<sup>Optional</sup> <a name="CloudwatchRegionInput" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchRegionInput"></a>
+
+```go
+func CloudwatchRegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchSecretAccessKeyInput`<sup>Optional</sup> <a name="CloudwatchSecretAccessKeyInput" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchSecretAccessKeyInput"></a>
+
+```go
+func CloudwatchSecretAccessKeyInput() *string
 ```
 
 - *Type:* *string
@@ -2180,6 +2355,36 @@ func SplunkHecendpointInput() *string
 
 ```go
 func SplunkTokenInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchAccessKeyId`<sup>Required</sup> <a name="CloudwatchAccessKeyId" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchAccessKeyId"></a>
+
+```go
+func CloudwatchAccessKeyId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchRegion`<sup>Required</sup> <a name="CloudwatchRegion" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchRegion"></a>
+
+```go
+func CloudwatchRegion() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchSecretAccessKey`<sup>Required</sup> <a name="CloudwatchSecretAccessKey" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.cloudwatchSecretAccessKey"></a>
+
+```go
+func CloudwatchSecretAccessKey() *string
 ```
 
 - *Type:* *string
@@ -2646,6 +2851,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resetCloudwatchAccessKeyId">ResetCloudwatchAccessKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resetCloudwatchRegion">ResetCloudwatchRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resetCloudwatchSecretAccessKey">ResetCloudwatchSecretAccessKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resetDatadogApiKey">ResetDatadogApiKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resetDatadogRegion">ResetDatadogRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resetGrafanaEndpoint">ResetGrafanaEndpoint</a></code> | *No description.* |
@@ -2806,6 +3014,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetCloudwatchAccessKeyId` <a name="ResetCloudwatchAccessKeyId" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resetCloudwatchAccessKeyId"></a>
+
+```go
+func ResetCloudwatchAccessKeyId()
+```
+
+##### `ResetCloudwatchRegion` <a name="ResetCloudwatchRegion" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resetCloudwatchRegion"></a>
+
+```go
+func ResetCloudwatchRegion()
+```
+
+##### `ResetCloudwatchSecretAccessKey` <a name="ResetCloudwatchSecretAccessKey" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resetCloudwatchSecretAccessKey"></a>
+
+```go
+func ResetCloudwatchSecretAccessKey()
+```
+
 ##### `ResetDatadogApiKey` <a name="ResetDatadogApiKey" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.resetDatadogApiKey"></a>
 
 ```go
@@ -2855,6 +3081,10 @@ func ResetSplunkToken()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchNamespace">CloudwatchNamespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchAccessKeyIdInput">CloudwatchAccessKeyIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchRegionInput">CloudwatchRegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchSecretAccessKeyInput">CloudwatchSecretAccessKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.datadogApiKeyInput">DatadogApiKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.datadogRegionInput">DatadogRegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.grafanaEndpointInput">GrafanaEndpointInput</a></code> | <code>*string</code> | *No description.* |
@@ -2862,6 +3092,9 @@ func ResetSplunkToken()
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.grafanaUserInput">GrafanaUserInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.splunkHecendpointInput">SplunkHecendpointInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.splunkTokenInput">SplunkTokenInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchAccessKeyId">CloudwatchAccessKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchRegion">CloudwatchRegion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchSecretAccessKey">CloudwatchSecretAccessKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.datadogApiKey">DatadogApiKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.datadogRegion">DatadogRegion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.grafanaEndpoint">GrafanaEndpoint</a></code> | <code>*string</code> | *No description.* |
@@ -2891,6 +3124,46 @@ If this returns an empty array the stack will not be attached.
 
 ```go
 func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchNamespace`<sup>Required</sup> <a name="CloudwatchNamespace" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchNamespace"></a>
+
+```go
+func CloudwatchNamespace() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchAccessKeyIdInput`<sup>Optional</sup> <a name="CloudwatchAccessKeyIdInput" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchAccessKeyIdInput"></a>
+
+```go
+func CloudwatchAccessKeyIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchRegionInput`<sup>Optional</sup> <a name="CloudwatchRegionInput" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchRegionInput"></a>
+
+```go
+func CloudwatchRegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchSecretAccessKeyInput`<sup>Optional</sup> <a name="CloudwatchSecretAccessKeyInput" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchSecretAccessKeyInput"></a>
+
+```go
+func CloudwatchSecretAccessKeyInput() *string
 ```
 
 - *Type:* *string
@@ -2961,6 +3234,36 @@ func SplunkHecendpointInput() *string
 
 ```go
 func SplunkTokenInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchAccessKeyId`<sup>Required</sup> <a name="CloudwatchAccessKeyId" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchAccessKeyId"></a>
+
+```go
+func CloudwatchAccessKeyId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchRegion`<sup>Required</sup> <a name="CloudwatchRegion" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchRegion"></a>
+
+```go
+func CloudwatchRegion() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CloudwatchSecretAccessKey`<sup>Required</sup> <a name="CloudwatchSecretAccessKey" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.cloudwatchSecretAccessKey"></a>
+
+```go
+func CloudwatchSecretAccessKey() *string
 ```
 
 - *Type:* *string

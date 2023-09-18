@@ -25,6 +25,7 @@ The following submodules are available:
 - [dataHcpPackerIteration](./dataHcpPackerIteration.go.md)
 - [dataHcpPackerRunTask](./dataHcpPackerRunTask.go.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.go.md)
+- [dataHcpVaultPlugin](./dataHcpVaultPlugin.go.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.go.md)
 - [hvn](./hvn.go.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.go.md)
@@ -35,3 +36,4 @@ The following submodules are available:
 - [provider](./provider.go.md)
 - [vaultCluster](./vaultCluster.go.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.go.md)
+- [vaultPlugin](./vaultPlugin.go.md)

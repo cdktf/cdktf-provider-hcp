@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster
+// https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface VaultClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the HCP Vault cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#cluster_id VaultCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cluster_id VaultCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
   * The ID of the HVN this HCP Vault cluster is associated to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#hvn_id VaultCluster#hvn_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#hvn_id VaultCluster#hvn_id}
   */
   readonly hvnId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#id VaultCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#id VaultCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface VaultClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The minimum Vault version to use when creating the cluster. If not specified, it is defaulted to the version that is currently recommended by HCP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#min_vault_version VaultCluster#min_vault_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#min_vault_version VaultCluster#min_vault_version}
   */
   readonly minVaultVersion?: string;
   /**
   * The performance replication [paths filter](https://developer.hashicorp.com/vault/tutorials/cloud-ops/vault-replication-terraform). Applies to performance replication secondaries only and operates in "deny" mode only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#paths_filter VaultCluster#paths_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#paths_filter VaultCluster#paths_filter}
   */
   readonly pathsFilter?: string[];
   /**
   * The `self_link` of the HCP Vault Plus tier cluster which is the primary in the performance replication setup with this HCP Vault Plus tier cluster. If not specified, it is a standalone Plus tier HCP Vault cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#primary_link VaultCluster#primary_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#primary_link VaultCluster#primary_link}
   */
   readonly primaryLink?: string;
   /**
@@ -55,93 +55,111 @@ The ID of the HCP project where the Vault cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#project_id VaultCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#project_id VaultCluster#project_id}
   */
   readonly projectId?: string;
   /**
   * Denotes that the cluster has a proxy endpoint. Valid options are `ENABLED`, `DISABLED`. Defaults to `DISABLED`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#proxy_endpoint VaultCluster#proxy_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#proxy_endpoint VaultCluster#proxy_endpoint}
   */
   readonly proxyEndpoint?: string;
   /**
   * Denotes that the cluster has a public endpoint. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#public_endpoint VaultCluster#public_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#public_endpoint VaultCluster#public_endpoint}
   */
   readonly publicEndpoint?: boolean | cdktf.IResolvable;
   /**
   * Tier of the HCP Vault cluster. Valid options for tiers - `dev`, `starter_small`, `standard_small`, `standard_medium`, `standard_large`, `plus_small`, `plus_medium`, `plus_large`. See [pricing information](https://www.hashicorp.com/products/vault/pricing). Changing a cluster's size or tier is only available to admins. See [Scale a cluster](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/guides/vault-scaling).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#tier VaultCluster#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#tier VaultCluster#tier}
   */
   readonly tier?: string;
   /**
   * audit_log_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#audit_log_config VaultCluster#audit_log_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#audit_log_config VaultCluster#audit_log_config}
   */
   readonly auditLogConfig?: VaultClusterAuditLogConfig;
   /**
   * major_version_upgrade_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#major_version_upgrade_config VaultCluster#major_version_upgrade_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#major_version_upgrade_config VaultCluster#major_version_upgrade_config}
   */
   readonly majorVersionUpgradeConfig?: VaultClusterMajorVersionUpgradeConfig;
   /**
   * metrics_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#metrics_config VaultCluster#metrics_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#metrics_config VaultCluster#metrics_config}
   */
   readonly metricsConfig?: VaultClusterMetricsConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#timeouts VaultCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#timeouts VaultCluster#timeouts}
   */
   readonly timeouts?: VaultClusterTimeouts;
 }
 export interface VaultClusterAuditLogConfig {
   /**
+  * CloudWatch access key ID for streaming audit logs
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
+  */
+  readonly cloudwatchAccessKeyId?: string;
+  /**
+  * CloudWatch region for streaming audit logs
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
+  */
+  readonly cloudwatchRegion?: string;
+  /**
+  * CloudWatch secret access key for streaming audit logs
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
+  */
+  readonly cloudwatchSecretAccessKey?: string;
+  /**
   * Datadog api key for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
   */
   readonly datadogApiKey?: string;
   /**
   * Datadog region for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
   */
   readonly datadogRegion?: string;
   /**
   * Grafana endpoint for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
   */
   readonly grafanaEndpoint?: string;
   /**
   * Grafana password for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
   */
   readonly grafanaPassword?: string;
   /**
   * Grafana user for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
   */
   readonly grafanaUser?: string;
   /**
   * Splunk endpoint for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
   */
   readonly splunkHecendpoint?: string;
   /**
   * Splunk token for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
   */
   readonly splunkToken?: string;
 }
@@ -152,6 +170,9 @@ export function vaultClusterAuditLogConfigToTerraform(struct?: VaultClusterAudit
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    cloudwatch_access_key_id: cdktf.stringToTerraform(struct!.cloudwatchAccessKeyId),
+    cloudwatch_region: cdktf.stringToTerraform(struct!.cloudwatchRegion),
+    cloudwatch_secret_access_key: cdktf.stringToTerraform(struct!.cloudwatchSecretAccessKey),
     datadog_api_key: cdktf.stringToTerraform(struct!.datadogApiKey),
     datadog_region: cdktf.stringToTerraform(struct!.datadogRegion),
     grafana_endpoint: cdktf.stringToTerraform(struct!.grafanaEndpoint),
@@ -176,6 +197,18 @@ export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObje
   public get internalValue(): VaultClusterAuditLogConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._cloudwatchAccessKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudwatchAccessKeyId = this._cloudwatchAccessKeyId;
+    }
+    if (this._cloudwatchRegion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudwatchRegion = this._cloudwatchRegion;
+    }
+    if (this._cloudwatchSecretAccessKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudwatchSecretAccessKey = this._cloudwatchSecretAccessKey;
+    }
     if (this._datadogApiKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.datadogApiKey = this._datadogApiKey;
@@ -210,6 +243,9 @@ export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObje
   public set internalValue(value: VaultClusterAuditLogConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._cloudwatchAccessKeyId = undefined;
+      this._cloudwatchRegion = undefined;
+      this._cloudwatchSecretAccessKey = undefined;
       this._datadogApiKey = undefined;
       this._datadogRegion = undefined;
       this._grafanaEndpoint = undefined;
@@ -220,6 +256,9 @@ export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObje
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._cloudwatchAccessKeyId = value.cloudwatchAccessKeyId;
+      this._cloudwatchRegion = value.cloudwatchRegion;
+      this._cloudwatchSecretAccessKey = value.cloudwatchSecretAccessKey;
       this._datadogApiKey = value.datadogApiKey;
       this._datadogRegion = value.datadogRegion;
       this._grafanaEndpoint = value.grafanaEndpoint;
@@ -228,6 +267,64 @@ export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObje
       this._splunkHecendpoint = value.splunkHecendpoint;
       this._splunkToken = value.splunkToken;
     }
+  }
+
+  // cloudwatch_access_key_id - computed: false, optional: true, required: false
+  private _cloudwatchAccessKeyId?: string; 
+  public get cloudwatchAccessKeyId() {
+    return this.getStringAttribute('cloudwatch_access_key_id');
+  }
+  public set cloudwatchAccessKeyId(value: string) {
+    this._cloudwatchAccessKeyId = value;
+  }
+  public resetCloudwatchAccessKeyId() {
+    this._cloudwatchAccessKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchAccessKeyIdInput() {
+    return this._cloudwatchAccessKeyId;
+  }
+
+  // cloudwatch_group_name - computed: true, optional: false, required: false
+  public get cloudwatchGroupName() {
+    return this.getStringAttribute('cloudwatch_group_name');
+  }
+
+  // cloudwatch_region - computed: false, optional: true, required: false
+  private _cloudwatchRegion?: string; 
+  public get cloudwatchRegion() {
+    return this.getStringAttribute('cloudwatch_region');
+  }
+  public set cloudwatchRegion(value: string) {
+    this._cloudwatchRegion = value;
+  }
+  public resetCloudwatchRegion() {
+    this._cloudwatchRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchRegionInput() {
+    return this._cloudwatchRegion;
+  }
+
+  // cloudwatch_secret_access_key - computed: false, optional: true, required: false
+  private _cloudwatchSecretAccessKey?: string; 
+  public get cloudwatchSecretAccessKey() {
+    return this.getStringAttribute('cloudwatch_secret_access_key');
+  }
+  public set cloudwatchSecretAccessKey(value: string) {
+    this._cloudwatchSecretAccessKey = value;
+  }
+  public resetCloudwatchSecretAccessKey() {
+    this._cloudwatchSecretAccessKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchSecretAccessKeyInput() {
+    return this._cloudwatchSecretAccessKey;
+  }
+
+  // cloudwatch_stream_name - computed: true, optional: false, required: false
+  public get cloudwatchStreamName() {
+    return this.getStringAttribute('cloudwatch_stream_name');
   }
 
   // datadog_api_key - computed: false, optional: true, required: false
@@ -346,19 +443,19 @@ export interface VaultClusterMajorVersionUpgradeConfig {
   /**
   * The maintenance day of the week for scheduled upgrades. Valid options for maintenance window day - `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#maintenance_window_day VaultCluster#maintenance_window_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#maintenance_window_day VaultCluster#maintenance_window_day}
   */
   readonly maintenanceWindowDay?: string;
   /**
   * The maintenance time frame for scheduled upgrades. Valid options for maintenance window time - `WINDOW_12AM_4AM`, `WINDOW_6AM_10AM`, `WINDOW_12PM_4PM`, `WINDOW_6PM_10PM`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#maintenance_window_time VaultCluster#maintenance_window_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#maintenance_window_time VaultCluster#maintenance_window_time}
   */
   readonly maintenanceWindowTime?: string;
   /**
   * The major upgrade type for the cluster. Valid options for upgrade type - `AUTOMATIC`, `SCHEDULED`, `MANUAL`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#upgrade_type VaultCluster#upgrade_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#upgrade_type VaultCluster#upgrade_type}
   */
   readonly upgradeType: string;
 }
@@ -466,45 +563,63 @@ export class VaultClusterMajorVersionUpgradeConfigOutputReference extends cdktf.
 }
 export interface VaultClusterMetricsConfig {
   /**
+  * CloudWatch access key ID for streaming metrics
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
+  */
+  readonly cloudwatchAccessKeyId?: string;
+  /**
+  * CloudWatch region for streaming metrics
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
+  */
+  readonly cloudwatchRegion?: string;
+  /**
+  * CloudWatch secret access key for streaming metrics
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
+  */
+  readonly cloudwatchSecretAccessKey?: string;
+  /**
   * Datadog api key for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
   */
   readonly datadogApiKey?: string;
   /**
   * Datadog region for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
   */
   readonly datadogRegion?: string;
   /**
   * Grafana endpoint for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
   */
   readonly grafanaEndpoint?: string;
   /**
   * Grafana password for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
   */
   readonly grafanaPassword?: string;
   /**
   * Grafana user for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
   */
   readonly grafanaUser?: string;
   /**
   * Splunk endpoint for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
   */
   readonly splunkHecendpoint?: string;
   /**
   * Splunk token for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
   */
   readonly splunkToken?: string;
 }
@@ -515,6 +630,9 @@ export function vaultClusterMetricsConfigToTerraform(struct?: VaultClusterMetric
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    cloudwatch_access_key_id: cdktf.stringToTerraform(struct!.cloudwatchAccessKeyId),
+    cloudwatch_region: cdktf.stringToTerraform(struct!.cloudwatchRegion),
+    cloudwatch_secret_access_key: cdktf.stringToTerraform(struct!.cloudwatchSecretAccessKey),
     datadog_api_key: cdktf.stringToTerraform(struct!.datadogApiKey),
     datadog_region: cdktf.stringToTerraform(struct!.datadogRegion),
     grafana_endpoint: cdktf.stringToTerraform(struct!.grafanaEndpoint),
@@ -539,6 +657,18 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
   public get internalValue(): VaultClusterMetricsConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._cloudwatchAccessKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudwatchAccessKeyId = this._cloudwatchAccessKeyId;
+    }
+    if (this._cloudwatchRegion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudwatchRegion = this._cloudwatchRegion;
+    }
+    if (this._cloudwatchSecretAccessKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudwatchSecretAccessKey = this._cloudwatchSecretAccessKey;
+    }
     if (this._datadogApiKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.datadogApiKey = this._datadogApiKey;
@@ -573,6 +703,9 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
   public set internalValue(value: VaultClusterMetricsConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._cloudwatchAccessKeyId = undefined;
+      this._cloudwatchRegion = undefined;
+      this._cloudwatchSecretAccessKey = undefined;
       this._datadogApiKey = undefined;
       this._datadogRegion = undefined;
       this._grafanaEndpoint = undefined;
@@ -583,6 +716,9 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._cloudwatchAccessKeyId = value.cloudwatchAccessKeyId;
+      this._cloudwatchRegion = value.cloudwatchRegion;
+      this._cloudwatchSecretAccessKey = value.cloudwatchSecretAccessKey;
       this._datadogApiKey = value.datadogApiKey;
       this._datadogRegion = value.datadogRegion;
       this._grafanaEndpoint = value.grafanaEndpoint;
@@ -591,6 +727,59 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
       this._splunkHecendpoint = value.splunkHecendpoint;
       this._splunkToken = value.splunkToken;
     }
+  }
+
+  // cloudwatch_access_key_id - computed: false, optional: true, required: false
+  private _cloudwatchAccessKeyId?: string; 
+  public get cloudwatchAccessKeyId() {
+    return this.getStringAttribute('cloudwatch_access_key_id');
+  }
+  public set cloudwatchAccessKeyId(value: string) {
+    this._cloudwatchAccessKeyId = value;
+  }
+  public resetCloudwatchAccessKeyId() {
+    this._cloudwatchAccessKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchAccessKeyIdInput() {
+    return this._cloudwatchAccessKeyId;
+  }
+
+  // cloudwatch_namespace - computed: true, optional: false, required: false
+  public get cloudwatchNamespace() {
+    return this.getStringAttribute('cloudwatch_namespace');
+  }
+
+  // cloudwatch_region - computed: false, optional: true, required: false
+  private _cloudwatchRegion?: string; 
+  public get cloudwatchRegion() {
+    return this.getStringAttribute('cloudwatch_region');
+  }
+  public set cloudwatchRegion(value: string) {
+    this._cloudwatchRegion = value;
+  }
+  public resetCloudwatchRegion() {
+    this._cloudwatchRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchRegionInput() {
+    return this._cloudwatchRegion;
+  }
+
+  // cloudwatch_secret_access_key - computed: false, optional: true, required: false
+  private _cloudwatchSecretAccessKey?: string; 
+  public get cloudwatchSecretAccessKey() {
+    return this.getStringAttribute('cloudwatch_secret_access_key');
+  }
+  public set cloudwatchSecretAccessKey(value: string) {
+    this._cloudwatchSecretAccessKey = value;
+  }
+  public resetCloudwatchSecretAccessKey() {
+    this._cloudwatchSecretAccessKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchSecretAccessKeyInput() {
+    return this._cloudwatchSecretAccessKey;
   }
 
   // datadog_api_key - computed: false, optional: true, required: false
@@ -707,19 +896,19 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
 }
 export interface VaultClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#create VaultCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#create VaultCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#default VaultCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#default VaultCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#delete VaultCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#delete VaultCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster#update VaultCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster#update VaultCluster#update}
   */
   readonly update?: string;
 }
@@ -863,7 +1052,7 @@ export class VaultClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster hcp_vault_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster hcp_vault_cluster}
 */
 export class VaultCluster extends cdktf.TerraformResource {
 
@@ -877,7 +1066,7 @@ export class VaultCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster hcp_vault_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_cluster hcp_vault_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -888,7 +1077,7 @@ export class VaultCluster extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.69.0',
+        providerVersion: '0.70.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

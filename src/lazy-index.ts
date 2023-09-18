@@ -19,6 +19,7 @@ Object.defineProperty(exports, 'packerChannelAssignment', { get: function () { r
 Object.defineProperty(exports, 'packerRunTask', { get: function () { return require('./packer-run-task'); } });
 Object.defineProperty(exports, 'vaultCluster', { get: function () { return require('./vault-cluster'); } });
 Object.defineProperty(exports, 'vaultClusterAdminToken', { get: function () { return require('./vault-cluster-admin-token'); } });
+Object.defineProperty(exports, 'vaultPlugin', { get: function () { return require('./vault-plugin'); } });
 Object.defineProperty(exports, 'dataHcpAwsNetworkPeering', { get: function () { return require('./data-hcp-aws-network-peering'); } });
 Object.defineProperty(exports, 'dataHcpAwsTransitGatewayAttachment', { get: function () { return require('./data-hcp-aws-transit-gateway-attachment'); } });
 Object.defineProperty(exports, 'dataHcpAzurePeeringConnection', { get: function () { return require('./data-hcp-azure-peering-connection'); } });
@@ -36,6 +37,7 @@ Object.defineProperty(exports, 'dataHcpPackerImageIteration', { get: function ()
 Object.defineProperty(exports, 'dataHcpPackerIteration', { get: function () { return require('./data-hcp-packer-iteration'); } });
 Object.defineProperty(exports, 'dataHcpPackerRunTask', { get: function () { return require('./data-hcp-packer-run-task'); } });
 Object.defineProperty(exports, 'dataHcpVaultCluster', { get: function () { return require('./data-hcp-vault-cluster'); } });
+Object.defineProperty(exports, 'dataHcpVaultPlugin', { get: function () { return require('./data-hcp-vault-plugin'); } });
 Object.defineProperty(exports, 'dataHcpVaultSecretsApp', { get: function () { return require('./data-hcp-vault-secrets-app'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 

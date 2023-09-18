@@ -25,6 +25,7 @@ The following submodules are available:
 - [dataHcpPackerIteration](./dataHcpPackerIteration.java.md)
 - [dataHcpPackerRunTask](./dataHcpPackerRunTask.java.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.java.md)
+- [dataHcpVaultPlugin](./dataHcpVaultPlugin.java.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.java.md)
 - [hvn](./hvn.java.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.java.md)
@@ -35,3 +36,4 @@ The following submodules are available:
 - [provider](./provider.java.md)
 - [vaultCluster](./vaultCluster.java.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.java.md)
+- [vaultPlugin](./vaultPlugin.java.md)

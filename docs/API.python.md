@@ -25,6 +25,7 @@ The following submodules are available:
 - [dataHcpPackerIteration](./dataHcpPackerIteration.python.md)
 - [dataHcpPackerRunTask](./dataHcpPackerRunTask.python.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.python.md)
+- [dataHcpVaultPlugin](./dataHcpVaultPlugin.python.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.python.md)
 - [hvn](./hvn.python.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.python.md)
@@ -35,3 +36,4 @@ The following submodules are available:
 - [provider](./provider.python.md)
 - [vaultCluster](./vaultCluster.python.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.python.md)
+- [vaultPlugin](./vaultPlugin.python.md)
