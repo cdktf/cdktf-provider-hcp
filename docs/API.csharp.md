@@ -25,6 +25,7 @@ The following submodules are available:
 - [dataHcpPackerIteration](./dataHcpPackerIteration.csharp.md)
 - [dataHcpPackerRunTask](./dataHcpPackerRunTask.csharp.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.csharp.md)
+- [dataHcpVaultPlugin](./dataHcpVaultPlugin.csharp.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.csharp.md)
 - [hvn](./hvn.csharp.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.csharp.md)
@@ -35,3 +36,4 @@ The following submodules are available:
 - [provider](./provider.csharp.md)
 - [vaultCluster](./vaultCluster.csharp.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.csharp.md)
+- [vaultPlugin](./vaultPlugin.csharp.md)

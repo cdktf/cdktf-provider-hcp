@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_secrets_app
+// https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_secrets_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataHcpVaultSecretsAppConfig extends cdktf.TerraformMetaArgumen
   /**
   * The name of the Vault Secrets application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_secrets_app#app_name DataHcpVaultSecretsApp#app_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_secrets_app#app_name DataHcpVaultSecretsApp#app_name}
   */
   readonly appName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_secrets_app#id DataHcpVaultSecretsApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_secrets_app#id DataHcpVaultSecretsApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +23,7 @@ export interface DataHcpVaultSecretsAppConfig extends cdktf.TerraformMetaArgumen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app}
 */
 export class DataHcpVaultSecretsApp extends cdktf.TerraformDataSource {
 
@@ -42,7 +37,7 @@ export class DataHcpVaultSecretsApp extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +48,7 @@ export class DataHcpVaultSecretsApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_vault_secrets_app',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.69.0',
+        providerVersion: '0.70.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

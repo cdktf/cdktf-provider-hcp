@@ -25,6 +25,7 @@ The following submodules are available:
 - [dataHcpPackerIteration](./dataHcpPackerIteration.typescript.md)
 - [dataHcpPackerRunTask](./dataHcpPackerRunTask.typescript.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.typescript.md)
+- [dataHcpVaultPlugin](./dataHcpVaultPlugin.typescript.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.typescript.md)
 - [hvn](./hvn.typescript.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.typescript.md)
@@ -35,3 +36,4 @@ The following submodules are available:
 - [provider](./provider.typescript.md)
 - [vaultCluster](./vaultCluster.typescript.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.typescript.md)
+- [vaultPlugin](./vaultPlugin.typescript.md)

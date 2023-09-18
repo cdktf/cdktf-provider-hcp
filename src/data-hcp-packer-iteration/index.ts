@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration
+// https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_iteration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DataHcpPackerIterationConfig extends cdktf.TerraformMetaArgumen
   /**
   * The slug of the HCP Packer Registry bucket to pull from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration#bucket_name DataHcpPackerIteration#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_iteration#bucket_name DataHcpPackerIteration#bucket_name}
   */
   readonly bucketName: string;
   /**
   * The channel that points to the version of the image you want.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration#channel DataHcpPackerIteration#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_iteration#channel DataHcpPackerIteration#channel}
   */
   readonly channel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration#id DataHcpPackerIteration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_iteration#id DataHcpPackerIteration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,19 +32,19 @@ The ID of the HCP project where the HCP Packer Registry is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration#project_id DataHcpPackerIteration#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_iteration#project_id DataHcpPackerIteration#project_id}
   */
   readonly projectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration#timeouts DataHcpPackerIteration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_iteration#timeouts DataHcpPackerIteration#timeouts}
   */
   readonly timeouts?: DataHcpPackerIterationTimeouts;
 }
 export interface DataHcpPackerIterationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration#default DataHcpPackerIteration#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_iteration#default DataHcpPackerIteration#default}
   */
   readonly default?: string;
 }
@@ -124,7 +119,7 @@ export class DataHcpPackerIterationTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration hcp_packer_iteration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_iteration hcp_packer_iteration}
 */
 export class DataHcpPackerIteration extends cdktf.TerraformDataSource {
 
@@ -138,7 +133,7 @@ export class DataHcpPackerIteration extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -149,7 +144,7 @@ export class DataHcpPackerIteration extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_packer_iteration',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.69.0',
+        providerVersion: '0.70.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
