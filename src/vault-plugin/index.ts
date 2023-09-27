@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_plugin
+// https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_plugin
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface VaultPluginConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the HCP Vault cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_plugin#cluster_id VaultPlugin#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_plugin#cluster_id VaultPlugin#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_plugin#id VaultPlugin#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_plugin#id VaultPlugin#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface VaultPluginConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the plugin - Valid options for plugin name - 'venafi-pki-backend'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_plugin#plugin_name VaultPlugin#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_plugin#plugin_name VaultPlugin#plugin_name}
   */
   readonly pluginName: string;
   /**
   * The type of the plugin - Valid options for plugin type - 'SECRET', 'AUTH', 'DATABASE'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_plugin#plugin_type VaultPlugin#plugin_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_plugin#plugin_type VaultPlugin#plugin_type}
   */
   readonly pluginType: string;
   /**
@@ -43,19 +43,19 @@ The ID of the HCP project where the HCP Vault cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_plugin#project_id VaultPlugin#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_plugin#project_id VaultPlugin#project_id}
   */
   readonly projectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_plugin#timeouts VaultPlugin#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_plugin#timeouts VaultPlugin#timeouts}
   */
   readonly timeouts?: VaultPluginTimeouts;
 }
 export interface VaultPluginTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_plugin#default VaultPlugin#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_plugin#default VaultPlugin#default}
   */
   readonly default?: string;
 }
@@ -130,7 +130,7 @@ export class VaultPluginTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_plugin hcp_vault_plugin}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_plugin hcp_vault_plugin}
 */
 export class VaultPlugin extends cdktf.TerraformResource {
 
@@ -144,7 +144,7 @@ export class VaultPlugin extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/vault_plugin hcp_vault_plugin} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_plugin hcp_vault_plugin} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,7 @@ export class VaultPlugin extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_plugin',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.70.0',
+        providerVersion: '0.71.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

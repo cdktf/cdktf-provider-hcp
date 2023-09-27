@@ -27,6 +27,7 @@ The following submodules are available:
 - [dataHcpVaultCluster](./dataHcpVaultCluster.typescript.md)
 - [dataHcpVaultPlugin](./dataHcpVaultPlugin.typescript.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.typescript.md)
+- [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.typescript.md)
 - [hvn](./hvn.typescript.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.typescript.md)
 - [hvnRoute](./hvnRoute.typescript.md)
@@ -37,3 +38,5 @@ The following submodules are available:
 - [vaultCluster](./vaultCluster.typescript.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.typescript.md)
 - [vaultPlugin](./vaultPlugin.typescript.md)
+- [vaultSecretsApp](./vaultSecretsApp.typescript.md)
+- [vaultSecretsSecret](./vaultSecretsSecret.typescript.md)

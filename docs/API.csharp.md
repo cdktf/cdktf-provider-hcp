@@ -27,6 +27,7 @@ The following submodules are available:
 - [dataHcpVaultCluster](./dataHcpVaultCluster.csharp.md)
 - [dataHcpVaultPlugin](./dataHcpVaultPlugin.csharp.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.csharp.md)
+- [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.csharp.md)
 - [hvn](./hvn.csharp.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.csharp.md)
 - [hvnRoute](./hvnRoute.csharp.md)
@@ -37,3 +38,5 @@ The following submodules are available:
 - [vaultCluster](./vaultCluster.csharp.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.csharp.md)
 - [vaultPlugin](./vaultPlugin.csharp.md)
+- [vaultSecretsApp](./vaultSecretsApp.csharp.md)
+- [vaultSecretsSecret](./vaultSecretsSecret.csharp.md)

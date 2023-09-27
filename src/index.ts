@@ -20,6 +20,8 @@ export * as packerRunTask from './packer-run-task';
 export * as vaultCluster from './vault-cluster';
 export * as vaultClusterAdminToken from './vault-cluster-admin-token';
 export * as vaultPlugin from './vault-plugin';
+export * as vaultSecretsApp from './vault-secrets-app';
+export * as vaultSecretsSecret from './vault-secrets-secret';
 export * as dataHcpAwsNetworkPeering from './data-hcp-aws-network-peering';
 export * as dataHcpAwsTransitGatewayAttachment from './data-hcp-aws-transit-gateway-attachment';
 export * as dataHcpAzurePeeringConnection from './data-hcp-azure-peering-connection';
@@ -39,5 +41,6 @@ export * as dataHcpPackerRunTask from './data-hcp-packer-run-task';
 export * as dataHcpVaultCluster from './data-hcp-vault-cluster';
 export * as dataHcpVaultPlugin from './data-hcp-vault-plugin';
 export * as dataHcpVaultSecretsApp from './data-hcp-vault-secrets-app';
+export * as dataHcpVaultSecretsSecret from './data-hcp-vault-secrets-secret';
 export * as provider from './provider';
 
