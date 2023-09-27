@@ -1,6 +1,6 @@
 # `data_hcp_packer_bucket_names`
 
-Refer to the Terraform Registory for docs: [`data_hcp_packer_bucket_names`](https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_bucket_names).
+Refer to the Terraform Registory for docs: [`data_hcp_packer_bucket_names`](https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/packer_bucket_names).
 
 # `dataHcpPackerBucketNames` Submodule <a name="`dataHcpPackerBucketNames` Submodule" id="@cdktf/provider-hcp.dataHcpPackerBucketNames"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_hcp_packer_bucket_names`](http
 
 ### DataHcpPackerBucketNames <a name="DataHcpPackerBucketNames" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_bucket_names hcp_packer_bucket_names}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/packer_bucket_names hcp_packer_bucket_names}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.Initializer"></a>
 
@@ -631,7 +631,7 @@ const dataHcpPackerBucketNamesConfig: dataHcpPackerBucketNames.DataHcpPackerBuck
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_bucket_names#id DataHcpPackerBucketNames#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/packer_bucket_names#id DataHcpPackerBucketNames#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesConfig.property.projectId">projectId</a></code> | <code>string</code> | The ID of the HCP project where the HCP Packer registry is located. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesTimeouts">DataHcpPackerBucketNamesTimeouts</a></code> | timeouts block. |
 
@@ -715,7 +715,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_bucket_names#id DataHcpPackerBucketNames#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/packer_bucket_names#id DataHcpPackerBucketNames#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -732,7 +732,7 @@ public readonly projectId: string;
 
 The ID of the HCP project where the HCP Packer registry is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_bucket_names#project_id DataHcpPackerBucketNames#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/packer_bucket_names#project_id DataHcpPackerBucketNames#project_id}
 
 ---
 
@@ -746,7 +746,7 @@ public readonly timeouts: DataHcpPackerBucketNamesTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_bucket_names#timeouts DataHcpPackerBucketNames#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/packer_bucket_names#timeouts DataHcpPackerBucketNames#timeouts}
 
 ---
 
@@ -764,7 +764,7 @@ const dataHcpPackerBucketNamesTimeouts: dataHcpPackerBucketNames.DataHcpPackerBu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_bucket_names#default DataHcpPackerBucketNames#default}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/packer_bucket_names#default DataHcpPackerBucketNames#default}. |
 
 ---
 
@@ -776,7 +776,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/packer_bucket_names#default DataHcpPackerBucketNames#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/packer_bucket_names#default DataHcpPackerBucketNames#default}.
 
 ---
 

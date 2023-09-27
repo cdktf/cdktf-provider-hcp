@@ -1,6 +1,6 @@
 # `data_hcp_vault_cluster`
 
-Refer to the Terraform Registory for docs: [`data_hcp_vault_cluster`](https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster).
+Refer to the Terraform Registory for docs: [`data_hcp_vault_cluster`](https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster).
 
 # `dataHcpVaultCluster` Submodule <a name="`dataHcpVaultCluster` Submodule" id="@cdktf/provider-hcp.dataHcpVaultCluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_hcp_vault_cluster`](https://re
 
 ### DataHcpVaultCluster <a name="DataHcpVaultCluster" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster hcp_vault_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster hcp_vault_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.Initializer"></a>
 
@@ -937,7 +937,7 @@ const dataHcpVaultClusterConfig: dataHcpVaultCluster.DataHcpVaultClusterConfig =
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.clusterId">clusterId</a></code> | <code>string</code> | The ID of the HCP Vault cluster. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.auditLogConfig">auditLogConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfig">DataHcpVaultClusterAuditLogConfig</a>[]</code> | audit_log_config block. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.metricsConfig">metricsConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfig">DataHcpVaultClusterMetricsConfig</a>[]</code> | metrics_config block. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.projectId">projectId</a></code> | <code>string</code> | The ID of the HCP project where the Vault cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterTimeouts">DataHcpVaultClusterTimeouts</a></code> | timeouts block. |
@@ -1024,7 +1024,7 @@ public readonly clusterId: string;
 
 The ID of the HCP Vault cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster#cluster_id DataHcpVaultCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster#cluster_id DataHcpVaultCluster#cluster_id}
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly auditLogConfig: IResolvable | DataHcpVaultClusterAuditLogConfig[
 
 audit_log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster#audit_log_config DataHcpVaultCluster#audit_log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster#audit_log_config DataHcpVaultCluster#audit_log_config}
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1067,7 +1067,7 @@ public readonly metricsConfig: IResolvable | DataHcpVaultClusterMetricsConfig[];
 
 metrics_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster#metrics_config DataHcpVaultCluster#metrics_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster#metrics_config DataHcpVaultCluster#metrics_config}
 
 ---
 
@@ -1084,7 +1084,7 @@ The ID of the HCP project where the Vault cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
- Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster#project_id DataHcpVaultCluster#project_id}
+ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster#project_id DataHcpVaultCluster#project_id}
 
 ---
 
@@ -1098,7 +1098,7 @@ public readonly timeouts: DataHcpVaultClusterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster#timeouts DataHcpVaultCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster#timeouts DataHcpVaultCluster#timeouts}
 
 ---
 
@@ -1138,7 +1138,7 @@ const dataHcpVaultClusterTimeouts: dataHcpVaultCluster.DataHcpVaultClusterTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}. |
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}.
 
 ---
 
@@ -1533,6 +1533,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.cloudwatchSecretAccessKey">cloudwatchSecretAccessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.cloudwatchStreamName">cloudwatchStreamName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.datadogRegion">datadogRegion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.elasticsearchDataset">elasticsearchDataset</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.elasticsearchEndpoint">elasticsearchEndpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.elasticsearchPassword">elasticsearchPassword</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.elasticsearchUser">elasticsearchUser</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.grafanaEndpoint">grafanaEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.grafanaUser">grafanaUser</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.splunkHecendpoint">splunkHecendpoint</a></code> | <code>string</code> | *No description.* |
@@ -1618,6 +1622,46 @@ public readonly cloudwatchStreamName: string;
 
 ```typescript
 public readonly datadogRegion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `elasticsearchDataset`<sup>Required</sup> <a name="elasticsearchDataset" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.elasticsearchDataset"></a>
+
+```typescript
+public readonly elasticsearchDataset: string;
+```
+
+- *Type:* string
+
+---
+
+##### `elasticsearchEndpoint`<sup>Required</sup> <a name="elasticsearchEndpoint" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.elasticsearchEndpoint"></a>
+
+```typescript
+public readonly elasticsearchEndpoint: string;
+```
+
+- *Type:* string
+
+---
+
+##### `elasticsearchPassword`<sup>Required</sup> <a name="elasticsearchPassword" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.elasticsearchPassword"></a>
+
+```typescript
+public readonly elasticsearchPassword: string;
+```
+
+- *Type:* string
+
+---
+
+##### `elasticsearchUser`<sup>Required</sup> <a name="elasticsearchUser" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.elasticsearchUser"></a>
+
+```typescript
+public readonly elasticsearchUser: string;
 ```
 
 - *Type:* string
@@ -2473,6 +2517,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.cloudwatchRegion">cloudwatchRegion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.cloudwatchSecretAccessKey">cloudwatchSecretAccessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.datadogRegion">datadogRegion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.elasticsearchDataset">elasticsearchDataset</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.elasticsearchEndpoint">elasticsearchEndpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.elasticsearchPassword">elasticsearchPassword</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.elasticsearchUser">elasticsearchUser</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.grafanaEndpoint">grafanaEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.grafanaUser">grafanaUser</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.splunkHecendpoint">splunkHecendpoint</a></code> | <code>string</code> | *No description.* |
@@ -2548,6 +2596,46 @@ public readonly cloudwatchSecretAccessKey: string;
 
 ```typescript
 public readonly datadogRegion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `elasticsearchDataset`<sup>Required</sup> <a name="elasticsearchDataset" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.elasticsearchDataset"></a>
+
+```typescript
+public readonly elasticsearchDataset: string;
+```
+
+- *Type:* string
+
+---
+
+##### `elasticsearchEndpoint`<sup>Required</sup> <a name="elasticsearchEndpoint" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.elasticsearchEndpoint"></a>
+
+```typescript
+public readonly elasticsearchEndpoint: string;
+```
+
+- *Type:* string
+
+---
+
+##### `elasticsearchPassword`<sup>Required</sup> <a name="elasticsearchPassword" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.elasticsearchPassword"></a>
+
+```typescript
+public readonly elasticsearchPassword: string;
+```
+
+- *Type:* string
+
+---
+
+##### `elasticsearchUser`<sup>Required</sup> <a name="elasticsearchUser" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.elasticsearchUser"></a>
+
+```typescript
+public readonly elasticsearchUser: string;
 ```
 
 - *Type:* string

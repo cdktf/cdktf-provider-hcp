@@ -27,6 +27,7 @@ The following submodules are available:
 - [dataHcpVaultCluster](./dataHcpVaultCluster.java.md)
 - [dataHcpVaultPlugin](./dataHcpVaultPlugin.java.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.java.md)
+- [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.java.md)
 - [hvn](./hvn.java.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.java.md)
 - [hvnRoute](./hvnRoute.java.md)
@@ -37,3 +38,5 @@ The following submodules are available:
 - [vaultCluster](./vaultCluster.java.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.java.md)
 - [vaultPlugin](./vaultPlugin.java.md)
+- [vaultSecretsApp](./vaultSecretsApp.java.md)
+- [vaultSecretsSecret](./vaultSecretsSecret.java.md)

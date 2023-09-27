@@ -27,6 +27,7 @@ The following submodules are available:
 - [dataHcpVaultCluster](./dataHcpVaultCluster.go.md)
 - [dataHcpVaultPlugin](./dataHcpVaultPlugin.go.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.go.md)
+- [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.go.md)
 - [hvn](./hvn.go.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.go.md)
 - [hvnRoute](./hvnRoute.go.md)
@@ -37,3 +38,5 @@ The following submodules are available:
 - [vaultCluster](./vaultCluster.go.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.go.md)
 - [vaultPlugin](./vaultPlugin.go.md)
+- [vaultSecretsApp](./vaultSecretsApp.go.md)
+- [vaultSecretsSecret](./vaultSecretsSecret.go.md)

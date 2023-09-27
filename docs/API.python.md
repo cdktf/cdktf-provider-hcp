@@ -27,6 +27,7 @@ The following submodules are available:
 - [dataHcpVaultCluster](./dataHcpVaultCluster.python.md)
 - [dataHcpVaultPlugin](./dataHcpVaultPlugin.python.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.python.md)
+- [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.python.md)
 - [hvn](./hvn.python.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.python.md)
 - [hvnRoute](./hvnRoute.python.md)
@@ -37,3 +38,5 @@ The following submodules are available:
 - [vaultCluster](./vaultCluster.python.md)
 - [vaultClusterAdminToken](./vaultClusterAdminToken.python.md)
 - [vaultPlugin](./vaultPlugin.python.md)
+- [vaultSecretsApp](./vaultSecretsApp.python.md)
+- [vaultSecretsSecret](./vaultSecretsSecret.python.md)
