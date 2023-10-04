@@ -21,7 +21,6 @@ The following submodules are available:
 - [dataHcpHvnRoute](./dataHcpHvnRoute.java.md)
 - [dataHcpPackerBucketNames](./dataHcpPackerBucketNames.java.md)
 - [dataHcpPackerImage](./dataHcpPackerImage.java.md)
-- [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.java.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.java.md)
 - [dataHcpPackerRunTask](./dataHcpPackerRunTask.java.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.java.md)

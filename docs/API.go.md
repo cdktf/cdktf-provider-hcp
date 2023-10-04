@@ -21,7 +21,6 @@ The following submodules are available:
 - [dataHcpHvnRoute](./dataHcpHvnRoute.go.md)
 - [dataHcpPackerBucketNames](./dataHcpPackerBucketNames.go.md)
 - [dataHcpPackerImage](./dataHcpPackerImage.go.md)
-- [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.go.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.go.md)
 - [dataHcpPackerRunTask](./dataHcpPackerRunTask.go.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.go.md)

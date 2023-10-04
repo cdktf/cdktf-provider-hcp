@@ -1,3 +1,3 @@
 # `hcp_packer_channel`
 
-Refer to the Terraform Registory for docs: [`hcp_packer_channel`](https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/packer_channel).
+Refer to the Terraform Registory for docs: [`hcp_packer_channel`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/packer_channel).

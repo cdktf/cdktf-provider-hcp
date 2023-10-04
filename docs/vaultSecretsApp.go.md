@@ -1,6 +1,6 @@
 # `hcp_vault_secrets_app`
 
-Refer to the Terraform Registory for docs: [`hcp_vault_secrets_app`](https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_secrets_app).
+Refer to the Terraform Registory for docs: [`hcp_vault_secrets_app`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/vault_secrets_app).
 
 # `vaultSecretsApp` Submodule <a name="`vaultSecretsApp` Submodule" id="@cdktf/provider-hcp.vaultSecretsApp"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`hcp_vault_secrets_app`](https://reg
 
 ### VaultSecretsApp <a name="VaultSecretsApp" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_secrets_app hcp_vault_secrets_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/vault_secrets_app hcp_vault_secrets_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultsecretsapp"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsapp"
 
 vaultsecretsapp.NewVaultSecretsApp(scope Construct, id *string, config VaultSecretsAppConfig) VaultSecretsApp
 ```
@@ -277,7 +277,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultsecretsapp"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsapp"
 
 vaultsecretsapp.VaultSecretsApp_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultsecretsapp"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsapp"
 
 vaultsecretsapp.VaultSecretsApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ vaultsecretsapp.VaultSecretsApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultsecretsapp"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsapp"
 
 vaultsecretsapp.VaultSecretsApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultsecretsapp"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsapp"
 
 &vaultsecretsapp.VaultSecretsAppConfig {
 	Connection: interface{},
@@ -710,7 +710,7 @@ AppName *string
 
 The Vault Secrets App name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
 
 ---
 
@@ -724,7 +724,7 @@ Description *string
 
 The Vault Secrets app description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
 
 ---
 

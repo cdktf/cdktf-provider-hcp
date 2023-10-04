@@ -21,7 +21,6 @@ The following submodules are available:
 - [dataHcpHvnRoute](./dataHcpHvnRoute.typescript.md)
 - [dataHcpPackerBucketNames](./dataHcpPackerBucketNames.typescript.md)
 - [dataHcpPackerImage](./dataHcpPackerImage.typescript.md)
-- [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.typescript.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.typescript.md)
 - [dataHcpPackerRunTask](./dataHcpPackerRunTask.typescript.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.typescript.md)

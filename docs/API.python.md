@@ -21,7 +21,6 @@ The following submodules are available:
 - [dataHcpHvnRoute](./dataHcpHvnRoute.python.md)
 - [dataHcpPackerBucketNames](./dataHcpPackerBucketNames.python.md)
 - [dataHcpPackerImage](./dataHcpPackerImage.python.md)
-- [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.python.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.python.md)
 - [dataHcpPackerRunTask](./dataHcpPackerRunTask.python.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.python.md)

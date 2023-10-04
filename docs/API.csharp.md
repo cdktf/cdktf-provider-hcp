@@ -21,7 +21,6 @@ The following submodules are available:
 - [dataHcpHvnRoute](./dataHcpHvnRoute.csharp.md)
 - [dataHcpPackerBucketNames](./dataHcpPackerBucketNames.csharp.md)
 - [dataHcpPackerImage](./dataHcpPackerImage.csharp.md)
-- [dataHcpPackerImageIteration](./dataHcpPackerImageIteration.csharp.md)
 - [dataHcpPackerIteration](./dataHcpPackerIteration.csharp.md)
 - [dataHcpPackerRunTask](./dataHcpPackerRunTask.csharp.md)
 - [dataHcpVaultCluster](./dataHcpVaultCluster.csharp.md)
