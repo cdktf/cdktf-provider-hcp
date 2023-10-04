@@ -35,7 +35,6 @@ Object.defineProperty(exports, 'dataHcpHvnPeeringConnection', { get: function ()
 Object.defineProperty(exports, 'dataHcpHvnRoute', { get: function () { return require('./data-hcp-hvn-route'); } });
 Object.defineProperty(exports, 'dataHcpPackerBucketNames', { get: function () { return require('./data-hcp-packer-bucket-names'); } });
 Object.defineProperty(exports, 'dataHcpPackerImage', { get: function () { return require('./data-hcp-packer-image'); } });
-Object.defineProperty(exports, 'dataHcpPackerImageIteration', { get: function () { return require('./data-hcp-packer-image-iteration'); } });
 Object.defineProperty(exports, 'dataHcpPackerIteration', { get: function () { return require('./data-hcp-packer-iteration'); } });
 Object.defineProperty(exports, 'dataHcpPackerRunTask', { get: function () { return require('./data-hcp-packer-run-task'); } });
 Object.defineProperty(exports, 'dataHcpVaultCluster', { get: function () { return require('./data-hcp-vault-cluster'); } });

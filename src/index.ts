@@ -35,7 +35,6 @@ export * as dataHcpHvnPeeringConnection from './data-hcp-hvn-peering-connection'
 export * as dataHcpHvnRoute from './data-hcp-hvn-route';
 export * as dataHcpPackerBucketNames from './data-hcp-packer-bucket-names';
 export * as dataHcpPackerImage from './data-hcp-packer-image';
-export * as dataHcpPackerImageIteration from './data-hcp-packer-image-iteration';
 export * as dataHcpPackerIteration from './data-hcp-packer-iteration';
 export * as dataHcpPackerRunTask from './data-hcp-packer-run-task';
 export * as dataHcpVaultCluster from './data-hcp-vault-cluster';

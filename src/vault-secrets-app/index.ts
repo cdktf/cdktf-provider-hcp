@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_secrets_app
+// https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/vault_secrets_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface VaultSecretsAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Vault Secrets App name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
   */
   readonly appName: string;
   /**
   * The Vault Secrets app description
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
   */
   readonly description?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_secrets_app hcp_vault_secrets_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/vault_secrets_app hcp_vault_secrets_app}
 */
 export class VaultSecretsApp extends cdktf.TerraformResource {
 
@@ -41,7 +41,7 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/vault_secrets_app hcp_vault_secrets_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/vault_secrets_app hcp_vault_secrets_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -52,7 +52,7 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_secrets_app',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.71.1',
+        providerVersion: '0.72.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
