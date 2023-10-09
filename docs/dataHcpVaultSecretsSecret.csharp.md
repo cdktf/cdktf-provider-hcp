@@ -1,6 +1,6 @@
 # `data_hcp_vault_secrets_secret`
 
-Refer to the Terraform Registory for docs: [`data_hcp_vault_secrets_secret`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/vault_secrets_secret).
+Refer to the Terraform Registory for docs: [`data_hcp_vault_secrets_secret`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/vault_secrets_secret).
 
 # `dataHcpVaultSecretsSecret` Submodule <a name="`dataHcpVaultSecretsSecret` Submodule" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_hcp_vault_secrets_secret`](htt
 
 ### DataHcpVaultSecretsSecret <a name="DataHcpVaultSecretsSecret" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/vault_secrets_secret hcp_vault_secrets_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/vault_secrets_secret hcp_vault_secrets_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.Initializer"></a>
 
@@ -692,7 +692,7 @@ public string AppName { get; set; }
 
 The name of the Vault Secrets application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/vault_secrets_secret#app_name DataHcpVaultSecretsSecret#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/vault_secrets_secret#app_name DataHcpVaultSecretsSecret#app_name}
 
 ---
 
@@ -706,7 +706,7 @@ public string SecretName { get; set; }
 
 The name of the Vault Secrets secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/vault_secrets_secret#secret_name DataHcpVaultSecretsSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/vault_secrets_secret#secret_name DataHcpVaultSecretsSecret#secret_name}
 
 ---
 
