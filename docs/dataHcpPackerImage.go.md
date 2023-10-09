@@ -1,6 +1,6 @@
 # `data_hcp_packer_image`
 
-Refer to the Terraform Registory for docs: [`data_hcp_packer_image`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image).
+Refer to the Terraform Registory for docs: [`data_hcp_packer_image`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image).
 
 # `dataHcpPackerImage` Submodule <a name="`dataHcpPackerImage` Submodule" id="@cdktf/provider-hcp.dataHcpPackerImage"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_hcp_packer_image`](https://reg
 
 ### DataHcpPackerImage <a name="DataHcpPackerImage" id="@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image hcp_packer_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image hcp_packer_image}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImage.Initializer"></a>
 
@@ -861,7 +861,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/datahcppackerimage"
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.region">Region</a></code> | <code>*string</code> | The Region where this image is stored, if any. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.channel">Channel</a></code> | <code>*string</code> | The channel that points to the version of the image being retrieved. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.componentType">ComponentType</a></code> | <code>*string</code> | Name of the builder that built this image. Ex: `amazon-ebs.example`. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#id DataHcpPackerImage#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#id DataHcpPackerImage#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.iterationId">IterationId</a></code> | <code>*string</code> | The iteration from which to get the image. Either this or `channel` must be specified. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the HCP Packer Registry image is located. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageTimeouts">DataHcpPackerImageTimeouts</a></code> | timeouts block. |
@@ -948,7 +948,7 @@ BucketName *string
 
 The slug of the HCP Packer Registry bucket where this image is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#bucket_name DataHcpPackerImage#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#bucket_name DataHcpPackerImage#bucket_name}
 
 ---
 
@@ -962,7 +962,7 @@ CloudProvider *string
 
 Name of the cloud provider where this image is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#cloud_provider DataHcpPackerImage#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#cloud_provider DataHcpPackerImage#cloud_provider}
 
 ---
 
@@ -976,7 +976,7 @@ Region *string
 
 The Region where this image is stored, if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#region DataHcpPackerImage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#region DataHcpPackerImage#region}
 
 ---
 
@@ -992,7 +992,7 @@ The channel that points to the version of the image being retrieved.
 
 Either this or `iteration_id` must be specified. Note: will incur a billable request
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#channel DataHcpPackerImage#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#channel DataHcpPackerImage#channel}
 
 ---
 
@@ -1006,7 +1006,7 @@ ComponentType *string
 
 Name of the builder that built this image. Ex: `amazon-ebs.example`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#component_type DataHcpPackerImage#component_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#component_type DataHcpPackerImage#component_type}
 
 ---
 
@@ -1018,7 +1018,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#id DataHcpPackerImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#id DataHcpPackerImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1035,7 +1035,7 @@ IterationId *string
 
 The iteration from which to get the image. Either this or `channel` must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#iteration_id DataHcpPackerImage#iteration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#iteration_id DataHcpPackerImage#iteration_id}
 
 ---
 
@@ -1052,7 +1052,7 @@ The ID of the HCP project where the HCP Packer Registry image is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#project_id DataHcpPackerImage#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#project_id DataHcpPackerImage#project_id}
 
 ---
 
@@ -1066,7 +1066,7 @@ Timeouts DataHcpPackerImageTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#timeouts DataHcpPackerImage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#timeouts DataHcpPackerImage#timeouts}
 
 ---
 
@@ -1086,7 +1086,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/datahcppackerimage"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#default DataHcpPackerImage#default}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerImage.DataHcpPackerImageTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#default DataHcpPackerImage#default}. |
 
 ---
 
@@ -1098,7 +1098,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_image#default DataHcpPackerImage#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_image#default DataHcpPackerImage#default}.
 
 ---
 

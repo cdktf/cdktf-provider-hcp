@@ -1,3 +1,3 @@
 # `hcp_packer_channel_assignment`
 
-Refer to the Terraform Registory for docs: [`hcp_packer_channel_assignment`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/resources/packer_channel_assignment).
+Refer to the Terraform Registory for docs: [`hcp_packer_channel_assignment`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_channel_assignment).
