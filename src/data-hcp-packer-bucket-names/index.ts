@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_bucket_names
+// https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_bucket_names
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataHcpPackerBucketNamesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_bucket_names#id DataHcpPackerBucketNames#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_bucket_names#id DataHcpPackerBucketNames#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface DataHcpPackerBucketNamesConfig extends cdktf.TerraformMetaArgum
   /**
   * The ID of the HCP project where the HCP Packer registry is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_bucket_names#project_id DataHcpPackerBucketNames#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_bucket_names#project_id DataHcpPackerBucketNames#project_id}
   */
   readonly projectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_bucket_names#timeouts DataHcpPackerBucketNames#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_bucket_names#timeouts DataHcpPackerBucketNames#timeouts}
   */
   readonly timeouts?: DataHcpPackerBucketNamesTimeouts;
 }
 export interface DataHcpPackerBucketNamesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_bucket_names#default DataHcpPackerBucketNames#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_bucket_names#default DataHcpPackerBucketNames#default}
   */
   readonly default?: string;
 }
@@ -109,7 +104,7 @@ export class DataHcpPackerBucketNamesTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_bucket_names hcp_packer_bucket_names}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_bucket_names hcp_packer_bucket_names}
 */
 export class DataHcpPackerBucketNames extends cdktf.TerraformDataSource {
 
@@ -123,7 +118,7 @@ export class DataHcpPackerBucketNames extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.1/docs/data-sources/packer_bucket_names hcp_packer_bucket_names} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_bucket_names hcp_packer_bucket_names} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -134,7 +129,7 @@ export class DataHcpPackerBucketNames extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_packer_bucket_names',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.72.1',
+        providerVersion: '0.72.2',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
