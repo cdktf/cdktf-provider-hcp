@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultclusteradmintoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultclusteradmintoken"
 
 vaultclusteradmintoken.NewVaultClusterAdminToken(scope Construct, id *string, config VaultClusterAdminTokenConfig) VaultClusterAdminToken
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultclusteradmintoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultclusteradmintoken"
 
 vaultclusteradmintoken.VaultClusterAdminToken_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultclusteradmintoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultclusteradmintoken"
 
 vaultclusteradmintoken.VaultClusterAdminToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ vaultclusteradmintoken.VaultClusterAdminToken_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultclusteradmintoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultclusteradmintoken"
 
 vaultclusteradmintoken.VaultClusterAdminToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultclusteradmintoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultclusteradmintoken"
 
 &vaultclusteradmintoken.VaultClusterAdminTokenConfig {
 	Connection: interface{},
@@ -672,7 +672,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultclusteradmintoken"
 	ClusterId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultClusterAdminToken.VaultClusterAdminTokenTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v7.vaultClusterAdminToken.VaultClusterAdminTokenTimeouts,
 }
 ```
 
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminTokenTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultclusteradmintoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultclusteradmintoken"
 
 &vaultclusteradmintoken.VaultClusterAdminTokenTimeouts {
 	Create: *string,
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminTokenTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultclusteradmintoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultclusteradmintoken"
 
 vaultclusteradmintoken.NewVaultClusterAdminTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultClusterAdminTokenTimeoutsOutputReference
 ```
