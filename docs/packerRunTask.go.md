@@ -1,6 +1,6 @@
 # `hcp_packer_run_task`
 
-Refer to the Terraform Registory for docs: [`hcp_packer_run_task`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task).
+Refer to the Terraform Registory for docs: [`hcp_packer_run_task`](https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task).
 
 # `packerRunTask` Submodule <a name="`packerRunTask` Submodule" id="@cdktf/provider-hcp.packerRunTask"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`hcp_packer_run_task`](https://regis
 
 ### PackerRunTask <a name="PackerRunTask" id="@cdktf/provider-hcp.packerRunTask.PackerRunTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task hcp_packer_run_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task hcp_packer_run_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerRunTask.PackerRunTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerruntask"
 
 packerruntask.NewPackerRunTask(scope Construct, id *string, config PackerRunTaskConfig) PackerRunTask
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.packerRunTask.PackerRunTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerruntask"
 
 packerruntask.PackerRunTask_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.packerRunTask.PackerRunTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerruntask"
 
 packerruntask.PackerRunTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ packerruntask.PackerRunTask_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.packerRunTask.PackerRunTask.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerruntask"
 
 packerruntask.PackerRunTask_IsTerraformResource(x interface{}) *bool
 ```
@@ -677,7 +677,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.packerRunTask.PackerRunTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerruntask"
 
 &packerruntask.PackerRunTaskConfig {
 	Connection: interface{},
@@ -690,7 +690,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask"
 	Id: *string,
 	ProjectId: *string,
 	RegenerateHmac: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v7.packerRunTask.PackerRunTaskTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.packerRunTask.PackerRunTaskTimeouts,
 }
 ```
 
@@ -705,7 +705,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask"
 | <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#id PackerRunTask#id}. |
+| <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#id PackerRunTask#id}. |
 | <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the HCP Packer Registry is located. |
 | <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskConfig.property.regenerateHmac">RegenerateHmac</a></code> | <code>interface{}</code> | If true, the HMAC Key (`hmac_key`) will be regenerated during `terraform apply`. |
 | <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeouts">PackerRunTaskTimeouts</a></code> | timeouts block. |
@@ -790,7 +790,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#id PackerRunTask#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#id PackerRunTask#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -810,7 +810,7 @@ The ID of the HCP project where the HCP Packer Registry is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#project_id PackerRunTask#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#project_id PackerRunTask#project_id}
 
 ---
 
@@ -826,7 +826,7 @@ If true, the HMAC Key (`hmac_key`) will be regenerated during `terraform apply`.
 
 While set to true, the key will be regenerated on every `terraform apply` until `regenerate_hmac` is set to false or removed from the config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#regenerate_hmac PackerRunTask#regenerate_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#regenerate_hmac PackerRunTask#regenerate_hmac}
 
 ---
 
@@ -840,7 +840,7 @@ Timeouts PackerRunTaskTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#timeouts PackerRunTask#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#timeouts PackerRunTask#timeouts}
 
 ---
 
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerruntask"
 
 &packerruntask.PackerRunTaskTimeouts {
 	Create: *string,
@@ -863,10 +863,10 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#create PackerRunTask#create}. |
-| <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#default PackerRunTask#default}. |
-| <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#delete PackerRunTask#delete}. |
-| <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#update PackerRunTask#update}. |
+| <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#create PackerRunTask#create}. |
+| <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#default PackerRunTask#default}. |
+| <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#delete PackerRunTask#delete}. |
+| <code><a href="#@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#update PackerRunTask#update}. |
 
 ---
 
@@ -878,7 +878,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#create PackerRunTask#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#create PackerRunTask#create}.
 
 ---
 
@@ -890,7 +890,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#default PackerRunTask#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#default PackerRunTask#default}.
 
 ---
 
@@ -902,7 +902,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#delete PackerRunTask#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#delete PackerRunTask#delete}.
 
 ---
 
@@ -914,7 +914,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/packer_run_task#update PackerRunTask#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/packer_run_task#update PackerRunTask#update}.
 
 ---
 
@@ -925,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerRunTask.PackerRunTaskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerruntask"
 
 packerruntask.NewPackerRunTaskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PackerRunTaskTimeoutsOutputReference
 ```
