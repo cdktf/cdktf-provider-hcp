@@ -1,6 +1,6 @@
 # `hcp_vault_secrets_secret`
 
-Refer to the Terraform Registory for docs: [`hcp_vault_secrets_secret`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/vault_secrets_secret).
+Refer to the Terraform Registory for docs: [`hcp_vault_secrets_secret`](https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/vault_secrets_secret).
 
 # `vaultSecretsSecret` Submodule <a name="`vaultSecretsSecret` Submodule" id="@cdktf/provider-hcp.vaultSecretsSecret"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`hcp_vault_secrets_secret`](https://
 
 ### VaultSecretsSecret <a name="VaultSecretsSecret" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.Initializer"></a>
 
@@ -716,7 +716,7 @@ public readonly appName: string;
 
 The name of the application the secret can be found in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/vault_secrets_secret#app_name VaultSecretsSecret#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/vault_secrets_secret#app_name VaultSecretsSecret#app_name}
 
 ---
 
@@ -730,7 +730,7 @@ public readonly secretName: string;
 
 The name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/vault_secrets_secret#secret_name VaultSecretsSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/vault_secrets_secret#secret_name VaultSecretsSecret#secret_name}
 
 ---
 
@@ -744,7 +744,7 @@ public readonly secretValue: string;
 
 The value of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/resources/vault_secrets_secret#secret_value VaultSecretsSecret#secret_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/vault_secrets_secret#secret_value VaultSecretsSecret#secret_value}
 
 ---
 

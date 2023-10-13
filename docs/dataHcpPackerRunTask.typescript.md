@@ -1,6 +1,6 @@
 # `data_hcp_packer_run_task`
 
-Refer to the Terraform Registory for docs: [`data_hcp_packer_run_task`](https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_run_task).
+Refer to the Terraform Registory for docs: [`data_hcp_packer_run_task`](https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/packer_run_task).
 
 # `dataHcpPackerRunTask` Submodule <a name="`dataHcpPackerRunTask` Submodule" id="@cdktf/provider-hcp.dataHcpPackerRunTask"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_hcp_packer_run_task`](https://
 
 ### DataHcpPackerRunTask <a name="DataHcpPackerRunTask" id="@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_run_task hcp_packer_run_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/packer_run_task hcp_packer_run_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTask.Initializer"></a>
 
@@ -642,7 +642,7 @@ const dataHcpPackerRunTaskConfig: dataHcpPackerRunTask.DataHcpPackerRunTaskConfi
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_run_task#id DataHcpPackerRunTask#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/packer_run_task#id DataHcpPackerRunTask#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskConfig.property.projectId">projectId</a></code> | <code>string</code> | The ID of the HCP project where the HCP Packer Registry is located. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskTimeouts">DataHcpPackerRunTaskTimeouts</a></code> | timeouts block. |
 
@@ -726,7 +726,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_run_task#id DataHcpPackerRunTask#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/packer_run_task#id DataHcpPackerRunTask#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -746,7 +746,7 @@ The ID of the HCP project where the HCP Packer Registry is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_run_task#project_id DataHcpPackerRunTask#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/packer_run_task#project_id DataHcpPackerRunTask#project_id}
 
 ---
 
@@ -760,7 +760,7 @@ public readonly timeouts: DataHcpPackerRunTaskTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_run_task#timeouts DataHcpPackerRunTask#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/packer_run_task#timeouts DataHcpPackerRunTask#timeouts}
 
 ---
 
@@ -778,7 +778,7 @@ const dataHcpPackerRunTaskTimeouts: dataHcpPackerRunTask.DataHcpPackerRunTaskTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_run_task#default DataHcpPackerRunTask#default}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerRunTask.DataHcpPackerRunTaskTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/packer_run_task#default DataHcpPackerRunTask#default}. |
 
 ---
 
@@ -790,7 +790,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/packer_run_task#default DataHcpPackerRunTask#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/packer_run_task#default DataHcpPackerRunTask#default}.
 
 ---
 
