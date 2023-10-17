@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/hvn
 // generated from terraform resource schema
 
@@ -198,6 +193,20 @@ export class Hvn extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "hcp_hvn";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a Hvn resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the Hvn to import
+  * @param importFromId The id of the existing Hvn that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/hvn#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the Hvn to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_hvn", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
