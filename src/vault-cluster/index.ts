@@ -1245,6 +1245,20 @@ export class VaultCluster extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "hcp_vault_cluster";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a VaultCluster resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the VaultCluster to import
+  * @param importFromId The id of the existing VaultCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/vault_cluster#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the VaultCluster to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_cluster", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

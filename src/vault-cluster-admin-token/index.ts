@@ -181,6 +181,20 @@ export class VaultClusterAdminToken extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "hcp_vault_cluster_admin_token";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a VaultClusterAdminToken resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the VaultClusterAdminToken to import
+  * @param importFromId The id of the existing VaultClusterAdminToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/resources/vault_cluster_admin_token#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the VaultClusterAdminToken to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_cluster_admin_token", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

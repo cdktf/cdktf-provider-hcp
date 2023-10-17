@@ -36,6 +36,20 @@ export class DataHcpVaultSecretsSecret extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "hcp_vault_secrets_secret";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataHcpVaultSecretsSecret resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataHcpVaultSecretsSecret to import
+  * @param importFromId The id of the existing DataHcpVaultSecretsSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/vault_secrets_secret#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataHcpVaultSecretsSecret to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_vault_secrets_secret", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
