@@ -1,6 +1,6 @@
 # `data_hcp_project`
 
-Refer to the Terraform Registory for docs: [`data_hcp_project`](https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/project).
+Refer to the Terraform Registory for docs: [`data_hcp_project`](https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/project).
 
 # `dataHcpProject` Submodule <a name="`dataHcpProject` Submodule" id="@cdktf/provider-hcp.dataHcpProject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_hcp_project`](https://registry
 
 ### DataHcpProject <a name="DataHcpProject" id="@cdktf/provider-hcp.dataHcpProject.DataHcpProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/project hcp_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/project hcp_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpProject.DataHcpProject.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataHcpProject to import.
 
 The id of the existing DataHcpProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ The id of the project.
 
 May be given as "<id>" or "project/<id>". If not set, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/project#project DataHcpProject#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/project#project DataHcpProject#project}
 
 ---
 

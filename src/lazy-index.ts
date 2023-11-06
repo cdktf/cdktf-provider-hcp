@@ -14,10 +14,13 @@ Object.defineProperty(exports, 'consulSnapshot', { get: function () { return req
 Object.defineProperty(exports, 'hvn', { get: function () { return require('./hvn'); } });
 Object.defineProperty(exports, 'hvnPeeringConnection', { get: function () { return require('./hvn-peering-connection'); } });
 Object.defineProperty(exports, 'hvnRoute', { get: function () { return require('./hvn-route'); } });
+Object.defineProperty(exports, 'iamWorkloadIdentityProvider', { get: function () { return require('./iam-workload-identity-provider'); } });
 Object.defineProperty(exports, 'packerChannel', { get: function () { return require('./packer-channel'); } });
 Object.defineProperty(exports, 'packerChannelAssignment', { get: function () { return require('./packer-channel-assignment'); } });
 Object.defineProperty(exports, 'packerRunTask', { get: function () { return require('./packer-run-task'); } });
 Object.defineProperty(exports, 'project', { get: function () { return require('./project'); } });
+Object.defineProperty(exports, 'servicePrincipal', { get: function () { return require('./service-principal'); } });
+Object.defineProperty(exports, 'servicePrincipalKey', { get: function () { return require('./service-principal-key'); } });
 Object.defineProperty(exports, 'vaultCluster', { get: function () { return require('./vault-cluster'); } });
 Object.defineProperty(exports, 'vaultClusterAdminToken', { get: function () { return require('./vault-cluster-admin-token'); } });
 Object.defineProperty(exports, 'vaultPlugin', { get: function () { return require('./vault-plugin'); } });
@@ -40,6 +43,7 @@ Object.defineProperty(exports, 'dataHcpPackerImage', { get: function () { return
 Object.defineProperty(exports, 'dataHcpPackerIteration', { get: function () { return require('./data-hcp-packer-iteration'); } });
 Object.defineProperty(exports, 'dataHcpPackerRunTask', { get: function () { return require('./data-hcp-packer-run-task'); } });
 Object.defineProperty(exports, 'dataHcpProject', { get: function () { return require('./data-hcp-project'); } });
+Object.defineProperty(exports, 'dataHcpServicePrincipal', { get: function () { return require('./data-hcp-service-principal'); } });
 Object.defineProperty(exports, 'dataHcpVaultCluster', { get: function () { return require('./data-hcp-vault-cluster'); } });
 Object.defineProperty(exports, 'dataHcpVaultPlugin', { get: function () { return require('./data-hcp-vault-plugin'); } });
 Object.defineProperty(exports, 'dataHcpVaultSecretsApp', { get: function () { return require('./data-hcp-vault-secrets-app'); } });
