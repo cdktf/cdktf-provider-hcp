@@ -1,6 +1,6 @@
 # `data_hcp_vault_secrets_secret`
 
-Refer to the Terraform Registory for docs: [`data_hcp_vault_secrets_secret`](https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/vault_secrets_secret).
+Refer to the Terraform Registory for docs: [`data_hcp_vault_secrets_secret`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_secrets_secret).
 
 # `dataHcpVaultSecretsSecret` Submodule <a name="`dataHcpVaultSecretsSecret` Submodule" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_hcp_vault_secrets_secret`](htt
 
 ### DataHcpVaultSecretsSecret <a name="DataHcpVaultSecretsSecret" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/vault_secrets_secret hcp_vault_secrets_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_secrets_secret hcp_vault_secrets_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpvaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretssecret"
 
 datahcpvaultsecretssecret.NewDataHcpVaultSecretsSecret(scope Construct, id *string, config DataHcpVaultSecretsSecretConfig) DataHcpVaultSecretsSecret
 ```
@@ -271,7 +271,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpvaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretssecret"
 
 datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_IsConstruct(x interface{}) *bool
 ```
@@ -303,7 +303,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpvaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretssecret"
 
 datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpvaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretssecret"
 
 datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpvaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretssecret"
 
 datahcpvaultsecretssecret.DataHcpVaultSecretsSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -360,7 +360,7 @@ The construct id used in the generated config for the DataHcpVaultSecretsSecret 
 
 The id of the existing DataHcpVaultSecretsSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/vault_secrets_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_secrets_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -626,7 +626,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpVaultSecretsSecret.DataHcpVaultSecretsSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpvaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultsecretssecret"
 
 &datahcpvaultsecretssecret.DataHcpVaultSecretsSecretConfig {
 	Connection: interface{},
@@ -737,7 +737,7 @@ AppName *string
 
 The name of the Vault Secrets application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/vault_secrets_secret#app_name DataHcpVaultSecretsSecret#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_secrets_secret#app_name DataHcpVaultSecretsSecret#app_name}
 
 ---
 
@@ -751,7 +751,7 @@ SecretName *string
 
 The name of the Vault Secrets secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/vault_secrets_secret#secret_name DataHcpVaultSecretsSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_secrets_secret#secret_name DataHcpVaultSecretsSecret#secret_name}
 
 ---
 

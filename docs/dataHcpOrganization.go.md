@@ -1,6 +1,6 @@
 # `data_hcp_organization`
 
-Refer to the Terraform Registory for docs: [`data_hcp_organization`](https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/organization).
+Refer to the Terraform Registory for docs: [`data_hcp_organization`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/organization).
 
 # `dataHcpOrganization` Submodule <a name="`dataHcpOrganization` Submodule" id="@cdktf/provider-hcp.dataHcpOrganization"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_hcp_organization`](https://reg
 
 ### DataHcpOrganization <a name="DataHcpOrganization" id="@cdktf/provider-hcp.dataHcpOrganization.DataHcpOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/organization hcp_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/organization hcp_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpOrganization.DataHcpOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcporganization"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcporganization"
 
 datahcporganization.NewDataHcpOrganization(scope Construct, id *string, config DataHcpOrganizationConfig) DataHcpOrganization
 ```
@@ -271,7 +271,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpOrganization.DataHcpOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcporganization"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcporganization"
 
 datahcporganization.DataHcpOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -303,7 +303,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpOrganization.DataHcpOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcporganization"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcporganization"
 
 datahcporganization.DataHcpOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ datahcporganization.DataHcpOrganization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpOrganization.DataHcpOrganization.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcporganization"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcporganization"
 
 datahcporganization.DataHcpOrganization_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datahcporganization.DataHcpOrganization_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpOrganization.DataHcpOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcporganization"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcporganization"
 
 datahcporganization.DataHcpOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -360,7 +360,7 @@ The construct id used in the generated config for the DataHcpOrganization to imp
 
 The id of the existing DataHcpOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -571,7 +571,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpOrganization.DataHcpOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcporganization"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcporganization"
 
 &datahcporganization.DataHcpOrganizationConfig {
 	Connection: interface{},

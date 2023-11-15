@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`hcp`](https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs).
+Refer to the Terraform Registory for docs: [`hcp`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-hcp.provider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`hcp`](https://registry.terraform.io
 
 ### HcpProvider <a name="HcpProvider" id="@cdktf/provider-hcp.provider.HcpProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs hcp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs hcp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 provider.NewHcpProvider(scope Construct, id *string, config HcpProviderConfig) HcpProvider
 ```
@@ -63,6 +63,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetAlias">ResetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientId">ResetClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetCredentialFile">ResetCredentialFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetProjectId">ResetProjectId</a></code> | *No description.* |
 
 ---
@@ -149,6 +150,12 @@ func ResetClientId()
 func ResetClientSecret()
 ```
 
+##### `ResetCredentialFile` <a name="ResetCredentialFile" id="@cdktf/provider-hcp.provider.HcpProvider.resetCredentialFile"></a>
+
+```go
+func ResetCredentialFile()
+```
+
 ##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-hcp.provider.HcpProvider.resetProjectId"></a>
 
 ```go
@@ -169,7 +176,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.provider.HcpProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 provider.HcpProvider_IsConstruct(x interface{}) *bool
 ```
@@ -201,7 +208,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 provider.HcpProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -215,7 +222,7 @@ provider.HcpProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 provider.HcpProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -229,7 +236,7 @@ provider.HcpProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.provider.HcpProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 provider.HcpProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -258,7 +265,7 @@ The construct id used in the generated config for the HcpProvider to import.
 
 The id of the existing HcpProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -286,9 +293,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFileInput">CredentialFileInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFile">CredentialFile</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -415,6 +424,16 @@ func ClientSecretInput() *string
 
 ---
 
+##### `CredentialFileInput`<sup>Optional</sup> <a name="CredentialFileInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.credentialFileInput"></a>
+
+```go
+func CredentialFileInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput"></a>
 
 ```go
@@ -439,6 +458,16 @@ func ClientId() *string
 
 ```go
 func ClientSecret() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CredentialFile`<sup>Optional</sup> <a name="CredentialFile" id="@cdktf/provider-hcp.provider.HcpProvider.property.credentialFile"></a>
+
+```go
+func CredentialFile() *string
 ```
 
 - *Type:* *string
@@ -480,12 +509,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.provider.HcpProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
 
 &provider.HcpProviderConfig {
 	Alias: *string,
 	ClientId: *string,
 	ClientSecret: *string,
+	CredentialFile: *string,
 	ProjectId: *string,
 }
 ```
@@ -497,6 +527,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/provider"
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientId">ClientId</a></code> | <code>*string</code> | The OAuth2 Client ID for API operations. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The OAuth2 Client Secret for API operations. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.credentialFile">CredentialFile</a></code> | <code>*string</code> | The path to an HCP credential file to use to authenticate the provider to HCP. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The default project in which resources should be created. |
 
 ---
@@ -511,7 +542,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs#alias HcpProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#alias HcpProvider#alias}
 
 ---
 
@@ -525,7 +556,7 @@ ClientId *string
 
 The OAuth2 Client ID for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs#client_id HcpProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#client_id HcpProvider#client_id}
 
 ---
 
@@ -539,7 +570,23 @@ ClientSecret *string
 
 The OAuth2 Client Secret for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs#client_secret HcpProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#client_secret HcpProvider#client_secret}
+
+---
+
+##### `CredentialFile`<sup>Optional</sup> <a name="CredentialFile" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.credentialFile"></a>
+
+```go
+CredentialFile *string
+```
+
+- *Type:* *string
+
+The path to an HCP credential file to use to authenticate the provider to HCP.
+
+You can alternatively set the HCP_CRED_FILE environment variable to point at a credential file as well. Using a credential file allows you to authenticate the provider as a service principal via client credentials or dynamically based on Workload Identity Federation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#credential_file HcpProvider#credential_file}
 
 ---
 
@@ -553,7 +600,7 @@ ProjectId *string
 
 The default project in which resources should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs#project_id HcpProvider#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#project_id HcpProvider#project_id}
 
 ---
 

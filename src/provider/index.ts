@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs
+// https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,37 @@ export interface HcpProviderConfig {
   /**
   * The OAuth2 Client ID for API operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs#client_id HcpProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#client_id HcpProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * The OAuth2 Client Secret for API operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs#client_secret HcpProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#client_secret HcpProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
+  * The path to an HCP credential file to use to authenticate the provider to HCP. You can alternatively set the HCP_CRED_FILE environment variable to point at a credential file as well. Using a credential file allows you to authenticate the provider as a service principal via client credentials or dynamically based on Workload Identity Federation.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#credential_file HcpProvider#credential_file}
+  */
+  readonly credentialFile?: string;
+  /**
   * The default project in which resources should be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs#project_id HcpProvider#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#project_id HcpProvider#project_id}
   */
   readonly projectId?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs#alias HcpProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#alias HcpProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs hcp}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs hcp}
 */
 export class HcpProvider extends cdktf.TerraformProvider {
 
@@ -55,7 +56,7 @@ export class HcpProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a HcpProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HcpProvider to import
-  * @param importFromId The id of the existing HcpProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HcpProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HcpProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +68,7 @@ export class HcpProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs hcp} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs hcp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,13 +79,14 @@ export class HcpProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'hcp',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.76.0',
+        providerVersion: '0.77.0',
         providerVersionConstraint: '~> 0.45'
       },
       terraformProviderSource: 'hcp'
     });
     this._clientId = config.clientId;
     this._clientSecret = config.clientSecret;
+    this._credentialFile = config.credentialFile;
     this._projectId = config.projectId;
     this._alias = config.alias;
   }
@@ -123,6 +125,22 @@ export class HcpProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get clientSecretInput() {
     return this._clientSecret;
+  }
+
+  // credential_file - computed: false, optional: true, required: false
+  private _credentialFile?: string; 
+  public get credentialFile() {
+    return this._credentialFile;
+  }
+  public set credentialFile(value: string | undefined) {
+    this._credentialFile = value;
+  }
+  public resetCredentialFile() {
+    this._credentialFile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get credentialFileInput() {
+    return this._credentialFile;
   }
 
   // project_id - computed: false, optional: true, required: false
@@ -165,6 +183,7 @@ export class HcpProvider extends cdktf.TerraformProvider {
     return {
       client_id: cdktf.stringToTerraform(this._clientId),
       client_secret: cdktf.stringToTerraform(this._clientSecret),
+      credential_file: cdktf.stringToTerraform(this._credentialFile),
       project_id: cdktf.stringToTerraform(this._projectId),
       alias: cdktf.stringToTerraform(this._alias),
     };
