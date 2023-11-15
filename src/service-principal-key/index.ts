@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/service_principal_key
+// https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/service_principal_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ServicePrincipalKeyConfig extends cdktf.TerraformMetaArguments 
   /**
   * A map of arbitrary string key/value pairs that will force recreation of the key when they change, enabling key based on external conditions such as a rotating timestamp. Changing this forces a new resource to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/service_principal_key#rotate_triggers ServicePrincipalKey#rotate_triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/service_principal_key#rotate_triggers ServicePrincipalKey#rotate_triggers}
   */
   readonly rotateTriggers?: { [key: string]: string };
   /**
   * The service principal's resource name for which a key should be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/service_principal_key#service_principal ServicePrincipalKey#service_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/service_principal_key#service_principal ServicePrincipalKey#service_principal}
   */
   readonly servicePrincipal: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/service_principal_key hcp_service_principal_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/service_principal_key hcp_service_principal_key}
 */
 export class ServicePrincipalKey extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ServicePrincipalKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServicePrincipalKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipalKey to import
-  * @param importFromId The id of the existing ServicePrincipalKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/service_principal_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicePrincipalKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/service_principal_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipalKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class ServicePrincipalKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/service_principal_key hcp_service_principal_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/service_principal_key hcp_service_principal_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ServicePrincipalKey extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_service_principal_key',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.76.0',
+        providerVersion: '0.77.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
