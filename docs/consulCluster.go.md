@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 consulcluster.NewConsulCluster(scope Construct, id *string, config ConsulClusterConfig) ConsulCluster
 ```
@@ -435,7 +435,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 consulcluster.ConsulCluster_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 consulcluster.ConsulCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ consulcluster.ConsulCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 consulcluster.ConsulCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ consulcluster.ConsulCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.consulCluster.ConsulCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 consulcluster.ConsulCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1208,7 +1208,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.consulCluster.ConsulClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 &consulcluster.ConsulClusterConfig {
 	Connection: interface{},
@@ -1231,7 +1231,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
 	ProjectId: *string,
 	PublicEndpoint: interface{},
 	Size: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.consulCluster.ConsulClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v8.consulCluster.ConsulClusterTimeouts,
 }
 ```
 
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 &consulcluster.ConsulClusterIpAllowlistStruct {
 	Address: *string,
@@ -1598,7 +1598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.consulCluster.ConsulClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 &consulcluster.ConsulClusterTimeouts {
 	Create: *string,
@@ -1674,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 consulcluster.NewConsulClusterIpAllowlistStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConsulClusterIpAllowlistStructList
 ```
@@ -1817,7 +1817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 consulcluster.NewConsulClusterIpAllowlistStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConsulClusterIpAllowlistStructOutputReference
 ```
@@ -2135,7 +2135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulCluster.ConsulClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulcluster"
 
 consulcluster.NewConsulClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConsulClusterTimeoutsOutputReference
 ```
