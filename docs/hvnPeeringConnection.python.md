@@ -1,7 +1,3 @@
-# `hcp_hvn_peering_connection`
-
-Refer to the Terraform Registory for docs: [`hcp_hvn_peering_connection`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/hvn_peering_connection).
-
 # `hvnPeeringConnection` Submodule <a name="`hvnPeeringConnection` Submodule" id="@cdktf/provider-hcp.hvnPeeringConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

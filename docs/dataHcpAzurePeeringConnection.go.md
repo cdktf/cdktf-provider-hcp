@@ -1,7 +1,3 @@
-# `data_hcp_azure_peering_connection`
-
-Refer to the Terraform Registory for docs: [`data_hcp_azure_peering_connection`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/azure_peering_connection).
-
 # `dataHcpAzurePeeringConnection` Submodule <a name="`dataHcpAzurePeeringConnection` Submodule" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

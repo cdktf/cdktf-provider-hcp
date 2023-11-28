@@ -1,7 +1,3 @@
-# `data_hcp_aws_network_peering`
-
-Refer to the Terraform Registory for docs: [`data_hcp_aws_network_peering`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/aws_network_peering).
-
 # `dataHcpAwsNetworkPeering` Submodule <a name="`dataHcpAwsNetworkPeering` Submodule" id="@cdktf/provider-hcp.dataHcpAwsNetworkPeering"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

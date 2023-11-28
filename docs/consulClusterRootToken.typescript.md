@@ -1,7 +1,3 @@
-# `hcp_consul_cluster_root_token`
-
-Refer to the Terraform Registory for docs: [`hcp_consul_cluster_root_token`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster_root_token).
-
 # `consulClusterRootToken` Submodule <a name="`consulClusterRootToken` Submodule" id="@cdktf/provider-hcp.consulClusterRootToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

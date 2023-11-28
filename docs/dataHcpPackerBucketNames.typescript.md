@@ -1,7 +1,3 @@
-# `data_hcp_packer_bucket_names`
-
-Refer to the Terraform Registory for docs: [`data_hcp_packer_bucket_names`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/packer_bucket_names).
-
 # `dataHcpPackerBucketNames` Submodule <a name="`dataHcpPackerBucketNames` Submodule" id="@cdktf/provider-hcp.dataHcpPackerBucketNames"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

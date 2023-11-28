@@ -1,7 +1,3 @@
-# `data_hcp_consul_agent_helm_config`
-
-Refer to the Terraform Registory for docs: [`data_hcp_consul_agent_helm_config`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/consul_agent_helm_config).
-
 # `dataHcpConsulAgentHelmConfig` Submodule <a name="`dataHcpConsulAgentHelmConfig` Submodule" id="@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

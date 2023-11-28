@@ -1,7 +1,3 @@
-# `hcp_iam_workload_identity_provider`
-
-Refer to the Terraform Registory for docs: [`hcp_iam_workload_identity_provider`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/iam_workload_identity_provider).
-
 # `iamWorkloadIdentityProvider` Submodule <a name="`iamWorkloadIdentityProvider` Submodule" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

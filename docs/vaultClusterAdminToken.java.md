@@ -1,7 +1,3 @@
-# `hcp_vault_cluster_admin_token`
-
-Refer to the Terraform Registory for docs: [`hcp_vault_cluster_admin_token`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster_admin_token).
-
 # `vaultClusterAdminToken` Submodule <a name="`vaultClusterAdminToken` Submodule" id="@cdktf/provider-hcp.vaultClusterAdminToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

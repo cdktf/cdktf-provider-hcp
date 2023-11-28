@@ -1,7 +1,3 @@
-# `data_hcp_packer_image`
-
-Refer to the Terraform Registory for docs: [`data_hcp_packer_image`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/packer_image).
-
 # `dataHcpPackerImage` Submodule <a name="`dataHcpPackerImage` Submodule" id="@cdktf/provider-hcp.dataHcpPackerImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
