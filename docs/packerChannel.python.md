@@ -1,7 +1,3 @@
-# `hcp_packer_channel`
-
-Refer to the Terraform Registory for docs: [`hcp_packer_channel`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/packer_channel).
-
 # `packerChannel` Submodule <a name="`packerChannel` Submodule" id="@cdktf/provider-hcp.packerChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

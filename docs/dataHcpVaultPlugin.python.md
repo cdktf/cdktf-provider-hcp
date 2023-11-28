@@ -1,7 +1,3 @@
-# `data_hcp_vault_plugin`
-
-Refer to the Terraform Registory for docs: [`data_hcp_vault_plugin`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_plugin).
-
 # `dataHcpVaultPlugin` Submodule <a name="`dataHcpVaultPlugin` Submodule" id="@cdktf/provider-hcp.dataHcpVaultPlugin"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

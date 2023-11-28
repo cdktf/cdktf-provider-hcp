@@ -1,7 +1,3 @@
-# `hcp_service_principal_key`
-
-Refer to the Terraform Registory for docs: [`hcp_service_principal_key`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/service_principal_key).
-
 # `servicePrincipalKey` Submodule <a name="`servicePrincipalKey` Submodule" id="@cdktf/provider-hcp.servicePrincipalKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

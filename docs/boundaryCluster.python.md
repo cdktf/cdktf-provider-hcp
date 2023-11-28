@@ -1,7 +1,3 @@
-# `hcp_boundary_cluster`
-
-Refer to the Terraform Registory for docs: [`hcp_boundary_cluster`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/boundary_cluster).
-
 # `boundaryCluster` Submodule <a name="`boundaryCluster` Submodule" id="@cdktf/provider-hcp.boundaryCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

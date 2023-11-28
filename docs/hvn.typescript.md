@@ -1,7 +1,3 @@
-# `hcp_hvn`
-
-Refer to the Terraform Registory for docs: [`hcp_hvn`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/hvn).
-
 # `hvn` Submodule <a name="`hvn` Submodule" id="@cdktf/provider-hcp.hvn"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

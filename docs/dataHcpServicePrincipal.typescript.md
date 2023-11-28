@@ -1,7 +1,3 @@
-# `data_hcp_service_principal`
-
-Refer to the Terraform Registory for docs: [`data_hcp_service_principal`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/service_principal).
-
 # `dataHcpServicePrincipal` Submodule <a name="`dataHcpServicePrincipal` Submodule" id="@cdktf/provider-hcp.dataHcpServicePrincipal"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

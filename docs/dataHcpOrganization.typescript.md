@@ -1,7 +1,3 @@
-# `data_hcp_organization`
-
-Refer to the Terraform Registory for docs: [`data_hcp_organization`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/organization).
-
 # `dataHcpOrganization` Submodule <a name="`dataHcpOrganization` Submodule" id="@cdktf/provider-hcp.dataHcpOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

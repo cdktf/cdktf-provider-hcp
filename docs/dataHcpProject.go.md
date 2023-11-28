@@ -1,7 +1,3 @@
-# `data_hcp_project`
-
-Refer to the Terraform Registory for docs: [`data_hcp_project`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/project).
-
 # `dataHcpProject` Submodule <a name="`dataHcpProject` Submodule" id="@cdktf/provider-hcp.dataHcpProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpProject.DataHcpProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpproject"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpproject"
 
 datahcpproject.NewDataHcpProject(scope Construct, id *string, config DataHcpProjectConfig) DataHcpProject
 ```
@@ -278,7 +274,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpProject.DataHcpProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpproject"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpproject"
 
 datahcpproject.DataHcpProject_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpProject.DataHcpProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpproject"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpproject"
 
 datahcpproject.DataHcpProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datahcpproject.DataHcpProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpProject.DataHcpProject.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpproject"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpproject"
 
 datahcpproject.DataHcpProject_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datahcpproject.DataHcpProject_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpProject.DataHcpProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpproject"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpproject"
 
 datahcpproject.DataHcpProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -611,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpProject.DataHcpProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpproject"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpproject"
 
 &datahcpproject.DataHcpProjectConfig {
 	Connection: interface{},

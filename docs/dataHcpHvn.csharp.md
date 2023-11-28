@@ -1,7 +1,3 @@
-# `data_hcp_hvn`
-
-Refer to the Terraform Registory for docs: [`data_hcp_hvn`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/hvn).
-
 # `dataHcpHvn` Submodule <a name="`dataHcpHvn` Submodule" id="@cdktf/provider-hcp.dataHcpHvn"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

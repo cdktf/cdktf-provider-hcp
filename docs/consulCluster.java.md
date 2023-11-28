@@ -1,7 +1,3 @@
-# `hcp_consul_cluster`
-
-Refer to the Terraform Registory for docs: [`hcp_consul_cluster`](https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster).
-
 # `consulCluster` Submodule <a name="`consulCluster` Submodule" id="@cdktf/provider-hcp.consulCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
