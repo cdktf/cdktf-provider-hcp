@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.servicePrincipal.ServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/serviceprincipal"
 
 serviceprincipal.NewServicePrincipal(scope Construct, id *string, config ServicePrincipalConfig) ServicePrincipal
 ```
@@ -378,7 +378,7 @@ func ResetParent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.servicePrincipal.ServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.servicePrincipal.ServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ serviceprincipal.ServicePrincipal_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.servicePrincipal.ServicePrincipal.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ serviceprincipal.ServicePrincipal_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.servicePrincipal.ServicePrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.servicePrincipal.ServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/serviceprincipal"
 
 &serviceprincipal.ServicePrincipalConfig {
 	Connection: interface{},
