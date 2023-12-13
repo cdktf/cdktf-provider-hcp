@@ -4,7 +4,7 @@
 
 ### DataHcpVaultCluster <a name="DataHcpVaultCluster" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster hcp_vault_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster hcp_vault_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.Initializer"></a>
 
@@ -430,7 +430,7 @@ The construct id used in the generated config for the DataHcpVaultCluster to imp
 
 The id of the existing DataHcpVaultCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,7 +994,7 @@ new DataHcpVaultClusterConfig {
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | The ID of the HCP Vault cluster. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.auditLogConfig">AuditLogConfig</a></code> | <code>object</code> | audit_log_config block. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.metricsConfig">MetricsConfig</a></code> | <code>object</code> | metrics_config block. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The ID of the HCP project where the Vault cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterTimeouts">DataHcpVaultClusterTimeouts</a></code> | timeouts block. |
@@ -1081,7 +1081,7 @@ public string ClusterId { get; set; }
 
 The ID of the HCP Vault cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster#cluster_id DataHcpVaultCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster#cluster_id DataHcpVaultCluster#cluster_id}
 
 ---
 
@@ -1095,7 +1095,7 @@ public object AuditLogConfig { get; set; }
 
 audit_log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster#audit_log_config DataHcpVaultCluster#audit_log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster#audit_log_config DataHcpVaultCluster#audit_log_config}
 
 ---
 
@@ -1107,7 +1107,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1124,7 +1124,7 @@ public object MetricsConfig { get; set; }
 
 metrics_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster#metrics_config DataHcpVaultCluster#metrics_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster#metrics_config DataHcpVaultCluster#metrics_config}
 
 ---
 
@@ -1141,7 +1141,7 @@ The ID of the HCP project where the Vault cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster#project_id DataHcpVaultCluster#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster#project_id DataHcpVaultCluster#project_id}
 
 ---
 
@@ -1155,7 +1155,7 @@ public DataHcpVaultClusterTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster#timeouts DataHcpVaultCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster#timeouts DataHcpVaultCluster#timeouts}
 
 ---
 
@@ -1201,7 +1201,7 @@ new DataHcpVaultClusterTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}. |
 
 ---
 
@@ -1213,7 +1213,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}.
 
 ---
 
@@ -1602,6 +1602,16 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.elasticsearchUser">ElasticsearchUser</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.grafanaEndpoint">GrafanaEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.grafanaUser">GrafanaUser</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpBasicPassword">HttpBasicPassword</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpBasicUser">HttpBasicUser</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpBearerToken">HttpBearerToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpCodec">HttpCodec</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpCompression">HttpCompression</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpHeaders">HttpHeaders</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpMethod">HttpMethod</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpPayloadPrefix">HttpPayloadPrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpPayloadSuffix">HttpPayloadSuffix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpUri">HttpUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.newrelicAccountId">NewrelicAccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.newrelicLicenseKey">NewrelicLicenseKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.newrelicRegion">NewrelicRegion</a></code> | <code>string</code> | *No description.* |
@@ -1748,6 +1758,106 @@ public string GrafanaEndpoint { get; }
 
 ```csharp
 public string GrafanaUser { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpBasicPassword`<sup>Required</sup> <a name="HttpBasicPassword" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpBasicPassword"></a>
+
+```csharp
+public string HttpBasicPassword { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpBasicUser`<sup>Required</sup> <a name="HttpBasicUser" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpBasicUser"></a>
+
+```csharp
+public string HttpBasicUser { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpBearerToken`<sup>Required</sup> <a name="HttpBearerToken" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpBearerToken"></a>
+
+```csharp
+public string HttpBearerToken { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpCodec`<sup>Required</sup> <a name="HttpCodec" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpCodec"></a>
+
+```csharp
+public string HttpCodec { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpCompression`<sup>Required</sup> <a name="HttpCompression" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpCompression"></a>
+
+```csharp
+public IResolvable HttpCompression { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `HttpHeaders`<sup>Required</sup> <a name="HttpHeaders" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpHeaders"></a>
+
+```csharp
+public StringMap HttpHeaders { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.StringMap
+
+---
+
+##### `HttpMethod`<sup>Required</sup> <a name="HttpMethod" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpMethod"></a>
+
+```csharp
+public string HttpMethod { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpPayloadPrefix`<sup>Required</sup> <a name="HttpPayloadPrefix" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpPayloadPrefix"></a>
+
+```csharp
+public string HttpPayloadPrefix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpPayloadSuffix`<sup>Required</sup> <a name="HttpPayloadSuffix" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpPayloadSuffix"></a>
+
+```csharp
+public string HttpPayloadSuffix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpUri`<sup>Required</sup> <a name="HttpUri" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.property.httpUri"></a>
+
+```csharp
+public string HttpUri { get; }
 ```
 
 - *Type:* string
@@ -2619,6 +2729,16 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.elasticsearchUser">ElasticsearchUser</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.grafanaEndpoint">GrafanaEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.grafanaUser">GrafanaUser</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpBasicPassword">HttpBasicPassword</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpBasicUser">HttpBasicUser</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpBearerToken">HttpBearerToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpCodec">HttpCodec</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpCompression">HttpCompression</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpHeaders">HttpHeaders</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpMethod">HttpMethod</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpPayloadPrefix">HttpPayloadPrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpPayloadSuffix">HttpPayloadSuffix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpUri">HttpUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.newrelicAccountId">NewrelicAccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.newrelicLicenseKey">NewrelicLicenseKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.newrelicRegion">NewrelicRegion</a></code> | <code>string</code> | *No description.* |
@@ -2755,6 +2875,106 @@ public string GrafanaEndpoint { get; }
 
 ```csharp
 public string GrafanaUser { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpBasicPassword`<sup>Required</sup> <a name="HttpBasicPassword" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpBasicPassword"></a>
+
+```csharp
+public string HttpBasicPassword { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpBasicUser`<sup>Required</sup> <a name="HttpBasicUser" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpBasicUser"></a>
+
+```csharp
+public string HttpBasicUser { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpBearerToken`<sup>Required</sup> <a name="HttpBearerToken" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpBearerToken"></a>
+
+```csharp
+public string HttpBearerToken { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpCodec`<sup>Required</sup> <a name="HttpCodec" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpCodec"></a>
+
+```csharp
+public string HttpCodec { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpCompression`<sup>Required</sup> <a name="HttpCompression" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpCompression"></a>
+
+```csharp
+public IResolvable HttpCompression { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `HttpHeaders`<sup>Required</sup> <a name="HttpHeaders" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpHeaders"></a>
+
+```csharp
+public StringMap HttpHeaders { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.StringMap
+
+---
+
+##### `HttpMethod`<sup>Required</sup> <a name="HttpMethod" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpMethod"></a>
+
+```csharp
+public string HttpMethod { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpPayloadPrefix`<sup>Required</sup> <a name="HttpPayloadPrefix" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpPayloadPrefix"></a>
+
+```csharp
+public string HttpPayloadPrefix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpPayloadSuffix`<sup>Required</sup> <a name="HttpPayloadSuffix" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpPayloadSuffix"></a>
+
+```csharp
+public string HttpPayloadSuffix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HttpUri`<sup>Required</sup> <a name="HttpUri" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.property.httpUri"></a>
+
+```csharp
+public string HttpUri { get; }
 ```
 
 - *Type:* string
