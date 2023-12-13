@@ -4,7 +4,7 @@
 
 ### Project <a name="Project" id="@cdktf/provider-hcp.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/project hcp_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project hcp_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.project.Project.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the Project to import.
 
 The id of the existing Project that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,7 +844,7 @@ Name *string
 
 The project's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -858,7 +858,7 @@ Description *string
 
 The project's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/project#description Project#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project#description Project#description}
 
 ---
 
