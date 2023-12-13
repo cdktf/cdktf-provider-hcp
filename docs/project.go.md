@@ -4,12 +4,12 @@
 
 ### Project <a name="Project" id="@cdktf/provider-hcp.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/project hcp_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project hcp_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/project"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -378,7 +378,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/project"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/project"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/project"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ project.Project_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.project.Project.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/project"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/project"
 
 project.Project_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the Project to import.
 
 The id of the existing Project that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/project"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
@@ -844,7 +844,7 @@ Name *string
 
 The project's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -858,7 +858,7 @@ Description *string
 
 The project's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/project#description Project#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project#description Project#description}
 
 ---
 

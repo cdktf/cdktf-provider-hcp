@@ -4,12 +4,12 @@
 
 ### ConsulClusterRootToken <a name="ConsulClusterRootToken" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
 
 consulclusterroottoken.NewConsulClusterRootToken(scope Construct, id *string, config ConsulClusterRootTokenConfig) ConsulClusterRootToken
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
 
 consulclusterroottoken.ConsulClusterRootToken_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
 
 consulclusterroottoken.ConsulClusterRootToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ consulclusterroottoken.ConsulClusterRootToken_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
 
 consulclusterroottoken.ConsulClusterRootToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ consulclusterroottoken.ConsulClusterRootToken_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
 
 consulclusterroottoken.ConsulClusterRootToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ConsulClusterRootToken to 
 
 The id of the existing ConsulClusterRootToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster_root_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
 
 &consulclusterroottoken.ConsulClusterRootTokenConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
 	ClusterId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v8.consulClusterRootToken.ConsulClusterRootTokenTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.consulClusterRootToken.ConsulClusterRootTokenTimeouts,
 }
 ```
 
@@ -844,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | The ID of the HCP Consul cluster. |
-| <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster_root_token#id ConsulClusterRootToken#id}. |
+| <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#id ConsulClusterRootToken#id}. |
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the HCP Consul cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenTimeouts">ConsulClusterRootTokenTimeouts</a></code> | timeouts block. |
 
@@ -930,7 +930,7 @@ ClusterId *string
 
 The ID of the HCP Consul cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster_root_token#cluster_id ConsulClusterRootToken#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#cluster_id ConsulClusterRootToken#cluster_id}
 
 ---
 
@@ -942,7 +942,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster_root_token#id ConsulClusterRootToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#id ConsulClusterRootToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -962,7 +962,7 @@ The ID of the HCP project where the HCP Consul cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster_root_token#project_id ConsulClusterRootToken#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#project_id ConsulClusterRootToken#project_id}
 
 ---
 
@@ -976,7 +976,7 @@ Timeouts ConsulClusterRootTokenTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster_root_token#timeouts ConsulClusterRootToken#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#timeouts ConsulClusterRootToken#timeouts}
 
 ---
 
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
 
 &consulclusterroottoken.ConsulClusterRootTokenTimeouts {
 	Default: *string,
@@ -996,7 +996,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}. |
+| <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}. |
 
 ---
 
@@ -1008,7 +1008,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}.
 
 ---
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/consulclusterroottoken"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/consulclusterroottoken"
 
 consulclusterroottoken.NewConsulClusterRootTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConsulClusterRootTokenTimeoutsOutputReference
 ```
