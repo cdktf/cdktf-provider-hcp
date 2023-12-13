@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster
+// https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface VaultClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the HCP Vault cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#cluster_id VaultCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#cluster_id VaultCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
   * The ID of the HVN this HCP Vault cluster is associated to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#hvn_id VaultCluster#hvn_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#hvn_id VaultCluster#hvn_id}
   */
   readonly hvnId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#id VaultCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#id VaultCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,70 +29,70 @@ export interface VaultClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The minimum Vault version to use when creating the cluster. If not specified, it is defaulted to the version that is currently recommended by HCP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#min_vault_version VaultCluster#min_vault_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#min_vault_version VaultCluster#min_vault_version}
   */
   readonly minVaultVersion?: string;
   /**
   * The performance replication [paths filter](https://developer.hashicorp.com/vault/tutorials/cloud-ops/vault-replication-terraform). Applies to performance replication secondaries only and operates in "deny" mode only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#paths_filter VaultCluster#paths_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#paths_filter VaultCluster#paths_filter}
   */
   readonly pathsFilter?: string[];
   /**
   * The `self_link` of the HCP Vault Plus tier cluster which is the primary in the performance replication setup with this HCP Vault Plus tier cluster. If not specified, it is a standalone Plus tier HCP Vault cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#primary_link VaultCluster#primary_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#primary_link VaultCluster#primary_link}
   */
   readonly primaryLink?: string;
   /**
   * 
-  * The ID of the HCP project where the Vault cluster is located. 
+  * The ID of the HCP project where the Vault cluster is located.
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#project_id VaultCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#project_id VaultCluster#project_id}
   */
   readonly projectId?: string;
   /**
   * Denotes that the cluster has a proxy endpoint. Valid options are `ENABLED`, `DISABLED`. Defaults to `DISABLED`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#proxy_endpoint VaultCluster#proxy_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#proxy_endpoint VaultCluster#proxy_endpoint}
   */
   readonly proxyEndpoint?: string;
   /**
   * Denotes that the cluster has a public endpoint. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#public_endpoint VaultCluster#public_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#public_endpoint VaultCluster#public_endpoint}
   */
   readonly publicEndpoint?: boolean | cdktf.IResolvable;
   /**
   * Tier of the HCP Vault cluster. Valid options for tiers - `dev`, `starter_small`, `standard_small`, `standard_medium`, `standard_large`, `plus_small`, `plus_medium`, `plus_large`. See [pricing information](https://www.hashicorp.com/products/vault/pricing). Changing a cluster's size or tier is only available to admins. See [Scale a cluster](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/guides/vault-scaling).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#tier VaultCluster#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#tier VaultCluster#tier}
   */
   readonly tier?: string;
   /**
   * audit_log_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#audit_log_config VaultCluster#audit_log_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#audit_log_config VaultCluster#audit_log_config}
   */
   readonly auditLogConfig?: VaultClusterAuditLogConfig;
   /**
   * major_version_upgrade_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#major_version_upgrade_config VaultCluster#major_version_upgrade_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#major_version_upgrade_config VaultCluster#major_version_upgrade_config}
   */
   readonly majorVersionUpgradeConfig?: VaultClusterMajorVersionUpgradeConfig;
   /**
   * metrics_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#metrics_config VaultCluster#metrics_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#metrics_config VaultCluster#metrics_config}
   */
   readonly metricsConfig?: VaultClusterMetricsConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#timeouts VaultCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#timeouts VaultCluster#timeouts}
   */
   readonly timeouts?: VaultClusterTimeouts;
 }
@@ -105,97 +100,157 @@ export interface VaultClusterAuditLogConfig {
   /**
   * CloudWatch access key ID for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
   */
   readonly cloudwatchAccessKeyId?: string;
   /**
   * CloudWatch region for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
   */
   readonly cloudwatchRegion?: string;
   /**
   * CloudWatch secret access key for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
   */
   readonly cloudwatchSecretAccessKey?: string;
   /**
   * Datadog api key for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
   */
   readonly datadogApiKey?: string;
   /**
   * Datadog region for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
   */
   readonly datadogRegion?: string;
   /**
   * ElasticSearch endpoint for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#elasticsearch_endpoint VaultCluster#elasticsearch_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#elasticsearch_endpoint VaultCluster#elasticsearch_endpoint}
   */
   readonly elasticsearchEndpoint?: string;
   /**
   * ElasticSearch password for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#elasticsearch_password VaultCluster#elasticsearch_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#elasticsearch_password VaultCluster#elasticsearch_password}
   */
   readonly elasticsearchPassword?: string;
   /**
   * ElasticSearch user for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#elasticsearch_user VaultCluster#elasticsearch_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#elasticsearch_user VaultCluster#elasticsearch_user}
   */
   readonly elasticsearchUser?: string;
   /**
   * Grafana endpoint for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
   */
   readonly grafanaEndpoint?: string;
   /**
   * Grafana password for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
   */
   readonly grafanaPassword?: string;
   /**
   * Grafana user for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
   */
   readonly grafanaUser?: string;
   /**
+  * HTTP basic authentication password for streaming audit logs, one of the two available authentication methods, can be specified only if http_basic_user is also provided
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_basic_password VaultCluster#http_basic_password}
+  */
+  readonly httpBasicPassword?: string;
+  /**
+  * HTTP basic authentication username for streaming audit logs, one of the two available authentication methods, can be specified only if http_basic_password is also provided
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_basic_user VaultCluster#http_basic_user}
+  */
+  readonly httpBasicUser?: string;
+  /**
+  * HTTP bearer authentication token for streaming audit logs, one of the two available authentication methods, can be specified only if http_basic_user and http_basic_password are not provided
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_bearer_token VaultCluster#http_bearer_token}
+  */
+  readonly httpBearerToken?: string;
+  /**
+  * HTTP codec for streaming audit logs, allowed values are JSON and NDJSON
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_codec VaultCluster#http_codec}
+  */
+  readonly httpCodec?: string;
+  /**
+  * HTTP compression flag for streaming audit logs
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_compression VaultCluster#http_compression}
+  */
+  readonly httpCompression?: boolean | cdktf.IResolvable;
+  /**
+  * HTTP headers for streaming audit logs
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_headers VaultCluster#http_headers}
+  */
+  readonly httpHeaders?: { [key: string]: string };
+  /**
+  * HTTP payload method for streaming audit logs, , allowed values are PATCH, POST, or PUT
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_method VaultCluster#http_method}
+  */
+  readonly httpMethod?: string;
+  /**
+  * HTTP payload prefix for streaming audit logs
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_payload_prefix VaultCluster#http_payload_prefix}
+  */
+  readonly httpPayloadPrefix?: string;
+  /**
+  * HTTP payload suffix for streaming audit logs
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_payload_suffix VaultCluster#http_payload_suffix}
+  */
+  readonly httpPayloadSuffix?: string;
+  /**
+  * HTTP URI for streaming audit logs
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_uri VaultCluster#http_uri}
+  */
+  readonly httpUri?: string;
+  /**
   * NewRelic Account ID for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#newrelic_account_id VaultCluster#newrelic_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#newrelic_account_id VaultCluster#newrelic_account_id}
   */
   readonly newrelicAccountId?: string;
   /**
   * NewRelic license key for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#newrelic_license_key VaultCluster#newrelic_license_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#newrelic_license_key VaultCluster#newrelic_license_key}
   */
   readonly newrelicLicenseKey?: string;
   /**
   * NewRelic region for streaming audit logs, allowed values are "US" and "EU"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#newrelic_region VaultCluster#newrelic_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#newrelic_region VaultCluster#newrelic_region}
   */
   readonly newrelicRegion?: string;
   /**
   * Splunk endpoint for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
   */
   readonly splunkHecendpoint?: string;
   /**
   * Splunk token for streaming audit logs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
   */
   readonly splunkToken?: string;
 }
@@ -217,6 +272,16 @@ export function vaultClusterAuditLogConfigToTerraform(struct?: VaultClusterAudit
     grafana_endpoint: cdktf.stringToTerraform(struct!.grafanaEndpoint),
     grafana_password: cdktf.stringToTerraform(struct!.grafanaPassword),
     grafana_user: cdktf.stringToTerraform(struct!.grafanaUser),
+    http_basic_password: cdktf.stringToTerraform(struct!.httpBasicPassword),
+    http_basic_user: cdktf.stringToTerraform(struct!.httpBasicUser),
+    http_bearer_token: cdktf.stringToTerraform(struct!.httpBearerToken),
+    http_codec: cdktf.stringToTerraform(struct!.httpCodec),
+    http_compression: cdktf.booleanToTerraform(struct!.httpCompression),
+    http_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.httpHeaders),
+    http_method: cdktf.stringToTerraform(struct!.httpMethod),
+    http_payload_prefix: cdktf.stringToTerraform(struct!.httpPayloadPrefix),
+    http_payload_suffix: cdktf.stringToTerraform(struct!.httpPayloadSuffix),
+    http_uri: cdktf.stringToTerraform(struct!.httpUri),
     newrelic_account_id: cdktf.stringToTerraform(struct!.newrelicAccountId),
     newrelic_license_key: cdktf.stringToTerraform(struct!.newrelicLicenseKey),
     newrelic_region: cdktf.stringToTerraform(struct!.newrelicRegion),
@@ -283,6 +348,46 @@ export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.grafanaUser = this._grafanaUser;
     }
+    if (this._httpBasicPassword !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpBasicPassword = this._httpBasicPassword;
+    }
+    if (this._httpBasicUser !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpBasicUser = this._httpBasicUser;
+    }
+    if (this._httpBearerToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpBearerToken = this._httpBearerToken;
+    }
+    if (this._httpCodec !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpCodec = this._httpCodec;
+    }
+    if (this._httpCompression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpCompression = this._httpCompression;
+    }
+    if (this._httpHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpHeaders = this._httpHeaders;
+    }
+    if (this._httpMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpMethod = this._httpMethod;
+    }
+    if (this._httpPayloadPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpPayloadPrefix = this._httpPayloadPrefix;
+    }
+    if (this._httpPayloadSuffix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpPayloadSuffix = this._httpPayloadSuffix;
+    }
+    if (this._httpUri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpUri = this._httpUri;
+    }
     if (this._newrelicAccountId !== undefined) {
       hasAnyValues = true;
       internalValueResult.newrelicAccountId = this._newrelicAccountId;
@@ -320,6 +425,16 @@ export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObje
       this._grafanaEndpoint = undefined;
       this._grafanaPassword = undefined;
       this._grafanaUser = undefined;
+      this._httpBasicPassword = undefined;
+      this._httpBasicUser = undefined;
+      this._httpBearerToken = undefined;
+      this._httpCodec = undefined;
+      this._httpCompression = undefined;
+      this._httpHeaders = undefined;
+      this._httpMethod = undefined;
+      this._httpPayloadPrefix = undefined;
+      this._httpPayloadSuffix = undefined;
+      this._httpUri = undefined;
       this._newrelicAccountId = undefined;
       this._newrelicLicenseKey = undefined;
       this._newrelicRegion = undefined;
@@ -339,6 +454,16 @@ export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObje
       this._grafanaEndpoint = value.grafanaEndpoint;
       this._grafanaPassword = value.grafanaPassword;
       this._grafanaUser = value.grafanaUser;
+      this._httpBasicPassword = value.httpBasicPassword;
+      this._httpBasicUser = value.httpBasicUser;
+      this._httpBearerToken = value.httpBearerToken;
+      this._httpCodec = value.httpCodec;
+      this._httpCompression = value.httpCompression;
+      this._httpHeaders = value.httpHeaders;
+      this._httpMethod = value.httpMethod;
+      this._httpPayloadPrefix = value.httpPayloadPrefix;
+      this._httpPayloadSuffix = value.httpPayloadSuffix;
+      this._httpUri = value.httpUri;
       this._newrelicAccountId = value.newrelicAccountId;
       this._newrelicLicenseKey = value.newrelicLicenseKey;
       this._newrelicRegion = value.newrelicRegion;
@@ -538,6 +663,166 @@ export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObje
     return this._grafanaUser;
   }
 
+  // http_basic_password - computed: false, optional: true, required: false
+  private _httpBasicPassword?: string; 
+  public get httpBasicPassword() {
+    return this.getStringAttribute('http_basic_password');
+  }
+  public set httpBasicPassword(value: string) {
+    this._httpBasicPassword = value;
+  }
+  public resetHttpBasicPassword() {
+    this._httpBasicPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpBasicPasswordInput() {
+    return this._httpBasicPassword;
+  }
+
+  // http_basic_user - computed: false, optional: true, required: false
+  private _httpBasicUser?: string; 
+  public get httpBasicUser() {
+    return this.getStringAttribute('http_basic_user');
+  }
+  public set httpBasicUser(value: string) {
+    this._httpBasicUser = value;
+  }
+  public resetHttpBasicUser() {
+    this._httpBasicUser = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpBasicUserInput() {
+    return this._httpBasicUser;
+  }
+
+  // http_bearer_token - computed: false, optional: true, required: false
+  private _httpBearerToken?: string; 
+  public get httpBearerToken() {
+    return this.getStringAttribute('http_bearer_token');
+  }
+  public set httpBearerToken(value: string) {
+    this._httpBearerToken = value;
+  }
+  public resetHttpBearerToken() {
+    this._httpBearerToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpBearerTokenInput() {
+    return this._httpBearerToken;
+  }
+
+  // http_codec - computed: false, optional: true, required: false
+  private _httpCodec?: string; 
+  public get httpCodec() {
+    return this.getStringAttribute('http_codec');
+  }
+  public set httpCodec(value: string) {
+    this._httpCodec = value;
+  }
+  public resetHttpCodec() {
+    this._httpCodec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpCodecInput() {
+    return this._httpCodec;
+  }
+
+  // http_compression - computed: false, optional: true, required: false
+  private _httpCompression?: boolean | cdktf.IResolvable; 
+  public get httpCompression() {
+    return this.getBooleanAttribute('http_compression');
+  }
+  public set httpCompression(value: boolean | cdktf.IResolvable) {
+    this._httpCompression = value;
+  }
+  public resetHttpCompression() {
+    this._httpCompression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpCompressionInput() {
+    return this._httpCompression;
+  }
+
+  // http_headers - computed: false, optional: true, required: false
+  private _httpHeaders?: { [key: string]: string }; 
+  public get httpHeaders() {
+    return this.getStringMapAttribute('http_headers');
+  }
+  public set httpHeaders(value: { [key: string]: string }) {
+    this._httpHeaders = value;
+  }
+  public resetHttpHeaders() {
+    this._httpHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpHeadersInput() {
+    return this._httpHeaders;
+  }
+
+  // http_method - computed: false, optional: true, required: false
+  private _httpMethod?: string; 
+  public get httpMethod() {
+    return this.getStringAttribute('http_method');
+  }
+  public set httpMethod(value: string) {
+    this._httpMethod = value;
+  }
+  public resetHttpMethod() {
+    this._httpMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpMethodInput() {
+    return this._httpMethod;
+  }
+
+  // http_payload_prefix - computed: false, optional: true, required: false
+  private _httpPayloadPrefix?: string; 
+  public get httpPayloadPrefix() {
+    return this.getStringAttribute('http_payload_prefix');
+  }
+  public set httpPayloadPrefix(value: string) {
+    this._httpPayloadPrefix = value;
+  }
+  public resetHttpPayloadPrefix() {
+    this._httpPayloadPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpPayloadPrefixInput() {
+    return this._httpPayloadPrefix;
+  }
+
+  // http_payload_suffix - computed: false, optional: true, required: false
+  private _httpPayloadSuffix?: string; 
+  public get httpPayloadSuffix() {
+    return this.getStringAttribute('http_payload_suffix');
+  }
+  public set httpPayloadSuffix(value: string) {
+    this._httpPayloadSuffix = value;
+  }
+  public resetHttpPayloadSuffix() {
+    this._httpPayloadSuffix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpPayloadSuffixInput() {
+    return this._httpPayloadSuffix;
+  }
+
+  // http_uri - computed: false, optional: true, required: false
+  private _httpUri?: string; 
+  public get httpUri() {
+    return this.getStringAttribute('http_uri');
+  }
+  public set httpUri(value: string) {
+    this._httpUri = value;
+  }
+  public resetHttpUri() {
+    this._httpUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpUriInput() {
+    return this._httpUri;
+  }
+
   // newrelic_account_id - computed: false, optional: true, required: false
   private _newrelicAccountId?: string; 
   public get newrelicAccountId() {
@@ -622,19 +907,19 @@ export interface VaultClusterMajorVersionUpgradeConfig {
   /**
   * The maintenance day of the week for scheduled upgrades. Valid options for maintenance window day - `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#maintenance_window_day VaultCluster#maintenance_window_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#maintenance_window_day VaultCluster#maintenance_window_day}
   */
   readonly maintenanceWindowDay?: string;
   /**
   * The maintenance time frame for scheduled upgrades. Valid options for maintenance window time - `WINDOW_12AM_4AM`, `WINDOW_6AM_10AM`, `WINDOW_12PM_4PM`, `WINDOW_6PM_10PM`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#maintenance_window_time VaultCluster#maintenance_window_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#maintenance_window_time VaultCluster#maintenance_window_time}
   */
   readonly maintenanceWindowTime?: string;
   /**
   * The major upgrade type for the cluster. Valid options for upgrade type - `AUTOMATIC`, `SCHEDULED`, `MANUAL`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#upgrade_type VaultCluster#upgrade_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#upgrade_type VaultCluster#upgrade_type}
   */
   readonly upgradeType: string;
 }
@@ -744,97 +1029,157 @@ export interface VaultClusterMetricsConfig {
   /**
   * CloudWatch access key ID for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#cloudwatch_access_key_id VaultCluster#cloudwatch_access_key_id}
   */
   readonly cloudwatchAccessKeyId?: string;
   /**
   * CloudWatch region for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#cloudwatch_region VaultCluster#cloudwatch_region}
   */
   readonly cloudwatchRegion?: string;
   /**
   * CloudWatch secret access key for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#cloudwatch_secret_access_key VaultCluster#cloudwatch_secret_access_key}
   */
   readonly cloudwatchSecretAccessKey?: string;
   /**
   * Datadog api key for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#datadog_api_key VaultCluster#datadog_api_key}
   */
   readonly datadogApiKey?: string;
   /**
   * Datadog region for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#datadog_region VaultCluster#datadog_region}
   */
   readonly datadogRegion?: string;
   /**
   * ElasticSearch endpoint for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#elasticsearch_endpoint VaultCluster#elasticsearch_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#elasticsearch_endpoint VaultCluster#elasticsearch_endpoint}
   */
   readonly elasticsearchEndpoint?: string;
   /**
   * ElasticSearch password for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#elasticsearch_password VaultCluster#elasticsearch_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#elasticsearch_password VaultCluster#elasticsearch_password}
   */
   readonly elasticsearchPassword?: string;
   /**
   * ElasticSearch user for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#elasticsearch_user VaultCluster#elasticsearch_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#elasticsearch_user VaultCluster#elasticsearch_user}
   */
   readonly elasticsearchUser?: string;
   /**
   * Grafana endpoint for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#grafana_endpoint VaultCluster#grafana_endpoint}
   */
   readonly grafanaEndpoint?: string;
   /**
   * Grafana password for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#grafana_password VaultCluster#grafana_password}
   */
   readonly grafanaPassword?: string;
   /**
   * Grafana user for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#grafana_user VaultCluster#grafana_user}
   */
   readonly grafanaUser?: string;
   /**
+  * HTTP basic authentication password for streaming metrics, one of the two available authentication methods, can be specified only if http_basic_user is also specified
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_basic_password VaultCluster#http_basic_password}
+  */
+  readonly httpBasicPassword?: string;
+  /**
+  * HTTP basic authentication username for streaming metrics, one of the two available authentication methods, can be specified only if http_basic_password is also specified
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_basic_user VaultCluster#http_basic_user}
+  */
+  readonly httpBasicUser?: string;
+  /**
+  * HTTP bearer authentication token for streaming metrics, one of the two available authentication methods, can be specified only if http_basic_user and http_basic_password are not provided
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_bearer_token VaultCluster#http_bearer_token}
+  */
+  readonly httpBearerToken?: string;
+  /**
+  * HTTP codec for streaming metrics, allowed values are JSON and NDJSON
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_codec VaultCluster#http_codec}
+  */
+  readonly httpCodec?: string;
+  /**
+  * HTTP compression flag for streaming metrics
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_compression VaultCluster#http_compression}
+  */
+  readonly httpCompression?: boolean | cdktf.IResolvable;
+  /**
+  * HTTP headers for streaming metrics
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_headers VaultCluster#http_headers}
+  */
+  readonly httpHeaders?: { [key: string]: string };
+  /**
+  * HTTP payload method for streaming metrics, allowed values are PATCH, POST, or PUT
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_method VaultCluster#http_method}
+  */
+  readonly httpMethod?: string;
+  /**
+  * HTTP payload prefix for streaming metrics
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_payload_prefix VaultCluster#http_payload_prefix}
+  */
+  readonly httpPayloadPrefix?: string;
+  /**
+  * HTTP payload suffix for streaming metrics
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_payload_suffix VaultCluster#http_payload_suffix}
+  */
+  readonly httpPayloadSuffix?: string;
+  /**
+  * HTTP URI for streaming metrics
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#http_uri VaultCluster#http_uri}
+  */
+  readonly httpUri?: string;
+  /**
   * NewRelic Account ID for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#newrelic_account_id VaultCluster#newrelic_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#newrelic_account_id VaultCluster#newrelic_account_id}
   */
   readonly newrelicAccountId?: string;
   /**
   * NewRelic license key for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#newrelic_license_key VaultCluster#newrelic_license_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#newrelic_license_key VaultCluster#newrelic_license_key}
   */
   readonly newrelicLicenseKey?: string;
   /**
   * NewRelic region for streaming metrics, allowed values are "US" and "EU"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#newrelic_region VaultCluster#newrelic_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#newrelic_region VaultCluster#newrelic_region}
   */
   readonly newrelicRegion?: string;
   /**
   * Splunk endpoint for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#splunk_hecendpoint VaultCluster#splunk_hecendpoint}
   */
   readonly splunkHecendpoint?: string;
   /**
   * Splunk token for streaming metrics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#splunk_token VaultCluster#splunk_token}
   */
   readonly splunkToken?: string;
 }
@@ -856,6 +1201,16 @@ export function vaultClusterMetricsConfigToTerraform(struct?: VaultClusterMetric
     grafana_endpoint: cdktf.stringToTerraform(struct!.grafanaEndpoint),
     grafana_password: cdktf.stringToTerraform(struct!.grafanaPassword),
     grafana_user: cdktf.stringToTerraform(struct!.grafanaUser),
+    http_basic_password: cdktf.stringToTerraform(struct!.httpBasicPassword),
+    http_basic_user: cdktf.stringToTerraform(struct!.httpBasicUser),
+    http_bearer_token: cdktf.stringToTerraform(struct!.httpBearerToken),
+    http_codec: cdktf.stringToTerraform(struct!.httpCodec),
+    http_compression: cdktf.booleanToTerraform(struct!.httpCompression),
+    http_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.httpHeaders),
+    http_method: cdktf.stringToTerraform(struct!.httpMethod),
+    http_payload_prefix: cdktf.stringToTerraform(struct!.httpPayloadPrefix),
+    http_payload_suffix: cdktf.stringToTerraform(struct!.httpPayloadSuffix),
+    http_uri: cdktf.stringToTerraform(struct!.httpUri),
     newrelic_account_id: cdktf.stringToTerraform(struct!.newrelicAccountId),
     newrelic_license_key: cdktf.stringToTerraform(struct!.newrelicLicenseKey),
     newrelic_region: cdktf.stringToTerraform(struct!.newrelicRegion),
@@ -922,6 +1277,46 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.grafanaUser = this._grafanaUser;
     }
+    if (this._httpBasicPassword !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpBasicPassword = this._httpBasicPassword;
+    }
+    if (this._httpBasicUser !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpBasicUser = this._httpBasicUser;
+    }
+    if (this._httpBearerToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpBearerToken = this._httpBearerToken;
+    }
+    if (this._httpCodec !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpCodec = this._httpCodec;
+    }
+    if (this._httpCompression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpCompression = this._httpCompression;
+    }
+    if (this._httpHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpHeaders = this._httpHeaders;
+    }
+    if (this._httpMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpMethod = this._httpMethod;
+    }
+    if (this._httpPayloadPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpPayloadPrefix = this._httpPayloadPrefix;
+    }
+    if (this._httpPayloadSuffix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpPayloadSuffix = this._httpPayloadSuffix;
+    }
+    if (this._httpUri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpUri = this._httpUri;
+    }
     if (this._newrelicAccountId !== undefined) {
       hasAnyValues = true;
       internalValueResult.newrelicAccountId = this._newrelicAccountId;
@@ -959,6 +1354,16 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
       this._grafanaEndpoint = undefined;
       this._grafanaPassword = undefined;
       this._grafanaUser = undefined;
+      this._httpBasicPassword = undefined;
+      this._httpBasicUser = undefined;
+      this._httpBearerToken = undefined;
+      this._httpCodec = undefined;
+      this._httpCompression = undefined;
+      this._httpHeaders = undefined;
+      this._httpMethod = undefined;
+      this._httpPayloadPrefix = undefined;
+      this._httpPayloadSuffix = undefined;
+      this._httpUri = undefined;
       this._newrelicAccountId = undefined;
       this._newrelicLicenseKey = undefined;
       this._newrelicRegion = undefined;
@@ -978,6 +1383,16 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
       this._grafanaEndpoint = value.grafanaEndpoint;
       this._grafanaPassword = value.grafanaPassword;
       this._grafanaUser = value.grafanaUser;
+      this._httpBasicPassword = value.httpBasicPassword;
+      this._httpBasicUser = value.httpBasicUser;
+      this._httpBearerToken = value.httpBearerToken;
+      this._httpCodec = value.httpCodec;
+      this._httpCompression = value.httpCompression;
+      this._httpHeaders = value.httpHeaders;
+      this._httpMethod = value.httpMethod;
+      this._httpPayloadPrefix = value.httpPayloadPrefix;
+      this._httpPayloadSuffix = value.httpPayloadSuffix;
+      this._httpUri = value.httpUri;
       this._newrelicAccountId = value.newrelicAccountId;
       this._newrelicLicenseKey = value.newrelicLicenseKey;
       this._newrelicRegion = value.newrelicRegion;
@@ -1172,6 +1587,166 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
     return this._grafanaUser;
   }
 
+  // http_basic_password - computed: false, optional: true, required: false
+  private _httpBasicPassword?: string; 
+  public get httpBasicPassword() {
+    return this.getStringAttribute('http_basic_password');
+  }
+  public set httpBasicPassword(value: string) {
+    this._httpBasicPassword = value;
+  }
+  public resetHttpBasicPassword() {
+    this._httpBasicPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpBasicPasswordInput() {
+    return this._httpBasicPassword;
+  }
+
+  // http_basic_user - computed: false, optional: true, required: false
+  private _httpBasicUser?: string; 
+  public get httpBasicUser() {
+    return this.getStringAttribute('http_basic_user');
+  }
+  public set httpBasicUser(value: string) {
+    this._httpBasicUser = value;
+  }
+  public resetHttpBasicUser() {
+    this._httpBasicUser = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpBasicUserInput() {
+    return this._httpBasicUser;
+  }
+
+  // http_bearer_token - computed: false, optional: true, required: false
+  private _httpBearerToken?: string; 
+  public get httpBearerToken() {
+    return this.getStringAttribute('http_bearer_token');
+  }
+  public set httpBearerToken(value: string) {
+    this._httpBearerToken = value;
+  }
+  public resetHttpBearerToken() {
+    this._httpBearerToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpBearerTokenInput() {
+    return this._httpBearerToken;
+  }
+
+  // http_codec - computed: false, optional: true, required: false
+  private _httpCodec?: string; 
+  public get httpCodec() {
+    return this.getStringAttribute('http_codec');
+  }
+  public set httpCodec(value: string) {
+    this._httpCodec = value;
+  }
+  public resetHttpCodec() {
+    this._httpCodec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpCodecInput() {
+    return this._httpCodec;
+  }
+
+  // http_compression - computed: false, optional: true, required: false
+  private _httpCompression?: boolean | cdktf.IResolvable; 
+  public get httpCompression() {
+    return this.getBooleanAttribute('http_compression');
+  }
+  public set httpCompression(value: boolean | cdktf.IResolvable) {
+    this._httpCompression = value;
+  }
+  public resetHttpCompression() {
+    this._httpCompression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpCompressionInput() {
+    return this._httpCompression;
+  }
+
+  // http_headers - computed: false, optional: true, required: false
+  private _httpHeaders?: { [key: string]: string }; 
+  public get httpHeaders() {
+    return this.getStringMapAttribute('http_headers');
+  }
+  public set httpHeaders(value: { [key: string]: string }) {
+    this._httpHeaders = value;
+  }
+  public resetHttpHeaders() {
+    this._httpHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpHeadersInput() {
+    return this._httpHeaders;
+  }
+
+  // http_method - computed: false, optional: true, required: false
+  private _httpMethod?: string; 
+  public get httpMethod() {
+    return this.getStringAttribute('http_method');
+  }
+  public set httpMethod(value: string) {
+    this._httpMethod = value;
+  }
+  public resetHttpMethod() {
+    this._httpMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpMethodInput() {
+    return this._httpMethod;
+  }
+
+  // http_payload_prefix - computed: false, optional: true, required: false
+  private _httpPayloadPrefix?: string; 
+  public get httpPayloadPrefix() {
+    return this.getStringAttribute('http_payload_prefix');
+  }
+  public set httpPayloadPrefix(value: string) {
+    this._httpPayloadPrefix = value;
+  }
+  public resetHttpPayloadPrefix() {
+    this._httpPayloadPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpPayloadPrefixInput() {
+    return this._httpPayloadPrefix;
+  }
+
+  // http_payload_suffix - computed: false, optional: true, required: false
+  private _httpPayloadSuffix?: string; 
+  public get httpPayloadSuffix() {
+    return this.getStringAttribute('http_payload_suffix');
+  }
+  public set httpPayloadSuffix(value: string) {
+    this._httpPayloadSuffix = value;
+  }
+  public resetHttpPayloadSuffix() {
+    this._httpPayloadSuffix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpPayloadSuffixInput() {
+    return this._httpPayloadSuffix;
+  }
+
+  // http_uri - computed: false, optional: true, required: false
+  private _httpUri?: string; 
+  public get httpUri() {
+    return this.getStringAttribute('http_uri');
+  }
+  public set httpUri(value: string) {
+    this._httpUri = value;
+  }
+  public resetHttpUri() {
+    this._httpUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpUriInput() {
+    return this._httpUri;
+  }
+
   // newrelic_account_id - computed: false, optional: true, required: false
   private _newrelicAccountId?: string; 
   public get newrelicAccountId() {
@@ -1254,19 +1829,19 @@ export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObjec
 }
 export interface VaultClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#create VaultCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#create VaultCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#default VaultCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#default VaultCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#delete VaultCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#delete VaultCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#update VaultCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#update VaultCluster#update}
   */
   readonly update?: string;
 }
@@ -1410,7 +1985,7 @@ export class VaultClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster hcp_vault_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster hcp_vault_cluster}
 */
 export class VaultCluster extends cdktf.TerraformResource {
 
@@ -1426,7 +2001,7 @@ export class VaultCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultCluster to import
-  * @param importFromId The id of the existing VaultCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1438,7 +2013,7 @@ export class VaultCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/vault_cluster hcp_vault_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/vault_cluster hcp_vault_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1449,7 +2024,7 @@ export class VaultCluster extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.77.0',
+        providerVersion: '0.78.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
