@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [awsNetworkPeering](./awsNetworkPeering.go.md)
 - [awsTransitGatewayAttachment](./awsTransitGatewayAttachment.go.md)
 - [azurePeeringConnection](./azurePeeringConnection.go.md)
@@ -51,3 +54,8 @@ The following submodules are available:
 - [vaultPlugin](./vaultPlugin.go.md)
 - [vaultSecretsApp](./vaultSecretsApp.go.md)
 - [vaultSecretsSecret](./vaultSecretsSecret.go.md)
+
+
+
+
+
