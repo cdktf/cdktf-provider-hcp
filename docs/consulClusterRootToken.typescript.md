@@ -4,7 +4,7 @@
 
 ### ConsulClusterRootToken <a name="ConsulClusterRootToken" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootToken.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ConsulClusterRootToken to 
 
 The id of the existing ConsulClusterRootToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/consul_cluster_root_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,7 +832,7 @@ const consulClusterRootTokenConfig: consulClusterRootToken.ConsulClusterRootToke
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.clusterId">clusterId</a></code> | <code>string</code> | The ID of the HCP Consul cluster. |
-| <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#id ConsulClusterRootToken#id}. |
+| <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/consul_cluster_root_token#id ConsulClusterRootToken#id}. |
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.projectId">projectId</a></code> | <code>string</code> | The ID of the HCP project where the HCP Consul cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenTimeouts">ConsulClusterRootTokenTimeouts</a></code> | timeouts block. |
 
@@ -918,7 +918,7 @@ public readonly clusterId: string;
 
 The ID of the HCP Consul cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#cluster_id ConsulClusterRootToken#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/consul_cluster_root_token#cluster_id ConsulClusterRootToken#cluster_id}
 
 ---
 
@@ -930,7 +930,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#id ConsulClusterRootToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/consul_cluster_root_token#id ConsulClusterRootToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ The ID of the HCP project where the HCP Consul cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#project_id ConsulClusterRootToken#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/consul_cluster_root_token#project_id ConsulClusterRootToken#project_id}
 
 ---
 
@@ -964,7 +964,7 @@ public readonly timeouts: ConsulClusterRootTokenTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#timeouts ConsulClusterRootToken#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/consul_cluster_root_token#timeouts ConsulClusterRootToken#timeouts}
 
 ---
 
@@ -982,7 +982,7 @@ const consulClusterRootTokenTimeouts: consulClusterRootToken.ConsulClusterRootTo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}. |
+| <code><a href="#@cdktf/provider-hcp.consulClusterRootToken.ConsulClusterRootTokenTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}. |
 
 ---
 
@@ -994,7 +994,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}.
 
 ---
 
