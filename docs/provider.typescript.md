@@ -4,7 +4,7 @@
 
 ### HcpProvider <a name="HcpProvider" id="@cdktf/provider-hcp.provider.HcpProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs hcp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs hcp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer"></a>
 
@@ -61,6 +61,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientSecret">resetClientSecret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetCredentialFile">resetCredentialFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetProjectId">resetProjectId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetWorkloadIdentity">resetWorkloadIdentity</a></code> | *No description.* |
 
 ---
 
@@ -156,6 +157,12 @@ public resetCredentialFile(): void
 
 ```typescript
 public resetProjectId(): void
+```
+
+##### `resetWorkloadIdentity` <a name="resetWorkloadIdentity" id="@cdktf/provider-hcp.provider.HcpProvider.resetWorkloadIdentity"></a>
+
+```typescript
+public resetWorkloadIdentity(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -261,7 +268,7 @@ The construct id used in the generated config for the HcpProvider to import.
 
 The id of the existing HcpProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -291,10 +298,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecretInput">clientSecretInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFileInput">credentialFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput">workloadIdentityInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFile">credentialFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity">workloadIdentity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]</code> | *No description.* |
 
 ---
 
@@ -440,6 +449,16 @@ public readonly projectIdInput: string;
 
 ---
 
+##### `workloadIdentityInput`<sup>Optional</sup> <a name="workloadIdentityInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput"></a>
+
+```typescript
+public readonly workloadIdentityInput: IResolvable | HcpProviderWorkloadIdentity[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]
+
+---
+
 ##### `clientId`<sup>Optional</sup> <a name="clientId" id="@cdktf/provider-hcp.provider.HcpProvider.property.clientId"></a>
 
 ```typescript
@@ -477,6 +496,16 @@ public readonly projectId: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `workloadIdentity`<sup>Optional</sup> <a name="workloadIdentity" id="@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity"></a>
+
+```typescript
+public readonly workloadIdentity: IResolvable | HcpProviderWorkloadIdentity[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]
 
 ---
 
@@ -519,6 +548,7 @@ const hcpProviderConfig: provider.HcpProviderConfig = { ... }
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientSecret">clientSecret</a></code> | <code>string</code> | The OAuth2 Client Secret for API operations. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.credentialFile">credentialFile</a></code> | <code>string</code> | The path to an HCP credential file to use to authenticate the provider to HCP. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId">projectId</a></code> | <code>string</code> | The default project in which resources should be created. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity">workloadIdentity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]</code> | workload_identity block. |
 
 ---
 
@@ -532,7 +562,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs#alias HcpProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs#alias HcpProvider#alias}
 
 ---
 
@@ -546,7 +576,7 @@ public readonly clientId: string;
 
 The OAuth2 Client ID for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs#client_id HcpProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs#client_id HcpProvider#client_id}
 
 ---
 
@@ -560,7 +590,7 @@ public readonly clientSecret: string;
 
 The OAuth2 Client Secret for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs#client_secret HcpProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs#client_secret HcpProvider#client_secret}
 
 ---
 
@@ -576,7 +606,7 @@ The path to an HCP credential file to use to authenticate the provider to HCP.
 
 You can alternatively set the HCP_CRED_FILE environment variable to point at a credential file as well. Using a credential file allows you to authenticate the provider as a service principal via client credentials or dynamically based on Workload Identity Federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs#credential_file HcpProvider#credential_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs#credential_file HcpProvider#credential_file}
 
 ---
 
@@ -590,7 +620,68 @@ public readonly projectId: string;
 
 The default project in which resources should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs#project_id HcpProvider#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs#project_id HcpProvider#project_id}
+
+---
+
+##### `workloadIdentity`<sup>Optional</sup> <a name="workloadIdentity" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity"></a>
+
+```typescript
+public readonly workloadIdentity: IResolvable | HcpProviderWorkloadIdentity[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]
+
+workload_identity block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs#workload_identity HcpProvider#workload_identity}
+
+---
+
+### HcpProviderWorkloadIdentity <a name="HcpProviderWorkloadIdentity" id="@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.Initializer"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-hcp'
+
+const hcpProviderWorkloadIdentity: provider.HcpProviderWorkloadIdentity = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.property.resourceName">resourceName</a></code> | <code>string</code> | The resource_name of the Workload Identity Provider to exchange the token with. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.property.tokenFile">tokenFile</a></code> | <code>string</code> | The path to a file containing a JWT token retrieved from an OpenID Connect (OIDC) or OAuth2 provider. |
+
+---
+
+##### `resourceName`<sup>Required</sup> <a name="resourceName" id="@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.property.resourceName"></a>
+
+```typescript
+public readonly resourceName: string;
+```
+
+- *Type:* string
+
+The resource_name of the Workload Identity Provider to exchange the token with.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs#resource_name HcpProvider#resource_name}
+
+---
+
+##### `tokenFile`<sup>Required</sup> <a name="tokenFile" id="@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.property.tokenFile"></a>
+
+```typescript
+public readonly tokenFile: string;
+```
+
+- *Type:* string
+
+The path to a file containing a JWT token retrieved from an OpenID Connect (OIDC) or OAuth2 provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs#token_file HcpProvider#token_file}
 
 ---
 

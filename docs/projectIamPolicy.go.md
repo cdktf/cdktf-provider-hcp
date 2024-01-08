@@ -4,12 +4,12 @@
 
 ### ProjectIamPolicy <a name="ProjectIamPolicy" id="@cdktf/provider-hcp.projectIamPolicy.ProjectIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project_iam_policy hcp_project_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/project_iam_policy hcp_project_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.projectIamPolicy.ProjectIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/projectiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiampolicy"
 
 projectiampolicy.NewProjectIamPolicy(scope Construct, id *string, config ProjectIamPolicyConfig) ProjectIamPolicy
 ```
@@ -378,7 +378,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.projectIamPolicy.ProjectIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/projectiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.projectIamPolicy.ProjectIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/projectiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ projectiampolicy.ProjectIamPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.projectIamPolicy.ProjectIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/projectiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ projectiampolicy.ProjectIamPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.projectIamPolicy.ProjectIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/projectiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ProjectIamPolicy to import
 
 The id of the existing ProjectIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/project_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.projectIamPolicy.ProjectIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/projectiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiampolicy"
 
 &projectiampolicy.ProjectIamPolicyConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ PolicyData *string
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project_iam_policy#policy_data ProjectIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/project_iam_policy#policy_data ProjectIamPolicy#policy_data}
 
 ---
 
@@ -849,7 +849,7 @@ The ID of the HCP project to apply the IAM Policy to.
 
 If unspecified, the project configured on the provider is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/project_iam_policy#project_id ProjectIamPolicy#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/project_iam_policy#project_id ProjectIamPolicy#project_id}
 
 ---
 
