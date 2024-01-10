@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/data-sources/vault_secrets_secret
 // generated from terraform resource schema
 
@@ -140,5 +135,25 @@ export class DataHcpVaultSecretsSecret extends cdktf.TerraformDataSource {
       app_name: cdktf.stringToTerraform(this._appName),
       secret_name: cdktf.stringToTerraform(this._secretName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_name: {
+        value: cdktf.stringToHclTerraform(this._appName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_name: {
+        value: cdktf.stringToHclTerraform(this._secretName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

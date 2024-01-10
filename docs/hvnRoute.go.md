@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute"
 
 hvnroute.NewHvnRoute(scope Construct, id *string, config HvnRouteConfig) HvnRoute
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcp.hvnRoute.HvnRoute.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.toMetadata"></a>
 
@@ -425,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute"
 
 hvnroute.HvnRoute_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute"
 
 hvnroute.HvnRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +478,7 @@ hvnroute.HvnRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute"
 
 hvnroute.HvnRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ hvnroute.HvnRoute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.hvnRoute.HvnRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute"
 
 hvnroute.HvnRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -923,7 +930,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.hvnRoute.HvnRouteAzureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute"
 
 &hvnroute.HvnRouteAzureConfig {
 	NextHopType: *string,
@@ -977,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.hvnRoute.HvnRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute"
 
 &hvnroute.HvnRouteConfig {
 	Connection: interface{},
@@ -991,10 +998,10 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
 	HvnLink: *string,
 	HvnRouteId: *string,
 	TargetLink: *string,
-	AzureConfig: github.com/cdktf/cdktf-provider-hcp-go/hcp/v8.hvnRoute.HvnRouteAzureConfig,
+	AzureConfig: github.com/cdktf/cdktf-provider-hcp-go/hcp.hvnRoute.HvnRouteAzureConfig,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v8.hvnRoute.HvnRouteTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.hvnRoute.HvnRouteTimeouts,
 }
 ```
 
@@ -1210,7 +1217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.hvnRoute.HvnRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute"
 
 &hvnroute.HvnRouteTimeouts {
 	Create: *string,
@@ -1272,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.hvnRoute.HvnRouteAzureConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute"
 
 hvnroute.NewHvnRouteAzureConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HvnRouteAzureConfigOutputReference
 ```
@@ -1572,7 +1579,7 @@ func InternalValue() HvnRouteAzureConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.hvnRoute.HvnRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/hvnroute"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute"
 
 hvnroute.NewHvnRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HvnRouteTimeoutsOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/boundary_cluster
 // generated from terraform resource schema
 
@@ -103,6 +98,43 @@ export function boundaryClusterMaintenanceWindowConfigToTerraform(struct?: Bound
     start: cdktf.numberToTerraform(struct!.start),
     upgrade_type: cdktf.stringToTerraform(struct!.upgradeType),
   }
+}
+
+
+export function boundaryClusterMaintenanceWindowConfigToHclTerraform(struct?: BoundaryClusterMaintenanceWindowConfigOutputReference | BoundaryClusterMaintenanceWindowConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.stringToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    end: {
+      value: cdktf.numberToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    start: {
+      value: cdktf.numberToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    upgrade_type: {
+      value: cdktf.stringToHclTerraform(struct!.upgradeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BoundaryClusterMaintenanceWindowConfigOutputReference extends cdktf.ComplexObject {
@@ -244,6 +276,37 @@ export function boundaryClusterTimeoutsToTerraform(struct?: BoundaryClusterTimeo
     default: cdktf.stringToTerraform(struct!.default),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function boundaryClusterTimeoutsToHclTerraform(struct?: BoundaryClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BoundaryClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -560,5 +623,61 @@ export class BoundaryCluster extends cdktf.TerraformResource {
       maintenance_window_config: boundaryClusterMaintenanceWindowConfigToTerraform(this._maintenanceWindowConfig.internalValue),
       timeouts: boundaryClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tier: {
+        value: cdktf.stringToHclTerraform(this._tier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window_config: {
+        value: boundaryClusterMaintenanceWindowConfigToHclTerraform(this._maintenanceWindowConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BoundaryClusterMaintenanceWindowConfigList",
+      },
+      timeouts: {
+        value: boundaryClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "BoundaryClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

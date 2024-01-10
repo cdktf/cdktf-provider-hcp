@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/data-sources/hvn_route
 // generated from terraform resource schema
 
@@ -54,6 +49,17 @@ export function dataHcpHvnRouteAzureConfigToTerraform(struct?: DataHcpHvnRouteAz
   }
   return {
   }
+}
+
+
+export function dataHcpHvnRouteAzureConfigToHclTerraform(struct?: DataHcpHvnRouteAzureConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataHcpHvnRouteAzureConfigOutputReference extends cdktf.ComplexObject {
@@ -128,6 +134,25 @@ export function dataHcpHvnRouteTimeoutsToTerraform(struct?: DataHcpHvnRouteTimeo
   return {
     default: cdktf.stringToTerraform(struct!.default),
   }
+}
+
+
+export function dataHcpHvnRouteTimeoutsToHclTerraform(struct?: DataHcpHvnRouteTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataHcpHvnRouteTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -368,5 +393,43 @@ export class DataHcpHvnRoute extends cdktf.TerraformDataSource {
       project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: dataHcpHvnRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      hvn_link: {
+        value: cdktf.stringToHclTerraform(this._hvnLink),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hvn_route_id: {
+        value: cdktf.stringToHclTerraform(this._hvnRouteId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: dataHcpHvnRouteTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataHcpHvnRouteTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

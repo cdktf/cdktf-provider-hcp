@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/packer_channel_assignment
 // generated from terraform resource schema
 
@@ -95,6 +90,43 @@ export function packerChannelAssignmentTimeoutsToTerraform(struct?: PackerChanne
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function packerChannelAssignmentTimeoutsToHclTerraform(struct?: PackerChannelAssignmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PackerChannelAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -429,5 +461,61 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: packerChannelAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket_name: {
+        value: cdktf.stringToHclTerraform(this._bucketName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      channel_name: {
+        value: cdktf.stringToHclTerraform(this._channelName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iteration_fingerprint: {
+        value: cdktf.stringToHclTerraform(this._iterationFingerprint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iteration_id: {
+        value: cdktf.stringToHclTerraform(this._iterationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iteration_version: {
+        value: cdktf.numberToHclTerraform(this._iterationVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: packerChannelAssignmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "PackerChannelAssignmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

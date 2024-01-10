@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/azure_peering_connection
 // generated from terraform resource schema
 
@@ -105,6 +100,37 @@ export function azurePeeringConnectionTimeoutsToTerraform(struct?: AzurePeeringC
     default: cdktf.stringToTerraform(struct!.default),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function azurePeeringConnectionTimeoutsToHclTerraform(struct?: AzurePeeringConnectionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AzurePeeringConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -491,5 +517,79 @@ export class AzurePeeringConnection extends cdktf.TerraformResource {
       use_remote_gateways: cdktf.booleanToTerraform(this._useRemoteGateways),
       timeouts: azurePeeringConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_forwarded_traffic: {
+        value: cdktf.booleanToHclTerraform(this._allowForwardedTraffic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      hvn_link: {
+        value: cdktf.stringToHclTerraform(this._hvnLink),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_resource_group_name: {
+        value: cdktf.stringToHclTerraform(this._peerResourceGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_subscription_id: {
+        value: cdktf.stringToHclTerraform(this._peerSubscriptionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_tenant_id: {
+        value: cdktf.stringToHclTerraform(this._peerTenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_vnet_name: {
+        value: cdktf.stringToHclTerraform(this._peerVnetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_vnet_region: {
+        value: cdktf.stringToHclTerraform(this._peerVnetRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peering_id: {
+        value: cdktf.stringToHclTerraform(this._peeringId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_remote_gateways: {
+        value: cdktf.booleanToHclTerraform(this._useRemoteGateways),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeouts: {
+        value: azurePeeringConnectionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "AzurePeeringConnectionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

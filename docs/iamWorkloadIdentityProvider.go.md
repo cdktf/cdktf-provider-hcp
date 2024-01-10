@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/iamworkloadidentityprovider"
 
 iamworkloadidentityprovider.NewIamWorkloadIdentityProvider(scope Construct, id *string, config IamWorkloadIdentityProviderConfig) IamWorkloadIdentityProvider
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.toMetadata"></a>
 
@@ -418,7 +425,7 @@ func ResetOidc()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/iamworkloadidentityprovider"
 
 iamworkloadidentityprovider.IamWorkloadIdentityProvider_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/iamworkloadidentityprovider"
 
 iamworkloadidentityprovider.IamWorkloadIdentityProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ iamworkloadidentityprovider.IamWorkloadIdentityProvider_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/iamworkloadidentityprovider"
 
 iamworkloadidentityprovider.IamWorkloadIdentityProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ iamworkloadidentityprovider.IamWorkloadIdentityProvider_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/iamworkloadidentityprovider"
 
 iamworkloadidentityprovider.IamWorkloadIdentityProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -861,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProviderAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/iamworkloadidentityprovider"
 
 &iamworkloadidentityprovider.IamWorkloadIdentityProviderAws {
 	AccountId: *string,
@@ -895,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/iamworkloadidentityprovider"
 
 &iamworkloadidentityprovider.IamWorkloadIdentityProviderConfig {
 	Connection: interface{},
@@ -908,9 +915,9 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovide
 	ConditionalAccess: *string,
 	Name: *string,
 	ServicePrincipal: *string,
-	Aws: github.com/cdktf/cdktf-provider-hcp-go/hcp/v8.iamWorkloadIdentityProvider.IamWorkloadIdentityProviderAws,
+	Aws: github.com/cdktf/cdktf-provider-hcp-go/hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProviderAws,
 	Description: *string,
-	Oidc: github.com/cdktf/cdktf-provider-hcp-go/hcp/v8.iamWorkloadIdentityProvider.IamWorkloadIdentityProviderOidc,
+	Oidc: github.com/cdktf/cdktf-provider-hcp-go/hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProviderOidc,
 }
 ```
 
@@ -1093,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProviderOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/iamworkloadidentityprovider"
 
 &iamworkloadidentityprovider.IamWorkloadIdentityProviderOidc {
 	IssuerUri: *string,
@@ -1147,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProviderAwsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/iamworkloadidentityprovider"
 
 iamworkloadidentityprovider.NewIamWorkloadIdentityProviderAwsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamWorkloadIdentityProviderAwsOutputReference
 ```
@@ -1418,7 +1425,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.iamWorkloadIdentityProvider.IamWorkloadIdentityProviderOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/iamworkloadidentityprovider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/iamworkloadidentityprovider"
 
 iamworkloadidentityprovider.NewIamWorkloadIdentityProviderOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamWorkloadIdentityProviderOidcOutputReference
 ```

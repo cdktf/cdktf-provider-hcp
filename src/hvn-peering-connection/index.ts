@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/hvn_peering_connection
 // generated from terraform resource schema
 
@@ -69,6 +64,37 @@ export function hvnPeeringConnectionTimeoutsToTerraform(struct?: HvnPeeringConne
     default: cdktf.stringToTerraform(struct!.default),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function hvnPeeringConnectionTimeoutsToHclTerraform(struct?: HvnPeeringConnectionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class HvnPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -352,5 +378,43 @@ export class HvnPeeringConnection extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
       timeouts: hvnPeeringConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      hvn_1: {
+        value: cdktf.stringToHclTerraform(this._hvn1),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hvn_2: {
+        value: cdktf.stringToHclTerraform(this._hvn2),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: hvnPeeringConnectionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "HvnPeeringConnectionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

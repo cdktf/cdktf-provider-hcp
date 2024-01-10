@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/azurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/azurepeeringconnection"
 
 azurepeeringconnection.NewAzurePeeringConnection(scope Construct, id *string, config AzurePeeringConnectionConfig) AzurePeeringConnection
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetUseRemoteGateways()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/azurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/azurepeeringconnection"
 
 azurepeeringconnection.AzurePeeringConnection_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/azurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/azurepeeringconnection"
 
 azurepeeringconnection.AzurePeeringConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ azurepeeringconnection.AzurePeeringConnection_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/azurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/azurepeeringconnection"
 
 azurepeeringconnection.AzurePeeringConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ azurepeeringconnection.AzurePeeringConnection_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/azurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/azurepeeringconnection"
 
 azurepeeringconnection.AzurePeeringConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1031,7 +1038,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/azurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/azurepeeringconnection"
 
 &azurepeeringconnection.AzurePeeringConnectionConfig {
 	Connection: interface{},
@@ -1050,7 +1057,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/azurepeeringconnection"
 	PeerVnetRegion: *string,
 	AllowForwardedTraffic: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v8.azurePeeringConnection.AzurePeeringConnectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.azurePeeringConnection.AzurePeeringConnectionTimeouts,
 	UseRemoteGateways: interface{},
 }
 ```
@@ -1310,7 +1317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/azurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/azurepeeringconnection"
 
 &azurepeeringconnection.AzurePeeringConnectionTimeouts {
 	Create: *string,
@@ -1372,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/azurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/azurepeeringconnection"
 
 azurepeeringconnection.NewAzurePeeringConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AzurePeeringConnectionTimeoutsOutputReference
 ```

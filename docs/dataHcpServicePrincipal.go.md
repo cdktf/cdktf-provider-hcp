@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 datahcpserviceprincipal.NewDataHcpServicePrincipal(scope Construct, id *string, config DataHcpServicePrincipalConfig) DataHcpServicePrincipal
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -118,6 +119,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.toMetadata"></a>
 
@@ -267,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -578,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 &datahcpserviceprincipal.DataHcpServicePrincipalConfig {
 	Connection: interface{},

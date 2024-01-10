@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/awstransitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awstransitgatewayattachment"
 
 awstransitgatewayattachment.NewAwsTransitGatewayAttachment(scope Construct, id *string, config AwsTransitGatewayAttachmentConfig) AwsTransitGatewayAttachment
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -128,6 +129,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.toMetadata"></a>
 
@@ -405,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/awstransitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awstransitgatewayattachment"
 
 awstransitgatewayattachment.AwsTransitGatewayAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/awstransitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awstransitgatewayattachment"
 
 awstransitgatewayattachment.AwsTransitGatewayAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ awstransitgatewayattachment.AwsTransitGatewayAttachment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/awstransitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awstransitgatewayattachment"
 
 awstransitgatewayattachment.AwsTransitGatewayAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ awstransitgatewayattachment.AwsTransitGatewayAttachment_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/awstransitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awstransitgatewayattachment"
 
 awstransitgatewayattachment.AwsTransitGatewayAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -914,7 +921,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/awstransitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awstransitgatewayattachment"
 
 &awstransitgatewayattachment.AwsTransitGatewayAttachmentConfig {
 	Connection: interface{},
@@ -930,7 +937,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/awstransitgatewayattachmen
 	TransitGatewayId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v8.awsTransitGatewayAttachment.AwsTransitGatewayAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachmentTimeouts,
 }
 ```
 
@@ -1133,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/awstransitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awstransitgatewayattachment"
 
 &awstransitgatewayattachment.AwsTransitGatewayAttachmentTimeouts {
 	Create: *string,
@@ -1195,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/awstransitgatewayattachment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awstransitgatewayattachment"
 
 awstransitgatewayattachment.NewAwsTransitGatewayAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AwsTransitGatewayAttachmentTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcppackerbucketnames"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerbucketnames"
 
 datahcppackerbucketnames.NewDataHcpPackerBucketNames(scope Construct, id *string, config DataHcpPackerBucketNamesConfig) DataHcpPackerBucketNames
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -122,6 +123,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.toMetadata"></a>
 
@@ -301,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcppackerbucketnames"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerbucketnames"
 
 datahcppackerbucketnames.DataHcpPackerBucketNames_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcppackerbucketnames"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerbucketnames"
 
 datahcppackerbucketnames.DataHcpPackerBucketNames_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +356,7 @@ datahcppackerbucketnames.DataHcpPackerBucketNames_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcppackerbucketnames"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerbucketnames"
 
 datahcppackerbucketnames.DataHcpPackerBucketNames_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -361,7 +370,7 @@ datahcppackerbucketnames.DataHcpPackerBucketNames_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNames.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcppackerbucketnames"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerbucketnames"
 
 datahcppackerbucketnames.DataHcpPackerBucketNames_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcppackerbucketnames"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerbucketnames"
 
 &datahcppackerbucketnames.DataHcpPackerBucketNamesConfig {
 	Connection: interface{},
@@ -668,7 +677,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcppackerbucketnames"
 	Provisioners: *[]interface{},
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v8.dataHcpPackerBucketNames.DataHcpPackerBucketNamesTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesTimeouts,
 }
 ```
 
@@ -807,7 +816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcppackerbucketnames"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerbucketnames"
 
 &datahcppackerbucketnames.DataHcpPackerBucketNamesTimeouts {
 	Default: *string,
@@ -841,7 +850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerBucketNames.DataHcpPackerBucketNamesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcppackerbucketnames"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerbucketnames"
 
 datahcppackerbucketnames.NewDataHcpPackerBucketNamesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpPackerBucketNamesTimeoutsOutputReference
 ```

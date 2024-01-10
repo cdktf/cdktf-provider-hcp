@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/resources/organization_iam_binding
 // generated from terraform resource schema
 
@@ -120,5 +115,25 @@ export class OrganizationIamBinding extends cdktf.TerraformResource {
       principal_id: cdktf.stringToTerraform(this._principalId),
       role: cdktf.stringToTerraform(this._role),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      principal_id: {
+        value: cdktf.stringToHclTerraform(this._principalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/data-sources/aws_transit_gateway_attachment
 // generated from terraform resource schema
 
@@ -68,6 +63,25 @@ export function dataHcpAwsTransitGatewayAttachmentTimeoutsToTerraform(struct?: D
   return {
     default: cdktf.stringToTerraform(struct!.default),
   }
+}
+
+
+export function dataHcpAwsTransitGatewayAttachmentTimeoutsToHclTerraform(struct?: DataHcpAwsTransitGatewayAttachmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataHcpAwsTransitGatewayAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -330,5 +344,49 @@ export class DataHcpAwsTransitGatewayAttachment extends cdktf.TerraformDataSourc
       wait_for_active_state: cdktf.booleanToTerraform(this._waitForActiveState),
       timeouts: dataHcpAwsTransitGatewayAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      hvn_id: {
+        value: cdktf.stringToHclTerraform(this._hvnId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transit_gateway_attachment_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayAttachmentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_for_active_state: {
+        value: cdktf.booleanToHclTerraform(this._waitForActiveState),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeouts: {
+        value: dataHcpAwsTransitGatewayAttachmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataHcpAwsTransitGatewayAttachmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

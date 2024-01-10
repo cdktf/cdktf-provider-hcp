@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs
 // generated from terraform resource schema
 
@@ -73,6 +68,31 @@ export function hcpProviderWorkloadIdentityToTerraform(struct?: HcpProviderWorkl
     resource_name: cdktf.stringToTerraform(struct!.resourceName),
     token_file: cdktf.stringToTerraform(struct!.tokenFile),
   }
+}
+
+
+export function hcpProviderWorkloadIdentityToHclTerraform(struct?: HcpProviderWorkloadIdentity | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_name: {
+      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_file: {
+      value: cdktf.stringToHclTerraform(struct!.tokenFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 
@@ -242,5 +262,49 @@ export class HcpProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
       workload_identity: cdktf.listMapper(hcpProviderWorkloadIdentityToTerraform, true)(this._workloadIdentity),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret: {
+        value: cdktf.stringToHclTerraform(this._clientSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      credential_file: {
+        value: cdktf.stringToHclTerraform(this._credentialFile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workload_identity: {
+        value: cdktf.listMapperHcl(hcpProviderWorkloadIdentityToHclTerraform, true)(this._workloadIdentity),
+        isBlock: true,
+        type: "list",
+        storageClassType: "HcpProviderWorkloadIdentityList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
