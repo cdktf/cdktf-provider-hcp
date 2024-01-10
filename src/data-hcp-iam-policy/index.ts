@@ -45,6 +45,31 @@ export function dataHcpIamPolicyBindingsToTerraform(struct?: DataHcpIamPolicyBin
   }
 }
 
+
+export function dataHcpIamPolicyBindingsToHclTerraform(struct?: DataHcpIamPolicyBindings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    principals: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.principals),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataHcpIamPolicyBindingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -226,5 +251,19 @@ export class DataHcpIamPolicy extends cdktf.TerraformDataSource {
     return {
       bindings: cdktf.listMapper(dataHcpIamPolicyBindingsToTerraform, false)(this._bindings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bindings: {
+        value: cdktf.listMapperHcl(dataHcpIamPolicyBindingsToHclTerraform, false)(this._bindings.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataHcpIamPolicyBindingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

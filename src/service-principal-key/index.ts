@@ -139,4 +139,24 @@ export class ServicePrincipalKey extends cdktf.TerraformResource {
       service_principal: cdktf.stringToTerraform(this._servicePrincipal),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      rotate_triggers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._rotateTriggers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      service_principal: {
+        value: cdktf.stringToHclTerraform(this._servicePrincipal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

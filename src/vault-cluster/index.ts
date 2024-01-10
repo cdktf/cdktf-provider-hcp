@@ -295,6 +295,175 @@ export function vaultClusterAuditLogConfigToTerraform(struct?: VaultClusterAudit
   }
 }
 
+
+export function vaultClusterAuditLogConfigToHclTerraform(struct?: VaultClusterAuditLogConfigOutputReference | VaultClusterAuditLogConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_access_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchAccessKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_region: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_secret_access_key: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchSecretAccessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    datadog_api_key: {
+      value: cdktf.stringToHclTerraform(struct!.datadogApiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    datadog_region: {
+      value: cdktf.stringToHclTerraform(struct!.datadogRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticsearch_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.elasticsearchEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticsearch_password: {
+      value: cdktf.stringToHclTerraform(struct!.elasticsearchPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticsearch_user: {
+      value: cdktf.stringToHclTerraform(struct!.elasticsearchUser),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grafana_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.grafanaEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grafana_password: {
+      value: cdktf.stringToHclTerraform(struct!.grafanaPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grafana_user: {
+      value: cdktf.stringToHclTerraform(struct!.grafanaUser),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_basic_password: {
+      value: cdktf.stringToHclTerraform(struct!.httpBasicPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_basic_user: {
+      value: cdktf.stringToHclTerraform(struct!.httpBasicUser),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_bearer_token: {
+      value: cdktf.stringToHclTerraform(struct!.httpBearerToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_codec: {
+      value: cdktf.stringToHclTerraform(struct!.httpCodec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_compression: {
+      value: cdktf.booleanToHclTerraform(struct!.httpCompression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    http_headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.httpHeaders),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    http_method: {
+      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_payload_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.httpPayloadPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_payload_suffix: {
+      value: cdktf.stringToHclTerraform(struct!.httpPayloadSuffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_uri: {
+      value: cdktf.stringToHclTerraform(struct!.httpUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    newrelic_account_id: {
+      value: cdktf.stringToHclTerraform(struct!.newrelicAccountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    newrelic_license_key: {
+      value: cdktf.stringToHclTerraform(struct!.newrelicLicenseKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    newrelic_region: {
+      value: cdktf.stringToHclTerraform(struct!.newrelicRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    splunk_hecendpoint: {
+      value: cdktf.stringToHclTerraform(struct!.splunkHecendpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    splunk_token: {
+      value: cdktf.stringToHclTerraform(struct!.splunkToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -941,6 +1110,37 @@ export function vaultClusterMajorVersionUpgradeConfigToTerraform(struct?: VaultC
   }
 }
 
+
+export function vaultClusterMajorVersionUpgradeConfigToHclTerraform(struct?: VaultClusterMajorVersionUpgradeConfigOutputReference | VaultClusterMajorVersionUpgradeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maintenance_window_day: {
+      value: cdktf.stringToHclTerraform(struct!.maintenanceWindowDay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maintenance_window_time: {
+      value: cdktf.stringToHclTerraform(struct!.maintenanceWindowTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    upgrade_type: {
+      value: cdktf.stringToHclTerraform(struct!.upgradeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VaultClusterMajorVersionUpgradeConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1222,6 +1422,175 @@ export function vaultClusterMetricsConfigToTerraform(struct?: VaultClusterMetric
     splunk_hecendpoint: cdktf.stringToTerraform(struct!.splunkHecendpoint),
     splunk_token: cdktf.stringToTerraform(struct!.splunkToken),
   }
+}
+
+
+export function vaultClusterMetricsConfigToHclTerraform(struct?: VaultClusterMetricsConfigOutputReference | VaultClusterMetricsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_access_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchAccessKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_region: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_secret_access_key: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchSecretAccessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    datadog_api_key: {
+      value: cdktf.stringToHclTerraform(struct!.datadogApiKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    datadog_region: {
+      value: cdktf.stringToHclTerraform(struct!.datadogRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticsearch_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.elasticsearchEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticsearch_password: {
+      value: cdktf.stringToHclTerraform(struct!.elasticsearchPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticsearch_user: {
+      value: cdktf.stringToHclTerraform(struct!.elasticsearchUser),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grafana_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.grafanaEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grafana_password: {
+      value: cdktf.stringToHclTerraform(struct!.grafanaPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grafana_user: {
+      value: cdktf.stringToHclTerraform(struct!.grafanaUser),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_basic_password: {
+      value: cdktf.stringToHclTerraform(struct!.httpBasicPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_basic_user: {
+      value: cdktf.stringToHclTerraform(struct!.httpBasicUser),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_bearer_token: {
+      value: cdktf.stringToHclTerraform(struct!.httpBearerToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_codec: {
+      value: cdktf.stringToHclTerraform(struct!.httpCodec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_compression: {
+      value: cdktf.booleanToHclTerraform(struct!.httpCompression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    http_headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.httpHeaders),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    http_method: {
+      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_payload_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.httpPayloadPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_payload_suffix: {
+      value: cdktf.stringToHclTerraform(struct!.httpPayloadSuffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_uri: {
+      value: cdktf.stringToHclTerraform(struct!.httpUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    newrelic_account_id: {
+      value: cdktf.stringToHclTerraform(struct!.newrelicAccountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    newrelic_license_key: {
+      value: cdktf.stringToHclTerraform(struct!.newrelicLicenseKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    newrelic_region: {
+      value: cdktf.stringToHclTerraform(struct!.newrelicRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    splunk_hecendpoint: {
+      value: cdktf.stringToHclTerraform(struct!.splunkHecendpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    splunk_token: {
+      value: cdktf.stringToHclTerraform(struct!.splunkToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VaultClusterMetricsConfigOutputReference extends cdktf.ComplexObject {
@@ -1864,6 +2233,43 @@ export function vaultClusterTimeoutsToTerraform(struct?: VaultClusterTimeouts | 
   }
 }
 
+
+export function vaultClusterTimeoutsToHclTerraform(struct?: VaultClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VaultClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2354,5 +2760,97 @@ export class VaultCluster extends cdktf.TerraformResource {
       metrics_config: vaultClusterMetricsConfigToTerraform(this._metricsConfig.internalValue),
       timeouts: vaultClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hvn_id: {
+        value: cdktf.stringToHclTerraform(this._hvnId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      min_vault_version: {
+        value: cdktf.stringToHclTerraform(this._minVaultVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      paths_filter: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._pathsFilter),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      primary_link: {
+        value: cdktf.stringToHclTerraform(this._primaryLink),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proxy_endpoint: {
+        value: cdktf.stringToHclTerraform(this._proxyEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_endpoint: {
+        value: cdktf.booleanToHclTerraform(this._publicEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tier: {
+        value: cdktf.stringToHclTerraform(this._tier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      audit_log_config: {
+        value: vaultClusterAuditLogConfigToHclTerraform(this._auditLogConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultClusterAuditLogConfigList",
+      },
+      major_version_upgrade_config: {
+        value: vaultClusterMajorVersionUpgradeConfigToHclTerraform(this._majorVersionUpgradeConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultClusterMajorVersionUpgradeConfigList",
+      },
+      metrics_config: {
+        value: vaultClusterMetricsConfigToHclTerraform(this._metricsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VaultClusterMetricsConfigList",
+      },
+      timeouts: {
+        value: vaultClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VaultClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

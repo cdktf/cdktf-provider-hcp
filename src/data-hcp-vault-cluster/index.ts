@@ -65,6 +65,17 @@ export function dataHcpVaultClusterMajorVersionUpgradeConfigToTerraform(struct?:
   }
 }
 
+
+export function dataHcpVaultClusterMajorVersionUpgradeConfigToHclTerraform(struct?: DataHcpVaultClusterMajorVersionUpgradeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataHcpVaultClusterMajorVersionUpgradeConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -137,6 +148,17 @@ export function dataHcpVaultClusterAuditLogConfigToTerraform(struct?: DataHcpVau
   }
   return {
   }
+}
+
+
+export function dataHcpVaultClusterAuditLogConfigToHclTerraform(struct?: DataHcpVaultClusterAuditLogConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataHcpVaultClusterAuditLogConfigOutputReference extends cdktf.ComplexObject {
@@ -340,6 +362,17 @@ export function dataHcpVaultClusterMetricsConfigToTerraform(struct?: DataHcpVaul
   }
 }
 
+
+export function dataHcpVaultClusterMetricsConfigToHclTerraform(struct?: DataHcpVaultClusterMetricsConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataHcpVaultClusterMetricsConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -539,6 +572,25 @@ export function dataHcpVaultClusterTimeoutsToTerraform(struct?: DataHcpVaultClus
   return {
     default: cdktf.stringToTerraform(struct!.default),
   }
+}
+
+
+export function dataHcpVaultClusterTimeoutsToHclTerraform(struct?: DataHcpVaultClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataHcpVaultClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -865,5 +917,49 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
       metrics_config: cdktf.listMapper(dataHcpVaultClusterMetricsConfigToTerraform, true)(this._metricsConfig.internalValue),
       timeouts: dataHcpVaultClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      audit_log_config: {
+        value: cdktf.listMapperHcl(dataHcpVaultClusterAuditLogConfigToHclTerraform, true)(this._auditLogConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataHcpVaultClusterAuditLogConfigList",
+      },
+      metrics_config: {
+        value: cdktf.listMapperHcl(dataHcpVaultClusterMetricsConfigToHclTerraform, true)(this._metricsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataHcpVaultClusterMetricsConfigList",
+      },
+      timeouts: {
+        value: dataHcpVaultClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataHcpVaultClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -64,6 +64,25 @@ export function iamWorkloadIdentityProviderAwsToTerraform(struct?: IamWorkloadId
   }
 }
 
+
+export function iamWorkloadIdentityProviderAwsToHclTerraform(struct?: IamWorkloadIdentityProviderAws | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.stringToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class IamWorkloadIdentityProviderAwsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -143,6 +162,31 @@ export function iamWorkloadIdentityProviderOidcToTerraform(struct?: IamWorkloadI
     allowed_audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedAudiences),
     issuer_uri: cdktf.stringToTerraform(struct!.issuerUri),
   }
+}
+
+
+export function iamWorkloadIdentityProviderOidcToHclTerraform(struct?: IamWorkloadIdentityProviderOidc | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_audiences: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedAudiences),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    issuer_uri: {
+      value: cdktf.stringToHclTerraform(struct!.issuerUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IamWorkloadIdentityProviderOidcOutputReference extends cdktf.ComplexObject {
@@ -396,5 +440,49 @@ export class IamWorkloadIdentityProvider extends cdktf.TerraformResource {
       oidc: iamWorkloadIdentityProviderOidcToTerraform(this._oidc.internalValue),
       service_principal: cdktf.stringToTerraform(this._servicePrincipal),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws: {
+        value: iamWorkloadIdentityProviderAwsToHclTerraform(this._aws.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "IamWorkloadIdentityProviderAws",
+      },
+      conditional_access: {
+        value: cdktf.stringToHclTerraform(this._conditionalAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oidc: {
+        value: iamWorkloadIdentityProviderOidcToHclTerraform(this._oidc.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "IamWorkloadIdentityProviderOidc",
+      },
+      service_principal: {
+        value: cdktf.stringToHclTerraform(this._servicePrincipal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -88,6 +88,31 @@ export function hvnRouteAzureConfigToTerraform(struct?: HvnRouteAzureConfigOutpu
   }
 }
 
+
+export function hvnRouteAzureConfigToHclTerraform(struct?: HvnRouteAzureConfigOutputReference | HvnRouteAzureConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    next_hop_ip_address: {
+      value: cdktf.stringToHclTerraform(struct!.nextHopIpAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    next_hop_type: {
+      value: cdktf.stringToHclTerraform(struct!.nextHopType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class HvnRouteAzureConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -180,6 +205,37 @@ export function hvnRouteTimeoutsToTerraform(struct?: HvnRouteTimeouts | cdktf.IR
     default: cdktf.stringToTerraform(struct!.default),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function hvnRouteTimeoutsToHclTerraform(struct?: HvnRouteTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class HvnRouteTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -496,5 +552,61 @@ export class HvnRoute extends cdktf.TerraformResource {
       azure_config: hvnRouteAzureConfigToTerraform(this._azureConfig.internalValue),
       timeouts: hvnRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      destination_cidr: {
+        value: cdktf.stringToHclTerraform(this._destinationCidr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hvn_link: {
+        value: cdktf.stringToHclTerraform(this._hvnLink),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hvn_route_id: {
+        value: cdktf.stringToHclTerraform(this._hvnRouteId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_link: {
+        value: cdktf.stringToHclTerraform(this._targetLink),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_config: {
+        value: hvnRouteAzureConfigToHclTerraform(this._azureConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "HvnRouteAzureConfigList",
+      },
+      timeouts: {
+        value: hvnRouteTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "HvnRouteTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
