@@ -38,6 +38,7 @@ The following submodules are available:
 - [hvnPeeringConnection](./hvnPeeringConnection.csharp.md)
 - [hvnRoute](./hvnRoute.csharp.md)
 - [iamWorkloadIdentityProvider](./iamWorkloadIdentityProvider.csharp.md)
+- [logStreamingDestination](./logStreamingDestination.csharp.md)
 - [organizationIamBinding](./organizationIamBinding.csharp.md)
 - [organizationIamPolicy](./organizationIamPolicy.csharp.md)
 - [packerChannel](./packerChannel.csharp.md)

@@ -38,6 +38,7 @@ The following submodules are available:
 - [hvnPeeringConnection](./hvnPeeringConnection.go.md)
 - [hvnRoute](./hvnRoute.go.md)
 - [iamWorkloadIdentityProvider](./iamWorkloadIdentityProvider.go.md)
+- [logStreamingDestination](./logStreamingDestination.go.md)
 - [organizationIamBinding](./organizationIamBinding.go.md)
 - [organizationIamPolicy](./organizationIamPolicy.go.md)
 - [packerChannel](./packerChannel.go.md)
