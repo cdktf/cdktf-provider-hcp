@@ -15,6 +15,7 @@ export * as hvn from './hvn';
 export * as hvnPeeringConnection from './hvn-peering-connection';
 export * as hvnRoute from './hvn-route';
 export * as iamWorkloadIdentityProvider from './iam-workload-identity-provider';
+export * as logStreamingDestination from './log-streaming-destination';
 export * as organizationIamBinding from './organization-iam-binding';
 export * as organizationIamPolicy from './organization-iam-policy';
 export * as packerChannel from './packer-channel';

@@ -38,6 +38,7 @@ The following submodules are available:
 - [hvnPeeringConnection](./hvnPeeringConnection.typescript.md)
 - [hvnRoute](./hvnRoute.typescript.md)
 - [iamWorkloadIdentityProvider](./iamWorkloadIdentityProvider.typescript.md)
+- [logStreamingDestination](./logStreamingDestination.typescript.md)
 - [organizationIamBinding](./organizationIamBinding.typescript.md)
 - [organizationIamPolicy](./organizationIamPolicy.typescript.md)
 - [packerChannel](./packerChannel.typescript.md)

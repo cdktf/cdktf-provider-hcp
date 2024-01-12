@@ -15,6 +15,7 @@ Object.defineProperty(exports, 'hvn', { get: function () { return require('./hvn
 Object.defineProperty(exports, 'hvnPeeringConnection', { get: function () { return require('./hvn-peering-connection'); } });
 Object.defineProperty(exports, 'hvnRoute', { get: function () { return require('./hvn-route'); } });
 Object.defineProperty(exports, 'iamWorkloadIdentityProvider', { get: function () { return require('./iam-workload-identity-provider'); } });
+Object.defineProperty(exports, 'logStreamingDestination', { get: function () { return require('./log-streaming-destination'); } });
 Object.defineProperty(exports, 'organizationIamBinding', { get: function () { return require('./organization-iam-binding'); } });
 Object.defineProperty(exports, 'organizationIamPolicy', { get: function () { return require('./organization-iam-policy'); } });
 Object.defineProperty(exports, 'packerChannel', { get: function () { return require('./packer-channel'); } });

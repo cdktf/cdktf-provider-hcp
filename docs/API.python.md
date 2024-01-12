@@ -38,6 +38,7 @@ The following submodules are available:
 - [hvnPeeringConnection](./hvnPeeringConnection.python.md)
 - [hvnRoute](./hvnRoute.python.md)
 - [iamWorkloadIdentityProvider](./iamWorkloadIdentityProvider.python.md)
+- [logStreamingDestination](./logStreamingDestination.python.md)
 - [organizationIamBinding](./organizationIamBinding.python.md)
 - [organizationIamPolicy](./organizationIamPolicy.python.md)
 - [packerChannel](./packerChannel.python.md)
