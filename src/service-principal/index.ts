@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/service_principal
+// https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/service_principal
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   /**
   * The service principal's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/service_principal#name ServicePrincipal#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/service_principal#name ServicePrincipal#name}
   */
   readonly name: string;
   /**
   * The parent location to create the service principal under. If unspecified, the service principal will be created in the project the provider is configured with. If specified, the accepted values are "project/<project_id>" or "organization/<organization_id>"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/service_principal#parent ServicePrincipal#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/service_principal#parent ServicePrincipal#parent}
   */
   readonly parent?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/service_principal hcp_service_principal}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/service_principal hcp_service_principal}
 */
 export class ServicePrincipal extends cdktf.TerraformResource {
 
@@ -43,7 +38,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServicePrincipal resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipal to import
-  * @param importFromId The id of the existing ServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipal to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/service_principal hcp_service_principal} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/service_principal hcp_service_principal} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.80.0',
+        providerVersion: '0.81.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

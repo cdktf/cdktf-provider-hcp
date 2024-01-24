@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster
+// https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataHcpVaultClusterConfig extends cdktf.TerraformMetaArguments 
   /**
   * The ID of the HCP Vault cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster#cluster_id DataHcpVaultCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster#cluster_id DataHcpVaultCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster#id DataHcpVaultCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,27 +26,107 @@ export interface DataHcpVaultClusterConfig extends cdktf.TerraformMetaArguments 
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster#project_id DataHcpVaultCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster#project_id DataHcpVaultCluster#project_id}
   */
   readonly projectId?: string;
   /**
   * audit_log_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster#audit_log_config DataHcpVaultCluster#audit_log_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster#audit_log_config DataHcpVaultCluster#audit_log_config}
   */
   readonly auditLogConfig?: DataHcpVaultClusterAuditLogConfig[] | cdktf.IResolvable;
   /**
   * metrics_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster#metrics_config DataHcpVaultCluster#metrics_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster#metrics_config DataHcpVaultCluster#metrics_config}
   */
   readonly metricsConfig?: DataHcpVaultClusterMetricsConfig[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster#timeouts DataHcpVaultCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster#timeouts DataHcpVaultCluster#timeouts}
   */
   readonly timeouts?: DataHcpVaultClusterTimeouts;
+}
+export interface DataHcpVaultClusterIpAllowlistStruct {
+}
+
+export function dataHcpVaultClusterIpAllowlistStructToTerraform(struct?: DataHcpVaultClusterIpAllowlistStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataHcpVaultClusterIpAllowlistStructToHclTerraform(struct?: DataHcpVaultClusterIpAllowlistStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataHcpVaultClusterIpAllowlistStructOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataHcpVaultClusterIpAllowlistStruct | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataHcpVaultClusterIpAllowlistStruct | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // address - computed: true, optional: false, required: false
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+}
+
+export class DataHcpVaultClusterIpAllowlistStructList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataHcpVaultClusterIpAllowlistStructOutputReference {
+    return new DataHcpVaultClusterIpAllowlistStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataHcpVaultClusterMajorVersionUpgradeConfig {
 }
@@ -559,7 +634,7 @@ export class DataHcpVaultClusterMetricsConfigList extends cdktf.ComplexList {
 }
 export interface DataHcpVaultClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster#default DataHcpVaultCluster#default}
   */
   readonly default?: string;
 }
@@ -653,7 +728,7 @@ export class DataHcpVaultClusterTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster hcp_vault_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster hcp_vault_cluster}
 */
 export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
 
@@ -669,7 +744,7 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpVaultCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpVaultCluster to import
-  * @param importFromId The id of the existing DataHcpVaultCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpVaultCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpVaultCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -681,7 +756,7 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -692,7 +767,7 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_vault_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.80.0',
+        providerVersion: '0.81.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -757,6 +832,12 @@ export class DataHcpVaultCluster extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // ip_allowlist - computed: true, optional: false, required: false
+  private _ipAllowlist = new DataHcpVaultClusterIpAllowlistStructList(this, "ip_allowlist", false);
+  public get ipAllowlist() {
+    return this._ipAllowlist;
   }
 
   // major_version_upgrade_config - computed: true, optional: false, required: false

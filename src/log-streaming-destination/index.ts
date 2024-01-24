@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/log_streaming_destination
+// https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/log_streaming_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface LogStreamingDestinationConfig extends cdktf.TerraformMetaArgume
   /**
   * The HCP Log Streaming Destination’s name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/log_streaming_destination#name LogStreamingDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/log_streaming_destination#name LogStreamingDestination#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/log_streaming_destination#splunk_cloud LogStreamingDestination#splunk_cloud}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/log_streaming_destination#splunk_cloud LogStreamingDestination#splunk_cloud}
   */
   readonly splunkCloud: LogStreamingDestinationSplunkCloud;
 }
@@ -27,13 +22,13 @@ export interface LogStreamingDestinationSplunkCloud {
   /**
   * The Splunk Cloud endpoint to send logs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/log_streaming_destination#endpoint LogStreamingDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/log_streaming_destination#endpoint LogStreamingDestination#endpoint}
   */
   readonly endpoint: string;
   /**
   * The authentication token that will be used by the platform to access Splunk Cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/log_streaming_destination#token LogStreamingDestination#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/log_streaming_destination#token LogStreamingDestination#token}
   */
   readonly token: string;
 }
@@ -150,7 +145,7 @@ export class LogStreamingDestinationSplunkCloudOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}
 */
 export class LogStreamingDestination extends cdktf.TerraformResource {
 
@@ -166,7 +161,7 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LogStreamingDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogStreamingDestination to import
-  * @param importFromId The id of the existing LogStreamingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/log_streaming_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogStreamingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/log_streaming_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogStreamingDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -178,7 +173,7 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -189,7 +184,7 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_log_streaming_destination',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.80.0',
+        providerVersion: '0.81.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
