@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image
+// https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface DataHcpPackerImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The slug of the HCP Packer Registry bucket where this image is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#bucket_name DataHcpPackerImage#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#bucket_name DataHcpPackerImage#bucket_name}
   */
   readonly bucketName: string;
   /**
   * The channel that points to the version of the image being retrieved. Either this or `iteration_id` must be specified. Note: will incur a billable request
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#channel DataHcpPackerImage#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#channel DataHcpPackerImage#channel}
   */
   readonly channel?: string;
   /**
   * Name of the cloud provider where this image is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#cloud_provider DataHcpPackerImage#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#cloud_provider DataHcpPackerImage#cloud_provider}
   */
   readonly cloudProvider: string;
   /**
   * Name of the builder that built this image. Ex: `amazon-ebs.example`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#component_type DataHcpPackerImage#component_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#component_type DataHcpPackerImage#component_type}
   */
   readonly componentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#id DataHcpPackerImage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#id DataHcpPackerImage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,7 +46,7 @@ export interface DataHcpPackerImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The iteration from which to get the image. Either this or `channel` must be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#iteration_id DataHcpPackerImage#iteration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#iteration_id DataHcpPackerImage#iteration_id}
   */
   readonly iterationId?: string;
   /**
@@ -55,25 +55,25 @@ export interface DataHcpPackerImageConfig extends cdktf.TerraformMetaArguments {
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#project_id DataHcpPackerImage#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#project_id DataHcpPackerImage#project_id}
   */
   readonly projectId?: string;
   /**
   * The Region where this image is stored, if any.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#region DataHcpPackerImage#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#region DataHcpPackerImage#region}
   */
   readonly region: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#timeouts DataHcpPackerImage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#timeouts DataHcpPackerImage#timeouts}
   */
   readonly timeouts?: DataHcpPackerImageTimeouts;
 }
 export interface DataHcpPackerImageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#default DataHcpPackerImage#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#default DataHcpPackerImage#default}
   */
   readonly default?: string;
 }
@@ -167,7 +167,7 @@ export class DataHcpPackerImageTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image hcp_packer_image}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image hcp_packer_image}
 */
 export class DataHcpPackerImage extends cdktf.TerraformDataSource {
 
@@ -183,7 +183,7 @@ export class DataHcpPackerImage extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpPackerImage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpPackerImage to import
-  * @param importFromId The id of the existing DataHcpPackerImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpPackerImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpPackerImage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -195,7 +195,7 @@ export class DataHcpPackerImage extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/packer_image hcp_packer_image} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/packer_image hcp_packer_image} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -206,7 +206,7 @@ export class DataHcpPackerImage extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_packer_image',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.80.0',
+        providerVersion: '0.81.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
