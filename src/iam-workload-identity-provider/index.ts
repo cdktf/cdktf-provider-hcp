@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider
+// https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface IamWorkloadIdentityProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider#aws IamWorkloadIdentityProvider#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider#aws IamWorkloadIdentityProvider#aws}
   */
   readonly aws?: IamWorkloadIdentityProviderAws;
   /**
   * conditional_access is a hashicorp/go-bexpr string that is evaluated when exchanging tokens. It restricts which upstream identities are allowed to access the service principal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider#conditional_access IamWorkloadIdentityProvider#conditional_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider#conditional_access IamWorkloadIdentityProvider#conditional_access}
   */
   readonly conditionalAccess: string;
   /**
   * A description for the workload identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider#description IamWorkloadIdentityProvider#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider#description IamWorkloadIdentityProvider#description}
   */
   readonly description?: string;
   /**
   * The workload identity provider's name. Ideally, this should be descriptive of the workload being federated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider#name IamWorkloadIdentityProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider#name IamWorkloadIdentityProvider#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider#oidc IamWorkloadIdentityProvider#oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider#oidc IamWorkloadIdentityProvider#oidc}
   */
   readonly oidc?: IamWorkloadIdentityProviderOidc;
   /**
   * The service principal's resource name for which the workload identity provider will be created for. Only service principals created within a project are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider#service_principal IamWorkloadIdentityProvider#service_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider#service_principal IamWorkloadIdentityProvider#service_principal}
   */
   readonly servicePrincipal: string;
 }
@@ -49,7 +44,7 @@ export interface IamWorkloadIdentityProviderAws {
   /**
   * The AWS Account ID that is allowed to exchange workload identities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider#account_id IamWorkloadIdentityProvider#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider#account_id IamWorkloadIdentityProvider#account_id}
   */
   readonly accountId: string;
 }
@@ -142,13 +137,13 @@ export interface IamWorkloadIdentityProviderOidc {
   /**
   * allowed_audiences is the set of audiences set on the access token that are allowed to exchange identities. The access token must have an audience that is contained in this set. If no audience is set, the default allowed audience will be the resource name of the WorkloadIdentityProvider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider#allowed_audiences IamWorkloadIdentityProvider#allowed_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider#allowed_audiences IamWorkloadIdentityProvider#allowed_audiences}
   */
   readonly allowedAudiences?: string[];
   /**
   * The URL of the OIDC Issuer that is allowed to exchange workload identities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider#issuer_uri IamWorkloadIdentityProvider#issuer_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider#issuer_uri IamWorkloadIdentityProvider#issuer_uri}
   */
   readonly issuerUri: string;
 }
@@ -268,7 +263,7 @@ export class IamWorkloadIdentityProviderOidcOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider}
 */
 export class IamWorkloadIdentityProvider extends cdktf.TerraformResource {
 
@@ -284,7 +279,7 @@ export class IamWorkloadIdentityProvider extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IamWorkloadIdentityProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamWorkloadIdentityProvider to import
-  * @param importFromId The id of the existing IamWorkloadIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IamWorkloadIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamWorkloadIdentityProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -296,7 +291,7 @@ export class IamWorkloadIdentityProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -307,7 +302,7 @@ export class IamWorkloadIdentityProvider extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_iam_workload_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.81.0',
+        providerVersion: '0.82.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

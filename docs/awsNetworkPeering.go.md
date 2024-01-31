@@ -4,12 +4,12 @@
 
 ### AwsNetworkPeering <a name="AwsNetworkPeering" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering hcp_aws_network_peering}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering hcp_aws_network_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.NewAwsNetworkPeering(scope Construct, id *string, config AwsNetworkPeeringConfig) AwsNetworkPeering
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ awsnetworkpeering.AwsNetworkPeering_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ awsnetworkpeering.AwsNetworkPeering_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.AwsNetworkPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AwsNetworkPeering to impor
 
 The id of the existing AwsNetworkPeering that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,7 +943,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 &awsnetworkpeering.AwsNetworkPeeringConfig {
 	Connection: interface{},
@@ -960,7 +960,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
 	PeerVpcRegion: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.awsNetworkPeering.AwsNetworkPeeringTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts,
 }
 ```
 
@@ -980,7 +980,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
 | <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringConfig.property.peeringId">PeeringId</a></code> | <code>*string</code> | The ID of the network peering. |
 | <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringConfig.property.peerVpcId">PeerVpcId</a></code> | <code>*string</code> | The ID of the peer VPC in AWS. |
 | <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringConfig.property.peerVpcRegion">PeerVpcRegion</a></code> | <code>*string</code> | The region of the peer VPC in AWS. |
-| <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#id AwsNetworkPeering#id}. |
+| <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#id AwsNetworkPeering#id}. |
 | <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the network peering is located. |
 | <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts">AwsNetworkPeeringTimeouts</a></code> | timeouts block. |
 
@@ -1066,7 +1066,7 @@ HvnId *string
 
 The ID of the HashiCorp Virtual Network (HVN).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#hvn_id AwsNetworkPeering#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#hvn_id AwsNetworkPeering#hvn_id}
 
 ---
 
@@ -1080,7 +1080,7 @@ PeerAccountId *string
 
 The account ID of the peer VPC in AWS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#peer_account_id AwsNetworkPeering#peer_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#peer_account_id AwsNetworkPeering#peer_account_id}
 
 ---
 
@@ -1094,7 +1094,7 @@ PeeringId *string
 
 The ID of the network peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#peering_id AwsNetworkPeering#peering_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#peering_id AwsNetworkPeering#peering_id}
 
 ---
 
@@ -1108,7 +1108,7 @@ PeerVpcId *string
 
 The ID of the peer VPC in AWS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#peer_vpc_id AwsNetworkPeering#peer_vpc_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#peer_vpc_id AwsNetworkPeering#peer_vpc_id}
 
 ---
 
@@ -1122,7 +1122,7 @@ PeerVpcRegion *string
 
 The region of the peer VPC in AWS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#peer_vpc_region AwsNetworkPeering#peer_vpc_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#peer_vpc_region AwsNetworkPeering#peer_vpc_region}
 
 ---
 
@@ -1134,7 +1134,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#id AwsNetworkPeering#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#id AwsNetworkPeering#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1155,7 +1155,7 @@ Always matches the HVN's project.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#project_id AwsNetworkPeering#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#project_id AwsNetworkPeering#project_id}
 
 ---
 
@@ -1169,7 +1169,7 @@ Timeouts AwsNetworkPeeringTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#timeouts AwsNetworkPeering#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#timeouts AwsNetworkPeering#timeouts}
 
 ---
 
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 &awsnetworkpeering.AwsNetworkPeeringTimeouts {
 	Create: *string,
@@ -1191,9 +1191,9 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#create AwsNetworkPeering#create}. |
-| <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#default AwsNetworkPeering#default}. |
-| <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#delete AwsNetworkPeering#delete}. |
+| <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#create AwsNetworkPeering#create}. |
+| <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#default AwsNetworkPeering#default}. |
+| <code><a href="#@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#delete AwsNetworkPeering#delete}. |
 
 ---
 
@@ -1205,7 +1205,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#create AwsNetworkPeering#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#create AwsNetworkPeering#create}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#default AwsNetworkPeering#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#default AwsNetworkPeering#default}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/aws_network_peering#delete AwsNetworkPeering#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/aws_network_peering#delete AwsNetworkPeering#delete}.
 
 ---
 
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.awsNetworkPeering.AwsNetworkPeeringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/awsnetworkpeering"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/awsnetworkpeering"
 
 awsnetworkpeering.NewAwsNetworkPeeringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AwsNetworkPeeringTimeoutsOutputReference
 ```

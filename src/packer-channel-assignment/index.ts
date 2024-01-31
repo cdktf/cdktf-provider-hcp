@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment
+// https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,73 +8,67 @@ import * as cdktf from 'cdktf';
 
 export interface PackerChannelAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The slug of the HCP Packer Registry bucket where the channel is located.
+  * The slug of the HCP Packer bucket where the channel is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#bucket_name PackerChannelAssignment#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#bucket_name PackerChannelAssignment#bucket_name}
   */
   readonly bucketName: string;
   /**
   * The name of the HCP Packer channel being managed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#channel_name PackerChannelAssignment#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#channel_name PackerChannelAssignment#channel_name}
   */
   readonly channelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The fingerprint of the iteration assigned to the channel.
+  * The fingerprint of the version assigned to the channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#iteration_fingerprint PackerChannelAssignment#iteration_fingerprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#iteration_fingerprint PackerChannelAssignment#iteration_fingerprint}
   */
   readonly iterationFingerprint?: string;
-  /**
-  * The ID of the iteration assigned to the channel.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#iteration_id PackerChannelAssignment#iteration_id}
-  */
-  readonly iterationId?: string;
-  /**
-  * The incremental version of the iteration assigned to the channel.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#iteration_version PackerChannelAssignment#iteration_version}
-  */
-  readonly iterationVersion?: number;
   /**
   * 
   * The ID of the HCP project where the channel is located. 
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#project_id PackerChannelAssignment#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#project_id PackerChannelAssignment#project_id}
   */
   readonly projectId?: string;
   /**
+  * The fingerprint of the version assigned to the channel.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#version_fingerprint PackerChannelAssignment#version_fingerprint}
+  */
+  readonly versionFingerprint?: string;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#timeouts PackerChannelAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#timeouts PackerChannelAssignment#timeouts}
   */
   readonly timeouts?: PackerChannelAssignmentTimeouts;
 }
 export interface PackerChannelAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#create PackerChannelAssignment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#create PackerChannelAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#default PackerChannelAssignment#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#default PackerChannelAssignment#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#delete PackerChannelAssignment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#delete PackerChannelAssignment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#update PackerChannelAssignment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#update PackerChannelAssignment#update}
   */
   readonly update?: string;
 }
@@ -260,7 +249,7 @@ export class PackerChannelAssignmentTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}
 */
 export class PackerChannelAssignment extends cdktf.TerraformResource {
 
@@ -276,7 +265,7 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PackerChannelAssignment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PackerChannelAssignment to import
-  * @param importFromId The id of the existing PackerChannelAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PackerChannelAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PackerChannelAssignment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -288,7 +277,7 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -299,7 +288,7 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_packer_channel_assignment',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.81.0',
+        providerVersion: '0.82.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -314,9 +303,8 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
     this._channelName = config.channelName;
     this._id = config.id;
     this._iterationFingerprint = config.iterationFingerprint;
-    this._iterationId = config.iterationId;
-    this._iterationVersion = config.iterationVersion;
     this._projectId = config.projectId;
+    this._versionFingerprint = config.versionFingerprint;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -382,38 +370,6 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
     return this._iterationFingerprint;
   }
 
-  // iteration_id - computed: true, optional: true, required: false
-  private _iterationId?: string; 
-  public get iterationId() {
-    return this.getStringAttribute('iteration_id');
-  }
-  public set iterationId(value: string) {
-    this._iterationId = value;
-  }
-  public resetIterationId() {
-    this._iterationId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get iterationIdInput() {
-    return this._iterationId;
-  }
-
-  // iteration_version - computed: true, optional: true, required: false
-  private _iterationVersion?: number; 
-  public get iterationVersion() {
-    return this.getNumberAttribute('iteration_version');
-  }
-  public set iterationVersion(value: number) {
-    this._iterationVersion = value;
-  }
-  public resetIterationVersion() {
-    this._iterationVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get iterationVersionInput() {
-    return this._iterationVersion;
-  }
-
   // organization_id - computed: true, optional: false, required: false
   public get organizationId() {
     return this.getStringAttribute('organization_id');
@@ -433,6 +389,22 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
     return this._projectId;
+  }
+
+  // version_fingerprint - computed: true, optional: true, required: false
+  private _versionFingerprint?: string; 
+  public get versionFingerprint() {
+    return this.getStringAttribute('version_fingerprint');
+  }
+  public set versionFingerprint(value: string) {
+    this._versionFingerprint = value;
+  }
+  public resetVersionFingerprint() {
+    this._versionFingerprint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionFingerprintInput() {
+    return this._versionFingerprint;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -461,9 +433,8 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
       channel_name: cdktf.stringToTerraform(this._channelName),
       id: cdktf.stringToTerraform(this._id),
       iteration_fingerprint: cdktf.stringToTerraform(this._iterationFingerprint),
-      iteration_id: cdktf.stringToTerraform(this._iterationId),
-      iteration_version: cdktf.numberToTerraform(this._iterationVersion),
       project_id: cdktf.stringToTerraform(this._projectId),
+      version_fingerprint: cdktf.stringToTerraform(this._versionFingerprint),
       timeouts: packerChannelAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -494,20 +465,14 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      iteration_id: {
-        value: cdktf.stringToHclTerraform(this._iterationId),
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      iteration_version: {
-        value: cdktf.numberToHclTerraform(this._iterationVersion),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
-      },
-      project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+      version_fingerprint: {
+        value: cdktf.stringToHclTerraform(this._versionFingerprint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
