@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster
+// https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enables automatic HVN to HVN peering when creating a secondary cluster in a federation. The alternative to using the auto-accept feature is to create an [`hcp_hvn_peering_connection`](hvn_peering_connection.md) resource that explicitly defines the HVN resources that are allowed to communicate with each other.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#auto_hvn_to_hvn_peering ConsulCluster#auto_hvn_to_hvn_peering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#auto_hvn_to_hvn_peering ConsulCluster#auto_hvn_to_hvn_peering}
   */
   readonly autoHvnToHvnPeering?: boolean | cdktf.IResolvable;
   /**
   * The ID of the HCP Consul cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#cluster_id ConsulCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#cluster_id ConsulCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
   * Denotes the Consul connect feature should be enabled for this cluster.  Default to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#connect_enabled ConsulCluster#connect_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#connect_enabled ConsulCluster#connect_enabled}
   */
   readonly connectEnabled?: boolean | cdktf.IResolvable;
   /**
   * The Consul data center name of the cluster. If not specified, it is defaulted to the value of `cluster_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#datacenter ConsulCluster#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#datacenter ConsulCluster#datacenter}
   */
   readonly datacenter?: string;
   /**
   * The ID of the HVN this HCP Consul cluster is associated to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#hvn_id ConsulCluster#hvn_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#hvn_id ConsulCluster#hvn_id}
   */
   readonly hvnId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#id ConsulCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#id ConsulCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,13 +52,13 @@ export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The minimum Consul patch version of the cluster. Allows only the rightmost version component to increment (E.g: `1.13.0` will allow installation of `1.13.2` and `1.13.3` etc., but not `1.14.0`). If not specified, it is defaulted to the version that is currently recommended by HCP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#min_consul_version ConsulCluster#min_consul_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#min_consul_version ConsulCluster#min_consul_version}
   */
   readonly minConsulVersion?: string;
   /**
   * The `self_link` of the HCP Consul cluster which is the primary in the federation setup with this HCP Consul cluster. If not specified, it is a standalone cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#primary_link ConsulCluster#primary_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#primary_link ConsulCluster#primary_link}
   */
   readonly primaryLink?: string;
   /**
@@ -67,37 +67,37 @@ export interface ConsulClusterConfig extends cdktf.TerraformMetaArguments {
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#project_id ConsulCluster#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#project_id ConsulCluster#project_id}
   */
   readonly projectId?: string;
   /**
   * Denotes that the cluster has a public endpoint for the Consul UI. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#public_endpoint ConsulCluster#public_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#public_endpoint ConsulCluster#public_endpoint}
   */
   readonly publicEndpoint?: boolean | cdktf.IResolvable;
   /**
   * The t-shirt size representation of each server VM that this Consul cluster is provisioned with. Valid option for development tier - `x_small`. Valid options for other tiers - `small`, `medium`, `large`. For more details - https://cloud.hashicorp.com/pricing/consul. Upgrading the size of a cluster after creation is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#size ConsulCluster#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#size ConsulCluster#size}
   */
   readonly size?: string;
   /**
   * The tier that the HCP Consul cluster will be provisioned as.  Only `development`, `standard`, `plus`, and `premium` are available at this time. See [pricing information](https://www.hashicorp.com/products/consul/pricing).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#tier ConsulCluster#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#tier ConsulCluster#tier}
   */
   readonly tier: string;
   /**
   * ip_allowlist block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#ip_allowlist ConsulCluster#ip_allowlist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#ip_allowlist ConsulCluster#ip_allowlist}
   */
   readonly ipAllowlist?: ConsulClusterIpAllowlistStruct[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#timeouts ConsulCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#timeouts ConsulCluster#timeouts}
   */
   readonly timeouts?: ConsulClusterTimeouts;
 }
@@ -105,13 +105,13 @@ export interface ConsulClusterIpAllowlistStruct {
   /**
   * IP address range in CIDR notation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#address ConsulCluster#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#address ConsulCluster#address}
   */
   readonly address: string;
   /**
   * Description to help identify source (maximum 255 chars).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#description ConsulCluster#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#description ConsulCluster#description}
   */
   readonly description?: string;
 }
@@ -253,19 +253,19 @@ export class ConsulClusterIpAllowlistStructList extends cdktf.ComplexList {
 }
 export interface ConsulClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#create ConsulCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#create ConsulCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#default ConsulCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#default ConsulCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#delete ConsulCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#delete ConsulCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#update ConsulCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#update ConsulCluster#update}
   */
   readonly update?: string;
 }
@@ -446,7 +446,7 @@ export class ConsulClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster hcp_consul_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster hcp_consul_cluster}
 */
 export class ConsulCluster extends cdktf.TerraformResource {
 
@@ -462,7 +462,7 @@ export class ConsulCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConsulCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConsulCluster to import
-  * @param importFromId The id of the existing ConsulCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConsulCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConsulCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -474,7 +474,7 @@ export class ConsulCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/consul_cluster hcp_consul_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/consul_cluster hcp_consul_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -485,7 +485,7 @@ export class ConsulCluster extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_consul_cluster',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.81.0',
+        providerVersion: '0.82.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

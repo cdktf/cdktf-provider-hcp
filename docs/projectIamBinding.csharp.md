@@ -4,7 +4,7 @@
 
 ### ProjectIamBinding <a name="ProjectIamBinding" id="@cdktf/provider-hcp.projectIamBinding.ProjectIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/project_iam_binding hcp_project_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/project_iam_binding hcp_project_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.projectIamBinding.ProjectIamBinding.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ProjectIamBinding to impor
 
 The id of the existing ProjectIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/project_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/project_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ public string PrincipalId { get; set; }
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/project_iam_binding#principal_id ProjectIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/project_iam_binding#principal_id ProjectIamBinding#principal_id}
 
 ---
 
@@ -867,7 +867,7 @@ public string Role { get; set; }
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/project_iam_binding#role ProjectIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/project_iam_binding#role ProjectIamBinding#role}
 
 ---
 
@@ -883,7 +883,7 @@ The ID of the HCP project to apply the IAM Policy to.
 
 If unspecified, the project configured on the provider is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/project_iam_binding#project_id ProjectIamBinding#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/project_iam_binding#project_id ProjectIamBinding#project_id}
 
 ---
 

@@ -16,6 +16,7 @@ Object.defineProperty(exports, 'hvnPeeringConnection', { get: function () { retu
 Object.defineProperty(exports, 'hvnRoute', { get: function () { return require('./hvn-route'); } });
 Object.defineProperty(exports, 'iamWorkloadIdentityProvider', { get: function () { return require('./iam-workload-identity-provider'); } });
 Object.defineProperty(exports, 'logStreamingDestination', { get: function () { return require('./log-streaming-destination'); } });
+Object.defineProperty(exports, 'notificationsWebhook', { get: function () { return require('./notifications-webhook'); } });
 Object.defineProperty(exports, 'organizationIamBinding', { get: function () { return require('./organization-iam-binding'); } });
 Object.defineProperty(exports, 'organizationIamPolicy', { get: function () { return require('./organization-iam-policy'); } });
 Object.defineProperty(exports, 'packerChannel', { get: function () { return require('./packer-channel'); } });
@@ -44,10 +45,12 @@ Object.defineProperty(exports, 'dataHcpHvnPeeringConnection', { get: function ()
 Object.defineProperty(exports, 'dataHcpHvnRoute', { get: function () { return require('./data-hcp-hvn-route'); } });
 Object.defineProperty(exports, 'dataHcpIamPolicy', { get: function () { return require('./data-hcp-iam-policy'); } });
 Object.defineProperty(exports, 'dataHcpOrganization', { get: function () { return require('./data-hcp-organization'); } });
+Object.defineProperty(exports, 'dataHcpPackerArtifact', { get: function () { return require('./data-hcp-packer-artifact'); } });
 Object.defineProperty(exports, 'dataHcpPackerBucketNames', { get: function () { return require('./data-hcp-packer-bucket-names'); } });
 Object.defineProperty(exports, 'dataHcpPackerImage', { get: function () { return require('./data-hcp-packer-image'); } });
 Object.defineProperty(exports, 'dataHcpPackerIteration', { get: function () { return require('./data-hcp-packer-iteration'); } });
 Object.defineProperty(exports, 'dataHcpPackerRunTask', { get: function () { return require('./data-hcp-packer-run-task'); } });
+Object.defineProperty(exports, 'dataHcpPackerVersion', { get: function () { return require('./data-hcp-packer-version'); } });
 Object.defineProperty(exports, 'dataHcpProject', { get: function () { return require('./data-hcp-project'); } });
 Object.defineProperty(exports, 'dataHcpServicePrincipal', { get: function () { return require('./data-hcp-service-principal'); } });
 Object.defineProperty(exports, 'dataHcpVaultCluster', { get: function () { return require('./data-hcp-vault-cluster'); } });
