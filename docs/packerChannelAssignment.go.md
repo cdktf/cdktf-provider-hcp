@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerchannelassignment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerchannelassignment"
 
 packerchannelassignment.NewPackerChannelAssignment(scope Construct, id *string, config PackerChannelAssignmentConfig) PackerChannelAssignment
 ```
@@ -426,7 +426,7 @@ func ResetVersionFingerprint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerchannelassignment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerchannelassignment"
 
 packerchannelassignment.PackerChannelAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerchannelassignment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerchannelassignment"
 
 packerchannelassignment.PackerChannelAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ packerchannelassignment.PackerChannelAssignment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerchannelassignment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerchannelassignment"
 
 packerchannelassignment.PackerChannelAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ packerchannelassignment.PackerChannelAssignment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerchannelassignment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerchannelassignment"
 
 packerchannelassignment.PackerChannelAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -880,7 +880,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerchannelassignment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerchannelassignment"
 
 &packerchannelassignment.PackerChannelAssignmentConfig {
 	Connection: interface{},
@@ -895,7 +895,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerchannelassignment"
 	Id: *string,
 	IterationFingerprint: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.packerChannelAssignment.PackerChannelAssignmentTimeouts,
 	VersionFingerprint: *string,
 }
 ```
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerchannelassignment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerchannelassignment"
 
 &packerchannelassignment.PackerChannelAssignmentTimeouts {
 	Create: *string,
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerchannelassignment"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerchannelassignment"
 
 packerchannelassignment.NewPackerChannelAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PackerChannelAssignmentTimeoutsOutputReference
 ```
