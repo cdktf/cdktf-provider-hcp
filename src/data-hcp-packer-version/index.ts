@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/data-sources/packer_version
+// https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataHcpPackerVersionConfig extends cdktf.TerraformMetaArguments
   /**
   * The name of the HCP Packer Bucket where the Version is located
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/data-sources/packer_version#bucket_name DataHcpPackerVersion#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version#bucket_name DataHcpPackerVersion#bucket_name}
   */
   readonly bucketName: string;
   /**
@@ -23,19 +23,19 @@ export interface DataHcpPackerVersionConfig extends cdktf.TerraformMetaArguments
   * The name of the HCP Packer Channel the Version is assigned to.
   * The version currently assigned to the Channel will be fetched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/data-sources/packer_version#channel_name DataHcpPackerVersion#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version#channel_name DataHcpPackerVersion#channel_name}
   */
   readonly channelName: string;
   /**
   * The ID of the HCP Organization where the Version is located
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/data-sources/packer_version#project_id DataHcpPackerVersion#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version#project_id DataHcpPackerVersion#project_id}
   */
   readonly projectId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/data-sources/packer_version hcp_packer_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version hcp_packer_version}
 */
 export class DataHcpPackerVersion extends cdktf.TerraformDataSource {
 
@@ -51,7 +51,7 @@ export class DataHcpPackerVersion extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpPackerVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpPackerVersion to import
-  * @param importFromId The id of the existing DataHcpPackerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/data-sources/packer_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpPackerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpPackerVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -63,7 +63,7 @@ export class DataHcpPackerVersion extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/data-sources/packer_version hcp_packer_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version hcp_packer_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +74,7 @@ export class DataHcpPackerVersion extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_packer_version',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.82.0',
+        providerVersion: '0.83.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

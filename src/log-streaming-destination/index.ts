@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination
+// https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,223 @@ import * as cdktf from 'cdktf';
 
 export interface LogStreamingDestinationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#cloudwatch LogStreamingDestination#cloudwatch}
+  */
+  readonly cloudwatch?: LogStreamingDestinationCloudwatch;
+  /**
   * The HCP Log Streaming Destination’s name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination#name LogStreamingDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#name LogStreamingDestination#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination#splunk_cloud LogStreamingDestination#splunk_cloud}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#splunk_cloud LogStreamingDestination#splunk_cloud}
   */
-  readonly splunkCloud: LogStreamingDestinationSplunkCloud;
+  readonly splunkCloud?: LogStreamingDestinationSplunkCloud;
+}
+export interface LogStreamingDestinationCloudwatch {
+  /**
+  * The external_id to provide when assuming the aws IAM role.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#external_id LogStreamingDestination#external_id}
+  */
+  readonly externalId: string;
+  /**
+  * The log_group_name of the CloudWatch destination.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#log_group_name LogStreamingDestination#log_group_name}
+  */
+  readonly logGroupName?: string;
+  /**
+  * The region the CloudWatch destination is set up to stream to.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#region LogStreamingDestination#region}
+  */
+  readonly region: string;
+  /**
+  * The role_arn that will be assumed to stream logs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#role_arn LogStreamingDestination#role_arn}
+  */
+  readonly roleArn: string;
+}
+
+export function logStreamingDestinationCloudwatchToTerraform(struct?: LogStreamingDestinationCloudwatch | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    external_id: cdktf.stringToTerraform(struct!.externalId),
+    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
+    region: cdktf.stringToTerraform(struct!.region),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
+
+export function logStreamingDestinationCloudwatchToHclTerraform(struct?: LogStreamingDestinationCloudwatch | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    external_id: {
+      value: cdktf.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class LogStreamingDestinationCloudwatchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): LogStreamingDestinationCloudwatch | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._externalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalId = this._externalId;
+    }
+    if (this._logGroupName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logGroupName = this._logGroupName;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogStreamingDestinationCloudwatch | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._externalId = undefined;
+      this._logGroupName = undefined;
+      this._region = undefined;
+      this._roleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._externalId = value.externalId;
+      this._logGroupName = value.logGroupName;
+      this._region = value.region;
+      this._roleArn = value.roleArn;
+    }
+  }
+
+  // external_id - computed: false, optional: false, required: true
+  private _externalId?: string; 
+  public get externalId() {
+    return this.getStringAttribute('external_id');
+  }
+  public set externalId(value: string) {
+    this._externalId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdInput() {
+    return this._externalId;
+  }
+
+  // log_group_name - computed: true, optional: true, required: false
+  private _logGroupName?: string; 
+  public get logGroupName() {
+    return this.getStringAttribute('log_group_name');
+  }
+  public set logGroupName(value: string) {
+    this._logGroupName = value;
+  }
+  public resetLogGroupName() {
+    this._logGroupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logGroupNameInput() {
+    return this._logGroupName;
+  }
+
+  // region - computed: false, optional: false, required: true
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
 }
 export interface LogStreamingDestinationSplunkCloud {
   /**
   * The Splunk Cloud endpoint to send logs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination#endpoint LogStreamingDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#endpoint LogStreamingDestination#endpoint}
   */
   readonly endpoint: string;
   /**
   * The authentication token that will be used by the platform to access Splunk Cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination#token LogStreamingDestination#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#token LogStreamingDestination#token}
   */
   readonly token: string;
 }
@@ -150,7 +346,7 @@ export class LogStreamingDestinationSplunkCloudOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}
 */
 export class LogStreamingDestination extends cdktf.TerraformResource {
 
@@ -166,7 +362,7 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LogStreamingDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogStreamingDestination to import
-  * @param importFromId The id of the existing LogStreamingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogStreamingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogStreamingDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -178,7 +374,7 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -189,7 +385,7 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_log_streaming_destination',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.82.0',
+        providerVersion: '0.83.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -200,6 +396,7 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._cloudwatch.internalValue = config.cloudwatch;
     this._name = config.name;
     this._splunkCloud.internalValue = config.splunkCloud;
   }
@@ -207,6 +404,22 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // cloudwatch - computed: false, optional: true, required: false
+  private _cloudwatch = new LogStreamingDestinationCloudwatchOutputReference(this, "cloudwatch");
+  public get cloudwatch() {
+    return this._cloudwatch;
+  }
+  public putCloudwatch(value: LogStreamingDestinationCloudwatch) {
+    this._cloudwatch.internalValue = value;
+  }
+  public resetCloudwatch() {
+    this._cloudwatch.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchInput() {
+    return this._cloudwatch.internalValue;
+  }
 
   // name - computed: false, optional: false, required: true
   private _name?: string; 
@@ -221,13 +434,16 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // splunk_cloud - computed: false, optional: false, required: true
+  // splunk_cloud - computed: false, optional: true, required: false
   private _splunkCloud = new LogStreamingDestinationSplunkCloudOutputReference(this, "splunk_cloud");
   public get splunkCloud() {
     return this._splunkCloud;
   }
   public putSplunkCloud(value: LogStreamingDestinationSplunkCloud) {
     this._splunkCloud.internalValue = value;
+  }
+  public resetSplunkCloud() {
+    this._splunkCloud.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get splunkCloudInput() {
@@ -245,6 +461,7 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      cloudwatch: logStreamingDestinationCloudwatchToTerraform(this._cloudwatch.internalValue),
       name: cdktf.stringToTerraform(this._name),
       splunk_cloud: logStreamingDestinationSplunkCloudToTerraform(this._splunkCloud.internalValue),
     };
@@ -252,6 +469,12 @@ export class LogStreamingDestination extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      cloudwatch: {
+        value: logStreamingDestinationCloudwatchToHclTerraform(this._cloudwatch.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LogStreamingDestinationCloudwatch",
+      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
