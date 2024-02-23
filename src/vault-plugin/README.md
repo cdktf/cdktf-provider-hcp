@@ -1,3 +1,3 @@
 # `hcp_vault_plugin`
 
-Refer to the Terraform Registry for docs: [`hcp_vault_plugin`](https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/vault_plugin).
+Refer to the Terraform Registry for docs: [`hcp_vault_plugin`](https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/vault_plugin).

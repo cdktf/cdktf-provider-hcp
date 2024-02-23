@@ -4,12 +4,12 @@
 
 ### VaultSecretsSecret <a name="VaultSecretsSecret" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssecret"
 
 vaultsecretssecret.NewVaultSecretsSecret(scope Construct, id *string, config VaultSecretsSecretConfig) VaultSecretsSecret
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssecret"
 
 vaultsecretssecret.VaultSecretsSecret_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssecret"
 
 vaultsecretssecret.VaultSecretsSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ vaultsecretssecret.VaultSecretsSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssecret"
 
 vaultsecretssecret.VaultSecretsSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ vaultsecretssecret.VaultSecretsSecret_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssecret"
 
 vaultsecretssecret.VaultSecretsSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the VaultSecretsSecret to impo
 
 The id of the existing VaultSecretsSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/vault_secrets_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/vault_secrets_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretssecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssecret"
 
 &vaultsecretssecret.VaultSecretsSecretConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ AppName *string
 
 The name of the application the secret can be found in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/vault_secrets_secret#app_name VaultSecretsSecret#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/vault_secrets_secret#app_name VaultSecretsSecret#app_name}
 
 ---
 
@@ -893,7 +893,7 @@ SecretName *string
 
 The name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/vault_secrets_secret#secret_name VaultSecretsSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/vault_secrets_secret#secret_name VaultSecretsSecret#secret_name}
 
 ---
 
@@ -907,7 +907,7 @@ SecretValue *string
 
 The value of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/vault_secrets_secret#secret_value VaultSecretsSecret#secret_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/vault_secrets_secret#secret_value VaultSecretsSecret#secret_value}
 
 ---
 
