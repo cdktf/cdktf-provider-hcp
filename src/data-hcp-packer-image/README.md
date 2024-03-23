@@ -1,3 +1,0 @@
-# `data_hcp_packer_image`
-
-Refer to the Terraform Registry for docs: [`data_hcp_packer_image`](https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_image).

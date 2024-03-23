@@ -4,7 +4,7 @@
 
 ### PackerChannelAssignment <a name="PackerChannelAssignment" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer"></a>
 
@@ -24,7 +24,6 @@ packerChannelAssignment.PackerChannelAssignment(
   bucket_name: str,
   channel_name: str,
   id: str = None,
-  iteration_fingerprint: str = None,
   project_id: str = None,
   timeouts: PackerChannelAssignmentTimeouts = None,
   version_fingerprint: str = None
@@ -44,8 +43,7 @@ packerChannelAssignment.PackerChannelAssignment(
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer.parameter.bucketName">bucket_name</a></code> | <code>str</code> | The slug of the HCP Packer bucket where the channel is located. |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer.parameter.channelName">channel_name</a></code> | <code>str</code> | The name of the HCP Packer channel being managed. |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}. |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer.parameter.iterationFingerprint">iteration_fingerprint</a></code> | <code>str</code> | The fingerprint of the version assigned to the channel. |
+| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}. |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the channel is located. |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts">PackerChannelAssignmentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer.parameter.versionFingerprint">version_fingerprint</a></code> | <code>str</code> | The fingerprint of the version assigned to the channel. |
@@ -118,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The slug of the HCP Packer bucket where the channel is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#bucket_name PackerChannelAssignment#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#bucket_name PackerChannelAssignment#bucket_name}
 
 ---
 
@@ -128,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the HCP Packer channel being managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#channel_name PackerChannelAssignment#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#channel_name PackerChannelAssignment#channel_name}
 
 ---
 
@@ -136,20 +134,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `iteration_fingerprint`<sup>Optional</sup> <a name="iteration_fingerprint" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.Initializer.parameter.iterationFingerprint"></a>
-
-- *Type:* str
-
-The fingerprint of the version assigned to the channel.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#iteration_fingerprint PackerChannelAssignment#iteration_fingerprint}
 
 ---
 
@@ -162,7 +150,7 @@ The ID of the HCP project where the channel is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#project_id PackerChannelAssignment#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#project_id PackerChannelAssignment#project_id}
 
 ---
 
@@ -172,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#timeouts PackerChannelAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#timeouts PackerChannelAssignment#timeouts}
 
 ---
 
@@ -182,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The fingerprint of the version assigned to the channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#version_fingerprint PackerChannelAssignment#version_fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#version_fingerprint PackerChannelAssignment#version_fingerprint}
 
 ---
 
@@ -215,7 +203,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.resetIterationFingerprint">reset_iteration_fingerprint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.resetProjectId">reset_project_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.resetVersionFingerprint">reset_version_fingerprint</a></code> | *No description.* |
@@ -562,7 +549,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#create PackerChannelAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#create PackerChannelAssignment#create}.
 
 ---
 
@@ -570,7 +557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#default PackerChannelAssignment#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#default PackerChannelAssignment#default}.
 
 ---
 
@@ -578,7 +565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#delete PackerChannelAssignment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#delete PackerChannelAssignment#delete}.
 
 ---
 
@@ -586,7 +573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#update PackerChannelAssignment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#update PackerChannelAssignment#update}.
 
 ---
 
@@ -594,12 +581,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_id() -> None
-```
-
-##### `reset_iteration_fingerprint` <a name="reset_iteration_fingerprint" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.resetIterationFingerprint"></a>
-
-```python
-def reset_iteration_fingerprint() -> None
 ```
 
 ##### `reset_project_id` <a name="reset_project_id" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.resetProjectId"></a>
@@ -734,7 +715,7 @@ The construct id used in the generated config for the PackerChannelAssignment to
 
 The id of the existing PackerChannelAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,14 +750,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.channelNameInput">channel_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.iterationFingerprintInput">iteration_fingerprint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts">PackerChannelAssignmentTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.versionFingerprintInput">version_fingerprint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.channelName">channel_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.iterationFingerprint">iteration_fingerprint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.versionFingerprint">version_fingerprint</a></code> | <code>str</code> | *No description.* |
 
@@ -974,16 +953,6 @@ id_input: str
 
 ---
 
-##### `iteration_fingerprint_input`<sup>Optional</sup> <a name="iteration_fingerprint_input" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.iterationFingerprintInput"></a>
-
-```python
-iteration_fingerprint_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `project_id_input`<sup>Optional</sup> <a name="project_id_input" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.projectIdInput"></a>
 
 ```python
@@ -1038,16 +1007,6 @@ channel_name: str
 
 ```python
 id: str
-```
-
-- *Type:* str
-
----
-
-##### `iteration_fingerprint`<sup>Required</sup> <a name="iteration_fingerprint" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment.property.iterationFingerprint"></a>
-
-```python
-iteration_fingerprint: str
 ```
 
 - *Type:* str
@@ -1112,7 +1071,6 @@ packerChannelAssignment.PackerChannelAssignmentConfig(
   bucket_name: str,
   channel_name: str,
   id: str = None,
-  iteration_fingerprint: str = None,
   project_id: str = None,
   timeouts: PackerChannelAssignmentTimeouts = None,
   version_fingerprint: str = None
@@ -1132,8 +1090,7 @@ packerChannelAssignment.PackerChannelAssignmentConfig(
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | The slug of the HCP Packer bucket where the channel is located. |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.property.channelName">channel_name</a></code> | <code>str</code> | The name of the HCP Packer channel being managed. |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}. |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.property.iterationFingerprint">iteration_fingerprint</a></code> | <code>str</code> | The fingerprint of the version assigned to the channel. |
+| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}. |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.property.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the channel is located. |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts">PackerChannelAssignmentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.property.versionFingerprint">version_fingerprint</a></code> | <code>str</code> | The fingerprint of the version assigned to the channel. |
@@ -1220,7 +1177,7 @@ bucket_name: str
 
 The slug of the HCP Packer bucket where the channel is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#bucket_name PackerChannelAssignment#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#bucket_name PackerChannelAssignment#bucket_name}
 
 ---
 
@@ -1234,7 +1191,7 @@ channel_name: str
 
 The name of the HCP Packer channel being managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#channel_name PackerChannelAssignment#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#channel_name PackerChannelAssignment#channel_name}
 
 ---
 
@@ -1246,24 +1203,10 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `iteration_fingerprint`<sup>Optional</sup> <a name="iteration_fingerprint" id="@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentConfig.property.iterationFingerprint"></a>
-
-```python
-iteration_fingerprint: str
-```
-
-- *Type:* str
-
-The fingerprint of the version assigned to the channel.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#iteration_fingerprint PackerChannelAssignment#iteration_fingerprint}
 
 ---
 
@@ -1280,7 +1223,7 @@ The ID of the HCP project where the channel is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#project_id PackerChannelAssignment#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#project_id PackerChannelAssignment#project_id}
 
 ---
 
@@ -1294,7 +1237,7 @@ timeouts: PackerChannelAssignmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#timeouts PackerChannelAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#timeouts PackerChannelAssignment#timeouts}
 
 ---
 
@@ -1308,7 +1251,7 @@ version_fingerprint: str
 
 The fingerprint of the version assigned to the channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#version_fingerprint PackerChannelAssignment#version_fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#version_fingerprint PackerChannelAssignment#version_fingerprint}
 
 ---
 
@@ -1331,10 +1274,10 @@ packerChannelAssignment.PackerChannelAssignmentTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#create PackerChannelAssignment#create}. |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#default PackerChannelAssignment#default}. |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#delete PackerChannelAssignment#delete}. |
-| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#update PackerChannelAssignment#update}. |
+| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#create PackerChannelAssignment#create}. |
+| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#default PackerChannelAssignment#default}. |
+| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#delete PackerChannelAssignment#delete}. |
+| <code><a href="#@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignmentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#update PackerChannelAssignment#update}. |
 
 ---
 
@@ -1346,7 +1289,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#create PackerChannelAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#create PackerChannelAssignment#create}.
 
 ---
 
@@ -1358,7 +1301,7 @@ default: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#default PackerChannelAssignment#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#default PackerChannelAssignment#default}.
 
 ---
 
@@ -1370,7 +1313,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#delete PackerChannelAssignment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#delete PackerChannelAssignment#delete}.
 
 ---
 
@@ -1382,7 +1325,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment#update PackerChannelAssignment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment#update PackerChannelAssignment#update}.
 
 ---
 
