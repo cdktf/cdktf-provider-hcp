@@ -4,12 +4,12 @@
 
 ### DataHcpPackerVersion <a name="DataHcpPackerVersion" id="@cdktf/provider-hcp.dataHcpPackerVersion.DataHcpPackerVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version hcp_packer_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/packer_version hcp_packer_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerVersion.DataHcpPackerVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerversion"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerversion"
 
 datahcppackerversion.NewDataHcpPackerVersion(scope Construct, id *string, config DataHcpPackerVersionConfig) DataHcpPackerVersion
 ```
@@ -283,7 +283,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpPackerVersion.DataHcpPackerVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerversion"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerversion"
 
 datahcppackerversion.DataHcpPackerVersion_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpPackerVersion.DataHcpPackerVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerversion"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerversion"
 
 datahcppackerversion.DataHcpPackerVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datahcppackerversion.DataHcpPackerVersion_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpPackerVersion.DataHcpPackerVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerversion"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerversion"
 
 datahcppackerversion.DataHcpPackerVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datahcppackerversion.DataHcpPackerVersion_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpPackerVersion.DataHcpPackerVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerversion"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerversion"
 
 datahcppackerversion.DataHcpPackerVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataHcpPackerVersion to im
 
 The id of the existing DataHcpPackerVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/packer_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpPackerVersion.DataHcpPackerVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerversion"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerversion"
 
 &datahcppackerversion.DataHcpPackerVersionConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ BucketName *string
 
 The name of the HCP Packer Bucket where the Version is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version#bucket_name DataHcpPackerVersion#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/packer_version#bucket_name DataHcpPackerVersion#bucket_name}
 
 ---
 
@@ -833,7 +833,7 @@ The name of the HCP Packer Channel the Version is assigned to.
 
 The version currently assigned to the Channel will be fetched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version#channel_name DataHcpPackerVersion#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/packer_version#channel_name DataHcpPackerVersion#channel_name}
 
 ---
 
@@ -847,7 +847,7 @@ ProjectId *string
 
 The ID of the HCP Organization where the Version is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/packer_version#project_id DataHcpPackerVersion#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/packer_version#project_id DataHcpPackerVersion#project_id}
 
 ---
 
