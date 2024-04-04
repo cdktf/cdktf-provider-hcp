@@ -35,6 +35,7 @@ export * as vaultPlugin from './vault-plugin';
 export * as vaultSecretsApp from './vault-secrets-app';
 export * as vaultSecretsSecret from './vault-secrets-secret';
 export * as waypointAddOnDefinition from './waypoint-add-on-definition';
+export * as waypointApplication from './waypoint-application';
 export * as waypointApplicationTemplate from './waypoint-application-template';
 export * as waypointTfcConfig from './waypoint-tfc-config';
 export * as dataHcpAwsNetworkPeering from './data-hcp-aws-network-peering';
@@ -63,6 +64,7 @@ export * as dataHcpVaultPlugin from './data-hcp-vault-plugin';
 export * as dataHcpVaultSecretsApp from './data-hcp-vault-secrets-app';
 export * as dataHcpVaultSecretsSecret from './data-hcp-vault-secrets-secret';
 export * as dataHcpWaypointAddOnDefinition from './data-hcp-waypoint-add-on-definition';
+export * as dataHcpWaypointApplication from './data-hcp-waypoint-application';
 export * as dataHcpWaypointApplicationTemplate from './data-hcp-waypoint-application-template';
 export * as provider from './provider';
 

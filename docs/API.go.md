@@ -37,6 +37,7 @@ The following submodules are available:
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.go.md)
 - [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.go.md)
 - [dataHcpWaypointAddOnDefinition](./dataHcpWaypointAddOnDefinition.go.md)
+- [dataHcpWaypointApplication](./dataHcpWaypointApplication.go.md)
 - [dataHcpWaypointApplicationTemplate](./dataHcpWaypointApplicationTemplate.go.md)
 - [group](./group.go.md)
 - [groupMembers](./groupMembers.go.md)
@@ -63,6 +64,7 @@ The following submodules are available:
 - [vaultSecretsApp](./vaultSecretsApp.go.md)
 - [vaultSecretsSecret](./vaultSecretsSecret.go.md)
 - [waypointAddOnDefinition](./waypointAddOnDefinition.go.md)
+- [waypointApplication](./waypointApplication.go.md)
 - [waypointApplicationTemplate](./waypointApplicationTemplate.go.md)
 - [waypointTfcConfig](./waypointTfcConfig.go.md)
 

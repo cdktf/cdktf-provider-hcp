@@ -37,6 +37,7 @@ The following submodules are available:
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.java.md)
 - [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.java.md)
 - [dataHcpWaypointAddOnDefinition](./dataHcpWaypointAddOnDefinition.java.md)
+- [dataHcpWaypointApplication](./dataHcpWaypointApplication.java.md)
 - [dataHcpWaypointApplicationTemplate](./dataHcpWaypointApplicationTemplate.java.md)
 - [group](./group.java.md)
 - [groupMembers](./groupMembers.java.md)
@@ -63,6 +64,7 @@ The following submodules are available:
 - [vaultSecretsApp](./vaultSecretsApp.java.md)
 - [vaultSecretsSecret](./vaultSecretsSecret.java.md)
 - [waypointAddOnDefinition](./waypointAddOnDefinition.java.md)
+- [waypointApplication](./waypointApplication.java.md)
 - [waypointApplicationTemplate](./waypointApplicationTemplate.java.md)
 - [waypointTfcConfig](./waypointTfcConfig.java.md)
 

@@ -4,7 +4,7 @@
 
 ### DataHcpIamPolicy <a name="DataHcpIamPolicy" id="@cdktf/provider-hcp.dataHcpIamPolicy.DataHcpIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/iam_policy hcp_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/iam_policy hcp_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpIamPolicy.DataHcpIamPolicy.Initializer"></a>
 
@@ -378,7 +378,7 @@ The construct id used in the generated config for the DataHcpIamPolicy to import
 
 The id of the existing DataHcpIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ Principals *[]*string
 
 The set of principals to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/iam_policy#principals DataHcpIamPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/iam_policy#principals DataHcpIamPolicy#principals}
 
 ---
 
@@ -630,7 +630,7 @@ Role *string
 
 The role name to bind to the given principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/iam_policy#role DataHcpIamPolicy#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/iam_policy#role DataHcpIamPolicy#role}
 
 ---
 
@@ -748,7 +748,7 @@ Bindings interface{}
 
 A binding associates a set of principals to a role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/iam_policy#bindings DataHcpIamPolicy#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/iam_policy#bindings DataHcpIamPolicy#bindings}
 
 ---
 

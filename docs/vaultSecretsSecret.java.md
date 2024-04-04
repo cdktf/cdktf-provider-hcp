@@ -4,7 +4,7 @@
 
 ### VaultSecretsSecret <a name="VaultSecretsSecret" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsSecret.VaultSecretsSecret.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the application the secret can be found in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/vault_secrets_secret#app_name VaultSecretsSecret#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_secrets_secret#app_name VaultSecretsSecret#app_name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/vault_secrets_secret#secret_name VaultSecretsSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_secrets_secret#secret_name VaultSecretsSecret#secret_name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The value of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/vault_secrets_secret#secret_value VaultSecretsSecret#secret_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_secrets_secret#secret_value VaultSecretsSecret#secret_value}
 
 ---
 
@@ -559,7 +559,7 @@ The construct id used in the generated config for the VaultSecretsSecret to impo
 
 The id of the existing VaultSecretsSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/vault_secrets_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_secrets_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,7 +975,7 @@ public java.lang.String getAppName();
 
 The name of the application the secret can be found in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/vault_secrets_secret#app_name VaultSecretsSecret#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_secrets_secret#app_name VaultSecretsSecret#app_name}
 
 ---
 
@@ -989,7 +989,7 @@ public java.lang.String getSecretName();
 
 The name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/vault_secrets_secret#secret_name VaultSecretsSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_secrets_secret#secret_name VaultSecretsSecret#secret_name}
 
 ---
 
@@ -1003,7 +1003,7 @@ public java.lang.String getSecretValue();
 
 The value of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/vault_secrets_secret#secret_value VaultSecretsSecret#secret_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_secrets_secret#secret_value VaultSecretsSecret#secret_value}
 
 ---
 

@@ -37,6 +37,7 @@ The following submodules are available:
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.csharp.md)
 - [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.csharp.md)
 - [dataHcpWaypointAddOnDefinition](./dataHcpWaypointAddOnDefinition.csharp.md)
+- [dataHcpWaypointApplication](./dataHcpWaypointApplication.csharp.md)
 - [dataHcpWaypointApplicationTemplate](./dataHcpWaypointApplicationTemplate.csharp.md)
 - [group](./group.csharp.md)
 - [groupMembers](./groupMembers.csharp.md)
@@ -63,6 +64,7 @@ The following submodules are available:
 - [vaultSecretsApp](./vaultSecretsApp.csharp.md)
 - [vaultSecretsSecret](./vaultSecretsSecret.csharp.md)
 - [waypointAddOnDefinition](./waypointAddOnDefinition.csharp.md)
+- [waypointApplication](./waypointApplication.csharp.md)
 - [waypointApplicationTemplate](./waypointApplicationTemplate.csharp.md)
 - [waypointTfcConfig](./waypointTfcConfig.csharp.md)
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/consul_agent_kubernetes_secret
+// https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/consul_agent_kubernetes_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataHcpConsulAgentKubernetesSecretConfig extends cdktf.Terrafor
   /**
   * The ID of the HCP Consul cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/consul_agent_kubernetes_secret#cluster_id DataHcpConsulAgentKubernetesSecret#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/consul_agent_kubernetes_secret#cluster_id DataHcpConsulAgentKubernetesSecret#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/consul_agent_kubernetes_secret#id DataHcpConsulAgentKubernetesSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/consul_agent_kubernetes_secret#id DataHcpConsulAgentKubernetesSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,19 +31,19 @@ export interface DataHcpConsulAgentKubernetesSecretConfig extends cdktf.Terrafor
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/consul_agent_kubernetes_secret#project_id DataHcpConsulAgentKubernetesSecret#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/consul_agent_kubernetes_secret#project_id DataHcpConsulAgentKubernetesSecret#project_id}
   */
   readonly projectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/consul_agent_kubernetes_secret#timeouts DataHcpConsulAgentKubernetesSecret#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/consul_agent_kubernetes_secret#timeouts DataHcpConsulAgentKubernetesSecret#timeouts}
   */
   readonly timeouts?: DataHcpConsulAgentKubernetesSecretTimeouts;
 }
 export interface DataHcpConsulAgentKubernetesSecretTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/consul_agent_kubernetes_secret#default DataHcpConsulAgentKubernetesSecret#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/consul_agent_kubernetes_secret#default DataHcpConsulAgentKubernetesSecret#default}
   */
   readonly default?: string;
 }
@@ -137,7 +137,7 @@ export class DataHcpConsulAgentKubernetesSecretTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret}
 */
 export class DataHcpConsulAgentKubernetesSecret extends cdktf.TerraformDataSource {
 
@@ -153,7 +153,7 @@ export class DataHcpConsulAgentKubernetesSecret extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataHcpConsulAgentKubernetesSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpConsulAgentKubernetesSecret to import
-  * @param importFromId The id of the existing DataHcpConsulAgentKubernetesSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/consul_agent_kubernetes_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpConsulAgentKubernetesSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/consul_agent_kubernetes_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpConsulAgentKubernetesSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -165,7 +165,7 @@ export class DataHcpConsulAgentKubernetesSecret extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -176,7 +176,7 @@ export class DataHcpConsulAgentKubernetesSecret extends cdktf.TerraformDataSourc
       terraformResourceType: 'hcp_consul_agent_kubernetes_secret',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.84.1',
+        providerVersion: '0.85.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
