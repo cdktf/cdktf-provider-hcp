@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template
+// https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +10,49 @@ export interface WaypointApplicationTemplateConfig extends cdktf.TerraformMetaAr
   /**
   * A description of the template, along with when and why it should be used, up to 500 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#description WaypointApplicationTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#description WaypointApplicationTemplate#description}
   */
   readonly description?: string;
   /**
   * List of labels attached to this Application Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#labels WaypointApplicationTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#labels WaypointApplicationTemplate#labels}
   */
   readonly labels?: string[];
   /**
   * The name of the Application Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
   */
   readonly name: string;
   /**
   * The ID of the HCP project where the Waypoint Application Template is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#project_id WaypointApplicationTemplate#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#project_id WaypointApplicationTemplate#project_id}
   */
   readonly projectId?: string;
   /**
   * Instructions for using the template (markdown format supported
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#readme_markdown_template WaypointApplicationTemplate#readme_markdown_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#readme_markdown_template WaypointApplicationTemplate#readme_markdown_template}
   */
   readonly readmeMarkdownTemplate?: string;
   /**
   * A brief description of the template, up to 110 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#summary WaypointApplicationTemplate#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#summary WaypointApplicationTemplate#summary}
   */
   readonly summary: string;
   /**
   * Terraform Cloud Workspace details
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#terraform_cloud_workspace_details WaypointApplicationTemplate#terraform_cloud_workspace_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#terraform_cloud_workspace_details WaypointApplicationTemplate#terraform_cloud_workspace_details}
   */
   readonly terraformCloudWorkspaceDetails: WaypointApplicationTemplateTerraformCloudWorkspaceDetails;
   /**
   * Terraform Cloud No-Code Module details
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#terraform_no_code_module WaypointApplicationTemplate#terraform_no_code_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#terraform_no_code_module WaypointApplicationTemplate#terraform_no_code_module}
   */
   readonly terraformNoCodeModule: WaypointApplicationTemplateTerraformNoCodeModule;
 }
@@ -65,13 +60,13 @@ export interface WaypointApplicationTemplateTerraformCloudWorkspaceDetails {
   /**
   * Name of the Terraform Cloud Workspace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
   */
   readonly name: string;
   /**
-  * Tetraform Cloud Project ID
+  * Terraform Cloud Project ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#terraform_project_id WaypointApplicationTemplate#terraform_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#terraform_project_id WaypointApplicationTemplate#terraform_project_id}
   */
   readonly terraformProjectId: string;
 }
@@ -190,13 +185,13 @@ export interface WaypointApplicationTemplateTerraformNoCodeModule {
   /**
   * No-Code Module Source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#source WaypointApplicationTemplate#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#source WaypointApplicationTemplate#source}
   */
   readonly source: string;
   /**
   * No-Code Module Version
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#version WaypointApplicationTemplate#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#version WaypointApplicationTemplate#version}
   */
   readonly version: string;
 }
@@ -313,7 +308,7 @@ export class WaypointApplicationTemplateTerraformNoCodeModuleOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template hcp_waypoint_application_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template hcp_waypoint_application_template}
 */
 export class WaypointApplicationTemplate extends cdktf.TerraformResource {
 
@@ -329,7 +324,7 @@ export class WaypointApplicationTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaypointApplicationTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointApplicationTemplate to import
-  * @param importFromId The id of the existing WaypointApplicationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaypointApplicationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointApplicationTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -341,7 +336,7 @@ export class WaypointApplicationTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/waypoint_application_template hcp_waypoint_application_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_application_template hcp_waypoint_application_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -352,7 +347,7 @@ export class WaypointApplicationTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_waypoint_application_template',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.84.1',
+        providerVersion: '0.85.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

@@ -37,6 +37,7 @@ The following submodules are available:
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.python.md)
 - [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.python.md)
 - [dataHcpWaypointAddOnDefinition](./dataHcpWaypointAddOnDefinition.python.md)
+- [dataHcpWaypointApplication](./dataHcpWaypointApplication.python.md)
 - [dataHcpWaypointApplicationTemplate](./dataHcpWaypointApplicationTemplate.python.md)
 - [group](./group.python.md)
 - [groupMembers](./groupMembers.python.md)
@@ -63,6 +64,7 @@ The following submodules are available:
 - [vaultSecretsApp](./vaultSecretsApp.python.md)
 - [vaultSecretsSecret](./vaultSecretsSecret.python.md)
 - [waypointAddOnDefinition](./waypointAddOnDefinition.python.md)
+- [waypointApplication](./waypointApplication.python.md)
 - [waypointApplicationTemplate](./waypointApplicationTemplate.python.md)
 - [waypointTfcConfig](./waypointTfcConfig.python.md)
 

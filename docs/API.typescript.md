@@ -37,6 +37,7 @@ The following submodules are available:
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.typescript.md)
 - [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.typescript.md)
 - [dataHcpWaypointAddOnDefinition](./dataHcpWaypointAddOnDefinition.typescript.md)
+- [dataHcpWaypointApplication](./dataHcpWaypointApplication.typescript.md)
 - [dataHcpWaypointApplicationTemplate](./dataHcpWaypointApplicationTemplate.typescript.md)
 - [group](./group.typescript.md)
 - [groupMembers](./groupMembers.typescript.md)
@@ -63,6 +64,7 @@ The following submodules are available:
 - [vaultSecretsApp](./vaultSecretsApp.typescript.md)
 - [vaultSecretsSecret](./vaultSecretsSecret.typescript.md)
 - [waypointAddOnDefinition](./waypointAddOnDefinition.typescript.md)
+- [waypointApplication](./waypointApplication.typescript.md)
 - [waypointApplicationTemplate](./waypointApplicationTemplate.typescript.md)
 - [waypointTfcConfig](./waypointTfcConfig.typescript.md)
 
