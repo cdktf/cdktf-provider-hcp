@@ -4,12 +4,12 @@
 
 ### VaultPlugin <a name="VaultPlugin" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin hcp_vault_plugin}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin hcp_vault_plugin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
 
 vaultplugin.NewVaultPlugin(scope Construct, id *string, config VaultPluginConfig) VaultPlugin
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
 
 vaultplugin.VaultPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
 
 vaultplugin.VaultPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ vaultplugin.VaultPlugin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
 
 vaultplugin.VaultPlugin_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ vaultplugin.VaultPlugin_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
 
 vaultplugin.VaultPlugin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the VaultPlugin to import.
 
 The id of the existing VaultPlugin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultPlugin.VaultPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
 
 &vaultplugin.VaultPluginConfig {
 	Connection: interface{},
@@ -848,7 +848,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 	PluginType: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultPlugin.VaultPluginTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultPlugin.VaultPluginTimeouts,
 }
 ```
 
@@ -866,7 +866,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 | <code><a href="#@cdktf/provider-hcp.vaultPlugin.VaultPluginConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | The ID of the HCP Vault cluster. |
 | <code><a href="#@cdktf/provider-hcp.vaultPlugin.VaultPluginConfig.property.pluginName">PluginName</a></code> | <code>*string</code> | The name of the plugin - Valid options for plugin name - 'venafi-pki-backend'. |
 | <code><a href="#@cdktf/provider-hcp.vaultPlugin.VaultPluginConfig.property.pluginType">PluginType</a></code> | <code>*string</code> | The type of the plugin - Valid options for plugin type - 'SECRET', 'AUTH', 'DATABASE'. |
-| <code><a href="#@cdktf/provider-hcp.vaultPlugin.VaultPluginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin#id VaultPlugin#id}. |
+| <code><a href="#@cdktf/provider-hcp.vaultPlugin.VaultPluginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin#id VaultPlugin#id}. |
 | <code><a href="#@cdktf/provider-hcp.vaultPlugin.VaultPluginConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the HCP Vault cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.vaultPlugin.VaultPluginConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.vaultPlugin.VaultPluginTimeouts">VaultPluginTimeouts</a></code> | timeouts block. |
 
@@ -952,7 +952,7 @@ ClusterId *string
 
 The ID of the HCP Vault cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin#cluster_id VaultPlugin#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin#cluster_id VaultPlugin#cluster_id}
 
 ---
 
@@ -966,7 +966,7 @@ PluginName *string
 
 The name of the plugin - Valid options for plugin name - 'venafi-pki-backend'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin#plugin_name VaultPlugin#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin#plugin_name VaultPlugin#plugin_name}
 
 ---
 
@@ -980,7 +980,7 @@ PluginType *string
 
 The type of the plugin - Valid options for plugin type - 'SECRET', 'AUTH', 'DATABASE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin#plugin_type VaultPlugin#plugin_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin#plugin_type VaultPlugin#plugin_type}
 
 ---
 
@@ -992,7 +992,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin#id VaultPlugin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin#id VaultPlugin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1012,7 +1012,7 @@ The ID of the HCP project where the HCP Vault cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin#project_id VaultPlugin#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin#project_id VaultPlugin#project_id}
 
 ---
 
@@ -1026,7 +1026,7 @@ Timeouts VaultPluginTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin#timeouts VaultPlugin#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin#timeouts VaultPlugin#timeouts}
 
 ---
 
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultPlugin.VaultPluginTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
 
 &vaultplugin.VaultPluginTimeouts {
 	Default: *string,
@@ -1046,7 +1046,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.vaultPlugin.VaultPluginTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin#default VaultPlugin#default}. |
+| <code><a href="#@cdktf/provider-hcp.vaultPlugin.VaultPluginTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin#default VaultPlugin#default}. |
 
 ---
 
@@ -1058,7 +1058,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/vault_plugin#default VaultPlugin#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_plugin#default VaultPlugin#default}.
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultPlugin.VaultPluginTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
 
 vaultplugin.NewVaultPluginTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultPluginTimeoutsOutputReference
 ```
