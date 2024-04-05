@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplication"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplication"
 
 waypointapplication.NewWaypointApplication(scope Construct, id *string, config WaypointApplicationConfig) WaypointApplication
 ```
@@ -392,7 +392,7 @@ func ResetReadmeMarkdown()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplication"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplication"
 
 waypointapplication.WaypointApplication_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplication"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplication"
 
 waypointapplication.WaypointApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ waypointapplication.WaypointApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplication"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplication"
 
 waypointapplication.WaypointApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ waypointapplication.WaypointApplication_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplication"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplication"
 
 waypointapplication.WaypointApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplication"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplication"
 
 &waypointapplication.WaypointApplicationConfig {
 	Connection: interface{},
