@@ -4,7 +4,7 @@
 
 ### WaypointAddOnDefinition <a name="WaypointAddOnDefinition" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.Initializer"></a>
 
@@ -514,7 +514,7 @@ The construct id used in the generated config for the WaypointAddOnDefinition to
 
 The id of the existing WaypointAddOnDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,7 +1035,7 @@ Description *string
 
 A longer description of the Add-on Definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#description WaypointAddOnDefinition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#description WaypointAddOnDefinition#description}
 
 ---
 
@@ -1049,7 +1049,7 @@ Name *string
 
 The name of the Add-on Definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
 
 ---
 
@@ -1063,7 +1063,7 @@ Summary *string
 
 A short summary of the Add-on Definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#summary WaypointAddOnDefinition#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#summary WaypointAddOnDefinition#summary}
 
 ---
 
@@ -1077,7 +1077,7 @@ TerraformCloudWorkspaceDetails WaypointAddOnDefinitionTerraformCloudWorkspaceDet
 
 Terraform Cloud Workspace details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#terraform_cloud_workspace_details WaypointAddOnDefinition#terraform_cloud_workspace_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#terraform_cloud_workspace_details WaypointAddOnDefinition#terraform_cloud_workspace_details}
 
 ---
 
@@ -1091,7 +1091,7 @@ TerraformNoCodeModule WaypointAddOnDefinitionTerraformNoCodeModule
 
 Terraform Cloud no-code Module details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#terraform_no_code_module WaypointAddOnDefinition#terraform_no_code_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#terraform_no_code_module WaypointAddOnDefinition#terraform_no_code_module}
 
 ---
 
@@ -1105,7 +1105,7 @@ Labels *[]*string
 
 List of labels attached to this Add-on Definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#labels WaypointAddOnDefinition#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#labels WaypointAddOnDefinition#labels}
 
 ---
 
@@ -1119,7 +1119,7 @@ ProjectId *string
 
 The ID of the HCP project where the Waypoint Add-on Definition is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#project_id WaypointAddOnDefinition#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#project_id WaypointAddOnDefinition#project_id}
 
 ---
 
@@ -1133,7 +1133,7 @@ ReadmeMarkdownTemplate *string
 
 The markdown template for the Add-on Definition README.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#readme_markdown_template WaypointAddOnDefinition#readme_markdown_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#readme_markdown_template WaypointAddOnDefinition#readme_markdown_template}
 
 ---
 
@@ -1169,7 +1169,7 @@ Name *string
 
 Name of the Terraform Cloud Workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
 
 ---
 
@@ -1183,7 +1183,7 @@ TerraformProjectId *string
 
 Tetraform Cloud Project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
 
 ---
 
@@ -1219,7 +1219,7 @@ Source *string
 
 Terraform Cloud no-code Module Source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#source WaypointAddOnDefinition#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#source WaypointAddOnDefinition#source}
 
 ---
 
@@ -1233,7 +1233,7 @@ Version *string
 
 Terraform Cloud no-code Module Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#version WaypointAddOnDefinition#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#version WaypointAddOnDefinition#version}
 
 ---
 
