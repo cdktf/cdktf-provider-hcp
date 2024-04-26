@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app
+// https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,25 @@ export interface VaultSecretsAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Vault Secrets App name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
   */
   readonly appName: string;
   /**
   * The Vault Secrets app description
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
   */
   readonly description?: string;
+  /**
+  * The ID of the HCP project where the HCP Vault Secrets app is located.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#project_id VaultSecretsApp#project_id}
+  */
+  readonly projectId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app hcp_vault_secrets_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app hcp_vault_secrets_app}
 */
 export class VaultSecretsApp extends cdktf.TerraformResource {
 
@@ -43,7 +49,7 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultSecretsApp resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsApp to import
-  * @param importFromId The id of the existing VaultSecretsApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultSecretsApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +61,7 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app hcp_vault_secrets_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app hcp_vault_secrets_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +72,7 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_secrets_app',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.86.0',
+        providerVersion: '0.87.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -79,6 +85,7 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
     });
     this._appName = config.appName;
     this._description = config.description;
+    this._projectId = config.projectId;
   }
 
   // ==========
@@ -124,9 +131,25 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
     return this.getStringAttribute('organization_id');
   }
 
-  // project_id - computed: true, optional: false, required: false
+  // project_id - computed: true, optional: true, required: false
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
+  // resource_name - computed: true, optional: false, required: false
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
   }
 
   // =========
@@ -137,6 +160,7 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
     return {
       app_name: cdktf.stringToTerraform(this._appName),
       description: cdktf.stringToTerraform(this._description),
+      project_id: cdktf.stringToTerraform(this._projectId),
     };
   }
 
@@ -150,6 +174,12 @@ export class VaultSecretsApp extends cdktf.TerraformResource {
       },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

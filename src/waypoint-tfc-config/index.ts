@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_tfc_config
+// https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_tfc_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface WaypointTfcConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * Waypoint Project ID to associate with the TFC config
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_tfc_config#project_id WaypointTfcConfig#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_tfc_config#project_id WaypointTfcConfig#project_id}
   */
   readonly projectId?: string;
   /**
   * The Terraform Cloud Organization with which the token is associated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_tfc_config#tfc_org_name WaypointTfcConfig#tfc_org_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_tfc_config#tfc_org_name WaypointTfcConfig#tfc_org_name}
   */
   readonly tfcOrgName: string;
   /**
   * Terraform Cloud team token. The token must include permissions to manage workspaces and applications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_tfc_config#token WaypointTfcConfig#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_tfc_config#token WaypointTfcConfig#token}
   */
   readonly token: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_tfc_config hcp_waypoint_tfc_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_tfc_config hcp_waypoint_tfc_config}
 */
 export class WaypointTfcConfig extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class WaypointTfcConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaypointTfcConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointTfcConfig to import
-  * @param importFromId The id of the existing WaypointTfcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_tfc_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaypointTfcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_tfc_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointTfcConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class WaypointTfcConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_tfc_config hcp_waypoint_tfc_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_tfc_config hcp_waypoint_tfc_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class WaypointTfcConfig extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_waypoint_tfc_config',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.86.0',
+        providerVersion: '0.87.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
