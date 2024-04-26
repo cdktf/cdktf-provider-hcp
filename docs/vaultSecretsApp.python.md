@@ -4,7 +4,7 @@
 
 ### VaultSecretsApp <a name="VaultSecretsApp" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app hcp_vault_secrets_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app hcp_vault_secrets_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer"></a>
 
@@ -22,7 +22,8 @@ vaultSecretsApp.VaultSecretsApp(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   app_name: str,
-  description: str = None
+  description: str = None,
+  project_id: str = None
 )
 ```
 
@@ -39,6 +40,7 @@ vaultSecretsApp.VaultSecretsApp(
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer.parameter.appName">app_name</a></code> | <code>str</code> | The Vault Secrets App name. |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer.parameter.description">description</a></code> | <code>str</code> | The Vault Secrets app description. |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the HCP Vault Secrets app is located. |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The Vault Secrets App name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
 
 ---
 
@@ -118,7 +120,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Vault Secrets app description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+
+---
+
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer.parameter.projectId"></a>
+
+- *Type:* str
+
+The ID of the HCP project where the HCP Vault Secrets app is located.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#project_id VaultSecretsApp#project_id}
 
 ---
 
@@ -150,6 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetProjectId">reset_project_id</a></code> | *No description.* |
 
 ---
 
@@ -484,6 +497,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_description() -> None
 ```
 
+##### `reset_project_id` <a name="reset_project_id" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetProjectId"></a>
+
+```python
+def reset_project_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -598,7 +617,7 @@ The construct id used in the generated config for the VaultSecretsApp to import.
 
 The id of the existing VaultSecretsApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -630,11 +649,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.organizationId">organization_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.resourceName">resource_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.appNameInput">app_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.appName">app_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -800,10 +821,10 @@ organization_id: str
 
 ---
 
-##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.projectId"></a>
+##### `resource_name`<sup>Required</sup> <a name="resource_name" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.resourceName"></a>
 
 ```python
-project_id: str
+resource_name: str
 ```
 
 - *Type:* str
@@ -830,6 +851,16 @@ description_input: str
 
 ---
 
+##### `project_id_input`<sup>Optional</sup> <a name="project_id_input" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.projectIdInput"></a>
+
+```python
+project_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `app_name`<sup>Required</sup> <a name="app_name" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.appName"></a>
 
 ```python
@@ -844,6 +875,16 @@ app_name: str
 
 ```python
 description: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.projectId"></a>
+
+```python
+project_id: str
 ```
 
 - *Type:* str
@@ -886,7 +927,8 @@ vaultSecretsApp.VaultSecretsAppConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   app_name: str,
-  description: str = None
+  description: str = None,
+  project_id: str = None
 )
 ```
 
@@ -903,6 +945,7 @@ vaultSecretsApp.VaultSecretsAppConfig(
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.appName">app_name</a></code> | <code>str</code> | The Vault Secrets App name. |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.description">description</a></code> | <code>str</code> | The Vault Secrets app description. |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the HCP Vault Secrets app is located. |
 
 ---
 
@@ -986,7 +1029,7 @@ app_name: str
 
 The Vault Secrets App name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
 
 ---
 
@@ -1000,7 +1043,21 @@ description: str
 
 The Vault Secrets app description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+
+---
+
+##### `project_id`<sup>Optional</sup> <a name="project_id" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.projectId"></a>
+
+```python
+project_id: str
+```
+
+- *Type:* str
+
+The ID of the HCP project where the HCP Vault Secrets app is located.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_app#project_id VaultSecretsApp#project_id}
 
 ---
 

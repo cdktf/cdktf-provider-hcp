@@ -4,12 +4,12 @@
 
 ### DataHcpWaypointApplicationTemplate <a name="DataHcpWaypointApplicationTemplate" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/data-sources/waypoint_application_template hcp_waypoint_application_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/waypoint_application_template hcp_waypoint_application_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.NewDataHcpWaypointApplicationTemplate(scope Construct, id *string, config DataHcpWaypointApplicationTemplateConfig) DataHcpWaypointApplicationTemplate
 ```
@@ -297,7 +297,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataHcpWaypointApplication
 
 The id of the existing DataHcpWaypointApplicationTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/data-sources/waypoint_application_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/waypoint_application_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
 
 &datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplateConfig {
 	Connection: interface{},
@@ -820,7 +820,7 @@ Id *string
 
 The ID of the Application Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/data-sources/waypoint_application_template#id DataHcpWaypointApplicationTemplate#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/waypoint_application_template#id DataHcpWaypointApplicationTemplate#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -837,7 +837,7 @@ Name *string
 
 The name of the Application Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/data-sources/waypoint_application_template#name DataHcpWaypointApplicationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/waypoint_application_template#name DataHcpWaypointApplicationTemplate#name}
 
 ---
 
@@ -851,7 +851,7 @@ ProjectId *string
 
 The ID of the HCP project where the Waypoint Application Template is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/data-sources/waypoint_application_template#project_id DataHcpWaypointApplicationTemplate#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/waypoint_application_template#project_id DataHcpWaypointApplicationTemplate#project_id}
 
 ---
 
@@ -860,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
 
 &datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails {
 
@@ -873,7 +873,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplication
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateTerraformNoCodeModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
 
 &datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplateTerraformNoCodeModule {
 
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplication
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.NewDataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference
 ```
@@ -1159,7 +1159,7 @@ func InternalValue() DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDe
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.NewDataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputReference
 ```
