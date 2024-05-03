@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact
+// https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataHcpPackerArtifactConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of the HCP Packer Bucket where the Artifact is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact#bucket_name DataHcpPackerArtifact#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact#bucket_name DataHcpPackerArtifact#bucket_name}
   */
   readonly bucketName: string;
   /**
@@ -24,31 +19,31 @@ export interface DataHcpPackerArtifactConfig extends cdktf.TerraformMetaArgument
   * The Version currently assigned to the Channel will be fetched. 
   * Exactly one of `channel_name` or `version_fingerprint` must be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact#channel_name DataHcpPackerArtifact#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact#channel_name DataHcpPackerArtifact#channel_name}
   */
   readonly channelName?: string;
   /**
   * Name of the Packer builder that built this Artifact. Ex: `amazon-ebs.example`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact#component_type DataHcpPackerArtifact#component_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact#component_type DataHcpPackerArtifact#component_type}
   */
   readonly componentType?: string;
   /**
   * Name of the platform where the HCP Packer Artifact is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact#platform DataHcpPackerArtifact#platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact#platform DataHcpPackerArtifact#platform}
   */
   readonly platform: string;
   /**
   * The ID of the HCP Organization where the Artifact is located
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact#project_id DataHcpPackerArtifact#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact#project_id DataHcpPackerArtifact#project_id}
   */
   readonly projectId?: string;
   /**
   * The Region where the HCP Packer Artifact is stored, if any.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact#region DataHcpPackerArtifact#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact#region DataHcpPackerArtifact#region}
   */
   readonly region: string;
   /**
@@ -57,13 +52,13 @@ export interface DataHcpPackerArtifactConfig extends cdktf.TerraformMetaArgument
   * If provided in the config, it is used to fetch the Version.
   * Exactly one of `channel_name` or `version_fingerprint` must be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact#version_fingerprint DataHcpPackerArtifact#version_fingerprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact#version_fingerprint DataHcpPackerArtifact#version_fingerprint}
   */
   readonly versionFingerprint?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact hcp_packer_artifact}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact hcp_packer_artifact}
 */
 export class DataHcpPackerArtifact extends cdktf.TerraformDataSource {
 
@@ -79,7 +74,7 @@ export class DataHcpPackerArtifact extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpPackerArtifact resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpPackerArtifact to import
-  * @param importFromId The id of the existing DataHcpPackerArtifact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpPackerArtifact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpPackerArtifact to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -91,7 +86,7 @@ export class DataHcpPackerArtifact extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/packer_artifact hcp_packer_artifact} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/packer_artifact hcp_packer_artifact} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +97,7 @@ export class DataHcpPackerArtifact extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_packer_artifact',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.87.1',
+        providerVersion: '0.88.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

@@ -4,12 +4,12 @@
 
 ### WaypointAddOn <a name="WaypointAddOn" id="@cdktf/provider-hcp.waypointAddOn.WaypointAddOn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on hcp_waypoint_add_on}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on hcp_waypoint_add_on}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointAddOn.WaypointAddOn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointaddon"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointaddon"
 
 waypointaddon.NewWaypointAddOn(scope Construct, id *string, config WaypointAddOnConfig) WaypointAddOn
 ```
@@ -385,7 +385,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.waypointAddOn.WaypointAddOn.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointaddon"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointaddon"
 
 waypointaddon.WaypointAddOn_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.waypointAddOn.WaypointAddOn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointaddon"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointaddon"
 
 waypointaddon.WaypointAddOn_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ waypointaddon.WaypointAddOn_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.waypointAddOn.WaypointAddOn.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointaddon"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointaddon"
 
 waypointaddon.WaypointAddOn_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ waypointaddon.WaypointAddOn_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.waypointAddOn.WaypointAddOn.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointaddon"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointaddon"
 
 waypointaddon.WaypointAddOn_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the WaypointAddOn to import.
 
 The id of the existing WaypointAddOn that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointAddOn.WaypointAddOnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointaddon"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointaddon"
 
 &waypointaddon.WaypointAddOnConfig {
 	Connection: interface{},
@@ -987,7 +987,7 @@ ApplicationId *string
 
 The ID of the Application that this Add-on is created for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on#application_id WaypointAddOn#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on#application_id WaypointAddOn#application_id}
 
 ---
 
@@ -1001,7 +1001,7 @@ DefinitionId *string
 
 The ID of the Add-on Definition that this Add-on is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on#definition_id WaypointAddOn#definition_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on#definition_id WaypointAddOn#definition_id}
 
 ---
 
@@ -1015,7 +1015,7 @@ Name *string
 
 The name of the Add-on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on#name WaypointAddOn#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on#name WaypointAddOn#name}
 
 ---
 
@@ -1029,7 +1029,7 @@ ProjectId *string
 
 The ID of the HCP project where the Waypoint AddOn is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on#project_id WaypointAddOn#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on#project_id WaypointAddOn#project_id}
 
 ---
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointAddOn.WaypointAddOnTerraformNoCodeModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointaddon"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointaddon"
 
 &waypointaddon.WaypointAddOnTerraformNoCodeModule {
 
@@ -1053,7 +1053,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointaddon"
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointAddOn.WaypointAddOnTerraformNoCodeModuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointaddon"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointaddon"
 
 waypointaddon.NewWaypointAddOnTerraformNoCodeModuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WaypointAddOnTerraformNoCodeModuleOutputReference
 ```
