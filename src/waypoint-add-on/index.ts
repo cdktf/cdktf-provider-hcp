@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on
+// https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface WaypointAddOnConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the Application that this Add-on is created for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on#application_id WaypointAddOn#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on#application_id WaypointAddOn#application_id}
   */
   readonly applicationId: string;
   /**
   * The ID of the Add-on Definition that this Add-on is created from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on#definition_id WaypointAddOn#definition_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on#definition_id WaypointAddOn#definition_id}
   */
   readonly definitionId: string;
   /**
   * The name of the Add-on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on#name WaypointAddOn#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on#name WaypointAddOn#name}
   */
   readonly name: string;
   /**
   * The ID of the HCP project where the Waypoint AddOn is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on#project_id WaypointAddOn#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on#project_id WaypointAddOn#project_id}
   */
   readonly projectId?: string;
 }
@@ -98,7 +98,7 @@ export class WaypointAddOnTerraformNoCodeModuleOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on hcp_waypoint_add_on}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on hcp_waypoint_add_on}
 */
 export class WaypointAddOn extends cdktf.TerraformResource {
 
@@ -114,7 +114,7 @@ export class WaypointAddOn extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaypointAddOn resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointAddOn to import
-  * @param importFromId The id of the existing WaypointAddOn that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaypointAddOn that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointAddOn to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -126,7 +126,7 @@ export class WaypointAddOn extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_add_on hcp_waypoint_add_on} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on hcp_waypoint_add_on} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -137,7 +137,7 @@ export class WaypointAddOn extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_waypoint_add_on',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.87.1',
+        providerVersion: '0.88.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
