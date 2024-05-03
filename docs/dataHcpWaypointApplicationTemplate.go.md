@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.NewDataHcpWaypointApplicationTemplate(scope Construct, id *string, config DataHcpWaypointApplicationTemplateConfig) DataHcpWaypointApplicationTemplate
 ```
@@ -297,7 +297,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 &datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplateConfig {
 	Connection: interface{},
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 &datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails {
 
@@ -884,7 +884,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtem
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateTerraformNoCodeModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 &datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplateTerraformNoCodeModule {
 
@@ -897,7 +897,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtem
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateVariableOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 &datahcpwaypointapplicationtemplate.DataHcpWaypointApplicationTemplateVariableOptions {
 
@@ -912,7 +912,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtem
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.NewDataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference
 ```
@@ -1183,7 +1183,7 @@ func InternalValue() DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDe
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.NewDataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputReference
 ```
@@ -1454,7 +1454,7 @@ func InternalValue() DataHcpWaypointApplicationTemplateTerraformNoCodeModule
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateVariableOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.NewDataHcpWaypointApplicationTemplateVariableOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpWaypointApplicationTemplateVariableOptionsList
 ```
@@ -1603,7 +1603,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpWaypointApplicationTemplate.DataHcpWaypointApplicationTemplateVariableOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpwaypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplicationtemplate"
 
 datahcpwaypointapplicationtemplate.NewDataHcpWaypointApplicationTemplateVariableOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpWaypointApplicationTemplateVariableOptionsOutputReference
 ```
