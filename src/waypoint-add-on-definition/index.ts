@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition
+// https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,63 +10,69 @@ export interface WaypointAddOnDefinitionConfig extends cdktf.TerraformMetaArgume
   /**
   * A longer description of the Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#description WaypointAddOnDefinition#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#description WaypointAddOnDefinition#description}
   */
   readonly description: string;
   /**
   * List of labels attached to this Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#labels WaypointAddOnDefinition#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#labels WaypointAddOnDefinition#labels}
   */
   readonly labels?: string[];
   /**
   * The name of the Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
   */
   readonly name: string;
   /**
   * The ID of the HCP project where the Waypoint Add-on Definition is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#project_id WaypointAddOnDefinition#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#project_id WaypointAddOnDefinition#project_id}
   */
   readonly projectId?: string;
   /**
   * The markdown template for the Add-on Definition README.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#readme_markdown_template WaypointAddOnDefinition#readme_markdown_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#readme_markdown_template WaypointAddOnDefinition#readme_markdown_template}
   */
   readonly readmeMarkdownTemplate?: string;
   /**
   * A short summary of the Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#summary WaypointAddOnDefinition#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#summary WaypointAddOnDefinition#summary}
   */
   readonly summary: string;
   /**
   * Terraform Cloud Workspace details
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#terraform_cloud_workspace_details WaypointAddOnDefinition#terraform_cloud_workspace_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#terraform_cloud_workspace_details WaypointAddOnDefinition#terraform_cloud_workspace_details}
   */
   readonly terraformCloudWorkspaceDetails: WaypointAddOnDefinitionTerraformCloudWorkspaceDetails;
   /**
   * Terraform Cloud no-code Module details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#terraform_no_code_module WaypointAddOnDefinition#terraform_no_code_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#terraform_no_code_module WaypointAddOnDefinition#terraform_no_code_module}
   */
   readonly terraformNoCodeModule: WaypointAddOnDefinitionTerraformNoCodeModule;
+  /**
+  * List of variable options for the template
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#variable_options WaypointAddOnDefinition#variable_options}
+  */
+  readonly variableOptions?: WaypointAddOnDefinitionVariableOptions[] | cdktf.IResolvable;
 }
 export interface WaypointAddOnDefinitionTerraformCloudWorkspaceDetails {
   /**
   * Name of the Terraform Cloud Workspace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
   */
   readonly name: string;
   /**
   * Tetraform Cloud Project ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
   */
   readonly terraformProjectId: string;
 }
@@ -190,13 +191,13 @@ export interface WaypointAddOnDefinitionTerraformNoCodeModule {
   /**
   * Terraform Cloud no-code Module Source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#source WaypointAddOnDefinition#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#source WaypointAddOnDefinition#source}
   */
   readonly source: string;
   /**
   * Terraform Cloud no-code Module Version
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#version WaypointAddOnDefinition#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#version WaypointAddOnDefinition#version}
   */
   readonly version: string;
 }
@@ -311,9 +312,223 @@ export class WaypointAddOnDefinitionTerraformNoCodeModuleOutputReference extends
     return this._version;
   }
 }
+export interface WaypointAddOnDefinitionVariableOptions {
+  /**
+  * Variable name
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+  */
+  readonly name: string;
+  /**
+  * List of options
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#options WaypointAddOnDefinition#options}
+  */
+  readonly options: string[];
+  /**
+  * Whether the variable is editable by the user creating an add-on
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#user_editable WaypointAddOnDefinition#user_editable}
+  */
+  readonly userEditable?: boolean | cdktf.IResolvable;
+  /**
+  * Variable type
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#variable_type WaypointAddOnDefinition#variable_type}
+  */
+  readonly variableType: string;
+}
+
+export function waypointAddOnDefinitionVariableOptionsToTerraform(struct?: WaypointAddOnDefinitionVariableOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.options),
+    user_editable: cdktf.booleanToTerraform(struct!.userEditable),
+    variable_type: cdktf.stringToTerraform(struct!.variableType),
+  }
+}
+
+
+export function waypointAddOnDefinitionVariableOptionsToHclTerraform(struct?: WaypointAddOnDefinitionVariableOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    options: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.options),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    user_editable: {
+      value: cdktf.booleanToHclTerraform(struct!.userEditable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    variable_type: {
+      value: cdktf.stringToHclTerraform(struct!.variableType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WaypointAddOnDefinitionVariableOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): WaypointAddOnDefinitionVariableOptions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._options !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.options = this._options;
+    }
+    if (this._userEditable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userEditable = this._userEditable;
+    }
+    if (this._variableType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.variableType = this._variableType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WaypointAddOnDefinitionVariableOptions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._options = undefined;
+      this._userEditable = undefined;
+      this._variableType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._options = value.options;
+      this._userEditable = value.userEditable;
+      this._variableType = value.variableType;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // options - computed: false, optional: false, required: true
+  private _options?: string[]; 
+  public get options() {
+    return this.getListAttribute('options');
+  }
+  public set options(value: string[]) {
+    this._options = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionsInput() {
+    return this._options;
+  }
+
+  // user_editable - computed: true, optional: true, required: false
+  private _userEditable?: boolean | cdktf.IResolvable; 
+  public get userEditable() {
+    return this.getBooleanAttribute('user_editable');
+  }
+  public set userEditable(value: boolean | cdktf.IResolvable) {
+    this._userEditable = value;
+  }
+  public resetUserEditable() {
+    this._userEditable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userEditableInput() {
+    return this._userEditable;
+  }
+
+  // variable_type - computed: false, optional: false, required: true
+  private _variableType?: string; 
+  public get variableType() {
+    return this.getStringAttribute('variable_type');
+  }
+  public set variableType(value: string) {
+    this._variableType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variableTypeInput() {
+    return this._variableType;
+  }
+}
+
+export class WaypointAddOnDefinitionVariableOptionsList extends cdktf.ComplexList {
+  public internalValue? : WaypointAddOnDefinitionVariableOptions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): WaypointAddOnDefinitionVariableOptionsOutputReference {
+    return new WaypointAddOnDefinitionVariableOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}
 */
 export class WaypointAddOnDefinition extends cdktf.TerraformResource {
 
@@ -329,7 +544,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaypointAddOnDefinition resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointAddOnDefinition to import
-  * @param importFromId The id of the existing WaypointAddOnDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaypointAddOnDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointAddOnDefinition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -341,7 +556,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -352,7 +567,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_waypoint_add_on_definition',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.88.0',
+        providerVersion: '0.89.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -371,6 +586,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
     this._summary = config.summary;
     this._terraformCloudWorkspaceDetails.internalValue = config.terraformCloudWorkspaceDetails;
     this._terraformNoCodeModule.internalValue = config.terraformNoCodeModule;
+    this._variableOptions.internalValue = config.variableOptions;
   }
 
   // ==========
@@ -500,6 +716,22 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
     return this._terraformNoCodeModule.internalValue;
   }
 
+  // variable_options - computed: false, optional: true, required: false
+  private _variableOptions = new WaypointAddOnDefinitionVariableOptionsList(this, "variable_options", false);
+  public get variableOptions() {
+    return this._variableOptions;
+  }
+  public putVariableOptions(value: WaypointAddOnDefinitionVariableOptions[] | cdktf.IResolvable) {
+    this._variableOptions.internalValue = value;
+  }
+  public resetVariableOptions() {
+    this._variableOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variableOptionsInput() {
+    return this._variableOptions.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -514,6 +746,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
       summary: cdktf.stringToTerraform(this._summary),
       terraform_cloud_workspace_details: waypointAddOnDefinitionTerraformCloudWorkspaceDetailsToTerraform(this._terraformCloudWorkspaceDetails.internalValue),
       terraform_no_code_module: waypointAddOnDefinitionTerraformNoCodeModuleToTerraform(this._terraformNoCodeModule.internalValue),
+      variable_options: cdktf.listMapper(waypointAddOnDefinitionVariableOptionsToTerraform, false)(this._variableOptions.internalValue),
     };
   }
 
@@ -566,6 +799,12 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "WaypointAddOnDefinitionTerraformNoCodeModule",
+      },
+      variable_options: {
+        value: cdktf.listMapperHcl(waypointAddOnDefinitionVariableOptionsToHclTerraform, false)(this._variableOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WaypointAddOnDefinitionVariableOptionsList",
       },
     };
 

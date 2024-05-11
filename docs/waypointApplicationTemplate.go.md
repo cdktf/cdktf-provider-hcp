@@ -4,12 +4,12 @@
 
 ### WaypointApplicationTemplate <a name="WaypointApplicationTemplate" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template hcp_waypoint_application_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template hcp_waypoint_application_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 waypointapplicationtemplate.NewWaypointApplicationTemplate(scope Construct, id *string, config WaypointApplicationTemplateConfig) WaypointApplicationTemplate
 ```
@@ -452,7 +452,7 @@ func ResetVariableOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 waypointapplicationtemplate.WaypointApplicationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 waypointapplicationtemplate.WaypointApplicationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ waypointapplicationtemplate.WaypointApplicationTemplate_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 waypointapplicationtemplate.WaypointApplicationTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ waypointapplicationtemplate.WaypointApplicationTemplate_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 waypointapplicationtemplate.WaypointApplicationTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -541,7 +541,7 @@ The construct id used in the generated config for the WaypointApplicationTemplat
 
 The id of the existing WaypointApplicationTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 &waypointapplicationtemplate.WaypointApplicationTemplateConfig {
 	Connection: interface{},
@@ -973,8 +973,8 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplat
 	Provisioners: *[]interface{},
 	Name: *string,
 	Summary: *string,
-	TerraformCloudWorkspaceDetails: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.waypointApplicationTemplate.WaypointApplicationTemplateTerraformCloudWorkspaceDetails,
-	TerraformNoCodeModule: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.waypointApplicationTemplate.WaypointApplicationTemplateTerraformNoCodeModule,
+	TerraformCloudWorkspaceDetails: github.com/cdktf/cdktf-provider-hcp-go/hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformCloudWorkspaceDetails,
+	TerraformNoCodeModule: github.com/cdktf/cdktf-provider-hcp-go/hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformNoCodeModule,
 	Description: *string,
 	Labels: *[]*string,
 	ProjectId: *string,
@@ -1086,7 +1086,7 @@ Name *string
 
 The name of the Application Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
 
 ---
 
@@ -1100,7 +1100,7 @@ Summary *string
 
 A brief description of the template, up to 110 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#summary WaypointApplicationTemplate#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#summary WaypointApplicationTemplate#summary}
 
 ---
 
@@ -1114,7 +1114,7 @@ TerraformCloudWorkspaceDetails WaypointApplicationTemplateTerraformCloudWorkspac
 
 Terraform Cloud Workspace details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#terraform_cloud_workspace_details WaypointApplicationTemplate#terraform_cloud_workspace_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#terraform_cloud_workspace_details WaypointApplicationTemplate#terraform_cloud_workspace_details}
 
 ---
 
@@ -1128,7 +1128,7 @@ TerraformNoCodeModule WaypointApplicationTemplateTerraformNoCodeModule
 
 Terraform Cloud No-Code Module details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#terraform_no_code_module WaypointApplicationTemplate#terraform_no_code_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#terraform_no_code_module WaypointApplicationTemplate#terraform_no_code_module}
 
 ---
 
@@ -1142,7 +1142,7 @@ Description *string
 
 A description of the template, along with when and why it should be used, up to 500 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#description WaypointApplicationTemplate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#description WaypointApplicationTemplate#description}
 
 ---
 
@@ -1156,7 +1156,7 @@ Labels *[]*string
 
 List of labels attached to this Application Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#labels WaypointApplicationTemplate#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#labels WaypointApplicationTemplate#labels}
 
 ---
 
@@ -1170,7 +1170,7 @@ ProjectId *string
 
 The ID of the HCP project where the Waypoint Application Template is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#project_id WaypointApplicationTemplate#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#project_id WaypointApplicationTemplate#project_id}
 
 ---
 
@@ -1184,7 +1184,7 @@ ReadmeMarkdownTemplate *string
 
 Instructions for using the template (markdown format supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#readme_markdown_template WaypointApplicationTemplate#readme_markdown_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#readme_markdown_template WaypointApplicationTemplate#readme_markdown_template}
 
 ---
 
@@ -1198,7 +1198,7 @@ VariableOptions interface{}
 
 List of variable options for the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#variable_options WaypointApplicationTemplate#variable_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#variable_options WaypointApplicationTemplate#variable_options}
 
 ---
 
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformCloudWorkspaceDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 &waypointapplicationtemplate.WaypointApplicationTemplateTerraformCloudWorkspaceDetails {
 	Name: *string,
@@ -1234,7 +1234,7 @@ Name *string
 
 Name of the Terraform Cloud Workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
 
 ---
 
@@ -1248,7 +1248,7 @@ TerraformProjectId *string
 
 Terraform Cloud Project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#terraform_project_id WaypointApplicationTemplate#terraform_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#terraform_project_id WaypointApplicationTemplate#terraform_project_id}
 
 ---
 
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformNoCodeModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 &waypointapplicationtemplate.WaypointApplicationTemplateTerraformNoCodeModule {
 	Source: *string,
@@ -1284,7 +1284,7 @@ Source *string
 
 No-Code Module Source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#source WaypointApplicationTemplate#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#source WaypointApplicationTemplate#source}
 
 ---
 
@@ -1298,7 +1298,7 @@ Version *string
 
 No-Code Module Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#version WaypointApplicationTemplate#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#version WaypointApplicationTemplate#version}
 
 ---
 
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateVariableOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 &waypointapplicationtemplate.WaypointApplicationTemplateVariableOptions {
 	Name: *string,
@@ -1338,7 +1338,7 @@ Name *string
 
 Variable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
 
 ---
 
@@ -1352,7 +1352,7 @@ Options *[]*string
 
 List of options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#options WaypointApplicationTemplate#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#options WaypointApplicationTemplate#options}
 
 ---
 
@@ -1366,7 +1366,7 @@ VariableType *string
 
 Variable type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#variable_type WaypointApplicationTemplate#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#variable_type WaypointApplicationTemplate#variable_type}
 
 ---
 
@@ -1380,7 +1380,7 @@ UserEditable interface{}
 
 Whether the variable is editable by the user creating an application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template#user_editable WaypointApplicationTemplate#user_editable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_application_template#user_editable WaypointApplicationTemplate#user_editable}
 
 ---
 
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 waypointapplicationtemplate.NewWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference
 ```
@@ -1684,7 +1684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformNoCodeModuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 waypointapplicationtemplate.NewWaypointApplicationTemplateTerraformNoCodeModuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WaypointApplicationTemplateTerraformNoCodeModuleOutputReference
 ```
@@ -1977,7 +1977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateVariableOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 waypointapplicationtemplate.NewWaypointApplicationTemplateVariableOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WaypointApplicationTemplateVariableOptionsList
 ```
@@ -2137,7 +2137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateVariableOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 
 waypointapplicationtemplate.NewWaypointApplicationTemplateVariableOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WaypointApplicationTemplateVariableOptionsOutputReference
 ```
