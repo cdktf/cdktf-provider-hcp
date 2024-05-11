@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 waypointapplicationtemplate.NewWaypointApplicationTemplate(scope Construct, id *string, config WaypointApplicationTemplateConfig) WaypointApplicationTemplate
 ```
@@ -452,7 +452,7 @@ func ResetVariableOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 waypointapplicationtemplate.WaypointApplicationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 waypointapplicationtemplate.WaypointApplicationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ waypointapplicationtemplate.WaypointApplicationTemplate_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 waypointapplicationtemplate.WaypointApplicationTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ waypointapplicationtemplate.WaypointApplicationTemplate_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 waypointapplicationtemplate.WaypointApplicationTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -961,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 &waypointapplicationtemplate.WaypointApplicationTemplateConfig {
 	Connection: interface{},
@@ -973,8 +973,8 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Summary: *string,
-	TerraformCloudWorkspaceDetails: github.com/cdktf/cdktf-provider-hcp-go/hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformCloudWorkspaceDetails,
-	TerraformNoCodeModule: github.com/cdktf/cdktf-provider-hcp-go/hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformNoCodeModule,
+	TerraformCloudWorkspaceDetails: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.waypointApplicationTemplate.WaypointApplicationTemplateTerraformCloudWorkspaceDetails,
+	TerraformNoCodeModule: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.waypointApplicationTemplate.WaypointApplicationTemplateTerraformNoCodeModule,
 	Description: *string,
 	Labels: *[]*string,
 	ProjectId: *string,
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformCloudWorkspaceDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 &waypointapplicationtemplate.WaypointApplicationTemplateTerraformCloudWorkspaceDetails {
 	Name: *string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformNoCodeModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 &waypointapplicationtemplate.WaypointApplicationTemplateTerraformNoCodeModule {
 	Source: *string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateVariableOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 &waypointapplicationtemplate.WaypointApplicationTemplateVariableOptions {
 	Name: *string,
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 waypointapplicationtemplate.NewWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference
 ```
@@ -1684,7 +1684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateTerraformNoCodeModuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 waypointapplicationtemplate.NewWaypointApplicationTemplateTerraformNoCodeModuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WaypointApplicationTemplateTerraformNoCodeModuleOutputReference
 ```
@@ -1977,7 +1977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateVariableOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 waypointapplicationtemplate.NewWaypointApplicationTemplateVariableOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WaypointApplicationTemplateVariableOptionsList
 ```
@@ -2137,7 +2137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateVariableOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/waypointapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/waypointapplicationtemplate"
 
 waypointapplicationtemplate.NewWaypointApplicationTemplateVariableOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WaypointApplicationTemplateVariableOptionsOutputReference
 ```
