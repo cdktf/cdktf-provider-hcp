@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/vault_secrets_secret
+// https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/vault_secrets_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface VaultSecretsSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the application the secret can be found in
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/vault_secrets_secret#app_name VaultSecretsSecret#app_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/vault_secrets_secret#app_name VaultSecretsSecret#app_name}
   */
   readonly appName: string;
   /**
   * The ID of the HCP project where the HCP Vault Secrets secret is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/vault_secrets_secret#project_id VaultSecretsSecret#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/vault_secrets_secret#project_id VaultSecretsSecret#project_id}
   */
   readonly projectId?: string;
   /**
   * The name of the secret
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/vault_secrets_secret#secret_name VaultSecretsSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/vault_secrets_secret#secret_name VaultSecretsSecret#secret_name}
   */
   readonly secretName: string;
   /**
   * The value of the secret
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/vault_secrets_secret#secret_value VaultSecretsSecret#secret_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/vault_secrets_secret#secret_value VaultSecretsSecret#secret_value}
   */
   readonly secretValue: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}
 */
 export class VaultSecretsSecret extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class VaultSecretsSecret extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultSecretsSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsSecret to import
-  * @param importFromId The id of the existing VaultSecretsSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/vault_secrets_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultSecretsSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/vault_secrets_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class VaultSecretsSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class VaultSecretsSecret extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_secrets_secret',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.89.0',
+        providerVersion: '0.90.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
