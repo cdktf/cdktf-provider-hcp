@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataHcpVaultCluster](./dataHcpVaultCluster.csharp.md)
 - [dataHcpVaultPlugin](./dataHcpVaultPlugin.csharp.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.csharp.md)
+- [dataHcpVaultSecretsRotatingSecret](./dataHcpVaultSecretsRotatingSecret.csharp.md)
 - [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.csharp.md)
 - [dataHcpWaypointAddOn](./dataHcpWaypointAddOn.csharp.md)
 - [dataHcpWaypointAddOnDefinition](./dataHcpWaypointAddOnDefinition.csharp.md)

@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataHcpVaultCluster](./dataHcpVaultCluster.typescript.md)
 - [dataHcpVaultPlugin](./dataHcpVaultPlugin.typescript.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.typescript.md)
+- [dataHcpVaultSecretsRotatingSecret](./dataHcpVaultSecretsRotatingSecret.typescript.md)
 - [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.typescript.md)
 - [dataHcpWaypointAddOn](./dataHcpWaypointAddOn.typescript.md)
 - [dataHcpWaypointAddOnDefinition](./dataHcpWaypointAddOnDefinition.typescript.md)
