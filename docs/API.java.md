@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataHcpVaultCluster](./dataHcpVaultCluster.java.md)
 - [dataHcpVaultPlugin](./dataHcpVaultPlugin.java.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.java.md)
+- [dataHcpVaultSecretsRotatingSecret](./dataHcpVaultSecretsRotatingSecret.java.md)
 - [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.java.md)
 - [dataHcpWaypointAddOn](./dataHcpWaypointAddOn.java.md)
 - [dataHcpWaypointAddOnDefinition](./dataHcpWaypointAddOnDefinition.java.md)

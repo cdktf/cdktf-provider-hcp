@@ -65,6 +65,7 @@ Object.defineProperty(exports, 'dataHcpUserPrincipal', { get: function () { retu
 Object.defineProperty(exports, 'dataHcpVaultCluster', { get: function () { return require('./data-hcp-vault-cluster'); } });
 Object.defineProperty(exports, 'dataHcpVaultPlugin', { get: function () { return require('./data-hcp-vault-plugin'); } });
 Object.defineProperty(exports, 'dataHcpVaultSecretsApp', { get: function () { return require('./data-hcp-vault-secrets-app'); } });
+Object.defineProperty(exports, 'dataHcpVaultSecretsRotatingSecret', { get: function () { return require('./data-hcp-vault-secrets-rotating-secret'); } });
 Object.defineProperty(exports, 'dataHcpVaultSecretsSecret', { get: function () { return require('./data-hcp-vault-secrets-secret'); } });
 Object.defineProperty(exports, 'dataHcpWaypointAddOn', { get: function () { return require('./data-hcp-waypoint-add-on'); } });
 Object.defineProperty(exports, 'dataHcpWaypointAddOnDefinition', { get: function () { return require('./data-hcp-waypoint-add-on-definition'); } });

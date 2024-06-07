@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataHcpVaultCluster](./dataHcpVaultCluster.go.md)
 - [dataHcpVaultPlugin](./dataHcpVaultPlugin.go.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.go.md)
+- [dataHcpVaultSecretsRotatingSecret](./dataHcpVaultSecretsRotatingSecret.go.md)
 - [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.go.md)
 - [dataHcpWaypointAddOn](./dataHcpWaypointAddOn.go.md)
 - [dataHcpWaypointAddOnDefinition](./dataHcpWaypointAddOnDefinition.go.md)

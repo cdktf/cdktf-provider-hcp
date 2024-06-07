@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataHcpVaultCluster](./dataHcpVaultCluster.python.md)
 - [dataHcpVaultPlugin](./dataHcpVaultPlugin.python.md)
 - [dataHcpVaultSecretsApp](./dataHcpVaultSecretsApp.python.md)
+- [dataHcpVaultSecretsRotatingSecret](./dataHcpVaultSecretsRotatingSecret.python.md)
 - [dataHcpVaultSecretsSecret](./dataHcpVaultSecretsSecret.python.md)
 - [dataHcpWaypointAddOn](./dataHcpWaypointAddOn.python.md)
 - [dataHcpWaypointAddOnDefinition](./dataHcpWaypointAddOnDefinition.python.md)

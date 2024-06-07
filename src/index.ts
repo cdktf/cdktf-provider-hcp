@@ -65,6 +65,7 @@ export * as dataHcpUserPrincipal from './data-hcp-user-principal';
 export * as dataHcpVaultCluster from './data-hcp-vault-cluster';
 export * as dataHcpVaultPlugin from './data-hcp-vault-plugin';
 export * as dataHcpVaultSecretsApp from './data-hcp-vault-secrets-app';
+export * as dataHcpVaultSecretsRotatingSecret from './data-hcp-vault-secrets-rotating-secret';
 export * as dataHcpVaultSecretsSecret from './data-hcp-vault-secrets-secret';
 export * as dataHcpWaypointAddOn from './data-hcp-waypoint-add-on';
 export * as dataHcpWaypointAddOnDefinition from './data-hcp-waypoint-add-on-definition';

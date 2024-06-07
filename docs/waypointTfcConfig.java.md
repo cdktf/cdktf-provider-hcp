@@ -4,7 +4,7 @@
 
 ### WaypointTfcConfig <a name="WaypointTfcConfig" id="@cdktf/provider-hcp.waypointTfcConfig.WaypointTfcConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/waypoint_tfc_config hcp_waypoint_tfc_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/waypoint_tfc_config hcp_waypoint_tfc_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointTfcConfig.WaypointTfcConfig.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The Terraform Cloud Organization with which the token is associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/waypoint_tfc_config#tfc_org_name WaypointTfcConfig#tfc_org_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/waypoint_tfc_config#tfc_org_name WaypointTfcConfig#tfc_org_name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Terraform Cloud team token. The token must include permissions to manage workspaces and applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/waypoint_tfc_config#token WaypointTfcConfig#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/waypoint_tfc_config#token WaypointTfcConfig#token}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Waypoint Project ID to associate with the TFC config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/waypoint_tfc_config#project_id WaypointTfcConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/waypoint_tfc_config#project_id WaypointTfcConfig#project_id}
 
 ---
 
@@ -566,7 +566,7 @@ The construct id used in the generated config for the WaypointTfcConfig to impor
 
 The id of the existing WaypointTfcConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/waypoint_tfc_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/waypoint_tfc_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -960,7 +960,7 @@ public java.lang.String getTfcOrgName();
 
 The Terraform Cloud Organization with which the token is associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/waypoint_tfc_config#tfc_org_name WaypointTfcConfig#tfc_org_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/waypoint_tfc_config#tfc_org_name WaypointTfcConfig#tfc_org_name}
 
 ---
 
@@ -974,7 +974,7 @@ public java.lang.String getToken();
 
 Terraform Cloud team token. The token must include permissions to manage workspaces and applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/waypoint_tfc_config#token WaypointTfcConfig#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/waypoint_tfc_config#token WaypointTfcConfig#token}
 
 ---
 
@@ -988,7 +988,7 @@ public java.lang.String getProjectId();
 
 Waypoint Project ID to associate with the TFC config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/resources/waypoint_tfc_config#project_id WaypointTfcConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/waypoint_tfc_config#project_id WaypointTfcConfig#project_id}
 
 ---
 
