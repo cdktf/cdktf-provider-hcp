@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/group
+// https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The group's description - maximum length of 300 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/group#description Group#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/group#description Group#description}
   */
   readonly description?: string;
   /**
   * The group's display_name - maximum length of 50 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/group#display_name Group#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/group#display_name Group#display_name}
   */
   readonly displayName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/group hcp_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/group hcp_group}
 */
 export class Group extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class Group extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Group resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Group to import
-  * @param importFromId The id of the existing Group that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Group that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Group to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class Group extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/group hcp_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/group hcp_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_group',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.91.0',
+        providerVersion: '0.91.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

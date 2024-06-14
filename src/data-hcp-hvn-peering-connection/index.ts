@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection
+// https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataHcpHvnPeeringConnectionConfig extends cdktf.TerraformMetaAr
   /**
   * The unique URL of one of the HVNs being peered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection#hvn_1 DataHcpHvnPeeringConnection#hvn_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection#hvn_1 DataHcpHvnPeeringConnection#hvn_1}
   */
   readonly hvn1: string;
   /**
   * The unique URL of one of the HVNs being peered. Setting this attribute is deprecated, but it will remain usable in read-only form.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection#hvn_2 DataHcpHvnPeeringConnection#hvn_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection#hvn_2 DataHcpHvnPeeringConnection#hvn_2}
   */
   readonly hvn2?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection#id DataHcpHvnPeeringConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection#id DataHcpHvnPeeringConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface DataHcpHvnPeeringConnectionConfig extends cdktf.TerraformMetaAr
   /**
   * The ID of the peering connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection#peering_id DataHcpHvnPeeringConnection#peering_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection#peering_id DataHcpHvnPeeringConnection#peering_id}
   */
   readonly peeringId: string;
   /**
   * The ID of the HCP project where the HVN peering connection is located. Always matches hvn_1's project ID. Setting this attribute is deprecated, but it will remain usable in read-only form.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection#project_id DataHcpHvnPeeringConnection#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection#project_id DataHcpHvnPeeringConnection#project_id}
   */
   readonly projectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection#timeouts DataHcpHvnPeeringConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection#timeouts DataHcpHvnPeeringConnection#timeouts}
   */
   readonly timeouts?: DataHcpHvnPeeringConnectionTimeouts;
 }
 export interface DataHcpHvnPeeringConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection#default DataHcpHvnPeeringConnection#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection#default DataHcpHvnPeeringConnection#default}
   */
   readonly default?: string;
 }
@@ -146,7 +146,7 @@ export class DataHcpHvnPeeringConnectionTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection}
 */
 export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
 
@@ -162,7 +162,7 @@ export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpHvnPeeringConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpHvnPeeringConnection to import
-  * @param importFromId The id of the existing DataHcpHvnPeeringConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpHvnPeeringConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpHvnPeeringConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -174,7 +174,7 @@ export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -185,7 +185,7 @@ export class DataHcpHvnPeeringConnection extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_hvn_peering_connection',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.91.0',
+        providerVersion: '0.91.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
