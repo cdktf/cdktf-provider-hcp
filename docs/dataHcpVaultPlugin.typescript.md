@@ -4,7 +4,7 @@
 
 ### DataHcpVaultPlugin <a name="DataHcpVaultPlugin" id="@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPlugin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin hcp_vault_plugin}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin hcp_vault_plugin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPlugin.Initializer"></a>
 
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataHcpVaultPlugin to impo
 
 The id of the existing DataHcpVaultPlugin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -728,7 +728,7 @@ const dataHcpVaultPluginConfig: dataHcpVaultPlugin.DataHcpVaultPluginConfig = { 
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginConfig.property.clusterId">clusterId</a></code> | <code>string</code> | The ID of the HCP Vault cluster. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginConfig.property.pluginName">pluginName</a></code> | <code>string</code> | The name of the plugin - Valid options for plugin name - 'venafi-pki-backend'. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginConfig.property.pluginType">pluginType</a></code> | <code>string</code> | The type of the plugin - Valid options for plugin type - 'SECRET', 'AUTH', 'DATABASE'. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin#id DataHcpVaultPlugin#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin#id DataHcpVaultPlugin#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginConfig.property.projectId">projectId</a></code> | <code>string</code> | The ID of the HCP project where the HCP Vault cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginTimeouts">DataHcpVaultPluginTimeouts</a></code> | timeouts block. |
 
@@ -814,7 +814,7 @@ public readonly clusterId: string;
 
 The ID of the HCP Vault cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin#cluster_id DataHcpVaultPlugin#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin#cluster_id DataHcpVaultPlugin#cluster_id}
 
 ---
 
@@ -828,7 +828,7 @@ public readonly pluginName: string;
 
 The name of the plugin - Valid options for plugin name - 'venafi-pki-backend'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin#plugin_name DataHcpVaultPlugin#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin#plugin_name DataHcpVaultPlugin#plugin_name}
 
 ---
 
@@ -842,7 +842,7 @@ public readonly pluginType: string;
 
 The type of the plugin - Valid options for plugin type - 'SECRET', 'AUTH', 'DATABASE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin#plugin_type DataHcpVaultPlugin#plugin_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin#plugin_type DataHcpVaultPlugin#plugin_type}
 
 ---
 
@@ -854,7 +854,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin#id DataHcpVaultPlugin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin#id DataHcpVaultPlugin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -874,7 +874,7 @@ The ID of the HCP project where the HCP Vault cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin#project_id DataHcpVaultPlugin#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin#project_id DataHcpVaultPlugin#project_id}
 
 ---
 
@@ -888,7 +888,7 @@ public readonly timeouts: DataHcpVaultPluginTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin#timeouts DataHcpVaultPlugin#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin#timeouts DataHcpVaultPlugin#timeouts}
 
 ---
 
@@ -906,7 +906,7 @@ const dataHcpVaultPluginTimeouts: dataHcpVaultPlugin.DataHcpVaultPluginTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin#default DataHcpVaultPlugin#default}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin#default DataHcpVaultPlugin#default}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/vault_plugin#default DataHcpVaultPlugin#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/vault_plugin#default DataHcpVaultPlugin#default}.
 
 ---
 

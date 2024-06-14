@@ -4,12 +4,12 @@
 
 ### DataHcpPackerArtifact <a name="DataHcpPackerArtifact" id="@cdktf/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/packer_artifact hcp_packer_artifact}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/packer_artifact hcp_packer_artifact}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerartifact"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerartifact"
 
 datahcppackerartifact.NewDataHcpPackerArtifact(scope Construct, id *string, config DataHcpPackerArtifactConfig) DataHcpPackerArtifact
 ```
@@ -304,7 +304,7 @@ func ResetVersionFingerprint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerartifact"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerartifact"
 
 datahcppackerartifact.DataHcpPackerArtifact_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerartifact"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerartifact"
 
 datahcppackerartifact.DataHcpPackerArtifact_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datahcppackerartifact.DataHcpPackerArtifact_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerartifact"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerartifact"
 
 datahcppackerartifact.DataHcpPackerArtifact_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datahcppackerartifact.DataHcpPackerArtifact_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifact.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerartifact"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerartifact"
 
 datahcppackerartifact.DataHcpPackerArtifact_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataHcpPackerArtifact to i
 
 The id of the existing DataHcpPackerArtifact that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/packer_artifact#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/packer_artifact#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpPackerArtifact.DataHcpPackerArtifactConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcppackerartifact"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerartifact"
 
 &datahcppackerartifact.DataHcpPackerArtifactConfig {
 	Connection: interface{},
@@ -934,7 +934,7 @@ BucketName *string
 
 The name of the HCP Packer Bucket where the Artifact is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/packer_artifact#bucket_name DataHcpPackerArtifact#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/packer_artifact#bucket_name DataHcpPackerArtifact#bucket_name}
 
 ---
 
@@ -948,7 +948,7 @@ Platform *string
 
 Name of the platform where the HCP Packer Artifact is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/packer_artifact#platform DataHcpPackerArtifact#platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/packer_artifact#platform DataHcpPackerArtifact#platform}
 
 ---
 
@@ -962,7 +962,7 @@ Region *string
 
 The Region where the HCP Packer Artifact is stored, if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/packer_artifact#region DataHcpPackerArtifact#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/packer_artifact#region DataHcpPackerArtifact#region}
 
 ---
 
@@ -979,7 +979,7 @@ The name of the HCP Packer Channel the Version containing this Artifact is assig
 The Version currently assigned to the Channel will be fetched.
 Exactly one of `channel_name` or `version_fingerprint` must be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/packer_artifact#channel_name DataHcpPackerArtifact#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/packer_artifact#channel_name DataHcpPackerArtifact#channel_name}
 
 ---
 
@@ -993,7 +993,7 @@ ComponentType *string
 
 Name of the Packer builder that built this Artifact. Ex: `amazon-ebs.example`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/packer_artifact#component_type DataHcpPackerArtifact#component_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/packer_artifact#component_type DataHcpPackerArtifact#component_type}
 
 ---
 
@@ -1007,7 +1007,7 @@ ProjectId *string
 
 The ID of the HCP Organization where the Artifact is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/packer_artifact#project_id DataHcpPackerArtifact#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/packer_artifact#project_id DataHcpPackerArtifact#project_id}
 
 ---
 
@@ -1024,7 +1024,7 @@ The fingerprint of the HCP Packer Version where the Artifact is located.
 If provided in the config, it is used to fetch the Version.
 Exactly one of `channel_name` or `version_fingerprint` must be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/packer_artifact#version_fingerprint DataHcpPackerArtifact#version_fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/packer_artifact#version_fingerprint DataHcpPackerArtifact#version_fingerprint}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Group <a name="Group" id="@cdktf/provider-hcp.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/group hcp_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/group hcp_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.group.Group.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,7 +851,7 @@ public string DisplayName { get; set; }
 
 The group's display_name - maximum length of 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/group#display_name Group#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/group#display_name Group#display_name}
 
 ---
 
@@ -865,7 +865,7 @@ public string Description { get; set; }
 
 The group's description - maximum length of 300 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/group#description Group#description}
 
 ---
 
