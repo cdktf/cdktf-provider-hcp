@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsAppIamPolicy.VaultSecretsAppIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiampolicy"
 
 vaultsecretsappiampolicy.NewVaultSecretsAppIamPolicy(scope Construct, id *string, config VaultSecretsAppIamPolicyConfig) VaultSecretsAppIamPolicy
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsAppIamPolicy.VaultSecretsAppIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiampolicy"
 
 vaultsecretsappiampolicy.VaultSecretsAppIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsAppIamPolicy.VaultSecretsAppIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiampolicy"
 
 vaultsecretsappiampolicy.VaultSecretsAppIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ vaultsecretsappiampolicy.VaultSecretsAppIamPolicy_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsAppIamPolicy.VaultSecretsAppIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiampolicy"
 
 vaultsecretsappiampolicy.VaultSecretsAppIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ vaultsecretsappiampolicy.VaultSecretsAppIamPolicy_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsAppIamPolicy.VaultSecretsAppIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiampolicy"
 
 vaultsecretsappiampolicy.VaultSecretsAppIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsAppIamPolicy.VaultSecretsAppIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiampolicy"
 
 &vaultsecretsappiampolicy.VaultSecretsAppIamPolicyConfig {
 	Connection: interface{},
