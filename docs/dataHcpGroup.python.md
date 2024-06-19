@@ -4,7 +4,7 @@
 
 ### DataHcpGroup <a name="DataHcpGroup" id="@cdktf/provider-hcp.dataHcpGroup.DataHcpGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/group hcp_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/group hcp_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpGroup.DataHcpGroup.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The group's resource name in format `iam/organization/<organization_id>/group/<group_name>`. The shortened `<group_name>` version can be used for input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/group#resource_name DataHcpGroup#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/group#resource_name DataHcpGroup#resource_name}
 
 ---
 
@@ -465,7 +465,7 @@ The construct id used in the generated config for the DataHcpGroup to import.
 
 The id of the existing DataHcpGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +807,7 @@ resource_name: str
 
 The group's resource name in format `iam/organization/<organization_id>/group/<group_name>`. The shortened `<group_name>` version can be used for input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/data-sources/group#resource_name DataHcpGroup#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/group#resource_name DataHcpGroup#resource_name}
 
 ---
 

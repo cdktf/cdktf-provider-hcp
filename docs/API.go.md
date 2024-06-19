@@ -42,6 +42,8 @@ The following submodules are available:
 - [dataHcpWaypointApplication](./dataHcpWaypointApplication.go.md)
 - [dataHcpWaypointApplicationTemplate](./dataHcpWaypointApplicationTemplate.go.md)
 - [group](./group.go.md)
+- [groupIamBinding](./groupIamBinding.go.md)
+- [groupIamPolicy](./groupIamPolicy.go.md)
 - [groupMembers](./groupMembers.go.md)
 - [hvn](./hvn.go.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.go.md)

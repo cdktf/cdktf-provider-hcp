@@ -42,6 +42,8 @@ The following submodules are available:
 - [dataHcpWaypointApplication](./dataHcpWaypointApplication.python.md)
 - [dataHcpWaypointApplicationTemplate](./dataHcpWaypointApplicationTemplate.python.md)
 - [group](./group.python.md)
+- [groupIamBinding](./groupIamBinding.python.md)
+- [groupIamPolicy](./groupIamPolicy.python.md)
 - [groupMembers](./groupMembers.python.md)
 - [hvn](./hvn.python.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.python.md)

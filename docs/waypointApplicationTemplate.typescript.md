@@ -4,7 +4,7 @@
 
 ### WaypointApplicationTemplate <a name="WaypointApplicationTemplate" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template hcp_waypoint_application_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template hcp_waypoint_application_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplate.Initializer"></a>
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the WaypointApplicationTemplat
 
 The id of the existing WaypointApplicationTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1069,7 +1069,7 @@ public readonly name: string;
 
 The name of the Application Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
 
 ---
 
@@ -1083,7 +1083,7 @@ public readonly summary: string;
 
 A brief description of the template, up to 110 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#summary WaypointApplicationTemplate#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#summary WaypointApplicationTemplate#summary}
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly terraformCloudWorkspaceDetails: WaypointApplicationTemplateTerra
 
 Terraform Cloud Workspace details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#terraform_cloud_workspace_details WaypointApplicationTemplate#terraform_cloud_workspace_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#terraform_cloud_workspace_details WaypointApplicationTemplate#terraform_cloud_workspace_details}
 
 ---
 
@@ -1111,7 +1111,7 @@ public readonly terraformNoCodeModule: WaypointApplicationTemplateTerraformNoCod
 
 Terraform Cloud No-Code Module details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#terraform_no_code_module WaypointApplicationTemplate#terraform_no_code_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#terraform_no_code_module WaypointApplicationTemplate#terraform_no_code_module}
 
 ---
 
@@ -1125,7 +1125,7 @@ public readonly description: string;
 
 A description of the template, along with when and why it should be used, up to 500 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#description WaypointApplicationTemplate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#description WaypointApplicationTemplate#description}
 
 ---
 
@@ -1139,7 +1139,7 @@ public readonly labels: string[];
 
 List of labels attached to this Application Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#labels WaypointApplicationTemplate#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#labels WaypointApplicationTemplate#labels}
 
 ---
 
@@ -1153,7 +1153,7 @@ public readonly projectId: string;
 
 The ID of the HCP project where the Waypoint Application Template is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#project_id WaypointApplicationTemplate#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#project_id WaypointApplicationTemplate#project_id}
 
 ---
 
@@ -1167,7 +1167,7 @@ public readonly readmeMarkdownTemplate: string;
 
 Instructions for using the template (markdown format supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#readme_markdown_template WaypointApplicationTemplate#readme_markdown_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#readme_markdown_template WaypointApplicationTemplate#readme_markdown_template}
 
 ---
 
@@ -1181,7 +1181,7 @@ public readonly variableOptions: IResolvable | WaypointApplicationTemplateVariab
 
 List of variable options for the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#variable_options WaypointApplicationTemplate#variable_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#variable_options WaypointApplicationTemplate#variable_options}
 
 ---
 
@@ -1214,7 +1214,7 @@ public readonly name: string;
 
 Name of the Terraform Cloud Workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
 
 ---
 
@@ -1228,7 +1228,7 @@ public readonly terraformProjectId: string;
 
 Terraform Cloud Project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#terraform_project_id WaypointApplicationTemplate#terraform_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#terraform_project_id WaypointApplicationTemplate#terraform_project_id}
 
 ---
 
@@ -1261,7 +1261,7 @@ public readonly source: string;
 
 No-Code Module Source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#source WaypointApplicationTemplate#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#source WaypointApplicationTemplate#source}
 
 ---
 
@@ -1275,7 +1275,7 @@ public readonly version: string;
 
 No-Code Module Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#version WaypointApplicationTemplate#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#version WaypointApplicationTemplate#version}
 
 ---
 
@@ -1310,7 +1310,7 @@ public readonly name: string;
 
 Variable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
 
 ---
 
@@ -1324,7 +1324,7 @@ public readonly variableType: string;
 
 Variable type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#variable_type WaypointApplicationTemplate#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#variable_type WaypointApplicationTemplate#variable_type}
 
 ---
 
@@ -1338,7 +1338,7 @@ public readonly options: string[];
 
 List of options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#options WaypointApplicationTemplate#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#options WaypointApplicationTemplate#options}
 
 ---
 
@@ -1352,7 +1352,7 @@ public readonly userEditable: boolean | IResolvable;
 
 Whether the variable is editable by the user creating an application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/waypoint_application_template#user_editable WaypointApplicationTemplate#user_editable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#user_editable WaypointApplicationTemplate#user_editable}
 
 ---
 
