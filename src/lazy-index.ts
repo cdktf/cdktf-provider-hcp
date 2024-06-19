@@ -12,6 +12,8 @@ Object.defineProperty(exports, 'consulCluster', { get: function () { return requ
 Object.defineProperty(exports, 'consulClusterRootToken', { get: function () { return require('./consul-cluster-root-token'); } });
 Object.defineProperty(exports, 'consulSnapshot', { get: function () { return require('./consul-snapshot'); } });
 Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
+Object.defineProperty(exports, 'groupIamBinding', { get: function () { return require('./group-iam-binding'); } });
+Object.defineProperty(exports, 'groupIamPolicy', { get: function () { return require('./group-iam-policy'); } });
 Object.defineProperty(exports, 'groupMembers', { get: function () { return require('./group-members'); } });
 Object.defineProperty(exports, 'hvn', { get: function () { return require('./hvn'); } });
 Object.defineProperty(exports, 'hvnPeeringConnection', { get: function () { return require('./hvn-peering-connection'); } });

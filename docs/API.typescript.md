@@ -42,6 +42,8 @@ The following submodules are available:
 - [dataHcpWaypointApplication](./dataHcpWaypointApplication.typescript.md)
 - [dataHcpWaypointApplicationTemplate](./dataHcpWaypointApplicationTemplate.typescript.md)
 - [group](./group.typescript.md)
+- [groupIamBinding](./groupIamBinding.typescript.md)
+- [groupIamPolicy](./groupIamPolicy.typescript.md)
 - [groupMembers](./groupMembers.typescript.md)
 - [hvn](./hvn.typescript.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.typescript.md)

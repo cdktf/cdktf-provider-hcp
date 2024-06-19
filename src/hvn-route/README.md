@@ -1,3 +1,3 @@
 # `hcp_hvn_route`
 
-Refer to the Terraform Registry for docs: [`hcp_hvn_route`](https://registry.terraform.io/providers/hashicorp/hcp/0.91.1/docs/resources/hvn_route).
+Refer to the Terraform Registry for docs: [`hcp_hvn_route`](https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/hvn_route).

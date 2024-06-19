@@ -42,6 +42,8 @@ The following submodules are available:
 - [dataHcpWaypointApplication](./dataHcpWaypointApplication.java.md)
 - [dataHcpWaypointApplicationTemplate](./dataHcpWaypointApplicationTemplate.java.md)
 - [group](./group.java.md)
+- [groupIamBinding](./groupIamBinding.java.md)
+- [groupIamPolicy](./groupIamPolicy.java.md)
 - [groupMembers](./groupMembers.java.md)
 - [hvn](./hvn.java.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.java.md)

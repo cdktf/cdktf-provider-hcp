@@ -12,6 +12,8 @@ export * as consulCluster from './consul-cluster';
 export * as consulClusterRootToken from './consul-cluster-root-token';
 export * as consulSnapshot from './consul-snapshot';
 export * as group from './group';
+export * as groupIamBinding from './group-iam-binding';
+export * as groupIamPolicy from './group-iam-policy';
 export * as groupMembers from './group-members';
 export * as hvn from './hvn';
 export * as hvnPeeringConnection from './hvn-peering-connection';

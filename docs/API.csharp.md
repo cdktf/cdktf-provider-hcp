@@ -42,6 +42,8 @@ The following submodules are available:
 - [dataHcpWaypointApplication](./dataHcpWaypointApplication.csharp.md)
 - [dataHcpWaypointApplicationTemplate](./dataHcpWaypointApplicationTemplate.csharp.md)
 - [group](./group.csharp.md)
+- [groupIamBinding](./groupIamBinding.csharp.md)
+- [groupIamPolicy](./groupIamPolicy.csharp.md)
 - [groupMembers](./groupMembers.csharp.md)
 - [hvn](./hvn.csharp.md)
 - [hvnPeeringConnection](./hvnPeeringConnection.csharp.md)
