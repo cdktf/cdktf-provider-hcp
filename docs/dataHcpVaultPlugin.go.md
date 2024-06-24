@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultplugin"
 
 datahcpvaultplugin.NewDataHcpVaultPlugin(scope Construct, id *string, config DataHcpVaultPluginConfig) DataHcpVaultPlugin
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultplugin"
 
 datahcpvaultplugin.DataHcpVaultPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultplugin"
 
 datahcpvaultplugin.DataHcpVaultPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datahcpvaultplugin.DataHcpVaultPlugin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPlugin.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultplugin"
 
 datahcpvaultplugin.DataHcpVaultPlugin_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datahcpvaultplugin.DataHcpVaultPlugin_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPlugin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultplugin"
 
 datahcpvaultplugin.DataHcpVaultPlugin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -709,7 +709,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultplugin"
 
 &datahcpvaultplugin.DataHcpVaultPluginConfig {
 	Connection: interface{},
@@ -724,7 +724,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultplugin"
 	PluginType: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.dataHcpVaultPlugin.DataHcpVaultPluginTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.dataHcpVaultPlugin.DataHcpVaultPluginTimeouts,
 }
 ```
 
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultplugin"
 
 &datahcpvaultplugin.DataHcpVaultPluginTimeouts {
 	Default: *string,
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultPlugin.DataHcpVaultPluginTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultplugin"
 
 datahcpvaultplugin.NewDataHcpVaultPluginTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpVaultPluginTimeoutsOutputReference
 ```
