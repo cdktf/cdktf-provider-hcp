@@ -1,3 +1,3 @@
 # `hcp_organization_iam_policy`
 
-Refer to the Terraform Registry for docs: [`hcp_organization_iam_policy`](https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/organization_iam_policy).
+Refer to the Terraform Registry for docs: [`hcp_organization_iam_policy`](https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/organization_iam_policy).

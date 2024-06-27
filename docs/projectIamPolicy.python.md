@@ -4,7 +4,7 @@
 
 ### ProjectIamPolicy <a name="ProjectIamPolicy" id="@cdktf/provider-hcp.projectIamPolicy.ProjectIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/project_iam_policy hcp_project_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/project_iam_policy hcp_project_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.projectIamPolicy.ProjectIamPolicy.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/project_iam_policy#policy_data ProjectIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/project_iam_policy#policy_data ProjectIamPolicy#policy_data}
 
 ---
 
@@ -120,7 +120,7 @@ The ID of the HCP project to apply the IAM Policy to.
 
 If unspecified, the project configured on the provider is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/project_iam_policy#project_id ProjectIamPolicy#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/project_iam_policy#project_id ProjectIamPolicy#project_id}
 
 ---
 
@@ -600,7 +600,7 @@ The construct id used in the generated config for the ProjectIamPolicy to import
 
 The id of the existing ProjectIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/project_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/project_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -966,7 +966,7 @@ policy_data: str
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/project_iam_policy#policy_data ProjectIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/project_iam_policy#policy_data ProjectIamPolicy#policy_data}
 
 ---
 
@@ -982,7 +982,7 @@ The ID of the HCP project to apply the IAM Policy to.
 
 If unspecified, the project configured on the provider is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/project_iam_policy#project_id ProjectIamPolicy#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/project_iam_policy#project_id ProjectIamPolicy#project_id}
 
 ---
 

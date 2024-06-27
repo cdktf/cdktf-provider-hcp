@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template
+// https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,78 +6,78 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WaypointApplicationTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface WaypointTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the template, along with when and why it should be used, up to 500 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#description WaypointApplicationTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#description WaypointTemplate#description}
   */
   readonly description?: string;
   /**
-  * List of labels attached to this Application Template.
+  * List of labels attached to this Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#labels WaypointApplicationTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#labels WaypointTemplate#labels}
   */
   readonly labels?: string[];
   /**
-  * The name of the Application Template.
+  * The name of the Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#name WaypointTemplate#name}
   */
   readonly name: string;
   /**
-  * The ID of the HCP project where the Waypoint Application Template is located.
+  * The ID of the HCP project where the Waypoint Template is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#project_id WaypointApplicationTemplate#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#project_id WaypointTemplate#project_id}
   */
   readonly projectId?: string;
   /**
   * Instructions for using the template (markdown format supported
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#readme_markdown_template WaypointApplicationTemplate#readme_markdown_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#readme_markdown_template WaypointTemplate#readme_markdown_template}
   */
   readonly readmeMarkdownTemplate?: string;
   /**
   * A brief description of the template, up to 110 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#summary WaypointApplicationTemplate#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#summary WaypointTemplate#summary}
   */
   readonly summary: string;
   /**
   * Terraform Cloud Workspace details
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#terraform_cloud_workspace_details WaypointApplicationTemplate#terraform_cloud_workspace_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#terraform_cloud_workspace_details WaypointTemplate#terraform_cloud_workspace_details}
   */
-  readonly terraformCloudWorkspaceDetails: WaypointApplicationTemplateTerraformCloudWorkspaceDetails;
+  readonly terraformCloudWorkspaceDetails: WaypointTemplateTerraformCloudWorkspaceDetails;
   /**
   * Terraform Cloud No-Code Module details
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#terraform_no_code_module WaypointApplicationTemplate#terraform_no_code_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#terraform_no_code_module WaypointTemplate#terraform_no_code_module}
   */
-  readonly terraformNoCodeModule: WaypointApplicationTemplateTerraformNoCodeModule;
+  readonly terraformNoCodeModule: WaypointTemplateTerraformNoCodeModule;
   /**
   * List of variable options for the template
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#variable_options WaypointApplicationTemplate#variable_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#variable_options WaypointTemplate#variable_options}
   */
-  readonly variableOptions?: WaypointApplicationTemplateVariableOptions[] | cdktf.IResolvable;
+  readonly variableOptions?: WaypointTemplateVariableOptions[] | cdktf.IResolvable;
 }
-export interface WaypointApplicationTemplateTerraformCloudWorkspaceDetails {
+export interface WaypointTemplateTerraformCloudWorkspaceDetails {
   /**
   * Name of the Terraform Cloud Workspace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#name WaypointTemplate#name}
   */
   readonly name: string;
   /**
   * Terraform Cloud Project ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#terraform_project_id WaypointApplicationTemplate#terraform_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
   */
   readonly terraformProjectId: string;
 }
 
-export function waypointApplicationTemplateTerraformCloudWorkspaceDetailsToTerraform(struct?: WaypointApplicationTemplateTerraformCloudWorkspaceDetails | cdktf.IResolvable): any {
+export function waypointTemplateTerraformCloudWorkspaceDetailsToTerraform(struct?: WaypointTemplateTerraformCloudWorkspaceDetails | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -94,7 +89,7 @@ export function waypointApplicationTemplateTerraformCloudWorkspaceDetailsToTerra
 }
 
 
-export function waypointApplicationTemplateTerraformCloudWorkspaceDetailsToHclTerraform(struct?: WaypointApplicationTemplateTerraformCloudWorkspaceDetails | cdktf.IResolvable): any {
+export function waypointTemplateTerraformCloudWorkspaceDetailsToHclTerraform(struct?: WaypointTemplateTerraformCloudWorkspaceDetails | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -118,7 +113,7 @@ export function waypointApplicationTemplateTerraformCloudWorkspaceDetailsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference extends cdktf.ComplexObject {
+export class WaypointTemplateTerraformCloudWorkspaceDetailsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -130,7 +125,7 @@ export class WaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputRefe
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WaypointApplicationTemplateTerraformCloudWorkspaceDetails | cdktf.IResolvable | undefined {
+  public get internalValue(): WaypointTemplateTerraformCloudWorkspaceDetails | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -147,7 +142,7 @@ export class WaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaypointApplicationTemplateTerraformCloudWorkspaceDetails | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WaypointTemplateTerraformCloudWorkspaceDetails | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -192,22 +187,22 @@ export class WaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputRefe
     return this._terraformProjectId;
   }
 }
-export interface WaypointApplicationTemplateTerraformNoCodeModule {
+export interface WaypointTemplateTerraformNoCodeModule {
   /**
   * No-Code Module Source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#source WaypointApplicationTemplate#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#source WaypointTemplate#source}
   */
   readonly source: string;
   /**
   * No-Code Module Version
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#version WaypointApplicationTemplate#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#version WaypointTemplate#version}
   */
   readonly version: string;
 }
 
-export function waypointApplicationTemplateTerraformNoCodeModuleToTerraform(struct?: WaypointApplicationTemplateTerraformNoCodeModule | cdktf.IResolvable): any {
+export function waypointTemplateTerraformNoCodeModuleToTerraform(struct?: WaypointTemplateTerraformNoCodeModule | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -219,7 +214,7 @@ export function waypointApplicationTemplateTerraformNoCodeModuleToTerraform(stru
 }
 
 
-export function waypointApplicationTemplateTerraformNoCodeModuleToHclTerraform(struct?: WaypointApplicationTemplateTerraformNoCodeModule | cdktf.IResolvable): any {
+export function waypointTemplateTerraformNoCodeModuleToHclTerraform(struct?: WaypointTemplateTerraformNoCodeModule | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -243,7 +238,7 @@ export function waypointApplicationTemplateTerraformNoCodeModuleToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WaypointApplicationTemplateTerraformNoCodeModuleOutputReference extends cdktf.ComplexObject {
+export class WaypointTemplateTerraformNoCodeModuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -255,7 +250,7 @@ export class WaypointApplicationTemplateTerraformNoCodeModuleOutputReference ext
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WaypointApplicationTemplateTerraformNoCodeModule | cdktf.IResolvable | undefined {
+  public get internalValue(): WaypointTemplateTerraformNoCodeModule | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -272,7 +267,7 @@ export class WaypointApplicationTemplateTerraformNoCodeModuleOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaypointApplicationTemplateTerraformNoCodeModule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WaypointTemplateTerraformNoCodeModule | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -317,34 +312,34 @@ export class WaypointApplicationTemplateTerraformNoCodeModuleOutputReference ext
     return this._version;
   }
 }
-export interface WaypointApplicationTemplateVariableOptions {
+export interface WaypointTemplateVariableOptions {
   /**
   * Variable name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#name WaypointTemplate#name}
   */
   readonly name: string;
   /**
   * List of options
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#options WaypointApplicationTemplate#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#options WaypointTemplate#options}
   */
   readonly options?: string[];
   /**
   * Whether the variable is editable by the user creating an application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#user_editable WaypointApplicationTemplate#user_editable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#user_editable WaypointTemplate#user_editable}
   */
   readonly userEditable?: boolean | cdktf.IResolvable;
   /**
   * Variable type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#variable_type WaypointApplicationTemplate#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#variable_type WaypointTemplate#variable_type}
   */
   readonly variableType: string;
 }
 
-export function waypointApplicationTemplateVariableOptionsToTerraform(struct?: WaypointApplicationTemplateVariableOptions | cdktf.IResolvable): any {
+export function waypointTemplateVariableOptionsToTerraform(struct?: WaypointTemplateVariableOptions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -358,7 +353,7 @@ export function waypointApplicationTemplateVariableOptionsToTerraform(struct?: W
 }
 
 
-export function waypointApplicationTemplateVariableOptionsToHclTerraform(struct?: WaypointApplicationTemplateVariableOptions | cdktf.IResolvable): any {
+export function waypointTemplateVariableOptionsToHclTerraform(struct?: WaypointTemplateVariableOptions | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -394,7 +389,7 @@ export function waypointApplicationTemplateVariableOptionsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WaypointApplicationTemplateVariableOptionsOutputReference extends cdktf.ComplexObject {
+export class WaypointTemplateVariableOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -408,7 +403,7 @@ export class WaypointApplicationTemplateVariableOptionsOutputReference extends c
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WaypointApplicationTemplateVariableOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): WaypointTemplateVariableOptions | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -433,7 +428,7 @@ export class WaypointApplicationTemplateVariableOptionsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaypointApplicationTemplateVariableOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WaypointTemplateVariableOptions | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -515,8 +510,8 @@ export class WaypointApplicationTemplateVariableOptionsOutputReference extends c
   }
 }
 
-export class WaypointApplicationTemplateVariableOptionsList extends cdktf.ComplexList {
-  public internalValue? : WaypointApplicationTemplateVariableOptions[] | cdktf.IResolvable
+export class WaypointTemplateVariableOptionsList extends cdktf.ComplexList {
+  public internalValue? : WaypointTemplateVariableOptions[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -530,33 +525,33 @@ export class WaypointApplicationTemplateVariableOptionsList extends cdktf.Comple
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): WaypointApplicationTemplateVariableOptionsOutputReference {
-    return new WaypointApplicationTemplateVariableOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): WaypointTemplateVariableOptionsOutputReference {
+    return new WaypointTemplateVariableOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template hcp_waypoint_application_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template hcp_waypoint_template}
 */
-export class WaypointApplicationTemplate extends cdktf.TerraformResource {
+export class WaypointTemplate extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "hcp_waypoint_application_template";
+  public static readonly tfResourceType = "hcp_waypoint_template";
 
   // ==============
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WaypointApplicationTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTF code for importing a WaypointTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the WaypointApplicationTemplate to import
-  * @param importFromId The id of the existing WaypointApplicationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the WaypointApplicationTemplate to import is found
+  * @param importToId The construct id used in the generated config for the WaypointTemplate to import
+  * @param importFromId The id of the existing WaypointTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the WaypointTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_application_template", importId: importFromId, provider });
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -564,18 +559,18 @@ export class WaypointApplicationTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application_template hcp_waypoint_application_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template hcp_waypoint_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options WaypointApplicationTemplateConfig
+  * @param options WaypointTemplateConfig
   */
-  public constructor(scope: Construct, id: string, config: WaypointApplicationTemplateConfig) {
+  public constructor(scope: Construct, id: string, config: WaypointTemplateConfig) {
     super(scope, id, {
-      terraformResourceType: 'hcp_waypoint_application_template',
+      terraformResourceType: 'hcp_waypoint_template',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.92.0',
+        providerVersion: '0.93.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -702,11 +697,11 @@ export class WaypointApplicationTemplate extends cdktf.TerraformResource {
   }
 
   // terraform_cloud_workspace_details - computed: false, optional: false, required: true
-  private _terraformCloudWorkspaceDetails = new WaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference(this, "terraform_cloud_workspace_details");
+  private _terraformCloudWorkspaceDetails = new WaypointTemplateTerraformCloudWorkspaceDetailsOutputReference(this, "terraform_cloud_workspace_details");
   public get terraformCloudWorkspaceDetails() {
     return this._terraformCloudWorkspaceDetails;
   }
-  public putTerraformCloudWorkspaceDetails(value: WaypointApplicationTemplateTerraformCloudWorkspaceDetails) {
+  public putTerraformCloudWorkspaceDetails(value: WaypointTemplateTerraformCloudWorkspaceDetails) {
     this._terraformCloudWorkspaceDetails.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -715,11 +710,11 @@ export class WaypointApplicationTemplate extends cdktf.TerraformResource {
   }
 
   // terraform_no_code_module - computed: false, optional: false, required: true
-  private _terraformNoCodeModule = new WaypointApplicationTemplateTerraformNoCodeModuleOutputReference(this, "terraform_no_code_module");
+  private _terraformNoCodeModule = new WaypointTemplateTerraformNoCodeModuleOutputReference(this, "terraform_no_code_module");
   public get terraformNoCodeModule() {
     return this._terraformNoCodeModule;
   }
-  public putTerraformNoCodeModule(value: WaypointApplicationTemplateTerraformNoCodeModule) {
+  public putTerraformNoCodeModule(value: WaypointTemplateTerraformNoCodeModule) {
     this._terraformNoCodeModule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -728,11 +723,11 @@ export class WaypointApplicationTemplate extends cdktf.TerraformResource {
   }
 
   // variable_options - computed: false, optional: true, required: false
-  private _variableOptions = new WaypointApplicationTemplateVariableOptionsList(this, "variable_options", true);
+  private _variableOptions = new WaypointTemplateVariableOptionsList(this, "variable_options", true);
   public get variableOptions() {
     return this._variableOptions;
   }
-  public putVariableOptions(value: WaypointApplicationTemplateVariableOptions[] | cdktf.IResolvable) {
+  public putVariableOptions(value: WaypointTemplateVariableOptions[] | cdktf.IResolvable) {
     this._variableOptions.internalValue = value;
   }
   public resetVariableOptions() {
@@ -755,9 +750,9 @@ export class WaypointApplicationTemplate extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
       readme_markdown_template: cdktf.stringToTerraform(this._readmeMarkdownTemplate),
       summary: cdktf.stringToTerraform(this._summary),
-      terraform_cloud_workspace_details: waypointApplicationTemplateTerraformCloudWorkspaceDetailsToTerraform(this._terraformCloudWorkspaceDetails.internalValue),
-      terraform_no_code_module: waypointApplicationTemplateTerraformNoCodeModuleToTerraform(this._terraformNoCodeModule.internalValue),
-      variable_options: cdktf.listMapper(waypointApplicationTemplateVariableOptionsToTerraform, false)(this._variableOptions.internalValue),
+      terraform_cloud_workspace_details: waypointTemplateTerraformCloudWorkspaceDetailsToTerraform(this._terraformCloudWorkspaceDetails.internalValue),
+      terraform_no_code_module: waypointTemplateTerraformNoCodeModuleToTerraform(this._terraformNoCodeModule.internalValue),
+      variable_options: cdktf.listMapper(waypointTemplateVariableOptionsToTerraform, false)(this._variableOptions.internalValue),
     };
   }
 
@@ -800,22 +795,22 @@ export class WaypointApplicationTemplate extends cdktf.TerraformResource {
         storageClassType: "string",
       },
       terraform_cloud_workspace_details: {
-        value: waypointApplicationTemplateTerraformCloudWorkspaceDetailsToHclTerraform(this._terraformCloudWorkspaceDetails.internalValue),
+        value: waypointTemplateTerraformCloudWorkspaceDetailsToHclTerraform(this._terraformCloudWorkspaceDetails.internalValue),
         isBlock: true,
         type: "struct",
-        storageClassType: "WaypointApplicationTemplateTerraformCloudWorkspaceDetails",
+        storageClassType: "WaypointTemplateTerraformCloudWorkspaceDetails",
       },
       terraform_no_code_module: {
-        value: waypointApplicationTemplateTerraformNoCodeModuleToHclTerraform(this._terraformNoCodeModule.internalValue),
+        value: waypointTemplateTerraformNoCodeModuleToHclTerraform(this._terraformNoCodeModule.internalValue),
         isBlock: true,
         type: "struct",
-        storageClassType: "WaypointApplicationTemplateTerraformNoCodeModule",
+        storageClassType: "WaypointTemplateTerraformNoCodeModule",
       },
       variable_options: {
-        value: cdktf.listMapperHcl(waypointApplicationTemplateVariableOptionsToHclTerraform, false)(this._variableOptions.internalValue),
+        value: cdktf.listMapperHcl(waypointTemplateVariableOptionsToHclTerraform, false)(this._variableOptions.internalValue),
         isBlock: true,
         type: "set",
-        storageClassType: "WaypointApplicationTemplateVariableOptionsList",
+        storageClassType: "WaypointTemplateVariableOptionsList",
       },
     };
 
