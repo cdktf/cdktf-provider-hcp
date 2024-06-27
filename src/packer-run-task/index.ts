@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task
+// https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface PackerRunTaskConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task#id PackerRunTask#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task#id PackerRunTask#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -25,37 +25,37 @@ export interface PackerRunTaskConfig extends cdktf.TerraformMetaArguments {
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task#project_id PackerRunTask#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task#project_id PackerRunTask#project_id}
   */
   readonly projectId?: string;
   /**
   * If true, the HMAC Key (`hmac_key`) will be regenerated during `terraform apply`. While set to true, the key will be regenerated on every `terraform apply` until `regenerate_hmac` is set to false or removed from the config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task#regenerate_hmac PackerRunTask#regenerate_hmac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task#regenerate_hmac PackerRunTask#regenerate_hmac}
   */
   readonly regenerateHmac?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task#timeouts PackerRunTask#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task#timeouts PackerRunTask#timeouts}
   */
   readonly timeouts?: PackerRunTaskTimeouts;
 }
 export interface PackerRunTaskTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task#create PackerRunTask#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task#create PackerRunTask#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task#default PackerRunTask#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task#default PackerRunTask#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task#delete PackerRunTask#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task#delete PackerRunTask#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task#update PackerRunTask#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task#update PackerRunTask#update}
   */
   readonly update?: string;
 }
@@ -236,7 +236,7 @@ export class PackerRunTaskTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task hcp_packer_run_task}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task hcp_packer_run_task}
 */
 export class PackerRunTask extends cdktf.TerraformResource {
 
@@ -252,7 +252,7 @@ export class PackerRunTask extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PackerRunTask resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PackerRunTask to import
-  * @param importFromId The id of the existing PackerRunTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PackerRunTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PackerRunTask to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -264,7 +264,7 @@ export class PackerRunTask extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/packer_run_task hcp_packer_run_task} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/packer_run_task hcp_packer_run_task} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -275,7 +275,7 @@ export class PackerRunTask extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_packer_run_task',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.92.0',
+        providerVersion: '0.93.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

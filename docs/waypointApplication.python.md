@@ -4,7 +4,7 @@
 
 ### WaypointApplication <a name="WaypointApplication" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application hcp_waypoint_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application hcp_waypoint_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer"></a>
 
@@ -21,8 +21,8 @@ waypointApplication.WaypointApplication(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  application_template_id: str,
   name: str,
+  template_id: str,
   application_input_variables: typing.Union[IResolvable, typing.List[WaypointApplicationApplicationInputVariables]] = None,
   project_id: str = None,
   readme_markdown: str = None
@@ -40,8 +40,8 @@ waypointApplication.WaypointApplication(
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.applicationTemplateId">application_template_id</a></code> | <code>str</code> | ID of the Application Template this Application is based on. |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the Application. |
+| <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.templateId">template_id</a></code> | <code>str</code> | ID of the Template this Application is based on. |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.applicationInputVariables">application_input_variables</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationApplicationInputVariables">WaypointApplicationApplicationInputVariables</a>]]</code> | Input variables set for the application. |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the Waypoint Application is located. |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.readmeMarkdown">readme_markdown</a></code> | <code>str</code> | Instructions for using the Application (markdown format supported). |
@@ -108,23 +108,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `application_template_id`<sup>Required</sup> <a name="application_template_id" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.applicationTemplateId"></a>
-
-- *Type:* str
-
-ID of the Application Template this Application is based on.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#application_template_id WaypointApplication#application_template_id}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 The name of the Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#name WaypointApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#name WaypointApplication#name}
+
+---
+
+##### `template_id`<sup>Required</sup> <a name="template_id" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.Initializer.parameter.templateId"></a>
+
+- *Type:* str
+
+ID of the Template this Application is based on.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#template_id WaypointApplication#template_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Input variables set for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#application_input_variables WaypointApplication#application_input_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#application_input_variables WaypointApplication#application_input_variables}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the HCP project where the Waypoint Application is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#project_id WaypointApplication#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#project_id WaypointApplication#project_id}
 
 ---
 
@@ -154,9 +154,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Instructions for using the Application (markdown format supported).
 
-Note: this is a base64 encoded string, and can only be set in configuration after initial creation. The initial version of the README is generated from the README Template from source Application Template.
+Note: this is a base64 encoded string, and can only be set in configuration after initial creation. The initial version of the README is generated from the README Template from source Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#readme_markdown WaypointApplication#readme_markdown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#readme_markdown WaypointApplication#readme_markdown}
 
 ---
 
@@ -665,7 +665,7 @@ The construct id used in the generated config for the WaypointApplication to imp
 
 The id of the existing WaypointApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,20 +696,20 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.applicationInputVariables">application_input_variables</a></code> | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationApplicationInputVariablesList">WaypointApplicationApplicationInputVariablesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.applicationTemplateName">application_template_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.namespaceId">namespace_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.organizationId">organization_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.templateInputVariables">template_input_variables</a></code> | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationTemplateInputVariablesList">WaypointApplicationTemplateInputVariablesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.templateName">template_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.applicationInputVariablesInput">application_input_variables_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationApplicationInputVariables">WaypointApplicationApplicationInputVariables</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.applicationTemplateIdInput">application_template_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.readmeMarkdownInput">readme_markdown_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.applicationTemplateId">application_template_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.templateIdInput">template_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.readmeMarkdown">readme_markdown</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.templateId">template_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -865,16 +865,6 @@ application_input_variables: WaypointApplicationApplicationInputVariablesList
 
 ---
 
-##### `application_template_name`<sup>Required</sup> <a name="application_template_name" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.applicationTemplateName"></a>
-
-```python
-application_template_name: str
-```
-
-- *Type:* str
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.id"></a>
 
 ```python
@@ -915,6 +905,16 @@ template_input_variables: WaypointApplicationTemplateInputVariablesList
 
 ---
 
+##### `template_name`<sup>Required</sup> <a name="template_name" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.templateName"></a>
+
+```python
+template_name: str
+```
+
+- *Type:* str
+
+---
+
 ##### `application_input_variables_input`<sup>Optional</sup> <a name="application_input_variables_input" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.applicationInputVariablesInput"></a>
 
 ```python
@@ -922,16 +922,6 @@ application_input_variables_input: typing.Union[IResolvable, typing.List[Waypoin
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationApplicationInputVariables">WaypointApplicationApplicationInputVariables</a>]]
-
----
-
-##### `application_template_id_input`<sup>Optional</sup> <a name="application_template_id_input" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.applicationTemplateIdInput"></a>
-
-```python
-application_template_id_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -965,10 +955,10 @@ readme_markdown_input: str
 
 ---
 
-##### `application_template_id`<sup>Required</sup> <a name="application_template_id" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.applicationTemplateId"></a>
+##### `template_id_input`<sup>Optional</sup> <a name="template_id_input" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.templateIdInput"></a>
 
 ```python
-application_template_id: str
+template_id_input: str
 ```
 
 - *Type:* str
@@ -999,6 +989,16 @@ project_id: str
 
 ```python
 readme_markdown: str
+```
+
+- *Type:* str
+
+---
+
+##### `template_id`<sup>Required</sup> <a name="template_id" id="@cdktf/provider-hcp.waypointApplication.WaypointApplication.property.templateId"></a>
+
+```python
+template_id: str
 ```
 
 - *Type:* str
@@ -1059,7 +1059,7 @@ name: str
 
 Variable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#name WaypointApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#name WaypointApplication#name}
 
 ---
 
@@ -1073,7 +1073,7 @@ value: str
 
 Variable value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#value WaypointApplication#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#value WaypointApplication#value}
 
 ---
 
@@ -1087,7 +1087,7 @@ variable_type: str
 
 Variable type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#variable_type WaypointApplication#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#variable_type WaypointApplication#variable_type}
 
 ---
 
@@ -1106,8 +1106,8 @@ waypointApplication.WaypointApplicationConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  application_template_id: str,
   name: str,
+  template_id: str,
   application_input_variables: typing.Union[IResolvable, typing.List[WaypointApplicationApplicationInputVariables]] = None,
   project_id: str = None,
   readme_markdown: str = None
@@ -1125,8 +1125,8 @@ waypointApplication.WaypointApplicationConfig(
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.applicationTemplateId">application_template_id</a></code> | <code>str</code> | ID of the Application Template this Application is based on. |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.name">name</a></code> | <code>str</code> | The name of the Application. |
+| <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.templateId">template_id</a></code> | <code>str</code> | ID of the Template this Application is based on. |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.applicationInputVariables">application_input_variables</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationApplicationInputVariables">WaypointApplicationApplicationInputVariables</a>]]</code> | Input variables set for the application. |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the Waypoint Application is located. |
 | <code><a href="#@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.readmeMarkdown">readme_markdown</a></code> | <code>str</code> | Instructions for using the Application (markdown format supported). |
@@ -1203,20 +1203,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `application_template_id`<sup>Required</sup> <a name="application_template_id" id="@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.applicationTemplateId"></a>
-
-```python
-application_template_id: str
-```
-
-- *Type:* str
-
-ID of the Application Template this Application is based on.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#application_template_id WaypointApplication#application_template_id}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.name"></a>
 
 ```python
@@ -1227,7 +1213,21 @@ name: str
 
 The name of the Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#name WaypointApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#name WaypointApplication#name}
+
+---
+
+##### `template_id`<sup>Required</sup> <a name="template_id" id="@cdktf/provider-hcp.waypointApplication.WaypointApplicationConfig.property.templateId"></a>
+
+```python
+template_id: str
+```
+
+- *Type:* str
+
+ID of the Template this Application is based on.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#template_id WaypointApplication#template_id}
 
 ---
 
@@ -1241,7 +1241,7 @@ application_input_variables: typing.Union[IResolvable, typing.List[WaypointAppli
 
 Input variables set for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#application_input_variables WaypointApplication#application_input_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#application_input_variables WaypointApplication#application_input_variables}
 
 ---
 
@@ -1255,7 +1255,7 @@ project_id: str
 
 The ID of the HCP project where the Waypoint Application is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#project_id WaypointApplication#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#project_id WaypointApplication#project_id}
 
 ---
 
@@ -1269,9 +1269,9 @@ readme_markdown: str
 
 Instructions for using the Application (markdown format supported).
 
-Note: this is a base64 encoded string, and can only be set in configuration after initial creation. The initial version of the README is generated from the README Template from source Application Template.
+Note: this is a base64 encoded string, and can only be set in configuration after initial creation. The initial version of the README is generated from the README Template from source Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#readme_markdown WaypointApplication#readme_markdown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#readme_markdown WaypointApplication#readme_markdown}
 
 ---
 
@@ -1309,7 +1309,7 @@ name: str
 
 Variable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#name WaypointApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#name WaypointApplication#name}
 
 ---
 
@@ -1323,7 +1323,7 @@ value: str
 
 Variable value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#value WaypointApplication#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#value WaypointApplication#value}
 
 ---
 
@@ -1337,7 +1337,7 @@ variable_type: str
 
 Variable type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application#variable_type WaypointApplication#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application#variable_type WaypointApplication#variable_type}
 
 ---
 

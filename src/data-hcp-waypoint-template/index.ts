@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/waypoint_application_template
+// https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/waypoint_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,33 +11,33 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataHcpWaypointApplicationTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface DataHcpWaypointTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The ID of the Application Template.
+  * The ID of the Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/waypoint_application_template#id DataHcpWaypointApplicationTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/waypoint_template#id DataHcpWaypointTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The name of the Application Template.
+  * The name of the Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/waypoint_application_template#name DataHcpWaypointApplicationTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/waypoint_template#name DataHcpWaypointTemplate#name}
   */
   readonly name?: string;
   /**
-  * The ID of the HCP project where the Waypoint Application Template is located.
+  * The ID of the HCP project where the Waypoint Template is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/waypoint_application_template#project_id DataHcpWaypointApplicationTemplate#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/waypoint_template#project_id DataHcpWaypointTemplate#project_id}
   */
   readonly projectId?: string;
 }
-export interface DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails {
+export interface DataHcpWaypointTemplateTerraformCloudWorkspaceDetails {
 }
 
-export function dataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsToTerraform(struct?: DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails): any {
+export function dataHcpWaypointTemplateTerraformCloudWorkspaceDetailsToTerraform(struct?: DataHcpWaypointTemplateTerraformCloudWorkspaceDetails): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -47,7 +47,7 @@ export function dataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails
 }
 
 
-export function dataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsToHclTerraform(struct?: DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails): any {
+export function dataHcpWaypointTemplateTerraformCloudWorkspaceDetailsToHclTerraform(struct?: DataHcpWaypointTemplateTerraformCloudWorkspaceDetails): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -57,7 +57,7 @@ export function dataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails
   return attrs;
 }
 
-export class DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference extends cdktf.ComplexObject {
+export class DataHcpWaypointTemplateTerraformCloudWorkspaceDetailsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -68,13 +68,13 @@ export class DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOut
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails | undefined {
+  public get internalValue(): DataHcpWaypointTemplateTerraformCloudWorkspaceDetails | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetails | undefined) {
+  public set internalValue(value: DataHcpWaypointTemplateTerraformCloudWorkspaceDetails | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -93,10 +93,10 @@ export class DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOut
     return this.getStringAttribute('terraform_project_id');
   }
 }
-export interface DataHcpWaypointApplicationTemplateTerraformNoCodeModule {
+export interface DataHcpWaypointTemplateTerraformNoCodeModule {
 }
 
-export function dataHcpWaypointApplicationTemplateTerraformNoCodeModuleToTerraform(struct?: DataHcpWaypointApplicationTemplateTerraformNoCodeModule): any {
+export function dataHcpWaypointTemplateTerraformNoCodeModuleToTerraform(struct?: DataHcpWaypointTemplateTerraformNoCodeModule): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -106,7 +106,7 @@ export function dataHcpWaypointApplicationTemplateTerraformNoCodeModuleToTerrafo
 }
 
 
-export function dataHcpWaypointApplicationTemplateTerraformNoCodeModuleToHclTerraform(struct?: DataHcpWaypointApplicationTemplateTerraformNoCodeModule): any {
+export function dataHcpWaypointTemplateTerraformNoCodeModuleToHclTerraform(struct?: DataHcpWaypointTemplateTerraformNoCodeModule): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -116,7 +116,7 @@ export function dataHcpWaypointApplicationTemplateTerraformNoCodeModuleToHclTerr
   return attrs;
 }
 
-export class DataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputReference extends cdktf.ComplexObject {
+export class DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -127,13 +127,13 @@ export class DataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputRefere
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataHcpWaypointApplicationTemplateTerraformNoCodeModule | undefined {
+  public get internalValue(): DataHcpWaypointTemplateTerraformNoCodeModule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpWaypointApplicationTemplateTerraformNoCodeModule | undefined) {
+  public set internalValue(value: DataHcpWaypointTemplateTerraformNoCodeModule | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -152,10 +152,10 @@ export class DataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputRefere
     return this.getStringAttribute('version');
   }
 }
-export interface DataHcpWaypointApplicationTemplateVariableOptions {
+export interface DataHcpWaypointTemplateVariableOptions {
 }
 
-export function dataHcpWaypointApplicationTemplateVariableOptionsToTerraform(struct?: DataHcpWaypointApplicationTemplateVariableOptions): any {
+export function dataHcpWaypointTemplateVariableOptionsToTerraform(struct?: DataHcpWaypointTemplateVariableOptions): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -165,7 +165,7 @@ export function dataHcpWaypointApplicationTemplateVariableOptionsToTerraform(str
 }
 
 
-export function dataHcpWaypointApplicationTemplateVariableOptionsToHclTerraform(struct?: DataHcpWaypointApplicationTemplateVariableOptions): any {
+export function dataHcpWaypointTemplateVariableOptionsToHclTerraform(struct?: DataHcpWaypointTemplateVariableOptions): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -175,7 +175,7 @@ export function dataHcpWaypointApplicationTemplateVariableOptionsToHclTerraform(
   return attrs;
 }
 
-export class DataHcpWaypointApplicationTemplateVariableOptionsOutputReference extends cdktf.ComplexObject {
+export class DataHcpWaypointTemplateVariableOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -188,13 +188,13 @@ export class DataHcpWaypointApplicationTemplateVariableOptionsOutputReference ex
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataHcpWaypointApplicationTemplateVariableOptions | undefined {
+  public get internalValue(): DataHcpWaypointTemplateVariableOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataHcpWaypointApplicationTemplateVariableOptions | undefined) {
+  public set internalValue(value: DataHcpWaypointTemplateVariableOptions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -224,7 +224,7 @@ export class DataHcpWaypointApplicationTemplateVariableOptionsOutputReference ex
   }
 }
 
-export class DataHcpWaypointApplicationTemplateVariableOptionsList extends cdktf.ComplexList {
+export class DataHcpWaypointTemplateVariableOptionsList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -238,33 +238,33 @@ export class DataHcpWaypointApplicationTemplateVariableOptionsList extends cdktf
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataHcpWaypointApplicationTemplateVariableOptionsOutputReference {
-    return new DataHcpWaypointApplicationTemplateVariableOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataHcpWaypointTemplateVariableOptionsOutputReference {
+    return new DataHcpWaypointTemplateVariableOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/waypoint_application_template hcp_waypoint_application_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/waypoint_template hcp_waypoint_template}
 */
-export class DataHcpWaypointApplicationTemplate extends cdktf.TerraformDataSource {
+export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "hcp_waypoint_application_template";
+  public static readonly tfResourceType = "hcp_waypoint_template";
 
   // ==============
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataHcpWaypointApplicationTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTF code for importing a DataHcpWaypointTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the DataHcpWaypointApplicationTemplate to import
-  * @param importFromId The id of the existing DataHcpWaypointApplicationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/waypoint_application_template#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the DataHcpWaypointApplicationTemplate to import is found
+  * @param importToId The construct id used in the generated config for the DataHcpWaypointTemplate to import
+  * @param importFromId The id of the existing DataHcpWaypointTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/waypoint_template#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataHcpWaypointTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_application_template", importId: importFromId, provider });
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "hcp_waypoint_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -272,18 +272,18 @@ export class DataHcpWaypointApplicationTemplate extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/waypoint_application_template hcp_waypoint_application_template} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataHcpWaypointApplicationTemplateConfig = {}
+  * @param options DataHcpWaypointTemplateConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataHcpWaypointApplicationTemplateConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DataHcpWaypointTemplateConfig = {}) {
     super(scope, id, {
-      terraformResourceType: 'hcp_waypoint_application_template',
+      terraformResourceType: 'hcp_waypoint_template',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.92.0',
+        providerVersion: '0.93.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -377,19 +377,19 @@ export class DataHcpWaypointApplicationTemplate extends cdktf.TerraformDataSourc
   }
 
   // terraform_cloud_workspace_details - computed: true, optional: false, required: false
-  private _terraformCloudWorkspaceDetails = new DataHcpWaypointApplicationTemplateTerraformCloudWorkspaceDetailsOutputReference(this, "terraform_cloud_workspace_details");
+  private _terraformCloudWorkspaceDetails = new DataHcpWaypointTemplateTerraformCloudWorkspaceDetailsOutputReference(this, "terraform_cloud_workspace_details");
   public get terraformCloudWorkspaceDetails() {
     return this._terraformCloudWorkspaceDetails;
   }
 
   // terraform_no_code_module - computed: true, optional: false, required: false
-  private _terraformNoCodeModule = new DataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputReference(this, "terraform_no_code_module");
+  private _terraformNoCodeModule = new DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference(this, "terraform_no_code_module");
   public get terraformNoCodeModule() {
     return this._terraformNoCodeModule;
   }
 
   // variable_options - computed: true, optional: false, required: false
-  private _variableOptions = new DataHcpWaypointApplicationTemplateVariableOptionsList(this, "variable_options", false);
+  private _variableOptions = new DataHcpWaypointTemplateVariableOptionsList(this, "variable_options", false);
   public get variableOptions() {
     return this._variableOptions;
   }
