@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 notificationswebhook.NewNotificationsWebhook(scope Construct, id *string, config NotificationsWebhookConfig) NotificationsWebhook
 ```
@@ -432,7 +432,7 @@ func ResetSubscriptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 notificationswebhook.NotificationsWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 notificationswebhook.NotificationsWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ notificationswebhook.NotificationsWebhook_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 notificationswebhook.NotificationsWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ notificationswebhook.NotificationsWebhook_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 notificationswebhook.NotificationsWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 &notificationswebhook.NotificationsWebhookConfig {
 	Connection: interface{},
@@ -885,7 +885,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Config: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.notificationsWebhook.NotificationsWebhookConfigA,
+	Config: github.com/cdktf/cdktf-provider-hcp-go/hcp.notificationsWebhook.NotificationsWebhookConfigA,
 	Name: *string,
 	Description: *string,
 	Enabled: interface{},
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhookConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 &notificationswebhook.NotificationsWebhookConfigA {
 	Url: *string,
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhookSubscriptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 &notificationswebhook.NotificationsWebhookSubscriptions {
 	Events: interface{},
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhookSubscriptionsEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 &notificationswebhook.NotificationsWebhookSubscriptionsEvents {
 	Actions: *[]*string,
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhookConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 notificationswebhook.NewNotificationsWebhookConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationsWebhookConfigAOutputReference
 ```
@@ -1540,7 +1540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhookSubscriptionsEventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 notificationswebhook.NewNotificationsWebhookSubscriptionsEventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationsWebhookSubscriptionsEventsList
 ```
@@ -1700,7 +1700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhookSubscriptionsEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 notificationswebhook.NewNotificationsWebhookSubscriptionsEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotificationsWebhookSubscriptionsEventsOutputReference
 ```
@@ -2011,7 +2011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhookSubscriptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 notificationswebhook.NewNotificationsWebhookSubscriptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationsWebhookSubscriptionsList
 ```
@@ -2171,7 +2171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.notificationsWebhook.NotificationsWebhookSubscriptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/notificationswebhook"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/notificationswebhook"
 
 notificationswebhook.NewNotificationsWebhookSubscriptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotificationsWebhookSubscriptionsOutputReference
 ```
