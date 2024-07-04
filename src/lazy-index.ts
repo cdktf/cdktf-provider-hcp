@@ -23,6 +23,9 @@ Object.defineProperty(exports, 'logStreamingDestination', { get: function () { r
 Object.defineProperty(exports, 'notificationsWebhook', { get: function () { return require('./notifications-webhook'); } });
 Object.defineProperty(exports, 'organizationIamBinding', { get: function () { return require('./organization-iam-binding'); } });
 Object.defineProperty(exports, 'organizationIamPolicy', { get: function () { return require('./organization-iam-policy'); } });
+Object.defineProperty(exports, 'packerBucket', { get: function () { return require('./packer-bucket'); } });
+Object.defineProperty(exports, 'packerBucketIamBinding', { get: function () { return require('./packer-bucket-iam-binding'); } });
+Object.defineProperty(exports, 'packerBucketIamPolicy', { get: function () { return require('./packer-bucket-iam-policy'); } });
 Object.defineProperty(exports, 'packerChannel', { get: function () { return require('./packer-channel'); } });
 Object.defineProperty(exports, 'packerChannelAssignment', { get: function () { return require('./packer-channel-assignment'); } });
 Object.defineProperty(exports, 'packerRunTask', { get: function () { return require('./packer-run-task'); } });
@@ -68,6 +71,7 @@ Object.defineProperty(exports, 'dataHcpUserPrincipal', { get: function () { retu
 Object.defineProperty(exports, 'dataHcpVaultCluster', { get: function () { return require('./data-hcp-vault-cluster'); } });
 Object.defineProperty(exports, 'dataHcpVaultPlugin', { get: function () { return require('./data-hcp-vault-plugin'); } });
 Object.defineProperty(exports, 'dataHcpVaultSecretsApp', { get: function () { return require('./data-hcp-vault-secrets-app'); } });
+Object.defineProperty(exports, 'dataHcpVaultSecretsDynamicSecret', { get: function () { return require('./data-hcp-vault-secrets-dynamic-secret'); } });
 Object.defineProperty(exports, 'dataHcpVaultSecretsRotatingSecret', { get: function () { return require('./data-hcp-vault-secrets-rotating-secret'); } });
 Object.defineProperty(exports, 'dataHcpVaultSecretsSecret', { get: function () { return require('./data-hcp-vault-secrets-secret'); } });
 Object.defineProperty(exports, 'dataHcpWaypointAction', { get: function () { return require('./data-hcp-waypoint-action'); } });
