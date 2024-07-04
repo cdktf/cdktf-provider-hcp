@@ -4,7 +4,7 @@
 
 ### WaypointTemplate <a name="WaypointTemplate" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template hcp_waypoint_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template hcp_waypoint_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.Initializer"></a>
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the WaypointTemplate to import
 
 The id of the existing WaypointTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1086,7 +1086,7 @@ public string Name { get; set; }
 
 The name of the Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#name WaypointTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#name WaypointTemplate#name}
 
 ---
 
@@ -1100,7 +1100,7 @@ public string Summary { get; set; }
 
 A brief description of the template, up to 110 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#summary WaypointTemplate#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#summary WaypointTemplate#summary}
 
 ---
 
@@ -1114,7 +1114,7 @@ public WaypointTemplateTerraformCloudWorkspaceDetails TerraformCloudWorkspaceDet
 
 Terraform Cloud Workspace details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#terraform_cloud_workspace_details WaypointTemplate#terraform_cloud_workspace_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#terraform_cloud_workspace_details WaypointTemplate#terraform_cloud_workspace_details}
 
 ---
 
@@ -1128,7 +1128,7 @@ public WaypointTemplateTerraformNoCodeModule TerraformNoCodeModule { get; set; }
 
 Terraform Cloud No-Code Module details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#terraform_no_code_module WaypointTemplate#terraform_no_code_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#terraform_no_code_module WaypointTemplate#terraform_no_code_module}
 
 ---
 
@@ -1142,7 +1142,7 @@ public string Description { get; set; }
 
 A description of the template, along with when and why it should be used, up to 500 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#description WaypointTemplate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#description WaypointTemplate#description}
 
 ---
 
@@ -1156,7 +1156,7 @@ public string[] Labels { get; set; }
 
 List of labels attached to this Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#labels WaypointTemplate#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#labels WaypointTemplate#labels}
 
 ---
 
@@ -1170,7 +1170,7 @@ public string ProjectId { get; set; }
 
 The ID of the HCP project where the Waypoint Template is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#project_id WaypointTemplate#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#project_id WaypointTemplate#project_id}
 
 ---
 
@@ -1184,7 +1184,7 @@ public string ReadmeMarkdownTemplate { get; set; }
 
 Instructions for using the template (markdown format supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#readme_markdown_template WaypointTemplate#readme_markdown_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#readme_markdown_template WaypointTemplate#readme_markdown_template}
 
 ---
 
@@ -1198,7 +1198,7 @@ public object VariableOptions { get; set; }
 
 List of variable options for the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#variable_options WaypointTemplate#variable_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#variable_options WaypointTemplate#variable_options}
 
 ---
 
@@ -1234,7 +1234,7 @@ public string Name { get; set; }
 
 Name of the Terraform Cloud Workspace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#name WaypointTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#name WaypointTemplate#name}
 
 ---
 
@@ -1248,7 +1248,7 @@ public string TerraformProjectId { get; set; }
 
 Terraform Cloud Project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
 
 ---
 
@@ -1284,7 +1284,7 @@ public string Source { get; set; }
 
 No-Code Module Source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#source WaypointTemplate#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#source WaypointTemplate#source}
 
 ---
 
@@ -1298,7 +1298,7 @@ public string Version { get; set; }
 
 No-Code Module Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#version WaypointTemplate#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#version WaypointTemplate#version}
 
 ---
 
@@ -1338,7 +1338,7 @@ public string Name { get; set; }
 
 Variable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#name WaypointTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#name WaypointTemplate#name}
 
 ---
 
@@ -1352,7 +1352,7 @@ public string VariableType { get; set; }
 
 Variable type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#variable_type WaypointTemplate#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#variable_type WaypointTemplate#variable_type}
 
 ---
 
@@ -1366,7 +1366,7 @@ public string[] Options { get; set; }
 
 List of options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#options WaypointTemplate#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#options WaypointTemplate#options}
 
 ---
 
@@ -1380,7 +1380,7 @@ public object UserEditable { get; set; }
 
 Whether the variable is editable by the user creating an application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_template#user_editable WaypointTemplate#user_editable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_template#user_editable WaypointTemplate#user_editable}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### GroupIamBinding <a name="GroupIamBinding" id="@cdktf/provider-hcp.groupIamBinding.GroupIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/group_iam_binding hcp_group_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/group_iam_binding hcp_group_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.groupIamBinding.GroupIamBinding.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The group's resource name in format `iam/organization/<organization_id>/group/<group_name>`. The shortened `<group_name>` version can be used for input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/group_iam_binding#name GroupIamBinding#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/group_iam_binding#name GroupIamBinding#name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/group_iam_binding#principal_id GroupIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/group_iam_binding#principal_id GroupIamBinding#principal_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/group_iam_binding#role GroupIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/group_iam_binding#role GroupIamBinding#role}
 
 ---
 
@@ -559,7 +559,7 @@ The construct id used in the generated config for the GroupIamBinding to import.
 
 The id of the existing GroupIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/group_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/group_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -942,7 +942,7 @@ public java.lang.String getName();
 
 The group's resource name in format `iam/organization/<organization_id>/group/<group_name>`. The shortened `<group_name>` version can be used for input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/group_iam_binding#name GroupIamBinding#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/group_iam_binding#name GroupIamBinding#name}
 
 ---
 
@@ -956,7 +956,7 @@ public java.lang.String getPrincipalId();
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/group_iam_binding#principal_id GroupIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/group_iam_binding#principal_id GroupIamBinding#principal_id}
 
 ---
 
@@ -970,7 +970,7 @@ public java.lang.String getRole();
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/group_iam_binding#role GroupIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/group_iam_binding#role GroupIamBinding#role}
 
 ---
 

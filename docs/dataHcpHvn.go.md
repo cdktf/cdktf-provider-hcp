@@ -4,12 +4,12 @@
 
 ### DataHcpHvn <a name="DataHcpHvn" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/hvn hcp_hvn}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/hvn hcp_hvn}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcphvn"
 
 datahcphvn.NewDataHcpHvn(scope Construct, id *string, config DataHcpHvnConfig) DataHcpHvn
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcphvn"
 
 datahcphvn.DataHcpHvn_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcphvn"
 
 datahcphvn.DataHcpHvn_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datahcphvn.DataHcpHvn_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcphvn"
 
 datahcphvn.DataHcpHvn_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datahcphvn.DataHcpHvn_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvn.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcphvn"
 
 datahcphvn.DataHcpHvn_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataHcpHvn to import.
 
 The id of the existing DataHcpHvn that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/hvn#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/hvn#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcphvn"
 
 &datahcphvn.DataHcpHvnConfig {
 	Connection: interface{},
@@ -766,7 +766,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
 	HvnId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.dataHcpHvn.DataHcpHvnTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.dataHcpHvn.DataHcpHvnTimeouts,
 }
 ```
 
@@ -782,7 +782,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnConfig.property.hvnId">HvnId</a></code> | <code>*string</code> | The ID of the HashiCorp Virtual Network (HVN). |
-| <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/hvn#id DataHcpHvn#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/hvn#id DataHcpHvn#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the HVN is located. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts">DataHcpHvnTimeouts</a></code> | timeouts block. |
 
@@ -868,7 +868,7 @@ HvnId *string
 
 The ID of the HashiCorp Virtual Network (HVN).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/hvn#hvn_id DataHcpHvn#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/hvn#hvn_id DataHcpHvn#hvn_id}
 
 ---
 
@@ -880,7 +880,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/hvn#id DataHcpHvn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/hvn#id DataHcpHvn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -900,7 +900,7 @@ The ID of the HCP project where the HVN is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/hvn#project_id DataHcpHvn#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/hvn#project_id DataHcpHvn#project_id}
 
 ---
 
@@ -914,7 +914,7 @@ Timeouts DataHcpHvnTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/hvn#timeouts DataHcpHvn#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/hvn#timeouts DataHcpHvn#timeouts}
 
 ---
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcphvn"
 
 &datahcphvn.DataHcpHvnTimeouts {
 	Default: *string,
@@ -934,7 +934,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/hvn#default DataHcpHvn#default}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/hvn#default DataHcpHvn#default}. |
 
 ---
 
@@ -946,7 +946,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/hvn#default DataHcpHvn#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/hvn#default DataHcpHvn#default}.
 
 ---
 
@@ -957,7 +957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpHvn.DataHcpHvnTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcphvn"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcphvn"
 
 datahcphvn.NewDataHcpHvnTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpHvnTimeoutsOutputReference
 ```
