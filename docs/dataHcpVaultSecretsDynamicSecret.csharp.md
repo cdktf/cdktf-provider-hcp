@@ -4,7 +4,7 @@
 
 ### DataHcpVaultSecretsDynamicSecret <a name="DataHcpVaultSecretsDynamicSecret" id="@cdktf/provider-hcp.dataHcpVaultSecretsDynamicSecret.DataHcpVaultSecretsDynamicSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/vault_secrets_dynamic_secret hcp_vault_secrets_dynamic_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/vault_secrets_dynamic_secret hcp_vault_secrets_dynamic_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultSecretsDynamicSecret.DataHcpVaultSecretsDynamicSecret.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataHcpVaultSecretsDynamic
 
 The id of the existing DataHcpVaultSecretsDynamicSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/vault_secrets_dynamic_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/vault_secrets_dynamic_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -742,7 +742,7 @@ public string AppName { get; set; }
 
 The name of the Vault Secrets application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/vault_secrets_dynamic_secret#app_name DataHcpVaultSecretsDynamicSecret#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/vault_secrets_dynamic_secret#app_name DataHcpVaultSecretsDynamicSecret#app_name}
 
 ---
 
@@ -756,7 +756,7 @@ public string SecretName { get; set; }
 
 The name of the Vault Secrets secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/data-sources/vault_secrets_dynamic_secret#secret_name DataHcpVaultSecretsDynamicSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/vault_secrets_dynamic_secret#secret_name DataHcpVaultSecretsDynamicSecret#secret_name}
 
 ---
 

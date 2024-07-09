@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/packer_bucket_iam_binding
+// https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/packer_bucket_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface PackerBucketIamBindingConfig extends cdktf.TerraformMetaArgumen
   /**
   * The principal to bind to the given role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/packer_bucket_iam_binding#principal_id PackerBucketIamBinding#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/packer_bucket_iam_binding#principal_id PackerBucketIamBinding#principal_id}
   */
   readonly principalId: string;
   /**
   * The bucket's resource name in the format packer/project/<project ID>/bucket/<bucket name>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/packer_bucket_iam_binding#resource_name PackerBucketIamBinding#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/packer_bucket_iam_binding#resource_name PackerBucketIamBinding#resource_name}
   */
   readonly resourceName: string;
   /**
   * The role name to bind to the given principal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/packer_bucket_iam_binding#role PackerBucketIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/packer_bucket_iam_binding#role PackerBucketIamBinding#role}
   */
   readonly role: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/packer_bucket_iam_binding hcp_packer_bucket_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/packer_bucket_iam_binding hcp_packer_bucket_iam_binding}
 */
 export class PackerBucketIamBinding extends cdktf.TerraformResource {
 
@@ -49,7 +44,7 @@ export class PackerBucketIamBinding extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PackerBucketIamBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PackerBucketIamBinding to import
-  * @param importFromId The id of the existing PackerBucketIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/packer_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PackerBucketIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/packer_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PackerBucketIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +56,7 @@ export class PackerBucketIamBinding extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/packer_bucket_iam_binding hcp_packer_bucket_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/packer_bucket_iam_binding hcp_packer_bucket_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class PackerBucketIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_packer_bucket_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.94.0',
+        providerVersion: '0.94.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
