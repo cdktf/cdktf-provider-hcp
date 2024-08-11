@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/provider"
 
 provider.NewHcpProvider(scope Construct, id *string, config HcpProviderConfig) HcpProvider
 ```
@@ -186,7 +186,7 @@ func ResetWorkloadIdentity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.provider.HcpProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/provider"
 
 provider.HcpProvider_IsConstruct(x interface{}) *bool
 ```
@@ -218,7 +218,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/provider"
 
 provider.HcpProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -232,7 +232,7 @@ provider.HcpProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-hcp.provider.HcpProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/provider"
 
 provider.HcpProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -246,7 +246,7 @@ provider.HcpProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.provider.HcpProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/provider"
 
 provider.HcpProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -541,7 +541,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.provider.HcpProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/provider"
 
 &provider.HcpProviderConfig {
 	Alias: *string,
@@ -657,7 +657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/provider"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/provider"
 
 &provider.HcpProviderWorkloadIdentity {
 	ResourceName: *string,
