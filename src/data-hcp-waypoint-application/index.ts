@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/waypoint_application
+// https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/waypoint_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataHcpWaypointApplicationConfig extends cdktf.TerraformMetaArg
   /**
   * The ID of the Application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/waypoint_application#id DataHcpWaypointApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/waypoint_application#id DataHcpWaypointApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,19 +24,19 @@ export interface DataHcpWaypointApplicationConfig extends cdktf.TerraformMetaArg
   /**
   * Input variables for the Application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/waypoint_application#input_variables DataHcpWaypointApplication#input_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/waypoint_application#input_variables DataHcpWaypointApplication#input_variables}
   */
   readonly inputVariables?: DataHcpWaypointApplicationInputVariables[] | cdktf.IResolvable;
   /**
   * The name of the Application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/waypoint_application#name DataHcpWaypointApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/waypoint_application#name DataHcpWaypointApplication#name}
   */
   readonly name?: string;
   /**
   * The ID of the HCP project where the Waypoint Application is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/waypoint_application#project_id DataHcpWaypointApplication#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/waypoint_application#project_id DataHcpWaypointApplication#project_id}
   */
   readonly projectId?: string;
 }
@@ -136,9 +136,99 @@ export class DataHcpWaypointApplicationInputVariablesList extends cdktf.ComplexL
     return new DataHcpWaypointApplicationInputVariablesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataHcpWaypointApplicationOutputValues {
+}
+
+export function dataHcpWaypointApplicationOutputValuesToTerraform(struct?: DataHcpWaypointApplicationOutputValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataHcpWaypointApplicationOutputValuesToHclTerraform(struct?: DataHcpWaypointApplicationOutputValues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataHcpWaypointApplicationOutputValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataHcpWaypointApplicationOutputValues | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataHcpWaypointApplicationOutputValues | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // sensitive - computed: true, optional: false, required: false
+  public get sensitive() {
+    return this.getBooleanAttribute('sensitive');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataHcpWaypointApplicationOutputValuesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataHcpWaypointApplicationOutputValuesOutputReference {
+    return new DataHcpWaypointApplicationOutputValuesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/waypoint_application hcp_waypoint_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/waypoint_application hcp_waypoint_application}
 */
 export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
 
@@ -154,7 +244,7 @@ export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpWaypointApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpWaypointApplication to import
-  * @param importFromId The id of the existing DataHcpWaypointApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/waypoint_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpWaypointApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/waypoint_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpWaypointApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -166,7 +256,7 @@ export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -177,7 +267,7 @@ export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_waypoint_application',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.94.1',
+        providerVersion: '0.95.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -254,6 +344,12 @@ export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
   // organization_id - computed: true, optional: false, required: false
   public get organizationId() {
     return this.getStringAttribute('organization_id');
+  }
+
+  // output_values - computed: true, optional: false, required: false
+  private _outputValues = new DataHcpWaypointApplicationOutputValuesList(this, "output_values", false);
+  public get outputValues() {
+    return this._outputValues;
   }
 
   // project_id - computed: true, optional: true, required: false
