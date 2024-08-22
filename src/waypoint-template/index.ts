@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template
+// https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,69 +10,69 @@ export interface WaypointTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the template, along with when and why it should be used, up to 500 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#description WaypointTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#description WaypointTemplate#description}
   */
   readonly description?: string;
   /**
   * List of labels attached to this Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#labels WaypointTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#labels WaypointTemplate#labels}
   */
   readonly labels?: string[];
   /**
   * The name of the Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#name WaypointTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#name WaypointTemplate#name}
   */
   readonly name: string;
   /**
   * The ID of the HCP project where the Waypoint Template is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#project_id WaypointTemplate#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#project_id WaypointTemplate#project_id}
   */
   readonly projectId?: string;
   /**
-  * Instructions for using the template (markdown format supported
+  * Instructions for using the template (markdown format supported).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#readme_markdown_template WaypointTemplate#readme_markdown_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#readme_markdown_template WaypointTemplate#readme_markdown_template}
   */
   readonly readmeMarkdownTemplate?: string;
   /**
   * A brief description of the template, up to 110 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#summary WaypointTemplate#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#summary WaypointTemplate#summary}
   */
   readonly summary: string;
   /**
   * Terraform Cloud Workspace details
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#terraform_cloud_workspace_details WaypointTemplate#terraform_cloud_workspace_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#terraform_cloud_workspace_details WaypointTemplate#terraform_cloud_workspace_details}
   */
   readonly terraformCloudWorkspaceDetails: WaypointTemplateTerraformCloudWorkspaceDetails;
   /**
   * Terraform Cloud No-Code Module details
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#terraform_no_code_module WaypointTemplate#terraform_no_code_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#terraform_no_code_module_source WaypointTemplate#terraform_no_code_module_source}
   */
-  readonly terraformNoCodeModule: WaypointTemplateTerraformNoCodeModule;
+  readonly terraformNoCodeModuleSource: string;
   /**
   * List of variable options for the template
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#variable_options WaypointTemplate#variable_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#variable_options WaypointTemplate#variable_options}
   */
   readonly variableOptions?: WaypointTemplateVariableOptions[] | cdktf.IResolvable;
 }
 export interface WaypointTemplateTerraformCloudWorkspaceDetails {
   /**
-  * Name of the Terraform Cloud Workspace
+  * Name of the Terraform Cloud Project
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#name WaypointTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#name WaypointTemplate#name}
   */
   readonly name: string;
   /**
   * Terraform Cloud Project ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
   */
   readonly terraformProjectId: string;
 }
@@ -192,154 +187,29 @@ export class WaypointTemplateTerraformCloudWorkspaceDetailsOutputReference exten
     return this._terraformProjectId;
   }
 }
-export interface WaypointTemplateTerraformNoCodeModule {
-  /**
-  * No-Code Module Source
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#source WaypointTemplate#source}
-  */
-  readonly source: string;
-  /**
-  * No-Code Module Version
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#version WaypointTemplate#version}
-  */
-  readonly version: string;
-}
-
-export function waypointTemplateTerraformNoCodeModuleToTerraform(struct?: WaypointTemplateTerraformNoCodeModule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    source: cdktf.stringToTerraform(struct!.source),
-    version: cdktf.stringToTerraform(struct!.version),
-  }
-}
-
-
-export function waypointTemplateTerraformNoCodeModuleToHclTerraform(struct?: WaypointTemplateTerraformNoCodeModule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class WaypointTemplateTerraformNoCodeModuleOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): WaypointTemplateTerraformNoCodeModule | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._source !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.source = this._source;
-    }
-    if (this._version !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.version = this._version;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: WaypointTemplateTerraformNoCodeModule | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._source = undefined;
-      this._version = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._source = value.source;
-      this._version = value.version;
-    }
-  }
-
-  // source - computed: false, optional: false, required: true
-  private _source?: string; 
-  public get source() {
-    return this.getStringAttribute('source');
-  }
-  public set source(value: string) {
-    this._source = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceInput() {
-    return this._source;
-  }
-
-  // version - computed: false, optional: false, required: true
-  private _version?: string; 
-  public get version() {
-    return this.getStringAttribute('version');
-  }
-  public set version(value: string) {
-    this._version = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionInput() {
-    return this._version;
-  }
-}
 export interface WaypointTemplateVariableOptions {
   /**
   * Variable name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#name WaypointTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#name WaypointTemplate#name}
   */
   readonly name: string;
   /**
   * List of options
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#options WaypointTemplate#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#options WaypointTemplate#options}
   */
   readonly options?: string[];
   /**
   * Whether the variable is editable by the user creating an application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#user_editable WaypointTemplate#user_editable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#user_editable WaypointTemplate#user_editable}
   */
   readonly userEditable?: boolean | cdktf.IResolvable;
   /**
   * Variable type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#variable_type WaypointTemplate#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#variable_type WaypointTemplate#variable_type}
   */
   readonly variableType: string;
 }
@@ -536,7 +406,7 @@ export class WaypointTemplateVariableOptionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template hcp_waypoint_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template hcp_waypoint_template}
 */
 export class WaypointTemplate extends cdktf.TerraformResource {
 
@@ -552,7 +422,7 @@ export class WaypointTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaypointTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointTemplate to import
-  * @param importFromId The id of the existing WaypointTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaypointTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -564,7 +434,7 @@ export class WaypointTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template hcp_waypoint_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template hcp_waypoint_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -575,7 +445,7 @@ export class WaypointTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_waypoint_template',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.94.1',
+        providerVersion: '0.95.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -593,7 +463,7 @@ export class WaypointTemplate extends cdktf.TerraformResource {
     this._readmeMarkdownTemplate = config.readmeMarkdownTemplate;
     this._summary = config.summary;
     this._terraformCloudWorkspaceDetails.internalValue = config.terraformCloudWorkspaceDetails;
-    this._terraformNoCodeModule.internalValue = config.terraformNoCodeModule;
+    this._terraformNoCodeModuleSource = config.terraformNoCodeModuleSource;
     this._variableOptions.internalValue = config.variableOptions;
   }
 
@@ -714,17 +584,17 @@ export class WaypointTemplate extends cdktf.TerraformResource {
     return this._terraformCloudWorkspaceDetails.internalValue;
   }
 
-  // terraform_no_code_module - computed: false, optional: false, required: true
-  private _terraformNoCodeModule = new WaypointTemplateTerraformNoCodeModuleOutputReference(this, "terraform_no_code_module");
-  public get terraformNoCodeModule() {
-    return this._terraformNoCodeModule;
+  // terraform_no_code_module_source - computed: false, optional: false, required: true
+  private _terraformNoCodeModuleSource?: string; 
+  public get terraformNoCodeModuleSource() {
+    return this.getStringAttribute('terraform_no_code_module_source');
   }
-  public putTerraformNoCodeModule(value: WaypointTemplateTerraformNoCodeModule) {
-    this._terraformNoCodeModule.internalValue = value;
+  public set terraformNoCodeModuleSource(value: string) {
+    this._terraformNoCodeModuleSource = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get terraformNoCodeModuleInput() {
-    return this._terraformNoCodeModule.internalValue;
+  public get terraformNoCodeModuleSourceInput() {
+    return this._terraformNoCodeModuleSource;
   }
 
   // variable_options - computed: false, optional: true, required: false
@@ -756,7 +626,7 @@ export class WaypointTemplate extends cdktf.TerraformResource {
       readme_markdown_template: cdktf.stringToTerraform(this._readmeMarkdownTemplate),
       summary: cdktf.stringToTerraform(this._summary),
       terraform_cloud_workspace_details: waypointTemplateTerraformCloudWorkspaceDetailsToTerraform(this._terraformCloudWorkspaceDetails.internalValue),
-      terraform_no_code_module: waypointTemplateTerraformNoCodeModuleToTerraform(this._terraformNoCodeModule.internalValue),
+      terraform_no_code_module_source: cdktf.stringToTerraform(this._terraformNoCodeModuleSource),
       variable_options: cdktf.listMapper(waypointTemplateVariableOptionsToTerraform, false)(this._variableOptions.internalValue),
     };
   }
@@ -805,11 +675,11 @@ export class WaypointTemplate extends cdktf.TerraformResource {
         type: "struct",
         storageClassType: "WaypointTemplateTerraformCloudWorkspaceDetails",
       },
-      terraform_no_code_module: {
-        value: waypointTemplateTerraformNoCodeModuleToHclTerraform(this._terraformNoCodeModule.internalValue),
-        isBlock: true,
-        type: "struct",
-        storageClassType: "WaypointTemplateTerraformNoCodeModule",
+      terraform_no_code_module_source: {
+        value: cdktf.stringToHclTerraform(this._terraformNoCodeModuleSource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       variable_options: {
         value: cdktf.listMapperHcl(waypointTemplateVariableOptionsToHclTerraform, false)(this._variableOptions.internalValue),

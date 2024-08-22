@@ -4,12 +4,12 @@
 
 ### GroupMembers <a name="GroupMembers" id="@cdktf/provider-hcp.groupMembers.GroupMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/group_members hcp_group_members}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/group_members hcp_group_members}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.groupMembers.GroupMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupmembers"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupmembers"
 
 groupmembers.NewGroupMembers(scope Construct, id *string, config GroupMembersConfig) GroupMembers
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.groupMembers.GroupMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupmembers"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupmembers"
 
 groupmembers.GroupMembers_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.groupMembers.GroupMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupmembers"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupmembers"
 
 groupmembers.GroupMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ groupmembers.GroupMembers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.groupMembers.GroupMembers.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupmembers"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupmembers"
 
 groupmembers.GroupMembers_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ groupmembers.GroupMembers_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.groupMembers.GroupMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupmembers"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupmembers"
 
 groupmembers.GroupMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the GroupMembers to import.
 
 The id of the existing GroupMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/group_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/group_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.groupMembers.GroupMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupmembers"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupmembers"
 
 &groupmembers.GroupMembersConfig {
 	Connection: interface{},
@@ -822,7 +822,7 @@ Group *string
 
 The group's resource name in the format `iam/organization/<organization_id>/group/<name>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/group_members#group GroupMembers#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/group_members#group GroupMembers#group}
 
 ---
 
@@ -836,7 +836,7 @@ Members *[]*string
 
 A list of user principal IDs to add to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/group_members#members GroupMembers#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/group_members#members GroupMembers#members}
 
 ---
 
