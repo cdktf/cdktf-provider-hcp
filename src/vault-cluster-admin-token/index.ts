@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token
+// https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface VaultClusterAdminTokenConfig extends cdktf.TerraformMetaArgumen
   /**
   * The ID of the HCP Vault cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token#cluster_id VaultClusterAdminToken#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token#cluster_id VaultClusterAdminToken#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token#id VaultClusterAdminToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token#id VaultClusterAdminToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,27 +26,27 @@ export interface VaultClusterAdminTokenConfig extends cdktf.TerraformMetaArgumen
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token#project_id VaultClusterAdminToken#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token#project_id VaultClusterAdminToken#project_id}
   */
   readonly projectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token#timeouts VaultClusterAdminToken#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token#timeouts VaultClusterAdminToken#timeouts}
   */
   readonly timeouts?: VaultClusterAdminTokenTimeouts;
 }
 export interface VaultClusterAdminTokenTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token#create VaultClusterAdminToken#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token#create VaultClusterAdminToken#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token#delete VaultClusterAdminToken#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token#delete VaultClusterAdminToken#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token#read VaultClusterAdminToken#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token#read VaultClusterAdminToken#read}
   */
   readonly read?: string;
 }
@@ -203,7 +198,7 @@ export class VaultClusterAdminTokenTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token}
 */
 export class VaultClusterAdminToken extends cdktf.TerraformResource {
 
@@ -219,7 +214,7 @@ export class VaultClusterAdminToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultClusterAdminToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultClusterAdminToken to import
-  * @param importFromId The id of the existing VaultClusterAdminToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultClusterAdminToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultClusterAdminToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -231,7 +226,7 @@ export class VaultClusterAdminToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,7 +237,7 @@ export class VaultClusterAdminToken extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_cluster_admin_token',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.95.0',
+        providerVersion: '0.95.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

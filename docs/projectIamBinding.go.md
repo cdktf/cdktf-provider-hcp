@@ -4,12 +4,12 @@
 
 ### ProjectIamBinding <a name="ProjectIamBinding" id="@cdktf/provider-hcp.projectIamBinding.ProjectIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/project_iam_binding hcp_project_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/project_iam_binding hcp_project_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.projectIamBinding.ProjectIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/projectiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiambinding"
 
 projectiambinding.NewProjectIamBinding(scope Construct, id *string, config ProjectIamBindingConfig) ProjectIamBinding
 ```
@@ -385,7 +385,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.projectIamBinding.ProjectIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/projectiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiambinding"
 
 projectiambinding.ProjectIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.projectIamBinding.ProjectIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/projectiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiambinding"
 
 projectiambinding.ProjectIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ projectiambinding.ProjectIamBinding_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.projectIamBinding.ProjectIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/projectiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiambinding"
 
 projectiambinding.ProjectIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ projectiambinding.ProjectIamBinding_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.projectIamBinding.ProjectIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/projectiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiambinding"
 
 projectiambinding.ProjectIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ProjectIamBinding to impor
 
 The id of the existing ProjectIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/project_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/project_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.projectIamBinding.ProjectIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/projectiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/projectiambinding"
 
 &projectiambinding.ProjectIamBindingConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ PrincipalId *string
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/project_iam_binding#principal_id ProjectIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/project_iam_binding#principal_id ProjectIamBinding#principal_id}
 
 ---
 
@@ -867,7 +867,7 @@ Role *string
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/project_iam_binding#role ProjectIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/project_iam_binding#role ProjectIamBinding#role}
 
 ---
 
@@ -883,7 +883,7 @@ The ID of the HCP project to apply the IAM Policy to.
 
 If unspecified, the project configured on the provider is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/project_iam_binding#project_id ProjectIamBinding#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/project_iam_binding#project_id ProjectIamBinding#project_id}
 
 ---
 

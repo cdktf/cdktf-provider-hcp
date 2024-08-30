@@ -4,12 +4,12 @@
 
 ### Group <a name="Group" id="@cdktf/provider-hcp.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/group hcp_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/group hcp_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/group"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -385,7 +385,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/group"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/group"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/group"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.group.Group.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/group"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/group"
 
 group.Group_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/group"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/group"
 
 &group.GroupConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ DisplayName *string
 
 The group's display_name - maximum length of 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/group#display_name Group#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/group#display_name Group#display_name}
 
 ---
 
@@ -865,7 +865,7 @@ Description *string
 
 The group's description - maximum length of 300 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/group#description Group#description}
 
 ---
 
