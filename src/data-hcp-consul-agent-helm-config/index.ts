@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config
+// https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataHcpConsulAgentHelmConfigConfig extends cdktf.TerraformMetaA
   /**
   * The ID of the HCP Consul cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config#cluster_id DataHcpConsulAgentHelmConfig#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config#cluster_id DataHcpConsulAgentHelmConfig#cluster_id}
   */
   readonly clusterId: string;
   /**
   * Denotes that the gossip ports should be exposed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config#expose_gossip_ports DataHcpConsulAgentHelmConfig#expose_gossip_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config#expose_gossip_ports DataHcpConsulAgentHelmConfig#expose_gossip_ports}
   */
   readonly exposeGossipPorts?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config#id DataHcpConsulAgentHelmConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config#id DataHcpConsulAgentHelmConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface DataHcpConsulAgentHelmConfigConfig extends cdktf.TerraformMetaA
   /**
   * The FQDN for the Kubernetes API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config#kubernetes_endpoint DataHcpConsulAgentHelmConfig#kubernetes_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config#kubernetes_endpoint DataHcpConsulAgentHelmConfig#kubernetes_endpoint}
   */
   readonly kubernetesEndpoint: string;
   /**
@@ -43,19 +43,19 @@ export interface DataHcpConsulAgentHelmConfigConfig extends cdktf.TerraformMetaA
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config#project_id DataHcpConsulAgentHelmConfig#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config#project_id DataHcpConsulAgentHelmConfig#project_id}
   */
   readonly projectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config#timeouts DataHcpConsulAgentHelmConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config#timeouts DataHcpConsulAgentHelmConfig#timeouts}
   */
   readonly timeouts?: DataHcpConsulAgentHelmConfigTimeouts;
 }
 export interface DataHcpConsulAgentHelmConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config#default DataHcpConsulAgentHelmConfig#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config#default DataHcpConsulAgentHelmConfig#default}
   */
   readonly default?: string;
 }
@@ -149,7 +149,7 @@ export class DataHcpConsulAgentHelmConfigTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config hcp_consul_agent_helm_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config hcp_consul_agent_helm_config}
 */
 export class DataHcpConsulAgentHelmConfig extends cdktf.TerraformDataSource {
 
@@ -165,7 +165,7 @@ export class DataHcpConsulAgentHelmConfig extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpConsulAgentHelmConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpConsulAgentHelmConfig to import
-  * @param importFromId The id of the existing DataHcpConsulAgentHelmConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpConsulAgentHelmConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpConsulAgentHelmConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -177,7 +177,7 @@ export class DataHcpConsulAgentHelmConfig extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/data-sources/consul_agent_helm_config hcp_consul_agent_helm_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/data-sources/consul_agent_helm_config hcp_consul_agent_helm_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -188,7 +188,7 @@ export class DataHcpConsulAgentHelmConfig extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_consul_agent_helm_config',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.95.0',
+        providerVersion: '0.95.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

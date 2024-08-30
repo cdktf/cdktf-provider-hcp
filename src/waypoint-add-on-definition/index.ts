@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition
+// https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +15,61 @@ export interface WaypointAddOnDefinitionConfig extends cdktf.TerraformMetaArgume
   /**
   * A longer description of the Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#description WaypointAddOnDefinition#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#description WaypointAddOnDefinition#description}
   */
   readonly description: string;
   /**
   * List of labels attached to this Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#labels WaypointAddOnDefinition#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#labels WaypointAddOnDefinition#labels}
   */
   readonly labels?: string[];
   /**
   * The name of the Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
   */
   readonly name: string;
   /**
   * The ID of the HCP project where the Waypoint Add-on Definition is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#project_id WaypointAddOnDefinition#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#project_id WaypointAddOnDefinition#project_id}
   */
   readonly projectId?: string;
   /**
   * The markdown template for the Add-on Definition README (markdown format supported).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#readme_markdown_template WaypointAddOnDefinition#readme_markdown_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#readme_markdown_template WaypointAddOnDefinition#readme_markdown_template}
   */
   readonly readmeMarkdownTemplate?: string;
   /**
   * A short summary of the Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#summary WaypointAddOnDefinition#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#summary WaypointAddOnDefinition#summary}
   */
   readonly summary: string;
   /**
   * Terraform Cloud Workspace details. If not provided, defaults to the HCP Terraform project of the associated application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#terraform_cloud_workspace_details WaypointAddOnDefinition#terraform_cloud_workspace_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#terraform_cloud_workspace_details WaypointAddOnDefinition#terraform_cloud_workspace_details}
   */
   readonly terraformCloudWorkspaceDetails?: WaypointAddOnDefinitionTerraformCloudWorkspaceDetails;
   /**
   * Terraform Cloud no-code Module Source, expected to be in one of the following formats: "app.terraform.io/hcp_waypoint_example/ecs-advanced-microservice/aws" or "private/hcp_waypoint_example/ecs-advanced-microservice/aws"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#terraform_no_code_module_source WaypointAddOnDefinition#terraform_no_code_module_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#terraform_no_code_module_source WaypointAddOnDefinition#terraform_no_code_module_source}
   */
   readonly terraformNoCodeModuleSource: string;
   /**
+  * The ID of the Terraform Cloud Project to create workspaces in. The ID is found on the Terraform Cloud Project settings page.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
+  */
+  readonly terraformProjectId: string;
+  /**
   * List of variable options for the Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#variable_options WaypointAddOnDefinition#variable_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#variable_options WaypointAddOnDefinition#variable_options}
   */
   readonly variableOptions?: WaypointAddOnDefinitionVariableOptions[] | cdktf.IResolvable;
 }
@@ -71,13 +77,13 @@ export interface WaypointAddOnDefinitionTerraformCloudWorkspaceDetails {
   /**
   * Name of the Terraform Cloud Project
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
   */
   readonly name: string;
   /**
   * Terraform Cloud Project ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
   */
   readonly terraformProjectId: string;
 }
@@ -196,25 +202,25 @@ export interface WaypointAddOnDefinitionVariableOptions {
   /**
   * Variable name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
   */
   readonly name: string;
   /**
   * List of options
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#options WaypointAddOnDefinition#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#options WaypointAddOnDefinition#options}
   */
   readonly options: string[];
   /**
   * Whether the variable is editable by the user creating an add-on. If options are provided, then the user may only use those options, regardless of this setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#user_editable WaypointAddOnDefinition#user_editable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#user_editable WaypointAddOnDefinition#user_editable}
   */
   readonly userEditable?: boolean | cdktf.IResolvable;
   /**
   * Variable type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#variable_type WaypointAddOnDefinition#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#variable_type WaypointAddOnDefinition#variable_type}
   */
   readonly variableType: string;
 }
@@ -408,7 +414,7 @@ export class WaypointAddOnDefinitionVariableOptionsList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}
 */
 export class WaypointAddOnDefinition extends cdktf.TerraformResource {
 
@@ -424,7 +430,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaypointAddOnDefinition resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointAddOnDefinition to import
-  * @param importFromId The id of the existing WaypointAddOnDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaypointAddOnDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointAddOnDefinition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -436,7 +442,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -447,7 +453,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_waypoint_add_on_definition',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.95.0',
+        providerVersion: '0.95.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -466,6 +472,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
     this._summary = config.summary;
     this._terraformCloudWorkspaceDetails.internalValue = config.terraformCloudWorkspaceDetails;
     this._terraformNoCodeModuleSource = config.terraformNoCodeModuleSource;
+    this._terraformProjectId = config.terraformProjectId;
     this._variableOptions.internalValue = config.variableOptions;
   }
 
@@ -599,6 +606,19 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
     return this._terraformNoCodeModuleSource;
   }
 
+  // terraform_project_id - computed: false, optional: false, required: true
+  private _terraformProjectId?: string; 
+  public get terraformProjectId() {
+    return this.getStringAttribute('terraform_project_id');
+  }
+  public set terraformProjectId(value: string) {
+    this._terraformProjectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get terraformProjectIdInput() {
+    return this._terraformProjectId;
+  }
+
   // variable_options - computed: false, optional: true, required: false
   private _variableOptions = new WaypointAddOnDefinitionVariableOptionsList(this, "variable_options", true);
   public get variableOptions() {
@@ -629,6 +649,7 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
       summary: cdktf.stringToTerraform(this._summary),
       terraform_cloud_workspace_details: waypointAddOnDefinitionTerraformCloudWorkspaceDetailsToTerraform(this._terraformCloudWorkspaceDetails.internalValue),
       terraform_no_code_module_source: cdktf.stringToTerraform(this._terraformNoCodeModuleSource),
+      terraform_project_id: cdktf.stringToTerraform(this._terraformProjectId),
       variable_options: cdktf.listMapper(waypointAddOnDefinitionVariableOptionsToTerraform, false)(this._variableOptions.internalValue),
     };
   }
@@ -679,6 +700,12 @@ export class WaypointAddOnDefinition extends cdktf.TerraformResource {
       },
       terraform_no_code_module_source: {
         value: cdktf.stringToHclTerraform(this._terraformNoCodeModuleSource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      terraform_project_id: {
+        value: cdktf.stringToHclTerraform(this._terraformProjectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
