@@ -40,6 +40,10 @@ Object.defineProperty(exports, 'vaultPlugin', { get: function () { return requir
 Object.defineProperty(exports, 'vaultSecretsApp', { get: function () { return require('./vault-secrets-app'); } });
 Object.defineProperty(exports, 'vaultSecretsAppIamBinding', { get: function () { return require('./vault-secrets-app-iam-binding'); } });
 Object.defineProperty(exports, 'vaultSecretsAppIamPolicy', { get: function () { return require('./vault-secrets-app-iam-policy'); } });
+Object.defineProperty(exports, 'vaultSecretsIntegrationAws', { get: function () { return require('./vault-secrets-integration-aws'); } });
+Object.defineProperty(exports, 'vaultSecretsIntegrationGcp', { get: function () { return require('./vault-secrets-integration-gcp'); } });
+Object.defineProperty(exports, 'vaultSecretsIntegrationMongodbatlas', { get: function () { return require('./vault-secrets-integration-mongodbatlas'); } });
+Object.defineProperty(exports, 'vaultSecretsIntegrationTwilio', { get: function () { return require('./vault-secrets-integration-twilio'); } });
 Object.defineProperty(exports, 'vaultSecretsSecret', { get: function () { return require('./vault-secrets-secret'); } });
 Object.defineProperty(exports, 'waypointAction', { get: function () { return require('./waypoint-action'); } });
 Object.defineProperty(exports, 'waypointAddOn', { get: function () { return require('./waypoint-add-on'); } });
