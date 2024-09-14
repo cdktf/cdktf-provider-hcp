@@ -4,7 +4,7 @@
 
 ### OrganizationIamPolicy <a name="OrganizationIamPolicy" id="@cdktf/provider-hcp.organizationIamPolicy.OrganizationIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/organization_iam_policy hcp_organization_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/organization_iam_policy hcp_organization_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.organizationIamPolicy.OrganizationIamPolicy.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the OrganizationIamPolicy to i
 
 The id of the existing OrganizationIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/organization_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/organization_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,7 +800,7 @@ public readonly policyData: string;
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}
 
 ---
 
