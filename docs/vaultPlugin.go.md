@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 
 vaultplugin.NewVaultPlugin(scope Construct, id *string, config VaultPluginConfig) VaultPlugin
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 
 vaultplugin.VaultPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 
 vaultplugin.VaultPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ vaultplugin.VaultPlugin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 
 vaultplugin.VaultPlugin_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ vaultplugin.VaultPlugin_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultPlugin.VaultPlugin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 
 vaultplugin.VaultPlugin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultPlugin.VaultPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 
 &vaultplugin.VaultPluginConfig {
 	Connection: interface{},
@@ -848,7 +848,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
 	PluginType: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultPlugin.VaultPluginTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultPlugin.VaultPluginTimeouts,
 }
 ```
 
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultPlugin.VaultPluginTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 
 &vaultplugin.VaultPluginTimeouts {
 	Default: *string,
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultPlugin.VaultPluginTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultplugin"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultplugin"
 
 vaultplugin.NewVaultPluginTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultPluginTimeoutsOutputReference
 ```
