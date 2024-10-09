@@ -4,7 +4,7 @@
 
 ### WaypointTemplate <a name="WaypointTemplate" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template hcp_waypoint_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template hcp_waypoint_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.Initializer"></a>
 
@@ -79,7 +79,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetProjectId">resetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetReadmeMarkdownTemplate">resetReadmeMarkdownTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetTerraformAgentPoolId">resetTerraformAgentPoolId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetTerraformCloudWorkspaceDetails">resetTerraformCloudWorkspaceDetails</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetTerraformExecutionMode">resetTerraformExecutionMode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetUseModuleReadme">resetUseModuleReadme</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetVariableOptions">resetVariableOptions</a></code> | *No description.* |
 
 ---
@@ -420,10 +423,28 @@ public resetProjectId(): void
 public resetReadmeMarkdownTemplate(): void
 ```
 
+##### `resetTerraformAgentPoolId` <a name="resetTerraformAgentPoolId" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetTerraformAgentPoolId"></a>
+
+```typescript
+public resetTerraformAgentPoolId(): void
+```
+
 ##### `resetTerraformCloudWorkspaceDetails` <a name="resetTerraformCloudWorkspaceDetails" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetTerraformCloudWorkspaceDetails"></a>
 
 ```typescript
 public resetTerraformCloudWorkspaceDetails(): void
+```
+
+##### `resetTerraformExecutionMode` <a name="resetTerraformExecutionMode" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetTerraformExecutionMode"></a>
+
+```typescript
+public resetTerraformExecutionMode(): void
+```
+
+##### `resetUseModuleReadme` <a name="resetUseModuleReadme" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetUseModuleReadme"></a>
+
+```typescript
+public resetUseModuleReadme(): void
 ```
 
 ##### `resetVariableOptions` <a name="resetVariableOptions" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.resetVariableOptions"></a>
@@ -535,7 +556,7 @@ The construct id used in the generated config for the WaypointTemplate to import
 
 The id of the existing WaypointTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -575,9 +596,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.readmeMarkdownTemplateInput">readmeMarkdownTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.summaryInput">summaryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformAgentPoolIdInput">terraformAgentPoolIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformCloudWorkspaceDetailsInput">terraformCloudWorkspaceDetailsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateTerraformCloudWorkspaceDetails">WaypointTemplateTerraformCloudWorkspaceDetails</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformExecutionModeInput">terraformExecutionModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformNoCodeModuleSourceInput">terraformNoCodeModuleSourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformProjectIdInput">terraformProjectIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.useModuleReadmeInput">useModuleReadmeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.variableOptionsInput">variableOptionsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateVariableOptions">WaypointTemplateVariableOptions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.labels">labels</a></code> | <code>string[]</code> | *No description.* |
@@ -585,8 +609,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.readmeMarkdownTemplate">readmeMarkdownTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.summary">summary</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformAgentPoolId">terraformAgentPoolId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformExecutionMode">terraformExecutionMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformNoCodeModuleSource">terraformNoCodeModuleSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformProjectId">terraformProjectId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.useModuleReadme">useModuleReadme</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -832,6 +859,16 @@ public readonly summaryInput: string;
 
 ---
 
+##### `terraformAgentPoolIdInput`<sup>Optional</sup> <a name="terraformAgentPoolIdInput" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformAgentPoolIdInput"></a>
+
+```typescript
+public readonly terraformAgentPoolIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `terraformCloudWorkspaceDetailsInput`<sup>Optional</sup> <a name="terraformCloudWorkspaceDetailsInput" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformCloudWorkspaceDetailsInput"></a>
 
 ```typescript
@@ -839,6 +876,16 @@ public readonly terraformCloudWorkspaceDetailsInput: IResolvable | WaypointTempl
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateTerraformCloudWorkspaceDetails">WaypointTemplateTerraformCloudWorkspaceDetails</a>
+
+---
+
+##### `terraformExecutionModeInput`<sup>Optional</sup> <a name="terraformExecutionModeInput" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformExecutionModeInput"></a>
+
+```typescript
+public readonly terraformExecutionModeInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -859,6 +906,16 @@ public readonly terraformProjectIdInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `useModuleReadmeInput`<sup>Optional</sup> <a name="useModuleReadmeInput" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.useModuleReadmeInput"></a>
+
+```typescript
+public readonly useModuleReadmeInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -932,6 +989,26 @@ public readonly summary: string;
 
 ---
 
+##### `terraformAgentPoolId`<sup>Required</sup> <a name="terraformAgentPoolId" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformAgentPoolId"></a>
+
+```typescript
+public readonly terraformAgentPoolId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformExecutionMode`<sup>Required</sup> <a name="terraformExecutionMode" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformExecutionMode"></a>
+
+```typescript
+public readonly terraformExecutionMode: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `terraformNoCodeModuleSource`<sup>Required</sup> <a name="terraformNoCodeModuleSource" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.terraformNoCodeModuleSource"></a>
 
 ```typescript
@@ -949,6 +1026,16 @@ public readonly terraformProjectId: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `useModuleReadme`<sup>Required</sup> <a name="useModuleReadme" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplate.property.useModuleReadme"></a>
+
+```typescript
+public readonly useModuleReadme: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -1001,7 +1088,10 @@ const waypointTemplateConfig: waypointTemplate.WaypointTemplateConfig = { ... }
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.labels">labels</a></code> | <code>string[]</code> | List of labels attached to this Template. |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.projectId">projectId</a></code> | <code>string</code> | The ID of the HCP project where the Waypoint Template is located. |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.readmeMarkdownTemplate">readmeMarkdownTemplate</a></code> | <code>string</code> | Instructions for using the template (markdown format supported). |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.terraformAgentPoolId">terraformAgentPoolId</a></code> | <code>string</code> | The ID of the agent pool to use for Terraform operations, for workspaces created for applications using this template. |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.terraformCloudWorkspaceDetails">terraformCloudWorkspaceDetails</a></code> | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateTerraformCloudWorkspaceDetails">WaypointTemplateTerraformCloudWorkspaceDetails</a></code> | Terraform Cloud Workspace details. |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.terraformExecutionMode">terraformExecutionMode</a></code> | <code>string</code> | The execution mode of the HCP Terraform workspaces created for applications using this template. |
+| <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.useModuleReadme">useModuleReadme</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, will auto-import the readme form the Terraform odule used. |
 | <code><a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.variableOptions">variableOptions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointTemplate.WaypointTemplateVariableOptions">WaypointTemplateVariableOptions</a>[]</code> | List of variable options for the template. |
 
 ---
@@ -1086,7 +1176,7 @@ public readonly name: string;
 
 The name of the Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#name WaypointTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#name WaypointTemplate#name}
 
 ---
 
@@ -1100,7 +1190,7 @@ public readonly summary: string;
 
 A brief description of the template, up to 110 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#summary WaypointTemplate#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#summary WaypointTemplate#summary}
 
 ---
 
@@ -1114,7 +1204,7 @@ public readonly terraformNoCodeModuleSource: string;
 
 Terraform Cloud No-Code Module details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#terraform_no_code_module_source WaypointTemplate#terraform_no_code_module_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#terraform_no_code_module_source WaypointTemplate#terraform_no_code_module_source}
 
 ---
 
@@ -1130,7 +1220,7 @@ The ID of the Terraform Cloud Project to create workspaces in.
 
 The ID is found on the Terraform Cloud Project settings page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
 
 ---
 
@@ -1144,7 +1234,7 @@ public readonly description: string;
 
 A description of the template, along with when and why it should be used, up to 500 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#description WaypointTemplate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#description WaypointTemplate#description}
 
 ---
 
@@ -1158,7 +1248,7 @@ public readonly labels: string[];
 
 List of labels attached to this Template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#labels WaypointTemplate#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#labels WaypointTemplate#labels}
 
 ---
 
@@ -1172,7 +1262,7 @@ public readonly projectId: string;
 
 The ID of the HCP project where the Waypoint Template is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#project_id WaypointTemplate#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#project_id WaypointTemplate#project_id}
 
 ---
 
@@ -1186,7 +1276,23 @@ public readonly readmeMarkdownTemplate: string;
 
 Instructions for using the template (markdown format supported).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#readme_markdown_template WaypointTemplate#readme_markdown_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#readme_markdown_template WaypointTemplate#readme_markdown_template}
+
+---
+
+##### `terraformAgentPoolId`<sup>Optional</sup> <a name="terraformAgentPoolId" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.terraformAgentPoolId"></a>
+
+```typescript
+public readonly terraformAgentPoolId: string;
+```
+
+- *Type:* string
+
+The ID of the agent pool to use for Terraform operations, for workspaces created for applications using this template.
+
+Required if terraform_execution_mode is set to 'agent'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#terraform_agent_pool_id WaypointTemplate#terraform_agent_pool_id}
 
 ---
 
@@ -1200,7 +1306,37 @@ public readonly terraformCloudWorkspaceDetails: WaypointTemplateTerraformCloudWo
 
 Terraform Cloud Workspace details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#terraform_cloud_workspace_details WaypointTemplate#terraform_cloud_workspace_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#terraform_cloud_workspace_details WaypointTemplate#terraform_cloud_workspace_details}
+
+---
+
+##### `terraformExecutionMode`<sup>Optional</sup> <a name="terraformExecutionMode" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.terraformExecutionMode"></a>
+
+```typescript
+public readonly terraformExecutionMode: string;
+```
+
+- *Type:* string
+
+The execution mode of the HCP Terraform workspaces created for applications using this template.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#terraform_execution_mode WaypointTemplate#terraform_execution_mode}
+
+---
+
+##### `useModuleReadme`<sup>Optional</sup> <a name="useModuleReadme" id="@cdktf/provider-hcp.waypointTemplate.WaypointTemplateConfig.property.useModuleReadme"></a>
+
+```typescript
+public readonly useModuleReadme: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If true, will auto-import the readme form the Terraform odule used.
+
+If this is set to true, users should not also set `readme_markdown_template`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#use_module_readme WaypointTemplate#use_module_readme}
 
 ---
 
@@ -1214,7 +1350,7 @@ public readonly variableOptions: IResolvable | WaypointTemplateVariableOptions[]
 
 List of variable options for the template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#variable_options WaypointTemplate#variable_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#variable_options WaypointTemplate#variable_options}
 
 ---
 
@@ -1247,7 +1383,7 @@ public readonly name: string;
 
 Name of the Terraform Cloud Project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#name WaypointTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#name WaypointTemplate#name}
 
 ---
 
@@ -1261,7 +1397,7 @@ public readonly terraformProjectId: string;
 
 Terraform Cloud Project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
 
 ---
 
@@ -1296,7 +1432,7 @@ public readonly name: string;
 
 Variable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#name WaypointTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#name WaypointTemplate#name}
 
 ---
 
@@ -1310,7 +1446,7 @@ public readonly variableType: string;
 
 Variable type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#variable_type WaypointTemplate#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#variable_type WaypointTemplate#variable_type}
 
 ---
 
@@ -1324,7 +1460,7 @@ public readonly options: string[];
 
 List of options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#options WaypointTemplate#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#options WaypointTemplate#options}
 
 ---
 
@@ -1338,7 +1474,7 @@ public readonly userEditable: boolean | IResolvable;
 
 Whether the variable is editable by the user creating an application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template#user_editable WaypointTemplate#user_editable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template#user_editable WaypointTemplate#user_editable}
 
 ---
 

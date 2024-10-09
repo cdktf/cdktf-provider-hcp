@@ -4,12 +4,12 @@
 
 ### PackerBucketIamBinding <a name="PackerBucketIamBinding" id="@cdktf/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/packer_bucket_iam_binding hcp_packer_bucket_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding hcp_packer_bucket_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucketiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucketiambinding"
 
 packerbucketiambinding.NewPackerBucketIamBinding(scope Construct, id *string, config PackerBucketIamBindingConfig) PackerBucketIamBinding
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucketiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucketiambinding"
 
 packerbucketiambinding.PackerBucketIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucketiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucketiambinding"
 
 packerbucketiambinding.PackerBucketIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ packerbucketiambinding.PackerBucketIamBinding_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucketiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucketiambinding"
 
 packerbucketiambinding.PackerBucketIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ packerbucketiambinding.PackerBucketIamBinding_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucketiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucketiambinding"
 
 packerbucketiambinding.PackerBucketIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the PackerBucketIamBinding to 
 
 The id of the existing PackerBucketIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/packer_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.packerBucketIamBinding.PackerBucketIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucketiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucketiambinding"
 
 &packerbucketiambinding.PackerBucketIamBindingConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ PrincipalId *string
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/packer_bucket_iam_binding#principal_id PackerBucketIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#principal_id PackerBucketIamBinding#principal_id}
 
 ---
 
@@ -860,7 +860,7 @@ ResourceName *string
 
 The bucket's resource name in the format packer/project/<project ID>/bucket/<bucket name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/packer_bucket_iam_binding#resource_name PackerBucketIamBinding#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#resource_name PackerBucketIamBinding#resource_name}
 
 ---
 
@@ -874,7 +874,7 @@ Role *string
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/packer_bucket_iam_binding#role PackerBucketIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#role PackerBucketIamBinding#role}
 
 ---
 

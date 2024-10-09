@@ -4,7 +4,7 @@
 
 ### WaypointAddOnDefinition <a name="WaypointAddOnDefinition" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.Initializer"></a>
 
@@ -78,7 +78,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetProjectId">resetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetReadmeMarkdownTemplate">resetReadmeMarkdownTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetTerraformAgentPoolId">resetTerraformAgentPoolId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetTerraformCloudWorkspaceDetails">resetTerraformCloudWorkspaceDetails</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetTerraformExecutionMode">resetTerraformExecutionMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetVariableOptions">resetVariableOptions</a></code> | *No description.* |
 
 ---
@@ -413,10 +415,22 @@ public resetProjectId(): void
 public resetReadmeMarkdownTemplate(): void
 ```
 
+##### `resetTerraformAgentPoolId` <a name="resetTerraformAgentPoolId" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetTerraformAgentPoolId"></a>
+
+```typescript
+public resetTerraformAgentPoolId(): void
+```
+
 ##### `resetTerraformCloudWorkspaceDetails` <a name="resetTerraformCloudWorkspaceDetails" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetTerraformCloudWorkspaceDetails"></a>
 
 ```typescript
 public resetTerraformCloudWorkspaceDetails(): void
+```
+
+##### `resetTerraformExecutionMode` <a name="resetTerraformExecutionMode" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetTerraformExecutionMode"></a>
+
+```typescript
+public resetTerraformExecutionMode(): void
 ```
 
 ##### `resetVariableOptions` <a name="resetVariableOptions" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.resetVariableOptions"></a>
@@ -528,7 +542,7 @@ The construct id used in the generated config for the WaypointAddOnDefinition to
 
 The id of the existing WaypointAddOnDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -568,7 +582,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.readmeMarkdownTemplateInput">readmeMarkdownTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.summaryInput">summaryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformAgentPoolIdInput">terraformAgentPoolIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformCloudWorkspaceDetailsInput">terraformCloudWorkspaceDetailsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionTerraformCloudWorkspaceDetails">WaypointAddOnDefinitionTerraformCloudWorkspaceDetails</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformExecutionModeInput">terraformExecutionModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformNoCodeModuleSourceInput">terraformNoCodeModuleSourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformProjectIdInput">terraformProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.variableOptionsInput">variableOptionsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionVariableOptions">WaypointAddOnDefinitionVariableOptions</a>[]</code> | *No description.* |
@@ -578,6 +594,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.readmeMarkdownTemplate">readmeMarkdownTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.summary">summary</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformAgentPoolId">terraformAgentPoolId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformExecutionMode">terraformExecutionMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformNoCodeModuleSource">terraformNoCodeModuleSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformProjectId">terraformProjectId</a></code> | <code>string</code> | *No description.* |
 
@@ -825,6 +843,16 @@ public readonly summaryInput: string;
 
 ---
 
+##### `terraformAgentPoolIdInput`<sup>Optional</sup> <a name="terraformAgentPoolIdInput" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformAgentPoolIdInput"></a>
+
+```typescript
+public readonly terraformAgentPoolIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `terraformCloudWorkspaceDetailsInput`<sup>Optional</sup> <a name="terraformCloudWorkspaceDetailsInput" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformCloudWorkspaceDetailsInput"></a>
 
 ```typescript
@@ -832,6 +860,16 @@ public readonly terraformCloudWorkspaceDetailsInput: IResolvable | WaypointAddOn
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionTerraformCloudWorkspaceDetails">WaypointAddOnDefinitionTerraformCloudWorkspaceDetails</a>
+
+---
+
+##### `terraformExecutionModeInput`<sup>Optional</sup> <a name="terraformExecutionModeInput" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformExecutionModeInput"></a>
+
+```typescript
+public readonly terraformExecutionModeInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -925,6 +963,26 @@ public readonly summary: string;
 
 ---
 
+##### `terraformAgentPoolId`<sup>Required</sup> <a name="terraformAgentPoolId" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformAgentPoolId"></a>
+
+```typescript
+public readonly terraformAgentPoolId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformExecutionMode`<sup>Required</sup> <a name="terraformExecutionMode" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformExecutionMode"></a>
+
+```typescript
+public readonly terraformExecutionMode: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `terraformNoCodeModuleSource`<sup>Required</sup> <a name="terraformNoCodeModuleSource" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinition.property.terraformNoCodeModuleSource"></a>
 
 ```typescript
@@ -994,7 +1052,9 @@ const waypointAddOnDefinitionConfig: waypointAddOnDefinition.WaypointAddOnDefini
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionConfig.property.labels">labels</a></code> | <code>string[]</code> | List of labels attached to this Add-on Definition. |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionConfig.property.projectId">projectId</a></code> | <code>string</code> | The ID of the HCP project where the Waypoint Add-on Definition is located. |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionConfig.property.readmeMarkdownTemplate">readmeMarkdownTemplate</a></code> | <code>string</code> | The markdown template for the Add-on Definition README (markdown format supported). |
+| <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionConfig.property.terraformAgentPoolId">terraformAgentPoolId</a></code> | <code>string</code> | The ID of the Terraform agent pool to use for running Terraform operations. |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionConfig.property.terraformCloudWorkspaceDetails">terraformCloudWorkspaceDetails</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionTerraformCloudWorkspaceDetails">WaypointAddOnDefinitionTerraformCloudWorkspaceDetails</a></code> | Terraform Cloud Workspace details. If not provided, defaults to the HCP Terraform project of the associated application. |
+| <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionConfig.property.terraformExecutionMode">terraformExecutionMode</a></code> | <code>string</code> | The execution mode of the HCP Terraform workspaces for add-ons using this add-on definition. |
 | <code><a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionConfig.property.variableOptions">variableOptions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionVariableOptions">WaypointAddOnDefinitionVariableOptions</a>[]</code> | List of variable options for the Add-on Definition. |
 
 ---
@@ -1079,7 +1139,7 @@ public readonly description: string;
 
 A longer description of the Add-on Definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#description WaypointAddOnDefinition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#description WaypointAddOnDefinition#description}
 
 ---
 
@@ -1093,7 +1153,7 @@ public readonly name: string;
 
 The name of the Add-on Definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
 
 ---
 
@@ -1107,7 +1167,7 @@ public readonly summary: string;
 
 A short summary of the Add-on Definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#summary WaypointAddOnDefinition#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#summary WaypointAddOnDefinition#summary}
 
 ---
 
@@ -1121,7 +1181,7 @@ public readonly terraformNoCodeModuleSource: string;
 
 Terraform Cloud no-code Module Source, expected to be in one of the following formats: "app.terraform.io/hcp_waypoint_example/ecs-advanced-microservice/aws" or "private/hcp_waypoint_example/ecs-advanced-microservice/aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#terraform_no_code_module_source WaypointAddOnDefinition#terraform_no_code_module_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#terraform_no_code_module_source WaypointAddOnDefinition#terraform_no_code_module_source}
 
 ---
 
@@ -1137,7 +1197,7 @@ The ID of the Terraform Cloud Project to create workspaces in.
 
 The ID is found on the Terraform Cloud Project settings page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
 
 ---
 
@@ -1151,7 +1211,7 @@ public readonly labels: string[];
 
 List of labels attached to this Add-on Definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#labels WaypointAddOnDefinition#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#labels WaypointAddOnDefinition#labels}
 
 ---
 
@@ -1165,7 +1225,7 @@ public readonly projectId: string;
 
 The ID of the HCP project where the Waypoint Add-on Definition is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#project_id WaypointAddOnDefinition#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#project_id WaypointAddOnDefinition#project_id}
 
 ---
 
@@ -1179,7 +1239,23 @@ public readonly readmeMarkdownTemplate: string;
 
 The markdown template for the Add-on Definition README (markdown format supported).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#readme_markdown_template WaypointAddOnDefinition#readme_markdown_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#readme_markdown_template WaypointAddOnDefinition#readme_markdown_template}
+
+---
+
+##### `terraformAgentPoolId`<sup>Optional</sup> <a name="terraformAgentPoolId" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionConfig.property.terraformAgentPoolId"></a>
+
+```typescript
+public readonly terraformAgentPoolId: string;
+```
+
+- *Type:* string
+
+The ID of the Terraform agent pool to use for running Terraform operations.
+
+This is only applicable when the execution mode is set to 'agent'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#terraform_agent_pool_id WaypointAddOnDefinition#terraform_agent_pool_id}
 
 ---
 
@@ -1193,7 +1269,21 @@ public readonly terraformCloudWorkspaceDetails: WaypointAddOnDefinitionTerraform
 
 Terraform Cloud Workspace details. If not provided, defaults to the HCP Terraform project of the associated application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#terraform_cloud_workspace_details WaypointAddOnDefinition#terraform_cloud_workspace_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#terraform_cloud_workspace_details WaypointAddOnDefinition#terraform_cloud_workspace_details}
+
+---
+
+##### `terraformExecutionMode`<sup>Optional</sup> <a name="terraformExecutionMode" id="@cdktf/provider-hcp.waypointAddOnDefinition.WaypointAddOnDefinitionConfig.property.terraformExecutionMode"></a>
+
+```typescript
+public readonly terraformExecutionMode: string;
+```
+
+- *Type:* string
+
+The execution mode of the HCP Terraform workspaces for add-ons using this add-on definition.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#terraform_execution_mode WaypointAddOnDefinition#terraform_execution_mode}
 
 ---
 
@@ -1207,7 +1297,7 @@ public readonly variableOptions: IResolvable | WaypointAddOnDefinitionVariableOp
 
 List of variable options for the Add-on Definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#variable_options WaypointAddOnDefinition#variable_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#variable_options WaypointAddOnDefinition#variable_options}
 
 ---
 
@@ -1240,7 +1330,7 @@ public readonly name: string;
 
 Name of the Terraform Cloud Project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
 
 ---
 
@@ -1254,7 +1344,7 @@ public readonly terraformProjectId: string;
 
 Terraform Cloud Project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#terraform_project_id WaypointAddOnDefinition#terraform_project_id}
 
 ---
 
@@ -1289,7 +1379,7 @@ public readonly name: string;
 
 Variable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
 
 ---
 
@@ -1303,7 +1393,7 @@ public readonly options: string[];
 
 List of options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#options WaypointAddOnDefinition#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#options WaypointAddOnDefinition#options}
 
 ---
 
@@ -1317,7 +1407,7 @@ public readonly variableType: string;
 
 Variable type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#variable_type WaypointAddOnDefinition#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#variable_type WaypointAddOnDefinition#variable_type}
 
 ---
 
@@ -1333,7 +1423,7 @@ Whether the variable is editable by the user creating an add-on.
 
 If options are provided, then the user may only use those options, regardless of this setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition#user_editable WaypointAddOnDefinition#user_editable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition#user_editable WaypointAddOnDefinition#user_editable}
 
 ---
 

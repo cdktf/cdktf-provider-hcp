@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/project
+// https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * The project's description
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/project#description Project#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/project#description Project#description}
   */
   readonly description?: string;
   /**
   * The project's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/project#name Project#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/project#name Project#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/project hcp_project}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/project hcp_project}
 */
 export class Project extends cdktf.TerraformResource {
 
@@ -43,7 +38,7 @@ export class Project extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Project resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Project to import
-  * @param importFromId The id of the existing Project that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Project that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Project to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class Project extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/project hcp_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/project hcp_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_project',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.96.0',
+        providerVersion: '0.97.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

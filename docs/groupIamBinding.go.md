@@ -4,12 +4,12 @@
 
 ### GroupIamBinding <a name="GroupIamBinding" id="@cdktf/provider-hcp.groupIamBinding.GroupIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/group_iam_binding hcp_group_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/group_iam_binding hcp_group_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.groupIamBinding.GroupIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupiambinding"
 
 groupiambinding.NewGroupIamBinding(scope Construct, id *string, config GroupIamBindingConfig) GroupIamBinding
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.groupIamBinding.GroupIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupiambinding"
 
 groupiambinding.GroupIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.groupIamBinding.GroupIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupiambinding"
 
 groupiambinding.GroupIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ groupiambinding.GroupIamBinding_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.groupIamBinding.GroupIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupiambinding"
 
 groupiambinding.GroupIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ groupiambinding.GroupIamBinding_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.groupIamBinding.GroupIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupiambinding"
 
 groupiambinding.GroupIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the GroupIamBinding to import.
 
 The id of the existing GroupIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/group_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/group_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.groupIamBinding.GroupIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/groupiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/groupiambinding"
 
 &groupiambinding.GroupIamBindingConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ Name *string
 
 The group's resource name in format `iam/organization/<organization_id>/group/<group_name>`. The shortened `<group_name>` version can be used for input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/group_iam_binding#name GroupIamBinding#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/group_iam_binding#name GroupIamBinding#name}
 
 ---
 
@@ -860,7 +860,7 @@ PrincipalId *string
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/group_iam_binding#principal_id GroupIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/group_iam_binding#principal_id GroupIamBinding#principal_id}
 
 ---
 
@@ -874,7 +874,7 @@ Role *string
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/group_iam_binding#role GroupIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/group_iam_binding#role GroupIamBinding#role}
 
 ---
 
