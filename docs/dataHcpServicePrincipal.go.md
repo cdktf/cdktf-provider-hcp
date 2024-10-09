@@ -4,7 +4,7 @@
 
 ### DataHcpServicePrincipal <a name="DataHcpServicePrincipal" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/data-sources/service_principal hcp_service_principal}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/service_principal hcp_service_principal}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataHcpServicePrincipal to
 
 The id of the existing DataHcpServicePrincipal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ ResourceName *string
 
 The service principal's resource name in format `iam/project/<project_id>/service-principal/<name>` or `iam/organization/<organization_id>/service-principal/<name>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/data-sources/service_principal#resource_name DataHcpServicePrincipal#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/service_principal#resource_name DataHcpServicePrincipal#resource_name}
 
 ---
 
