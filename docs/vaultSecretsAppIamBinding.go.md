@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
 
 vaultsecretsappiambinding.NewVaultSecretsAppIamBinding(scope Construct, id *string, config VaultSecretsAppIamBindingConfig) VaultSecretsAppIamBinding
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
 
 vaultsecretsappiambinding.VaultSecretsAppIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
 
 vaultsecretsappiambinding.VaultSecretsAppIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ vaultsecretsappiambinding.VaultSecretsAppIamBinding_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
 
 vaultsecretsappiambinding.VaultSecretsAppIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ vaultsecretsappiambinding.VaultSecretsAppIamBinding_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
 
 vaultsecretsappiambinding.VaultSecretsAppIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
 
 &vaultsecretsappiambinding.VaultSecretsAppIamBindingConfig {
 	Connection: interface{},
