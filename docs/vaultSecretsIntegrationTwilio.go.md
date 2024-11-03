@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegrationTwilio.VaultSecretsIntegrationTwilio.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationtwilio"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationtwilio"
 
 vaultsecretsintegrationtwilio.NewVaultSecretsIntegrationTwilio(scope Construct, id *string, config VaultSecretsIntegrationTwilioConfig) VaultSecretsIntegrationTwilio
 ```
@@ -405,7 +405,7 @@ func ResetStaticCredentialDetails()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsIntegrationTwilio.VaultSecretsIntegrationTwilio.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationtwilio"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationtwilio"
 
 vaultsecretsintegrationtwilio.VaultSecretsIntegrationTwilio_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsIntegrationTwilio.VaultSecretsIntegrationTwilio.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationtwilio"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationtwilio"
 
 vaultsecretsintegrationtwilio.VaultSecretsIntegrationTwilio_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ vaultsecretsintegrationtwilio.VaultSecretsIntegrationTwilio_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsIntegrationTwilio.VaultSecretsIntegrationTwilio.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationtwilio"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationtwilio"
 
 vaultsecretsintegrationtwilio.VaultSecretsIntegrationTwilio_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ vaultsecretsintegrationtwilio.VaultSecretsIntegrationTwilio_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsIntegrationTwilio.VaultSecretsIntegrationTwilio.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationtwilio"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationtwilio"
 
 vaultsecretsintegrationtwilio.VaultSecretsIntegrationTwilio_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegrationTwilio.VaultSecretsIntegrationTwilioConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationtwilio"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationtwilio"
 
 &vaultsecretsintegrationtwilio.VaultSecretsIntegrationTwilioConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationtwilio
 	Capabilities: *[]*string,
 	Name: *string,
 	ProjectId: *string,
-	StaticCredentialDetails: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegrationTwilio.VaultSecretsIntegrationTwilioStaticCredentialDetails,
+	StaticCredentialDetails: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegrationTwilio.VaultSecretsIntegrationTwilioStaticCredentialDetails,
 }
 ```
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegrationTwilio.VaultSecretsIntegrationTwilioStaticCredentialDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationtwilio"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationtwilio"
 
 &vaultsecretsintegrationtwilio.VaultSecretsIntegrationTwilioStaticCredentialDetails {
 	AccountSid: *string,
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegrationTwilio.VaultSecretsIntegrationTwilioStaticCredentialDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationtwilio"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationtwilio"
 
 vaultsecretsintegrationtwilio.NewVaultSecretsIntegrationTwilioStaticCredentialDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationTwilioStaticCredentialDetailsOutputReference
 ```

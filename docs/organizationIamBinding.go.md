@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.organizationIamBinding.OrganizationIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/organizationiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/organizationiambinding"
 
 organizationiambinding.NewOrganizationIamBinding(scope Construct, id *string, config OrganizationIamBindingConfig) OrganizationIamBinding
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.organizationIamBinding.OrganizationIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/organizationiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/organizationiambinding"
 
 organizationiambinding.OrganizationIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.organizationIamBinding.OrganizationIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/organizationiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/organizationiambinding"
 
 organizationiambinding.OrganizationIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ organizationiambinding.OrganizationIamBinding_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.organizationIamBinding.OrganizationIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/organizationiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/organizationiambinding"
 
 organizationiambinding.OrganizationIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ organizationiambinding.OrganizationIamBinding_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.organizationIamBinding.OrganizationIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/organizationiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/organizationiambinding"
 
 organizationiambinding.OrganizationIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.organizationIamBinding.OrganizationIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/organizationiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/organizationiambinding"
 
 &organizationiambinding.OrganizationIamBindingConfig {
 	Connection: interface{},
