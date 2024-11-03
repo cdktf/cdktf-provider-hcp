@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecret(scope Construct, id *string, config VaultSecretsRotatingSecretConfig) VaultSecretsRotatingSecret
 ```
@@ -465,7 +465,7 @@ func ResetTwilioApiKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_IsConstruct(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -985,7 +985,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAwsAccessKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretAwsAccessKeys {
 	IamUsername: *string,
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretConfig {
 	Connection: interface{},
@@ -1034,11 +1034,11 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret
 	Name: *string,
 	RotationPolicyName: *string,
 	SecretProvider: *string,
-	AwsAccessKeys: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAwsAccessKeys,
-	GcpServiceAccountKey: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretGcpServiceAccountKey,
-	MongodbAtlasUser: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretMongodbAtlasUser,
+	AwsAccessKeys: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAwsAccessKeys,
+	GcpServiceAccountKey: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretGcpServiceAccountKey,
+	MongodbAtlasUser: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretMongodbAtlasUser,
 	ProjectId: *string,
-	TwilioApiKey: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretTwilioApiKey,
+	TwilioApiKey: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretTwilioApiKey,
 }
 ```
 
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretGcpServiceAccountKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretGcpServiceAccountKey {
 	ServiceAccountEmail: *string,
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretMongodbAtlasUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretMongodbAtlasUser {
 	DatabaseName: *string,
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretTwilioApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretTwilioApiKey {
 
@@ -1396,7 +1396,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAwsAccessKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecretAwsAccessKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretAwsAccessKeysOutputReference
 ```
@@ -1667,7 +1667,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretGcpServiceAccountKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecretGcpServiceAccountKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretGcpServiceAccountKeyOutputReference
 ```
@@ -1938,7 +1938,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretMongodbAtlasUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecretMongodbAtlasUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretMongodbAtlasUserOutputReference
 ```
@@ -2253,7 +2253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretTwilioApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecretTwilioApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretTwilioApiKeyOutputReference
 ```
