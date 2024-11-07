@@ -4,7 +4,7 @@
 
 ### VaultSecretsAppIamBinding <a name="VaultSecretsAppIamBinding" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_app_iam_binding hcp_vault_secrets_app_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_app_iam_binding hcp_vault_secrets_app_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the VaultSecretsAppIamBinding 
 
 The id of the existing VaultSecretsAppIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_app_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_app_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ public string PrincipalId { get; set; }
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_app_iam_binding#principal_id VaultSecretsAppIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_app_iam_binding#principal_id VaultSecretsAppIamBinding#principal_id}
 
 ---
 
@@ -860,7 +860,7 @@ public string ResourceName { get; set; }
 
 The app's resource name in the format secrets/project/<project ID>/app/<app Name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_app_iam_binding#resource_name VaultSecretsAppIamBinding#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_app_iam_binding#resource_name VaultSecretsAppIamBinding#resource_name}
 
 ---
 
@@ -874,7 +874,7 @@ public string Role { get; set; }
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_app_iam_binding#role VaultSecretsAppIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_app_iam_binding#role VaultSecretsAppIamBinding#role}
 
 ---
 

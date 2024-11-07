@@ -4,7 +4,7 @@
 
 ### PackerBucketIamBinding <a name="PackerBucketIamBinding" id="@cdktf/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding hcp_packer_bucket_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/packer_bucket_iam_binding hcp_packer_bucket_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerBucketIamBinding.PackerBucketIamBinding.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#principal_id PackerBucketIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/packer_bucket_iam_binding#principal_id PackerBucketIamBinding#principal_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The bucket's resource name in the format packer/project/<project ID>/bucket/<bucket name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#resource_name PackerBucketIamBinding#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/packer_bucket_iam_binding#resource_name PackerBucketIamBinding#resource_name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#role PackerBucketIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/packer_bucket_iam_binding#role PackerBucketIamBinding#role}
 
 ---
 
@@ -603,7 +603,7 @@ The construct id used in the generated config for the PackerBucketIamBinding to 
 
 The id of the existing PackerBucketIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/packer_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -982,7 +982,7 @@ principal_id: str
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#principal_id PackerBucketIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/packer_bucket_iam_binding#principal_id PackerBucketIamBinding#principal_id}
 
 ---
 
@@ -996,7 +996,7 @@ resource_name: str
 
 The bucket's resource name in the format packer/project/<project ID>/bucket/<bucket name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#resource_name PackerBucketIamBinding#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/packer_bucket_iam_binding#resource_name PackerBucketIamBinding#resource_name}
 
 ---
 
@@ -1010,7 +1010,7 @@ role: str
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/packer_bucket_iam_binding#role PackerBucketIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/packer_bucket_iam_binding#role PackerBucketIamBinding#role}
 
 ---
 

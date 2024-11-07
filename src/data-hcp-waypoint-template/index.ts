@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/waypoint_template
+// https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataHcpWaypointTemplateConfig extends cdktf.TerraformMetaArgume
   /**
   * The ID of the Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/waypoint_template#id DataHcpWaypointTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_template#id DataHcpWaypointTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataHcpWaypointTemplateConfig extends cdktf.TerraformMetaArgume
   /**
   * The name of the Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/waypoint_template#name DataHcpWaypointTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_template#name DataHcpWaypointTemplate#name}
   */
   readonly name?: string;
   /**
   * The ID of the HCP project where the Waypoint Template is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/waypoint_template#project_id DataHcpWaypointTemplate#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_template#project_id DataHcpWaypointTemplate#project_id}
   */
   readonly projectId?: string;
 }
@@ -185,7 +185,7 @@ export class DataHcpWaypointTemplateVariableOptionsList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/waypoint_template hcp_waypoint_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_template hcp_waypoint_template}
 */
 export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
 
@@ -201,7 +201,7 @@ export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpWaypointTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpWaypointTemplate to import
-  * @param importFromId The id of the existing DataHcpWaypointTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/waypoint_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpWaypointTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpWaypointTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -213,7 +213,7 @@ export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +224,7 @@ export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_waypoint_template',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.97.0',
+        providerVersion: '0.98.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
