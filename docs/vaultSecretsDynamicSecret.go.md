@@ -4,12 +4,12 @@
 
 ### VaultSecretsDynamicSecret <a name="VaultSecretsDynamicSecret" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret hcp_vault_secrets_dynamic_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret hcp_vault_secrets_dynamic_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsdynamicsecret"
 
 vaultsecretsdynamicsecret.NewVaultSecretsDynamicSecret(scope Construct, id *string, config VaultSecretsDynamicSecretConfig) VaultSecretsDynamicSecret
 ```
@@ -432,7 +432,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsdynamicsecret"
 
 vaultsecretsdynamicsecret.VaultSecretsDynamicSecret_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsdynamicsecret"
 
 vaultsecretsdynamicsecret.VaultSecretsDynamicSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ vaultsecretsdynamicsecret.VaultSecretsDynamicSecret_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsdynamicsecret"
 
 vaultsecretsdynamicsecret.VaultSecretsDynamicSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ vaultsecretsdynamicsecret.VaultSecretsDynamicSecret_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsdynamicsecret"
 
 vaultsecretsdynamicsecret.VaultSecretsDynamicSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the VaultSecretsDynamicSecret 
 
 The id of the existing VaultSecretsDynamicSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecretAwsAssumeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsdynamicsecret"
 
 &vaultsecretsdynamicsecret.VaultSecretsDynamicSecretAwsAssumeRole {
 	IamRoleArn: *string,
@@ -933,7 +933,7 @@ IamRoleArn *string
 
 AWS IAM role ARN to assume when generating credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#iam_role_arn VaultSecretsDynamicSecret#iam_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#iam_role_arn VaultSecretsDynamicSecret#iam_role_arn}
 
 ---
 
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsdynamicsecret"
 
 &vaultsecretsdynamicsecret.VaultSecretsDynamicSecretConfig {
 	Connection: interface{},
@@ -956,9 +956,9 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
 	IntegrationName: *string,
 	Name: *string,
 	SecretProvider: *string,
-	AwsAssumeRole: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsDynamicSecret.VaultSecretsDynamicSecretAwsAssumeRole,
+	AwsAssumeRole: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecretAwsAssumeRole,
 	DefaultTtl: *string,
-	GcpImpersonateServiceAccount: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsDynamicSecret.VaultSecretsDynamicSecretGcpImpersonateServiceAccount,
+	GcpImpersonateServiceAccount: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecretGcpImpersonateServiceAccount,
 	ProjectId: *string,
 }
 ```
@@ -1065,7 +1065,7 @@ AppName *string
 
 Vault Secrets application name that owns the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#app_name VaultSecretsDynamicSecret#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#app_name VaultSecretsDynamicSecret#app_name}
 
 ---
 
@@ -1079,7 +1079,7 @@ IntegrationName *string
 
 The Vault Secrets integration name with the capability to manage the secret's lifecycle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#integration_name VaultSecretsDynamicSecret#integration_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#integration_name VaultSecretsDynamicSecret#integration_name}
 
 ---
 
@@ -1093,7 +1093,7 @@ Name *string
 
 The Vault Secrets secret name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#name VaultSecretsDynamicSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#name VaultSecretsDynamicSecret#name}
 
 ---
 
@@ -1107,7 +1107,7 @@ SecretProvider *string
 
 The third party platform the dynamic credentials give access to. One of `aws` or `gcp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#secret_provider VaultSecretsDynamicSecret#secret_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#secret_provider VaultSecretsDynamicSecret#secret_provider}
 
 ---
 
@@ -1121,7 +1121,7 @@ AwsAssumeRole VaultSecretsDynamicSecretAwsAssumeRole
 
 AWS configuration to generate dynamic credentials by assuming an IAM role. Required if `secret_provider` is `aws`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#aws_assume_role VaultSecretsDynamicSecret#aws_assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#aws_assume_role VaultSecretsDynamicSecret#aws_assume_role}
 
 ---
 
@@ -1135,7 +1135,7 @@ DefaultTtl *string
 
 TTL the generated credentials will be valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#default_ttl VaultSecretsDynamicSecret#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#default_ttl VaultSecretsDynamicSecret#default_ttl}
 
 ---
 
@@ -1149,7 +1149,7 @@ GcpImpersonateServiceAccount VaultSecretsDynamicSecretGcpImpersonateServiceAccou
 
 GCP configuration to generate dynamic credentials by impersonating a service account. Required if `secret_provider` is `gcp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#gcp_impersonate_service_account VaultSecretsDynamicSecret#gcp_impersonate_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#gcp_impersonate_service_account VaultSecretsDynamicSecret#gcp_impersonate_service_account}
 
 ---
 
@@ -1163,7 +1163,7 @@ ProjectId *string
 
 HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#project_id VaultSecretsDynamicSecret#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#project_id VaultSecretsDynamicSecret#project_id}
 
 ---
 
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecretGcpImpersonateServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsdynamicsecret"
 
 &vaultsecretsdynamicsecret.VaultSecretsDynamicSecretGcpImpersonateServiceAccount {
 	ServiceAccountEmail: *string,
@@ -1197,7 +1197,7 @@ ServiceAccountEmail *string
 
 GCP service account email to impersonate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_dynamic_secret#service_account_email VaultSecretsDynamicSecret#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_dynamic_secret#service_account_email VaultSecretsDynamicSecret#service_account_email}
 
 ---
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecretAwsAssumeRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsdynamicsecret"
 
 vaultsecretsdynamicsecret.NewVaultSecretsDynamicSecretAwsAssumeRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsDynamicSecretAwsAssumeRoleOutputReference
 ```
@@ -1479,7 +1479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsDynamicSecret.VaultSecretsDynamicSecretGcpImpersonateServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsdynamicsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsdynamicsecret"
 
 vaultsecretsdynamicsecret.NewVaultSecretsDynamicSecretGcpImpersonateServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsDynamicSecretGcpImpersonateServiceAccountOutputReference
 ```

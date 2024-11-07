@@ -4,12 +4,12 @@
 
 ### DataHcpConsulCluster <a name="DataHcpConsulCluster" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/consul_cluster hcp_consul_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/consul_cluster hcp_consul_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 datahcpconsulcluster.NewDataHcpConsulCluster(scope Construct, id *string, config DataHcpConsulClusterConfig) DataHcpConsulCluster
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 datahcpconsulcluster.DataHcpConsulCluster_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 datahcpconsulcluster.DataHcpConsulCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datahcpconsulcluster.DataHcpConsulCluster_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 datahcpconsulcluster.DataHcpConsulCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datahcpconsulcluster.DataHcpConsulCluster_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 datahcpconsulcluster.DataHcpConsulCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataHcpConsulCluster to im
 
 The id of the existing DataHcpConsulCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/consul_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/consul_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -918,7 +918,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 &datahcpconsulcluster.DataHcpConsulClusterConfig {
 	Connection: interface{},
@@ -931,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
 	ClusterId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.dataHcpConsulCluster.DataHcpConsulClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.dataHcpConsulCluster.DataHcpConsulClusterTimeouts,
 }
 ```
 
@@ -947,7 +947,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | The ID of the HCP Consul cluster. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/consul_cluster#id DataHcpConsulCluster#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/consul_cluster#id DataHcpConsulCluster#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of the HCP project where the HCP Consul cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterTimeouts">DataHcpConsulClusterTimeouts</a></code> | timeouts block. |
 
@@ -1033,7 +1033,7 @@ ClusterId *string
 
 The ID of the HCP Consul cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/consul_cluster#cluster_id DataHcpConsulCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/consul_cluster#cluster_id DataHcpConsulCluster#cluster_id}
 
 ---
 
@@ -1045,7 +1045,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/consul_cluster#id DataHcpConsulCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/consul_cluster#id DataHcpConsulCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1065,7 +1065,7 @@ The ID of the HCP project where the HCP Consul cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/consul_cluster#project_id DataHcpConsulCluster#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/consul_cluster#project_id DataHcpConsulCluster#project_id}
 
 ---
 
@@ -1079,7 +1079,7 @@ Timeouts DataHcpConsulClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/consul_cluster#timeouts DataHcpConsulCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/consul_cluster#timeouts DataHcpConsulCluster#timeouts}
 
 ---
 
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 &datahcpconsulcluster.DataHcpConsulClusterIpAllowlistStruct {
 
@@ -1101,7 +1101,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 &datahcpconsulcluster.DataHcpConsulClusterTimeouts {
 	Default: *string,
@@ -1112,7 +1112,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/consul_cluster#default DataHcpConsulCluster#default}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/consul_cluster#default DataHcpConsulCluster#default}. |
 
 ---
 
@@ -1124,7 +1124,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/consul_cluster#default DataHcpConsulCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/consul_cluster#default DataHcpConsulCluster#default}.
 
 ---
 
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 datahcpconsulcluster.NewDataHcpConsulClusterIpAllowlistStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpConsulClusterIpAllowlistStructList
 ```
@@ -1284,7 +1284,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 datahcpconsulcluster.NewDataHcpConsulClusterIpAllowlistStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpConsulClusterIpAllowlistStructOutputReference
 ```
@@ -1573,7 +1573,7 @@ func InternalValue() DataHcpConsulClusterIpAllowlistStruct
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpconsulcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster"
 
 datahcpconsulcluster.NewDataHcpConsulClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpConsulClusterTimeoutsOutputReference
 ```

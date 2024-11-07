@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws
+// https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface VaultSecretsIntegrationAwsConfig extends cdktf.TerraformMetaArg
   /**
   * AWS IAM key pair used to authenticate against the target AWS account. Cannot be used with `federated_workload_identity`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws#access_keys VaultSecretsIntegrationAws#access_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws#access_keys VaultSecretsIntegrationAws#access_keys}
   */
   readonly accessKeys?: VaultSecretsIntegrationAwsAccessKeys;
   /**
   * Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws#capabilities VaultSecretsIntegrationAws#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws#capabilities VaultSecretsIntegrationAws#capabilities}
   */
   readonly capabilities: string[];
   /**
   * (Recommended) Federated identity configuration to authenticate against the target AWS account. Cannot be used with `access_keys`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws#federated_workload_identity VaultSecretsIntegrationAws#federated_workload_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws#federated_workload_identity VaultSecretsIntegrationAws#federated_workload_identity}
   */
   readonly federatedWorkloadIdentity?: VaultSecretsIntegrationAwsFederatedWorkloadIdentity;
   /**
   * The Vault Secrets integration name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws#name VaultSecretsIntegrationAws#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws#name VaultSecretsIntegrationAws#name}
   */
   readonly name: string;
   /**
   * HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws#project_id VaultSecretsIntegrationAws#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws#project_id VaultSecretsIntegrationAws#project_id}
   */
   readonly projectId?: string;
 }
@@ -47,13 +42,13 @@ export interface VaultSecretsIntegrationAwsAccessKeys {
   /**
   * Key ID used with the secret key to authenticate against the target AWS account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws#access_key_id VaultSecretsIntegrationAws#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws#access_key_id VaultSecretsIntegrationAws#access_key_id}
   */
   readonly accessKeyId: string;
   /**
   * Secret key used with the key ID to authenticate against the target AWS account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws#secret_access_key VaultSecretsIntegrationAws#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws#secret_access_key VaultSecretsIntegrationAws#secret_access_key}
   */
   readonly secretAccessKey: string;
 }
@@ -172,13 +167,13 @@ export interface VaultSecretsIntegrationAwsFederatedWorkloadIdentity {
   /**
   * Audience configured on the AWS IAM identity provider to federate access with HCP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws#audience VaultSecretsIntegrationAws#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws#audience VaultSecretsIntegrationAws#audience}
   */
   readonly audience: string;
   /**
   * AWS IAM role ARN the integration will assume to carry operations for the appropriate capabilities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws#role_arn VaultSecretsIntegrationAws#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws#role_arn VaultSecretsIntegrationAws#role_arn}
   */
   readonly roleArn: string;
 }
@@ -295,7 +290,7 @@ export class VaultSecretsIntegrationAwsFederatedWorkloadIdentityOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws hcp_vault_secrets_integration_aws}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws hcp_vault_secrets_integration_aws}
 */
 export class VaultSecretsIntegrationAws extends cdktf.TerraformResource {
 
@@ -311,7 +306,7 @@ export class VaultSecretsIntegrationAws extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultSecretsIntegrationAws resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsIntegrationAws to import
-  * @param importFromId The id of the existing VaultSecretsIntegrationAws that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultSecretsIntegrationAws that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsIntegrationAws to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -323,7 +318,7 @@ export class VaultSecretsIntegrationAws extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_integration_aws hcp_vault_secrets_integration_aws} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_integration_aws hcp_vault_secrets_integration_aws} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +329,7 @@ export class VaultSecretsIntegrationAws extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_secrets_integration_aws',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.97.0',
+        providerVersion: '0.98.1',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
