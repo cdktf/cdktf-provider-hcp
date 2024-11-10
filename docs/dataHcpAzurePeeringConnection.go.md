@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpazurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpazurepeeringconnection"
 
 datahcpazurepeeringconnection.NewDataHcpAzurePeeringConnection(scope Construct, id *string, config DataHcpAzurePeeringConnectionConfig) DataHcpAzurePeeringConnection
 ```
@@ -310,7 +310,7 @@ func ResetWaitForActiveState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpazurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpazurepeeringconnection"
 
 datahcpazurepeeringconnection.DataHcpAzurePeeringConnection_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpazurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpazurepeeringconnection"
 
 datahcpazurepeeringconnection.DataHcpAzurePeeringConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datahcpazurepeeringconnection.DataHcpAzurePeeringConnection_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpazurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpazurepeeringconnection"
 
 datahcpazurepeeringconnection.DataHcpAzurePeeringConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datahcpazurepeeringconnection.DataHcpAzurePeeringConnection_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpazurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpazurepeeringconnection"
 
 datahcpazurepeeringconnection.DataHcpAzurePeeringConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -852,7 +852,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpazurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpazurepeeringconnection"
 
 &datahcpazurepeeringconnection.DataHcpAzurePeeringConnectionConfig {
 	Connection: interface{},
@@ -865,7 +865,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpazurepeeringconnect
 	HvnLink: *string,
 	PeeringId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnectionTimeouts,
 	WaitForActiveState: interface{},
 }
 ```
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpazurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpazurepeeringconnection"
 
 &datahcpazurepeeringconnection.DataHcpAzurePeeringConnectionTimeouts {
 	Read: *string,
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpazurepeeringconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpazurepeeringconnection"
 
 datahcpazurepeeringconnection.NewDataHcpAzurePeeringConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpAzurePeeringConnectionTimeoutsOutputReference
 ```
