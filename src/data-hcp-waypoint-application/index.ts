@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_application
+// https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/waypoint_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataHcpWaypointApplicationConfig extends cdktf.TerraformMetaArg
   /**
   * The ID of the Application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_application#id DataHcpWaypointApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/waypoint_application#id DataHcpWaypointApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,19 +19,19 @@ export interface DataHcpWaypointApplicationConfig extends cdktf.TerraformMetaArg
   /**
   * Input variables for the Application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_application#input_variables DataHcpWaypointApplication#input_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/waypoint_application#input_variables DataHcpWaypointApplication#input_variables}
   */
   readonly inputVariables?: DataHcpWaypointApplicationInputVariables[] | cdktf.IResolvable;
   /**
   * The name of the Application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_application#name DataHcpWaypointApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/waypoint_application#name DataHcpWaypointApplication#name}
   */
   readonly name?: string;
   /**
   * The ID of the HCP project where the Waypoint Application is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_application#project_id DataHcpWaypointApplication#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/waypoint_application#project_id DataHcpWaypointApplication#project_id}
   */
   readonly projectId?: string;
 }
@@ -228,7 +223,7 @@ export class DataHcpWaypointApplicationOutputValuesList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_application hcp_waypoint_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/waypoint_application hcp_waypoint_application}
 */
 export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
 
@@ -244,7 +239,7 @@ export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpWaypointApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpWaypointApplication to import
-  * @param importFromId The id of the existing DataHcpWaypointApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpWaypointApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/waypoint_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpWaypointApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -256,7 +251,7 @@ export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -267,7 +262,7 @@ export class DataHcpWaypointApplication extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_waypoint_application',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.98.1',
+        providerVersion: '0.99.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

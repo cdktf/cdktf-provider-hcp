@@ -4,12 +4,12 @@
 
 ### DataHcpServicePrincipal <a name="DataHcpServicePrincipal" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/service_principal hcp_service_principal}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/service_principal hcp_service_principal}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 datahcpserviceprincipal.NewDataHcpServicePrincipal(scope Construct, id *string, config DataHcpServicePrincipalConfig) DataHcpServicePrincipal
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datahcpserviceprincipal.DataHcpServicePrincipal_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 datahcpserviceprincipal.DataHcpServicePrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataHcpServicePrincipal to
 
 The id of the existing DataHcpServicePrincipal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpServicePrincipal.DataHcpServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpserviceprincipal"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpserviceprincipal"
 
 &datahcpserviceprincipal.DataHcpServicePrincipalConfig {
 	Connection: interface{},
@@ -696,7 +696,7 @@ ResourceName *string
 
 The service principal's resource name in format `iam/project/<project_id>/service-principal/<name>` or `iam/organization/<organization_id>/service-principal/<name>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/service_principal#resource_name DataHcpServicePrincipal#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/service_principal#resource_name DataHcpServicePrincipal#resource_name}
 
 ---
 
