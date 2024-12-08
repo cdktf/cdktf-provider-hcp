@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultRadarSourceGithubCloud.VaultRadarSourceGithubCloud.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarsourcegithubcloud"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarsourcegithubcloud"
 
 vaultradarsourcegithubcloud.NewVaultRadarSourceGithubCloud(scope Construct, id *string, config VaultRadarSourceGithubCloudConfig) VaultRadarSourceGithubCloud
 ```
@@ -385,7 +385,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultRadarSourceGithubCloud.VaultRadarSourceGithubCloud.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarsourcegithubcloud"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarsourcegithubcloud"
 
 vaultradarsourcegithubcloud.VaultRadarSourceGithubCloud_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultRadarSourceGithubCloud.VaultRadarSourceGithubCloud.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarsourcegithubcloud"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarsourcegithubcloud"
 
 vaultradarsourcegithubcloud.VaultRadarSourceGithubCloud_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ vaultradarsourcegithubcloud.VaultRadarSourceGithubCloud_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultRadarSourceGithubCloud.VaultRadarSourceGithubCloud.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarsourcegithubcloud"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarsourcegithubcloud"
 
 vaultradarsourcegithubcloud.VaultRadarSourceGithubCloud_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ vaultradarsourcegithubcloud.VaultRadarSourceGithubCloud_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultRadarSourceGithubCloud.VaultRadarSourceGithubCloud.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarsourcegithubcloud"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarsourcegithubcloud"
 
 vaultradarsourcegithubcloud.VaultRadarSourceGithubCloud_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultRadarSourceGithubCloud.VaultRadarSourceGithubCloudConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarsourcegithubcloud"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarsourcegithubcloud"
 
 &vaultradarsourcegithubcloud.VaultRadarSourceGithubCloudConfig {
 	Connection: interface{},
