@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp
+// https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,50 +10,50 @@ export interface VaultSecretsIntegrationGcpConfig extends cdktf.TerraformMetaArg
   /**
   * Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp#capabilities VaultSecretsIntegrationGcp#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp#capabilities VaultSecretsIntegrationGcp#capabilities}
   */
   readonly capabilities: string[];
   /**
   * (Recommended) Federated identity configuration to authenticate against the target GCP project. Cannot be used with `service_account_key`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp#federated_workload_identity VaultSecretsIntegrationGcp#federated_workload_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp#federated_workload_identity VaultSecretsIntegrationGcp#federated_workload_identity}
   */
-  readonly federatedWorkloadIdentity?: VaultSecretsIntegrationGcpFederatedWorkloadIdentity;
+  readonly federatedWorkloadIdentity?: VaultSecretsIntegrationGcpFederatedWorkloadIdentityA;
   /**
   * The Vault Secrets integration name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp#name VaultSecretsIntegrationGcp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp#name VaultSecretsIntegrationGcp#name}
   */
   readonly name: string;
   /**
   * HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp#project_id VaultSecretsIntegrationGcp#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp#project_id VaultSecretsIntegrationGcp#project_id}
   */
   readonly projectId?: string;
   /**
   * GCP service account key used to authenticate against the target GCP project. Cannot be used with `federated_workload_identity`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp#service_account_key VaultSecretsIntegrationGcp#service_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp#service_account_key VaultSecretsIntegrationGcp#service_account_key}
   */
-  readonly serviceAccountKey?: VaultSecretsIntegrationGcpServiceAccountKey;
+  readonly serviceAccountKey?: VaultSecretsIntegrationGcpServiceAccountKeyA;
 }
-export interface VaultSecretsIntegrationGcpFederatedWorkloadIdentity {
+export interface VaultSecretsIntegrationGcpFederatedWorkloadIdentityA {
   /**
   * Audience configured on the GCP identity provider to federate access with HCP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp#audience VaultSecretsIntegrationGcp#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp#audience VaultSecretsIntegrationGcp#audience}
   */
   readonly audience: string;
   /**
   * GCP service account email that HVS will impersonate to carry operations for the appropriate capabilities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp#service_account_email VaultSecretsIntegrationGcp#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp#service_account_email VaultSecretsIntegrationGcp#service_account_email}
   */
   readonly serviceAccountEmail: string;
 }
 
-export function vaultSecretsIntegrationGcpFederatedWorkloadIdentityToTerraform(struct?: VaultSecretsIntegrationGcpFederatedWorkloadIdentity | cdktf.IResolvable): any {
+export function vaultSecretsIntegrationGcpFederatedWorkloadIdentityAToTerraform(struct?: VaultSecretsIntegrationGcpFederatedWorkloadIdentityA | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -70,7 +65,7 @@ export function vaultSecretsIntegrationGcpFederatedWorkloadIdentityToTerraform(s
 }
 
 
-export function vaultSecretsIntegrationGcpFederatedWorkloadIdentityToHclTerraform(struct?: VaultSecretsIntegrationGcpFederatedWorkloadIdentity | cdktf.IResolvable): any {
+export function vaultSecretsIntegrationGcpFederatedWorkloadIdentityAToHclTerraform(struct?: VaultSecretsIntegrationGcpFederatedWorkloadIdentityA | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -94,7 +89,7 @@ export function vaultSecretsIntegrationGcpFederatedWorkloadIdentityToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsIntegrationGcpFederatedWorkloadIdentityAOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -106,7 +101,7 @@ export class VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference 
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsIntegrationGcpFederatedWorkloadIdentity | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsIntegrationGcpFederatedWorkloadIdentityA | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -123,7 +118,7 @@ export class VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsIntegrationGcpFederatedWorkloadIdentity | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsIntegrationGcpFederatedWorkloadIdentityA | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -168,16 +163,16 @@ export class VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference 
     return this._serviceAccountEmail;
   }
 }
-export interface VaultSecretsIntegrationGcpServiceAccountKey {
+export interface VaultSecretsIntegrationGcpServiceAccountKeyA {
   /**
   * JSON or base64 encoded service account key received from GCP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp#credentials VaultSecretsIntegrationGcp#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp#credentials VaultSecretsIntegrationGcp#credentials}
   */
   readonly credentials: string;
 }
 
-export function vaultSecretsIntegrationGcpServiceAccountKeyToTerraform(struct?: VaultSecretsIntegrationGcpServiceAccountKey | cdktf.IResolvable): any {
+export function vaultSecretsIntegrationGcpServiceAccountKeyAToTerraform(struct?: VaultSecretsIntegrationGcpServiceAccountKeyA | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -188,7 +183,7 @@ export function vaultSecretsIntegrationGcpServiceAccountKeyToTerraform(struct?: 
 }
 
 
-export function vaultSecretsIntegrationGcpServiceAccountKeyToHclTerraform(struct?: VaultSecretsIntegrationGcpServiceAccountKey | cdktf.IResolvable): any {
+export function vaultSecretsIntegrationGcpServiceAccountKeyAToHclTerraform(struct?: VaultSecretsIntegrationGcpServiceAccountKeyA | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -206,7 +201,7 @@ export function vaultSecretsIntegrationGcpServiceAccountKeyToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VaultSecretsIntegrationGcpServiceAccountKeyOutputReference extends cdktf.ComplexObject {
+export class VaultSecretsIntegrationGcpServiceAccountKeyAOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -218,7 +213,7 @@ export class VaultSecretsIntegrationGcpServiceAccountKeyOutputReference extends 
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VaultSecretsIntegrationGcpServiceAccountKey | cdktf.IResolvable | undefined {
+  public get internalValue(): VaultSecretsIntegrationGcpServiceAccountKeyA | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -231,7 +226,7 @@ export class VaultSecretsIntegrationGcpServiceAccountKeyOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VaultSecretsIntegrationGcpServiceAccountKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VaultSecretsIntegrationGcpServiceAccountKeyA | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -273,7 +268,7 @@ export class VaultSecretsIntegrationGcpServiceAccountKeyOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp hcp_vault_secrets_integration_gcp}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp hcp_vault_secrets_integration_gcp}
 */
 export class VaultSecretsIntegrationGcp extends cdktf.TerraformResource {
 
@@ -289,7 +284,7 @@ export class VaultSecretsIntegrationGcp extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultSecretsIntegrationGcp resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsIntegrationGcp to import
-  * @param importFromId The id of the existing VaultSecretsIntegrationGcp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultSecretsIntegrationGcp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsIntegrationGcp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -301,7 +296,7 @@ export class VaultSecretsIntegrationGcp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp hcp_vault_secrets_integration_gcp} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp hcp_vault_secrets_integration_gcp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -312,7 +307,7 @@ export class VaultSecretsIntegrationGcp extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_secrets_integration_gcp',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.100.0',
+        providerVersion: '0.101.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -348,11 +343,11 @@ export class VaultSecretsIntegrationGcp extends cdktf.TerraformResource {
   }
 
   // federated_workload_identity - computed: false, optional: true, required: false
-  private _federatedWorkloadIdentity = new VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference(this, "federated_workload_identity");
+  private _federatedWorkloadIdentity = new VaultSecretsIntegrationGcpFederatedWorkloadIdentityAOutputReference(this, "federated_workload_identity");
   public get federatedWorkloadIdentity() {
     return this._federatedWorkloadIdentity;
   }
-  public putFederatedWorkloadIdentity(value: VaultSecretsIntegrationGcpFederatedWorkloadIdentity) {
+  public putFederatedWorkloadIdentity(value: VaultSecretsIntegrationGcpFederatedWorkloadIdentityA) {
     this._federatedWorkloadIdentity.internalValue = value;
   }
   public resetFederatedWorkloadIdentity() {
@@ -408,11 +403,11 @@ export class VaultSecretsIntegrationGcp extends cdktf.TerraformResource {
   }
 
   // service_account_key - computed: false, optional: true, required: false
-  private _serviceAccountKey = new VaultSecretsIntegrationGcpServiceAccountKeyOutputReference(this, "service_account_key");
+  private _serviceAccountKey = new VaultSecretsIntegrationGcpServiceAccountKeyAOutputReference(this, "service_account_key");
   public get serviceAccountKey() {
     return this._serviceAccountKey;
   }
-  public putServiceAccountKey(value: VaultSecretsIntegrationGcpServiceAccountKey) {
+  public putServiceAccountKey(value: VaultSecretsIntegrationGcpServiceAccountKeyA) {
     this._serviceAccountKey.internalValue = value;
   }
   public resetServiceAccountKey() {
@@ -430,10 +425,10 @@ export class VaultSecretsIntegrationGcp extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(this._capabilities),
-      federated_workload_identity: vaultSecretsIntegrationGcpFederatedWorkloadIdentityToTerraform(this._federatedWorkloadIdentity.internalValue),
+      federated_workload_identity: vaultSecretsIntegrationGcpFederatedWorkloadIdentityAToTerraform(this._federatedWorkloadIdentity.internalValue),
       name: cdktf.stringToTerraform(this._name),
       project_id: cdktf.stringToTerraform(this._projectId),
-      service_account_key: vaultSecretsIntegrationGcpServiceAccountKeyToTerraform(this._serviceAccountKey.internalValue),
+      service_account_key: vaultSecretsIntegrationGcpServiceAccountKeyAToTerraform(this._serviceAccountKey.internalValue),
     };
   }
 
@@ -446,10 +441,10 @@ export class VaultSecretsIntegrationGcp extends cdktf.TerraformResource {
         storageClassType: "stringList",
       },
       federated_workload_identity: {
-        value: vaultSecretsIntegrationGcpFederatedWorkloadIdentityToHclTerraform(this._federatedWorkloadIdentity.internalValue),
+        value: vaultSecretsIntegrationGcpFederatedWorkloadIdentityAToHclTerraform(this._federatedWorkloadIdentity.internalValue),
         isBlock: true,
         type: "struct",
-        storageClassType: "VaultSecretsIntegrationGcpFederatedWorkloadIdentity",
+        storageClassType: "VaultSecretsIntegrationGcpFederatedWorkloadIdentityA",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
@@ -464,10 +459,10 @@ export class VaultSecretsIntegrationGcp extends cdktf.TerraformResource {
         storageClassType: "string",
       },
       service_account_key: {
-        value: vaultSecretsIntegrationGcpServiceAccountKeyToHclTerraform(this._serviceAccountKey.internalValue),
+        value: vaultSecretsIntegrationGcpServiceAccountKeyAToHclTerraform(this._serviceAccountKey.internalValue),
         isBlock: true,
         type: "struct",
-        storageClassType: "VaultSecretsIntegrationGcpServiceAccountKey",
+        storageClassType: "VaultSecretsIntegrationGcpServiceAccountKeyA",
       },
     };
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_confluent
+// https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_confluent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface VaultSecretsIntegrationConfluentConfig extends cdktf.TerraformM
   /**
   * Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_confluent#capabilities VaultSecretsIntegrationConfluent#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_confluent#capabilities VaultSecretsIntegrationConfluent#capabilities}
   */
   readonly capabilities: string[];
   /**
   * The Vault Secrets integration name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_confluent#name VaultSecretsIntegrationConfluent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_confluent#name VaultSecretsIntegrationConfluent#name}
   */
   readonly name: string;
   /**
   * HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_confluent#project_id VaultSecretsIntegrationConfluent#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_confluent#project_id VaultSecretsIntegrationConfluent#project_id}
   */
   readonly projectId?: string;
   /**
   * Confluent API key used to authenticate for cloud apis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_confluent#static_credential_details VaultSecretsIntegrationConfluent#static_credential_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_confluent#static_credential_details VaultSecretsIntegrationConfluent#static_credential_details}
   */
   readonly staticCredentialDetails?: VaultSecretsIntegrationConfluentStaticCredentialDetails;
 }
@@ -41,13 +36,13 @@ export interface VaultSecretsIntegrationConfluentStaticCredentialDetails {
   /**
   * Public key used alongside the private key to authenticate for cloud apis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_confluent#cloud_api_key_id VaultSecretsIntegrationConfluent#cloud_api_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_confluent#cloud_api_key_id VaultSecretsIntegrationConfluent#cloud_api_key_id}
   */
   readonly cloudApiKeyId: string;
   /**
   * Private key used alongside the public key to authenticate for cloud apis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_confluent#cloud_api_secret VaultSecretsIntegrationConfluent#cloud_api_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_confluent#cloud_api_secret VaultSecretsIntegrationConfluent#cloud_api_secret}
   */
   readonly cloudApiSecret: string;
 }
@@ -164,7 +159,7 @@ export class VaultSecretsIntegrationConfluentStaticCredentialDetailsOutputRefere
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_confluent hcp_vault_secrets_integration_confluent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_confluent hcp_vault_secrets_integration_confluent}
 */
 export class VaultSecretsIntegrationConfluent extends cdktf.TerraformResource {
 
@@ -180,7 +175,7 @@ export class VaultSecretsIntegrationConfluent extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultSecretsIntegrationConfluent resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsIntegrationConfluent to import
-  * @param importFromId The id of the existing VaultSecretsIntegrationConfluent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_confluent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultSecretsIntegrationConfluent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_confluent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsIntegrationConfluent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -192,7 +187,7 @@ export class VaultSecretsIntegrationConfluent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_confluent hcp_vault_secrets_integration_confluent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_confluent hcp_vault_secrets_integration_confluent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -203,7 +198,7 @@ export class VaultSecretsIntegrationConfluent extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_secrets_integration_confluent',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.100.0',
+        providerVersion: '0.101.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

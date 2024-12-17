@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret
+// https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,67 +10,73 @@ export interface VaultSecretsRotatingSecretConfig extends cdktf.TerraformMetaArg
   /**
   * Vault Secrets application name that owns the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#app_name VaultSecretsRotatingSecret#app_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#app_name VaultSecretsRotatingSecret#app_name}
   */
   readonly appName: string;
   /**
   * AWS configuration to manage the access key rotation for the given IAM user. Required if `secret_provider` is `aws`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#aws_access_keys VaultSecretsRotatingSecret#aws_access_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#aws_access_keys VaultSecretsRotatingSecret#aws_access_keys}
   */
   readonly awsAccessKeys?: VaultSecretsRotatingSecretAwsAccessKeys;
   /**
+  * Azure configuration to manage the application password rotation for the given application. Required if `secret_provider` is `Azure`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#azure_application_password VaultSecretsRotatingSecret#azure_application_password}
+  */
+  readonly azureApplicationPassword?: VaultSecretsRotatingSecretAzureApplicationPassword;
+  /**
   * Confluent configuration to manage the cloud api key rotation for the given service account. Required if `secret_provider` is `confluent`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#confluent_service_account VaultSecretsRotatingSecret#confluent_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#confluent_service_account VaultSecretsRotatingSecret#confluent_service_account}
   */
   readonly confluentServiceAccount?: VaultSecretsRotatingSecretConfluentServiceAccount;
   /**
   * GCP configuration to manage the service account key rotation for the given service account. Required if `secret_provider` is `gcp`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#gcp_service_account_key VaultSecretsRotatingSecret#gcp_service_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#gcp_service_account_key VaultSecretsRotatingSecret#gcp_service_account_key}
   */
   readonly gcpServiceAccountKey?: VaultSecretsRotatingSecretGcpServiceAccountKey;
   /**
   * The Vault Secrets integration name with the capability to manage the secret's lifecycle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#integration_name VaultSecretsRotatingSecret#integration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#integration_name VaultSecretsRotatingSecret#integration_name}
   */
   readonly integrationName: string;
   /**
   * MongoDB Atlas configuration to manage the user password rotation on the given database. Required if `secret_provider` is `mongodb_atlas`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#mongodb_atlas_user VaultSecretsRotatingSecret#mongodb_atlas_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#mongodb_atlas_user VaultSecretsRotatingSecret#mongodb_atlas_user}
   */
   readonly mongodbAtlasUser?: VaultSecretsRotatingSecretMongodbAtlasUser;
   /**
   * The Vault Secrets secret name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#name VaultSecretsRotatingSecret#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#name VaultSecretsRotatingSecret#name}
   */
   readonly name: string;
   /**
   * HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#project_id VaultSecretsRotatingSecret#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#project_id VaultSecretsRotatingSecret#project_id}
   */
   readonly projectId?: string;
   /**
   * Name of the rotation policy that governs the rotation of the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#rotation_policy_name VaultSecretsRotatingSecret#rotation_policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#rotation_policy_name VaultSecretsRotatingSecret#rotation_policy_name}
   */
   readonly rotationPolicyName: string;
   /**
   * The third party platform the dynamic credentials give access to. One of `aws` or `gcp`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#secret_provider VaultSecretsRotatingSecret#secret_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#secret_provider VaultSecretsRotatingSecret#secret_provider}
   */
   readonly secretProvider: string;
   /**
   * Twilio configuration to manage the api key rotation on the given account. Required if `secret_provider` is `twilio`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#twilio_api_key VaultSecretsRotatingSecret#twilio_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#twilio_api_key VaultSecretsRotatingSecret#twilio_api_key}
   */
   readonly twilioApiKey?: VaultSecretsRotatingSecretTwilioApiKey;
 }
@@ -83,7 +84,7 @@ export interface VaultSecretsRotatingSecretAwsAccessKeys {
   /**
   * AWS IAM username to rotate the access keys for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#iam_username VaultSecretsRotatingSecret#iam_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#iam_username VaultSecretsRotatingSecret#iam_username}
   */
   readonly iamUsername: string;
 }
@@ -172,11 +173,136 @@ export class VaultSecretsRotatingSecretAwsAccessKeysOutputReference extends cdkt
     return this._iamUsername;
   }
 }
+export interface VaultSecretsRotatingSecretAzureApplicationPassword {
+  /**
+  * Application client ID to rotate the application password for.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#app_client_id VaultSecretsRotatingSecret#app_client_id}
+  */
+  readonly appClientId: string;
+  /**
+  * Application object ID to rotate the application password for.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#app_object_id VaultSecretsRotatingSecret#app_object_id}
+  */
+  readonly appObjectId: string;
+}
+
+export function vaultSecretsRotatingSecretAzureApplicationPasswordToTerraform(struct?: VaultSecretsRotatingSecretAzureApplicationPassword | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    app_client_id: cdktf.stringToTerraform(struct!.appClientId),
+    app_object_id: cdktf.stringToTerraform(struct!.appObjectId),
+  }
+}
+
+
+export function vaultSecretsRotatingSecretAzureApplicationPasswordToHclTerraform(struct?: VaultSecretsRotatingSecretAzureApplicationPassword | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    app_client_id: {
+      value: cdktf.stringToHclTerraform(struct!.appClientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    app_object_id: {
+      value: cdktf.stringToHclTerraform(struct!.appObjectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): VaultSecretsRotatingSecretAzureApplicationPassword | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._appClientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appClientId = this._appClientId;
+    }
+    if (this._appObjectId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appObjectId = this._appObjectId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VaultSecretsRotatingSecretAzureApplicationPassword | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._appClientId = undefined;
+      this._appObjectId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._appClientId = value.appClientId;
+      this._appObjectId = value.appObjectId;
+    }
+  }
+
+  // app_client_id - computed: false, optional: false, required: true
+  private _appClientId?: string; 
+  public get appClientId() {
+    return this.getStringAttribute('app_client_id');
+  }
+  public set appClientId(value: string) {
+    this._appClientId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appClientIdInput() {
+    return this._appClientId;
+  }
+
+  // app_object_id - computed: false, optional: false, required: true
+  private _appObjectId?: string; 
+  public get appObjectId() {
+    return this.getStringAttribute('app_object_id');
+  }
+  public set appObjectId(value: string) {
+    this._appObjectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appObjectIdInput() {
+    return this._appObjectId;
+  }
+}
 export interface VaultSecretsRotatingSecretConfluentServiceAccount {
   /**
   * Confluent service account to rotate the cloud api key for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#service_account_id VaultSecretsRotatingSecret#service_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#service_account_id VaultSecretsRotatingSecret#service_account_id}
   */
   readonly serviceAccountId: string;
 }
@@ -269,7 +395,7 @@ export interface VaultSecretsRotatingSecretGcpServiceAccountKey {
   /**
   * GCP service account email to impersonate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#service_account_email VaultSecretsRotatingSecret#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#service_account_email VaultSecretsRotatingSecret#service_account_email}
   */
   readonly serviceAccountEmail: string;
 }
@@ -362,19 +488,19 @@ export interface VaultSecretsRotatingSecretMongodbAtlasUser {
   /**
   * MongoDB Atlas database or cluster name to rotate the username and password for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#database_name VaultSecretsRotatingSecret#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#database_name VaultSecretsRotatingSecret#database_name}
   */
   readonly databaseName: string;
   /**
   * MongoDB Atlas project ID to rotate the username and password for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#project_id VaultSecretsRotatingSecret#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#project_id VaultSecretsRotatingSecret#project_id}
   */
   readonly projectId: string;
   /**
   * MongoDB Atlas roles to assign to the rotating user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#roles VaultSecretsRotatingSecret#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#roles VaultSecretsRotatingSecret#roles}
   */
   readonly roles: string[];
 }
@@ -576,7 +702,7 @@ export class VaultSecretsRotatingSecretTwilioApiKeyOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret}
 */
 export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
 
@@ -592,7 +718,7 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultSecretsRotatingSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsRotatingSecret to import
-  * @param importFromId The id of the existing VaultSecretsRotatingSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultSecretsRotatingSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsRotatingSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -604,7 +730,7 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -615,7 +741,7 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_secrets_rotating_secret',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.100.0',
+        providerVersion: '0.101.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -628,6 +754,7 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
     });
     this._appName = config.appName;
     this._awsAccessKeys.internalValue = config.awsAccessKeys;
+    this._azureApplicationPassword.internalValue = config.azureApplicationPassword;
     this._confluentServiceAccount.internalValue = config.confluentServiceAccount;
     this._gcpServiceAccountKey.internalValue = config.gcpServiceAccountKey;
     this._integrationName = config.integrationName;
@@ -670,6 +797,22 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get awsAccessKeysInput() {
     return this._awsAccessKeys.internalValue;
+  }
+
+  // azure_application_password - computed: false, optional: true, required: false
+  private _azureApplicationPassword = new VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference(this, "azure_application_password");
+  public get azureApplicationPassword() {
+    return this._azureApplicationPassword;
+  }
+  public putAzureApplicationPassword(value: VaultSecretsRotatingSecretAzureApplicationPassword) {
+    this._azureApplicationPassword.internalValue = value;
+  }
+  public resetAzureApplicationPassword() {
+    this._azureApplicationPassword.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureApplicationPasswordInput() {
+    return this._azureApplicationPassword.internalValue;
   }
 
   // confluent_service_account - computed: false, optional: true, required: false
@@ -817,6 +960,7 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
     return {
       app_name: cdktf.stringToTerraform(this._appName),
       aws_access_keys: vaultSecretsRotatingSecretAwsAccessKeysToTerraform(this._awsAccessKeys.internalValue),
+      azure_application_password: vaultSecretsRotatingSecretAzureApplicationPasswordToTerraform(this._azureApplicationPassword.internalValue),
       confluent_service_account: vaultSecretsRotatingSecretConfluentServiceAccountToTerraform(this._confluentServiceAccount.internalValue),
       gcp_service_account_key: vaultSecretsRotatingSecretGcpServiceAccountKeyToTerraform(this._gcpServiceAccountKey.internalValue),
       integration_name: cdktf.stringToTerraform(this._integrationName),
@@ -842,6 +986,12 @@ export class VaultSecretsRotatingSecret extends cdktf.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "VaultSecretsRotatingSecretAwsAccessKeys",
+      },
+      azure_application_password: {
+        value: vaultSecretsRotatingSecretAzureApplicationPasswordToHclTerraform(this._azureApplicationPassword.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VaultSecretsRotatingSecretAzureApplicationPassword",
       },
       confluent_service_account: {
         value: vaultSecretsRotatingSecretConfluentServiceAccountToHclTerraform(this._confluentServiceAccount.internalValue),
