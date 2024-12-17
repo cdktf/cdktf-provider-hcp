@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/group_members
+// https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/group_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface GroupMembersConfig extends cdktf.TerraformMetaArguments {
   /**
   * The group's resource name in the format `iam/organization/<organization_id>/group/<name>`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/group_members#group GroupMembers#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/group_members#group GroupMembers#group}
   */
   readonly group: string;
   /**
   * A list of user principal IDs to add to the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/group_members#members GroupMembers#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/group_members#members GroupMembers#members}
   */
   readonly members: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/group_members hcp_group_members}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/group_members hcp_group_members}
 */
 export class GroupMembers extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class GroupMembers extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupMembers resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupMembers to import
-  * @param importFromId The id of the existing GroupMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/group_members#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/group_members#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupMembers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class GroupMembers extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/group_members hcp_group_members} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/group_members hcp_group_members} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class GroupMembers extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_group_members',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.100.0',
+        providerVersion: '0.101.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

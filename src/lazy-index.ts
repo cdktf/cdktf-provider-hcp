@@ -47,7 +47,9 @@ Object.defineProperty(exports, 'vaultSecretsApp', { get: function () { return re
 Object.defineProperty(exports, 'vaultSecretsAppIamBinding', { get: function () { return require('./vault-secrets-app-iam-binding'); } });
 Object.defineProperty(exports, 'vaultSecretsAppIamPolicy', { get: function () { return require('./vault-secrets-app-iam-policy'); } });
 Object.defineProperty(exports, 'vaultSecretsDynamicSecret', { get: function () { return require('./vault-secrets-dynamic-secret'); } });
+Object.defineProperty(exports, 'vaultSecretsIntegration', { get: function () { return require('./vault-secrets-integration'); } });
 Object.defineProperty(exports, 'vaultSecretsIntegrationAws', { get: function () { return require('./vault-secrets-integration-aws'); } });
+Object.defineProperty(exports, 'vaultSecretsIntegrationAzure', { get: function () { return require('./vault-secrets-integration-azure'); } });
 Object.defineProperty(exports, 'vaultSecretsIntegrationConfluent', { get: function () { return require('./vault-secrets-integration-confluent'); } });
 Object.defineProperty(exports, 'vaultSecretsIntegrationGcp', { get: function () { return require('./vault-secrets-integration-gcp'); } });
 Object.defineProperty(exports, 'vaultSecretsIntegrationMongodbatlas', { get: function () { return require('./vault-secrets-integration-mongodbatlas'); } });
