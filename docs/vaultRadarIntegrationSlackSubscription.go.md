@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
 
 vaultradarintegrationslacksubscription.NewVaultRadarIntegrationSlackSubscription(scope Construct, id *string, config VaultRadarIntegrationSlackSubscriptionConfig) VaultRadarIntegrationSlackSubscription
 ```
@@ -385,7 +385,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
 
 vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
 
 vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
 
 vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
 
 vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
 
 &vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscriptionConfig {
 	Connection: interface{},
