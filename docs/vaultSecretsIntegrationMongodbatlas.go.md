@@ -4,12 +4,12 @@
 
 ### VaultSecretsIntegrationMongodbatlas <a name="VaultSecretsIntegrationMongodbatlas" id="@cdktf/provider-hcp.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlas"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_mongodbatlas hcp_vault_secrets_integration_mongodbatlas}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas hcp_vault_secrets_integration_mongodbatlas}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationmongodbatlas"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationmongodbatlas"
 
 vaultsecretsintegrationmongodbatlas.NewVaultSecretsIntegrationMongodbatlas(scope Construct, id *string, config VaultSecretsIntegrationMongodbatlasConfig) VaultSecretsIntegrationMongodbatlas
 ```
@@ -405,7 +405,7 @@ func ResetStaticCredentialDetails()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlas.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationmongodbatlas"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationmongodbatlas"
 
 vaultsecretsintegrationmongodbatlas.VaultSecretsIntegrationMongodbatlas_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlas.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationmongodbatlas"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationmongodbatlas"
 
 vaultsecretsintegrationmongodbatlas.VaultSecretsIntegrationMongodbatlas_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ vaultsecretsintegrationmongodbatlas.VaultSecretsIntegrationMongodbatlas_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlas.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationmongodbatlas"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationmongodbatlas"
 
 vaultsecretsintegrationmongodbatlas.VaultSecretsIntegrationMongodbatlas_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ vaultsecretsintegrationmongodbatlas.VaultSecretsIntegrationMongodbatlas_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlas.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationmongodbatlas"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationmongodbatlas"
 
 vaultsecretsintegrationmongodbatlas.VaultSecretsIntegrationMongodbatlas_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the VaultSecretsIntegrationMon
 
 The id of the existing VaultSecretsIntegrationMongodbatlas that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_mongodbatlas#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationmongodbatlas"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationmongodbatlas"
 
 &vaultsecretsintegrationmongodbatlas.VaultSecretsIntegrationMongodbatlasConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationmon
 	Capabilities: *[]*string,
 	Name: *string,
 	ProjectId: *string,
-	StaticCredentialDetails: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlasStaticCredentialDetails,
+	StaticCredentialDetails: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlasStaticCredentialDetails,
 }
 ```
 
@@ -930,7 +930,7 @@ Capabilities *[]*string
 
 Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_mongodbatlas#capabilities VaultSecretsIntegrationMongodbatlas#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#capabilities VaultSecretsIntegrationMongodbatlas#capabilities}
 
 ---
 
@@ -944,7 +944,7 @@ Name *string
 
 The Vault Secrets integration name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_mongodbatlas#name VaultSecretsIntegrationMongodbatlas#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#name VaultSecretsIntegrationMongodbatlas#name}
 
 ---
 
@@ -958,7 +958,7 @@ ProjectId *string
 
 HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_mongodbatlas#project_id VaultSecretsIntegrationMongodbatlas#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#project_id VaultSecretsIntegrationMongodbatlas#project_id}
 
 ---
 
@@ -972,7 +972,7 @@ StaticCredentialDetails VaultSecretsIntegrationMongodbatlasStaticCredentialDetai
 
 MongoDB Atlas API key used to authenticate against the target project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_mongodbatlas#static_credential_details VaultSecretsIntegrationMongodbatlas#static_credential_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#static_credential_details VaultSecretsIntegrationMongodbatlas#static_credential_details}
 
 ---
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlasStaticCredentialDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationmongodbatlas"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationmongodbatlas"
 
 &vaultsecretsintegrationmongodbatlas.VaultSecretsIntegrationMongodbatlasStaticCredentialDetails {
 	ApiPrivateKey: *string,
@@ -1008,7 +1008,7 @@ ApiPrivateKey *string
 
 Private key used alongside the public key to authenticate against the target project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_mongodbatlas#api_private_key VaultSecretsIntegrationMongodbatlas#api_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#api_private_key VaultSecretsIntegrationMongodbatlas#api_private_key}
 
 ---
 
@@ -1022,7 +1022,7 @@ ApiPublicKey *string
 
 Public key used alongside the private key to authenticate against the target project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_mongodbatlas#api_public_key VaultSecretsIntegrationMongodbatlas#api_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#api_public_key VaultSecretsIntegrationMongodbatlas#api_public_key}
 
 ---
 
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegrationMongodbatlas.VaultSecretsIntegrationMongodbatlasStaticCredentialDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegrationmongodbatlas"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegrationmongodbatlas"
 
 vaultsecretsintegrationmongodbatlas.NewVaultSecretsIntegrationMongodbatlasStaticCredentialDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationMongodbatlasStaticCredentialDetailsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### VaultSecretsIntegration <a name="VaultSecretsIntegration" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration hcp_vault_secrets_integration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration hcp_vault_secrets_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.NewVaultSecretsIntegration(scope Construct, id *string, config VaultSecretsIntegrationConfig) VaultSecretsIntegration
 ```
@@ -565,7 +565,7 @@ func ResetTwilioStaticCredentials()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.VaultSecretsIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.VaultSecretsIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -611,7 +611,7 @@ vaultsecretsintegration.VaultSecretsIntegration_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.VaultSecretsIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -625,7 +625,7 @@ vaultsecretsintegration.VaultSecretsIntegration_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.VaultSecretsIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -654,7 +654,7 @@ The construct id used in the generated config for the VaultSecretsIntegration to
 
 The id of the existing VaultSecretsIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1173,7 +1173,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationAwsAccessKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 &vaultsecretsintegration.VaultSecretsIntegrationAwsAccessKeys {
 	AccessKeyId: *string,
@@ -1200,7 +1200,7 @@ AccessKeyId *string
 
 Key ID used with the secret key to authenticate against the target AWS account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#access_key_id VaultSecretsIntegration#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#access_key_id VaultSecretsIntegration#access_key_id}
 
 ---
 
@@ -1214,7 +1214,7 @@ SecretAccessKey *string
 
 Secret key used with the key ID to authenticate against the target AWS account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#secret_access_key VaultSecretsIntegration#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#secret_access_key VaultSecretsIntegration#secret_access_key}
 
 ---
 
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationAwsFederatedWorkloadIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 &vaultsecretsintegration.VaultSecretsIntegrationAwsFederatedWorkloadIdentity {
 	Audience: *string,
@@ -1250,7 +1250,7 @@ Audience *string
 
 Audience configured on the AWS IAM identity provider to federate access with HCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
 
 ---
 
@@ -1264,7 +1264,7 @@ RoleArn *string
 
 AWS IAM role ARN the integration will assume to carry operations for the appropriate capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#role_arn VaultSecretsIntegration#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#role_arn VaultSecretsIntegration#role_arn}
 
 ---
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationAzureClientSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 &vaultsecretsintegration.VaultSecretsIntegrationAzureClientSecret {
 	ClientId: *string,
@@ -1302,7 +1302,7 @@ ClientId *string
 
 Azure client ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#client_id VaultSecretsIntegration#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#client_id VaultSecretsIntegration#client_id}
 
 ---
 
@@ -1316,7 +1316,7 @@ ClientSecret *string
 
 Secret value corresponding to the Azure client secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#client_secret VaultSecretsIntegration#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#client_secret VaultSecretsIntegration#client_secret}
 
 ---
 
@@ -1330,7 +1330,7 @@ TenantId *string
 
 Azure tenant ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#tenant_id VaultSecretsIntegration#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#tenant_id VaultSecretsIntegration#tenant_id}
 
 ---
 
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationAzureFederatedWorkloadIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 &vaultsecretsintegration.VaultSecretsIntegrationAzureFederatedWorkloadIdentity {
 	Audience: *string,
@@ -1368,7 +1368,7 @@ Audience *string
 
 Audience configured on the Azure federated identity credentials to federate access with HCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
 
 ---
 
@@ -1382,7 +1382,7 @@ ClientId *string
 
 Azure client ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#client_id VaultSecretsIntegration#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#client_id VaultSecretsIntegration#client_id}
 
 ---
 
@@ -1396,7 +1396,7 @@ TenantId *string
 
 Azure tenant ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#tenant_id VaultSecretsIntegration#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#tenant_id VaultSecretsIntegration#tenant_id}
 
 ---
 
@@ -1405,7 +1405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 &vaultsecretsintegration.VaultSecretsIntegrationConfig {
 	Connection: interface{},
@@ -1418,16 +1418,16 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
 	Capabilities: *[]*string,
 	Name: *string,
 	ProviderType: *string,
-	AwsAccessKeys: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegration.VaultSecretsIntegrationAwsAccessKeys,
-	AwsFederatedWorkloadIdentity: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegration.VaultSecretsIntegrationAwsFederatedWorkloadIdentity,
-	AzureClientSecret: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegration.VaultSecretsIntegrationAzureClientSecret,
-	AzureFederatedWorkloadIdentity: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegration.VaultSecretsIntegrationAzureFederatedWorkloadIdentity,
-	ConfluentStaticCredentials: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegration.VaultSecretsIntegrationConfluentStaticCredentials,
-	GcpFederatedWorkloadIdentity: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegration.VaultSecretsIntegrationGcpFederatedWorkloadIdentity,
-	GcpServiceAccountKey: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegration.VaultSecretsIntegrationGcpServiceAccountKey,
-	MongodbAtlasStaticCredentials: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegration.VaultSecretsIntegrationMongodbAtlasStaticCredentials,
+	AwsAccessKeys: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegration.VaultSecretsIntegrationAwsAccessKeys,
+	AwsFederatedWorkloadIdentity: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegration.VaultSecretsIntegrationAwsFederatedWorkloadIdentity,
+	AzureClientSecret: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegration.VaultSecretsIntegrationAzureClientSecret,
+	AzureFederatedWorkloadIdentity: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegration.VaultSecretsIntegrationAzureFederatedWorkloadIdentity,
+	ConfluentStaticCredentials: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegration.VaultSecretsIntegrationConfluentStaticCredentials,
+	GcpFederatedWorkloadIdentity: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegration.VaultSecretsIntegrationGcpFederatedWorkloadIdentity,
+	GcpServiceAccountKey: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegration.VaultSecretsIntegrationGcpServiceAccountKey,
+	MongodbAtlasStaticCredentials: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegration.VaultSecretsIntegrationMongodbAtlasStaticCredentials,
 	ProjectId: *string,
-	TwilioStaticCredentials: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsIntegration.VaultSecretsIntegrationTwilioStaticCredentials,
+	TwilioStaticCredentials: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsIntegration.VaultSecretsIntegrationTwilioStaticCredentials,
 }
 ```
 
@@ -1538,7 +1538,7 @@ Capabilities *[]*string
 
 Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#capabilities VaultSecretsIntegration#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#capabilities VaultSecretsIntegration#capabilities}
 
 ---
 
@@ -1552,7 +1552,7 @@ Name *string
 
 The Vault Secrets integration name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#name VaultSecretsIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#name VaultSecretsIntegration#name}
 
 ---
 
@@ -1566,7 +1566,7 @@ ProviderType *string
 
 The provider or 3rd party platform the integration is for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#provider_type VaultSecretsIntegration#provider_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#provider_type VaultSecretsIntegration#provider_type}
 
 ---
 
@@ -1580,7 +1580,7 @@ AwsAccessKeys VaultSecretsIntegrationAwsAccessKeys
 
 AWS IAM key pair used to authenticate against the target AWS account. Cannot be used with `federated_workload_identity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#aws_access_keys VaultSecretsIntegration#aws_access_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#aws_access_keys VaultSecretsIntegration#aws_access_keys}
 
 ---
 
@@ -1594,7 +1594,7 @@ AwsFederatedWorkloadIdentity VaultSecretsIntegrationAwsFederatedWorkloadIdentity
 
 (Recommended) Federated identity configuration to authenticate against the target AWS account. Cannot be used with `access_keys`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#aws_federated_workload_identity VaultSecretsIntegration#aws_federated_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#aws_federated_workload_identity VaultSecretsIntegration#aws_federated_workload_identity}
 
 ---
 
@@ -1608,7 +1608,7 @@ AzureClientSecret VaultSecretsIntegrationAzureClientSecret
 
 Azure client secret used to authenticate against the target Azure application. Cannot be used with `federated_workload_identity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#azure_client_secret VaultSecretsIntegration#azure_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#azure_client_secret VaultSecretsIntegration#azure_client_secret}
 
 ---
 
@@ -1622,7 +1622,7 @@ AzureFederatedWorkloadIdentity VaultSecretsIntegrationAzureFederatedWorkloadIden
 
 (Recommended) Federated identity configuration to authenticate against the target Azure application. Cannot be used with `client_secret`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#azure_federated_workload_identity VaultSecretsIntegration#azure_federated_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#azure_federated_workload_identity VaultSecretsIntegration#azure_federated_workload_identity}
 
 ---
 
@@ -1636,7 +1636,7 @@ ConfluentStaticCredentials VaultSecretsIntegrationConfluentStaticCredentials
 
 Confluent API key used to authenticate for cloud apis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#confluent_static_credentials VaultSecretsIntegration#confluent_static_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#confluent_static_credentials VaultSecretsIntegration#confluent_static_credentials}
 
 ---
 
@@ -1650,7 +1650,7 @@ GcpFederatedWorkloadIdentity VaultSecretsIntegrationGcpFederatedWorkloadIdentity
 
 (Recommended) Federated identity configuration to authenticate against the target GCP project. Cannot be used with `service_account_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#gcp_federated_workload_identity VaultSecretsIntegration#gcp_federated_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#gcp_federated_workload_identity VaultSecretsIntegration#gcp_federated_workload_identity}
 
 ---
 
@@ -1664,7 +1664,7 @@ GcpServiceAccountKey VaultSecretsIntegrationGcpServiceAccountKey
 
 GCP service account key used to authenticate against the target GCP project. Cannot be used with `federated_workload_identity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#gcp_service_account_key VaultSecretsIntegration#gcp_service_account_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#gcp_service_account_key VaultSecretsIntegration#gcp_service_account_key}
 
 ---
 
@@ -1678,7 +1678,7 @@ MongodbAtlasStaticCredentials VaultSecretsIntegrationMongodbAtlasStaticCredentia
 
 MongoDB Atlas API key used to authenticate against the target project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#mongodb_atlas_static_credentials VaultSecretsIntegration#mongodb_atlas_static_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#mongodb_atlas_static_credentials VaultSecretsIntegration#mongodb_atlas_static_credentials}
 
 ---
 
@@ -1692,7 +1692,7 @@ ProjectId *string
 
 HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#project_id VaultSecretsIntegration#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#project_id VaultSecretsIntegration#project_id}
 
 ---
 
@@ -1706,7 +1706,7 @@ TwilioStaticCredentials VaultSecretsIntegrationTwilioStaticCredentials
 
 Twilio API key parts used to authenticate against the target Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#twilio_static_credentials VaultSecretsIntegration#twilio_static_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#twilio_static_credentials VaultSecretsIntegration#twilio_static_credentials}
 
 ---
 
@@ -1715,7 +1715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationConfluentStaticCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 &vaultsecretsintegration.VaultSecretsIntegrationConfluentStaticCredentials {
 	CloudApiKeyId: *string,
@@ -1742,7 +1742,7 @@ CloudApiKeyId *string
 
 Public key used alongside the private key to authenticate for cloud apis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#cloud_api_key_id VaultSecretsIntegration#cloud_api_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#cloud_api_key_id VaultSecretsIntegration#cloud_api_key_id}
 
 ---
 
@@ -1756,7 +1756,7 @@ CloudApiSecret *string
 
 Private key used alongside the public key to authenticate for cloud apis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#cloud_api_secret VaultSecretsIntegration#cloud_api_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#cloud_api_secret VaultSecretsIntegration#cloud_api_secret}
 
 ---
 
@@ -1765,7 +1765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationGcpFederatedWorkloadIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 &vaultsecretsintegration.VaultSecretsIntegrationGcpFederatedWorkloadIdentity {
 	Audience: *string,
@@ -1792,7 +1792,7 @@ Audience *string
 
 Audience configured on the GCP identity provider to federate access with HCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
 
 ---
 
@@ -1806,7 +1806,7 @@ ServiceAccountEmail *string
 
 GCP service account email that HVS will impersonate to carry operations for the appropriate capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#service_account_email VaultSecretsIntegration#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#service_account_email VaultSecretsIntegration#service_account_email}
 
 ---
 
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationGcpServiceAccountKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 &vaultsecretsintegration.VaultSecretsIntegrationGcpServiceAccountKey {
 	Credentials: *string,
@@ -1840,7 +1840,7 @@ Credentials *string
 
 JSON or base64 encoded service account key received from GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#credentials VaultSecretsIntegration#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#credentials VaultSecretsIntegration#credentials}
 
 ---
 
@@ -1849,7 +1849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationMongodbAtlasStaticCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 &vaultsecretsintegration.VaultSecretsIntegrationMongodbAtlasStaticCredentials {
 	ApiPrivateKey: *string,
@@ -1876,7 +1876,7 @@ ApiPrivateKey *string
 
 Private key used alongside the public key to authenticate against the target project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#api_private_key VaultSecretsIntegration#api_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#api_private_key VaultSecretsIntegration#api_private_key}
 
 ---
 
@@ -1890,7 +1890,7 @@ ApiPublicKey *string
 
 Public key used alongside the private key to authenticate against the target project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#api_public_key VaultSecretsIntegration#api_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#api_public_key VaultSecretsIntegration#api_public_key}
 
 ---
 
@@ -1899,7 +1899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationTwilioStaticCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 &vaultsecretsintegration.VaultSecretsIntegrationTwilioStaticCredentials {
 	AccountSid: *string,
@@ -1928,7 +1928,7 @@ AccountSid *string
 
 Account SID for the target Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#account_sid VaultSecretsIntegration#account_sid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#account_sid VaultSecretsIntegration#account_sid}
 
 ---
 
@@ -1942,7 +1942,7 @@ ApiKeySecret *string
 
 Api key secret used with the api key SID to authenticate against the target Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#api_key_secret VaultSecretsIntegration#api_key_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#api_key_secret VaultSecretsIntegration#api_key_secret}
 
 ---
 
@@ -1956,7 +1956,7 @@ ApiKeySid *string
 
 Api key SID to authenticate against the target Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration#api_key_sid VaultSecretsIntegration#api_key_sid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration#api_key_sid VaultSecretsIntegration#api_key_sid}
 
 ---
 
@@ -1967,7 +1967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationAwsAccessKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.NewVaultSecretsIntegrationAwsAccessKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationAwsAccessKeysOutputReference
 ```
@@ -2260,7 +2260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationAwsFederatedWorkloadIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.NewVaultSecretsIntegrationAwsFederatedWorkloadIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationAwsFederatedWorkloadIdentityOutputReference
 ```
@@ -2553,7 +2553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationAzureClientSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.NewVaultSecretsIntegrationAzureClientSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationAzureClientSecretOutputReference
 ```
@@ -2868,7 +2868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationAzureFederatedWorkloadIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.NewVaultSecretsIntegrationAzureFederatedWorkloadIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationAzureFederatedWorkloadIdentityOutputReference
 ```
@@ -3183,7 +3183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationConfluentStaticCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.NewVaultSecretsIntegrationConfluentStaticCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationConfluentStaticCredentialsOutputReference
 ```
@@ -3476,7 +3476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.NewVaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference
 ```
@@ -3769,7 +3769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationGcpServiceAccountKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.NewVaultSecretsIntegrationGcpServiceAccountKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationGcpServiceAccountKeyOutputReference
 ```
@@ -4062,7 +4062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationMongodbAtlasStaticCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.NewVaultSecretsIntegrationMongodbAtlasStaticCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationMongodbAtlasStaticCredentialsOutputReference
 ```
@@ -4355,7 +4355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationTwilioStaticCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsintegration"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsintegration"
 
 vaultsecretsintegration.NewVaultSecretsIntegrationTwilioStaticCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsIntegrationTwilioStaticCredentialsOutputReference
 ```
