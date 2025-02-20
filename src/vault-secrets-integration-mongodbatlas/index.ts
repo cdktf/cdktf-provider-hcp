@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas
+// https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration_mongodbatlas
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface VaultSecretsIntegrationMongodbatlasConfig extends cdktf.Terrafo
   /**
   * Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#capabilities VaultSecretsIntegrationMongodbatlas#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration_mongodbatlas#capabilities VaultSecretsIntegrationMongodbatlas#capabilities}
   */
   readonly capabilities: string[];
   /**
   * The Vault Secrets integration name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#name VaultSecretsIntegrationMongodbatlas#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration_mongodbatlas#name VaultSecretsIntegrationMongodbatlas#name}
   */
   readonly name: string;
   /**
   * HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#project_id VaultSecretsIntegrationMongodbatlas#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration_mongodbatlas#project_id VaultSecretsIntegrationMongodbatlas#project_id}
   */
   readonly projectId?: string;
   /**
   * MongoDB Atlas API key used to authenticate against the target project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#static_credential_details VaultSecretsIntegrationMongodbatlas#static_credential_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration_mongodbatlas#static_credential_details VaultSecretsIntegrationMongodbatlas#static_credential_details}
   */
   readonly staticCredentialDetails?: VaultSecretsIntegrationMongodbatlasStaticCredentialDetails;
 }
@@ -41,13 +41,13 @@ export interface VaultSecretsIntegrationMongodbatlasStaticCredentialDetails {
   /**
   * Private key used alongside the public key to authenticate against the target project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#api_private_key VaultSecretsIntegrationMongodbatlas#api_private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration_mongodbatlas#api_private_key VaultSecretsIntegrationMongodbatlas#api_private_key}
   */
   readonly apiPrivateKey: string;
   /**
   * Public key used alongside the private key to authenticate against the target project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#api_public_key VaultSecretsIntegrationMongodbatlas#api_public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration_mongodbatlas#api_public_key VaultSecretsIntegrationMongodbatlas#api_public_key}
   */
   readonly apiPublicKey: string;
 }
@@ -164,7 +164,7 @@ export class VaultSecretsIntegrationMongodbatlasStaticCredentialDetailsOutputRef
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas hcp_vault_secrets_integration_mongodbatlas}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration_mongodbatlas hcp_vault_secrets_integration_mongodbatlas}
 */
 export class VaultSecretsIntegrationMongodbatlas extends cdktf.TerraformResource {
 
@@ -180,7 +180,7 @@ export class VaultSecretsIntegrationMongodbatlas extends cdktf.TerraformResource
   * Generates CDKTF code for importing a VaultSecretsIntegrationMongodbatlas resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsIntegrationMongodbatlas to import
-  * @param importFromId The id of the existing VaultSecretsIntegrationMongodbatlas that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultSecretsIntegrationMongodbatlas that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration_mongodbatlas#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsIntegrationMongodbatlas to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -192,7 +192,7 @@ export class VaultSecretsIntegrationMongodbatlas extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration_mongodbatlas hcp_vault_secrets_integration_mongodbatlas} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration_mongodbatlas hcp_vault_secrets_integration_mongodbatlas} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -203,7 +203,7 @@ export class VaultSecretsIntegrationMongodbatlas extends cdktf.TerraformResource
       terraformResourceType: 'hcp_vault_secrets_integration_mongodbatlas',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.102.0',
+        providerVersion: '0.103.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
