@@ -4,12 +4,12 @@
 
 ### VaultRadarIntegrationSlackSubscription <a name="VaultRadarIntegrationSlackSubscription" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_radar_integration_slack_subscription hcp_vault_radar_integration_slack_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription hcp_vault_radar_integration_slack_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
 
 vaultradarintegrationslacksubscription.NewVaultRadarIntegrationSlackSubscription(scope Construct, id *string, config VaultRadarIntegrationSlackSubscriptionConfig) VaultRadarIntegrationSlackSubscription
 ```
@@ -385,7 +385,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
 
 vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
 
 vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
 
 vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
 
 vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the VaultRadarIntegrationSlack
 
 The id of the existing VaultRadarIntegrationSlackSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_radar_integration_slack_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultRadarIntegrationSlackSubscription.VaultRadarIntegrationSlackSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationslacksubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationslacksubscription"
 
 &vaultradarintegrationslacksubscription.VaultRadarIntegrationSlackSubscriptionConfig {
 	Connection: interface{},
@@ -890,7 +890,7 @@ Name of the Slack channel that messages should be sent to.
 
 Note that HashiCorp Vault Radar will send a test message to verify the channel. Example: dev-ops-team
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_radar_integration_slack_subscription#channel VaultRadarIntegrationSlackSubscription#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription#channel VaultRadarIntegrationSlackSubscription#channel}
 
 ---
 
@@ -904,7 +904,7 @@ ConnectionId *string
 
 id of the integration slack connection to use for the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_radar_integration_slack_subscription#connection_id VaultRadarIntegrationSlackSubscription#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription#connection_id VaultRadarIntegrationSlackSubscription#connection_id}
 
 ---
 
@@ -918,7 +918,7 @@ Name *string
 
 Name of subscription. Name must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_radar_integration_slack_subscription#name VaultRadarIntegrationSlackSubscription#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription#name VaultRadarIntegrationSlackSubscription#name}
 
 ---
 
@@ -934,7 +934,7 @@ The ID of the HCP project where Vault Radar is located.
 
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_radar_integration_slack_subscription#project_id VaultRadarIntegrationSlackSubscription#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription#project_id VaultRadarIntegrationSlackSubscription#project_id}
 
 ---
 

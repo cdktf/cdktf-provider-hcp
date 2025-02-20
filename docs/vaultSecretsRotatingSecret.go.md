@@ -4,12 +4,12 @@
 
 ### VaultSecretsRotatingSecret <a name="VaultSecretsRotatingSecret" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecret(scope Construct, id *string, config VaultSecretsRotatingSecretConfig) VaultSecretsRotatingSecret
 ```
@@ -505,7 +505,7 @@ func ResetTwilioApiKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_IsConstruct(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.VaultSecretsRotatingSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -594,7 +594,7 @@ The construct id used in the generated config for the VaultSecretsRotatingSecret
 
 The id of the existing VaultSecretsRotatingSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1069,7 +1069,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAwsAccessKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretAwsAccessKeys {
 	IamUsername: *string,
@@ -1094,7 +1094,7 @@ IamUsername *string
 
 AWS IAM username to rotate the access keys for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#iam_username VaultSecretsRotatingSecret#iam_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#iam_username VaultSecretsRotatingSecret#iam_username}
 
 ---
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAzureApplicationPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretAzureApplicationPassword {
 	AppClientId: *string,
@@ -1130,7 +1130,7 @@ AppClientId *string
 
 Application client ID to rotate the application password for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#app_client_id VaultSecretsRotatingSecret#app_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#app_client_id VaultSecretsRotatingSecret#app_client_id}
 
 ---
 
@@ -1144,7 +1144,7 @@ AppObjectId *string
 
 Application object ID to rotate the application password for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#app_object_id VaultSecretsRotatingSecret#app_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#app_object_id VaultSecretsRotatingSecret#app_object_id}
 
 ---
 
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretConfig {
 	Connection: interface{},
@@ -1168,13 +1168,13 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret
 	Name: *string,
 	RotationPolicyName: *string,
 	SecretProvider: *string,
-	AwsAccessKeys: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAwsAccessKeys,
-	AzureApplicationPassword: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAzureApplicationPassword,
-	ConfluentServiceAccount: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretConfluentServiceAccount,
-	GcpServiceAccountKey: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretGcpServiceAccountKey,
-	MongodbAtlasUser: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretMongodbAtlasUser,
+	AwsAccessKeys: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAwsAccessKeys,
+	AzureApplicationPassword: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAzureApplicationPassword,
+	ConfluentServiceAccount: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretConfluentServiceAccount,
+	GcpServiceAccountKey: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretGcpServiceAccountKey,
+	MongodbAtlasUser: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretMongodbAtlasUser,
 	ProjectId: *string,
-	TwilioApiKey: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretTwilioApiKey,
+	TwilioApiKey: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretTwilioApiKey,
 }
 ```
 
@@ -1284,7 +1284,7 @@ AppName *string
 
 Vault Secrets application name that owns the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#app_name VaultSecretsRotatingSecret#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#app_name VaultSecretsRotatingSecret#app_name}
 
 ---
 
@@ -1298,7 +1298,7 @@ IntegrationName *string
 
 The Vault Secrets integration name with the capability to manage the secret's lifecycle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#integration_name VaultSecretsRotatingSecret#integration_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#integration_name VaultSecretsRotatingSecret#integration_name}
 
 ---
 
@@ -1312,7 +1312,7 @@ Name *string
 
 The Vault Secrets secret name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#name VaultSecretsRotatingSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#name VaultSecretsRotatingSecret#name}
 
 ---
 
@@ -1326,7 +1326,7 @@ RotationPolicyName *string
 
 Name of the rotation policy that governs the rotation of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#rotation_policy_name VaultSecretsRotatingSecret#rotation_policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#rotation_policy_name VaultSecretsRotatingSecret#rotation_policy_name}
 
 ---
 
@@ -1340,7 +1340,7 @@ SecretProvider *string
 
 The third party platform the dynamic credentials give access to. One of `aws` or `gcp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#secret_provider VaultSecretsRotatingSecret#secret_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#secret_provider VaultSecretsRotatingSecret#secret_provider}
 
 ---
 
@@ -1354,7 +1354,7 @@ AwsAccessKeys VaultSecretsRotatingSecretAwsAccessKeys
 
 AWS configuration to manage the access key rotation for the given IAM user. Required if `secret_provider` is `aws`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#aws_access_keys VaultSecretsRotatingSecret#aws_access_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#aws_access_keys VaultSecretsRotatingSecret#aws_access_keys}
 
 ---
 
@@ -1368,7 +1368,7 @@ AzureApplicationPassword VaultSecretsRotatingSecretAzureApplicationPassword
 
 Azure configuration to manage the application password rotation for the given application. Required if `secret_provider` is `Azure`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#azure_application_password VaultSecretsRotatingSecret#azure_application_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#azure_application_password VaultSecretsRotatingSecret#azure_application_password}
 
 ---
 
@@ -1382,7 +1382,7 @@ ConfluentServiceAccount VaultSecretsRotatingSecretConfluentServiceAccount
 
 Confluent configuration to manage the cloud api key rotation for the given service account. Required if `secret_provider` is `confluent`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#confluent_service_account VaultSecretsRotatingSecret#confluent_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#confluent_service_account VaultSecretsRotatingSecret#confluent_service_account}
 
 ---
 
@@ -1396,7 +1396,7 @@ GcpServiceAccountKey VaultSecretsRotatingSecretGcpServiceAccountKey
 
 GCP configuration to manage the service account key rotation for the given service account. Required if `secret_provider` is `gcp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#gcp_service_account_key VaultSecretsRotatingSecret#gcp_service_account_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#gcp_service_account_key VaultSecretsRotatingSecret#gcp_service_account_key}
 
 ---
 
@@ -1410,7 +1410,7 @@ MongodbAtlasUser VaultSecretsRotatingSecretMongodbAtlasUser
 
 MongoDB Atlas configuration to manage the user password rotation on the given database. Required if `secret_provider` is `mongodb_atlas`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#mongodb_atlas_user VaultSecretsRotatingSecret#mongodb_atlas_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#mongodb_atlas_user VaultSecretsRotatingSecret#mongodb_atlas_user}
 
 ---
 
@@ -1424,7 +1424,7 @@ ProjectId *string
 
 HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#project_id VaultSecretsRotatingSecret#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#project_id VaultSecretsRotatingSecret#project_id}
 
 ---
 
@@ -1438,7 +1438,7 @@ TwilioApiKey VaultSecretsRotatingSecretTwilioApiKey
 
 Twilio configuration to manage the api key rotation on the given account. Required if `secret_provider` is `twilio`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#twilio_api_key VaultSecretsRotatingSecret#twilio_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#twilio_api_key VaultSecretsRotatingSecret#twilio_api_key}
 
 ---
 
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretConfluentServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretConfluentServiceAccount {
 	ServiceAccountId: *string,
@@ -1472,7 +1472,7 @@ ServiceAccountId *string
 
 Confluent service account to rotate the cloud api key for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#service_account_id VaultSecretsRotatingSecret#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#service_account_id VaultSecretsRotatingSecret#service_account_id}
 
 ---
 
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretGcpServiceAccountKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretGcpServiceAccountKey {
 	ServiceAccountEmail: *string,
@@ -1506,7 +1506,7 @@ ServiceAccountEmail *string
 
 GCP service account email to impersonate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#service_account_email VaultSecretsRotatingSecret#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#service_account_email VaultSecretsRotatingSecret#service_account_email}
 
 ---
 
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretMongodbAtlasUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretMongodbAtlasUser {
 	DatabaseName: *string,
@@ -1544,7 +1544,7 @@ DatabaseName *string
 
 MongoDB Atlas database or cluster name to rotate the username and password for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#database_name VaultSecretsRotatingSecret#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#database_name VaultSecretsRotatingSecret#database_name}
 
 ---
 
@@ -1558,7 +1558,7 @@ ProjectId *string
 
 MongoDB Atlas project ID to rotate the username and password for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#project_id VaultSecretsRotatingSecret#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#project_id VaultSecretsRotatingSecret#project_id}
 
 ---
 
@@ -1572,7 +1572,7 @@ Roles *[]*string
 
 MongoDB Atlas roles to assign to the rotating user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_rotating_secret#roles VaultSecretsRotatingSecret#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_rotating_secret#roles VaultSecretsRotatingSecret#roles}
 
 ---
 
@@ -1581,7 +1581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretTwilioApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 &vaultsecretsrotatingsecret.VaultSecretsRotatingSecretTwilioApiKey {
 
@@ -1596,7 +1596,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAwsAccessKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecretAwsAccessKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretAwsAccessKeysOutputReference
 ```
@@ -1867,7 +1867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecretAzureApplicationPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference
 ```
@@ -2160,7 +2160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretConfluentServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecretConfluentServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretConfluentServiceAccountOutputReference
 ```
@@ -2431,7 +2431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretGcpServiceAccountKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecretGcpServiceAccountKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretGcpServiceAccountKeyOutputReference
 ```
@@ -2702,7 +2702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretMongodbAtlasUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecretMongodbAtlasUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretMongodbAtlasUserOutputReference
 ```
@@ -3017,7 +3017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretTwilioApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsrotatingsecret"
 
 vaultsecretsrotatingsecret.NewVaultSecretsRotatingSecretTwilioApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretTwilioApiKeyOutputReference
 ```

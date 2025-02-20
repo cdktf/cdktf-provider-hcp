@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template
+// https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,85 +10,85 @@ export interface WaypointTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the template, along with when and why it should be used, up to 500 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#description WaypointTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#description WaypointTemplate#description}
   */
   readonly description?: string;
   /**
   * List of labels attached to this Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#labels WaypointTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#labels WaypointTemplate#labels}
   */
   readonly labels?: string[];
   /**
   * The name of the Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#name WaypointTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#name WaypointTemplate#name}
   */
   readonly name: string;
   /**
   * The ID of the HCP project where the Waypoint Template is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#project_id WaypointTemplate#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#project_id WaypointTemplate#project_id}
   */
   readonly projectId?: string;
   /**
   * Instructions for using the template (markdown format supported).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#readme_markdown_template WaypointTemplate#readme_markdown_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#readme_markdown_template WaypointTemplate#readme_markdown_template}
   */
   readonly readmeMarkdownTemplate?: string;
   /**
   * A brief description of the template, up to 110 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#summary WaypointTemplate#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#summary WaypointTemplate#summary}
   */
   readonly summary: string;
   /**
   * The ID of the agent pool to use for Terraform operations, for workspaces created for applications using this template. Required if terraform_execution_mode is set to 'agent'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#terraform_agent_pool_id WaypointTemplate#terraform_agent_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#terraform_agent_pool_id WaypointTemplate#terraform_agent_pool_id}
   */
   readonly terraformAgentPoolId?: string;
   /**
   * Terraform Cloud Workspace details
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#terraform_cloud_workspace_details WaypointTemplate#terraform_cloud_workspace_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#terraform_cloud_workspace_details WaypointTemplate#terraform_cloud_workspace_details}
   */
   readonly terraformCloudWorkspaceDetails?: WaypointTemplateTerraformCloudWorkspaceDetails;
   /**
   * The execution mode of the HCP Terraform workspaces created for applications using this template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#terraform_execution_mode WaypointTemplate#terraform_execution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#terraform_execution_mode WaypointTemplate#terraform_execution_mode}
   */
   readonly terraformExecutionMode?: string;
   /**
   * The ID of the Terraform no-code module to use for running Terraform operations. This is in the format of 'nocode-<ID>'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#terraform_no_code_module_id WaypointTemplate#terraform_no_code_module_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#terraform_no_code_module_id WaypointTemplate#terraform_no_code_module_id}
   */
   readonly terraformNoCodeModuleId: string;
   /**
   * Terraform Cloud No-Code Module details
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#terraform_no_code_module_source WaypointTemplate#terraform_no_code_module_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#terraform_no_code_module_source WaypointTemplate#terraform_no_code_module_source}
   */
   readonly terraformNoCodeModuleSource: string;
   /**
   * The ID of the Terraform Cloud Project to create workspaces in. The ID is found on the Terraform Cloud Project settings page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
   */
   readonly terraformProjectId: string;
   /**
-  * If true, will auto-import the readme form the Terraform odule used. If this is set to true, users should not also set `readme_markdown_template`.
+  * If true, will auto-import the readme form the Terraform module used. If this is set to true, users should not also set `readme_markdown_template`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#use_module_readme WaypointTemplate#use_module_readme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#use_module_readme WaypointTemplate#use_module_readme}
   */
   readonly useModuleReadme?: boolean | cdktf.IResolvable;
   /**
   * List of variable options for the template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#variable_options WaypointTemplate#variable_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#variable_options WaypointTemplate#variable_options}
   */
   readonly variableOptions?: WaypointTemplateVariableOptions[] | cdktf.IResolvable;
 }
@@ -101,13 +96,13 @@ export interface WaypointTemplateTerraformCloudWorkspaceDetails {
   /**
   * Name of the Terraform Cloud Project
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#name WaypointTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#name WaypointTemplate#name}
   */
   readonly name: string;
   /**
   * Terraform Cloud Project ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#terraform_project_id WaypointTemplate#terraform_project_id}
   */
   readonly terraformProjectId: string;
 }
@@ -226,25 +221,25 @@ export interface WaypointTemplateVariableOptions {
   /**
   * Variable name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#name WaypointTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#name WaypointTemplate#name}
   */
   readonly name: string;
   /**
   * List of options
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#options WaypointTemplate#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#options WaypointTemplate#options}
   */
   readonly options?: string[];
   /**
   * Whether the variable is editable by the user creating an application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#user_editable WaypointTemplate#user_editable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#user_editable WaypointTemplate#user_editable}
   */
   readonly userEditable?: boolean | cdktf.IResolvable;
   /**
   * Variable type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#variable_type WaypointTemplate#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#variable_type WaypointTemplate#variable_type}
   */
   readonly variableType: string;
 }
@@ -441,7 +436,7 @@ export class WaypointTemplateVariableOptionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template hcp_waypoint_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template hcp_waypoint_template}
 */
 export class WaypointTemplate extends cdktf.TerraformResource {
 
@@ -457,7 +452,7 @@ export class WaypointTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaypointTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointTemplate to import
-  * @param importFromId The id of the existing WaypointTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaypointTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -469,7 +464,7 @@ export class WaypointTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/waypoint_template hcp_waypoint_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_template hcp_waypoint_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -480,7 +475,7 @@ export class WaypointTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_waypoint_template',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.102.0',
+        providerVersion: '0.103.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

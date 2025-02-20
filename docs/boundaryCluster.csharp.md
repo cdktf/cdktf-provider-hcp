@@ -4,7 +4,7 @@
 
 ### BoundaryCluster <a name="BoundaryCluster" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.Initializer"></a>
 
@@ -75,6 +75,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.putMaintenanceWindowConfig">PutMaintenanceWindowConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.resetAuthTokenTimeToLive">ResetAuthTokenTimeToLive</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.resetAuthTokenTimeToStale">ResetAuthTokenTimeToStale</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.resetMaintenanceWindowConfig">ResetMaintenanceWindowConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.resetProjectId">ResetProjectId</a></code> | *No description.* |
@@ -394,6 +396,18 @@ private void PutTimeouts(BoundaryClusterTimeouts Value)
 
 ---
 
+##### `ResetAuthTokenTimeToLive` <a name="ResetAuthTokenTimeToLive" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.resetAuthTokenTimeToLive"></a>
+
+```csharp
+private void ResetAuthTokenTimeToLive()
+```
+
+##### `ResetAuthTokenTimeToStale` <a name="ResetAuthTokenTimeToStale" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.resetAuthTokenTimeToStale"></a>
+
+```csharp
+private void ResetAuthTokenTimeToStale()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.resetId"></a>
 
 ```csharp
@@ -521,7 +535,7 @@ The construct id used in the generated config for the BoundaryCluster to import.
 
 The id of the existing BoundaryCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -557,6 +571,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterTimeoutsOutputReference">BoundaryClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.version">Version</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.authTokenTimeToLiveInput">AuthTokenTimeToLiveInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.authTokenTimeToStaleInput">AuthTokenTimeToStaleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.clusterIdInput">ClusterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.maintenanceWindowConfigInput">MaintenanceWindowConfigInput</a></code> | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterMaintenanceWindowConfig">BoundaryClusterMaintenanceWindowConfig</a></code> | *No description.* |
@@ -565,6 +581,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.tierInput">TierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.authTokenTimeToLive">AuthTokenTimeToLive</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.authTokenTimeToStale">AuthTokenTimeToStale</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.clusterId">ClusterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.password">Password</a></code> | <code>string</code> | *No description.* |
@@ -776,6 +794,26 @@ public string Version { get; }
 
 ---
 
+##### `AuthTokenTimeToLiveInput`<sup>Optional</sup> <a name="AuthTokenTimeToLiveInput" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.authTokenTimeToLiveInput"></a>
+
+```csharp
+public string AuthTokenTimeToLiveInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AuthTokenTimeToStaleInput`<sup>Optional</sup> <a name="AuthTokenTimeToStaleInput" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.authTokenTimeToStaleInput"></a>
+
+```csharp
+public string AuthTokenTimeToStaleInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ClusterIdInput`<sup>Optional</sup> <a name="ClusterIdInput" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.clusterIdInput"></a>
 
 ```csharp
@@ -850,6 +888,26 @@ public object TimeoutsInput { get; }
 
 ```csharp
 public string UsernameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AuthTokenTimeToLive`<sup>Required</sup> <a name="AuthTokenTimeToLive" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.authTokenTimeToLive"></a>
+
+```csharp
+public string AuthTokenTimeToLive { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AuthTokenTimeToStale`<sup>Required</sup> <a name="AuthTokenTimeToStale" id="@cdktf/provider-hcp.boundaryCluster.BoundaryCluster.property.authTokenTimeToStale"></a>
+
+```csharp
+public string AuthTokenTimeToStale { get; }
 ```
 
 - *Type:* string
@@ -955,6 +1013,8 @@ new BoundaryClusterConfig {
     string Password,
     string Tier,
     string Username,
+    string AuthTokenTimeToLive = null,
+    string AuthTokenTimeToStale = null,
     string Id = null,
     BoundaryClusterMaintenanceWindowConfig MaintenanceWindowConfig = null,
     string ProjectId = null,
@@ -977,7 +1037,9 @@ new BoundaryClusterConfig {
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.password">Password</a></code> | <code>string</code> | The password of the initial admin user. |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.tier">Tier</a></code> | <code>string</code> | The tier that the HCP Boundary cluster will be provisioned as, 'Standard' or 'Plus'. |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.username">Username</a></code> | <code>string</code> | The username of the initial admin user. |
-| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#id BoundaryCluster#id}. |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.authTokenTimeToLive">AuthTokenTimeToLive</a></code> | <code>string</code> | The time to live for the auth token in golang's time.Duration string format. |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.authTokenTimeToStale">AuthTokenTimeToStale</a></code> | <code>string</code> | The time to stale for the auth token in golang's time.Duration string format. |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#id BoundaryCluster#id}. |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.maintenanceWindowConfig">MaintenanceWindowConfig</a></code> | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterMaintenanceWindowConfig">BoundaryClusterMaintenanceWindowConfig</a></code> | maintenance_window_config block. |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The ID of the HCP project where the Boundary cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterTimeouts">BoundaryClusterTimeouts</a></code> | timeouts block. |
@@ -1064,7 +1126,7 @@ public string ClusterId { get; set; }
 
 The ID of the Boundary cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#cluster_id BoundaryCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#cluster_id BoundaryCluster#cluster_id}
 
 ---
 
@@ -1080,7 +1142,7 @@ The password of the initial admin user.
 
 This must be at least 8 characters in length. Note that this may show up in logs, and it will be stored in the state file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#password BoundaryCluster#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#password BoundaryCluster#password}
 
 ---
 
@@ -1094,7 +1156,7 @@ public string Tier { get; set; }
 
 The tier that the HCP Boundary cluster will be provisioned as, 'Standard' or 'Plus'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#tier BoundaryCluster#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#tier BoundaryCluster#tier}
 
 ---
 
@@ -1110,7 +1172,35 @@ The username of the initial admin user.
 
 This must be at least 3 characters in length, alphanumeric, hyphen, or period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#username BoundaryCluster#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#username BoundaryCluster#username}
+
+---
+
+##### `AuthTokenTimeToLive`<sup>Optional</sup> <a name="AuthTokenTimeToLive" id="@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.authTokenTimeToLive"></a>
+
+```csharp
+public string AuthTokenTimeToLive { get; set; }
+```
+
+- *Type:* string
+
+The time to live for the auth token in golang's time.Duration string format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#auth_token_time_to_live BoundaryCluster#auth_token_time_to_live}
+
+---
+
+##### `AuthTokenTimeToStale`<sup>Optional</sup> <a name="AuthTokenTimeToStale" id="@cdktf/provider-hcp.boundaryCluster.BoundaryClusterConfig.property.authTokenTimeToStale"></a>
+
+```csharp
+public string AuthTokenTimeToStale { get; set; }
+```
+
+- *Type:* string
+
+The time to stale for the auth token in golang's time.Duration string format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#auth_token_time_to_stale BoundaryCluster#auth_token_time_to_stale}
 
 ---
 
@@ -1122,7 +1212,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#id BoundaryCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#id BoundaryCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1229,7 @@ public BoundaryClusterMaintenanceWindowConfig MaintenanceWindowConfig { get; set
 
 maintenance_window_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#maintenance_window_config BoundaryCluster#maintenance_window_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#maintenance_window_config BoundaryCluster#maintenance_window_config}
 
 ---
 
@@ -1156,7 +1246,7 @@ The ID of the HCP project where the Boundary cluster is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#project_id BoundaryCluster#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#project_id BoundaryCluster#project_id}
 
 ---
 
@@ -1170,7 +1260,7 @@ public BoundaryClusterTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#timeouts BoundaryCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#timeouts BoundaryCluster#timeouts}
 
 ---
 
@@ -1212,7 +1302,7 @@ The maintenance day of the week for scheduled upgrades.
 
 Valid options for maintenance window day - `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#day BoundaryCluster#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#day BoundaryCluster#day}
 
 ---
 
@@ -1228,7 +1318,7 @@ The end time which upgrades can be performed.
 
 Uses 24H clock and must be in UTC time zone. Valid options include - 1 to 24 (inclusive)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#end BoundaryCluster#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#end BoundaryCluster#end}
 
 ---
 
@@ -1244,7 +1334,7 @@ The start time which upgrades can be performed.
 
 Uses 24H clock and must be in UTC time zone. Valid options include - 0 to 23 (inclusive)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#start BoundaryCluster#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#start BoundaryCluster#start}
 
 ---
 
@@ -1258,7 +1348,7 @@ public string UpgradeType { get; set; }
 
 The upgrade type for the cluster. Valid options for upgrade type - `AUTOMATIC`, `SCHEDULED`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#upgrade_type BoundaryCluster#upgrade_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#upgrade_type BoundaryCluster#upgrade_type}
 
 ---
 
@@ -1280,9 +1370,9 @@ new BoundaryClusterTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#create BoundaryCluster#create}. |
-| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#default BoundaryCluster#default}. |
-| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#delete BoundaryCluster#delete}. |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#create BoundaryCluster#create}. |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#default BoundaryCluster#default}. |
+| <code><a href="#@cdktf/provider-hcp.boundaryCluster.BoundaryClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#delete BoundaryCluster#delete}. |
 
 ---
 
@@ -1294,7 +1384,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#create BoundaryCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#create BoundaryCluster#create}.
 
 ---
 
@@ -1306,7 +1396,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#default BoundaryCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#default BoundaryCluster#default}.
 
 ---
 
@@ -1318,7 +1408,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster#delete BoundaryCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster#delete BoundaryCluster#delete}.
 
 ---
 
