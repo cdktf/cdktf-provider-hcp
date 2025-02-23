@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.NewDataHcpVaultCluster(scope Construct, id *string, config DataHcpVaultClusterConfig) DataHcpVaultCluster
 ```
@@ -350,7 +350,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.DataHcpVaultCluster_IsConstruct(x interface{}) *bool
 ```
@@ -382,7 +382,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.DataHcpVaultCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -396,7 +396,7 @@ datahcpvaultcluster.DataHcpVaultCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.DataHcpVaultCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ datahcpvaultcluster.DataHcpVaultCluster_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.DataHcpVaultCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -969,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 &datahcpvaultcluster.DataHcpVaultClusterAuditLogConfig {
 
@@ -982,7 +982,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 &datahcpvaultcluster.DataHcpVaultClusterConfig {
 	Connection: interface{},
@@ -997,7 +997,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
 	Id: *string,
 	MetricsConfig: interface{},
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v9.dataHcpVaultCluster.DataHcpVaultClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.dataHcpVaultCluster.DataHcpVaultClusterTimeouts,
 }
 ```
 
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterIpAllowlistStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 &datahcpvaultcluster.DataHcpVaultClusterIpAllowlistStruct {
 
@@ -1197,7 +1197,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMajorVersionUpgradeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 &datahcpvaultcluster.DataHcpVaultClusterMajorVersionUpgradeConfig {
 
@@ -1210,7 +1210,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 &datahcpvaultcluster.DataHcpVaultClusterMetricsConfig {
 
@@ -1223,7 +1223,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 &datahcpvaultcluster.DataHcpVaultClusterTimeouts {
 	Default: *string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.NewDataHcpVaultClusterAuditLogConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpVaultClusterAuditLogConfigList
 ```
@@ -1417,7 +1417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.NewDataHcpVaultClusterAuditLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpVaultClusterAuditLogConfigOutputReference
 ```
@@ -1970,7 +1970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterIpAllowlistStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.NewDataHcpVaultClusterIpAllowlistStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpVaultClusterIpAllowlistStructList
 ```
@@ -2119,7 +2119,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterIpAllowlistStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.NewDataHcpVaultClusterIpAllowlistStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpVaultClusterIpAllowlistStructOutputReference
 ```
@@ -2408,7 +2408,7 @@ func InternalValue() DataHcpVaultClusterIpAllowlistStruct
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMajorVersionUpgradeConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.NewDataHcpVaultClusterMajorVersionUpgradeConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpVaultClusterMajorVersionUpgradeConfigList
 ```
@@ -2557,7 +2557,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMajorVersionUpgradeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.NewDataHcpVaultClusterMajorVersionUpgradeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpVaultClusterMajorVersionUpgradeConfigOutputReference
 ```
@@ -2857,7 +2857,7 @@ func InternalValue() DataHcpVaultClusterMajorVersionUpgradeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.NewDataHcpVaultClusterMetricsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHcpVaultClusterMetricsConfigList
 ```
@@ -3017,7 +3017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.NewDataHcpVaultClusterMetricsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataHcpVaultClusterMetricsConfigOutputReference
 ```
@@ -3559,7 +3559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpvaultcluster"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpvaultcluster"
 
 datahcpvaultcluster.NewDataHcpVaultClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpVaultClusterTimeoutsOutputReference
 ```

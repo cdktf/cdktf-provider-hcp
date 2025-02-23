@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraSubscription.VaultRadarIntegrationJiraSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjirasubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjirasubscription"
 
 vaultradarintegrationjirasubscription.NewVaultRadarIntegrationJiraSubscription(scope Construct, id *string, config VaultRadarIntegrationJiraSubscriptionConfig) VaultRadarIntegrationJiraSubscription
 ```
@@ -399,7 +399,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraSubscription.VaultRadarIntegrationJiraSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjirasubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjirasubscription"
 
 vaultradarintegrationjirasubscription.VaultRadarIntegrationJiraSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraSubscription.VaultRadarIntegrationJiraSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjirasubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjirasubscription"
 
 vaultradarintegrationjirasubscription.VaultRadarIntegrationJiraSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ vaultradarintegrationjirasubscription.VaultRadarIntegrationJiraSubscription_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraSubscription.VaultRadarIntegrationJiraSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjirasubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjirasubscription"
 
 vaultradarintegrationjirasubscription.VaultRadarIntegrationJiraSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ vaultradarintegrationjirasubscription.VaultRadarIntegrationJiraSubscription_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraSubscription.VaultRadarIntegrationJiraSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjirasubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjirasubscription"
 
 vaultradarintegrationjirasubscription.VaultRadarIntegrationJiraSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraSubscription.VaultRadarIntegrationJiraSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjirasubscription"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjirasubscription"
 
 &vaultradarintegrationjirasubscription.VaultRadarIntegrationJiraSubscriptionConfig {
 	Connection: interface{},
