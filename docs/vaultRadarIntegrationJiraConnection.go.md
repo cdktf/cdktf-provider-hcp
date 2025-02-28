@@ -4,12 +4,12 @@
 
 ### VaultRadarIntegrationJiraConnection <a name="VaultRadarIntegrationJiraConnection" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraConnection.VaultRadarIntegrationJiraConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_connection hcp_vault_radar_integration_jira_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_connection hcp_vault_radar_integration_jira_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraConnection.VaultRadarIntegrationJiraConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjiraconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjiraconnection"
 
 vaultradarintegrationjiraconnection.NewVaultRadarIntegrationJiraConnection(scope Construct, id *string, config VaultRadarIntegrationJiraConnectionConfig) VaultRadarIntegrationJiraConnection
 ```
@@ -385,7 +385,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraConnection.VaultRadarIntegrationJiraConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjiraconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjiraconnection"
 
 vaultradarintegrationjiraconnection.VaultRadarIntegrationJiraConnection_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraConnection.VaultRadarIntegrationJiraConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjiraconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjiraconnection"
 
 vaultradarintegrationjiraconnection.VaultRadarIntegrationJiraConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ vaultradarintegrationjiraconnection.VaultRadarIntegrationJiraConnection_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraConnection.VaultRadarIntegrationJiraConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjiraconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjiraconnection"
 
 vaultradarintegrationjiraconnection.VaultRadarIntegrationJiraConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ vaultradarintegrationjiraconnection.VaultRadarIntegrationJiraConnection_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraConnection.VaultRadarIntegrationJiraConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjiraconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjiraconnection"
 
 vaultradarintegrationjiraconnection.VaultRadarIntegrationJiraConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the VaultRadarIntegrationJiraC
 
 The id of the existing VaultRadarIntegrationJiraConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultRadarIntegrationJiraConnection.VaultRadarIntegrationJiraConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarintegrationjiraconnection"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarintegrationjiraconnection"
 
 &vaultradarintegrationjiraconnection.VaultRadarIntegrationJiraConnectionConfig {
 	Connection: interface{},
@@ -912,7 +912,7 @@ BaseUrl *string
 
 The Jira base URL. Example: https://acme.atlassian.net.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_connection#base_url VaultRadarIntegrationJiraConnection#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_connection#base_url VaultRadarIntegrationJiraConnection#base_url}
 
 ---
 
@@ -926,7 +926,7 @@ Email *string
 
 Jira user's email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_connection#email VaultRadarIntegrationJiraConnection#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_connection#email VaultRadarIntegrationJiraConnection#email}
 
 ---
 
@@ -940,7 +940,7 @@ Name *string
 
 Name of connection. Name must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_connection#name VaultRadarIntegrationJiraConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_connection#name VaultRadarIntegrationJiraConnection#name}
 
 ---
 
@@ -954,7 +954,7 @@ Token *string
 
 A Jira API token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_connection#token VaultRadarIntegrationJiraConnection#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_connection#token VaultRadarIntegrationJiraConnection#token}
 
 ---
 
@@ -970,7 +970,7 @@ The ID of the HCP project where Vault Radar is located.
 
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_connection#project_id VaultRadarIntegrationJiraConnection#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_connection#project_id VaultRadarIntegrationJiraConnection#project_id}
 
 ---
 

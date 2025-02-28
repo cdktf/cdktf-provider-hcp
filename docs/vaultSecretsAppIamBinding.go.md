@@ -4,12 +4,12 @@
 
 ### VaultSecretsAppIamBinding <a name="VaultSecretsAppIamBinding" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_app_iam_binding hcp_vault_secrets_app_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app_iam_binding hcp_vault_secrets_app_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
 
 vaultsecretsappiambinding.NewVaultSecretsAppIamBinding(scope Construct, id *string, config VaultSecretsAppIamBindingConfig) VaultSecretsAppIamBinding
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
 
 vaultsecretsappiambinding.VaultSecretsAppIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
 
 vaultsecretsappiambinding.VaultSecretsAppIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ vaultsecretsappiambinding.VaultSecretsAppIamBinding_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
 
 vaultsecretsappiambinding.VaultSecretsAppIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ vaultsecretsappiambinding.VaultSecretsAppIamBinding_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
 
 vaultsecretsappiambinding.VaultSecretsAppIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the VaultSecretsAppIamBinding 
 
 The id of the existing VaultSecretsAppIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_app_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsAppIamBinding.VaultSecretsAppIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsappiambinding"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretsappiambinding"
 
 &vaultsecretsappiambinding.VaultSecretsAppIamBindingConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ PrincipalId *string
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_app_iam_binding#principal_id VaultSecretsAppIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app_iam_binding#principal_id VaultSecretsAppIamBinding#principal_id}
 
 ---
 
@@ -860,7 +860,7 @@ ResourceName *string
 
 The app's resource name in the format secrets/project/<project ID>/app/<app Name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_app_iam_binding#resource_name VaultSecretsAppIamBinding#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app_iam_binding#resource_name VaultSecretsAppIamBinding#resource_name}
 
 ---
 
@@ -874,7 +874,7 @@ Role *string
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_app_iam_binding#role VaultSecretsAppIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app_iam_binding#role VaultSecretsAppIamBinding#role}
 
 ---
 

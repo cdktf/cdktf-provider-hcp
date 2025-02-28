@@ -4,12 +4,12 @@
 
 ### PackerBucket <a name="PackerBucket" id="@cdktf/provider-hcp.packerBucket.PackerBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/packer_bucket hcp_packer_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_bucket hcp_packer_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerBucket.PackerBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucket"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucket"
 
 packerbucket.NewPackerBucket(scope Construct, id *string, config PackerBucketConfig) PackerBucket
 ```
@@ -385,7 +385,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.packerBucket.PackerBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucket"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucket"
 
 packerbucket.PackerBucket_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.packerBucket.PackerBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucket"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucket"
 
 packerbucket.PackerBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ packerbucket.PackerBucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.packerBucket.PackerBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucket"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucket"
 
 packerbucket.PackerBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ packerbucket.PackerBucket_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.packerBucket.PackerBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucket"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucket"
 
 packerbucket.PackerBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the PackerBucket to import.
 
 The id of the existing PackerBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/packer_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.packerBucket.PackerBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/packerbucket"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/packerbucket"
 
 &packerbucket.PackerBucketConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ Name *string
 
 The bucket's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/packer_bucket#name PackerBucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_bucket#name PackerBucket#name}
 
 ---
 
@@ -878,7 +878,7 @@ The ID of the project to create the bucket under.
 
 If unspecified, the bucket will be created in the project the provider is configured with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/packer_bucket#project_id PackerBucket#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_bucket#project_id PackerBucket#project_id}
 
 ---
 

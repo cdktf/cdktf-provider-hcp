@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription
+// https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +10,49 @@ export interface VaultRadarIntegrationJiraSubscriptionConfig extends cdktf.Terra
   /**
   * The identifier of the Jira user who will be assigned the ticket. In case of Jira Cloud, this will be the Atlassian Account ID of the user. Example: 71509:11bb945b-c0de-4bac-9d57-9f09db2f7bc9
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription#assignee VaultRadarIntegrationJiraSubscription#assignee}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription#assignee VaultRadarIntegrationJiraSubscription#assignee}
   */
   readonly assignee?: string;
   /**
   * id of the integration jira connection to use for the subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription#connection_id VaultRadarIntegrationJiraSubscription#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription#connection_id VaultRadarIntegrationJiraSubscription#connection_id}
   */
   readonly connectionId: string;
   /**
   * The type of issue to be created from the event(s). Example: Task
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription#issue_type VaultRadarIntegrationJiraSubscription#issue_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription#issue_type VaultRadarIntegrationJiraSubscription#issue_type}
   */
   readonly issueType: string;
   /**
   * The name of the project under which the jira issue will be created. Example: OPS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription#jira_project_key VaultRadarIntegrationJiraSubscription#jira_project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription#jira_project_key VaultRadarIntegrationJiraSubscription#jira_project_key}
   */
   readonly jiraProjectKey: string;
   /**
   * This message will be included in the ticket description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription#message VaultRadarIntegrationJiraSubscription#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription#message VaultRadarIntegrationJiraSubscription#message}
   */
   readonly message?: string;
   /**
   * Name of subscription. Name must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription#name VaultRadarIntegrationJiraSubscription#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription#name VaultRadarIntegrationJiraSubscription#name}
   */
   readonly name: string;
   /**
   * The ID of the HCP project where Vault Radar is located. If not specified, the project specified in the HCP Provider config block will be used, if configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription#project_id VaultRadarIntegrationJiraSubscription#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription#project_id VaultRadarIntegrationJiraSubscription#project_id}
   */
   readonly projectId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription hcp_vault_radar_integration_jira_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription hcp_vault_radar_integration_jira_subscription}
 */
 export class VaultRadarIntegrationJiraSubscription extends cdktf.TerraformResource {
 
@@ -73,7 +68,7 @@ export class VaultRadarIntegrationJiraSubscription extends cdktf.TerraformResour
   * Generates CDKTF code for importing a VaultRadarIntegrationJiraSubscription resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultRadarIntegrationJiraSubscription to import
-  * @param importFromId The id of the existing VaultRadarIntegrationJiraSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultRadarIntegrationJiraSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultRadarIntegrationJiraSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -85,7 +80,7 @@ export class VaultRadarIntegrationJiraSubscription extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_jira_subscription hcp_vault_radar_integration_jira_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_jira_subscription hcp_vault_radar_integration_jira_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +91,7 @@ export class VaultRadarIntegrationJiraSubscription extends cdktf.TerraformResour
       terraformResourceType: 'hcp_vault_radar_integration_jira_subscription',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.103.0',
+        providerVersion: '0.104.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

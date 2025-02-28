@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription
+// https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_slack_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface VaultRadarIntegrationSlackSubscriptionConfig extends cdktf.Terr
   /**
   * Name of the Slack channel that messages should be sent to. Note that HashiCorp Vault Radar will send a test message to verify the channel. Example: dev-ops-team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription#channel VaultRadarIntegrationSlackSubscription#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_slack_subscription#channel VaultRadarIntegrationSlackSubscription#channel}
   */
   readonly channel: string;
   /**
   * id of the integration slack connection to use for the subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription#connection_id VaultRadarIntegrationSlackSubscription#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_slack_subscription#connection_id VaultRadarIntegrationSlackSubscription#connection_id}
   */
   readonly connectionId: string;
   /**
   * Name of subscription. Name must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription#name VaultRadarIntegrationSlackSubscription#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_slack_subscription#name VaultRadarIntegrationSlackSubscription#name}
   */
   readonly name: string;
   /**
   * The ID of the HCP project where Vault Radar is located. If not specified, the project specified in the HCP Provider config block will be used, if configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription#project_id VaultRadarIntegrationSlackSubscription#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_slack_subscription#project_id VaultRadarIntegrationSlackSubscription#project_id}
   */
   readonly projectId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription hcp_vault_radar_integration_slack_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_slack_subscription hcp_vault_radar_integration_slack_subscription}
 */
 export class VaultRadarIntegrationSlackSubscription extends cdktf.TerraformResource {
 
@@ -55,7 +50,7 @@ export class VaultRadarIntegrationSlackSubscription extends cdktf.TerraformResou
   * Generates CDKTF code for importing a VaultRadarIntegrationSlackSubscription resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultRadarIntegrationSlackSubscription to import
-  * @param importFromId The id of the existing VaultRadarIntegrationSlackSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultRadarIntegrationSlackSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_slack_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultRadarIntegrationSlackSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +62,7 @@ export class VaultRadarIntegrationSlackSubscription extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_radar_integration_slack_subscription hcp_vault_radar_integration_slack_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_radar_integration_slack_subscription hcp_vault_radar_integration_slack_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +73,7 @@ export class VaultRadarIntegrationSlackSubscription extends cdktf.TerraformResou
       terraformResourceType: 'hcp_vault_radar_integration_slack_subscription',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.103.0',
+        providerVersion: '0.104.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
