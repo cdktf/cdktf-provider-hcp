@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_template
+// https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,9 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataHcpWaypointTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
+  * List of actions by 'ID' to assign to this Template. Applications created from this Template will have these actions assigned to them. Only 'ID' is supported.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template#actions DataHcpWaypointTemplate#actions}
+  */
+  readonly actions?: string[];
+  /**
   * The ID of the Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_template#id DataHcpWaypointTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template#id DataHcpWaypointTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +30,13 @@ export interface DataHcpWaypointTemplateConfig extends cdktf.TerraformMetaArgume
   /**
   * The name of the Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_template#name DataHcpWaypointTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template#name DataHcpWaypointTemplate#name}
   */
   readonly name?: string;
   /**
   * The ID of the HCP project where the Waypoint Template is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_template#project_id DataHcpWaypointTemplate#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template#project_id DataHcpWaypointTemplate#project_id}
   */
   readonly projectId?: string;
 }
@@ -185,7 +191,7 @@ export class DataHcpWaypointTemplateVariableOptionsList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_template hcp_waypoint_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template hcp_waypoint_template}
 */
 export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
 
@@ -201,7 +207,7 @@ export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpWaypointTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpWaypointTemplate to import
-  * @param importFromId The id of the existing DataHcpWaypointTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpWaypointTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpWaypointTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -213,7 +219,7 @@ export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +230,7 @@ export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_waypoint_template',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.103.0',
+        providerVersion: '0.104.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -235,6 +241,7 @@ export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._actions = config.actions;
     this._id = config.id;
     this._name = config.name;
     this._projectId = config.projectId;
@@ -243,6 +250,22 @@ export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // actions - computed: false, optional: true, required: false
+  private _actions?: string[]; 
+  public get actions() {
+    return this.getListAttribute('actions');
+  }
+  public set actions(value: string[]) {
+    this._actions = value;
+  }
+  public resetActions() {
+    this._actions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionsInput() {
+    return this._actions;
+  }
 
   // description - computed: true, optional: false, required: false
   public get description() {
@@ -355,6 +378,7 @@ export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._actions),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project_id: cdktf.stringToTerraform(this._projectId),
@@ -363,6 +387,12 @@ export class DataHcpWaypointTemplate extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      actions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._actions),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,

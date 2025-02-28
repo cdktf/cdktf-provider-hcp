@@ -4,7 +4,7 @@
 
 ### DataHcpWaypointApplication <a name="DataHcpWaypointApplication" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_application hcp_waypoint_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application hcp_waypoint_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.Initializer"></a>
 
@@ -21,6 +21,7 @@ dataHcpWaypointApplication.DataHcpWaypointApplication(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  actions: typing.List[str] = None,
   id: str = None,
   input_variables: typing.Union[IResolvable, typing.List[DataHcpWaypointApplicationInputVariables]] = None,
   name: str = None,
@@ -39,6 +40,7 @@ dataHcpWaypointApplication.DataHcpWaypointApplication(
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.Initializer.parameter.actions">actions</a></code> | <code>typing.List[str]</code> | List of actions by 'ID' to assign to this Template. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.Initializer.parameter.id">id</a></code> | <code>str</code> | The ID of the Application. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.Initializer.parameter.inputVariables">input_variables</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationInputVariables">DataHcpWaypointApplicationInputVariables</a>]]</code> | Input variables for the Application. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the Application. |
@@ -106,13 +108,25 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `actions`<sup>Optional</sup> <a name="actions" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.Initializer.parameter.actions"></a>
+
+- *Type:* typing.List[str]
+
+List of actions by 'ID' to assign to this Template.
+
+Applications created from this Template will have these actions assigned to them. Only 'ID' is supported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#actions DataHcpWaypointApplication#actions}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.Initializer.parameter.id"></a>
 
 - *Type:* str
 
 The ID of the Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_application#id DataHcpWaypointApplication#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#id DataHcpWaypointApplication#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Input variables for the Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_application#input_variables DataHcpWaypointApplication#input_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#input_variables DataHcpWaypointApplication#input_variables}
 
 ---
 
@@ -135,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_application#name DataHcpWaypointApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#name DataHcpWaypointApplication#name}
 
 ---
 
@@ -145,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the HCP project where the Waypoint Application is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_application#project_id DataHcpWaypointApplication#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#project_id DataHcpWaypointApplication#project_id}
 
 ---
 
@@ -171,6 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.putInputVariables">put_input_variables</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.resetActions">reset_actions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.resetInputVariables">reset_input_variables</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.resetName">reset_name</a></code> | *No description.* |
@@ -409,6 +424,12 @@ def put_input_variables(
 
 ---
 
+##### `reset_actions` <a name="reset_actions" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.resetActions"></a>
+
+```python
+def reset_actions() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.resetId"></a>
 
 ```python
@@ -547,7 +568,7 @@ The construct id used in the generated config for the DataHcpWaypointApplication
 
 The id of the existing DataHcpWaypointApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -582,10 +603,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.readmeMarkdown">readme_markdown</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.templateId">template_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.templateName">template_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.actionsInput">actions_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.inputVariablesInput">input_variables_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationInputVariables">DataHcpWaypointApplicationInputVariables</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.actions">actions</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
@@ -784,6 +807,16 @@ template_name: str
 
 ---
 
+##### `actions_input`<sup>Optional</sup> <a name="actions_input" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.actionsInput"></a>
+
+```python
+actions_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.idInput"></a>
 
 ```python
@@ -821,6 +854,16 @@ project_id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `actions`<sup>Required</sup> <a name="actions" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplication.property.actions"></a>
+
+```python
+actions: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -889,6 +932,7 @@ dataHcpWaypointApplication.DataHcpWaypointApplicationConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  actions: typing.List[str] = None,
   id: str = None,
   input_variables: typing.Union[IResolvable, typing.List[DataHcpWaypointApplicationInputVariables]] = None,
   name: str = None,
@@ -907,6 +951,7 @@ dataHcpWaypointApplication.DataHcpWaypointApplicationConfig(
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationConfig.property.actions">actions</a></code> | <code>typing.List[str]</code> | List of actions by 'ID' to assign to this Template. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationConfig.property.id">id</a></code> | <code>str</code> | The ID of the Application. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationConfig.property.inputVariables">input_variables</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationInputVariables">DataHcpWaypointApplicationInputVariables</a>]]</code> | Input variables for the Application. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationConfig.property.name">name</a></code> | <code>str</code> | The name of the Application. |
@@ -984,6 +1029,22 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `actions`<sup>Optional</sup> <a name="actions" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationConfig.property.actions"></a>
+
+```python
+actions: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of actions by 'ID' to assign to this Template.
+
+Applications created from this Template will have these actions assigned to them. Only 'ID' is supported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#actions DataHcpWaypointApplication#actions}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationConfig.property.id"></a>
 
 ```python
@@ -994,7 +1055,7 @@ id: str
 
 The ID of the Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_application#id DataHcpWaypointApplication#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#id DataHcpWaypointApplication#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1011,7 +1072,7 @@ input_variables: typing.Union[IResolvable, typing.List[DataHcpWaypointApplicatio
 
 Input variables for the Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_application#input_variables DataHcpWaypointApplication#input_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#input_variables DataHcpWaypointApplication#input_variables}
 
 ---
 
@@ -1025,7 +1086,7 @@ name: str
 
 The name of the Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_application#name DataHcpWaypointApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#name DataHcpWaypointApplication#name}
 
 ---
 
@@ -1039,7 +1100,7 @@ project_id: str
 
 The ID of the HCP project where the Waypoint Application is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_application#project_id DataHcpWaypointApplication#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_application#project_id DataHcpWaypointApplication#project_id}
 
 ---
 
