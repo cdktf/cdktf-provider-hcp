@@ -89,6 +89,7 @@ The following submodules are available:
 - [vaultSecretsIntegrationTwilio](./vaultSecretsIntegrationTwilio.java.md)
 - [vaultSecretsRotatingSecret](./vaultSecretsRotatingSecret.java.md)
 - [vaultSecretsSecret](./vaultSecretsSecret.java.md)
+- [vaultSecretsSync](./vaultSecretsSync.java.md)
 - [waypointAction](./waypointAction.java.md)
 - [waypointAddOn](./waypointAddOn.java.md)
 - [waypointAddOnDefinition](./waypointAddOnDefinition.java.md)

@@ -89,6 +89,7 @@ The following submodules are available:
 - [vaultSecretsIntegrationTwilio](./vaultSecretsIntegrationTwilio.typescript.md)
 - [vaultSecretsRotatingSecret](./vaultSecretsRotatingSecret.typescript.md)
 - [vaultSecretsSecret](./vaultSecretsSecret.typescript.md)
+- [vaultSecretsSync](./vaultSecretsSync.typescript.md)
 - [waypointAction](./waypointAction.typescript.md)
 - [waypointAddOn](./waypointAddOn.typescript.md)
 - [waypointAddOnDefinition](./waypointAddOnDefinition.typescript.md)

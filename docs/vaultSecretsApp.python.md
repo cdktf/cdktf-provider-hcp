@@ -4,7 +4,7 @@
 
 ### VaultSecretsApp <a name="VaultSecretsApp" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app hcp_vault_secrets_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app hcp_vault_secrets_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer"></a>
 
@@ -23,7 +23,8 @@ vaultSecretsApp.VaultSecretsApp(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   app_name: str,
   description: str = None,
-  project_id: str = None
+  project_id: str = None,
+  sync_names: typing.List[str] = None
 )
 ```
 
@@ -41,6 +42,7 @@ vaultSecretsApp.VaultSecretsApp(
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer.parameter.appName">app_name</a></code> | <code>str</code> | The Vault Secrets App name. |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer.parameter.description">description</a></code> | <code>str</code> | The Vault Secrets app description. |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the HCP Vault Secrets app is located. |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer.parameter.syncNames">sync_names</a></code> | <code>typing.List[str]</code> | Set of sync names to associate with this app. |
 
 ---
 
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The Vault Secrets App name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
 
 ---
 
@@ -120,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Vault Secrets app description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
 
 ---
 
@@ -130,7 +132,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the HCP project where the HCP Vault Secrets app is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#project_id VaultSecretsApp#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#project_id VaultSecretsApp#project_id}
+
+---
+
+##### `sync_names`<sup>Optional</sup> <a name="sync_names" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer.parameter.syncNames"></a>
+
+- *Type:* typing.List[str]
+
+Set of sync names to associate with this app.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#sync_names VaultSecretsApp#sync_names}
 
 ---
 
@@ -163,6 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetProjectId">reset_project_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetSyncNames">reset_sync_names</a></code> | *No description.* |
 
 ---
 
@@ -503,6 +516,12 @@ def reset_description() -> None
 def reset_project_id() -> None
 ```
 
+##### `reset_sync_names` <a name="reset_sync_names" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetSyncNames"></a>
+
+```python
+def reset_sync_names() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -617,7 +636,7 @@ The construct id used in the generated config for the VaultSecretsApp to import.
 
 The id of the existing VaultSecretsApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,9 +672,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.appNameInput">app_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.syncNamesInput">sync_names_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.appName">app_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.syncNames">sync_names</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
@@ -861,6 +882,16 @@ project_id_input: str
 
 ---
 
+##### `sync_names_input`<sup>Optional</sup> <a name="sync_names_input" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.syncNamesInput"></a>
+
+```python
+sync_names_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `app_name`<sup>Required</sup> <a name="app_name" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.appName"></a>
 
 ```python
@@ -888,6 +919,16 @@ project_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `sync_names`<sup>Required</sup> <a name="sync_names" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.syncNames"></a>
+
+```python
+sync_names: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -928,7 +969,8 @@ vaultSecretsApp.VaultSecretsAppConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   app_name: str,
   description: str = None,
-  project_id: str = None
+  project_id: str = None,
+  sync_names: typing.List[str] = None
 )
 ```
 
@@ -946,6 +988,7 @@ vaultSecretsApp.VaultSecretsAppConfig(
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.appName">app_name</a></code> | <code>str</code> | The Vault Secrets App name. |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.description">description</a></code> | <code>str</code> | The Vault Secrets app description. |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the HCP Vault Secrets app is located. |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.syncNames">sync_names</a></code> | <code>typing.List[str]</code> | Set of sync names to associate with this app. |
 
 ---
 
@@ -1029,7 +1072,7 @@ app_name: str
 
 The Vault Secrets App name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
 
 ---
 
@@ -1043,7 +1086,7 @@ description: str
 
 The Vault Secrets app description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
 
 ---
 
@@ -1057,7 +1100,21 @@ project_id: str
 
 The ID of the HCP project where the HCP Vault Secrets app is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#project_id VaultSecretsApp#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#project_id VaultSecretsApp#project_id}
+
+---
+
+##### `sync_names`<sup>Optional</sup> <a name="sync_names" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.syncNames"></a>
+
+```python
+sync_names: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Set of sync names to associate with this app.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#sync_names VaultSecretsApp#sync_names}
 
 ---
 

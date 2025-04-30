@@ -4,7 +4,7 @@
 
 ### VaultSecretsApp <a name="VaultSecretsApp" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app hcp_vault_secrets_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app hcp_vault_secrets_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetProjectId">resetProjectId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetSyncNames">resetSyncNames</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +379,12 @@ public resetDescription(): void
 public resetProjectId(): void
 ```
 
+##### `resetSyncNames` <a name="resetSyncNames" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.resetSyncNames"></a>
+
+```typescript
+public resetSyncNames(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -481,7 +488,7 @@ The construct id used in the generated config for the VaultSecretsApp to import.
 
 The id of the existing VaultSecretsApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -517,9 +524,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.appNameInput">appNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.syncNamesInput">syncNamesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.appName">appName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.syncNames">syncNames</a></code> | <code>string[]</code> | *No description.* |
 
 ---
 
@@ -725,6 +734,16 @@ public readonly projectIdInput: string;
 
 ---
 
+##### `syncNamesInput`<sup>Optional</sup> <a name="syncNamesInput" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.syncNamesInput"></a>
+
+```typescript
+public readonly syncNamesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `appName`<sup>Required</sup> <a name="appName" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.appName"></a>
 
 ```typescript
@@ -752,6 +771,16 @@ public readonly projectId: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `syncNames`<sup>Required</sup> <a name="syncNames" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsApp.property.syncNames"></a>
+
+```typescript
+public readonly syncNames: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -799,6 +828,7 @@ const vaultSecretsAppConfig: vaultSecretsApp.VaultSecretsAppConfig = { ... }
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.appName">appName</a></code> | <code>string</code> | The Vault Secrets App name. |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.description">description</a></code> | <code>string</code> | The Vault Secrets app description. |
 | <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.projectId">projectId</a></code> | <code>string</code> | The ID of the HCP project where the HCP Vault Secrets app is located. |
+| <code><a href="#@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.syncNames">syncNames</a></code> | <code>string[]</code> | Set of sync names to associate with this app. |
 
 ---
 
@@ -882,7 +912,7 @@ public readonly appName: string;
 
 The Vault Secrets App name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
 
 ---
 
@@ -896,7 +926,7 @@ public readonly description: string;
 
 The Vault Secrets app description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
 
 ---
 
@@ -910,7 +940,21 @@ public readonly projectId: string;
 
 The ID of the HCP project where the HCP Vault Secrets app is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app#project_id VaultSecretsApp#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#project_id VaultSecretsApp#project_id}
+
+---
+
+##### `syncNames`<sup>Optional</sup> <a name="syncNames" id="@cdktf/provider-hcp.vaultSecretsApp.VaultSecretsAppConfig.property.syncNames"></a>
+
+```typescript
+public readonly syncNames: string[];
+```
+
+- *Type:* string[]
+
+Set of sync names to associate with this app.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app#sync_names VaultSecretsApp#sync_names}
 
 ---
 
