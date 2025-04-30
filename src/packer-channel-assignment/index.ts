@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment
+// https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface PackerChannelAssignmentConfig extends cdktf.TerraformMetaArgume
   /**
   * The slug of the HCP Packer bucket where the channel is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#bucket_name PackerChannelAssignment#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#bucket_name PackerChannelAssignment#bucket_name}
   */
   readonly bucketName: string;
   /**
   * The name of the HCP Packer channel being managed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#channel_name PackerChannelAssignment#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#channel_name PackerChannelAssignment#channel_name}
   */
   readonly channelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#id PackerChannelAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,37 +32,37 @@ export interface PackerChannelAssignmentConfig extends cdktf.TerraformMetaArgume
   * If not specified, the project specified in the HCP Provider config block will be used, if configured.
   * If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#project_id PackerChannelAssignment#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#project_id PackerChannelAssignment#project_id}
   */
   readonly projectId?: string;
   /**
   * The fingerprint of the version assigned to the channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#version_fingerprint PackerChannelAssignment#version_fingerprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#version_fingerprint PackerChannelAssignment#version_fingerprint}
   */
   readonly versionFingerprint?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#timeouts PackerChannelAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#timeouts PackerChannelAssignment#timeouts}
   */
   readonly timeouts?: PackerChannelAssignmentTimeouts;
 }
 export interface PackerChannelAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#create PackerChannelAssignment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#create PackerChannelAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#default PackerChannelAssignment#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#default PackerChannelAssignment#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#delete PackerChannelAssignment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#delete PackerChannelAssignment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#update PackerChannelAssignment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#update PackerChannelAssignment#update}
   */
   readonly update?: string;
 }
@@ -248,7 +243,7 @@ export class PackerChannelAssignmentTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}
 */
 export class PackerChannelAssignment extends cdktf.TerraformResource {
 
@@ -264,7 +259,7 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PackerChannelAssignment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PackerChannelAssignment to import
-  * @param importFromId The id of the existing PackerChannelAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PackerChannelAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PackerChannelAssignment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -276,7 +271,7 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -287,7 +282,7 @@ export class PackerChannelAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_packer_channel_assignment',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.104.0',
+        providerVersion: '0.105.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
