@@ -56,6 +56,7 @@ Object.defineProperty(exports, 'vaultSecretsIntegrationMongodbatlas', { get: fun
 Object.defineProperty(exports, 'vaultSecretsIntegrationTwilio', { get: function () { return require('./vault-secrets-integration-twilio'); } });
 Object.defineProperty(exports, 'vaultSecretsRotatingSecret', { get: function () { return require('./vault-secrets-rotating-secret'); } });
 Object.defineProperty(exports, 'vaultSecretsSecret', { get: function () { return require('./vault-secrets-secret'); } });
+Object.defineProperty(exports, 'vaultSecretsSync', { get: function () { return require('./vault-secrets-sync'); } });
 Object.defineProperty(exports, 'waypointAction', { get: function () { return require('./waypoint-action'); } });
 Object.defineProperty(exports, 'waypointAddOn', { get: function () { return require('./waypoint-add-on'); } });
 Object.defineProperty(exports, 'waypointAddOnDefinition', { get: function () { return require('./waypoint-add-on-definition'); } });

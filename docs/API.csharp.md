@@ -89,6 +89,7 @@ The following submodules are available:
 - [vaultSecretsIntegrationTwilio](./vaultSecretsIntegrationTwilio.csharp.md)
 - [vaultSecretsRotatingSecret](./vaultSecretsRotatingSecret.csharp.md)
 - [vaultSecretsSecret](./vaultSecretsSecret.csharp.md)
+- [vaultSecretsSync](./vaultSecretsSync.csharp.md)
 - [waypointAction](./waypointAction.csharp.md)
 - [waypointAddOn](./waypointAddOn.csharp.md)
 - [waypointAddOnDefinition](./waypointAddOnDefinition.csharp.md)

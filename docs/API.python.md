@@ -89,6 +89,7 @@ The following submodules are available:
 - [vaultSecretsIntegrationTwilio](./vaultSecretsIntegrationTwilio.python.md)
 - [vaultSecretsRotatingSecret](./vaultSecretsRotatingSecret.python.md)
 - [vaultSecretsSecret](./vaultSecretsSecret.python.md)
+- [vaultSecretsSync](./vaultSecretsSync.python.md)
 - [waypointAction](./waypointAction.python.md)
 - [waypointAddOn](./waypointAddOn.python.md)
 - [waypointAddOnDefinition](./waypointAddOnDefinition.python.md)

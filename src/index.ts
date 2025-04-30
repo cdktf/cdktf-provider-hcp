@@ -56,6 +56,7 @@ export * as vaultSecretsIntegrationMongodbatlas from './vault-secrets-integratio
 export * as vaultSecretsIntegrationTwilio from './vault-secrets-integration-twilio';
 export * as vaultSecretsRotatingSecret from './vault-secrets-rotating-secret';
 export * as vaultSecretsSecret from './vault-secrets-secret';
+export * as vaultSecretsSync from './vault-secrets-sync';
 export * as waypointAction from './waypoint-action';
 export * as waypointAddOn from './waypoint-add-on';
 export * as waypointAddOnDefinition from './waypoint-add-on-definition';
