@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_add_on_definition
+// https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_add_on_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataHcpWaypointAddOnDefinitionConfig extends cdktf.TerraformMet
   /**
   * The ID of the Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_add_on_definition#id DataHcpWaypointAddOnDefinition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_add_on_definition#id DataHcpWaypointAddOnDefinition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +19,13 @@ export interface DataHcpWaypointAddOnDefinitionConfig extends cdktf.TerraformMet
   /**
   * The name of the Add-on Definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_add_on_definition#name DataHcpWaypointAddOnDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_add_on_definition#name DataHcpWaypointAddOnDefinition#name}
   */
   readonly name?: string;
   /**
   * The ID of the HCP project where the Waypoint Add-on Definition is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_add_on_definition#project_id DataHcpWaypointAddOnDefinition#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_add_on_definition#project_id DataHcpWaypointAddOnDefinition#project_id}
   */
   readonly projectId?: string;
 }
@@ -185,7 +180,7 @@ export class DataHcpWaypointAddOnDefinitionVariableOptionsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition}
 */
 export class DataHcpWaypointAddOnDefinition extends cdktf.TerraformDataSource {
 
@@ -201,7 +196,7 @@ export class DataHcpWaypointAddOnDefinition extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpWaypointAddOnDefinition resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpWaypointAddOnDefinition to import
-  * @param importFromId The id of the existing DataHcpWaypointAddOnDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpWaypointAddOnDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_add_on_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpWaypointAddOnDefinition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -213,7 +208,7 @@ export class DataHcpWaypointAddOnDefinition extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +219,7 @@ export class DataHcpWaypointAddOnDefinition extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_waypoint_add_on_definition',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.105.0',
+        providerVersion: '0.106.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
