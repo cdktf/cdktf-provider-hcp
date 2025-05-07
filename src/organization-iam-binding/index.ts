@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/organization_iam_binding
+// https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/organization_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface OrganizationIamBindingConfig extends cdktf.TerraformMetaArgumen
   /**
   * The principal to bind to the given role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/organization_iam_binding#principal_id OrganizationIamBinding#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/organization_iam_binding#principal_id OrganizationIamBinding#principal_id}
   */
   readonly principalId: string;
   /**
   * The role name to bind to the given principal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/organization_iam_binding#role OrganizationIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/organization_iam_binding#role OrganizationIamBinding#role}
   */
   readonly role: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/organization_iam_binding hcp_organization_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/organization_iam_binding hcp_organization_iam_binding}
 */
 export class OrganizationIamBinding extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class OrganizationIamBinding extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationIamBinding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationIamBinding to import
-  * @param importFromId The id of the existing OrganizationIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/organization_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/organization_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class OrganizationIamBinding extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/organization_iam_binding hcp_organization_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/organization_iam_binding hcp_organization_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class OrganizationIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_organization_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.105.0',
+        providerVersion: '0.106.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

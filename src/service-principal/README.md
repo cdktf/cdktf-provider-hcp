@@ -1,3 +1,3 @@
 # `hcp_service_principal`
 
-Refer to the Terraform Registry for docs: [`hcp_service_principal`](https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/service_principal).
+Refer to the Terraform Registry for docs: [`hcp_service_principal`](https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/service_principal).

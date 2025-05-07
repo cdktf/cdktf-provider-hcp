@@ -4,7 +4,7 @@
 
 ### PackerBucket <a name="PackerBucket" id="@cdktf/provider-hcp.packerBucket.PackerBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_bucket hcp_packer_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/packer_bucket hcp_packer_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.packerBucket.PackerBucket.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the PackerBucket to import.
 
 The id of the existing PackerBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/packer_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ public string Name { get; set; }
 
 The bucket's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_bucket#name PackerBucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/packer_bucket#name PackerBucket#name}
 
 ---
 
@@ -878,7 +878,7 @@ The ID of the project to create the bucket under.
 
 If unspecified, the bucket will be created in the project the provider is configured with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/packer_bucket#project_id PackerBucket#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/packer_bucket#project_id PackerBucket#project_id}
 
 ---
 

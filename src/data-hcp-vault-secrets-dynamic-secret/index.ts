@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/vault_secrets_dynamic_secret
+// https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/vault_secrets_dynamic_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataHcpVaultSecretsDynamicSecretConfig extends cdktf.TerraformM
   /**
   * The name of the Vault Secrets application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/vault_secrets_dynamic_secret#app_name DataHcpVaultSecretsDynamicSecret#app_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/vault_secrets_dynamic_secret#app_name DataHcpVaultSecretsDynamicSecret#app_name}
   */
   readonly appName: string;
   /**
   * The name of the Vault Secrets secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/vault_secrets_dynamic_secret#secret_name DataHcpVaultSecretsDynamicSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/vault_secrets_dynamic_secret#secret_name DataHcpVaultSecretsDynamicSecret#secret_name}
   */
   readonly secretName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/vault_secrets_dynamic_secret hcp_vault_secrets_dynamic_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/vault_secrets_dynamic_secret hcp_vault_secrets_dynamic_secret}
 */
 export class DataHcpVaultSecretsDynamicSecret extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataHcpVaultSecretsDynamicSecret extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataHcpVaultSecretsDynamicSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpVaultSecretsDynamicSecret to import
-  * @param importFromId The id of the existing DataHcpVaultSecretsDynamicSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/vault_secrets_dynamic_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpVaultSecretsDynamicSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/vault_secrets_dynamic_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpVaultSecretsDynamicSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class DataHcpVaultSecretsDynamicSecret extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/vault_secrets_dynamic_secret hcp_vault_secrets_dynamic_secret} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/vault_secrets_dynamic_secret hcp_vault_secrets_dynamic_secret} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class DataHcpVaultSecretsDynamicSecret extends cdktf.TerraformDataSource 
       terraformResourceType: 'hcp_vault_secrets_dynamic_secret',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.105.0',
+        providerVersion: '0.106.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

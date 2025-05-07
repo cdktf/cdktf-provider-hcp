@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_action
+// https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_action
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataHcpWaypointActionConfig extends cdktf.TerraformMetaArgument
   /**
   * The ID of the Action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_action#id DataHcpWaypointAction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_action#id DataHcpWaypointAction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataHcpWaypointActionConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of the Action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_action#name DataHcpWaypointAction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_action#name DataHcpWaypointAction#name}
   */
   readonly name?: string;
   /**
   * The ID of the HCP project where the Waypoint Action is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_action#project_id DataHcpWaypointAction#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_action#project_id DataHcpWaypointAction#project_id}
   */
   readonly projectId?: string;
 }
@@ -161,7 +161,7 @@ export class DataHcpWaypointActionRequestOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_action hcp_waypoint_action}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_action hcp_waypoint_action}
 */
 export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
 
@@ -177,7 +177,7 @@ export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpWaypointAction resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpWaypointAction to import
-  * @param importFromId The id of the existing DataHcpWaypointAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_action#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpWaypointAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpWaypointAction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -189,7 +189,7 @@ export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/waypoint_action hcp_waypoint_action} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/waypoint_action hcp_waypoint_action} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -200,7 +200,7 @@ export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_waypoint_action',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.105.0',
+        providerVersion: '0.106.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

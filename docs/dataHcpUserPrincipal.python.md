@@ -4,7 +4,7 @@
 
 ### DataHcpUserPrincipal <a name="DataHcpUserPrincipal" id="@cdktf/provider-hcp.dataHcpUserPrincipal.DataHcpUserPrincipal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/user_principal hcp_user_principal}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/user_principal hcp_user_principal}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpUserPrincipal.DataHcpUserPrincipal.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The user's email. Can not be combined with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/user_principal#email DataHcpUserPrincipal#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/user_principal#email DataHcpUserPrincipal#email}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user's unique identifier. Can not be combined with email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/user_principal#user_id DataHcpUserPrincipal#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/user_principal#user_id DataHcpUserPrincipal#user_id}
 
 ---
 
@@ -491,7 +491,7 @@ The construct id used in the generated config for the DataHcpUserPrincipal to im
 
 The id of the existing DataHcpUserPrincipal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/user_principal#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/user_principal#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ email: str
 
 The user's email. Can not be combined with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/user_principal#email DataHcpUserPrincipal#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/user_principal#email DataHcpUserPrincipal#email}
 
 ---
 
@@ -838,7 +838,7 @@ user_id: str
 
 The user's unique identifier. Can not be combined with email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/data-sources/user_principal#user_id DataHcpUserPrincipal#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/user_principal#user_id DataHcpUserPrincipal#user_id}
 
 ---
 
