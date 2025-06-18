@@ -4,7 +4,7 @@
 
 ### DataHcpOrganization <a name="DataHcpOrganization" id="@cdktf/provider-hcp.dataHcpOrganization.DataHcpOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/organization hcp_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/data-sources/organization hcp_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpOrganization.DataHcpOrganization.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataHcpOrganization to imp
 
 The id of the existing DataHcpOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
