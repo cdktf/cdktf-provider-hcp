@@ -4,7 +4,7 @@
 
 ### ServicePrincipalKey <a name="ServicePrincipalKey" id="@cdktf/provider-hcp.servicePrincipalKey.ServicePrincipalKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/service_principal_key hcp_service_principal_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/service_principal_key hcp_service_principal_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.servicePrincipalKey.ServicePrincipalKey.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ServicePrincipalKey to imp
 
 The id of the existing ServicePrincipalKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/service_principal_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/service_principal_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ ServicePrincipal *string
 
 The service principal's resource name for which a key should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/service_principal_key#service_principal ServicePrincipalKey#service_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/service_principal_key#service_principal ServicePrincipalKey#service_principal}
 
 ---
 
@@ -878,7 +878,7 @@ A map of arbitrary string key/value pairs that will force recreation of the key 
 
 Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs/resources/service_principal_key#rotate_triggers ServicePrincipalKey#rotate_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/service_principal_key#rotate_triggers ServicePrincipalKey#rotate_triggers}
 
 ---
 
