@@ -4,7 +4,7 @@
 
 ### DataHcpPackerVersion <a name="DataHcpPackerVersion" id="@cdktf/provider-hcp.dataHcpPackerVersion.DataHcpPackerVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/data-sources/packer_version hcp_packer_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/packer_version hcp_packer_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPackerVersion.DataHcpPackerVersion.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataHcpPackerVersion to im
 
 The id of the existing DataHcpPackerVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/data-sources/packer_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/packer_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ public string BucketName { get; set; }
 
 The name of the HCP Packer Bucket where the Version is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/data-sources/packer_version#bucket_name DataHcpPackerVersion#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/packer_version#bucket_name DataHcpPackerVersion#bucket_name}
 
 ---
 
@@ -833,7 +833,7 @@ The name of the HCP Packer Channel the Version is assigned to.
 
 The version currently assigned to the Channel will be fetched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/data-sources/packer_version#channel_name DataHcpPackerVersion#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/packer_version#channel_name DataHcpPackerVersion#channel_name}
 
 ---
 
@@ -847,7 +847,7 @@ public string ProjectId { get; set; }
 
 The ID of the HCP Organization where the Version is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/data-sources/packer_version#project_id DataHcpPackerVersion#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/packer_version#project_id DataHcpPackerVersion#project_id}
 
 ---
 

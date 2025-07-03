@@ -4,7 +4,7 @@
 
 ### VaultSecretsSync <a name="VaultSecretsSync" id="@cdktf/provider-hcp.vaultSecretsSync.VaultSecretsSync"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync hcp_vault_secrets_sync}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync hcp_vault_secrets_sync}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsSync.VaultSecretsSync.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The Vault Secrets integration name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#integration_name VaultSecretsSync#integration_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#integration_name VaultSecretsSync#integration_name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Vault Secrets Sync name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#name VaultSecretsSync#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#name VaultSecretsSync#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Configuration parameters used to determine the sync destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#gitlab_config VaultSecretsSync#gitlab_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#gitlab_config VaultSecretsSync#gitlab_config}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#project_id VaultSecretsSync#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#project_id VaultSecretsSync#project_id}
 
 ---
 
@@ -598,7 +598,7 @@ The construct id used in the generated config for the VaultSecretsSync to import
 
 The id of the existing VaultSecretsSync that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1027,7 +1027,7 @@ public java.lang.String getIntegrationName();
 
 The Vault Secrets integration name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#integration_name VaultSecretsSync#integration_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#integration_name VaultSecretsSync#integration_name}
 
 ---
 
@@ -1041,7 +1041,7 @@ public java.lang.String getName();
 
 The Vault Secrets Sync name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#name VaultSecretsSync#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#name VaultSecretsSync#name}
 
 ---
 
@@ -1055,7 +1055,7 @@ public VaultSecretsSyncGitlabConfig getGitlabConfig();
 
 Configuration parameters used to determine the sync destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#gitlab_config VaultSecretsSync#gitlab_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#gitlab_config VaultSecretsSync#gitlab_config}
 
 ---
 
@@ -1069,7 +1069,7 @@ public java.lang.String getProjectId();
 
 HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#project_id VaultSecretsSync#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#project_id VaultSecretsSync#project_id}
 
 ---
 
@@ -1107,7 +1107,7 @@ public java.lang.String getGroupId();
 
 ID of the group, if the scope is GROUP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#group_id VaultSecretsSync#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#group_id VaultSecretsSync#group_id}
 
 ---
 
@@ -1121,7 +1121,7 @@ public java.lang.String getProjectId();
 
 ID of the project, if the scope is PROJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#project_id VaultSecretsSync#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#project_id VaultSecretsSync#project_id}
 
 ---
 
@@ -1135,7 +1135,7 @@ public java.lang.String getScope();
 
 The scope to which sync applies. Defaults to GROUP. The valid options are GROUP and PROJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_sync#scope VaultSecretsSync#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_sync#scope VaultSecretsSync#scope}
 
 ---
 

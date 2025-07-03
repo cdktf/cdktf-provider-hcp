@@ -4,7 +4,7 @@
 
 ### VaultSecretsIntegrationAzure <a name="VaultSecretsIntegrationAzure" id="@cdktf/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzure"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure hcp_vault_secrets_integration_azure}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure hcp_vault_secrets_integration_azure}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegrationAzure.VaultSecretsIntegrationAzure.Initializer"></a>
 
@@ -514,7 +514,7 @@ The construct id used in the generated config for the VaultSecretsIntegrationAzu
 
 The id of the existing VaultSecretsIntegrationAzure that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,7 +882,7 @@ public readonly clientId: string;
 
 Azure client ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#client_id VaultSecretsIntegrationAzure#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#client_id VaultSecretsIntegrationAzure#client_id}
 
 ---
 
@@ -896,7 +896,7 @@ public readonly clientSecret: string;
 
 Secret value corresponding to the Azure client secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#client_secret VaultSecretsIntegrationAzure#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#client_secret VaultSecretsIntegrationAzure#client_secret}
 
 ---
 
@@ -910,7 +910,7 @@ public readonly tenantId: string;
 
 Azure tenant ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#tenant_id VaultSecretsIntegrationAzure#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#tenant_id VaultSecretsIntegrationAzure#tenant_id}
 
 ---
 
@@ -1023,7 +1023,7 @@ public readonly capabilities: string[];
 
 Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#capabilities VaultSecretsIntegrationAzure#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#capabilities VaultSecretsIntegrationAzure#capabilities}
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly name: string;
 
 The Vault Secrets integration name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#name VaultSecretsIntegrationAzure#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#name VaultSecretsIntegrationAzure#name}
 
 ---
 
@@ -1051,7 +1051,7 @@ public readonly clientSecret: VaultSecretsIntegrationAzureClientSecretA;
 
 Azure client secret used to authenticate against the target Azure application. Cannot be used with `federated_workload_identity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#client_secret VaultSecretsIntegrationAzure#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#client_secret VaultSecretsIntegrationAzure#client_secret}
 
 ---
 
@@ -1065,7 +1065,7 @@ public readonly federatedWorkloadIdentity: VaultSecretsIntegrationAzureFederated
 
 (Recommended) Federated identity configuration to authenticate against the target Azure application. Cannot be used with `client_secret`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#federated_workload_identity VaultSecretsIntegrationAzure#federated_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#federated_workload_identity VaultSecretsIntegrationAzure#federated_workload_identity}
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly projectId: string;
 
 HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#project_id VaultSecretsIntegrationAzure#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#project_id VaultSecretsIntegrationAzure#project_id}
 
 ---
 
@@ -1113,7 +1113,7 @@ public readonly audience: string;
 
 Audience configured on the Azure federated identity credentials to federate access with HCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#audience VaultSecretsIntegrationAzure#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#audience VaultSecretsIntegrationAzure#audience}
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly clientId: string;
 
 Azure client ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#client_id VaultSecretsIntegrationAzure#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#client_id VaultSecretsIntegrationAzure#client_id}
 
 ---
 
@@ -1141,7 +1141,7 @@ public readonly tenantId: string;
 
 Azure tenant ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#tenant_id VaultSecretsIntegrationAzure#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#tenant_id VaultSecretsIntegrationAzure#tenant_id}
 
 ---
 
