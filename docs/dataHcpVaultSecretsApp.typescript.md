@@ -4,7 +4,7 @@
 
 ### DataHcpVaultSecretsApp <a name="DataHcpVaultSecretsApp" id="@cdktf/provider-hcp.dataHcpVaultSecretsApp.DataHcpVaultSecretsApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpVaultSecretsApp.DataHcpVaultSecretsApp.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataHcpVaultSecretsApp to 
 
 The id of the existing DataHcpVaultSecretsApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/data-sources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/vault_secrets_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -709,7 +709,7 @@ public readonly appName: string;
 
 The name of the Vault Secrets application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/data-sources/vault_secrets_app#app_name DataHcpVaultSecretsApp#app_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/vault_secrets_app#app_name DataHcpVaultSecretsApp#app_name}
 
 ---
 

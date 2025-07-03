@@ -41,6 +41,8 @@ export * as vaultRadarIntegrationJiraConnection from './vault-radar-integration-
 export * as vaultRadarIntegrationJiraSubscription from './vault-radar-integration-jira-subscription';
 export * as vaultRadarIntegrationSlackConnection from './vault-radar-integration-slack-connection';
 export * as vaultRadarIntegrationSlackSubscription from './vault-radar-integration-slack-subscription';
+export * as vaultRadarResourceIamBinding from './vault-radar-resource-iam-binding';
+export * as vaultRadarResourceIamPolicy from './vault-radar-resource-iam-policy';
 export * as vaultRadarSourceGithubCloud from './vault-radar-source-github-cloud';
 export * as vaultRadarSourceGithubEnterprise from './vault-radar-source-github-enterprise';
 export * as vaultSecretsApp from './vault-secrets-app';
@@ -86,6 +88,7 @@ export * as dataHcpServicePrincipal from './data-hcp-service-principal';
 export * as dataHcpUserPrincipal from './data-hcp-user-principal';
 export * as dataHcpVaultCluster from './data-hcp-vault-cluster';
 export * as dataHcpVaultPlugin from './data-hcp-vault-plugin';
+export * as dataHcpVaultRadarResources from './data-hcp-vault-radar-resources';
 export * as dataHcpVaultSecretsApp from './data-hcp-vault-secrets-app';
 export * as dataHcpVaultSecretsDynamicSecret from './data-hcp-vault-secrets-dynamic-secret';
 export * as dataHcpVaultSecretsRotatingSecret from './data-hcp-vault-secrets-rotating-secret';

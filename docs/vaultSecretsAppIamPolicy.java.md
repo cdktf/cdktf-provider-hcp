@@ -4,7 +4,7 @@
 
 ### VaultSecretsAppIamPolicy <a name="VaultSecretsAppIamPolicy" id="@cdktf/provider-hcp.vaultSecretsAppIamPolicy.VaultSecretsAppIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_app_iam_policy hcp_vault_secrets_app_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_app_iam_policy hcp_vault_secrets_app_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsAppIamPolicy.VaultSecretsAppIamPolicy.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_app_iam_policy#policy_data VaultSecretsAppIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_app_iam_policy#policy_data VaultSecretsAppIamPolicy#policy_data}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The app's resource name in the format secrets/project/<project ID>/app/<app Name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_app_iam_policy#resource_name VaultSecretsAppIamPolicy#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_app_iam_policy#resource_name VaultSecretsAppIamPolicy#resource_name}
 
 ---
 
@@ -547,7 +547,7 @@ The construct id used in the generated config for the VaultSecretsAppIamPolicy t
 
 The id of the existing VaultSecretsAppIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_app_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_app_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ public java.lang.String getPolicyData();
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_app_iam_policy#policy_data VaultSecretsAppIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_app_iam_policy#policy_data VaultSecretsAppIamPolicy#policy_data}
 
 ---
 
@@ -931,7 +931,7 @@ public java.lang.String getResourceName();
 
 The app's resource name in the format secrets/project/<project ID>/app/<app Name>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_app_iam_policy#resource_name VaultSecretsAppIamPolicy#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_app_iam_policy#resource_name VaultSecretsAppIamPolicy#resource_name}
 
 ---
 

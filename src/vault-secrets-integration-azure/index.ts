@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure
+// https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface VaultSecretsIntegrationAzureConfig extends cdktf.TerraformMetaA
   /**
   * Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#capabilities VaultSecretsIntegrationAzure#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#capabilities VaultSecretsIntegrationAzure#capabilities}
   */
   readonly capabilities: string[];
   /**
   * Azure client secret used to authenticate against the target Azure application. Cannot be used with `federated_workload_identity`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#client_secret VaultSecretsIntegrationAzure#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#client_secret VaultSecretsIntegrationAzure#client_secret}
   */
   readonly clientSecret?: VaultSecretsIntegrationAzureClientSecretA;
   /**
   * (Recommended) Federated identity configuration to authenticate against the target Azure application. Cannot be used with `client_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#federated_workload_identity VaultSecretsIntegrationAzure#federated_workload_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#federated_workload_identity VaultSecretsIntegrationAzure#federated_workload_identity}
   */
   readonly federatedWorkloadIdentity?: VaultSecretsIntegrationAzureFederatedWorkloadIdentityA;
   /**
   * The Vault Secrets integration name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#name VaultSecretsIntegrationAzure#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#name VaultSecretsIntegrationAzure#name}
   */
   readonly name: string;
   /**
   * HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#project_id VaultSecretsIntegrationAzure#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#project_id VaultSecretsIntegrationAzure#project_id}
   */
   readonly projectId?: string;
 }
@@ -47,19 +47,19 @@ export interface VaultSecretsIntegrationAzureClientSecretA {
   /**
   * Azure client ID corresponding to the Azure application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#client_id VaultSecretsIntegrationAzure#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#client_id VaultSecretsIntegrationAzure#client_id}
   */
   readonly clientId: string;
   /**
   * Secret value corresponding to the Azure client secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#client_secret VaultSecretsIntegrationAzure#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#client_secret VaultSecretsIntegrationAzure#client_secret}
   */
   readonly clientSecret: string;
   /**
   * Azure tenant ID corresponding to the Azure application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#tenant_id VaultSecretsIntegrationAzure#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#tenant_id VaultSecretsIntegrationAzure#tenant_id}
   */
   readonly tenantId: string;
 }
@@ -204,19 +204,19 @@ export interface VaultSecretsIntegrationAzureFederatedWorkloadIdentityA {
   /**
   * Audience configured on the Azure federated identity credentials to federate access with HCP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#audience VaultSecretsIntegrationAzure#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#audience VaultSecretsIntegrationAzure#audience}
   */
   readonly audience: string;
   /**
   * Azure client ID corresponding to the Azure application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#client_id VaultSecretsIntegrationAzure#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#client_id VaultSecretsIntegrationAzure#client_id}
   */
   readonly clientId: string;
   /**
   * Azure tenant ID corresponding to the Azure application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#tenant_id VaultSecretsIntegrationAzure#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#tenant_id VaultSecretsIntegrationAzure#tenant_id}
   */
   readonly tenantId: string;
 }
@@ -359,7 +359,7 @@ export class VaultSecretsIntegrationAzureFederatedWorkloadIdentityAOutputReferen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure hcp_vault_secrets_integration_azure}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure hcp_vault_secrets_integration_azure}
 */
 export class VaultSecretsIntegrationAzure extends cdktf.TerraformResource {
 
@@ -375,7 +375,7 @@ export class VaultSecretsIntegrationAzure extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultSecretsIntegrationAzure resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsIntegrationAzure to import
-  * @param importFromId The id of the existing VaultSecretsIntegrationAzure that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultSecretsIntegrationAzure that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsIntegrationAzure to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -387,7 +387,7 @@ export class VaultSecretsIntegrationAzure extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs/resources/vault_secrets_integration_azure hcp_vault_secrets_integration_azure} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_secrets_integration_azure hcp_vault_secrets_integration_azure} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -398,7 +398,7 @@ export class VaultSecretsIntegrationAzure extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_secrets_integration_azure',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.107.0',
+        providerVersion: '0.108.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

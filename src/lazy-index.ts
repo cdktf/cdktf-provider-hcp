@@ -41,6 +41,8 @@ Object.defineProperty(exports, 'vaultRadarIntegrationJiraConnection', { get: fun
 Object.defineProperty(exports, 'vaultRadarIntegrationJiraSubscription', { get: function () { return require('./vault-radar-integration-jira-subscription'); } });
 Object.defineProperty(exports, 'vaultRadarIntegrationSlackConnection', { get: function () { return require('./vault-radar-integration-slack-connection'); } });
 Object.defineProperty(exports, 'vaultRadarIntegrationSlackSubscription', { get: function () { return require('./vault-radar-integration-slack-subscription'); } });
+Object.defineProperty(exports, 'vaultRadarResourceIamBinding', { get: function () { return require('./vault-radar-resource-iam-binding'); } });
+Object.defineProperty(exports, 'vaultRadarResourceIamPolicy', { get: function () { return require('./vault-radar-resource-iam-policy'); } });
 Object.defineProperty(exports, 'vaultRadarSourceGithubCloud', { get: function () { return require('./vault-radar-source-github-cloud'); } });
 Object.defineProperty(exports, 'vaultRadarSourceGithubEnterprise', { get: function () { return require('./vault-radar-source-github-enterprise'); } });
 Object.defineProperty(exports, 'vaultSecretsApp', { get: function () { return require('./vault-secrets-app'); } });
@@ -86,6 +88,7 @@ Object.defineProperty(exports, 'dataHcpServicePrincipal', { get: function () { r
 Object.defineProperty(exports, 'dataHcpUserPrincipal', { get: function () { return require('./data-hcp-user-principal'); } });
 Object.defineProperty(exports, 'dataHcpVaultCluster', { get: function () { return require('./data-hcp-vault-cluster'); } });
 Object.defineProperty(exports, 'dataHcpVaultPlugin', { get: function () { return require('./data-hcp-vault-plugin'); } });
+Object.defineProperty(exports, 'dataHcpVaultRadarResources', { get: function () { return require('./data-hcp-vault-radar-resources'); } });
 Object.defineProperty(exports, 'dataHcpVaultSecretsApp', { get: function () { return require('./data-hcp-vault-secrets-app'); } });
 Object.defineProperty(exports, 'dataHcpVaultSecretsDynamicSecret', { get: function () { return require('./data-hcp-vault-secrets-dynamic-secret'); } });
 Object.defineProperty(exports, 'dataHcpVaultSecretsRotatingSecret', { get: function () { return require('./data-hcp-vault-secrets-rotating-secret'); } });
