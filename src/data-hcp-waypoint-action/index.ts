@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/waypoint_action
+// https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/waypoint_action
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataHcpWaypointActionConfig extends cdktf.TerraformMetaArgument
   /**
   * The ID of the Action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/waypoint_action#id DataHcpWaypointAction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/waypoint_action#id DataHcpWaypointAction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,15 +24,88 @@ export interface DataHcpWaypointActionConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of the Action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/waypoint_action#name DataHcpWaypointAction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/waypoint_action#name DataHcpWaypointAction#name}
   */
   readonly name?: string;
+}
+export interface DataHcpWaypointActionRequestAgent {
+}
+
+export function dataHcpWaypointActionRequestAgentToTerraform(struct?: DataHcpWaypointActionRequestAgent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataHcpWaypointActionRequestAgentToHclTerraform(struct?: DataHcpWaypointActionRequestAgent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataHcpWaypointActionRequestAgentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
   /**
-  * The ID of the HCP project where the Waypoint Action is located.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/waypoint_action#project_id DataHcpWaypointAction#project_id}
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  readonly projectId?: string;
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataHcpWaypointActionRequestAgent | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataHcpWaypointActionRequestAgent | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // action_run_id - computed: true, optional: false, required: false
+  public get actionRunId() {
+    return this.getStringAttribute('action_run_id');
+  }
+
+  // body - computed: true, optional: false, required: false
+  public get body() {
+    return this.getStringAttribute('body');
+  }
+
+  // group - computed: true, optional: false, required: false
+  public get group() {
+    return this.getStringAttribute('group');
+  }
+
+  // operation_id - computed: true, optional: false, required: false
+  public get operationId() {
+    return this.getStringAttribute('operation_id');
+  }
 }
 export interface DataHcpWaypointActionRequestCustom {
 }
@@ -105,6 +178,12 @@ export class DataHcpWaypointActionRequestCustomOutputReference extends cdktf.Com
   }
 }
 export interface DataHcpWaypointActionRequest {
+  /**
+  * Agent mode allows users to define the agent to use for the request.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/waypoint_action#agent DataHcpWaypointAction#agent}
+  */
+  readonly agent?: DataHcpWaypointActionRequestAgent;
 }
 
 export function dataHcpWaypointActionRequestToTerraform(struct?: DataHcpWaypointActionRequest): any {
@@ -113,6 +192,7 @@ export function dataHcpWaypointActionRequestToTerraform(struct?: DataHcpWaypoint
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    agent: dataHcpWaypointActionRequestAgentToTerraform(struct!.agent),
   }
 }
 
@@ -123,8 +203,16 @@ export function dataHcpWaypointActionRequestToHclTerraform(struct?: DataHcpWaypo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    agent: {
+      value: dataHcpWaypointActionRequestAgentToHclTerraform(struct!.agent),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataHcpWaypointActionRequestAgent",
+    },
   };
-  return attrs;
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataHcpWaypointActionRequestOutputReference extends cdktf.ComplexObject {
@@ -141,16 +229,38 @@ export class DataHcpWaypointActionRequestOutputReference extends cdktf.ComplexOb
   public get internalValue(): DataHcpWaypointActionRequest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._agent?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.agent = this._agent?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: DataHcpWaypointActionRequest | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._agent.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._agent.internalValue = value.agent;
     }
+  }
+
+  // agent - computed: true, optional: true, required: false
+  private _agent = new DataHcpWaypointActionRequestAgentOutputReference(this, "agent");
+  public get agent() {
+    return this._agent;
+  }
+  public putAgent(value: DataHcpWaypointActionRequestAgent) {
+    this._agent.internalValue = value;
+  }
+  public resetAgent() {
+    this._agent.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get agentInput() {
+    return this._agent.internalValue;
   }
 
   // custom - computed: true, optional: false, required: false
@@ -161,7 +271,7 @@ export class DataHcpWaypointActionRequestOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/waypoint_action hcp_waypoint_action}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/waypoint_action hcp_waypoint_action}
 */
 export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
 
@@ -177,7 +287,7 @@ export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpWaypointAction resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpWaypointAction to import
-  * @param importFromId The id of the existing DataHcpWaypointAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/waypoint_action#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpWaypointAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/waypoint_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpWaypointAction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -189,7 +299,7 @@ export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/data-sources/waypoint_action hcp_waypoint_action} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/waypoint_action hcp_waypoint_action} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -200,7 +310,7 @@ export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_waypoint_action',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.108.0',
+        providerVersion: '0.109.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
@@ -213,7 +323,6 @@ export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
     });
     this._id = config.id;
     this._name = config.name;
-    this._projectId = config.projectId;
   }
 
   // ==========
@@ -262,20 +371,9 @@ export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
     return this.getStringAttribute('organization_id');
   }
 
-  // project_id - computed: true, optional: true, required: false
-  private _projectId?: string; 
+  // project_id - computed: true, optional: false, required: false
   public get projectId() {
     return this.getStringAttribute('project_id');
-  }
-  public set projectId(value: string) {
-    this._projectId = value;
-  }
-  public resetProjectId() {
-    this._projectId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get projectIdInput() {
-    return this._projectId;
   }
 
   // request - computed: true, optional: false, required: false
@@ -292,7 +390,6 @@ export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      project_id: cdktf.stringToTerraform(this._projectId),
     };
   }
 
@@ -306,12 +403,6 @@ export class DataHcpWaypointAction extends cdktf.TerraformDataSource {
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
