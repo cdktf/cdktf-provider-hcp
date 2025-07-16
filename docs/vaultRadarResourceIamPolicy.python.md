@@ -4,7 +4,7 @@
 
 ### VaultRadarResourceIamPolicy <a name="VaultRadarResourceIamPolicy" id="@cdktf/provider-hcp.vaultRadarResourceIamPolicy.VaultRadarResourceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_radar_resource_iam_policy hcp_vault_radar_resource_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_radar_resource_iam_policy hcp_vault_radar_resource_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultRadarResourceIamPolicy.VaultRadarResourceIamPolicy.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_radar_resource_iam_policy#policy_data VaultRadarResourceIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_radar_resource_iam_policy#policy_data VaultRadarResourceIamPolicy#policy_data}
 
 ---
 
@@ -120,7 +120,7 @@ The HCP resource name associated with the Radar resource.
 
 This is the name of the resource in the format `vault-radar/project/<project_id>/scan-target/<scan_target_id>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_radar_resource_iam_policy#resource_name VaultRadarResourceIamPolicy#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_radar_resource_iam_policy#resource_name VaultRadarResourceIamPolicy#resource_name}
 
 ---
 
@@ -593,7 +593,7 @@ The construct id used in the generated config for the VaultRadarResourceIamPolic
 
 The id of the existing VaultRadarResourceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_radar_resource_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_radar_resource_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -959,7 +959,7 @@ policy_data: str
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_radar_resource_iam_policy#policy_data VaultRadarResourceIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_radar_resource_iam_policy#policy_data VaultRadarResourceIamPolicy#policy_data}
 
 ---
 
@@ -975,7 +975,7 @@ The HCP resource name associated with the Radar resource.
 
 This is the name of the resource in the format `vault-radar/project/<project_id>/scan-target/<scan_target_id>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/vault_radar_resource_iam_policy#resource_name VaultRadarResourceIamPolicy#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_radar_resource_iam_policy#resource_name VaultRadarResourceIamPolicy#resource_name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### WaypointAction <a name="WaypointAction" id="@cdktf/provider-hcp.waypointAction.WaypointAction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action hcp_waypoint_action}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action hcp_waypoint_action}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointAction.WaypointAction.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the WaypointAction to import.
 
 The id of the existing WaypointAction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,7 +919,7 @@ public string Name { get; set; }
 
 The name of the Action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action#name WaypointAction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#name WaypointAction#name}
 
 ---
 
@@ -933,7 +933,7 @@ public WaypointActionRequest Request { get; set; }
 
 The kind of HTTP request this should trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action#request WaypointAction#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#request WaypointAction#request}
 
 ---
 
@@ -947,7 +947,7 @@ public string Description { get; set; }
 
 A description of the Action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action#description WaypointAction#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#description WaypointAction#description}
 
 ---
 
@@ -961,7 +961,7 @@ public string ProjectId { get; set; }
 
 The ID of the HCP project where the Action is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action#project_id WaypointAction#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#project_id WaypointAction#project_id}
 
 ---
 
@@ -973,6 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Hcp;
 
 new WaypointActionRequest {
+    WaypointActionRequestAgent Agent = null,
     WaypointActionRequestCustom Custom = null
 };
 ```
@@ -981,7 +982,22 @@ new WaypointActionRequest {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest.property.agent">Agent</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a></code> | Agent mode allows users to define the agent to use for the request. |
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequest.property.custom">Custom</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a></code> | Custom mode allows users to define the HTTP method, the request body, etc. |
+
+---
+
+##### `Agent`<sup>Optional</sup> <a name="Agent" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequest.property.agent"></a>
+
+```csharp
+public WaypointActionRequestAgent Agent { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a>
+
+Agent mode allows users to define the agent to use for the request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#agent WaypointAction#agent}
 
 ---
 
@@ -995,7 +1011,89 @@ public WaypointActionRequestCustom Custom { get; set; }
 
 Custom mode allows users to define the HTTP method, the request body, etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action#custom WaypointAction#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#custom WaypointAction#custom}
+
+---
+
+### WaypointActionRequestAgent <a name="WaypointActionRequestAgent" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Hcp;
+
+new WaypointActionRequestAgent {
+    string Group,
+    string OperationId,
+    string ActionRunId = null,
+    string Body = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.group">Group</a></code> | <code>string</code> | The name of the group that the operation is in. |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.operationId">OperationId</a></code> | <code>string</code> | The identifying name of the operation in the agent config file. |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.actionRunId">ActionRunId</a></code> | <code>string</code> | An optional action run id. If specified the agent will interact with the actions subsystem. |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.body">Body</a></code> | <code>string</code> | Arguments to the operation, specified as JSON. |
+
+---
+
+##### `Group`<sup>Required</sup> <a name="Group" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.group"></a>
+
+```csharp
+public string Group { get; set; }
+```
+
+- *Type:* string
+
+The name of the group that the operation is in.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#group WaypointAction#group}
+
+---
+
+##### `OperationId`<sup>Required</sup> <a name="OperationId" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.operationId"></a>
+
+```csharp
+public string OperationId { get; set; }
+```
+
+- *Type:* string
+
+The identifying name of the operation in the agent config file.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#operation_id WaypointAction#operation_id}
+
+---
+
+##### `ActionRunId`<sup>Optional</sup> <a name="ActionRunId" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.actionRunId"></a>
+
+```csharp
+public string ActionRunId { get; set; }
+```
+
+- *Type:* string
+
+An optional action run id. If specified the agent will interact with the actions subsystem.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#action_run_id WaypointAction#action_run_id}
+
+---
+
+##### `Body`<sup>Optional</sup> <a name="Body" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent.property.body"></a>
+
+```csharp
+public string Body { get; set; }
+```
+
+- *Type:* string
+
+Arguments to the operation, specified as JSON.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#body WaypointAction#body}
 
 ---
 
@@ -1035,7 +1133,7 @@ public string Method { get; set; }
 
 The HTTP method to use for the request. Must be one of: 'GET', 'POST', 'PUT', 'DELETE', or 'PATCH'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action#method WaypointAction#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#method WaypointAction#method}
 
 ---
 
@@ -1049,7 +1147,7 @@ public string Body { get; set; }
 
 The body to be submitted with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action#body WaypointAction#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#body WaypointAction#body}
 
 ---
 
@@ -1063,7 +1161,7 @@ public System.Collections.Generic.IDictionary<string, string> Headers { get; set
 
 Key value headers to send with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action#headers WaypointAction#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#headers WaypointAction#headers}
 
 ---
 
@@ -1077,11 +1175,362 @@ public string Url { get; set; }
 
 The full URL this request should make when invoked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/waypoint_action#url WaypointAction#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/waypoint_action#url WaypointAction#url}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### WaypointActionRequestAgentOutputReference <a name="WaypointActionRequestAgentOutputReference" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Hcp;
+
+new WaypointActionRequestAgentOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetActionRunId">ResetActionRunId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetBody">ResetBody</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetActionRunId` <a name="ResetActionRunId" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetActionRunId"></a>
+
+```csharp
+private void ResetActionRunId()
+```
+
+##### `ResetBody` <a name="ResetBody" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.resetBody"></a>
+
+```csharp
+private void ResetBody()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunIdInput">ActionRunIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.bodyInput">BodyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.groupInput">GroupInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationIdInput">OperationIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunId">ActionRunId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.body">Body</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.group">Group</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationId">OperationId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ActionRunIdInput`<sup>Optional</sup> <a name="ActionRunIdInput" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunIdInput"></a>
+
+```csharp
+public string ActionRunIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BodyInput`<sup>Optional</sup> <a name="BodyInput" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.bodyInput"></a>
+
+```csharp
+public string BodyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `GroupInput`<sup>Optional</sup> <a name="GroupInput" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.groupInput"></a>
+
+```csharp
+public string GroupInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OperationIdInput`<sup>Optional</sup> <a name="OperationIdInput" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationIdInput"></a>
+
+```csharp
+public string OperationIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ActionRunId`<sup>Required</sup> <a name="ActionRunId" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.actionRunId"></a>
+
+```csharp
+public string ActionRunId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Body`<sup>Required</sup> <a name="Body" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.body"></a>
+
+```csharp
+public string Body { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Group`<sup>Required</sup> <a name="Group" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.group"></a>
+
+```csharp
+public string Group { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OperationId`<sup>Required</sup> <a name="OperationId" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.operationId"></a>
+
+```csharp
+public string OperationId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
 
 ### WaypointActionRequestCustomOutputReference <a name="WaypointActionRequestCustomOutputReference" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference"></a>
 
@@ -1491,7 +1940,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent">PutAgent</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom">PutCustom</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetAgent">ResetAgent</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetCustom">ResetCustom</a></code> | *No description.* |
 
 ---
@@ -1646,6 +2097,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutAgent` <a name="PutAgent" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent"></a>
+
+```csharp
+private void PutAgent(WaypointActionRequestAgent Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putAgent.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgent">WaypointActionRequestAgent</a>
+
+---
+
 ##### `PutCustom` <a name="PutCustom" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.putCustom"></a>
 
 ```csharp
@@ -1657,6 +2120,12 @@ private void PutCustom(WaypointActionRequestCustom Value)
 - *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustom">WaypointActionRequestCustom</a>
 
 ---
+
+##### `ResetAgent` <a name="ResetAgent" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetAgent"></a>
+
+```csharp
+private void ResetAgent()
+```
 
 ##### `ResetCustom` <a name="ResetCustom" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.resetCustom"></a>
 
@@ -1671,7 +2140,9 @@ private void ResetCustom()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agent">Agent</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference">WaypointActionRequestAgentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.custom">Custom</a></code> | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference">WaypointActionRequestCustomOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agentInput">AgentInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.customInput">CustomInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
 
@@ -1701,6 +2172,16 @@ public string Fqn { get; }
 
 ---
 
+##### `Agent`<sup>Required</sup> <a name="Agent" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agent"></a>
+
+```csharp
+public WaypointActionRequestAgentOutputReference Agent { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestAgentOutputReference">WaypointActionRequestAgentOutputReference</a>
+
+---
+
 ##### `Custom`<sup>Required</sup> <a name="Custom" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.custom"></a>
 
 ```csharp
@@ -1708,6 +2189,16 @@ public WaypointActionRequestCustomOutputReference Custom { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-hcp.waypointAction.WaypointActionRequestCustomOutputReference">WaypointActionRequestCustomOutputReference</a>
+
+---
+
+##### `AgentInput`<sup>Optional</sup> <a name="AgentInput" id="@cdktf/provider-hcp.waypointAction.WaypointActionRequestOutputReference.property.agentInput"></a>
+
+```csharp
+public object AgentInput { get; }
+```
+
+- *Type:* object
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### OrganizationIamBinding <a name="OrganizationIamBinding" id="@cdktf/provider-hcp.organizationIamBinding.OrganizationIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/organization_iam_binding hcp_organization_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/organization_iam_binding hcp_organization_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.organizationIamBinding.OrganizationIamBinding.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the OrganizationIamBinding to 
 
 The id of the existing OrganizationIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/organization_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/organization_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ PrincipalId *string
 
 The principal to bind to the given role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/organization_iam_binding#principal_id OrganizationIamBinding#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/organization_iam_binding#principal_id OrganizationIamBinding#principal_id}
 
 ---
 
@@ -836,7 +836,7 @@ Role *string
 
 The role name to bind to the given principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.108.0/docs/resources/organization_iam_binding#role OrganizationIamBinding#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/organization_iam_binding#role OrganizationIamBinding#role}
 
 ---
 
