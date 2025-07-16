@@ -62,6 +62,7 @@ Object.defineProperty(exports, 'vaultSecretsSync', { get: function () { return r
 Object.defineProperty(exports, 'waypointAction', { get: function () { return require('./waypoint-action'); } });
 Object.defineProperty(exports, 'waypointAddOn', { get: function () { return require('./waypoint-add-on'); } });
 Object.defineProperty(exports, 'waypointAddOnDefinition', { get: function () { return require('./waypoint-add-on-definition'); } });
+Object.defineProperty(exports, 'waypointAgentGroup', { get: function () { return require('./waypoint-agent-group'); } });
 Object.defineProperty(exports, 'waypointApplication', { get: function () { return require('./waypoint-application'); } });
 Object.defineProperty(exports, 'waypointTemplate', { get: function () { return require('./waypoint-template'); } });
 Object.defineProperty(exports, 'waypointTfcConfig', { get: function () { return require('./waypoint-tfc-config'); } });
@@ -96,6 +97,7 @@ Object.defineProperty(exports, 'dataHcpVaultSecretsSecret', { get: function () {
 Object.defineProperty(exports, 'dataHcpWaypointAction', { get: function () { return require('./data-hcp-waypoint-action'); } });
 Object.defineProperty(exports, 'dataHcpWaypointAddOn', { get: function () { return require('./data-hcp-waypoint-add-on'); } });
 Object.defineProperty(exports, 'dataHcpWaypointAddOnDefinition', { get: function () { return require('./data-hcp-waypoint-add-on-definition'); } });
+Object.defineProperty(exports, 'dataHcpWaypointAgentGroup', { get: function () { return require('./data-hcp-waypoint-agent-group'); } });
 Object.defineProperty(exports, 'dataHcpWaypointApplication', { get: function () { return require('./data-hcp-waypoint-application'); } });
 Object.defineProperty(exports, 'dataHcpWaypointTemplate', { get: function () { return require('./data-hcp-waypoint-template'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
