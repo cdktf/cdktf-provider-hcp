@@ -4,7 +4,7 @@
 
 ### VaultSecretsIntegration <a name="VaultSecretsIntegration" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration hcp_vault_secrets_integration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration hcp_vault_secrets_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegration.Initializer"></a>
 
@@ -674,7 +674,7 @@ The construct id used in the generated config for the VaultSecretsIntegration to
 
 The id of the existing VaultSecretsIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly accessKeyId: string;
 
 Key ID used with the secret key to authenticate against the target AWS account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#access_key_id VaultSecretsIntegration#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#access_key_id VaultSecretsIntegration#access_key_id}
 
 ---
 
@@ -1253,7 +1253,7 @@ public readonly secretAccessKey: string;
 
 Secret key used with the key ID to authenticate against the target AWS account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#secret_access_key VaultSecretsIntegration#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#secret_access_key VaultSecretsIntegration#secret_access_key}
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly audience: string;
 
 Audience configured on the AWS IAM identity provider to federate access with HCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
 
 ---
 
@@ -1300,7 +1300,7 @@ public readonly roleArn: string;
 
 AWS IAM role ARN the integration will assume to carry operations for the appropriate capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#role_arn VaultSecretsIntegration#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#role_arn VaultSecretsIntegration#role_arn}
 
 ---
 
@@ -1334,7 +1334,7 @@ public readonly clientId: string;
 
 Azure client ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#client_id VaultSecretsIntegration#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#client_id VaultSecretsIntegration#client_id}
 
 ---
 
@@ -1348,7 +1348,7 @@ public readonly clientSecret: string;
 
 Secret value corresponding to the Azure client secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#client_secret VaultSecretsIntegration#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#client_secret VaultSecretsIntegration#client_secret}
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly tenantId: string;
 
 Azure tenant ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#tenant_id VaultSecretsIntegration#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#tenant_id VaultSecretsIntegration#tenant_id}
 
 ---
 
@@ -1396,7 +1396,7 @@ public readonly audience: string;
 
 Audience configured on the Azure federated identity credentials to federate access with HCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
 
 ---
 
@@ -1410,7 +1410,7 @@ public readonly clientId: string;
 
 Azure client ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#client_id VaultSecretsIntegration#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#client_id VaultSecretsIntegration#client_id}
 
 ---
 
@@ -1424,7 +1424,7 @@ public readonly tenantId: string;
 
 Azure tenant ID corresponding to the Azure application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#tenant_id VaultSecretsIntegration#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#tenant_id VaultSecretsIntegration#tenant_id}
 
 ---
 
@@ -1546,7 +1546,7 @@ public readonly capabilities: string[];
 
 Capabilities enabled for the integration. See the Vault Secrets documentation for the list of supported capabilities per provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#capabilities VaultSecretsIntegration#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#capabilities VaultSecretsIntegration#capabilities}
 
 ---
 
@@ -1560,7 +1560,7 @@ public readonly name: string;
 
 The Vault Secrets integration name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#name VaultSecretsIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#name VaultSecretsIntegration#name}
 
 ---
 
@@ -1574,7 +1574,7 @@ public readonly providerType: string;
 
 The provider or 3rd party platform the integration is for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#provider_type VaultSecretsIntegration#provider_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#provider_type VaultSecretsIntegration#provider_type}
 
 ---
 
@@ -1588,7 +1588,7 @@ public readonly awsAccessKeys: VaultSecretsIntegrationAwsAccessKeys;
 
 AWS IAM key pair used to authenticate against the target AWS account. Cannot be used with `federated_workload_identity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#aws_access_keys VaultSecretsIntegration#aws_access_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#aws_access_keys VaultSecretsIntegration#aws_access_keys}
 
 ---
 
@@ -1602,7 +1602,7 @@ public readonly awsFederatedWorkloadIdentity: VaultSecretsIntegrationAwsFederate
 
 (Recommended) Federated identity configuration to authenticate against the target AWS account. Cannot be used with `access_keys`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#aws_federated_workload_identity VaultSecretsIntegration#aws_federated_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#aws_federated_workload_identity VaultSecretsIntegration#aws_federated_workload_identity}
 
 ---
 
@@ -1616,7 +1616,7 @@ public readonly azureClientSecret: VaultSecretsIntegrationAzureClientSecret;
 
 Azure client secret used to authenticate against the target Azure application. Cannot be used with `federated_workload_identity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#azure_client_secret VaultSecretsIntegration#azure_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#azure_client_secret VaultSecretsIntegration#azure_client_secret}
 
 ---
 
@@ -1630,7 +1630,7 @@ public readonly azureFederatedWorkloadIdentity: VaultSecretsIntegrationAzureFede
 
 (Recommended) Federated identity configuration to authenticate against the target Azure application. Cannot be used with `client_secret`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#azure_federated_workload_identity VaultSecretsIntegration#azure_federated_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#azure_federated_workload_identity VaultSecretsIntegration#azure_federated_workload_identity}
 
 ---
 
@@ -1644,7 +1644,7 @@ public readonly confluentStaticCredentials: VaultSecretsIntegrationConfluentStat
 
 Confluent API key used to authenticate for cloud apis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#confluent_static_credentials VaultSecretsIntegration#confluent_static_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#confluent_static_credentials VaultSecretsIntegration#confluent_static_credentials}
 
 ---
 
@@ -1658,7 +1658,7 @@ public readonly gcpFederatedWorkloadIdentity: VaultSecretsIntegrationGcpFederate
 
 (Recommended) Federated identity configuration to authenticate against the target GCP project. Cannot be used with `service_account_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#gcp_federated_workload_identity VaultSecretsIntegration#gcp_federated_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#gcp_federated_workload_identity VaultSecretsIntegration#gcp_federated_workload_identity}
 
 ---
 
@@ -1672,7 +1672,7 @@ public readonly gcpServiceAccountKey: VaultSecretsIntegrationGcpServiceAccountKe
 
 GCP service account key used to authenticate against the target GCP project. Cannot be used with `federated_workload_identity`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#gcp_service_account_key VaultSecretsIntegration#gcp_service_account_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#gcp_service_account_key VaultSecretsIntegration#gcp_service_account_key}
 
 ---
 
@@ -1686,7 +1686,7 @@ public readonly gitlabAccess: VaultSecretsIntegrationGitlabAccess;
 
 GitLab access token used to authenticate against the target GitLab account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#gitlab_access VaultSecretsIntegration#gitlab_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#gitlab_access VaultSecretsIntegration#gitlab_access}
 
 ---
 
@@ -1700,7 +1700,7 @@ public readonly mongodbAtlasStaticCredentials: VaultSecretsIntegrationMongodbAtl
 
 MongoDB Atlas API key used to authenticate against the target project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#mongodb_atlas_static_credentials VaultSecretsIntegration#mongodb_atlas_static_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#mongodb_atlas_static_credentials VaultSecretsIntegration#mongodb_atlas_static_credentials}
 
 ---
 
@@ -1714,7 +1714,7 @@ public readonly projectId: string;
 
 HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#project_id VaultSecretsIntegration#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#project_id VaultSecretsIntegration#project_id}
 
 ---
 
@@ -1728,7 +1728,7 @@ public readonly twilioStaticCredentials: VaultSecretsIntegrationTwilioStaticCred
 
 Twilio API key parts used to authenticate against the target Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#twilio_static_credentials VaultSecretsIntegration#twilio_static_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#twilio_static_credentials VaultSecretsIntegration#twilio_static_credentials}
 
 ---
 
@@ -1761,7 +1761,7 @@ public readonly cloudApiKeyId: string;
 
 Public key used alongside the private key to authenticate for cloud apis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#cloud_api_key_id VaultSecretsIntegration#cloud_api_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#cloud_api_key_id VaultSecretsIntegration#cloud_api_key_id}
 
 ---
 
@@ -1775,7 +1775,7 @@ public readonly cloudApiSecret: string;
 
 Private key used alongside the public key to authenticate for cloud apis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#cloud_api_secret VaultSecretsIntegration#cloud_api_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#cloud_api_secret VaultSecretsIntegration#cloud_api_secret}
 
 ---
 
@@ -1808,7 +1808,7 @@ public readonly audience: string;
 
 Audience configured on the GCP identity provider to federate access with HCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#audience VaultSecretsIntegration#audience}
 
 ---
 
@@ -1822,7 +1822,7 @@ public readonly serviceAccountEmail: string;
 
 GCP service account email that HVS will impersonate to carry operations for the appropriate capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#service_account_email VaultSecretsIntegration#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#service_account_email VaultSecretsIntegration#service_account_email}
 
 ---
 
@@ -1854,7 +1854,7 @@ public readonly credentials: string;
 
 JSON or base64 encoded service account key received from GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#credentials VaultSecretsIntegration#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#credentials VaultSecretsIntegration#credentials}
 
 ---
 
@@ -1886,7 +1886,7 @@ public readonly token: string;
 
 Access token used to authenticate against the target GitLab account. This token must have privilege to create CI/CD variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#token VaultSecretsIntegration#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#token VaultSecretsIntegration#token}
 
 ---
 
@@ -1919,7 +1919,7 @@ public readonly apiPrivateKey: string;
 
 Private key used alongside the public key to authenticate against the target project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#api_private_key VaultSecretsIntegration#api_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#api_private_key VaultSecretsIntegration#api_private_key}
 
 ---
 
@@ -1933,7 +1933,7 @@ public readonly apiPublicKey: string;
 
 Public key used alongside the private key to authenticate against the target project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#api_public_key VaultSecretsIntegration#api_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#api_public_key VaultSecretsIntegration#api_public_key}
 
 ---
 
@@ -1967,7 +1967,7 @@ public readonly accountSid: string;
 
 Account SID for the target Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#account_sid VaultSecretsIntegration#account_sid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#account_sid VaultSecretsIntegration#account_sid}
 
 ---
 
@@ -1981,7 +1981,7 @@ public readonly apiKeySecret: string;
 
 Api key secret used with the api key SID to authenticate against the target Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#api_key_secret VaultSecretsIntegration#api_key_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#api_key_secret VaultSecretsIntegration#api_key_secret}
 
 ---
 
@@ -1995,7 +1995,7 @@ public readonly apiKeySid: string;
 
 Api key SID to authenticate against the target Twilio account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_integration#api_key_sid VaultSecretsIntegration#api_key_sid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_integration#api_key_sid VaultSecretsIntegration#api_key_sid}
 
 ---
 

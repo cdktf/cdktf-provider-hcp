@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/vault_radar_resources
+// https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/vault_radar_resources
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataHcpVaultRadarResourcesConfig extends cdktf.TerraformMetaArg
   /**
   * The ID of the HCP project where Vault Radar is located. If not specified, the project specified in the HCP Provider config block will be used, if configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/vault_radar_resources#project_id DataHcpVaultRadarResources#project_id}
   */
   readonly projectId?: string;
   /**
   * Applies a filter to the radar resources based on their URIs. The filter uses the SQL LIKE operator, which allows for wildcard matching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/vault_radar_resources#uri_like_filter DataHcpVaultRadarResources#uri_like_filter}
   */
   readonly uriLikeFilter: DataHcpVaultRadarResourcesUriLikeFilter;
 }
@@ -169,13 +169,13 @@ export interface DataHcpVaultRadarResourcesUriLikeFilter {
   /**
   * If true, the uri like filter will be case insensitive. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/vault_radar_resources#case_insensitive DataHcpVaultRadarResources#case_insensitive}
   */
   readonly caseInsensitive?: boolean | cdktf.IResolvable;
   /**
   * URI like filters to apply radar resources. Each entry in the list will act like an or condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/vault_radar_resources#values DataHcpVaultRadarResources#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/vault_radar_resources#values DataHcpVaultRadarResources#values}
   */
   readonly values: string[];
 }
@@ -295,7 +295,7 @@ export class DataHcpVaultRadarResourcesUriLikeFilterOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources}
 */
 export class DataHcpVaultRadarResources extends cdktf.TerraformDataSource {
 
@@ -311,7 +311,7 @@ export class DataHcpVaultRadarResources extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataHcpVaultRadarResources resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataHcpVaultRadarResources to import
-  * @param importFromId The id of the existing DataHcpVaultRadarResources that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/vault_radar_resources#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataHcpVaultRadarResources that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/vault_radar_resources#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataHcpVaultRadarResources to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -323,7 +323,7 @@ export class DataHcpVaultRadarResources extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/vault_radar_resources hcp_vault_radar_resources} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +334,7 @@ export class DataHcpVaultRadarResources extends cdktf.TerraformDataSource {
       terraformResourceType: 'hcp_vault_radar_resources',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.109.0',
+        providerVersion: '0.110.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

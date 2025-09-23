@@ -4,7 +4,7 @@
 
 ### HcpProvider <a name="HcpProvider" id="@cdktf/provider-hcp.provider.HcpProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs hcp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs hcp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer"></a>
 
@@ -61,6 +61,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientId">ResetClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetCredentialFile">ResetCredentialFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetGeography">ResetGeography</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetProjectId">ResetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetSkipStatusCheck">ResetSkipStatusCheck</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.resetWorkloadIdentity">ResetWorkloadIdentity</a></code> | *No description.* |
@@ -159,6 +160,12 @@ private void ResetClientSecret()
 
 ```csharp
 private void ResetCredentialFile()
+```
+
+##### `ResetGeography` <a name="ResetGeography" id="@cdktf/provider-hcp.provider.HcpProvider.resetGeography"></a>
+
+```csharp
+private void ResetGeography()
 ```
 
 ##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-hcp.provider.HcpProvider.resetProjectId"></a>
@@ -282,7 +289,7 @@ The construct id used in the generated config for the HcpProvider to import.
 
 The id of the existing HcpProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -311,12 +318,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientIdInput">ClientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFileInput">CredentialFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.geographyInput">GeographyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput">SkipStatusCheckInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput">WorkloadIdentityInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientId">ClientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecret">ClientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFile">CredentialFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.geography">Geography</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck">SkipStatusCheck</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity">WorkloadIdentity</a></code> | <code>object</code> | *No description.* |
@@ -455,6 +464,16 @@ public string CredentialFileInput { get; }
 
 ---
 
+##### `GeographyInput`<sup>Optional</sup> <a name="GeographyInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.geographyInput"></a>
+
+```csharp
+public string GeographyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput"></a>
 
 ```csharp
@@ -509,6 +528,16 @@ public string ClientSecret { get; }
 
 ```csharp
 public string CredentialFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Geography`<sup>Optional</sup> <a name="Geography" id="@cdktf/provider-hcp.provider.HcpProvider.property.geography"></a>
+
+```csharp
+public string Geography { get; }
 ```
 
 - *Type:* string
@@ -577,6 +606,7 @@ new HcpProviderConfig {
     string ClientId = null,
     string ClientSecret = null,
     string CredentialFile = null,
+    string Geography = null,
     string ProjectId = null,
     object SkipStatusCheck = null,
     object WorkloadIdentity = null
@@ -591,6 +621,7 @@ new HcpProviderConfig {
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientId">ClientId</a></code> | <code>string</code> | The OAuth2 Client ID for API operations. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The OAuth2 Client Secret for API operations. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.credentialFile">CredentialFile</a></code> | <code>string</code> | The path to an HCP credential file to use to authenticate the provider to HCP. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.geography">Geography</a></code> | <code>string</code> | The geography in which HCP resources should be created. Default is `us`. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The default project in which resources should be created. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck">SkipStatusCheck</a></code> | <code>object</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity">WorkloadIdentity</a></code> | <code>object</code> | workload_identity block. |
@@ -607,7 +638,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#alias HcpProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#alias HcpProvider#alias}
 
 ---
 
@@ -621,7 +652,7 @@ public string ClientId { get; set; }
 
 The OAuth2 Client ID for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#client_id HcpProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#client_id HcpProvider#client_id}
 
 ---
 
@@ -635,7 +666,7 @@ public string ClientSecret { get; set; }
 
 The OAuth2 Client Secret for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#client_secret HcpProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#client_secret HcpProvider#client_secret}
 
 ---
 
@@ -651,7 +682,21 @@ The path to an HCP credential file to use to authenticate the provider to HCP.
 
 You can alternatively set the HCP_CRED_FILE environment variable to point at a credential file as well. Using a credential file allows you to authenticate the provider as a service principal via client credentials or dynamically based on Workload Identity Federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#credential_file HcpProvider#credential_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#credential_file HcpProvider#credential_file}
+
+---
+
+##### `Geography`<sup>Optional</sup> <a name="Geography" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.geography"></a>
+
+```csharp
+public string Geography { get; set; }
+```
+
+- *Type:* string
+
+The geography in which HCP resources should be created. Default is `us`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#geography HcpProvider#geography}
 
 ---
 
@@ -665,7 +710,7 @@ public string ProjectId { get; set; }
 
 The default project in which resources should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#project_id HcpProvider#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#project_id HcpProvider#project_id}
 
 ---
 
@@ -679,7 +724,7 @@ public object SkipStatusCheck { get; set; }
 
 When set to true, the provider will skip checking the HCP status page for service outages or returning warnings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#skip_status_check HcpProvider#skip_status_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#skip_status_check HcpProvider#skip_status_check}
 
 ---
 
@@ -693,7 +738,7 @@ public object WorkloadIdentity { get; set; }
 
 workload_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#workload_identity HcpProvider#workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#workload_identity HcpProvider#workload_identity}
 
 ---
 
@@ -731,7 +776,7 @@ public string ResourceName { get; set; }
 
 The resource_name of the Workload Identity Provider to exchange the token with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#resource_name HcpProvider#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#resource_name HcpProvider#resource_name}
 
 ---
 
@@ -747,7 +792,7 @@ The JWT token retrieved from an OpenID Connect (OIDC) or OAuth2 provider.
 
 At least one of `token_file` or `token` must be set, if both are set then `token` takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#token HcpProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#token HcpProvider#token}
 
 ---
 
@@ -763,7 +808,7 @@ The path to a file containing a JWT token retrieved from an OpenID Connect (OIDC
 
 At least one of `token_file` or `token` must be set, if both are set then `token` takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs#token_file HcpProvider#token_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#token_file HcpProvider#token_file}
 
 ---
 

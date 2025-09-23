@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync
+// https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface VaultSecretsSyncConfig extends cdktf.TerraformMetaArguments {
   /**
   * Configuration parameters used to determine the sync destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync#gitlab_config VaultSecretsSync#gitlab_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync#gitlab_config VaultSecretsSync#gitlab_config}
   */
   readonly gitlabConfig?: VaultSecretsSyncGitlabConfig;
   /**
   * The Vault Secrets integration name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync#integration_name VaultSecretsSync#integration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync#integration_name VaultSecretsSync#integration_name}
   */
   readonly integrationName: string;
   /**
   * The Vault Secrets Sync name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync#name VaultSecretsSync#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync#name VaultSecretsSync#name}
   */
   readonly name: string;
   /**
   * HCP project ID that owns the HCP Vault Secrets integration. Inferred from the provider configuration if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync#project_id VaultSecretsSync#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync#project_id VaultSecretsSync#project_id}
   */
   readonly projectId?: string;
 }
@@ -41,19 +41,19 @@ export interface VaultSecretsSyncGitlabConfig {
   /**
   * ID of the group, if the scope is GROUP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync#group_id VaultSecretsSync#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync#group_id VaultSecretsSync#group_id}
   */
   readonly groupId?: string;
   /**
   * ID of the project, if the scope is PROJECT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync#project_id VaultSecretsSync#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync#project_id VaultSecretsSync#project_id}
   */
   readonly projectId?: string;
   /**
   * The scope to which sync applies. Defaults to GROUP. The valid options are GROUP and PROJECT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync#scope VaultSecretsSync#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync#scope VaultSecretsSync#scope}
   */
   readonly scope?: string;
 }
@@ -205,7 +205,7 @@ export class VaultSecretsSyncGitlabConfigOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync hcp_vault_secrets_sync}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync hcp_vault_secrets_sync}
 */
 export class VaultSecretsSync extends cdktf.TerraformResource {
 
@@ -221,7 +221,7 @@ export class VaultSecretsSync extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultSecretsSync resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultSecretsSync to import
-  * @param importFromId The id of the existing VaultSecretsSync that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultSecretsSync that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultSecretsSync to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -233,7 +233,7 @@ export class VaultSecretsSync extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/vault_secrets_sync hcp_vault_secrets_sync} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_secrets_sync hcp_vault_secrets_sync} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -244,7 +244,7 @@ export class VaultSecretsSync extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_secrets_sync',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.109.0',
+        providerVersion: '0.110.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

@@ -11,6 +11,8 @@ Object.defineProperty(exports, 'boundaryCluster', { get: function () { return re
 Object.defineProperty(exports, 'consulCluster', { get: function () { return require('./consul-cluster'); } });
 Object.defineProperty(exports, 'consulClusterRootToken', { get: function () { return require('./consul-cluster-root-token'); } });
 Object.defineProperty(exports, 'consulSnapshot', { get: function () { return require('./consul-snapshot'); } });
+Object.defineProperty(exports, 'dnsForwarding', { get: function () { return require('./dns-forwarding'); } });
+Object.defineProperty(exports, 'dnsForwardingRule', { get: function () { return require('./dns-forwarding-rule'); } });
 Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
 Object.defineProperty(exports, 'groupIamBinding', { get: function () { return require('./group-iam-binding'); } });
 Object.defineProperty(exports, 'groupIamPolicy', { get: function () { return require('./group-iam-policy'); } });
@@ -29,6 +31,7 @@ Object.defineProperty(exports, 'packerBucketIamPolicy', { get: function () { ret
 Object.defineProperty(exports, 'packerChannel', { get: function () { return require('./packer-channel'); } });
 Object.defineProperty(exports, 'packerChannelAssignment', { get: function () { return require('./packer-channel-assignment'); } });
 Object.defineProperty(exports, 'packerRunTask', { get: function () { return require('./packer-run-task'); } });
+Object.defineProperty(exports, 'privateLink', { get: function () { return require('./private-link'); } });
 Object.defineProperty(exports, 'project', { get: function () { return require('./project'); } });
 Object.defineProperty(exports, 'projectIamBinding', { get: function () { return require('./project-iam-binding'); } });
 Object.defineProperty(exports, 'projectIamPolicy', { get: function () { return require('./project-iam-policy'); } });
@@ -74,6 +77,8 @@ Object.defineProperty(exports, 'dataHcpConsulAgentHelmConfig', { get: function (
 Object.defineProperty(exports, 'dataHcpConsulAgentKubernetesSecret', { get: function () { return require('./data-hcp-consul-agent-kubernetes-secret'); } });
 Object.defineProperty(exports, 'dataHcpConsulCluster', { get: function () { return require('./data-hcp-consul-cluster'); } });
 Object.defineProperty(exports, 'dataHcpConsulVersions', { get: function () { return require('./data-hcp-consul-versions'); } });
+Object.defineProperty(exports, 'dataHcpDnsForwarding', { get: function () { return require('./data-hcp-dns-forwarding'); } });
+Object.defineProperty(exports, 'dataHcpDnsForwardingRule', { get: function () { return require('./data-hcp-dns-forwarding-rule'); } });
 Object.defineProperty(exports, 'dataHcpGroup', { get: function () { return require('./data-hcp-group'); } });
 Object.defineProperty(exports, 'dataHcpHvn', { get: function () { return require('./data-hcp-hvn'); } });
 Object.defineProperty(exports, 'dataHcpHvnPeeringConnection', { get: function () { return require('./data-hcp-hvn-peering-connection'); } });
@@ -84,6 +89,7 @@ Object.defineProperty(exports, 'dataHcpPackerArtifact', { get: function () { ret
 Object.defineProperty(exports, 'dataHcpPackerBucketNames', { get: function () { return require('./data-hcp-packer-bucket-names'); } });
 Object.defineProperty(exports, 'dataHcpPackerRunTask', { get: function () { return require('./data-hcp-packer-run-task'); } });
 Object.defineProperty(exports, 'dataHcpPackerVersion', { get: function () { return require('./data-hcp-packer-version'); } });
+Object.defineProperty(exports, 'dataHcpPrivateLink', { get: function () { return require('./data-hcp-private-link'); } });
 Object.defineProperty(exports, 'dataHcpProject', { get: function () { return require('./data-hcp-project'); } });
 Object.defineProperty(exports, 'dataHcpServicePrincipal', { get: function () { return require('./data-hcp-service-principal'); } });
 Object.defineProperty(exports, 'dataHcpUserPrincipal', { get: function () { return require('./data-hcp-user-principal'); } });
