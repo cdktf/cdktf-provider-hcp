@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/organization_iam_policy
+// https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/organization_iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface OrganizationIamPolicyConfig extends cdktf.TerraformMetaArgument
   /**
   * The policy to apply.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/organization_iam_policy#policy_data OrganizationIamPolicy#policy_data}
   */
   readonly policyData: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/organization_iam_policy hcp_organization_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/organization_iam_policy hcp_organization_iam_policy}
 */
 export class OrganizationIamPolicy extends cdktf.TerraformResource {
 
@@ -37,7 +37,7 @@ export class OrganizationIamPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationIamPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationIamPolicy to import
-  * @param importFromId The id of the existing OrganizationIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/organization_iam_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/organization_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationIamPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +49,7 @@ export class OrganizationIamPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.109.0/docs/resources/organization_iam_policy hcp_organization_iam_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/organization_iam_policy hcp_organization_iam_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class OrganizationIamPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_organization_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.109.0',
+        providerVersion: '0.110.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,
