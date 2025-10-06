@@ -320,15 +320,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFileInput">CredentialFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.geographyInput">GeographyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput">SkipStatusCheckInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput">WorkloadIdentityInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput">SkipStatusCheckInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput">WorkloadIdentityInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientId">ClientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecret">ClientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFile">CredentialFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.geography">Geography</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck">SkipStatusCheck</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity">WorkloadIdentity</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck">SkipStatusCheck</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity">WorkloadIdentity</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]</code> | *No description.* |
 
 ---
 
@@ -487,20 +487,20 @@ public string ProjectIdInput { get; }
 ##### `SkipStatusCheckInput`<sup>Optional</sup> <a name="SkipStatusCheckInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput"></a>
 
 ```csharp
-public object SkipStatusCheckInput { get; }
+public bool|IResolvable SkipStatusCheckInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `WorkloadIdentityInput`<sup>Optional</sup> <a name="WorkloadIdentityInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput"></a>
 
 ```csharp
-public object WorkloadIdentityInput { get; }
+public IResolvable|HcpProviderWorkloadIdentity[] WorkloadIdentityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]
 
 ---
 
@@ -557,20 +557,20 @@ public string ProjectId { get; }
 ##### `SkipStatusCheck`<sup>Optional</sup> <a name="SkipStatusCheck" id="@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck"></a>
 
 ```csharp
-public object SkipStatusCheck { get; }
+public bool|IResolvable SkipStatusCheck { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `WorkloadIdentity`<sup>Optional</sup> <a name="WorkloadIdentity" id="@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity"></a>
 
 ```csharp
-public object WorkloadIdentity { get; }
+public IResolvable|HcpProviderWorkloadIdentity[] WorkloadIdentity { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]
 
 ---
 
@@ -608,8 +608,8 @@ new HcpProviderConfig {
     string CredentialFile = null,
     string Geography = null,
     string ProjectId = null,
-    object SkipStatusCheck = null,
-    object WorkloadIdentity = null
+    bool|IResolvable SkipStatusCheck = null,
+    IResolvable|HcpProviderWorkloadIdentity[] WorkloadIdentity = null
 };
 ```
 
@@ -623,8 +623,8 @@ new HcpProviderConfig {
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.credentialFile">CredentialFile</a></code> | <code>string</code> | The path to an HCP credential file to use to authenticate the provider to HCP. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.geography">Geography</a></code> | <code>string</code> | The geography in which HCP resources should be created. Default is `us`. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The default project in which resources should be created. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck">SkipStatusCheck</a></code> | <code>object</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity">WorkloadIdentity</a></code> | <code>object</code> | workload_identity block. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck">SkipStatusCheck</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity">WorkloadIdentity</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]</code> | workload_identity block. |
 
 ---
 
@@ -717,10 +717,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SkipStatusCheck`<sup>Optional</sup> <a name="SkipStatusCheck" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck"></a>
 
 ```csharp
-public object SkipStatusCheck { get; set; }
+public bool|IResolvable SkipStatusCheck { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When set to true, the provider will skip checking the HCP status page for service outages or returning warnings.
 
@@ -731,10 +731,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `WorkloadIdentity`<sup>Optional</sup> <a name="WorkloadIdentity" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity"></a>
 
 ```csharp
-public object WorkloadIdentity { get; set; }
+public IResolvable|HcpProviderWorkloadIdentity[] WorkloadIdentity { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>[]
 
 workload_identity block.
 

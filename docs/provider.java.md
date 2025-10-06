@@ -18,10 +18,8 @@ HcpProvider.Builder.create(Construct scope, java.lang.String id)
 //  .credentialFile(java.lang.String)
 //  .geography(java.lang.String)
 //  .projectId(java.lang.String)
-//  .skipStatusCheck(java.lang.Boolean)
-//  .skipStatusCheck(IResolvable)
-//  .workloadIdentity(IResolvable)
-//  .workloadIdentity(java.util.List<HcpProviderWorkloadIdentity>)
+//  .skipStatusCheck(java.lang.Boolean|IResolvable)
+//  .workloadIdentity(IResolvable|java.util.List<HcpProviderWorkloadIdentity>)
     .build();
 ```
 
@@ -35,8 +33,8 @@ HcpProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.credentialFile">credentialFile</a></code> | <code>java.lang.String</code> | The path to an HCP credential file to use to authenticate the provider to HCP. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.geography">geography</a></code> | <code>java.lang.String</code> | The geography in which HCP resources should be created. Default is `us`. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | The default project in which resources should be created. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.skipStatusCheck">skipStatusCheck</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.workloadIdentity">workloadIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>></code> | workload_identity block. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.skipStatusCheck">skipStatusCheck</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.workloadIdentity">workloadIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>></code> | workload_identity block. |
 
 ---
 
@@ -122,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skipStatusCheck`<sup>Optional</sup> <a name="skipStatusCheck" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.skipStatusCheck"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 When set to true, the provider will skip checking the HCP status page for service outages or returning warnings.
 
@@ -132,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `workloadIdentity`<sup>Optional</sup> <a name="workloadIdentity" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.workloadIdentity"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>>
 
 workload_identity block.
 
@@ -414,15 +412,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFileInput">credentialFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.geographyInput">geographyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput">skipStatusCheckInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput">workloadIdentityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput">skipStatusCheckInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput">workloadIdentityInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientId">clientId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFile">credentialFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.geography">geography</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck">skipStatusCheck</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity">workloadIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck">skipStatusCheck</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity">workloadIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>></code> | *No description.* |
 
 ---
 
@@ -581,20 +579,20 @@ public java.lang.String getProjectIdInput();
 ##### `skipStatusCheckInput`<sup>Optional</sup> <a name="skipStatusCheckInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput"></a>
 
 ```java
-public java.lang.Object getSkipStatusCheckInput();
+public java.lang.Boolean|IResolvable getSkipStatusCheckInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `workloadIdentityInput`<sup>Optional</sup> <a name="workloadIdentityInput" id="@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput"></a>
 
 ```java
-public java.lang.Object getWorkloadIdentityInput();
+public IResolvable|java.util.List<HcpProviderWorkloadIdentity> getWorkloadIdentityInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>>
 
 ---
 
@@ -651,20 +649,20 @@ public java.lang.String getProjectId();
 ##### `skipStatusCheck`<sup>Optional</sup> <a name="skipStatusCheck" id="@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck"></a>
 
 ```java
-public java.lang.Object getSkipStatusCheck();
+public java.lang.Boolean|IResolvable getSkipStatusCheck();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `workloadIdentity`<sup>Optional</sup> <a name="workloadIdentity" id="@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity"></a>
 
 ```java
-public java.lang.Object getWorkloadIdentity();
+public IResolvable|java.util.List<HcpProviderWorkloadIdentity> getWorkloadIdentity();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>>
 
 ---
 
@@ -702,10 +700,8 @@ HcpProviderConfig.builder()
 //  .credentialFile(java.lang.String)
 //  .geography(java.lang.String)
 //  .projectId(java.lang.String)
-//  .skipStatusCheck(java.lang.Boolean)
-//  .skipStatusCheck(IResolvable)
-//  .workloadIdentity(IResolvable)
-//  .workloadIdentity(java.util.List<HcpProviderWorkloadIdentity>)
+//  .skipStatusCheck(java.lang.Boolean|IResolvable)
+//  .workloadIdentity(IResolvable|java.util.List<HcpProviderWorkloadIdentity>)
     .build();
 ```
 
@@ -719,8 +715,8 @@ HcpProviderConfig.builder()
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.credentialFile">credentialFile</a></code> | <code>java.lang.String</code> | The path to an HCP credential file to use to authenticate the provider to HCP. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.geography">geography</a></code> | <code>java.lang.String</code> | The geography in which HCP resources should be created. Default is `us`. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | The default project in which resources should be created. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck">skipStatusCheck</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity">workloadIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>></code> | workload_identity block. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck">skipStatusCheck</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity">workloadIdentity</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>></code> | workload_identity block. |
 
 ---
 
@@ -813,10 +809,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skipStatusCheck`<sup>Optional</sup> <a name="skipStatusCheck" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck"></a>
 
 ```java
-public java.lang.Object getSkipStatusCheck();
+public java.lang.Boolean|IResolvable getSkipStatusCheck();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 When set to true, the provider will skip checking the HCP status page for service outages or returning warnings.
 
@@ -827,10 +823,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `workloadIdentity`<sup>Optional</sup> <a name="workloadIdentity" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity"></a>
 
 ```java
-public java.lang.Object getWorkloadIdentity();
+public IResolvable|java.util.List<HcpProviderWorkloadIdentity> getWorkloadIdentity();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>>
 
 workload_identity block.
 

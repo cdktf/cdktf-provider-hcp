@@ -20,8 +20,8 @@ provider.HcpProvider(
   credential_file: str = None,
   geography: str = None,
   project_id: str = None,
-  skip_status_check: typing.Union[bool, IResolvable] = None,
-  workload_identity: typing.Union[IResolvable, typing.List[HcpProviderWorkloadIdentity]] = None
+  skip_status_check: bool | IResolvable = None,
+  workload_identity: IResolvable | typing.List[HcpProviderWorkloadIdentity] = None
 )
 ```
 
@@ -35,8 +35,8 @@ provider.HcpProvider(
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.credentialFile">credential_file</a></code> | <code>str</code> | The path to an HCP credential file to use to authenticate the provider to HCP. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.geography">geography</a></code> | <code>str</code> | The geography in which HCP resources should be created. Default is `us`. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The default project in which resources should be created. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.skipStatusCheck">skip_status_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.workloadIdentity">workload_identity</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]]</code> | workload_identity block. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.skipStatusCheck">skip_status_check</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.workloadIdentity">workload_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]</code> | workload_identity block. |
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_status_check`<sup>Optional</sup> <a name="skip_status_check" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.skipStatusCheck"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When set to true, the provider will skip checking the HCP status page for service outages or returning warnings.
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `workload_identity`<sup>Optional</sup> <a name="workload_identity" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer.parameter.workloadIdentity"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]
 
 workload_identity block.
 
@@ -430,15 +430,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFileInput">credential_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.geographyInput">geography_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput">skip_status_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput">workload_identity_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput">skip_status_check_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput">workload_identity_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.credentialFile">credential_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.geography">geography</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck">skip_status_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity">workload_identity</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck">skip_status_check</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity">workload_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]</code> | *No description.* |
 
 ---
 
@@ -597,20 +597,20 @@ project_id_input: str
 ##### `skip_status_check_input`<sup>Optional</sup> <a name="skip_status_check_input" id="@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheckInput"></a>
 
 ```python
-skip_status_check_input: typing.Union[bool, IResolvable]
+skip_status_check_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `workload_identity_input`<sup>Optional</sup> <a name="workload_identity_input" id="@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentityInput"></a>
 
 ```python
-workload_identity_input: typing.Union[IResolvable, typing.List[HcpProviderWorkloadIdentity]]
+workload_identity_input: IResolvable | typing.List[HcpProviderWorkloadIdentity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]
 
 ---
 
@@ -667,20 +667,20 @@ project_id: str
 ##### `skip_status_check`<sup>Optional</sup> <a name="skip_status_check" id="@cdktf/provider-hcp.provider.HcpProvider.property.skipStatusCheck"></a>
 
 ```python
-skip_status_check: typing.Union[bool, IResolvable]
+skip_status_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `workload_identity`<sup>Optional</sup> <a name="workload_identity" id="@cdktf/provider-hcp.provider.HcpProvider.property.workloadIdentity"></a>
 
 ```python
-workload_identity: typing.Union[IResolvable, typing.List[HcpProviderWorkloadIdentity]]
+workload_identity: IResolvable | typing.List[HcpProviderWorkloadIdentity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]
 
 ---
 
@@ -718,8 +718,8 @@ provider.HcpProviderConfig(
   credential_file: str = None,
   geography: str = None,
   project_id: str = None,
-  skip_status_check: typing.Union[bool, IResolvable] = None,
-  workload_identity: typing.Union[IResolvable, typing.List[HcpProviderWorkloadIdentity]] = None
+  skip_status_check: bool | IResolvable = None,
+  workload_identity: IResolvable | typing.List[HcpProviderWorkloadIdentity] = None
 )
 ```
 
@@ -733,8 +733,8 @@ provider.HcpProviderConfig(
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.credentialFile">credential_file</a></code> | <code>str</code> | The path to an HCP credential file to use to authenticate the provider to HCP. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.geography">geography</a></code> | <code>str</code> | The geography in which HCP resources should be created. Default is `us`. |
 | <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.projectId">project_id</a></code> | <code>str</code> | The default project in which resources should be created. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck">skip_status_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
-| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity">workload_identity</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]]</code> | workload_identity block. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck">skip_status_check</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to true, the provider will skip checking the HCP status page for service outages or returning warnings. |
+| <code><a href="#@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity">workload_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]</code> | workload_identity block. |
 
 ---
 
@@ -827,10 +827,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skip_status_check`<sup>Optional</sup> <a name="skip_status_check" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.skipStatusCheck"></a>
 
 ```python
-skip_status_check: typing.Union[bool, IResolvable]
+skip_status_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When set to true, the provider will skip checking the HCP status page for service outages or returning warnings.
 
@@ -841,10 +841,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `workload_identity`<sup>Optional</sup> <a name="workload_identity" id="@cdktf/provider-hcp.provider.HcpProviderConfig.property.workloadIdentity"></a>
 
 ```python
-workload_identity: typing.Union[IResolvable, typing.List[HcpProviderWorkloadIdentity]]
+workload_identity: IResolvable | typing.List[HcpProviderWorkloadIdentity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity">HcpProviderWorkloadIdentity</a>]
 
 workload_identity block.
 

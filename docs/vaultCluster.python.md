@@ -14,18 +14,18 @@ from cdktf_cdktf_provider_hcp import vault_cluster
 vaultCluster.VaultCluster(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   cluster_id: str,
   hvn_id: str,
   audit_log_config: VaultClusterAuditLogConfig = None,
   id: str = None,
-  ip_allowlist: typing.Union[IResolvable, typing.List[VaultClusterIpAllowlistStruct]] = None,
+  ip_allowlist: IResolvable | typing.List[VaultClusterIpAllowlistStruct] = None,
   major_version_upgrade_config: VaultClusterMajorVersionUpgradeConfig = None,
   metrics_config: VaultClusterMetricsConfig = None,
   min_vault_version: str = None,
@@ -33,7 +33,7 @@ vaultCluster.VaultCluster(
   primary_link: str = None,
   project_id: str = None,
   proxy_endpoint: str = None,
-  public_endpoint: typing.Union[bool, IResolvable] = None,
+  public_endpoint: bool | IResolvable = None,
   tier: str = None,
   timeouts: VaultClusterTimeouts = None
 )
@@ -43,18 +43,18 @@ vaultCluster.VaultCluster(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | The ID of the HCP Vault cluster. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.hvnId">hvn_id</a></code> | <code>str</code> | The ID of the HVN this HCP Vault cluster is associated to. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.auditLogConfig">audit_log_config</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig">VaultClusterAuditLogConfig</a></code> | audit_log_config block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_cluster#id VaultCluster#id}. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.ipAllowlist">ip_allowlist</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]]</code> | ip_allowlist block. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.ipAllowlist">ip_allowlist</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]</code> | ip_allowlist block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.majorVersionUpgradeConfig">major_version_upgrade_config</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMajorVersionUpgradeConfig">VaultClusterMajorVersionUpgradeConfig</a></code> | major_version_upgrade_config block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.metricsConfig">metrics_config</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig">VaultClusterMetricsConfig</a></code> | metrics_config block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.minVaultVersion">min_vault_version</a></code> | <code>str</code> | The minimum Vault version to use when creating the cluster. |
@@ -62,7 +62,7 @@ vaultCluster.VaultCluster(
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.primaryLink">primary_link</a></code> | <code>str</code> | The `self_link` of the HCP Vault Plus tier cluster which is the primary in the performance replication setup with this HCP Vault Plus tier cluster. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the Vault cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.proxyEndpoint">proxy_endpoint</a></code> | <code>str</code> | Denotes that the cluster has a proxy endpoint. Valid options are `ENABLED`, `DISABLED`. Defaults to `DISABLED`. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.publicEndpoint">public_endpoint</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes that the cluster has a public endpoint. Defaults to false. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.publicEndpoint">public_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Denotes that the cluster has a public endpoint. Defaults to false. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.tier">tier</a></code> | <code>str</code> | Tier of the HCP Vault cluster. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a></code> | timeouts block. |
 
@@ -88,13 +88,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ip_allowlist`<sup>Optional</sup> <a name="ip_allowlist" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.ipAllowlist"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]
 
 ip_allowlist block.
 
@@ -258,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `public_endpoint`<sup>Optional</sup> <a name="public_endpoint" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.Initializer.parameter.publicEndpoint"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Denotes that the cluster has a public endpoint. Defaults to false.
 
@@ -558,7 +558,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.importFrom"></a>
@@ -621,7 +621,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -637,7 +637,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -680,7 +680,7 @@ def put_audit_log_config(
   http_basic_user: str = None,
   http_bearer_token: str = None,
   http_codec: str = None,
-  http_compression: typing.Union[bool, IResolvable] = None,
+  http_compression: bool | IResolvable = None,
   http_headers: typing.Mapping[str] = None,
   http_method: str = None,
   http_payload_prefix: str = None,
@@ -846,7 +846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `http_compression`<sup>Optional</sup> <a name="http_compression" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.putAuditLogConfig.parameter.httpCompression"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 HTTP compression flag for streaming audit logs.
 
@@ -958,13 +958,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_ip_allowlist(
-  value: typing.Union[IResolvable, typing.List[VaultClusterIpAllowlistStruct]]
+  value: IResolvable | typing.List[VaultClusterIpAllowlistStruct]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.putIpAllowlist.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]
 
 ---
 
@@ -1029,7 +1029,7 @@ def put_metrics_config(
   http_basic_user: str = None,
   http_bearer_token: str = None,
   http_codec: str = None,
-  http_compression: typing.Union[bool, IResolvable] = None,
+  http_compression: bool | IResolvable = None,
   http_headers: typing.Mapping[str] = None,
   http_method: str = None,
   http_payload_prefix: str = None,
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `http_compression`<sup>Optional</sup> <a name="http_compression" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.putMetricsConfig.parameter.httpCompression"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 HTTP compression flag for streaming metrics.
 
@@ -1561,13 +1561,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.auditLogConfig">audit_log_config</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference">VaultClusterAuditLogConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.cloudProvider">cloud_provider</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
@@ -1588,7 +1588,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.clusterIdInput">cluster_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.hvnIdInput">hvn_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.ipAllowlistInput">ip_allowlist_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.ipAllowlistInput">ip_allowlist_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.majorVersionUpgradeConfigInput">major_version_upgrade_config_input</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMajorVersionUpgradeConfig">VaultClusterMajorVersionUpgradeConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.metricsConfigInput">metrics_config_input</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig">VaultClusterMetricsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.minVaultVersionInput">min_vault_version_input</a></code> | <code>str</code> | *No description.* |
@@ -1596,9 +1596,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.primaryLinkInput">primary_link_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.proxyEndpointInput">proxy_endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.publicEndpointInput">public_endpoint_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.publicEndpointInput">public_endpoint_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.tierInput">tier_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.clusterId">cluster_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.hvnId">hvn_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1607,7 +1607,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.primaryLink">primary_link</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.proxyEndpoint">proxy_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.publicEndpoint">public_endpoint</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.publicEndpoint">public_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultCluster.property.tier">tier</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1687,20 +1687,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1747,10 +1747,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1957,10 +1957,10 @@ id_input: str
 ##### `ip_allowlist_input`<sup>Optional</sup> <a name="ip_allowlist_input" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.property.ipAllowlistInput"></a>
 
 ```python
-ip_allowlist_input: typing.Union[IResolvable, typing.List[VaultClusterIpAllowlistStruct]]
+ip_allowlist_input: IResolvable | typing.List[VaultClusterIpAllowlistStruct]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]
 
 ---
 
@@ -2037,10 +2037,10 @@ proxy_endpoint_input: str
 ##### `public_endpoint_input`<sup>Optional</sup> <a name="public_endpoint_input" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.property.publicEndpointInput"></a>
 
 ```python
-public_endpoint_input: typing.Union[bool, IResolvable]
+public_endpoint_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2057,10 +2057,10 @@ tier_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, VaultClusterTimeouts]
+timeouts_input: IResolvable | VaultClusterTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a>
 
 ---
 
@@ -2147,10 +2147,10 @@ proxy_endpoint: str
 ##### `public_endpoint`<sup>Required</sup> <a name="public_endpoint" id="@cdktf/provider-hcp.vaultCluster.VaultCluster.property.publicEndpoint"></a>
 
 ```python
-public_endpoint: typing.Union[bool, IResolvable]
+public_endpoint: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2207,7 +2207,7 @@ vaultCluster.VaultClusterAuditLogConfig(
   http_basic_user: str = None,
   http_bearer_token: str = None,
   http_codec: str = None,
-  http_compression: typing.Union[bool, IResolvable] = None,
+  http_compression: bool | IResolvable = None,
   http_headers: typing.Mapping[str] = None,
   http_method: str = None,
   http_payload_prefix: str = None,
@@ -2240,7 +2240,7 @@ vaultCluster.VaultClusterAuditLogConfig(
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.httpBasicUser">http_basic_user</a></code> | <code>str</code> | HTTP basic authentication username for streaming audit logs, one of the two available authentication methods, can be specified only if http_basic_password is also provided. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.httpBearerToken">http_bearer_token</a></code> | <code>str</code> | HTTP bearer authentication token for streaming audit logs, one of the two available authentication methods, can be specified only if http_basic_user and http_basic_password are not provided. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.httpCodec">http_codec</a></code> | <code>str</code> | HTTP codec for streaming audit logs, allowed values are JSON and NDJSON. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.httpCompression">http_compression</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | HTTP compression flag for streaming audit logs. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.httpCompression">http_compression</a></code> | <code>bool \| cdktf.IResolvable</code> | HTTP compression flag for streaming audit logs. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.httpHeaders">http_headers</a></code> | <code>typing.Mapping[str]</code> | HTTP headers for streaming audit logs. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.httpMethod">http_method</a></code> | <code>str</code> | HTTP payload method for streaming audit logs, , allowed values are PATCH, POST, or PUT. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.httpPayloadPrefix">http_payload_prefix</a></code> | <code>str</code> | HTTP payload prefix for streaming audit logs. |
@@ -2467,10 +2467,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `http_compression`<sup>Optional</sup> <a name="http_compression" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig.property.httpCompression"></a>
 
 ```python
-http_compression: typing.Union[bool, IResolvable]
+http_compression: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 HTTP compression flag for streaming audit logs.
 
@@ -2626,18 +2626,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_hcp import vault_cluster
 
 vaultCluster.VaultClusterConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   cluster_id: str,
   hvn_id: str,
   audit_log_config: VaultClusterAuditLogConfig = None,
   id: str = None,
-  ip_allowlist: typing.Union[IResolvable, typing.List[VaultClusterIpAllowlistStruct]] = None,
+  ip_allowlist: IResolvable | typing.List[VaultClusterIpAllowlistStruct] = None,
   major_version_upgrade_config: VaultClusterMajorVersionUpgradeConfig = None,
   metrics_config: VaultClusterMetricsConfig = None,
   min_vault_version: str = None,
@@ -2645,7 +2645,7 @@ vaultCluster.VaultClusterConfig(
   primary_link: str = None,
   project_id: str = None,
   proxy_endpoint: str = None,
-  public_endpoint: typing.Union[bool, IResolvable] = None,
+  public_endpoint: bool | IResolvable = None,
   tier: str = None,
   timeouts: VaultClusterTimeouts = None
 )
@@ -2655,18 +2655,18 @@ vaultCluster.VaultClusterConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | The ID of the HCP Vault cluster. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.hvnId">hvn_id</a></code> | <code>str</code> | The ID of the HVN this HCP Vault cluster is associated to. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.auditLogConfig">audit_log_config</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfig">VaultClusterAuditLogConfig</a></code> | audit_log_config block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_cluster#id VaultCluster#id}. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.ipAllowlist">ip_allowlist</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]]</code> | ip_allowlist block. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.ipAllowlist">ip_allowlist</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]</code> | ip_allowlist block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.majorVersionUpgradeConfig">major_version_upgrade_config</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMajorVersionUpgradeConfig">VaultClusterMajorVersionUpgradeConfig</a></code> | major_version_upgrade_config block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.metricsConfig">metrics_config</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig">VaultClusterMetricsConfig</a></code> | metrics_config block. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.minVaultVersion">min_vault_version</a></code> | <code>str</code> | The minimum Vault version to use when creating the cluster. |
@@ -2674,7 +2674,7 @@ vaultCluster.VaultClusterConfig(
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.primaryLink">primary_link</a></code> | <code>str</code> | The `self_link` of the HCP Vault Plus tier cluster which is the primary in the performance replication setup with this HCP Vault Plus tier cluster. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.projectId">project_id</a></code> | <code>str</code> | The ID of the HCP project where the Vault cluster is located. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.proxyEndpoint">proxy_endpoint</a></code> | <code>str</code> | Denotes that the cluster has a proxy endpoint. Valid options are `ENABLED`, `DISABLED`. Defaults to `DISABLED`. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.publicEndpoint">public_endpoint</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes that the cluster has a public endpoint. Defaults to false. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.publicEndpoint">public_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Denotes that the cluster has a public endpoint. Defaults to false. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.tier">tier</a></code> | <code>str</code> | Tier of the HCP Vault cluster. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a></code> | timeouts block. |
 
@@ -2683,20 +2683,20 @@ vaultCluster.VaultClusterConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2743,10 +2743,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2810,10 +2810,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `ip_allowlist`<sup>Optional</sup> <a name="ip_allowlist" id="@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.ipAllowlist"></a>
 
 ```python
-ip_allowlist: typing.Union[IResolvable, typing.List[VaultClusterIpAllowlistStruct]]
+ip_allowlist: IResolvable | typing.List[VaultClusterIpAllowlistStruct]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]
 
 ip_allowlist block.
 
@@ -2929,10 +2929,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `public_endpoint`<sup>Optional</sup> <a name="public_endpoint" id="@cdktf/provider-hcp.vaultCluster.VaultClusterConfig.property.publicEndpoint"></a>
 
 ```python
-public_endpoint: typing.Union[bool, IResolvable]
+public_endpoint: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Denotes that the cluster has a public endpoint. Defaults to false.
 
@@ -3111,7 +3111,7 @@ vaultCluster.VaultClusterMetricsConfig(
   http_basic_user: str = None,
   http_bearer_token: str = None,
   http_codec: str = None,
-  http_compression: typing.Union[bool, IResolvable] = None,
+  http_compression: bool | IResolvable = None,
   http_headers: typing.Mapping[str] = None,
   http_method: str = None,
   http_payload_prefix: str = None,
@@ -3144,7 +3144,7 @@ vaultCluster.VaultClusterMetricsConfig(
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.httpBasicUser">http_basic_user</a></code> | <code>str</code> | HTTP basic authentication username for streaming metrics, one of the two available authentication methods, can be specified only if http_basic_password is also specified. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.httpBearerToken">http_bearer_token</a></code> | <code>str</code> | HTTP bearer authentication token for streaming metrics, one of the two available authentication methods, can be specified only if http_basic_user and http_basic_password are not provided. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.httpCodec">http_codec</a></code> | <code>str</code> | HTTP codec for streaming metrics, allowed values are JSON and NDJSON. |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.httpCompression">http_compression</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | HTTP compression flag for streaming metrics. |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.httpCompression">http_compression</a></code> | <code>bool \| cdktf.IResolvable</code> | HTTP compression flag for streaming metrics. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.httpHeaders">http_headers</a></code> | <code>typing.Mapping[str]</code> | HTTP headers for streaming metrics. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.httpMethod">http_method</a></code> | <code>str</code> | HTTP payload method for streaming metrics, allowed values are PATCH, POST, or PUT. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.httpPayloadPrefix">http_payload_prefix</a></code> | <code>str</code> | HTTP payload prefix for streaming metrics. |
@@ -3371,10 +3371,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `http_compression`<sup>Optional</sup> <a name="http_compression" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfig.property.httpCompression"></a>
 
 ```python
-http_compression: typing.Union[bool, IResolvable]
+http_compression: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 HTTP compression flag for streaming metrics.
 
@@ -4033,7 +4033,7 @@ def reset_splunk_token() -> None
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpBasicUserInput">http_basic_user_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpBearerTokenInput">http_bearer_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpCodecInput">http_codec_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpCompressionInput">http_compression_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpCompressionInput">http_compression_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpHeadersInput">http_headers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpMethodInput">http_method_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpPayloadPrefixInput">http_payload_prefix_input</a></code> | <code>str</code> | *No description.* |
@@ -4059,7 +4059,7 @@ def reset_splunk_token() -> None
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpBasicUser">http_basic_user</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpBearerToken">http_bearer_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpCodec">http_codec</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpCompression">http_compression</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpCompression">http_compression</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpHeaders">http_headers</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpMethod">http_method</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpPayloadPrefix">http_payload_prefix</a></code> | <code>str</code> | *No description.* |
@@ -4281,10 +4281,10 @@ http_codec_input: str
 ##### `http_compression_input`<sup>Optional</sup> <a name="http_compression_input" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpCompressionInput"></a>
 
 ```python
-http_compression_input: typing.Union[bool, IResolvable]
+http_compression_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4541,10 +4541,10 @@ http_codec: str
 ##### `http_compression`<sup>Required</sup> <a name="http_compression" id="@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference.property.httpCompression"></a>
 
 ```python
-http_compression: typing.Union[bool, IResolvable]
+http_compression: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4790,7 +4790,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]</code> | *No description.* |
 
 ---
 
@@ -4821,10 +4821,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[VaultClusterIpAllowlistStruct]]
+internal_value: IResolvable | typing.List[VaultClusterIpAllowlistStruct]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]
 
 ---
 
@@ -5095,7 +5095,7 @@ def reset_description() -> None
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructOutputReference.property.address">address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a></code> | *No description.* |
 
 ---
 
@@ -5166,10 +5166,10 @@ description: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStructOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, VaultClusterIpAllowlistStruct]
+internal_value: IResolvable | VaultClusterIpAllowlistStruct
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterIpAllowlistStruct">VaultClusterIpAllowlistStruct</a>
 
 ---
 
@@ -5962,7 +5962,7 @@ def reset_splunk_token() -> None
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpBasicUserInput">http_basic_user_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpBearerTokenInput">http_bearer_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpCodecInput">http_codec_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpCompressionInput">http_compression_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpCompressionInput">http_compression_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpHeadersInput">http_headers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpMethodInput">http_method_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpPayloadPrefixInput">http_payload_prefix_input</a></code> | <code>str</code> | *No description.* |
@@ -5988,7 +5988,7 @@ def reset_splunk_token() -> None
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpBasicUser">http_basic_user</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpBearerToken">http_bearer_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpCodec">http_codec</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpCompression">http_compression</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpCompression">http_compression</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpHeaders">http_headers</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpMethod">http_method</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpPayloadPrefix">http_payload_prefix</a></code> | <code>str</code> | *No description.* |
@@ -6200,10 +6200,10 @@ http_codec_input: str
 ##### `http_compression_input`<sup>Optional</sup> <a name="http_compression_input" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpCompressionInput"></a>
 
 ```python
-http_compression_input: typing.Union[bool, IResolvable]
+http_compression_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6460,10 +6460,10 @@ http_codec: str
 ##### `http_compression`<sup>Required</sup> <a name="http_compression" id="@cdktf/provider-hcp.vaultCluster.VaultClusterMetricsConfigOutputReference.property.httpCompression"></a>
 
 ```python
-http_compression: typing.Union[bool, IResolvable]
+http_compression: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6849,7 +6849,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6960,10 +6960,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-hcp.vaultCluster.VaultClusterTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, VaultClusterTimeouts]
+internal_value: IResolvable | VaultClusterTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-hcp.vaultCluster.VaultClusterTimeouts">VaultClusterTimeouts</a>
 
 ---
 
