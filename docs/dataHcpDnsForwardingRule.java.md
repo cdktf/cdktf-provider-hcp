@@ -4,7 +4,7 @@
 
 ### DataHcpDnsForwardingRule <a name="DataHcpDnsForwardingRule" id="@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule hcp_dns_forwarding_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule hcp_dns_forwarding_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.Initializer"></a>
 
@@ -41,7 +41,7 @@ DataHcpDnsForwardingRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.Initializer.parameter.dnsForwardingId">dnsForwardingId</a></code> | <code>java.lang.String</code> | The ID of the DNS forwarding configuration this rule belongs to. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.Initializer.parameter.dnsForwardingRuleId">dnsForwardingRuleId</a></code> | <code>java.lang.String</code> | The ID of the DNS forwarding rule. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.Initializer.parameter.hvnId">hvnId</a></code> | <code>java.lang.String</code> | The ID of the HVN that this DNS forwarding rule belongs to. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#id DataHcpDnsForwardingRule#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#id DataHcpDnsForwardingRule#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of the HCP project where the DNS forwarding rule is located. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the DNS forwarding configuration this rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#dns_forwarding_id DataHcpDnsForwardingRule#dns_forwarding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#dns_forwarding_id DataHcpDnsForwardingRule#dns_forwarding_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the DNS forwarding rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#dns_forwarding_rule_id DataHcpDnsForwardingRule#dns_forwarding_rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#dns_forwarding_rule_id DataHcpDnsForwardingRule#dns_forwarding_rule_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the HVN that this DNS forwarding rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#hvn_id DataHcpDnsForwardingRule#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#hvn_id DataHcpDnsForwardingRule#hvn_id}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#id DataHcpDnsForwardingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#id DataHcpDnsForwardingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -156,7 +156,7 @@ The ID of the HCP project where the DNS forwarding rule is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#project_id DataHcpDnsForwardingRule#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#project_id DataHcpDnsForwardingRule#project_id}
 
 ---
 
@@ -493,7 +493,7 @@ The construct id used in the generated config for the DataHcpDnsForwardingRule t
 
 The id of the existing DataHcpDnsForwardingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,7 +879,7 @@ DataHcpDnsForwardingRuleConfig.builder()
 | <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRuleConfig.property.dnsForwardingId">dnsForwardingId</a></code> | <code>java.lang.String</code> | The ID of the DNS forwarding configuration this rule belongs to. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRuleConfig.property.dnsForwardingRuleId">dnsForwardingRuleId</a></code> | <code>java.lang.String</code> | The ID of the DNS forwarding rule. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRuleConfig.property.hvnId">hvnId</a></code> | <code>java.lang.String</code> | The ID of the HVN that this DNS forwarding rule belongs to. |
-| <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#id DataHcpDnsForwardingRule#id}. |
+| <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#id DataHcpDnsForwardingRule#id}. |
 | <code><a href="#@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRuleConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of the HCP project where the DNS forwarding rule is located. |
 
 ---
@@ -964,7 +964,7 @@ public java.lang.String getDnsForwardingId();
 
 The ID of the DNS forwarding configuration this rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#dns_forwarding_id DataHcpDnsForwardingRule#dns_forwarding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#dns_forwarding_id DataHcpDnsForwardingRule#dns_forwarding_id}
 
 ---
 
@@ -978,7 +978,7 @@ public java.lang.String getDnsForwardingRuleId();
 
 The ID of the DNS forwarding rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#dns_forwarding_rule_id DataHcpDnsForwardingRule#dns_forwarding_rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#dns_forwarding_rule_id DataHcpDnsForwardingRule#dns_forwarding_rule_id}
 
 ---
 
@@ -992,7 +992,7 @@ public java.lang.String getHvnId();
 
 The ID of the HVN that this DNS forwarding rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#hvn_id DataHcpDnsForwardingRule#hvn_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#hvn_id DataHcpDnsForwardingRule#hvn_id}
 
 ---
 
@@ -1004,7 +1004,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#id DataHcpDnsForwardingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#id DataHcpDnsForwardingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1024,7 +1024,7 @@ The ID of the HCP project where the DNS forwarding rule is located.
 If not specified, the project specified in the HCP Provider config block will be used, if configured.
 If a project is not configured in the HCP Provider config block, the oldest project in the organization will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/data-sources/dns_forwarding_rule#project_id DataHcpDnsForwardingRule#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/data-sources/dns_forwarding_rule#project_id DataHcpDnsForwardingRule#project_id}
 
 ---
 

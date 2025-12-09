@@ -84,6 +84,7 @@ The following submodules are available:
 - [vaultRadarIntegrationSlackSubscription](./vaultRadarIntegrationSlackSubscription.typescript.md)
 - [vaultRadarResourceIamBinding](./vaultRadarResourceIamBinding.typescript.md)
 - [vaultRadarResourceIamPolicy](./vaultRadarResourceIamPolicy.typescript.md)
+- [vaultRadarSecretManagerVaultDedicated](./vaultRadarSecretManagerVaultDedicated.typescript.md)
 - [vaultRadarSourceGithubCloud](./vaultRadarSourceGithubCloud.typescript.md)
 - [vaultRadarSourceGithubEnterprise](./vaultRadarSourceGithubEnterprise.typescript.md)
 - [vaultSecretsApp](./vaultSecretsApp.typescript.md)

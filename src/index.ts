@@ -46,6 +46,7 @@ export * as vaultRadarIntegrationSlackConnection from './vault-radar-integration
 export * as vaultRadarIntegrationSlackSubscription from './vault-radar-integration-slack-subscription';
 export * as vaultRadarResourceIamBinding from './vault-radar-resource-iam-binding';
 export * as vaultRadarResourceIamPolicy from './vault-radar-resource-iam-policy';
+export * as vaultRadarSecretManagerVaultDedicated from './vault-radar-secret-manager-vault-dedicated';
 export * as vaultRadarSourceGithubCloud from './vault-radar-source-github-cloud';
 export * as vaultRadarSourceGithubEnterprise from './vault-radar-source-github-enterprise';
 export * as vaultSecretsApp from './vault-secrets-app';

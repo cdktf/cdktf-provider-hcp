@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/waypoint_agent_group
+// https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_agent_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface WaypointAgentGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the Agent Group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/waypoint_agent_group#description WaypointAgentGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_agent_group#description WaypointAgentGroup#description}
   */
   readonly description?: string;
   /**
   * The name of the Agent Group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/waypoint_agent_group#name WaypointAgentGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_agent_group#name WaypointAgentGroup#name}
   */
   readonly name: string;
   /**
   * The ID of the Waypoint organization to which the Agent Group belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/waypoint_agent_group#organization_id WaypointAgentGroup#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_agent_group#organization_id WaypointAgentGroup#organization_id}
   */
   readonly organizationId?: string;
   /**
   * The ID of the Waypoint project to which the Agent Group belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/waypoint_agent_group#project_id WaypointAgentGroup#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_agent_group#project_id WaypointAgentGroup#project_id}
   */
   readonly projectId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/waypoint_agent_group hcp_waypoint_agent_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_agent_group hcp_waypoint_agent_group}
 */
 export class WaypointAgentGroup extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class WaypointAgentGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WaypointAgentGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaypointAgentGroup to import
-  * @param importFromId The id of the existing WaypointAgentGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaypointAgentGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_agent_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaypointAgentGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class WaypointAgentGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/waypoint_agent_group hcp_waypoint_agent_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/waypoint_agent_group hcp_waypoint_agent_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class WaypointAgentGroup extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_waypoint_agent_group',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.110.0',
+        providerVersion: '0.111.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs
+// https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface HcpProviderConfig {
   /**
   * The OAuth2 Client ID for API operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#client_id HcpProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#client_id HcpProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * The OAuth2 Client Secret for API operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#client_secret HcpProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#client_secret HcpProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The path to an HCP credential file to use to authenticate the provider to HCP. You can alternatively set the HCP_CRED_FILE environment variable to point at a credential file as well. Using a credential file allows you to authenticate the provider as a service principal via client credentials or dynamically based on Workload Identity Federation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#credential_file HcpProvider#credential_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#credential_file HcpProvider#credential_file}
   */
   readonly credentialFile?: string;
   /**
   * The geography in which HCP resources should be created. Default is `us`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#geography HcpProvider#geography}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#geography HcpProvider#geography}
   */
   readonly geography?: string;
   /**
   * The default project in which resources should be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#project_id HcpProvider#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#project_id HcpProvider#project_id}
   */
   readonly projectId?: string;
   /**
   * When set to true, the provider will skip checking the HCP status page for service outages or returning warnings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#skip_status_check HcpProvider#skip_status_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#skip_status_check HcpProvider#skip_status_check}
   */
   readonly skipStatusCheck?: boolean | cdktf.IResolvable;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#alias HcpProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#alias HcpProvider#alias}
   */
   readonly alias?: string;
   /**
   * workload_identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#workload_identity HcpProvider#workload_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#workload_identity HcpProvider#workload_identity}
   */
   readonly workloadIdentity?: HcpProviderWorkloadIdentity[] | cdktf.IResolvable;
 }
@@ -65,19 +65,19 @@ export interface HcpProviderWorkloadIdentity {
   /**
   * The resource_name of the Workload Identity Provider to exchange the token with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#resource_name HcpProvider#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#resource_name HcpProvider#resource_name}
   */
   readonly resourceName: string;
   /**
   * The JWT token retrieved from an OpenID Connect (OIDC) or OAuth2 provider. At least one of `token_file` or `token` must be set, if both are set then `token` takes precedence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#token HcpProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#token HcpProvider#token}
   */
   readonly token?: string;
   /**
   * The path to a file containing a JWT token retrieved from an OpenID Connect (OIDC) or OAuth2 provider. At least one of `token_file` or `token` must be set, if both are set then `token` takes precedence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#token_file HcpProvider#token_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#token_file HcpProvider#token_file}
   */
   readonly tokenFile?: string;
 }
@@ -127,7 +127,7 @@ export function hcpProviderWorkloadIdentityToHclTerraform(struct?: HcpProviderWo
 
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs hcp}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs hcp}
 */
 export class HcpProvider extends cdktf.TerraformProvider {
 
@@ -143,7 +143,7 @@ export class HcpProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a HcpProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HcpProvider to import
-  * @param importFromId The id of the existing HcpProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HcpProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HcpProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -155,7 +155,7 @@ export class HcpProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs hcp} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs hcp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -166,7 +166,7 @@ export class HcpProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'hcp',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.110.0',
+        providerVersion: '0.111.0',
         providerVersionConstraint: '~> 0.45'
       },
       terraformProviderSource: 'hcp'

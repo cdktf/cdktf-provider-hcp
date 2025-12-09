@@ -84,6 +84,7 @@ The following submodules are available:
 - [vaultRadarIntegrationSlackSubscription](./vaultRadarIntegrationSlackSubscription.csharp.md)
 - [vaultRadarResourceIamBinding](./vaultRadarResourceIamBinding.csharp.md)
 - [vaultRadarResourceIamPolicy](./vaultRadarResourceIamPolicy.csharp.md)
+- [vaultRadarSecretManagerVaultDedicated](./vaultRadarSecretManagerVaultDedicated.csharp.md)
 - [vaultRadarSourceGithubCloud](./vaultRadarSourceGithubCloud.csharp.md)
 - [vaultRadarSourceGithubEnterprise](./vaultRadarSourceGithubEnterprise.csharp.md)
 - [vaultSecretsApp](./vaultSecretsApp.csharp.md)
