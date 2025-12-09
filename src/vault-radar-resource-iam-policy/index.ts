@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_radar_resource_iam_policy
+// https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_resource_iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface VaultRadarResourceIamPolicyConfig extends cdktf.TerraformMetaAr
   /**
   * The policy to apply.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_radar_resource_iam_policy#policy_data VaultRadarResourceIamPolicy#policy_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_resource_iam_policy#policy_data VaultRadarResourceIamPolicy#policy_data}
   */
   readonly policyData: string;
   /**
   * The HCP resource name associated with the Radar resource. This is the name of the resource in the format `vault-radar/project/<project_id>/scan-target/<scan_target_id>`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_radar_resource_iam_policy#resource_name VaultRadarResourceIamPolicy#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_resource_iam_policy#resource_name VaultRadarResourceIamPolicy#resource_name}
   */
   readonly resourceName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_radar_resource_iam_policy hcp_vault_radar_resource_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_resource_iam_policy hcp_vault_radar_resource_iam_policy}
 */
 export class VaultRadarResourceIamPolicy extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class VaultRadarResourceIamPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VaultRadarResourceIamPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultRadarResourceIamPolicy to import
-  * @param importFromId The id of the existing VaultRadarResourceIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_radar_resource_iam_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultRadarResourceIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_resource_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultRadarResourceIamPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class VaultRadarResourceIamPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/vault_radar_resource_iam_policy hcp_vault_radar_resource_iam_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/vault_radar_resource_iam_policy hcp_vault_radar_resource_iam_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class VaultRadarResourceIamPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'hcp_vault_radar_resource_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'hcp',
-        providerVersion: '0.110.0',
+        providerVersion: '0.111.0',
         providerVersionConstraint: '~> 0.45'
       },
       provider: config.provider,

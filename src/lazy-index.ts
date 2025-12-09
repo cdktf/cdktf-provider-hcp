@@ -46,6 +46,7 @@ Object.defineProperty(exports, 'vaultRadarIntegrationSlackConnection', { get: fu
 Object.defineProperty(exports, 'vaultRadarIntegrationSlackSubscription', { get: function () { return require('./vault-radar-integration-slack-subscription'); } });
 Object.defineProperty(exports, 'vaultRadarResourceIamBinding', { get: function () { return require('./vault-radar-resource-iam-binding'); } });
 Object.defineProperty(exports, 'vaultRadarResourceIamPolicy', { get: function () { return require('./vault-radar-resource-iam-policy'); } });
+Object.defineProperty(exports, 'vaultRadarSecretManagerVaultDedicated', { get: function () { return require('./vault-radar-secret-manager-vault-dedicated'); } });
 Object.defineProperty(exports, 'vaultRadarSourceGithubCloud', { get: function () { return require('./vault-radar-source-github-cloud'); } });
 Object.defineProperty(exports, 'vaultRadarSourceGithubEnterprise', { get: function () { return require('./vault-radar-source-github-enterprise'); } });
 Object.defineProperty(exports, 'vaultSecretsApp', { get: function () { return require('./vault-secrets-app'); } });
