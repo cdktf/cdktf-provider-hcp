@@ -4,7 +4,7 @@
 
 ### GroupIamPolicy <a name="GroupIamPolicy" id="@cdktf/provider-hcp.groupIamPolicy.GroupIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/group_iam_policy hcp_group_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/group_iam_policy hcp_group_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.groupIamPolicy.GroupIamPolicy.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The group's resource name in format `iam/organization/<organization_id>/group/<group_name>`. The shortened `<group_name>` version can be used for input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/group_iam_policy#name GroupIamPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/group_iam_policy#name GroupIamPolicy#name}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/group_iam_policy#policy_data GroupIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/group_iam_policy#policy_data GroupIamPolicy#policy_data}
 
 ---
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the GroupIamPolicy to import.
 
 The id of the existing GroupIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/group_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/group_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -909,7 +909,7 @@ public java.lang.String getName();
 
 The group's resource name in format `iam/organization/<organization_id>/group/<group_name>`. The shortened `<group_name>` version can be used for input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/group_iam_policy#name GroupIamPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/group_iam_policy#name GroupIamPolicy#name}
 
 ---
 
@@ -923,7 +923,7 @@ public java.lang.String getPolicyData();
 
 The policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs/resources/group_iam_policy#policy_data GroupIamPolicy#policy_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs/resources/group_iam_policy#policy_data GroupIamPolicy#policy_data}
 
 ---
 

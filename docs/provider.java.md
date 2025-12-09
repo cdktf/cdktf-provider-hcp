@@ -4,7 +4,7 @@
 
 ### HcpProvider <a name="HcpProvider" id="@cdktf/provider-hcp.provider.HcpProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs hcp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs hcp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.provider.HcpProvider.Initializer"></a>
 
@@ -62,7 +62,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#alias HcpProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#alias HcpProvider#alias}
 
 ---
 
@@ -72,7 +72,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The OAuth2 Client ID for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#client_id HcpProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#client_id HcpProvider#client_id}
 
 ---
 
@@ -82,7 +82,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The OAuth2 Client Secret for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#client_secret HcpProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#client_secret HcpProvider#client_secret}
 
 ---
 
@@ -94,7 +94,7 @@ The path to an HCP credential file to use to authenticate the provider to HCP.
 
 You can alternatively set the HCP_CRED_FILE environment variable to point at a credential file as well. Using a credential file allows you to authenticate the provider as a service principal via client credentials or dynamically based on Workload Identity Federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#credential_file HcpProvider#credential_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#credential_file HcpProvider#credential_file}
 
 ---
 
@@ -104,7 +104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The geography in which HCP resources should be created. Default is `us`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#geography HcpProvider#geography}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#geography HcpProvider#geography}
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The default project in which resources should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#project_id HcpProvider#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#project_id HcpProvider#project_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 When set to true, the provider will skip checking the HCP status page for service outages or returning warnings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#skip_status_check HcpProvider#skip_status_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#skip_status_check HcpProvider#skip_status_check}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 workload_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#workload_identity HcpProvider#workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#workload_identity HcpProvider#workload_identity}
 
 ---
 
@@ -381,7 +381,7 @@ The construct id used in the generated config for the HcpProvider to import.
 
 The id of the existing HcpProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,7 +730,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#alias HcpProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#alias HcpProvider#alias}
 
 ---
 
@@ -744,7 +744,7 @@ public java.lang.String getClientId();
 
 The OAuth2 Client ID for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#client_id HcpProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#client_id HcpProvider#client_id}
 
 ---
 
@@ -758,7 +758,7 @@ public java.lang.String getClientSecret();
 
 The OAuth2 Client Secret for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#client_secret HcpProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#client_secret HcpProvider#client_secret}
 
 ---
 
@@ -774,7 +774,7 @@ The path to an HCP credential file to use to authenticate the provider to HCP.
 
 You can alternatively set the HCP_CRED_FILE environment variable to point at a credential file as well. Using a credential file allows you to authenticate the provider as a service principal via client credentials or dynamically based on Workload Identity Federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#credential_file HcpProvider#credential_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#credential_file HcpProvider#credential_file}
 
 ---
 
@@ -788,7 +788,7 @@ public java.lang.String getGeography();
 
 The geography in which HCP resources should be created. Default is `us`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#geography HcpProvider#geography}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#geography HcpProvider#geography}
 
 ---
 
@@ -802,7 +802,7 @@ public java.lang.String getProjectId();
 
 The default project in which resources should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#project_id HcpProvider#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#project_id HcpProvider#project_id}
 
 ---
 
@@ -816,7 +816,7 @@ public java.lang.Boolean|IResolvable getSkipStatusCheck();
 
 When set to true, the provider will skip checking the HCP status page for service outages or returning warnings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#skip_status_check HcpProvider#skip_status_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#skip_status_check HcpProvider#skip_status_check}
 
 ---
 
@@ -830,7 +830,7 @@ public IResolvable|java.util.List<HcpProviderWorkloadIdentity> getWorkloadIdenti
 
 workload_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#workload_identity HcpProvider#workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#workload_identity HcpProvider#workload_identity}
 
 ---
 
@@ -868,7 +868,7 @@ public java.lang.String getResourceName();
 
 The resource_name of the Workload Identity Provider to exchange the token with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#resource_name HcpProvider#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#resource_name HcpProvider#resource_name}
 
 ---
 
@@ -884,7 +884,7 @@ The JWT token retrieved from an OpenID Connect (OIDC) or OAuth2 provider.
 
 At least one of `token_file` or `token` must be set, if both are set then `token` takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#token HcpProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#token HcpProvider#token}
 
 ---
 
@@ -900,7 +900,7 @@ The path to a file containing a JWT token retrieved from an OpenID Connect (OIDC
 
 At least one of `token_file` or `token` must be set, if both are set then `token` takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.110.0/docs#token_file HcpProvider#token_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.0/docs#token_file HcpProvider#token_file}
 
 ---
 

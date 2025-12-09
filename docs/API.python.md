@@ -84,6 +84,7 @@ The following submodules are available:
 - [vaultRadarIntegrationSlackSubscription](./vaultRadarIntegrationSlackSubscription.python.md)
 - [vaultRadarResourceIamBinding](./vaultRadarResourceIamBinding.python.md)
 - [vaultRadarResourceIamPolicy](./vaultRadarResourceIamPolicy.python.md)
+- [vaultRadarSecretManagerVaultDedicated](./vaultRadarSecretManagerVaultDedicated.python.md)
 - [vaultRadarSourceGithubCloud](./vaultRadarSourceGithubCloud.python.md)
 - [vaultRadarSourceGithubEnterprise](./vaultRadarSourceGithubEnterprise.python.md)
 - [vaultSecretsApp](./vaultSecretsApp.python.md)
