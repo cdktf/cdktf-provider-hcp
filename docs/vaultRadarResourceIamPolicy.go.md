@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultRadarResourceIamPolicy.VaultRadarResourceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultradarresourceiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarresourceiampolicy"
 
 vaultradarresourceiampolicy.NewVaultRadarResourceIamPolicy(scope Construct, id *string, config VaultRadarResourceIamPolicyConfig) VaultRadarResourceIamPolicy
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultRadarResourceIamPolicy.VaultRadarResourceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultradarresourceiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarresourceiampolicy"
 
 vaultradarresourceiampolicy.VaultRadarResourceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultRadarResourceIamPolicy.VaultRadarResourceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultradarresourceiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarresourceiampolicy"
 
 vaultradarresourceiampolicy.VaultRadarResourceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ vaultradarresourceiampolicy.VaultRadarResourceIamPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultRadarResourceIamPolicy.VaultRadarResourceIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultradarresourceiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarresourceiampolicy"
 
 vaultradarresourceiampolicy.VaultRadarResourceIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ vaultradarresourceiampolicy.VaultRadarResourceIamPolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultRadarResourceIamPolicy.VaultRadarResourceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultradarresourceiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarresourceiampolicy"
 
 vaultradarresourceiampolicy.VaultRadarResourceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultRadarResourceIamPolicy.VaultRadarResourceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultradarresourceiampolicy"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultradarresourceiampolicy"
 
 &vaultradarresourceiampolicy.VaultRadarResourceIamPolicyConfig {
 	Connection: interface{},

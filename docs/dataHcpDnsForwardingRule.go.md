@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpdnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpdnsforwardingrule"
 
 datahcpdnsforwardingrule.NewDataHcpDnsForwardingRule(scope Construct, id *string, config DataHcpDnsForwardingRuleConfig) DataHcpDnsForwardingRule
 ```
@@ -290,7 +290,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpdnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpdnsforwardingrule"
 
 datahcpdnsforwardingrule.DataHcpDnsForwardingRule_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpdnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpdnsforwardingrule"
 
 datahcpdnsforwardingrule.DataHcpDnsForwardingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datahcpdnsforwardingrule.DataHcpDnsForwardingRule_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpdnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpdnsforwardingrule"
 
 datahcpdnsforwardingrule.DataHcpDnsForwardingRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datahcpdnsforwardingrule.DataHcpDnsForwardingRule_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpdnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpdnsforwardingrule"
 
 datahcpdnsforwardingrule.DataHcpDnsForwardingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpDnsForwardingRule.DataHcpDnsForwardingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpdnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpdnsforwardingrule"
 
 &datahcpdnsforwardingrule.DataHcpDnsForwardingRuleConfig {
 	Connection: interface{},
