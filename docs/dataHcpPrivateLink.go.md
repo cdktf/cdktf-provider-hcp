@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPrivateLink.DataHcpPrivateLink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpprivatelink"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpprivatelink"
 
 datahcpprivatelink.NewDataHcpPrivateLink(scope Construct, id *string, config DataHcpPrivateLinkConfig) DataHcpPrivateLink
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dataHcpPrivateLink.DataHcpPrivateLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpprivatelink"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpprivatelink"
 
 datahcpprivatelink.DataHcpPrivateLink_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dataHcpPrivateLink.DataHcpPrivateLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpprivatelink"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpprivatelink"
 
 datahcpprivatelink.DataHcpPrivateLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datahcpprivatelink.DataHcpPrivateLink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-hcp.dataHcpPrivateLink.DataHcpPrivateLink.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpprivatelink"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpprivatelink"
 
 datahcpprivatelink.DataHcpPrivateLink_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datahcpprivatelink.DataHcpPrivateLink_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dataHcpPrivateLink.DataHcpPrivateLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpprivatelink"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpprivatelink"
 
 datahcpprivatelink.DataHcpPrivateLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -808,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpPrivateLink.DataHcpPrivateLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpprivatelink"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpprivatelink"
 
 &datahcpprivatelink.DataHcpPrivateLinkConfig {
 	Connection: interface{},
@@ -822,7 +822,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpprivatelink"
 	PrivateLinkId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.dataHcpPrivateLink.DataHcpPrivateLinkTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v10.dataHcpPrivateLink.DataHcpPrivateLinkTimeouts,
 }
 ```
 
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dataHcpPrivateLink.DataHcpPrivateLinkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpprivatelink"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpprivatelink"
 
 &datahcpprivatelink.DataHcpPrivateLinkTimeouts {
 	Default: *string,
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dataHcpPrivateLink.DataHcpPrivateLinkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpprivatelink"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpprivatelink"
 
 datahcpprivatelink.NewDataHcpPrivateLinkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataHcpPrivateLinkTimeoutsOutputReference
 ```

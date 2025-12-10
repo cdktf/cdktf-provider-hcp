@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsSync.VaultSecretsSync.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssync"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultsecretssync"
 
 vaultsecretssync.NewVaultSecretsSync(scope Construct, id *string, config VaultSecretsSyncConfig) VaultSecretsSync
 ```
@@ -405,7 +405,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.vaultSecretsSync.VaultSecretsSync.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssync"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultsecretssync"
 
 vaultsecretssync.VaultSecretsSync_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.vaultSecretsSync.VaultSecretsSync.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssync"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultsecretssync"
 
 vaultsecretssync.VaultSecretsSync_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ vaultsecretssync.VaultSecretsSync_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.vaultSecretsSync.VaultSecretsSync.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssync"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultsecretssync"
 
 vaultsecretssync.VaultSecretsSync_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ vaultsecretssync.VaultSecretsSync_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.vaultSecretsSync.VaultSecretsSync.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssync"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultsecretssync"
 
 vaultsecretssync.VaultSecretsSync_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsSync.VaultSecretsSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssync"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultsecretssync"
 
 &vaultsecretssync.VaultSecretsSyncConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssync"
 	Provisioners: *[]interface{},
 	IntegrationName: *string,
 	Name: *string,
-	GitlabConfig: github.com/cdktf/cdktf-provider-hcp-go/hcp.vaultSecretsSync.VaultSecretsSyncGitlabConfig,
+	GitlabConfig: github.com/cdktf/cdktf-provider-hcp-go/hcp/v10.vaultSecretsSync.VaultSecretsSyncGitlabConfig,
 	ProjectId: *string,
 }
 ```
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.vaultSecretsSync.VaultSecretsSyncGitlabConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssync"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultsecretssync"
 
 &vaultsecretssync.VaultSecretsSyncGitlabConfig {
 	GroupId: *string,
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.vaultSecretsSync.VaultSecretsSyncGitlabConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultsecretssync"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultsecretssync"
 
 vaultsecretssync.NewVaultSecretsSyncGitlabConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VaultSecretsSyncGitlabConfigOutputReference
 ```

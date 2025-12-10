@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.111.
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/dnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 
 dnsforwardingrule.NewDnsForwardingRule(scope Construct, id *string, config DnsForwardingRuleConfig) DnsForwardingRule
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/dnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/dnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ dnsforwardingrule.DnsForwardingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/dnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ dnsforwardingrule.DnsForwardingRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/dnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 
 dnsforwardingrule.DnsForwardingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/dnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 
 &dnsforwardingrule.DnsForwardingRuleConfig {
 	Connection: interface{},
@@ -927,7 +927,7 @@ import "github.com/cdktf/cdktf-provider-hcp-go/hcp/dnsforwardingrule"
 	RuleId: *string,
 	Id: *string,
 	ProjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp.dnsForwardingRule.DnsForwardingRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-hcp-go/hcp/v10.dnsForwardingRule.DnsForwardingRuleTimeouts,
 }
 ```
 
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/dnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 
 &dnsforwardingrule.DnsForwardingRuleTimeouts {
 	Create: *string,
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-hcp.dnsForwardingRule.DnsForwardingRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-hcp-go/hcp/dnsforwardingrule"
+import "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/dnsforwardingrule"
 
 dnsforwardingrule.NewDnsForwardingRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsForwardingRuleTimeoutsOutputReference
 ```
